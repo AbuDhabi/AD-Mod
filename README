@@ -1,0 +1,36 @@
+This is the readme for Abu Dhabi's EU3 mod, which is based on Misc Mods (version 0.799 DW) by BrainMeats.
+
+Installation:
+Put the following files/directories in your P:/ath_to_EU3/mod/ directory.
+* admod.mod
+* admod
+
+Make sure you have the latest Divine Wind patch installed!
+
+Changes:
+* Daimyos need only relation 0+ with Western foreigners to gain Western Arms trade, because a relation of 150+ is implausible due to inability to directly interact with them diplomatically. A better solution would be to have JAP have 150+ relations with the foreigners, which is possible, but I do not know how to code that.
+* Theocracies and the Papacy do not require Unam Sanctam to purge heresy.
+* Theocracies with Divine Supremacy or Unam Sanctam of any religion may wage holy war. The Papacy may wage holy war always, until the time runs out.
+* Catholic.txt added to events folder. httt.csv added to localization folder. Kingdom of God now doesn't disable the Papacy, making the decision worth doing. 
+* Heresy events that convert Shinto/Confucian/Buddhist into each other. No more Mongol Jews, please!
+* National Conscripts given +15% reinforce speed, to make it suck less.
+* Vetting given -20% stability cost, to make it actually pretty good.
+* Halved maximum manpower. A better solution to it being a non-issue would be to significantly lower its regrowth, but I don't know how to mod that.
+* All non-Christian, non-Muslim, non-Dharmic, non-Taoic provinces can convert to Christian or Muslim, as pagans do in vanilla.
+* Added Elections.txt to events folder. Added in_nomine_text.csv to localisation folder. Changed elections to be less predictable, and more lifelike.
+* Cleansing of Heresy gets the normal bonus for annexation, as well as province demanding.
+* Mercantilism now gives a bonus to production efficiency (10% for maximum).
+* Offensive now penalizes fort defense less (-10% for maximum).
+* Quantity now reduces land attrition (-25% for maximum).
+* Decentralization now gives reduces revolt risk and stability cost (-3 and -25% respectively, at maximum).
+* Land Tech and Naval Tech cost modifiers moved from Serfdom/Free Subjects to Land/Naval (kept the same amounts).
+* Post Offices now increase Global Tariffs by 1%, as opposed to increasing Global Trade Income by 1%.
+* Customs Houses now increase Trade Efficiency by 1% instead of increasing Global Tariffs by 1%.
+* Stock Exchanges now increase Production Efficiency by 1%.
+* Added Construction.txt to missions folder. Missions to construct Fine Arts Academies now fire only for provinces that produce Ivory, Gold or Chinaware.
+* Updated colonial_takeover.txt to include Lowlanders.
+* Changed Importation Act to penalize tech cost by 3%, rather than 6%. Changed Cultivation Act to penalize tech cost by 2%, rather than 6%.
+* Added spies.txt to common folder. Added a spy mission to steal technology, available in the capital. If successful, it gives a +20 bonus to all research fields for a few years. If discovered, loss of prestige and some badboy.
+* Added admod_agents.txt to decisions folder. It contains additional cultural decisions which allow the hiring of additional agents, for cultural tradition and money.
+* Nerfed Unam Sanctam to give only 0.10 war exhaustion reduction, and given it instead +0.3 missionaries. Similarly, Revolution and Counter-Revolution now gives only 0.15 war exhaustion reduction. 
+* Added a unification decision for the Roman Empire (with proper tag, flag and so on). Gives lots of cores everywhere.
