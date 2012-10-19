@@ -1,0 +1,17 @@
+#1835 - Mino
+
+owner = TAI
+controller = TAI
+culture = yamato
+religion = shinto
+capital = "Mino"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 2
+citysize = 7350
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }

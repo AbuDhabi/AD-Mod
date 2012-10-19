@@ -1,0 +1,57 @@
+#Tröndelag, incl. Trondheim, Frosta, Röros, Steinviksholm
+
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 2
+trade_goods = fish
+manpower = 2
+capital = "Trondheim"
+citysize = 1000 # Estimated
+temple = yes
+discovered_by = eastern
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = NOR
+		controller = NOR
+		citysize = 1000 }
+
+#Shattered Europe
+1399.10.13 = { religion = norse_rel }
+
+#Historical
+1399.10.14 = { religion = catholic }
+
+1450.1.1   = { citysize = 1150 }
+1470.1.1   = { citysize = 1250 }
+1500.1.1   = { citysize = 1500 }
+1531.11.10 = { revolt_risk = 10 } # The Return of Christian II
+1532.7.15  = { revolt_risk = 0 } # The Capture of Christian II
+1536.1.1   = { religion = protestant} # Unknown date
+1536.1.1   = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
+1550.1.1   = { citysize = 1900 }
+1564.3.3   = { controller = SWE } # Nordic Seven-years War
+1564.5.21  = { controller = DAN } # Nordic Seven-years War
+1600.1.1   = { citysize = 2100 }
+1650.1.1   = { citysize = 2400 }
+1658.2.26  = { owner = SWE controller = SWE add_core = SWE } # The Peace of Roskilde
+1658.12.1  = { controller = DAN } # Karl X Gustavs Second Danish War
+1660.5.27  = { owner = DAN } # The Peace of Copenhagen
+1700.1.1   = { citysize = 2600 }
+1750.1.1   = { citysize = 3400 }
+1800.1.1   = { citysize = 3800 }
+1814.1.14  = {	owner = SWE
+		revolt = { type = nationalist_rebels size = 2 }
+		controller = REB
+		remove_core = DAN
+	     } # Norway is ceded to Sweden following the Treaty of Kiel
+1814.5.17 = { revolt = {} owner = NOR controller = NOR } # Norway declares itself independent and elects Christian Frederik as king

@@ -1,0 +1,12 @@
+government = revolutionary_republic
+aristocracy_plutocracy = -3
+centralization_decentralization = -2
+innovative_narrowminded = 2
+mercantilism_freetrade = 4
+offensive_defensive = 2
+land_naval = -3
+quality_quantity = 3
+serfdom_freesubjects = -3
+primary_culture = tang
+technology_group = western
+unit_type = western

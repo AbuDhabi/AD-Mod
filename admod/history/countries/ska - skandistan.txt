@@ -1,0 +1,23 @@
+government = feudal_monarchy
+aristocracy_plutocracy = 1
+centralization_decentralization = 3
+innovative_narrowminded = 1
+mercantilism_freetrade = 1
+offensive_defensive = 1
+land_naval = 1
+quality_quantity = -1
+serfdom_freesubjects = 1
+technology_group = muslim
+primary_culture = skandistani
+religion = sunni
+capital = 2	#Ostergotland
+
+1399.10.1 = {
+	monarch = {
+		name = "Yunus I"
+		dynasty = "Koke Temur"
+		adm = 4
+		dip = 8
+		mil = 3
+	}
+}

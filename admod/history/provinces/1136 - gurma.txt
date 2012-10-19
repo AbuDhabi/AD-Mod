@@ -1,0 +1,39 @@
+#1136 - Gurma
+
+culture = mali #mossi
+religion = vodun
+capital = "Bilanga"
+trade_goods = unknown
+manpower = 1
+hre = no
+base_tax = 1
+native_size = 40
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = SON
+discovered_by = SOK
+
+#Black Death
+1399.10.11 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+		citysize = 6000
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = SOK
+		citysize = 0
+		trade_goods = unknown }
+
+1482.1.1 = { revolt_risk = 4 } # Songhai raids  
+1488.1.1 = { revolt_risk = 4 } # Songhai raids 
+1496.1.1 = { revolt_risk = 4 } # Songhai raids 
+1500.1.1 = { native_size = 30 } 
+1519.1.1 = { revolt_risk = 4 } # Songhai raids 
+1526.1.1 = { revolt_risk = 4 } # Songhai raids 
+1550.1.1 = { native_size = 20 } 
+1600.1.1 = { native_size = 25 discovered_by = MOR } 
+1700.1.1 = { native_size = 30 } # slow stabilization with rise of Gulmanceba state
+1750.1.1 = { native_size = 40 }

@@ -1,0 +1,28 @@
+#1017 - Nagato
+
+owner = MIN
+controller = MIN
+culture = yamato
+religion = shinto
+capital = "Nagato"
+trade_goods = chinaware
+hre = no
+base_tax = 6
+manpower = 3
+citysize = 5500
+add_core = MIN
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 5910 }
+1500.1.1   = { citysize = 6350 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 7200 }
+1600.1.1   = { citysize = 8665 }
+1603.1.1   = { capital = "Hagi" }
+1637.12.17 = { revolt = { type = anti_tax_rebels size = 1 } } # Shimabara rebellion
+1638.4.12  = { revolt = {} }
+1650.1.1   = { citysize = 9200 }
+1700.1.1   = { citysize = 10350 }
+1750.1.1   = { citysize = 11500 }
+1800.1.1   = { citysize = 13247 }

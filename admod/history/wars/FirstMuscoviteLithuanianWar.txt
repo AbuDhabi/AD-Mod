@@ -1,0 +1,47 @@
+name = "First Muscovite-Lithuanian War"
+casus_belli = cb_nationalist
+
+1486.1.1 = {
+	add_attacker = MOS
+	add_defender = LIT
+}
+
+1492.1.1 = {
+	add_attacker = CRI
+}
+# Marriage between Helena and Alexander
+1495.1.1 = {
+	rem_attacker = MOS
+	rem_attacker = CRI
+	rem_defender = LIT
+}
+
+name = "GOL - NOV war"
+casus_belli = cb_dishonored_call
+
+1399.1.1 = {
+	add_attacker = GOL
+	add_defender = NOV
+}
+
+# Peace!
+1399.10.14 = {
+	rem_attacker = GOL
+	rem_defender = NOV
+}
+
+#name = "Ming - Horde war"
+#casus_belli = cb_dishonored_call
+
+#1399.1.1 = {
+#	add_attacker = KHA
+#	add_attacker = OIR
+#	add_defender = MNG
+#}
+
+# Peace!
+#1399.10.14 = {
+#	rem_attacker = KHA
+#	rem_attacker = OIR
+#	rem_defender = MNG
+#}

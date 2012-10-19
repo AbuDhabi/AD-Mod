@@ -1,0 +1,76 @@
+#Country Name: Please see filename.
+
+graphical_culture = chinesegfx
+
+color = { 160  222  186 }
+
+historical_ideas = {
+	national_conscripts
+	shrewd_commerce_practise
+	merchant_adventures
+	military_drill
+	national_trade_policy
+	battlefield_commisions
+	engineer_corps
+	grand_army
+	espionage
+	cabinet
+	humanist_tolerance
+	smithian_economics
+}
+
+historical_units = {
+	african_clubmen
+	bantu_tribal_warfare
+	bantu_plains_warfare
+	bantu_gunpowder_warfare
+	westernized_bantu
+	african_western_franchise_warfare
+}
+
+monarch_names = {
+	"Andriana #0" = 40
+	"Radama #0" = 30
+	"Ranavalona #0" = -20
+	"Rasoherina #0" = -20
+	"Rainiharo #0" = 15
+	"Rainilaiarivony #0" = 15
+	"Rainitsimbazafy #0" = 15
+	"Rainivoninahitriniony #0" = 15
+	"Rasanjy #0" = 15
+	"Zafimamy #0" = 15
+	"Didier #0" = 10
+	"Albert #0" = 5
+	"Andry #0" = 5
+	"Marc #0" = 5
+	"Norbert #0" = 5
+	"Ralambo #0" = 5
+	"Albert #0" = 0
+	"Emmanuel #0" = 0
+	"Gabriel #0" = 0
+	"Gilles #0" = 0
+	"Pascal #0" = 0
+	"Pere #0" = 0
+	"Philibert #0" = 0
+	"Richard #0" = 0
+	"Tantely #0" = 0
+}
+
+leader_names = {
+	Andriamahazo
+	Rakotomalala Ramanantsoa Ramilison Rasamimanana Ratsimandrava Ratsiraka Ravelojaona
+	Tsiranana
+}
+
+ship_names = {
+	Alaotra "Amoron'i Mania" Analanjirofo Antananarivo Analamanga Androy Anosy Antsiranana Atsinanana
+	Betsiboka Boeny Bongolava
+	Diana
+	Fianarantsoa
+	Haute-Matsiatra
+	Ihorombe Itasy
+	Mahajanga Mangoro Melaky Menabe Merina
+	Sava Sofia
+	Toamasina Toliara
+	Vakinankaratra Vatovavy-Fitovinany
+}

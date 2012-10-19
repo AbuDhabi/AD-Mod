@@ -1,0 +1,348 @@
+remove_french_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		FRA = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = FRA }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = FRA } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}
+
+
+remove_dutch_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		NED = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = NED }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = NED } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}
+
+remove_portuguese_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		POR = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = POR }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = POR } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}
+
+remove_british_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		GBR = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = GBR }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = GBR } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}
+
+remove_spanish_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		SPA = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = SPA }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = SPA } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}
+
+remove_castillian_trade_co = {
+
+	type = country
+
+	allow = {
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		NOT = { technology_group = chinese }
+		NOT = { technology_group = indian }
+		CAS = {
+			neighbor = THIS
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		eastasian_trade_ports = { owned_by = THIS }
+		eastasian_trade_ports = { owned_by = CAS }
+		num_of_ports = 10
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			NOT = { eastasian_trade_ports = { owned_by = THIS } }
+		}
+	}
+
+	success = {
+		NOT = { eastasian_trade_ports = { owned_by = CAS } }
+	}
+
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	effect = {
+		treasury = 500
+		random_owned = {
+			limit = {
+				port = yes
+				region = eastasian_trade_ports
+			}
+			base_tax = 1
+		}
+	}
+}

@@ -1,0 +1,73 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+is_colonial = yes
+
+color = { 153  141  117 }
+
+historical_ideas = {
+	national_conscripts
+	grand_army
+	glorious_arms
+	espionage
+	military_drill
+	merchant_adventures
+	divine_supremacy
+	battlefield_commisions
+	engineer_corps
+	national_trade_policy
+	cabinet
+	patron_of_art
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ahmad #0" = 10
+	"Ibrahim #0" = 10
+	"Muhammad #0" = 20
+	"'Izz ud-Din Hamza Beg #0" = 20
+	"Taj ad-Dîn Ibrâhîm #0" = 20
+	"Ishaq #0" = 20
+	"Pîr Ahmad #0" = 20
+	"Qasim #0" = 20
+	"Mahmûd #0" = 20
+	"'Ali #0" = 10
+	"Mustafa #0" = 10
+	"Darwish #0" = 10 
+}
+
+leader_names = {
+	Sinan
+	Karaman
+	Tarik
+	Segem
+	Rustu
+	Rahim
+	Inan
+	Kadri
+	Kemal
+	Ercan
+}
+
+ship_names = {
+	"Nure Sufi" Sadaddin "Karaman Bey" Ermenek
+	Mut Gülnar Mer Silifke Cilicia Larande
+	Bunsuz "Zeynül-Hac" "Semseddin Mehmet" Göksu
+}

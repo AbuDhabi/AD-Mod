@@ -1,0 +1,129 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 5  108  0 }
+
+historical_ideas = {
+	divine_supremacy
+	military_drill
+	national_conscripts
+	shrewd_commerce_practise
+	battlefield_commisions
+	national_trade_policy
+	engineer_corps
+	merchant_adventures
+	espionage
+	grand_army
+	glorious_arms
+	cabinet
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
+}
+
+monarch_names = {
+	"Abdullah #0" = 25
+	"Hussein #0" = 25
+	"Muhammad #0" = 25
+	"Fahd #0" = 20
+	"Mani #0" = 10
+	"Rabi'a #0" = 10
+	"Musa #0" = 10
+	"Watban #0" = 10
+	"Nasir #0" = 10
+	"Idris #0" = 10
+	"Zayid #0" = 10
+	"Turki #0" = 10
+	"Faisal #0" = 10
+	"Khalid #0" = 10
+	"Fahd #0" = 10
+	"al-Musta'in #0" = 5
+	"Barakât #0" = 5
+	"Faruq #0" = 5
+	"Ibrahim #0" = 5
+	"Markhan #0" = 5
+	"Shaik al-Mahmudi #0" = 5
+	"Aisha #0" = -1
+	"Rayhana #0" = -1
+	"Abd Allah #0" = 0
+	"Abd al Aziz #0" = 0
+	"Abd Al-Rahman #0" = 0
+	"Abu Talib #0" = 0
+	"Abu Aun Idris #0" = 0
+	"'Abdul-Karim #0" = 0
+	"'Abul Muhsin #0" = 0
+	"'Abd al-Ilah #0" = 0
+	"'Abd al-Malik #0" = 0
+	"Abdu #0" = 0
+	"Abdul #0" = 0
+	"Ahmed #0" = 0
+	"Ali #0" = 0
+	"Bakr #0" = 0
+	"Basir #0" = 0
+	"Fadl #0" = 0
+	"Jafar #0" = 0
+	"Mahmoud #0" = 0
+	"Mirza #0" = 0
+	"Sa'di #0" = 0
+	"Sayyid #0" = 0
+	"Shahid #0" = 0
+	"Turki #0" = 0
+	"Yaser #0" = 0
+	"Yousef #0" = 0
+	"Yunus #0" = 0
+	"Zulqifar #0" = 0
+}
+
+leader_names = {
+	"Al Abdullah" Abbas Agha Ahmad Atef Akif Akil Ali Abodehman
+	Bay Billah
+	Chammas
+	Daei Damad Dervis
+	Ekrem Esad
+	"Al Farran" Farhat Fattuh Fazil
+	"Al Hamad" "Al Hussein" Hashim Hammoud
+	"Al Jaber"
+	Kanasani Kansur Khal
+	Madani Mahmud Mansour Munif
+	"Al Nubi"
+	"Al Qasemi" Qurei
+	"Al Rasheed"
+	"Al Sabah" "Al Saeed" "Al Saud" Saleh Surur
+	"Al Thani" Taleb
+	Veli
+	Yemisci Youssef
+}
+
+ship_names = {
+	Aqaba Nejd
+	Hijaz Jeddah Mecca Medina "Jabal Baydan"
+	"Jabal Sawda" "Jabal Abu Hasan" "Jabal al-Jurayrah" 
+	"Harrat Al-Kishb" "Harrat Rahat" "Harrat Nawasif"
+	"Harrat Hadan" "Harrat Al-Buqum" "Harrat Khaybar"
+	"Harrat Kurama" "Harrat al-Unayyir"
+	"Al-Armah" "Ad-Dahna" "Jabal Tuwayo"
+	"Nafüd Qunayfidahah" "Nafüd Shuqayyiqah"
+	"Al-Bayad" "Nafüd Ad-Dahy" "Nafüd As-Sirrah"
+	"Ar-Riyad" "Ad-Dilam" Shaqra
+	"Zaher Barqooq" "Farag Ben Barqooq"
+	"Ben Barqooq" "Muyaid Sheikh" "Ahmen Muyaid" 
+	"Zaher Tatar" "Nasser Muhamed" "Ashraf Barsbay"
+	"Aziz Gamal" "Nahr an-Nil" "Al-Farafirah"
+	"Ad-Däkhilah" "Al-Kharijah" "Al-Ali" "Al-Bahriyah"
+	Rahman Rahim Malik Quddus Salam Mu'min Muhaymin
+	Aziz Jabbar Mutakabbir Khaliq Bari Musawwir 
+	Ghaffar Qahhar Wahhab Razzaq Fattah Alim Qabid
+	Basit Khafid Rafi Mu'izz Mudhill Sami Basir Hakam Adl
+}

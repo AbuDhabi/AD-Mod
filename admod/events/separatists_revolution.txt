@@ -1,0 +1,425 @@
+#events 25000-25999
+##################################################
+#War of Independence triggers ultimatum in nearby countries
+##################################################
+
+country_event = {
+
+	id = 25000
+
+	title = "EVTNAME25000"
+	desc = "EVTDESC25000"
+
+	trigger = {
+		is_colonial = yes
+		NOT = { has_country_flag = place_in_the_sun }
+		NOT = { has_country_modifier = seperatist_sentiment }
+		any_neighbor_country = { any_owned_province = { is_core = THIS } }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA25000"
+		any_neighbor_country = {
+			limit = {
+				is_colonial = no
+				any_owned_province = { is_core = THIS }
+			}
+			country_event = 25001
+		}
+		add_country_modifier = {
+			name = "seperatist_sentiment"
+			duration = 1825
+		}
+		prestige = 0.01
+	}
+}
+
+country_event = {
+
+	id = 25001
+
+	title = "EVTNAME25001"
+	desc = "EVTDESC25001"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA25001"
+		ai_chance = { factor = 20 }
+		any_owned = {
+			limit = {
+				is_core = FROM
+				NOT = { has_province_modifier = loyalist_stronghold }
+			}
+			colonial_patriot_rebels = 2
+		}
+		badboy = 2
+	}
+	option = {
+		name = "EVTOPTB25001"
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 2
+				war_exhaustion = 9
+			}
+			modifier = {
+				factor = 2
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 2
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = total_war_series
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = religious_turmoil
+			}
+		}
+		any_owned = {
+			limit = { is_core = FROM }
+			secede_province = FROM
+			relation = { who = FROM value = 100 }
+		}
+		badboy = -2
+	}
+}
+
+##################################################
+#Generic events to replace americanrevolution/colonialuprising.txt
+##################################################
+
+# Trade restrictions
+province_event = {
+
+	id = 25002
+	
+	title = "EVTNAME1022"
+	desc = "EVTDESC1022"
+	
+	trigger = {
+		owner = { 
+			NOT = { has_country_flag = trade_restrictions }
+			NOT = { mercantilism_freetrade = 0 }
+		}
+		any_core = {
+			is_colonial = yes
+			exists = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { mercantilism_freetrade = -2  } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { mercantilism_freetrade = -3  } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { mercantilism_freetrade = -4  } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { idea = shrewd_commerce_practise }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1022"				# Send troops
+		owner = {
+			set_country_flag = trade_restrictions
+			
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 2
+			}
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 3
+			}
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 2
+			}
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 3
+			}
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 2
+			}
+			random_owned = {
+				limit = {
+					any_core = {
+						is_colonial = yes
+						exists = no
+					}
+				}
+				colonial_rebels = 3
+			}
+		}
+		add_province_modifier = {
+			name = "military_reinforcement"
+			duration = 3650
+		}
+	}
+		
+	option = {
+		name = "EVTOPTB1022"				# Restrict export
+		owner = {
+			add_country_modifier = {
+				name = "export_restrictions"
+				duration = 3650
+			}
+			set_country_flag = trade_restrictions
+		}
+	}
+}
+
+# Colonial assembly
+province_event = {
+
+	id = 25003
+	
+	title = "EVTNAME1023"
+	desc = "EVTDESC1023"
+	
+	trigger = {
+		any_core = {
+			is_colonial = yes
+			exists = no
+		}
+		revolt_risk = 3
+		NOT = { has_province_modifier = loyalist_stronghold }
+		owner = { NOT = { has_country_modifier = diplomatic_negotiation } }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { advisor = statesman } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { ADM = 4 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { DIP = 4 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { ADM = 8 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { DIP = 8 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { advisor = statesman }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1023"		# Attempt to find a diplomatic solution
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_modifier = diplomatic_negotiation
+			}
+		}
+		owner = {
+			add_country_modifier = {
+				name = "diplomatic_negotiation"
+				duration = 3650
+			}
+		}
+	}
+		
+	option = {
+		name = "EVTOPTB1023"		# The days of diplomacy are over
+		ai_chance = { factor = 100 }
+		owner = { badboy = 1 }
+		add_province_modifier = {
+			name = "colonial_tensions"
+			duration = 3650
+		}
+	}
+}
+
+##################################################
+#Colonial nations will not tolerate being vassals
+##################################################
+
+country_event = {
+
+	id = 25004
+
+	title = "EVTNAME25004"
+	desc = "EVTDESC25004"
+
+	trigger = {
+		is_colonial = yes
+		is_subject = yes
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.8
+			overlord = { idea = { press_gangs } }
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { idea = { military_drill } }
+		}
+		modifier = {
+			factor = 0.8
+			overlord = { idea = { regimental_system } }
+		}
+		modifier = {
+			factor = 1.2
+			overlord = { idea = { bill_of_rights } }
+		}
+		modifier = {
+			factor = 1.8
+			overlord = { idea = { liberty_egalite_fraternity } }
+		}
+		modifier = {
+			factor = 1.4
+			overlord = { idea = { ecumenism } }
+		}
+		modifier = {
+			factor = 1.1
+			overlord = { idea = { patron_of_art } }
+		}
+		modifier = {
+			factor = 0.8
+			overlord = { idea = { deus_vult } }
+		}
+		modifier = {
+			factor = 1.6
+			overlord = { idea = { humanist_tolerance } }
+		}
+		modifier = {
+			factor = 1.1
+			overlord = { idea = { cabinet } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA25004"
+		set_country_flag = colony_demands_release
+		prestige = 0.02
+		relation = { who = overlord value = -50 }
+		overlord = { country_event = 25005 }
+	}
+}
+
+country_event = {
+
+	id = 25005
+
+	title = "EVTNAME25005"
+	desc = "EVTDESC25005"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA25005"
+		ai_chance = { factor = 33 }
+		prestige = -0.10
+		relation = { who = FROM value = -50 }
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+				is_overseas = yes
+			}
+			remove_merchant = THIS
+		}
+		add_country_modifier = {
+			name = "diplomatic_negotiation"
+			duration = 365
+		}
+		badboy = 0.02
+		any_country = {
+			limit = {
+				is_subject = yes
+				has_country_flag = colony_demands_release
+			}
+			clr_country_flag = colony_demands_release
+		}
+	}
+
+	option = {
+		name = "EVTOPTB25005"
+		ai_chance = { factor = 66 }
+		prestige = -0.05
+		badboy = -0.04
+		any_country = {
+			limit = {
+				is_subject = yes
+				has_country_flag = colony_demands_release
+			}
+			free_vassal = THIS
+			clr_country_flag = colony_demands_release
+		}
+	}
+}

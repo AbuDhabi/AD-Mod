@@ -1,0 +1,53 @@
+#358 - Alexandria
+
+owner = MAM
+controller = MAM
+culture = al_misr_arabic
+religion = sunni
+capital = "Alexandria"
+trade_goods = grain
+hre = no
+cot = yes
+base_tax = 11
+manpower = 5
+citysize = 29400
+fort1 = yes
+add_core = MAM
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Crusades Campaign
+1399.10.12 = {	owner = ALX
+		controller = ALX
+		add_core = ALX
+		religion = orthodox
+		culture = ptolemaic }
+
+#Muslim/Historical Campaign
+1399.10.13 = {	owner = MAM
+		controller = MAM
+		remove_core = ALX
+		religion = sunni
+		culture = al_misr_arabic }
+
+1450.1.1   = { citysize = 32400 }
+1500.1.1   = { citysize = 33500 marketplace = yes }
+1517.1.1   = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+	     } # Conquered by Ottoman troops
+1520.11.10 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Mameluk Uprising under Canbirdi Ghazeli
+1521.1.1   = { revolt = {} controller = TUR }
+1550.1.1   = { citysize = 23010 } # Gradual decline
+1600.1.1   = { citysize = 19785 }
+1650.1.1   = { citysize = 17000 constable = yes }
+1700.1.1   = { citysize = 23000 tax_assessor = yes }
+1750.1.1   = { citysize = 28854 }
+1796.1.1   = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Revolts against the Ottomans
+1798.8.3   = { revolt = {} controller = RFR } # Occupied by the French
+1800.1.1   = { citysize = 39860 }
+1801.9.2   = { controller = TUR } # The siege is lifted
+1805.5.12  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Egyptian rebellion
+1811.6.1   = { revolt = {} controller = TUR revolt_risk = 0 } # Order is restored

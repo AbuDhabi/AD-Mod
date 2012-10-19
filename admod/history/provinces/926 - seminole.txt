@@ -1,0 +1,48 @@
+#926 - Seminole
+
+culture = creek
+religion = spiritualism
+capital = "Seminole"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 2
+native_hostileness = 8
+discovered_by = CRE
+
+1513.4.2  = { discovered_by = CAS } # Juan Ponce de Leon
+1516.1.23 = { discovered_by = SPA }
+1565.8.28 = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+		citysize = 1100
+		trade_goods = fur
+	    } # Pedro Menéndez de Avilés of Spain captures Fort Caroline
+1590.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 5980 }
+1650.1.1  = { citysize = 6600 }
+1700.1.1  = { citysize = 6900 }
+1702.1.1  = { revolt_risk = 5 } # British raids
+1704.1.1  = { revolt_risk = 0 }
+1750.1.1  = { citysize = 7350 } 
+1763.2.10 = {	owner = GBR
+		controller = GBR
+	    	remove_core = SPA
+	    	religion = protestant
+	    	culture = english
+	    } # Florida is traded for Havana  
+1783.9.3  = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	    } # Treaty of Paris, returned to Spain
+1800.1.1  = { citysize = 7500 }
+1808.9.3  = { add_core = SPA }
+1819.2.22 = {	owner = USA
+		controller = USA
+		add_core = USA
+		remove_core = SPA
+	   } # The Adams-Onís Treaty

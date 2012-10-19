@@ -1,0 +1,229 @@
+#events 20200-20299
+#########################################
+#Remove colonies with less than 50 people
+#########################################
+
+province_event = {
+
+	id =  20200
+
+	title = "EVTNAME20200"
+	desc = "EVTDESC20200"
+
+	trigger = {
+		is_overseas = yes
+		NOT = { citysize = 50 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 0.5
+			NOT = { citysize = 30 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20200"
+		native_size = 1
+		citysize = -200
+		owner = { prestige = -0.01 }
+		create_native = 1
+	}
+
+}
+
+#########################################
+#Reduce hostileness of natives
+#########################################
+
+province_event = {
+
+	id = 20201
+
+	title = "EVTNAME20201"
+	desc = "EVTDESC20201"
+
+	trigger = {
+		is_colony = yes
+		native_hostileness = 6
+		owner = { treasury = 50 }
+		OR = {
+			owner = { idea = ecumenism }
+			owner = { idea = humanist_tolerance }
+			owner = { idea = bill_of_rights }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 0.5
+			owner = { has_country_modifier = beneficial_neglect }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20201"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				owner = { NOT = { treasury = 60 } }
+			}
+		}
+		owner = { treasury = -50 }
+		native_hostileness = -2
+	}
+
+	option = {
+		name = "EVTOPTB20201"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#########################################
+#Colonist rushes precede seperatists
+#########################################
+
+province_event = {
+
+	id =  20202
+
+	title = "EVTNAME20202"
+	desc = "EVTDESC20202"
+
+	trigger = {
+		is_overseas = no
+		is_colony = no
+		citysize = 55000
+		year = 1685
+		NOT = { has_global_flag = colonial_seperatism }
+		owner = {
+			OR = {
+				the_carribean = { owned_by = THIS }
+				south_american_region = { owned_by = THIS }
+				central_american_region = { owned_by = THIS }
+				north_american_region = { owned_by = THIS }
+			}
+			capital_scope = {
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+
+		modifier = {
+			factor = 0.8
+			citysize = 250000
+		}
+		modifier = {
+			factor = 0.8
+			citysize = 450000
+		}
+		modifier = {
+			factor = 0.8
+			citysize = 650000
+		}
+		modifier = {
+			factor = 0.8
+			citysize = 850000
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20202"
+		citysize = -1200
+		owner = {
+			random_owned = {
+				limit = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					NOT = { citysize = 20000 }
+				}
+				citysize = 1000
+			}
+		}
+	}
+}
+
+province_event = {
+
+	id =  20203
+
+	title = "EVTNAME20202"
+	desc = "EVTDESC20203"
+
+	trigger = {
+		is_overseas = no
+		is_colony = no
+		citysize = 25000
+		year = 1675
+		NOT = { has_global_flag = colonial_seperatism }
+		owner = {
+			OR = {
+				the_carribean = { owned_by = THIS }
+				south_american_region = { owned_by = THIS }
+				central_american_region = { owned_by = THIS }
+				north_american_region = { owned_by = THIS }
+			}
+			capital_scope = {
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+			war_exhaustion = 6
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 14
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 16
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 20
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20203"
+		citysize = -1500
+		owner = {
+			random_owned = {
+				limit = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					NOT = { citysize = 20000 }
+				}
+				citysize = 1300
+			}
+			war_exhaustion = -0.02
+		}
+	}
+}

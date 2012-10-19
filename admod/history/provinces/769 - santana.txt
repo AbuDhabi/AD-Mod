@@ -1,0 +1,37 @@
+#769 - Santana
+
+culture = amazonian
+religion = inca_religion
+capital = "Santana"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+
+1516.1.23 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 390
+		culture = castillian
+		religion = catholic
+		trade_goods = gold
+	    } # Juan Díaz de Solís
+1519.1.1  = { discovered_by = POR } # Ferdinand Magellan
+1541.1.1  = { add_core = SPA }
+1550.1.1  = { citysize = 1050 }
+1600.1.1  = { citysize = 670 }
+1650.1.1  = { citysize = 1060 }
+1693.1.1  = {	capital = "Curitiba"
+		owner = POR
+		controller = POR
+		culture = portugese
+		citysize = 1300
+		remove_core = SPA
+	    }
+1700.1.1  = { citysize = 1850 }
+1718.1.1  = { add_core = POR }
+1750.1.1  = { citysize = 2100 }
+1800.1.1  = { citysize = 3200 }

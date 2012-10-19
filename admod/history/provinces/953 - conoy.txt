@@ -1,0 +1,54 @@
+#953 - Conoy
+
+culture = iroquis
+religion = spiritualism
+capital = "Conoy"
+trade_goods = unknown
+hre = no
+base_tax = 5
+manpower = 2
+native_size = 15
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = LEN
+
+#Black Death
+1399.10.11 = {	owner = LEN
+		controller = LEN
+		add_core = LEN
+		citysize = 3000
+		trade_goods = tobacco }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = LEN
+		citysize = 0
+		trade_goods = unknown }
+
+1607.1.1  = { discovered_by = ENG } # John Smith
+1615.1.1  = { discovered_by = FRA } # Étienne Brûlé
+1634.3.24 = {	owner = ENG
+		controller = ENG
+		culture = english
+	    	religion = protestant
+	    	capital = "St. Mary's city"
+		citysize = 358	
+		trade_goods = tobacco
+	    } # Founding of St. Mary's city
+1707.5.12 = { owner = GBR controller = GBR } 
+1721.1.1  = { add_core = GBR }
+1729.7.30 = { capital = "Baltimore" }
+1750.1.1  = { citysize = 1522 add_core = USA }
+1764.7.1  = {	culture = american
+		revolt_risk = 6
+	    } # Growing unrest
+1776.7.4  = {	owner = USA
+		controller = USA
+	    } # Declaration of independence
+1782.11.1 = {	remove_core = GBR 
+		revolt_risk = 0
+	    } # Preliminary articles of peace, the British recognized Amercian independence
+1790.1.1  = { capital = "Washington" }
+1800.1.1  = { citysize = 4180 }
+1800.5.14 = { decision = provincial_court_system }

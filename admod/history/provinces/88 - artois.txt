@@ -1,0 +1,95 @@
+# 88 Artois - Principal cities: Arras, Saint-Omer & Lille
+
+owner = BUR
+controller = BUR
+capital = "Arras"
+citysize = 35500
+culture = wallonian
+religion = catholic
+hre = no
+base_tax = 7
+trade_goods = cloth
+manpower = 3
+add_core = BUR
+add_core = FLA
+marketplace = yes
+fort1 = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BUR
+		controller = BUR
+		citysize = 35500 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = FLA
+		controller = FLA }
+
+#Historical Campaign
+1399.10.14 = {	owner = BUR
+		controller = BUR }
+
+1450.1.1   = { citysize = 37500 }
+1477.1.5   = { owner = FRA controller = FRA remove_core = BUR add_core = FRA } # Charles the Bold dies and Louis XII takes Artois
+1493.8.19  = { owner = HAB controller = HAB add_core = HAB } # Frederick III dies, Charles VII cedes Artois to Maximilian I von Habsburg
+1500.1.1   = { citysize = 49000 }
+1503.1.1   = { courthouse = yes }
+1515.1.1   = { fort2 = yes }
+1519.1.14  = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
+1529.8.3   = { remove_core = FRA } # 'Ladies Peace' (Damesvrede) of Cambrai: France renounces all claims
+1548.6.26  = { hre = yes } # Artois incorporated into the Holy Roman Empire
+1550.1.1   = { citysize = 53000 }
+1559.5.12  = { revolt_risk = 3 } # New bishoprics established in the Lowlands create an outrage
+1566.7.1   = { citysize = 51000 } # Famine after two harsh winters takes its toll
+1566.8.1   = { revolt_risk = 4 } # 'Beeldenstorm' at hand
+1566.8.10  = { revolt = { type = heretic_rebels size = 2 } controller = REB } # 'Beeldenstorm' also hits parts of Artois
+1567.1.8   = { revolt = {} controller = SPA } # Spain is back in control
+1569.1.1   = { revolt_risk = 7 } # The Duke of Alba reforms the taxation system ('tiende penning')
+1570.1.1   = { revolt_risk = 11 constable = yes } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1577.2.12  = { revolt_risk = 5 } # The 'Perpetual Edict' (Eeuwig Edict) is accepted by Don Juan
+1579.1.6   = { revolt_risk = 0 } # The Union of Arras is formed
+1600.1.1   = { citysize = 57000 }
+1610.1.1   = { capital = "Lille" } # Lille becomes more important than Arras
+1630.1.1   = { fort3 = yes }
+1635.1.1   = { controller = FRA } # French troops capture parts of the Southern Lowlands
+1648.1.30  = { controller = SPA } # Peace of Münster/Westphalia
+1650.1.1   = { add_core = FRA citysize = 66000 } # Chambers of Reunion
+1658.6.14  = { controller = FRA } # French troops capture most of the area
+1659.10.28 = { owner = FRA remove_core = SPA } # Peace of the Pyrennees
+1660.1.1   = { fort4 = yes }
+1670.10.15 = { fort5 = yes regimental_camp = yes } # Vauban's fort in Lille is finished, state of the art for its time, troops aimed at the Lowlands based there
+1684.1.1   = { culture = cosmopolitan_french }
+1700.1.1   = { citysize = 85000 }
+1730.1.1   = { tax_assessor = yes }
+1750.1.1   = { fort6 = yes citysize = 98000 } # Expansion of the forts
+1789.5.5   = { base_tax = 10 } # The General Estates
+1789.7.14  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # The storming of the Bastille
+1800.1.1   = { citysize = 98000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleu, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

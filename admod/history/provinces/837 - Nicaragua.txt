@@ -1,0 +1,34 @@
+#837 - Nicaragua
+
+culture = aztek
+religion = teotl
+capital = "Nicaragua"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 20
+native_ferocity = 2
+native_hostileness = 5
+discovered_by = MAY
+
+1502.1.1   = { discovered_by = CAS } # Christopher Columbus 
+1516.1.23  = { discovered_by = SPA }
+1523.1.1   = {	owner = SPA
+		controller = SPA
+		capital = "Managua"
+		culture = castillian
+		religion = catholic
+		citysize = 2995
+		trade_goods = coffee
+	     } # First permanent Spanish settlement 
+1548.1.1   = { add_core = SPA }
+1550.1.1   = { citysize = 3280 }
+1600.1.1   = { citysize = 1850 } 
+1610.1.1   = { citysize = 1336 } # Mombotombo volcano 
+1650.1.1   = { citysize = 2588 } 
+1700.1.1   = { citysize = 4340 } 
+1750.1.1   = { citysize = 5200 add_core = MEX } 
+1800.1.1   = { citysize = 7600 }
+1808.2.1   = { add_core = CAM } # France invades Spain
+1810.9.16  = { owner = MEX controller = SPA } # Mexican War of Independence

@@ -1,0 +1,28 @@
+#1027 - Hitachi
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Hitachi"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 15650
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 16100 }
+1467.5.20  = { revolt = { type = ikko_ikki size = 0 } controller = REB } # Onin war, anarchy follows
+1477.12.16 = { revolt = {} controller = FUJ }
+1500.1.1   = { citysize = 17420 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 19574 }
+1600.1.1   = { citysize = 21300 }
+1603.1.1   = { capital = "Mito" }
+1650.1.1   = { citysize = 22654 }
+1700.1.1   = { citysize = 24120 }
+1750.1.1   = { citysize = 25980 } 
+1800.1.1   = { citysize = 27100 }

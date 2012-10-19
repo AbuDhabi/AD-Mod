@@ -1,0 +1,61 @@
+#272 Lithuania
+
+owner = LIT
+controller = LIT
+capital = "Vilna"
+citysize = 14000
+culture = lithuanian
+religion = catholic
+trade_goods = grain
+hre = no
+base_tax = 7
+manpower = 5
+fort1 = yes
+add_core = LIT
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = LIT
+		controller = LIT
+		citysize = 14000 }
+
+#Shattered Europe
+1399.10.13 = {	religion = animism }
+
+#Historical
+1399.10.14 = {	religion = catholic }
+
+1450.1.1   = { citysize = 15800 }
+1500.1.1   = { marketplace = yes citysize = 18593 }
+1508.1.1   = { fort2 = yes }
+1543.1.1   = { revolt_risk = 3 } # Counter reformation
+1550.1.1   = { citysize = 21875 regimental_camp = yes }
+1569.7.1   = {	owner = POL
+		controller = POL
+		add_core = POL
+	     } # Union of Lublin
+1579.1.1   = { university = yes revolt_risk = 0 } # Vilnius university
+1600.1.1   = { courthouse = yes citysize = 25735 }
+1650.1.1   = { citysize = 30276 }
+1700.1.1   = { citysize = 35619 }
+1709.1.1   = { citysize = 31000 } # Horrible plague
+1750.1.1   = { citysize = 41905 }
+1791.6.1   = { revolt_risk = 3} # 3rd May constitution raised opposition
+1794.3.24  = { revolt_risk = 6 } # Kosciuszko uprising
+1794.11.16 = { revolt_risk = 0 }
+1795.10.24 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+	     } # Most of Lithuania are incorporated into the Russian empire
+1800.1.1   = { citysize = 49300 }
+1812.6.28  = { controller = RFR } # Occupied by French troops
+1812.12.10 = { controller = RUS }

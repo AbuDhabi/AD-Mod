@@ -1,0 +1,28 @@
+#1016 - Shikoku
+
+owner = TAC
+controller = TAC
+culture = yamato
+religion = shinto
+capital = "Shikoku"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 8630
+add_core = TAC
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 9100 }
+1500.1.1 = { citysize = 9500 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 11007 }
+1584.1.1 = { capital = "Nankoku" }
+1592.1.1 = { owner = MIN controller = MIN add_core = MIN }
+1600.1.1 = { citysize = 13480 fort2 = yes } # Kochi Castle
+1603.1.1 = { capital = "Kochi" }
+1650.1.1 = { citysize = 15300 }
+1700.1.1 = { citysize = 17560 }
+1750.1.1 = { citysize = 21480 }
+1800.1.1 = { citysize = 23100 }

@@ -1,0 +1,67 @@
+#297 - Bryansk
+
+owner = SMO
+controller = SMO
+culture = russian
+religion = orthodox 
+hre = no
+base_tax = 4
+trade_goods = grain
+manpower = 3
+capital = "Bryansk"
+citysize = 8450
+add_core = SMO
+discovered_by = western
+discovered_by = eastern
+discovered_by = GOL
+discovered_by = nomad_group
+discovered_by = SKA
+discovered_by = JOC
+
+1395.1.1  = { owner = LIT controller = LIT } # Vytautas seizes Smolensk while Yury is away
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = LIT
+		controller = LIT
+		citysize = 8450 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = SMO
+		controller = SMO
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = LIT
+		controller = REB
+		religion = orthodox
+		revolt = { type = nationalist_rebels size = 2 } } # Vytautas is defeated by the Golden Horde, rebel sentiment in Smolensk
+
+1401.1.1  = { revolt = {} owner = SMO controller = SMO } # Yury takes Smolensk back
+1404.1.1  = { owner = LIT controller = LIT } # Vytautas strikes back once more
+1450.1.1  = { citysize = 9200 add_core = LIT }
+1500.1.1  = { citysize = 10824 }
+1503.1.1  = { controller = MOS }
+1503.3.21 = { owner = MOS }
+1503.3.22 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	    }
+1550.1.1  = { citysize = 12734 remove_core = LIT }
+1567.1.1  = { fort1 = yes } # Defend the southern borders of Muscovy.
+1600.1.1  = { citysize = 14982 }
+1650.1.1  = { citysize = 17625 }
+1670.1.1  = { revolt_risk = 8 } # Stepan Razin
+1671.1.1  = { revolt_risk = 0 } # Razin is captured
+1700.1.1  = { citysize = 20736 }
+1750.1.1  = { citysize = 24395 }
+1773.1.1  = { revolt_risk = 5 } # Emelian Pugachev, Cossack insurrection.
+1774.9.14 = { revolt_risk = 0 } # Pugachev is captured.
+1779.1.1  = { fort2 = yes } # Almost entirely rebuilt.
+1780.1.1  = { marketplace = yes } # Became a large trade center.
+1800.1.1  = { citysize = 28700 }

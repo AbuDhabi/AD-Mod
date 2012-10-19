@@ -1,0 +1,15 @@
+#1825 - Aki
+
+owner = MIN
+controller = MIN
+culture = yamato
+religion = shinto
+capital = "Aki"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 6100
+add_core = MIN
+fort1 = yes
+discovered_by = chinese

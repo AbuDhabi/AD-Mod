@@ -1,0 +1,35 @@
+#848 - Tohancapan
+
+owner = ZAP
+controller = ZAP
+culture = zapotek
+religion = teotl
+capital = "Tohancapan"
+trade_goods = sugar
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 1670
+add_core = ZAP
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 1800 }
+1500.1.1  = { citysize = 1980 }
+1519.3.13 = { discovered_by = SPA } # Hernán Cortés
+1522.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 2150
+		culture = castillian
+		religion = catholic
+	    } # Estimated
+1547.1.1  = { add_core = SPA }
+1550.1.1  = { citysize = 2546 }
+1600.1.1  = { citysize = 3187 }
+1636.1.1  = { fort1 = yes }
+1650.1.1  = { citysize = 3650 }
+1700.1.1  = { citysize = 4360 }
+1750.1.1  = { citysize = 4860 add_core = MEX }
+1800.1.1  = { citysize = 5640 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

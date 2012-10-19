@@ -1,0 +1,15 @@
+#1827 - Bitchu
+
+owner = MIN
+controller = MIN
+culture = yamato
+religion = shinto
+capital = "Bitchu"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 8390
+add_core = MIN
+fort1 = yes
+discovered_by = chinese

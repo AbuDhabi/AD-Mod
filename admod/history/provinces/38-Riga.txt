@@ -1,0 +1,51 @@
+#Riga Bight, incl. the city of Riga, and Dünamünde.
+
+owner = RIG
+controller = RIG
+add_core = RIG
+culture = prussian
+religion = catholic
+hre = yes
+base_tax = 6
+trade_goods = naval_supplies
+manpower = 1
+capital = "Riga"
+citysize = 2000 # Estimated
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = RIG
+		controller = RIG
+		citysize = 2000 }
+
+#Shattered Europe
+1399.10.13 = {	religion = animism }
+
+#Historical
+1399.10.14 = {	religion = catholic }
+
+1450.1.1   = { citysize = 3000 }
+1500.1.1   = { citysize = 3500 }
+1522.1.1   = { religion = protestant} # Unknown date
+1522.1.1   = { hre = no } # Unknown date
+1540.1.1   = { marketplace = yes }
+1550.1.1   = { citysize = 4000 }
+1581.1.1   = { owner = POL controller = POL add_core = POL } # Unknown date
+1600.1.1   = { citysize = 4500 }
+1621.9.15  = { owner = SWE controller = SWE } # 2nd Polish War-Captured by GIIA
+1629.10.16 = { add_core = SWE remove_core = POL } # The Armistice of Altmark
+1650.1.1   = { citysize = 8550 }
+1700.1.1   = { citysize = 12350 }
+1710.7.1   = { controller = RUS } # The Great Nordic War-Captured Riga
+1721.8.30  = { owner = RUS add_core = RUS remove_core = SWE } # The Peace of Nystad
+1750.1.1   = { citysize = 16000 }
+1800.1.1   = { citysize = 30000 }

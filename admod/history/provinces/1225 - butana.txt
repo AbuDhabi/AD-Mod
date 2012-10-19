@@ -1,0 +1,60 @@
+#1225 - Butana
+
+culture = nubian 
+religion = orthodox
+capital = "Soba"
+native_size = 50
+native_ferocity = 4.5
+native_hostileness = 9 
+manpower = 2
+trade_goods = unknown
+hre = no
+base_tax = 1
+discovered_by = ETH
+discovered_by = NUB
+
+#Black Death
+1399.10.11 = {	owner = NUB
+		controller = NUB
+		add_core = NUB
+		citysize = 5000
+		trade_goods = ivory }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = NUB
+		citysize = 0
+		trade_goods = unknown }
+
+1470.1.1 = { capital = "Qarri" } #Establishment of the Abdallabi state
+1503.1.1 = {	owner = NUB
+	   	controller = NUB
+	   	add_core = NUB
+		discovered_by = NUB
+		citysize = 15000
+		trade_goods = ivory
+	   }
+1528.1.1 = { religion = sunni } #Spread of Islam leads to shift in religion affiliation of region
+1550.1.1 = { citysize = 7500 discovered_by = TUR }
+1564.1.1 = { revolt_risk = 8 } #Shaykh Ajib launched revolt against Funj state
+1565.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } #Funj driven out
+1566.1.1 = { revolt = {} controller = NUB } #Shaykh Ajib gains dominance over Funj sultanate
+1583.1.1 = { revolt_risk = 8 } #Dakin moves to restor Funj authority
+1584.1.1 = { revolt_risk = 0 } #Dakin and Ajib reach agreement to end conflict
+1600.1.1 = { citysize = 8500 }
+1611.1.1 = { revolt_risk = 8 } #Ajib revolts again against Funj
+1612.1.1 = { revolt_risk = 2 } #Funj destroy Ajib at Karkoj
+1650.1.1 = { citysize = 9500 }
+1700.1.1 = { citysize = 10000 }
+1706.1.1 = { revolt_risk = 6 } #Badi III faces revolt over development of slave army at aristocrats expense
+1709.1.1 = { revolt_risk = 0 } #Badi III faces revolt over development of slave army at aristocrats expense
+1718.1.1 = { revolt_risk = 6 } #Unsa III comes into conflict with aristocrats
+1720.1.1 = { revolt_risk = 0 } #Unsa III deposed, new Funj dynasty set up by aristocrats
+1744.1.1 = { revolt_risk = 6 } #Ethiopian invasion under Iyasu II
+1745.1.1 = { revolt_risk = 0 } #Ethiopian invasion defeated
+1750.1.1 = { citysize = 10500 }
+1756.1.1 = { revolt_risk = 4 } #Badi IV comes into conflict with aristocrats over new slave army plan
+1761.1.1 = { revolt_risk = 9 } #Badi IV persecutes aristocrats who challenge his authority
+1762.1.1 = { revolt_risk = 0 } #Badi IV deposed by Muhammad Abu Likaylik
+1800.1.1 = { citysize = 11000 }

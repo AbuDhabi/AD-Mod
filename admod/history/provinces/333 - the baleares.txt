@@ -1,0 +1,56 @@
+#333 - The Baleares
+
+owner = ARA		# Alfons V of Aragon
+controller = ARA
+add_core = ARA
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 4 
+trade_goods = fish
+manpower = 1 
+fort1 = yes
+capital = "Palma" 
+citysize = 4000
+marketplace = yes # Mediterranean trade
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = MLR
+		controller = MLR
+		add_core = MLR
+		remove_core = ARA
+		religion = sunni
+		culture = zaragozi }
+
+#Historical Campaign
+1399.10.14 = {	owner = ARA
+		controller = ARA
+		add_core = ARA
+		remove_core = MLR
+		religion = catholic
+		culture = catalan }
+
+1450.1.1  = { citysize = 5000 }
+1462.1.1  = { revolt_risk = 2 } # Remença peasant revolt, in parallel with the Catalan civil war.
+1472.1.1  = { revolt_risk = 0 } # End of the First Remença revolt
+1500.1.1  = { citysize = 10554 }
+1516.1.23 = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	    } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1521.3.16 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The Germanies movement reaches the archipelago, the viceroy is deposed by the revolters
+1523.3.8  = { revolt = {} controller = SPA } # The royal army retakes the city of Palma
+1550.1.1  = { citysize = 17400 }
+1600.1.1  = { citysize = 23000 }
+1650.1.1  = { citysize = 24000 }
+1700.1.1  = { citysize = 25370 }
+1705.10.9 = { controller = HAB } # Balearic isles side with the Austrian cause
+1713.4.11 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # The pro-Austrian forces in Mallorca and Eïvissa ignore the Treaty of Utrecht.
+1713.7.13 = { revolt = {} remove_core = ARA }
+1714.9.14 = { controller = SPA } # Mallorca and Eïvissa surrender shortly after the fall of Barcelona
+1750.1.1  = { citysize = 27800 }
+1789.1.1  = { citysize = 29000 }

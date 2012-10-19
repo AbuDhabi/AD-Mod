@@ -1,0 +1,120 @@
+bookmark =
+{
+
+	name = "BLD_NAME"
+	desc = "BLD_DESC"
+	date = 1399.10.11
+
+	country = MAL
+	country = TUR
+	country = GOL
+	country = MNG
+	country = BEI
+	country = INC
+	country = ANI
+}
+
+bookmark =
+{
+
+	name = "KOC_NAME"
+	desc = "KOC_DESC"
+	date = 1399.10.12
+
+	country = KOJ
+	country = ALX
+	country = KNI
+	country = BYZ
+	country = PAP
+	country = TOU
+}
+
+bookmark =
+{
+
+	name = "MSC_NAME"
+	desc = "MSC_DESC"
+	date = 1399.10.13
+
+	country = BDJ
+	country = SEV
+	country = ZAR
+	country = LEI
+	country = WLS
+	country = LIT
+	country = QAS
+}
+
+bookmark =
+{
+	name = "GC_NAME_MM"
+	desc = "GC_DESC"
+	date = 1399.10.14
+	
+	country = CAS
+	country = ENG
+	country = FRA
+	country = TUR
+	country = HAB
+	country = POR
+	country = MOS
+}
+bookmark =
+{
+	name = "NEWWORLD_NAME"
+	desc = "NEWWORLD_DESC"
+	date = 1492.1.1
+	
+	country = CAS
+	country = ENG
+	country = FRA
+	country = POR
+}
+
+bookmark =
+{
+	name = "LEAGUE_OF_CAMBRAI_NAME"
+	desc = "LEAGUE_OF_CAMBRAI_DESC"
+	date = 1508.12.10
+	
+	country = FRA
+	country = PAP
+	country = VEN
+}
+
+bookmark =
+{
+	name = "EIGHTY_YEARS_WAR_NAME"
+	desc = "EIGHTY_YEARS_WAR_DESC"
+	date = 1579.1.23
+	
+	country = SPA
+	country = NED
+}
+
+bookmark =
+{
+	name = "THIRTY_YEARS_WAR_NAME"
+	desc = "THIRTY_YEARS_WAR_DESC"
+	date = 1618.5.22
+	
+	country = SAV
+	country = PAL
+	country = BRU
+	country = FRA
+	country = HAB
+	country = BAV
+}
+
+bookmark =
+{
+	name = "SPANISH_SUCCESSION_NAME"
+	desc = "SPANISH_SUCCESSION_DESC"
+	date = 1701.9.1
+	
+	country = SPA
+	country = FRA
+	country = ENG
+	country = NED
+	country = HAB
+}

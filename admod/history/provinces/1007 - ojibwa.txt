@@ -1,0 +1,51 @@
+#1007 - Ojibwa
+
+culture = cree
+religion = spiritualism
+capital = "Ojibwa"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 15
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = ANI
+
+#Black Death
+1399.10.11 = {	owner = ANI
+		controller = ANI
+		add_core = ANI
+		citysize = 2000
+		trade_goods = fur }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = ANI
+		citysize = 0
+		trade_goods = unknown }
+
+1609.1.1  = { discovered_by = FRA }
+1611.1.1  = { discovered_by = ENG }
+1717.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+		capital = "Fort Kaministiquia"
+		citysize = 100
+	    }
+1742.1.1  = { add_core = FRA }
+1763.2.10 = {	discovered_by = GBR
+		owner = GBR
+		controller = GBR
+		remove_core = FRA
+		citysize = 400
+		culture = english
+	    	religion = protestant
+			trade_goods = fur
+	    } # Treaty of Paris
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1788.2.10 = { add_core = GBR }
+1791.1.1  = { add_core = CAN remove_core = QUE } # The Constitutional Act, Quebec is split into upper & lower Canada
+1800.1.1  = { citysize = 1505 }

@@ -1,0 +1,4 @@
+discovered_by = ZIM
+discovered_by = ZAN
+discovered_by = ADA
+discovered_by = ETH

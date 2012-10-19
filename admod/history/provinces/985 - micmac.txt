@@ -1,0 +1,36 @@
+#985 - Micmac
+
+culture = inuit
+religion = spiritualism
+capital = "Micmac"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 15
+native_ferocity = 2
+native_hostileness = 9
+
+1534.1.1  = { discovered_by = FRA } # Jacques Cartier
+1631.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 300
+		culture = cosmopolitan_french
+		religion = catholic
+		trade_goods = fish
+	    } # Construction of Fort la Tour
+1650.1.1  = { citysize = 1000 }
+1656.1.1  = { add_core = FRA }
+1692.1.1  = { fort1 = yes } # Fort Nashwaak
+1700.1.1  = { citysize = 1200 }
+1707.5.12 = { discovered_by = GBR } 
+1755.1.1  = { citysize = 1450 } # The settlement is burned
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris
+1785.4.25 = { capital = "Fredericton" }
+1788.2.10 = { add_core = GBR }
+1800.1.1  = { citysize = 1950 }

@@ -1,0 +1,37 @@
+#961 - Oneida
+
+owner = IRO
+controller = IRO
+culture = iroquis
+religion = spiritualism
+capital = "Oneida"
+trade_goods = fur
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1800
+add_core = IRO
+discovered_by = IRO
+discovered_by = HUR
+discovered_by = LEN
+
+1450.1.1  = { citysize = 2320 }
+1500.1.1  = { citysize = 2600 }
+1550.1.1  = { citysize = 3070 }
+1600.1.1  = { citysize = 4290 }
+1615.1.1  = { discovered_by = FRA } # Samuel de Champlain
+1650.1.1  = { citysize = 5698 }
+1700.1.1  = { citysize = 5935 }
+1722.1.1  = { discovered_by = GBR }
+1750.1.1  = { citysize = 6561 }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+	    }
+1784.1.1  = { citysize = 7746 } # Settlements began shortly after the American revolution
+1800.1.1  = { citysize = 7970 }

@@ -1,0 +1,49 @@
+#819 - Guayaquil
+
+culture = guajiro
+religion = inca_religion
+capital = "Guayaquil"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 2
+native_size = 5
+native_ferocity = 1
+native_hostileness = 3
+discovered_by = INC
+discovered_by = CHM
+
+#Black Death
+1399.10.11 = {	owner = CHM
+		controller = CHM
+		add_core = CHM
+		citysize = 1000
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = CHM
+		citysize = 0
+		trade_goods = unknown }
+
+1533.1.1   = { discovered_by = SPA } # Sebastián de Benalcázar
+1535.1.1   = {	owner = SPA
+		controller = SPA
+		citysize = 280
+		culture = castillian
+		religion = catholic
+	     } # Founded by Sebastián de Benalcázar
+1550.1.1   = {	add_core = SPA
+		citysize = 1260
+		trade_goods = grain
+	     }
+1600.1.1   = { citysize = 3210 }
+1650.1.1   = { citysize = 4600 }
+1700.1.1   = { citysize = 8630 }
+1750.1.1   = { citysize = 10900 add_core = COL }
+1800.1.1   = { citysize = 14000 }
+1819.12.17 = {	owner = COL
+		controller = COL
+		remove_core = SPA
+	     } # The establishment of Gran Colombia

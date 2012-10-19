@@ -1,0 +1,53 @@
+#1859 - Torun
+
+owner = POL
+controller = POL
+capital = "Torun"
+citysize = 1700
+culture = polish
+religion = catholic
+trade_goods = cloth
+hre = no
+base_tax = 3
+manpower = 2
+fort1 = yes
+add_core = POL
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = POL
+		controller = POL
+		citysize = 1700 }
+
+1450.1.1   = { citysize = 1900 }
+1500.1.1   = { citysize = 2074 }
+1550.1.1   = { citysize = 1600 } # Fires, epidemics...
+1580.1.1   = { marketplace = yes }
+1588.1.1   = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war, Polish succession
+1589.1.1   = { revolt = {} controller = POL } # Coronation of Sigismund III
+1600.1.1   = { citysize = 2871 }
+1650.1.1   = { citysize = 3378 }
+1655.1.1   = { controller = SWE } # The Deluge
+1660.1.1   = { controller = POL }
+1700.1.1   = { citysize = 3974 }
+1750.1.1   = { citysize = 4675 }
+1793.1.23  = { controller = PRU owner = PRU add_core = PRU } # Second partition
+1800.1.1   = { citysize = 5500 }
+1806.11.3  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Polish uprising instigated by Napoleon
+1807.7.9   = {	revolt = {}
+		owner = POL
+		controller = POL
+	     	remove_core = PRU
+	     } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
+1812.12.12 = { controller = RUS }
+1814.4.11  = {	owner = RUS
+		add_core = RUS
+	     } # Napoleon abdicates. Congress Poland, under Russian control after the Congress of Vienna

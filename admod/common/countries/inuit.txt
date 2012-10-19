@@ -1,0 +1,88 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 48  224  214 } 
+
+historical_ideas = {
+	quest_for_the_new_world
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Akutsiarq #0" = -20
+	"Attuiock #0" = 20
+	"Enuk #0" = 20
+	"Goo #0" = 20
+	"Ipeelee #0" = 20
+	"Kiviaq #0" = 20
+	"Mikak #0" = 20
+	"Nakasuk #0" = 20
+	"Ouibignaro #0" = 20
+	"Tagaq #0" = -20
+	"Tooklavina #0" = 20
+	"Umik #0" = 20
+	"Uvavnuk #0" = -20
+	"Karlak #0" = 10
+	"Orpingalik #0" = 10
+	"Acoutsina #0" = -5
+	"Alootook #0" = 0
+	"Anarsaq #0" = 0
+	"Angaangaq #0" = 0
+	"Aua #0" = 0
+	"Caubvick #0" = 0
+	"Enoki #0" = 0
+	"Hallow #0" = 0
+	"Minik #0" = 0
+	"Kenojauk #0" = 0
+	"Kuupik #0" = 0
+	"Natar #0" = 0
+	"Ootek #0" = 0
+	"Pitseolak #0" = 0
+	"Qisuk #0" = 0
+	"Ramy #0" = 0
+	"Tivi #0" = 0
+}
+
+leader_names = {
+	Aariak Aglukark Aglukkaq Akesuk Allakariallak Anawak Arvaluk Aupilaarjuk
+	Cournoyea
+	Enuaraq Etok Evaloarjuk
+	Iqaqrialu Irqittuq
+	Kattuk Kusugak
+	Meekitjuk
+	Qappik
+	Tapardjuk Tiktaalaaq Tookoome Tungilik
+}
+
+ship_names = {
+	Aariak Aglukark Aglukkaq Akesuk Allakariallak Anawak Arvaluk Aupilaarjuk
+	Cournoyea
+	Enuaraq Etok Evaloarjuk
+	Iqaqrialu Irqittuq
+	Kattuk Kusugak
+	Meekitjuk
+	Qappik
+	Tapardjuk Tiktaalaaq Tookoome Tungilik
+}

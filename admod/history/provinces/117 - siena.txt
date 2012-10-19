@@ -1,0 +1,75 @@
+#117 - Siena
+
+owner = SIE
+controller = SIE
+culture = lombard 
+religion = catholic 
+hre = yes 
+base_tax = 8        
+trade_goods = cloth
+manpower = 4        
+fort1 = yes 
+capital = "Siena" 
+citysize = 12000 # Estimated 
+university = yes # Founded 1240
+add_core = SIE
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1390.1.1   = { owner = SIE controller = SIE }
+1399.1.1   = { revolt_risk = 3 owner = MLO controller = MLO } # The city's seigniory given to Gian Galeazzo, Visconti of Milan
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = MLO
+		controller = MLO
+		citysize = 12000 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = SIE
+		controller = SIE }
+
+#Historical Campaign
+1399.10.14 = {	owner = MLO
+		controller = MLO }
+
+1404.1.1   = { revolt_risk = 0 owner = SIE controller = SIE } # Visconti is driven out
+1450.1.1   = { citysize = 13000 }
+1500.1.1   = { citysize = 15000 } 
+1531.1.1   = { controller = SPA owner = SPA add_core = SPA }
+1550.1.1   = { citysize = 10000 } 
+1552.1.1   = { controller = FRA owner = FRA add_core = FRA }
+1555.1.1   = { controller = SPA owner = SPA remove_core = FRA }
+1557.1.1   = {	controller = TUS
+		owner = TUS
+		add_core = TUS
+		remove_core = SPA
+	     }
+1600.1.1   = { citysize = 19000 marketplace = yes } 
+1650.1.1   = { citysize = 19000 } 
+1700.1.1   = { citysize = 19000 } 
+1750.1.1   = { citysize = 15000 add_core = ITA } 
+1800.1.1   = { citysize = 16000 } 
+1801.2.9   = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+	     } # The Treaty of Lunéville
+1801.3.21  = {	owner = ETR
+		controller = ETR
+		add_core = ETR
+	     } # The Kingdom of Etruria
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1807.12.10 = {	owner = RFR
+		controller = RFR
+		remove_core = ETR
+	     } # Etruria is annexed to France
+1814.4.11   = {	owner = TUS
+		controller = TUS
+		remove_core = RFR
+	     } # Treaty of Fontainebleu, Napoleon abdicates and Tuscany is restored

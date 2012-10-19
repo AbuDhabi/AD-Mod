@@ -1,0 +1,25 @@
+#1187 - Urungwe
+
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+culture = shona
+religion = bantu_rel
+capital = "Matarira"
+citysize = 5000
+manpower = 2
+trade_goods = ivory
+hre = no
+base_tax = 2
+discovered_by = ZIM
+discovered_by = ZAN
+
+1450.1.1 = { citysize = 6000 }
+1605.1.1 = { revolt_risk = 7 } # Matuzvianye rebels against Gatsi Rusere, sparking civil war
+1606.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Matuzvianye's forces seize control
+1610.1.1 = { revolt = {} controller = ZIM } # Mutapa restore control with Portuguese help
+# 1608.1.1 - Portuguese tradepost 
+1610.1.1 = { capital = "Dambarere" } # Development of new trade center based around Portuguese feira
+1693.1.1 = { revolt_risk = 7 } # Rozvi invade region to drive out Portuguese and establish dominance 
+1694.1.1 = { revolt_risk = 0 } # Rozvi gain control of region
+# 1694.1.1 - Portuguese tradepost abandoned in wake of Rozvi hostility

@@ -1,0 +1,665 @@
+objectTypes = {
+	
+	EMFXActorType = {
+		name = "Flag"
+		actorfile = "gfx\anims\flag.xac"
+		
+		idle   = "gfx\anims\flag_anim.xsm"
+		scale = 1.5
+	}
+	
+	#EMFXActorType = {
+	#	name = "Flag"
+	#	actorfile = "gfx\anims\jap_flag.xac"
+	#	
+	#	idle   = "gfx\anims\jap_flag_anim.xsm"
+	#	scale = 1.5
+	#}
+	
+	EMFXActorType = {
+		name = "cot"
+		actorfile = "gfx\anims\Cot.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "trade_wind_arrow"
+		actorfile = "gfx\anims\Arrow.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "harbour_shipyard"
+		actorfile = "gfx\anims\Navalyard_Empty.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.7
+	}
+	
+	EMFXActorType = {
+		name = "harbour_shipyard_ships"
+		actorfile = "gfx\anims\Navalyard_Full.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.7
+	}
+	
+	EMFXActorType = {
+		name = "harbour"
+		actorfile = "gfx\anims\Port_Empty.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "harbour_ships"
+		actorfile = "gfx\anims\Port_Full.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+		EMFXActorType = {
+		name = "harbour_blockade"
+		actorfile = "gfx\anims\Port_Blockade.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "siege"
+		actorfile = "gfx\anims\Siege.xac"
+		
+		idle   = "gfx\anims\Siege.xsm"
+		
+		scale = 0.7
+	}
+	
+	EMFXActorType = {
+		name = "build_army"
+		actorfile = "gfx\anims\Build_Army.xac"
+		
+		idle   = "gfx\anims\Build_Army.xsm"
+		
+		scale = 2.2
+	}
+	
+	EMFXActorType = {
+		name = "build_structure"
+		actorfile = "gfx\anims\Build_Structure.xac"
+		
+		idle   = "gfx\anims\Build_Structure.xsm"
+		
+		scale = 2.0
+	}
+	
+	EMFXActorType = {
+		name = "build_ship"
+		actorfile = "gfx\anims\Build_Ship.xac"
+		
+		idle   = "gfx\anims\Build_Ship.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "build_colony"
+		actorfile = "gfx\anims\Build_Colony.xac"
+		
+		idle   = "gfx\anims\Build_Colony.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "colony_cart"
+		actorfile = "gfx\anims\Colony_Cart.xac"
+		
+		idle   = "gfx\anims\Colony_Cart.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "colony_ship"
+		actorfile = "gfx\anims\Colony_Ship.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "taoic_missionary"
+		actorfile = "gfx\anims\Asian_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "dharmic_missionary"
+		actorfile = "gfx\anims\Asian_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "muslim_missionary"
+		actorfile = "gfx\anims\Eastern_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "christian_missionary"
+		actorfile = "gfx\anims\Latin_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "abrahamic_missionary"
+		actorfile = "gfx\anims\Eastern_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+
+	EMFXActorType = {
+		name = "none_missionary"
+		actorfile = "gfx\anims\Latin_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "old_pagan_missionary"
+		actorfile = "gfx\anims\Asian_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "american_religion_missionary"
+		actorfile = "gfx\anims\Pagan_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "african_religion_missionary"
+		actorfile = "gfx\anims\Pagan_Missionary.xac"
+		
+		idle   = "gfx\anims\Missionary_Animation.xsm"
+		
+		scale = 1.8
+	}
+	
+		EMFXActorType = {
+		name = "capital2"
+		actorfile = "gfx\anims\Capital.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+		EMFXActorType = {
+		name = "nationalfocus2"
+		actorfile = "gfx\anims\National_Focus.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 3.0
+	}
+	
+	EMFXActorType = {
+		name = "City_africangfx_0"
+		actorfile = "gfx\anims\City_African_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_africangfx_1"
+		actorfile = "gfx\anims\City_African_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_africangfx_2"
+		actorfile = "gfx\anims\City_African_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_africangfx_3"
+		actorfile = "gfx\anims\City_African_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "City_chinesegfx_0"
+		actorfile = "gfx\anims\City_Asian_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_chinesegfx_1"
+		actorfile = "gfx\anims\City_Asian_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_chinesegfx_2"
+		actorfile = "gfx\anims\City_Asian_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_chinesegfx_3"
+		actorfile = "gfx\anims\City_Asian_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "City_easterngfx_0"
+		actorfile = "gfx\anims\City_Eastern_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_easterngfx_1"
+		actorfile = "gfx\anims\City_Eastern_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_easterngfx_2"
+		actorfile = "gfx\anims\City_Eastern_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_easterngfx_3"
+		actorfile = "gfx\anims\City_Eastern_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_latingfx_0"
+		actorfile = "gfx\anims\City_Western_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_latingfx_1"
+		actorfile = "gfx\anims\City_Western_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_latingfx_2"
+		actorfile = "gfx\anims\City_Western_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_latingfx_3"
+		actorfile = "gfx\anims\City_Western_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_indiangfx_0"
+		actorfile = "gfx\anims\City_Hindu_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_indiangfx_1"
+		actorfile = "gfx\anims\City_Hindu_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_indiangfx_2"
+		actorfile = "gfx\anims\City_Hindu_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_indiangfx_3"
+		actorfile = "gfx\anims\City_Hindu_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_muslimgfx_0"
+		actorfile = "gfx\anims\City_Muslim_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_muslimgfx_1"
+		actorfile = "gfx\anims\City_Muslim_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_muslimgfx_2"
+		actorfile = "gfx\anims\City_Muslim_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_muslimgfx_3"
+		actorfile = "gfx\anims\City_Muslim_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+
+	EMFXActorType = {
+		name = "City_northamericagfx_0"
+		actorfile = "gfx\anims\City_NA_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_northamericagfx_1"
+		actorfile = "gfx\anims\City_NA_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_northamericagfx_2"
+		actorfile = "gfx\anims\City_NA_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_northamericagfx_3"
+		actorfile = "gfx\anims\City_NA_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}	
+	
+	EMFXActorType = {
+		name = "City_southamericagfx_0"
+		actorfile = "gfx\anims\City_SA_00.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_southamericagfx_1"
+		actorfile = "gfx\anims\City_SA_01.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_southamericagfx_2"
+		actorfile = "gfx\anims\City_SA_02.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "City_southamericagfx_3"
+		actorfile = "gfx\anims\City_SA_03.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 1.0
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_farm"
+		actorfile = "gfx\anims\Manu_Farmestate.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_textile"
+		actorfile = "gfx\anims\Manu_TextileFactory.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_fine_arts_academy"
+		actorfile = "gfx\anims\Manu_FineartsAcadamy.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_plantation"
+		actorfile = "gfx\anims\Manu_Plantation.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_refinery"
+		actorfile = "gfx\anims\Manu_Refinery.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.65
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_trading"
+		actorfile = "gfx\anims\Manu_TradeCompany.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.5
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_university"
+		actorfile = "gfx\anims\Manu_University.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.6
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_weapons"
+		actorfile = "gfx\anims\Manu_WeaponFactory.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.17
+	}
+	
+	EMFXActorType = {
+		name = "manufactory_wharf"
+		actorfile = "gfx\anims\Manu_Wharf.xac"
+		
+		idle   = "gfx\anims\Static.xsm"
+		use_animation = no
+		
+		scale = 0.5
+	}
+
+	
+	
+}	

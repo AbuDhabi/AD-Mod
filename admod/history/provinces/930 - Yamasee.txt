@@ -1,0 +1,37 @@
+#930 - Yamasee
+
+owner = CRE
+controller = CRE
+culture = creek
+religion = spiritualism
+capital = "Yamasee"
+trade_goods = cotton
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1000
+add_core = CRE
+discovered_by = CRE
+discovered_by = CHE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 1300 }
+1500.1.1  = { citysize = 1570 }
+1526.1.1  = { discovered_by = FRA }
+1528.10.1 = { discovered_by = SPA } # Cabeza de Vaca
+1550.1.1  = { citysize = 2314 }
+1600.1.1  = { citysize = 3400 }
+1650.1.1  = { citysize = 4215 }
+1700.1.1  = { citysize = 5570 }
+1750.1.1  = { citysize = 5922 }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+	    } # Part of British Georgia after the Treaty of Paris
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+	    } # Treaty of Paris
+1800.1.1  = { citysize = 6200 }

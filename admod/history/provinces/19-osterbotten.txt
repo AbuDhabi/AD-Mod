@@ -1,0 +1,59 @@
+#Österbotten, down to Vasa.
+
+owner = SWE
+controller = SWE
+add_core = SWE
+add_core = FIN
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1
+trade_goods = fur
+manpower = 1
+capital = "Korsholm"
+citysize = 150 # Estimated
+discovered_by = eastern
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SWE
+		controller = SWE
+		citysize = 150 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = FIN
+		controller = FIN
+		remove_core = SWE
+		religion = shamanism }
+
+#Historical Campaign
+1399.10.14 = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		religion = catholic }
+
+1450.1.1  = { citysize = 200 }
+1500.1.1  = { citysize = 450 }
+# 1520.3.6  = { owner = DAN controller = DAN } # The Council accept Christian II as King
+# 1523.9.15 = { owner = SWE controller = SWE } # Liberated by Ivar and Erik Fleming and joins Gustav I Wasa
+1527.6.1  = { religion = protestant}
+1598.8.1  = { controller = POL } # Sigismund tries to reconquer his crown
+1599.7.15 = { controller = SWE } # Duke Karl get it back
+1600.1.1  = { citysize = 980 }
+1606.1.1  = { capital = "Vasa" } # Unknown date
+1650.1.1  = { trade_goods = naval_supplies citysize = 1250 } # Estimated Date
+1700.1.1  = { citysize = 1570 }
+1742.11.5 = { controller = RUS } # The War of the Hats-Estimated date
+1743.8.7  = { controller = SWE } # The Peace of Åbo
+1750.1.1  = { citysize = 1900 }
+1800.1.1  = { citysize = 2440 }
+1808.9.14 = { controller = RUS } # The Swedish forces are defeated at the battle Oravais
+1809.9.17 = {	owner = RUS
+		add_core = RUS
+		remove_core = SWE
+	     } # Treaty of Fredrikshamn

@@ -1,0 +1,173 @@
+country_decisions = {
+
+	imperial_administration = {
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+				technology_group = mid_east
+				technology_group = far_east_1
+				technology_group = far_east_2
+				technology_group = new_world_2
+			}
+			OR = {
+				government = feudal_monarchy
+				government = despotic_monarchy
+			}
+		}
+		allow =  {
+			stability = 2
+			num_of_cities = 30
+			prestige = 0.15
+			war = no 
+			is_subject = false
+		}
+	  	effect = {
+			government = imperial_government
+			stability = -3
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				religion = catholic
+			}
+			modifier = {
+				factor = 0
+				religion = protestant
+			}
+			modifier = {
+				factor = 0
+				religion = reformed
+			}
+		}
+	}
+	
+	#plutocratic_administration = {
+	
+	formalize_separation_of_powers = {
+		potential = {
+			government = constitutional_monarchy
+			NOT = {
+				has_country_modifier = separation_of_powers
+			}
+		}
+		
+		allow = {
+			stability = 2
+			advisor = statesman
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "separation_of_powers"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	go_cult_of_reason = {
+		potential = {
+			government = revolutionary_republic
+			NOT = {
+				has_country_modifier = cult_of_reason
+			}
+		}
+		
+		allow = {
+			NOT = {
+				stability = -1
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "cult_of_reason"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	imperial_administration2 = {
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+				technology_group = mid_east
+				technology_group = far_east_1
+				technology_group = far_east_2
+				technology_group = new_world_2
+			}
+			government = imperial_government
+			government_tech = 19
+		}
+		allow =  {
+			stability = 2
+			num_of_cities = 40
+			prestige = 0.2
+			war = no 
+			is_subject = false
+		}
+	 	effect = {
+			government = imperial_government2
+			stability = -2
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	imperial_administration3 = {
+		potential = {
+			government = imperial_government2
+			government_tech = 32
+		}
+		allow =  {
+			stability = 2
+			num_of_cities = 50
+			prestige = 0.25
+			war = no 
+			is_subject = false
+		}
+	  	effect = {
+			government = imperial_government3
+			stability = -1
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	establish_a_parliament = {
+		potential = {
+			government = imperial_government2
+			government_tech = 32
+		}
+		allow = {
+			stability = 2
+			war = no
+			is_subject = false
+		}
+		effect = {
+			government = constitutional_monarchy
+			stability = 1
+			badboy = -5
+		}
+	}
+}

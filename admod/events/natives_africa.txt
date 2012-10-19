@@ -1,0 +1,720 @@
+#events 21100-21199
+#####################################
+# Tuareg
+#####################################
+province_event = {
+
+	id = 21101
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1110	# Rio de Oro
+			province_id = 1111	# Arguin
+			province_id = 1115	# Brakna
+			province_id = 1127	# Tuat
+			province_id = 1128	# Taodeni
+			province_id = 1129	# Azawadd
+		}
+		AND = {
+			NOT = { culture_group = african }
+			NOT = { culture_group = turko_semitic }
+		}
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = tuareg
+		citysize = 500
+	}
+}
+
+#####################################
+# Senegambian
+#####################################
+province_event = {
+
+	id = 21102
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1112	# Trarza
+			province_id = 1113	# Cayor
+			province_id = 1114	# Gabu
+			province_id = 1116	# Wolof
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = senegambian
+		citysize = 500
+	}
+}
+
+#####################################
+# Dyola
+#####################################
+province_event = {
+
+	id = 21103
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1118	# Sierra Leone
+			province_id = 1119	# Grain Coast
+			province_id = 1122	# Konian
+			province_id = 1125	# Worodugu
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = dyola
+		citysize = 500
+	}
+}
+
+#####################################
+# Nubian
+#####################################
+province_event = {
+
+	id = 21104
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1216	# Dar Nuba
+			province_id = 1217	# Fazughli
+			province_id = 1219	# Kordofan
+			province_id = 1220	# Dar Ja'al
+			province_id = 1221	# Taqali
+			province_id = 1222	# Gezira
+			province_id = 1225	# Butana
+			province_id = 1226	# Taka
+			province_id = 1228	# Dongola
+			province_id = 1229	# Berber
+			province_id = 1232	# Suakin
+		}
+		NOT = { culture_group = african }
+		AND = {
+			is_core = no
+			NOT = { culture_group = turko_semitic }
+		}
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = nubian
+		citysize = 500
+	}
+}
+
+#####################################
+# Somali
+#####################################
+province_event = {
+
+	id = 21105
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1206	# Majerteen
+			province_id = 1207	# Ogaden
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = somali
+		citysize = 500
+	}
+}
+
+#####################################
+# Bantu
+#####################################
+province_event = {
+
+	id = 21106
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1153	# Pindinga
+			province_id = 1162	# Wukari
+			province_id = 1174	# Greater Namaqualand
+			province_id = 1175	# Lesser Namaqualand
+			province_id = 1180	# Transkei
+			province_id = 1181	# Natal
+			province_id = 1182	# Delagoa Bay
+			province_id = 1183	# Inhambane
+			province_id = 1197	# Ujiji
+			province_id = 1198	# Tabora
+			province_id = 1249	# Yola
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = bantu
+		citysize = 500
+	}
+}
+
+#####################################
+# Kongolese
+#####################################
+province_event = {
+
+	id = 21107
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1164	# Cameroon
+			province_id = 1165	# Gabon
+			province_id = 1166	# Loango
+			province_id = 1167	# Luanda
+			province_id = 1168	# Kisarna
+			province_id = 1170	# Kongo
+			province_id = 1171	# Ndongo
+			province_id = 1172	# Benguela
+			province_id = 1173	# Damaraland
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = kongolese
+		citysize = 500
+	}
+}
+
+#####################################
+# Mali
+#####################################
+province_event = {
+
+	id = 21108
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1118	# Sierra Leone
+			province_id = 1120	# Bambuk
+			province_id = 1121	# Bure
+			province_id = 1135	# Yatenga
+			province_id = 1136	# Gurma
+			province_id = 1137	# Wagadugi
+			province_id = 1143	# Borgu
+			province_id = 1161	# Bauchi
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = mali
+		citysize = 500
+	}
+}
+
+#####################################
+# Yorumba
+#####################################
+province_event = {
+
+	id = 21109
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1140	# Abomey
+			province_id = 1141	# Whydah
+			province_id = 1144	# Oyo
+			province_id = 1145	# Nupe
+			province_id = 1146	# Ife
+			province_id = 1147	# Benin
+			province_id = 1152	# Idah
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = yorumba
+		citysize = 500
+	}
+}
+
+#####################################
+# Aka
+#####################################
+province_event = {
+
+	id = 21110
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1126	# Ivory Coast
+			province_id = 1139	# Gold Coast
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = aka
+		citysize = 500
+	}
+}
+
+#####################################
+# Malagasy w/ Cores
+#####################################
+country_event = {
+
+	id = 21111
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21111"
+
+	trigger = {
+		1193 = {
+			owned_by = THIS
+			NOT = { culture_group = african }
+			NOT = { culture_group = malay }
+			citysize = 1050
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		1193 = {
+			culture = malagasy
+			citysize = 2500
+		}
+		MDG = {
+			add_core = 1193		# Menabe
+		}
+	}
+}
+
+country_event = {
+
+	id = 21112
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21111"
+
+	trigger = {
+		1194 = {
+			owned_by = THIS
+			NOT = { culture_group = african }
+			NOT = { culture_group = malay }
+			citysize = 1050
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		1194 = {
+			culture = malagasy
+			citysize = 2500
+		}
+		MDG = {
+			add_core = 1194		# Boina
+		}
+	}
+}
+
+country_event = {
+
+	id = 21113
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21111"
+
+	trigger = {
+		1792 = {
+			owned_by = THIS
+			NOT = { culture_group = african }
+			NOT = { culture_group = malay }
+			citysize = 1050
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		1792 = {
+			culture = malagasy
+			citysize = 2500
+			revolt_risk = 5
+		}
+		MDG = {
+			add_core = 1792		# Antananarivo
+		}
+	}
+}
+
+#####################################
+# Boer
+#####################################
+province_event = {
+
+	id = 21114
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21115"
+
+	trigger = {
+		OR = {
+			province_id = 1176	# Roggeveld
+			province_id = 1177	# Cape
+			province_id = 1179	# Little Karoo
+		}
+		NOT = { culture_group = colonial_culture }
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = boer
+		citysize = 500
+	}
+}
+
+country_event = {
+
+	id = 21115
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21115"
+
+	trigger = {
+		1178 = {
+			owned_by = THIS
+			NOT = { culture_group = colonial_culture }
+			NOT = { culture_group = african }
+			citysize = 1050
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		1178 = {
+			culture = boer
+			citysize = 2500
+			revolt_risk = 5
+		}
+		ORG = {
+			add_core = 1178		# Great Karoo
+		}
+	}
+}
+
+#####################################
+# Swahili
+#####################################
+province_event = {
+
+	id = 21116
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1195	# Mozambique
+			province_id = 1196	# Kilwa
+			province_id = 1199	# Bagomoyo
+			province_id = 1201	# Zanzibar
+			province_id = 1202	# Mombasa
+			province_id = 1203	# Malindi
+			province_id = 1204	# Lamu
+			province_id = 1205	# Mogadishu
+		}
+		NOT = { culture_group = african }
+		citysize = 1050
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = swahili
+		citysize = 500
+	}
+}

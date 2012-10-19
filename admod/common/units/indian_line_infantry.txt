@@ -1,0 +1,12 @@
+# Indian Line Infantry
+# land 41
+type = infantry
+unit_type = indian
+
+maneuver = 1
+offensive_morale = 7
+defensive_morale = 8
+offensive_fire = 7
+defensive_fire = 7
+offensive_shock = 6
+defensive_shock = 6

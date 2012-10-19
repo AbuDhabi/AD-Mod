@@ -1,0 +1,565 @@
+#events 32000-32199
+
+#Chinese Factions
+#Temples gain control for a short while
+country_event = {
+
+	id = 32000
+	is_triggered_only = yes	
+
+	title = "EVTNAME32000"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			MIL = 7
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			MIL = 5
+		}
+		modifier = {
+			factor = 2.0
+			MIL = 6
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_temple_influence"
+			duration = 730
+		}
+	}
+}
+
+#Temples gain control for awhile
+country_event = {
+
+	id = 32001
+	is_triggered_only = yes	
+
+	title = "EVTNAME32000"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			MIL = 6
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			MIL = 4
+		}
+		modifier = {
+			factor = 2.0
+			MIL = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_temple_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Temples gain control for a long while
+country_event = {
+
+	id = 32002
+	is_triggered_only = yes	
+
+	title = "EVTNAME32000"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			MIL = 5
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			MIL = 3
+		}
+		modifier = {
+			factor = 2.0
+			MIL = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_temple_influence"
+			duration = 2920
+		}
+	}
+}
+
+#Eunuchs gain control for a short while
+country_event = {
+
+	id = 32003
+	is_triggered_only = yes	
+
+	title = "EVTNAME32003"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			DIP = 7
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			DIP = 5
+		}
+		modifier = {
+			factor = 2.0
+			DIP = 6
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_eunuch_influence"
+			duration = 730
+		}
+	}
+}
+
+#Eunuchs gain control for awhile
+country_event = {
+
+	id = 32004
+	is_triggered_only = yes	
+
+	title = "EVTNAME32003"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			DIP = 6
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			DIP = 4
+		}
+		modifier = {
+			factor = 2.0
+			DIP = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_eunuch_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Eunuchs gain control for a long while
+country_event = {
+
+	id = 32005
+	is_triggered_only = yes	
+
+	title = "EVTNAME32003"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			DIP = 5
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			DIP = 3
+		}
+		modifier = {
+			factor = 2.0
+			DIP = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_eunuch_influence"
+			duration = 2920
+		}
+	}
+}
+
+#Bureaucrats gain control for a short while
+country_event = {
+
+	id = 32006
+	is_triggered_only = yes	
+
+	title = "EVTNAME32006"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			ADM = 7
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			ADM = 5
+		}
+		modifier = {
+			factor = 2.0
+			ADM = 6
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_bureaucrat_influence"
+			duration = 730
+		}
+	}
+}
+
+#Bureaucrats gain control for awhile
+country_event = {
+
+	id = 32007
+	is_triggered_only = yes	
+
+	title = "EVTNAME32006"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			ADM = 6
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			ADM = 4
+		}
+		modifier = {
+			factor = 2.0
+			ADM = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_bureaucrat_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Bureaucrats gain control for a long while
+country_event = {
+
+	id = 32008
+	is_triggered_only = yes	
+
+	title = "EVTNAME32006"
+	desc = "EVTDESC32000"
+
+	trigger = {
+		government = celestial_empire
+		NOT = {
+			ADM = 5
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 2.0
+			ADM = 3
+		}
+		modifier = {
+			factor = 2.0
+			ADM = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_bureaucrat_influence"
+			duration = 2920
+		}
+	}
+}
+
+#Emperor takes control for awhile
+country_event = {
+
+	id = 32009
+	is_triggered_only = yes
+
+	title = "EVTNAME32009"
+	desc = "EVTDESC32009"
+
+	trigger = {
+		government = celestial_empire
+		OR = {
+			MIL = 7
+			DIP = 7
+			ADM = 7
+		}
+		NOT = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.5
+			MIL = 8
+		}
+		modifier = {
+			factor = 0.5
+			MIL = 9
+		}
+		modifier = {
+			factor = 0.5
+			DIP = 8
+		}
+		modifier = {
+			factor = 0.5
+			DIP = 9
+		}
+		modifier = {
+			factor = 0.5
+			ADM = 8
+		}
+		modifier = {
+			factor = 0.5
+			ADM = 9
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32009"
+		add_country_modifier = {
+			name = "chi_emperor_influence"
+			duration = 1095
+		}
+	}
+}
+
+#Emperor takes control for awhile
+country_event = {
+
+	id = 32010
+	is_triggered_only = yes
+
+	title = "EVTNAME32009"
+	desc = "EVTDESC32009"
+
+	trigger = {
+		government = celestial_empire
+		OR = {
+			MIL = 8
+			DIP = 8
+			ADM = 8
+		}
+		NOT = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.5
+			MIL = 9
+		}
+		modifier = {
+			factor = 0.5
+			DIP = 9
+		}
+		modifier = {
+			factor = 0.5
+			ADM = 9
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32009"
+		add_country_modifier = {
+			name = "chi_emperor_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Missionaries support Temple
+province_event = {
+
+	id = 32011
+
+	title = "EVTNAME32011"
+	desc = "EVTDESC32011"
+
+	trigger = {
+		owner = {
+			government = celestial_empire
+			NOT = {
+				has_country_modifier = chi_temple_influence
+				has_country_modifier = chi_eunuch_influence
+				has_country_modifier = chi_bureaucrat_influence
+				has_country_modifier = chi_emperor_influence
+			}
+		}
+		has_missionary = yes
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_temple_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Statesman supports Bureaucrats
+country_event = {
+
+	id = 32012
+
+	title = "EVTNAME32012"
+	desc = "EVTDESC32012"
+
+	trigger = {
+		government = celestial_empire
+		advisor = statesman
+		NOT = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_eunuch_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_emperor_influence
+		}
+		has_missionary = yes
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTA32000"
+		add_country_modifier = {
+			name = "chi_bureaucrat_influence"
+			duration = 1825
+		}
+	}
+}
+
+#Ottoman Factions
+#Janissary
+#Harem
+#Divan
+#Sultan

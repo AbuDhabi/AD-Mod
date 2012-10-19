@@ -1,0 +1,111 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 152  243  210 }
+
+historical_ideas = {
+	national_conscripts
+	church_attendance_duty
+	merchant_adventures
+	shrewd_commerce_practise
+	military_drill
+	excellent_shipwrights
+	glorious_arms
+	national_bank
+	engineer_corps
+	national_trade_policy
+	scientific_revolution
+	grand_army
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"David #0" = 25
+	"Obadiah #0" = 25
+	"Jeconiah #0" = 25
+	"Jeremiah #0" = 25
+	"Josiah #0" = 25
+	"Samuel #0" = 25
+	"Solomon #0" = 25
+	"Nahmanides #0" = 20
+	"Maimonides #0" = 20
+	"Malachi #0" = 20
+	"Jonah #0" = 15
+	"Micah #0" = 15
+	"Zechariah #0" = 15
+	"Zephaniah #0" = 15
+	"Judah #0" = 10
+	"Abraham #0" = 5
+	"Ezra #0" = 5
+	"Nehemiah #0" = 5
+	"Ezekiel #0" = 5
+	"Job #0" = 5
+	"Adisu #0" = 0
+	"Benjamin #0" = 0
+	"Daniel #0" = 0
+	"Herman #0" = 0
+	"Isaac #0" = 0
+	"Israel #0" = 0
+	"Joel #0" = 0
+	"Joseph #0" = 0
+	"Moses #0" = 0
+	"Moshe #0" = 0
+	"Peter #0" = 0
+	"Sacha #0" = 0
+	"Sol #0" = 0
+	"Basir #0" = 0
+	"Farouk #0" = 0
+	"Jabir #0" = 0
+	"Muhammad #0" = 0
+	"Temur #0" = 0
+	"Yunus #0" = 0
+}
+
+leader_names = {
+	Abrahams Ackerman Adelstein
+	Behr Bernstein Blackman Bloom Boh Bojetu
+	"ben Adisu" "ben David" "ben Isaac" "ben Joseph" "ben Judah" "ben Moshe" "ben Peter" "ben Sol" "ben Yehuda"
+	Cohen
+	Frumkin
+	Gershenzon Geffin Gil Gottlieb Gubbay Gurion Grinberg
+	Isaac
+	Klug
+	Lazarus Levinsky Liberman
+	Mamo Mandelstam Massala Maxwell
+	Rabinowitz Rosenberg Rubenstein
+	Scheckter Schwarz Suzman Stransky
+	Welensky
+	Yachad Yutar
+	Zaltzman Zille Zorea
+}
+
+ship_names = {
+	Amos
+	Bamidbar Bereishit
+	Chronicles
+	Daniel Devarim
+	Ecclesiastes Esther Ezekiel Ezra
+	Habakkuk Haggai Hosea
+	Isaiah
+	Jeremiah Job Joel Jonah Joshua Judges
+	Kings
+	Lamentations
+	Malachi Micah
+	Nahum
+	Obadiah
+	Proverbs Psalms
+	Ruth
+	Samuel Shemot "Song of Songs"
+	Vayikra
+	Zechariah Zephaniah
+}

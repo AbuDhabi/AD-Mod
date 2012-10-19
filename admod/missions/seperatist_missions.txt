@@ -1,0 +1,44 @@
+conquer_mexico_city = {
+
+	type = country
+
+	allow = {
+		OR = {
+			tag = MEX
+			tag = MAZ
+		}
+		is_lesser_in_union = no
+		is_subject = no
+		852 = {	not = { owned_by = this } }		# Mexico
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes		
+		}
+	}
+	success = {
+		owns = 852
+	}
+	chance = {
+		factor = 600
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			adm = 7
+		}
+	}
+	immediate = {
+		add_temp_claim = 852
+	}
+	abort_effect = {
+		remove_temp_claim = 852
+	}
+	effect = {
+		prestige = 0.10
+		add_core = 852
+	}
+}

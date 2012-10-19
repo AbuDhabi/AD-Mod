@@ -1,0 +1,35 @@
+#1822 - Shangai
+
+owner = MNG
+controller = MNG
+culture = chi_wu
+religion = confucianism
+capital = "Shangai"
+trade_goods = cloth
+hre = no
+base_tax = 7
+manpower = 3
+citysize = 250000
+add_core = MNG
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 282500 }
+1500.1.1 = { citysize = 297500 }
+1505.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 312500 }
+1580.1.1 = { fine_arts_academy = yes }
+1600.1.1 = { citysize = 340000 }
+1644.1.1 = {	controller = MCH
+	   } # The Qing Dynasty
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 352500 }
+1700.1.1 = { citysize = 360000 }
+1740.1.1 = { tax_assessor = yes }
+1750.1.1 = { citysize = 390000 }
+1800.1.1 = { citysize = 415000 }

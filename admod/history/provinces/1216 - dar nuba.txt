@@ -1,0 +1,12 @@
+#1216 - Dar Nuba
+
+culture = nubian #Shilluk
+religion = bantu_rel
+capital = "Muomo"
+native_size = 50
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_ferocity = 4.5
+native_hostileness = 9

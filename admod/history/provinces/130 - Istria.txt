@@ -1,0 +1,56 @@
+#130 - Istria
+
+owner = AQU
+controller = AQU
+culture = croatian
+religion = catholic
+capital = "Pazin"
+trade_goods = wool
+hre = no
+base_tax = 6
+manpower = 3
+citysize = 5000
+fort1 = yes
+add_core = AQU
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = AQU
+		controller = AQU
+		citysize = 5000 }
+
+1420.1.1   = {	owner = VEN
+		controller = VEN
+		add_core = VEN
+		remove_core = AQU
+	     } # To Venice
+1450.1.1   = { citysize = 5400 }
+1500.1.1   = { citysize = 6000 }
+1550.1.1   = { citysize = 6988 fort2 = yes } # The fort is rebuilt
+1600.1.1   = { citysize = 7560 }
+1650.1.1   = { citysize = 8900 marketplace = yes }
+1700.1.1   = { citysize = 9200 }
+1750.1.1   = { citysize = 10200 }
+1797.10.17 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+	     } # Treaty of Campo Formio
+1800.1.1   = { citysize = 11700 }
+1805.12.26 = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = HAB
+	     } # Treaty of Pressburg
+1813.9.20 = { controller = HAB } # Occupied by Austrian forces
+1814.4.6  = {	owner = HAB
+		add_core = HAB
+		remove_core = RFR
+	    } # Napoleon abdicates

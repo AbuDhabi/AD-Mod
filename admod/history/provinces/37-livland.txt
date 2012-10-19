@@ -1,0 +1,80 @@
+#Livland, incl. Dorpat, Fellin, Karkus,Wolmar, Lemsal and Wenden.
+
+owner = TEU
+controller = TEU
+add_core = TEU
+culture = latvian
+religion = catholic
+hre = yes
+base_tax = 3
+trade_goods = grain
+manpower = 3
+capital = "Dorpat"
+citysize = 5000
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0
+		hre = no }
+
+#Nevermind
+1399.10.12 = {	owner = TEU
+		controller = TEU
+		citysize = 5000
+		hre = yes }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Historical Campaign
+1399.10.14 = {	owner = TEU
+		controller = TEU
+		remove_core = EST
+		add_core = TEU
+		religion = catholic
+		hre = yes }
+
+1450.1.1   = { citysize = 6000 }
+1466.10.19 = {	owner = LIV
+		controller = LIV
+		add_core = LIV
+		remove_core = TEU
+	     } # Peace of Torun
+1500.1.1   = { marketplace = yes }
+1542.1.1   = { religion = protestant} # Unknown date
+1550.1.1   = { citysize = 5000 }
+1561.1.1   = {	owner = LIT
+		controller = LIT
+		add_core = LIT
+		remove_core = LIV
+	     	citysize = 3000
+	     } # Unknown date
+1569.7.1   = {	owner = POL
+		controller = POL
+		add_core = POL
+	     } # Union of Lublin
+1583.1.1   = { citysize = 1000 }
+1600.1.1   = { citysize = 2055 }
+1600.12.31 = { controller = SWE } # 2nd Polish War-Captured by Duke Karl
+1603.4.5   = { controller = POL } # 2nd Polish War-Captured by Chodkiewicz
+1625.8.21  = { controller = SWE } # 2nd Polish War-Captured by Jakob de la Gardie
+1629.9.16  = { owner = SWE add_core = SWE remove_core = POL } # The Armistice of Altmark
+1650.1.1   = { citysize = 2560 }
+1656.11.3  = { controller = RUS } # Karl X Gustavs Russian War-Captured by Russians
+1661.6.21  = { controller = SWE } # The Peace of Kardis
+1700.1.1   = { citysize = 2880 }
+1704.7.14  = { controller = RUS } # The Great Nordic War-Captured Dorpat
+1721.8.30  = { owner = RUS add_core = RUS remove_core = SWE } # The Peace of Nystad
+1750.1.1   = { citysize = 3300 }
+1800.1.1   = { citysize = 4578 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved

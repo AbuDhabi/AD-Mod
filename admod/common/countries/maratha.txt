@@ -1,0 +1,109 @@
+#Country Name: See the Name of this File.
+
+graphical_culture = indiangfx
+
+color = { 20  112  38 }
+
+historical_ideas = {
+	national_conscripts
+	glorious_arms 
+	grand_army
+	military_drill
+	battlefield_commisions 
+	shrewd_commerce_practise
+	engineer_corps
+	merchant_adventures
+	national_trade_policy
+	espionage
+	smithian_economics
+	bureaucracy
+}
+
+historical_units = {
+	indian_footsoldier
+	indian_archers
+	indian_arquebusier
+	mughal_musketeer
+	mughal_mansabdar
+	indian_elephant
+	indian_shock_cavalry
+	rajput_musketeer
+	reformed_mughal_musketeer
+	reformed_mughal_mansabdar
+	indian_rifle
+}
+
+monarch_names = {
+	"Shivaji #0" = 50
+	"Sambhaji #0" = 50
+	"Rajaram #0" = 50
+	"Tarabai #0" = 50
+	"Shahu #0" = 40
+	"Ali Sher #0" = 10
+	"Tughluq #0" = 10
+	"Sikandar #0" = 10
+	"Sanjar #0" = 10
+	"Nanda #0" = 10
+	"Thara #0" = 10
+	"Ranmal #0" = 5
+	"Jodha #0" = 5
+	"Udha Rao #0" = 5
+	"Chandrasena #0" = 5
+	"Prithvi #0" = 5
+	"Bhima #0" = 5
+	"Ratan #0" = 5
+	"Baharmalla #0" = 5
+	"Bragwan Das #0" = 5
+	"Man Singh #0" = 5
+	"Jagat #0" = 5
+	"Bhao #0" = 5
+	"Jaya #0" = 5
+	"Rama #0" = 5
+	"Bishan #0" = 5
+	"Ishwari #0" = 5
+	"Mahdu #0" = 5
+	"Zafar #0" = 5
+	"Bahadur #0" = 5
+	"Kanhoje #0" = 0
+	"Baji #0" = 0
+}
+
+leader_names = {
+	Ali Arghun Angre
+	Babber Bargujars Bhoja Bonjani Bhatti Buchar Bajirao Ballal
+	Chandelas Chauhan Chirag
+	Desai Durai
+	Eswara
+	Gandhi
+	Jadeja Jinnah Jain
+	Kachwaha Karmavati Khumba Kalhora Kriti Kota 
+	Latersh
+	Nagabhatta
+	Majmudar Munshi Muzzafar Mihirbhoj Mahipala Murti Madhavrao
+	Paramaras Pratap Parikh Pandya Patel Patidar Padmini
+	Rajput Rathore Rushi Rao
+	Singh Saraiya Shaw Shrivastav Sahib
+	Tomaras Tarkhan Tilak
+	Vaghela Vatsraja Vanik Vyas Vishwanath
+	Zamindar
+}
+
+ship_names = {
+	Alia Arusa Ambika Auranga Alibag
+	Baran Bhadar Bori
+	Chambal 
+	Devi Durga Desai Damanganga Devki
+	Fatimah
+	Gayatri Ghaggar Godwar Golani Girna
+	Jalsena 
+	"Kala Jahazi" Kalhora
+	Lakshmi "Lal Jahazi" Luni 
+	"Marwar ka Nav" "Merwar ka Nav" Majmudar Malir Manchhar Mol
+	"Nav ka Yudh" "Nila Jahazi" Niknaz Nausena Narmada Noor
+	Parvati Parikh Pandya Patel Patidar Panjhra
+	Radha Rani Ratri Rushi
+	Sagar Sarasvati Sekhawati Sita Samma Sindhi Suk Suhalia Shameena Sari Shetrunji Saraiya Saraswati
+	Tarkhan Tilak Tapi
+	Yasmin
+	Zahira
+}

@@ -1,0 +1,30 @@
+# So, your military is smaller than your vassal's...
+# Guess what happens?
+
+country_event = {
+	id = 90211
+	trigger = {
+    is_subject = yes
+		overlord = {
+      NOT = { army = THIS } # I hope this is the way to say 
+                            # the overlord's army is smaller
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME90211"
+	desc = "EVTDESC90211"
+	
+	option = {
+		name = "EVTOPTA90211"
+		#vassalize = THIS
+	}
+	option = {
+		name = "EVTOPTB90211"
+		#prestige = -0.05
+	}
+	
+}

@@ -1,0 +1,60 @@
+#1749 - Cadiz
+
+owner = CAS		#Enrique III of Castille
+controller = CAS
+add_core = CAS
+culture = castillian
+religion = catholic
+hre = no
+base_tax = 6
+trade_goods = naval_supplies
+manpower = 3
+fort1 = yes
+capital = "Cadiz" 
+cot = no
+citysize = 5000
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = GRA
+		controller = GRA
+		add_core = GRA
+		religion = sunni }
+
+#Nevermind
+1399.10.12 = {	owner = CAS
+		controller = CAS
+		remove_core = GRA
+		religion = catholic }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = GRA
+		controller = GRA
+		add_core = GRA
+		remove_core = CAS
+		religion = sunni
+		culture = andalucian }
+
+#Historical Campaign
+1399.10.14 = {	owner = CAS
+		controller = CAS
+		add_core = CAS
+		remove_core = GRA
+		religion = catholic
+		culture = castillian }
+
+1492.1.1 = { citysize = 8000 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1520.1.1   = { shipyard = yes }
+1535.1.1  = { courthouse = yes citysize = 15000 } # Judge of Yndias
+1596.1.1 = { fort3 = yes }
+1680.1.1 = { marketplace = yes citysize = 25000 shipyard = yes }
+1713.4.11  = { remove_core = CAS }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0.5 } controller = REB fort6 = yes }
+1813.12.11 = { revolt = {} controller = SPA }

@@ -1,0 +1,110 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+# Armies get a combined arms bonus when the ratio cav / (inf+cav) is _less_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
+
+#groups must be defined BEFORE tables.
+
+
+groups = {				# Unit Specialty
+	nomad_group = {			# Offensive/Fire
+		modifier = 0.3		# 0.1
+		start_level = 3
+		cav_to_inf_ratio = 1.0
+		slow_limit = 6
+	}
+	western = {			# Defensive/Shock
+		modifier = 1.0
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+	}
+	eastern = {			# Defensive/Shock
+		modifier = 0.95		# 0.85
+		start_level = 3
+		cav_to_inf_ratio = 0.6
+		slow_limit = 6
+	}
+	ottoman = {			# Defensive/Fire
+		modifier = 0.90		# 0.80
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+	}
+	muslim = {			# Defensive/Fire
+		modifier = 0.85		# 0.75
+		start_level = 5
+		cav_to_inf_ratio = 0.8
+	}
+	mid_east = {
+		modifier = 1.00
+		start_level = 5
+		cav_to_inf_ratio = 0.5
+	}
+	indian = {			# Balanced/Shock
+		modifier = 0.6		# 0.50
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		slow_limit = 7
+	}
+	chinese = {			# Balanced/Fire
+		modifier = 0.6		# 0.40
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		slow_limit = 7
+	}
+	far_east_1 = {
+		modifier = 0.8
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		slow_limit = 7
+	}
+	far_east_2 = {
+		modifier = 1.0
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		slow_limit = 7
+	}
+	sub_saharan = {			# Offensive/Morale
+		modifier = 0.3		# 0.2
+		start_level = 1
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+	sub_saharan_1 = {
+		modifier = 0.7
+		start_level = 1
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+	new_world = {			# Offensive/Morale
+		modifier = 0.14		# 0.1
+		start_level = 0
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+	new_world_1 = {
+		modifier = 0.75
+		start_level = 0
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+	new_world_2 = {
+		modifier = 1.00
+		start_level = 0
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+	s_new_world = {			# Offensive/Morale
+		modifier = 0.2		# 0.1
+		start_level = 0
+		cav_to_inf_ratio = 0.4
+		slow_limit = 4
+	}
+}
+
+tables = {
+	land_tech = "technologies/land.txt"
+	naval_tech = "technologies/naval.txt"
+	trade_tech = "technologies/trade.txt"
+	production_tech = "technologies/production.txt"
+	government_tech = "technologies/government.txt"
+}

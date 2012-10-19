@@ -1,0 +1,28 @@
+country_decisions = {
+
+	formalize_absolute_power = {
+		potential = {
+			government = imperial_government3
+			NOT = {
+				has_country_modifier = divine_right
+			}
+		}
+		
+		allow = {
+			stability = 2
+			advisor = statesman
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "divine_right"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

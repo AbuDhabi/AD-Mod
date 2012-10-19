@@ -1,0 +1,23 @@
+government = despotic_monarchy
+aristocracy_plutocracy = -4
+centralization_decentralization = 3
+innovative_narrowminded = 4
+mercantilism_freetrade = 3
+offensive_defensive = -2
+land_naval = 3
+quality_quantity = 3
+serfdom_freesubjects = 1
+primary_culture = malagasy
+religion = malagasy_rel
+technology_group = sub_saharan
+capital = 1792 #Antananarivo
+
+1399.1.1 = {
+	monarch = {
+		name = "Radama I"
+		dynasty = "Ramanantsoa"
+		adm = 6
+		dip = 3
+		mil = 3
+	}
+}

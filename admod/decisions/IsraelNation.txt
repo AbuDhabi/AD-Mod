@@ -1,0 +1,64 @@
+country_decisions = {
+
+	israel_nation = {
+		potential = {
+			religion = judaism
+			NOT = { exists = ISR }
+			NOT = { tag = HRE }
+			culture_group = turko_semitic
+		}
+		allow = {
+			owns = 379	# Judea
+			is_core = 379
+			379 = { religion = judaism }
+			prestige = 0.10
+			war = no
+		}
+		effect = {
+			government = feudal_monarchy
+			ISR = {
+				add_core = 378	# Beirut
+				add_core = 379	# Judea
+				add_core = 1855	# Sidon
+			}
+			centralization_decentralization = -1
+			prestige = 0.15
+			change_tag = ISR
+			ISR = { capital = 379 }
+			primary_culture = israelite
+			379 = { culture = israelite }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	release_israel_nation = {
+		potential = {
+			religion = judaism
+			NOT = { exists = ISR }
+		}
+		allow = {
+			owns = 379
+			379 = { religion = judaism }
+			war = no
+		}
+		effect = {
+			prestige = 0.25
+			ISR = {
+				add_core = 378	# Beirut
+				add_core = 379	# Judea
+				add_core = 1855	# Sidon
+			}
+			release = ISR
+			ISR = {
+				primary_culture = israelite
+				capital = 379
+			}
+			379 = { culture = israelite }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

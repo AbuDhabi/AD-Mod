@@ -1,0 +1,287 @@
+country_decisions = {
+
+	construct_meenakshi_temple = {
+		potential = {
+			religion_group = dharmic
+			owns = 536	# Madurai
+			NOT = { has_global_flag = meenakshi_amman }
+		}
+		allow = {
+			government_tech = 21
+			advisor = theologian
+			treasury = 500
+		}
+		effect = {
+			set_global_flag = meenakshi_amman
+			536 = { base_tax = 1 }
+			prestige = 0.10
+			missionaries = 5
+			treasury = -500
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	construct_samarkand_observatory = {
+		potential = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = sufi
+			}
+			owns = 454	# Samarkand
+			NOT = { has_global_flag = samarkand_observatory }
+		}
+		allow = {
+			government_tech = 4
+			OR = {
+				advisor = natural_scientist
+				454 = { has_building = university }
+			}
+			treasury = 500
+		}
+		effect = {
+			set_global_flag = samarkand_observatory
+			prestige = 0.05
+			treasury = -500
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+religion_decisions = {
+
+	est_eastern_philosophy = {
+		potential = {
+			NOT = { has_country_modifier = eastern_philo_center }
+			OR = {
+				religion_group = taoic
+				religion_group = dharmic
+			}
+			NOT = { technology_group = eastern }
+			government_tech = 15
+		}
+		allow = {
+			advisor = philosopher
+			any_owned_province = {
+				has_building = university
+			}
+			any_owned_province = {
+				has_building = fine_arts_academy
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "eastern_philo_center"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	contemp_islamic_philosophy = {
+		potential = {
+			NOT = { has_country_modifier = modern_islam_philo }
+			religion_group = muslim
+			year = 1550
+		}
+		allow = {
+			NOT = { innovative_narrowminded = -2 }
+			any_owned_province = {
+				has_building = university
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modern_islam_philo"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yes_to_anglicanism = {
+		potential = {
+			NOT = { religion = anglican }
+			any_owned_province = { religion = anglican }
+			OR = {
+				culture_group = british
+				culture_group = gaelic
+			}
+			NOT = { has_country_modifier = yes_to_anglican }
+			NOT = { has_country_modifier = no_to_anglican }
+		}
+		allow = {
+			missionaries = 1
+		}
+		effect = {
+			missionaries = -1
+			add_country_modifier = {
+				name = "yes_to_anglican"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				female = yes
+			}
+			modifier = {
+				factor = 0
+				defender_of_faith = yes
+			}
+		}
+	}
+
+	no_to_anglicanism = {
+		potential = {
+			NOT = { religion = anglican }
+			any_owned_province = { religion = anglican }
+			OR = {
+				culture_group = british
+				culture_group = gaelic
+			}
+			NOT = { has_country_modifier = yes_to_anglican }
+			NOT = { has_country_modifier = no_to_anglican }
+		}
+		allow = {
+			missionaries = 1
+		}
+		effect = {
+			missionaries = -1
+			any_owned = {
+				limit = { religion = anglican }
+				remove_province_modifier = religious_zeal_at_conv
+				multiply_citysize = 0.95
+			}
+			add_country_modifier = {
+				name = "no_to_anglican"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				female = no
+			}
+			modifier = {
+				factor = 1
+				defender_of_faith = yes
+			}
+		}
+	}
+
+	enact_halakha = {
+		potential = {
+			religion_group = abrahamic
+			NOT = { has_country_modifier = halakha_law }
+		}
+		allow = {
+			innovative_narrowminded = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "halakha_law"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	enact_poly_wayfinding = {
+		potential = {
+			religion = polynesian_religion
+			NOT = { has_country_modifier = poly_wayfinding }
+		}
+		allow = {
+			MIL = 6
+			naval_tech = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "poly_wayfinding"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	enact_poly_surfing = {
+		potential = {
+			religion = polynesian_religion
+			NOT = { has_country_modifier = poly_surfing }
+			year = 1600
+		}
+		allow = {
+			year = 1650
+			OR = {
+				cultural_tradition = 0.60
+				ai = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "poly_surfing"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	enact_syncretism = {
+		potential = {
+			NOT = { has_country_modifier = african_syncretism }
+			religion_group = african_religion
+		}
+		allow = {
+			government_tech = 4
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				ai = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "african_syncretism"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	publish_eddic_poems = {
+		potential = {
+			NOT = { has_country_modifier = poetic_edda }
+			religion = norse_rel
+		}
+		allow = {
+			government_tech = 8
+		}
+		effect = {
+			add_country_modifier = {
+				name = "poetic_edda"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

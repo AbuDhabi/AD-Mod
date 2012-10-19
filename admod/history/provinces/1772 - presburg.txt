@@ -1,0 +1,59 @@
+#1772 - Presburg
+
+owner = HUN
+controller = HUN  
+culture = hungarian
+religion = catholic
+capital = "Pressburg"
+trade_goods = grain
+hre = no
+base_tax = 8
+manpower = 4
+citysize = 10200
+fort1 = yes
+add_core = HUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = HUN
+		controller = HUN
+		citysize = 10200 }
+
+1432.1.1  = { revolt_risk = 10 } # The city is attacked by Hussites
+1434.1.1  = { revolt_risk = 0 }
+1440.1.1  = { revolt_risk = 10 } # Struggles between the supporters of Ladislaus and Elisabeth of Hungary
+1443.1.1  = { revolt_risk = 0 }
+1450.1.1  = { citysize = 11580 }
+1480.1.1  = { marketplace = yes }
+1490.1.1  = { controller = HAB } # Occupied
+1491.11.7 = { controller = HUN }
+1500.1.1  = { citysize = 12980 }
+1526.8.30 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+	    } # Battle of Mohács, the end of the independent Kingdom of Hungary
+1532.1.1  = { fort2 = yes }
+1550.1.1  = { citysize = 14000 }
+1563.1.1  = { temple = yes } # St. Martin's cathedral, 1452
+1581.1.1  = { fort3 = yes } # Extended defense against the Ottoman troops
+1600.1.1  = { citysize = 15910 }
+1604.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # The nobility in Royal Hungary rebelled against Habsburg & Jesuit repression
+1606.1.1  = { revolt = {} controller = HAB religion = reformed } # Peace treaty, guaranteed religious toleration
+1619.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Bethlen uprisings
+1626.1.1  = { revolt = {} controller = HAB constable = yes } # The 3rd Peace of Pressburg, puts an end to the Bethlen uprisings
+1650.1.1  = { citysize = 16530 }
+1700.1.1  = { citysize = 18780 } # The area was largely depopulated under Ottoman rule, new settlement policy under Habsburg rule
+1703.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Kuruc rebellion, lead by Francisc Rakoczy
+1710.1.1  = { revolt = {} citysize = 16220 } # Plague
+1711.1.1  = { controller = HAB } # The House of Habsburg recognized as the new ruler
+1728.1.1  = { tax_assessor = yes } # The economy flourishes
+1750.1.1  = { citysize = 19100 }
+1800.1.1  = { citysize = 21300 }

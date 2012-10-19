@@ -1,0 +1,42 @@
+#863 - Suma
+
+culture = navajo
+religion = teotl
+capital = "Suma"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = NVJ
+discovered_by = PUE
+
+#Black Death
+1399.10.11 = {	owner = NVJ
+		controller = NVJ
+		add_core = NVJ
+		citysize = 1000
+		trade_goods = wool }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = NVJ
+		citysize = 0
+		trade_goods = unknown }
+
+1540.1.1   = { discovered_by = SPA } # Francisco Vasquez de Coronado
+1709.10.12 = {	owner = SPA
+		controller = SPA
+		capital = "Chicuahua"
+		culture = castillian
+		religion = catholic
+		citysize = 1100
+		trade_goods = wool
+	     } # Founded by Antonio Deza y Ulloa
+1734.1.1   = { add_core = SPA }
+1750.1.1   = { citysize = 2060 add_core = MEX }
+1800.1.1   = { citysize = 3780 }
+1810.9.16  = { owner = MEX controller = SPA } # Mexican War of Independence

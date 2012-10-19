@@ -1,0 +1,61 @@
+#255 - Kalisz
+
+owner = POL
+controller = POL
+culture = polish
+religion = catholic
+capital = "Gniezno"
+trade_goods = cloth
+hre = yes
+base_tax = 4
+manpower = 3
+citysize =  3300
+fort1 = yes
+add_core = POL
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = POL
+		controller = POL
+		citysize = 3300 }
+
+1450.1.1   = { citysize = 3500 }
+1500.1.1   = { citysize = 3885}
+1550.1.1   = { citysize = 4570 }
+1560.1.1   = { marketplace = yes }
+1569.1.1   = { add_core = LIT } # Union of Lublin, west to Poland & south to Lithuania
+1588.1.1   = { revolt = { type = revolutionary_rebels size = 3 } controller = REB } # Civil war
+1589.1.1   = { revolt = {} controller = POL } # Coronation of Sigismund III
+1600.1.1   = { citysize = 5377 }
+1650.1.1   = { citysize = 6325 }
+1655.1.1   = { controller = SWE } # The Deluge
+1660.1.1   = { controller = POL }
+1700.1.1   = { citysize = 5700 } # Fire and plague
+1733.1.1   = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The war of Polish succession
+1735.1.1   = { revolt = {} controller = POL }
+1750.1.1   = { citysize = 8755 }
+1791.5.3   = { remove_core = LIT } # 3rd May Constitution, Kingdom of Poland
+1793.1.23  = {	controller = PRU
+		owner = PRU
+		add_core = PRU
+	     } # Second partition
+1800.1.1   = { citysize = 10300 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1806.11.3  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Polish uprising instigated by Napoleon
+1807.7.9   = {	revolt = {}
+		owner = POL
+		controller = POL
+	     	remove_core = PRU
+	     } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
+1812.12.12 = { controller = RUS }
+1814.4.11  = {	owner = RUS
+		add_core = RUS
+	     } # Napoleon abdicates. Congress Poland, under Russian control after the Congress of Vienna

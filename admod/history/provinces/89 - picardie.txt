@@ -1,0 +1,91 @@
+# 89 Picardie - Principal cities: Amiens
+
+owner = BUR
+controller = BUR 
+capital = "Amiens"
+citysize = 15000
+culture = cosmopolitan_french
+religion = catholic
+hre = no
+base_tax = 6
+trade_goods = grain
+manpower = 5
+add_core = BUR
+add_core = FLA
+add_core = FRA
+fort1 = yes
+temple = yes # Notre Dame d'Amiens
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.1.1  = { add_core = ENG } 
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BUR
+		controller = BUR
+		citysize = 15000 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = FLA
+		controller = FLA }
+
+#Historical Campaign
+1399.10.14 = {	owner = BUR
+		controller = BUR }
+
+1450.1.1   = { citysize = 17000 }
+1477.1.5   = { owner = FRA controller = FRA remove_core = BUR } # Charles the Bold dies and transfers Picardie to France
+1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
+1500.1.1   = { citysize = 22000 }
+1513.8.16  = { controller = ENG } # Henry VIII defeats La Palice at Guinnegate and sacks Therouanne
+1514.5.5   = { controller = FRA } # Henry VIII concludes a seperate peace with France
+1520.1.1   = { fort2 = yes }
+1530.1.1   = { marketplace = yes }
+1544.7.5   = { controller = ENG } # English forces take hold of parts of Picardie in the Anglo-French War (1542-1546)
+1546.8.1   = { controller = FRA } # Peace is concluded, back to status quo
+1550.1.1   = { citysize = 27000 }
+1588.12.1  = { revolt_risk = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1594.1.1   = { revolt_risk = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1600.1.1   = { citysize = 32000 constable = yes }
+1628.1.1   = { revolt_risk = 3 }
+1630.1.1   = { revolt_risk = 0 }
+1638.1.1   = { revolt_risk = 3 }
+1640.1.1   = { revolt_risk = 0 }
+1642.1.1   = { revolt_risk = 3 }
+1644.1.1   = { revolt_risk = 0 }
+1650.1.1   = { citysize = 37000 fort3 = yes }
+1700.1.1   = { citysize = 42000 }
+1720.1.1   = { courthouse = yes }
+1730.1.1   = { workshop = yes }
+1740.1.1   = { fort4 = yes }
+1750.1.1   = { citysize = 45000 customs_house = yes }
+1760.1.1   = { tax_assessor = yes }
+1786.1.1   = { base_tax = 5 } # The Eden Agreement
+1789.7.14  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # The storming of the Bastille
+1800.1.1   = { citysize = 49000 }
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleu, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

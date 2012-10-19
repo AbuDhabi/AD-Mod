@@ -1,0 +1,12 @@
+# Maharathan Guerilla Warfare
+# land 32
+type = infantry
+unit_type = indian
+
+maneuver = 1
+offensive_morale = 6
+defensive_morale = 6
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 5
+defensive_shock = 6

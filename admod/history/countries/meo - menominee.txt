@@ -1,0 +1,23 @@
+government = regular_horde
+aristocracy_plutocracy = -1
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 4
+offensive_defensive = 2
+land_naval = -3
+quality_quantity = 5
+serfdom_freesubjects = 4
+primary_culture = menominee
+religion = spiritualism
+technology_group = new_world
+capital = 911	# Menominee
+
+1389.1.1 = {
+	monarch = {
+		name = "Amiskquew I"
+		dynasty = "Awaehsaeh"
+		adm = 6
+		dip = 3
+		mil = 5
+	}
+}

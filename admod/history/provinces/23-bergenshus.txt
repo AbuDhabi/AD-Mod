@@ -1,0 +1,52 @@
+#Bergenshus, incl. Bergen, 
+
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 3
+trade_goods = naval_supplies
+manpower = 2
+capital = "Bergen"
+fort1 = yes
+citysize = 1500 # Estimated
+discovered_by = western
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = NOR
+		controller = NOR
+		citysize = 1500 }
+
+#Shattered Europe
+1399.10.13 = { religion = norse_rel }
+
+#Historical
+1399.10.14 = { religion = catholic }
+
+1450.1.1  = { citysize = 1100 }
+1500.1.1  = { citysize = 1280 }
+1531.11.5 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # The Return of Christian II
+1532.7.15 = { revolt = {} controller = NOR } # The Capture of Christian II
+1536.1.1  = { religion = protestant} # Unknown date
+1536.1.1  = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
+1540.1.1  = { marketplace = yes }
+1550.1.1  = { citysize = 1580 }
+1600.1.1  = { citysize = 2400 }
+1650.1.1  = { citysize = 4380 }
+1700.1.1  = { citysize = 9500 }
+1750.1.1  = { citysize = 12000 }
+1800.1.1  = { citysize = 15240 }
+1814.1.14 = {	owner = SWE
+		revolt = { type = nationalist_rebels size = 0 }
+		controller = REB
+		remove_core = DAN
+	    } # Norway is ceded to Sweden following the Treaty of Kiel
+1814.5.17 = { revolt = {} owner = NOR controller = NOR } # Norway declares itself independent and elects Christian Frederik as king

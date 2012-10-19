@@ -1,0 +1,29 @@
+#1013 - Hizen
+
+owner = TAC
+controller = TAC
+culture = yamato
+religion = shinto
+capital = "Fukuoka"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 13200
+add_core = TAC
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 15700 }
+1500.1.1   = { citysize = 16400 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 17408 }
+1600.1.1   = { citysize = 18100 }
+1630.1.1   = { marketplace = yes }
+1637.12.17 = { revolt = { type = anti_tax_rebels size = 0 } } # Shimabara rebellion
+1638.4.12  = { revolt = {} }
+1639.8.4   = { cot = yes } # All foreign trade moved to Nagasaki
+1650.1.1   = { citysize = 20100 constable = yes }
+1700.1.1   = { citysize = 22485 }
+1750.1.1   = { citysize = 25150 }
+1800.1.1   = { citysize = 27500 }

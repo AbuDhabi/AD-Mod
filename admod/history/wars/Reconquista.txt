@@ -1,0 +1,16 @@
+name = "Spanish Reconquista"
+casus_belli = cb_disloyal_vassal
+
+1389.2.5 = {
+	add_attacker = CAS
+	add_attacker = ARA
+	add_defender = GRA
+	add_defender = MOR
+}
+
+1396.9.15 = {
+	rem_attacker = CAS
+	rem_attacker = ARA
+	rem_defender = GRA
+	rem_defender = MOR
+}

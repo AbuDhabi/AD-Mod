@@ -1,0 +1,23 @@
+government = tribal_democracy
+aristocracy_plutocracy = -5
+centralization_decentralization = 5
+innovative_narrowminded = 2
+mercantilism_freetrade = -3
+offensive_defensive = -1
+land_naval = -5
+quality_quantity = 4
+serfdom_freesubjects = -4
+primary_culture = wanka
+religion = inca_religion
+technology_group = s_new_world
+capital = 811	# Tarma
+
+1385.1.1 = {
+	monarch = {
+		name = "Taracun"
+		dynasty = "Q'Ero"
+		adm = 5
+		dip = 7
+		mil = 5
+	}
+}

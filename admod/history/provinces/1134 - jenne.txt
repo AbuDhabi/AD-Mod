@@ -1,0 +1,56 @@
+#1134 - Jenne
+
+owner = MAL
+controller = MAL
+culture = mali
+citysize = 18000
+manpower = 3
+religion = vodun
+capital = "Jenne"
+trade_goods = grain
+hre = no
+base_tax = 5
+native_ferocity = 4
+native_hostileness = 7
+add_core = MAL
+discovered_by = MAL
+discovered_by = ASH
+discovered_by = SON
+discovered_by = SOF
+discovered_by = SOK
+
+1450.1.1  = { citysize = 20000}
+1469.1.1  = { revolt_risk = 3 citysize = 18000 } # Songhai raids devastate region
+1472.1.1  = { revolt_risk = 6 citysize = 15000 } # Songhai raids devastate region
+1474.1.1  = { owner = SON controller = SON add_core = SON remove_core = MAL } # Conquered by Sunni Ali Ber of Songhai
+1481.1.1  = { discovered_by = POR } # Portuguese Mission arrives at the court of the Mali Mansa
+1482.1.1  = { revolt_risk = 5 } # Mossi Raid led by Nasere I devastates region
+1483.1.1  = { revolt_risk = 0 } # Nasere I killed in battle with Sunni Ali, Songhai rule restored
+1525.1.1  = { citysize = 17000 } # Revival under Askiya Muhammad
+1550.1.1  = { citysize = 20000 } # Era of Prosperity under Askiya Dawud
+1550.1.1  = { religion = sunni } # Jenne becomes second major center of Islam in Niger Valley under the Songhai
+1575.1.1  = { citysize = 24000 } # Era of Prosperity under Askiya Dawud
+1586.1.1  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Civil war between Al-Sadduk and Ishak
+1588.1.1  = { revolt = {} controller = SON revolt_risk = 6 } #Ishak reconquers lands in revolt, uneasy on throne
+1591.3.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Collapse of Songhai in wake of Tondibi
+1594.1.1  = { revolt = {} discovered_by = MOR owner = MOR controller = MOR add_core = MOR } # Moroccans seize Jenne
+1595.1.1  = { citysize = 18000 } # Rapid decline of population in wake of Moroccan invasions
+# 1599.1.1  = { revolt_risk = 6 } # invasion by Mansa Mahmud IV to restore glory of the Mali Empire, gained popular support
+1618.1.1  = { owner = MAL controller = MAL add_core = MAL remove_core = MOR } # Moroccans no longer appoint governors, local Moroccans, the Arma, rule on their own
+1642.1.1  = { remove_core = SON } # Collapse of last vestiges of unity among Songhai
+1650.1.1  = { citysize = 12000 } # major famines and political instability continue population decline
+1665.1.1  = { owner = SOF controller = SOF add_core = SOF } # Under control of Bambara kingdom of Kaladian Kulibali
+1700.1.1  = { citysize = 8000 } # major famines and political instability continue population decline
+1736.1.1  = { revolt_risk = 3 } # Raids by kingdom of Kong destabilize area
+1738.1.1  = { revolt_risk = 0 } # Mamari Kulibali ejects invaders from Kong
+1750.1.1  = { citysize = 18000 } # revival as Bambara restore strong state presence under Mamali Kulibali in region
+1756.1.1  = { revolt_risk = 9 } # Denkoro seizes power in wake of father Mamali's death, civil war
+1766.1.1  = { revolt_risk = 0 } # Ngolo Diarra restores authortiy of Segu state, ends civil war
+1819.1.1  = {	citysize = 0
+		base_tax = 5
+		native_ferocity = 4
+		native_hostileness = 7
+		owner = XXX
+		controller = XXX
+		remove_core = SOF
+	    } # The Massina Empire

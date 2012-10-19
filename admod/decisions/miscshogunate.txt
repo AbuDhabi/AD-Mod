@@ -1,0 +1,62 @@
+#Peaceful Unification
+
+shogunate_decisions = {
+
+	unite_japan_peacefully = {
+		potential = {
+			is_daimyo = yes
+			is_shogun = yes
+			NOT = {
+				has_country_flag = united_daimyos_of_japan
+				tag = JAP
+			}
+			year = 1550
+		}
+		allow = {
+			war = no
+			NOT = { war_exhaustion = 2 }
+			stability = 2
+			legitimacy = 0.9
+			is_subject = no
+			shogun_influence = 95
+			OR = {
+				relation = { who = JAP value = 150 }
+				ai = yes
+			}
+			government_tech = 11
+		}
+		effect = {
+			inherit = JAP
+			change_tag = JAP
+			capital = 1020
+			1020 = {
+				culture = THIS
+			}
+			inherit = MIN
+			inherit = TAI
+			inherit = FUJ
+			inherit = TAC
+			JAP = {
+				add_core = 1031	#Hokkaido
+				add_core = 1847	#Shiribeshi
+				add_core = 1852	#Tokachi
+			}
+
+			set_country_flag = united_daimyos_of_japan
+			prestige = 0.05
+			add_country_modifier = {
+				name = united_japan
+				duration = 365
+			}
+			add_country_modifier = {
+				name = disorder
+				duration = 365
+			}
+			remove_country_modifier = sankin_kotai
+			stability = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,1861 @@
+# events 24000-24999
+##################################################
+# Colombia Region 2400#
+# Valid new nations: COL, QTI
+##################################################
+
+#Colombia appears
+country_event = {
+
+	id = 24000
+#	major = yes
+
+	title = "EVTNAME24000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		824 = { NOT = { any_core = { is_colonial = yes } } }
+		829 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 816	# Tumbes
+			owns = 817	# Cuenca
+			owns = 818	# Canelos
+			owns = 819	# Guayaquil
+			owns = 820	# Quito
+			owns = 821	# Quijos
+			owns = 822	# Caqueta
+			owns = 823	# Cauca
+			owns = 824	# Mariquita
+			owns = 825	# Bogota
+			owns = 826	# Choco
+			owns = 827	# Antioquia
+			owns = 828	# Cartagena
+			owns = 829	# Magdalena
+			owns = 832	# Chiancon
+			owns = 833	# Tunja
+			owns = 835	# Panama
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		816 = { culture = andean }
+		817 = { culture = andean }
+		818 = { culture = andean }
+		819 = { culture = andean }
+		820 = { culture = andean }
+		821 = { culture = andean }
+		822 = { culture = andean }
+		823 = { culture = andean }
+		824 = { culture = andean }
+		825 = { culture = andean }
+		826 = { culture = andean }
+		827 = { culture = andean }
+		828 = { culture = andean }
+		829 = { culture = andean }
+		832 = { culture = andean }
+		833 = { culture = andean }
+		835 = { culture = andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		COL = {
+			add_core = 816
+			add_core = 817
+			add_core = 818
+			add_core = 819
+			add_core = 820
+			add_core = 821
+			add_core = 822
+			add_core = 823
+			add_core = 824
+			add_core = 825
+			add_core = 826
+			add_core = 827
+			add_core = 828
+			add_core = 829
+			add_core = 832
+			add_core = 833
+			add_core = 835
+		}
+		colonists = -1
+	}
+}
+
+#Qtizi appears
+country_event = {
+
+	id = 24001
+#	major = yes
+
+	title = "EVTNAME24000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		824 = { NOT = { any_core = { is_colonial = yes } } }
+		829 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 816	# Tumbes
+			owns = 817	# Cuenca
+			owns = 818	# Canelos
+			owns = 819	# Guayaquil
+			owns = 820	# Quito
+			owns = 821	# Quijos
+			owns = 822	# Caqueta
+			owns = 823	# Cauca
+			owns = 824	# Mariquita
+			owns = 825	# Bogota
+			owns = 826	# Choco
+			owns = 827	# Antioquia
+			owns = 828	# Cartagena
+			owns = 829	# Magdalena
+			owns = 832	# Chiancon
+			owns = 833	# Tunja
+			owns = 835	# Panama
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		816 = { culture = ummah }
+		817 = { culture = ummah }
+		818 = { culture = ummah }
+		819 = { culture = ummah }
+		820 = { culture = ummah }
+		821 = { culture = ummah }
+		822 = { culture = ummah }
+		823 = { culture = ummah }
+		824 = { culture = ummah }
+		825 = { culture = ummah }
+		826 = { culture = ummah }
+		827 = { culture = ummah }
+		828 = { culture = ummah }
+		829 = { culture = ummah }
+		832 = { culture = ummah }
+		833 = { culture = ummah }
+		835 = { culture = ummah }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QTI = {
+			add_core = 816
+			add_core = 817
+			add_core = 818
+			add_core = 819
+			add_core = 820
+			add_core = 821
+			add_core = 822
+			add_core = 823
+			add_core = 824
+			add_core = 825
+			add_core = 826
+			add_core = 827
+			add_core = 828
+			add_core = 829
+			add_core = 832
+			add_core = 833
+			add_core = 835
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Venezuela Region 2401#
+# Valid new nations: VNZ
+# Valid continuing nations: COL, QTI
+##################################################
+
+#Venezuela appears
+country_event = {
+
+	id = 24010
+#	major = yes
+
+	title = "EVTNAME24010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		742 = { NOT = { any_core = { is_colonial = yes } } }
+		830 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 741	# Cumana
+			owns = 742	# Guayana
+			owns = 830	# Maracaibo
+			owns = 831	# Caracas
+			owns = 834	# Barinas
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		741 = { culture = andean }
+		742 = { culture = andean }
+		830 = { culture = andean }
+		831 = { culture = andean }
+		834 = { culture = andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VNZ = {
+			add_core = 741
+			add_core = 742
+			add_core = 830
+			add_core = 831
+			add_core = 834
+		}
+		colonists = -1
+	}
+}
+
+#Colombia spreads fast
+country_event = {
+
+	id = 24011
+#	major = yes
+
+	title = "EVTNAME24010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		742 = { NOT = { any_core = { is_colonial = yes } } }
+		830 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 741	# Cumana
+			owns = 742	# Guayana
+			owns = 830	# Maracaibo
+			owns = 831	# Caracas
+			owns = 834	# Barinas
+		}
+		OR = {
+			742 = { any_neighbor_province = { is_core = COL } }
+			830 = { any_neighbor_province = { is_core = COL } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		741 = { culture = andean }
+		742 = { culture = andean }
+		830 = { culture = andean }
+		831 = { culture = andean }
+		834 = { culture = andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		COL = {
+			add_core = 741
+			add_core = 742
+			add_core = 830
+			add_core = 831
+			add_core = 834
+		}
+		colonists = -1
+	}
+}
+
+#Qtizi spreads slow
+country_event = {
+
+	id = 24012
+#	major = yes
+
+	title = "EVTNAME24010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		742 = { NOT = { any_core = { is_colonial = yes } } }
+		830 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 741	# Cumana
+			owns = 742	# Guayana
+			owns = 830	# Maracaibo
+			owns = 831	# Caracas
+			owns = 834	# Barinas
+		}
+		OR = {
+			742 = { any_neighbor_province = { is_core = QTI } }
+			830 = { any_neighbor_province = { is_core = QTI } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		741 = { culture = ummah }
+		742 = { culture = ummah }
+		830 = { culture = ummah }
+		831 = { culture = ummah }
+		834 = { culture = ummah }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QTI = {
+			add_core = 741
+			add_core = 742
+			add_core = 830
+			add_core = 831
+			add_core = 834
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Guyana Region 2402#
+# Valid new nations: VNZ, GYA, SUR, MUH
+##################################################
+
+#Venezuela appears
+country_event = {
+
+	id = 24020
+#	major = yes
+
+	title = "EVTNAME24020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		743 = { NOT = { any_core = { is_colonial = yes } } }
+		745 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			culture_group = latin
+			culture_group = iberian
+		}
+		OR = {
+			owns = 743	# Essequibo
+			owns = 744	# Demerara
+			owns = 745	# Suriname
+			owns = 746	# Cayenne
+			owns = 747	# Tucujulandia
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		743 = { culture = andean }
+		744 = { culture = andean }
+		745 = { culture = andean }
+		746 = { culture = andean }
+		747 = { culture = andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VNZ = {
+			add_core = 743
+			add_core = 744
+			add_core = 745
+			add_core = 746
+			add_core = 747
+		}
+		colonists = -1
+	}
+}
+
+#Guyana appears
+country_event = {
+
+	id = 24021
+#	major = yes
+
+	title = "EVTNAME24020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		743 = { NOT = { any_core = { is_colonial = yes } } }
+		745 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = british
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 743	# Essequibo
+			owns = 744	# Demerara
+			owns = 745	# Suriname
+			owns = 746	# Cayenne
+			owns = 747	# Tucujulandia
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		743 = { culture = metis }
+		744 = { culture = metis }
+		745 = { culture = metis }
+		746 = { culture = metis }
+		747 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		GYA = {
+			add_core = 743
+			add_core = 744
+			add_core = 745
+			add_core = 746
+			add_core = 747
+		}
+		colonists = -1
+	}
+}
+
+#Suriname appears
+country_event = {
+
+	id = 24022
+#	major = yes
+
+	title = "EVTNAME24020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		743 = { NOT = { any_core = { is_colonial = yes } } }
+		745 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = south_slavic
+			culture_group = west_slavic
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 743	# Essequibo
+			owns = 744	# Demerara
+			owns = 745	# Suriname
+			owns = 746	# Cayenne
+			owns = 747	# Tucujulandia
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		743 = { culture = colonialist }
+		744 = { culture = colonialist }
+		745 = { culture = colonialist }
+		746 = { culture = colonialist }
+		747 = { culture = colonialist }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		SUR = {
+			add_core = 743
+			add_core = 744
+			add_core = 745
+			add_core = 746
+			add_core = 747
+		}
+		colonists = -1
+	}
+}
+
+#Muhajedz appears
+country_event = {
+
+	id = 24023
+#	major = yes
+
+	title = "EVTNAME24020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		743 = { NOT = { any_core = { is_colonial = yes } } }
+		745 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 743	# Essequibo
+			owns = 744	# Demerara
+			owns = 745	# Suriname
+			owns = 746	# Cayenne
+			owns = 747	# Tucujulandia
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		743 = { culture = muhajedzi }
+		744 = { culture = muhajedzi }
+		745 = { culture = muhajedzi }
+		746 = { culture = muhajedzi }
+		747 = { culture = muhajedzi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MUH = {
+			add_core = 743
+			add_core = 744
+			add_core = 745
+			add_core = 746
+			add_core = 747
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# North Brazil Region 2403#
+# Valid new nations: BRZ, MUH
+##################################################
+
+#Brazil appears
+country_event = {
+
+	id = 24030
+#	major = yes
+
+	title = "EVTNAME24030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		753 = { NOT = { any_core = { is_colonial = yes } } }
+		755 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 748	# Grao Para
+			owns = 749	# Maranhao
+			owns = 750	# Alpercatas
+			owns = 751	# Ceara
+			owns = 752	# Oeiras
+			owns = 753	# Rio Grande
+			owns = 754	# Itamaraca
+			owns = 755	# Pernambuco
+			owns = 756	# Bahia
+			owns = 757	# Ilheus
+			owns = 759	# Diamentina
+			owns = 760	# Porto Seguro
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		748 = { culture = brazilian }
+		749 = { culture = brazilian }
+		750 = { culture = brazilian }
+		751 = { culture = brazilian }
+		752 = { culture = brazilian }
+		753 = { culture = brazilian }
+		754 = { culture = brazilian }
+		755 = { culture = brazilian }
+		756 = { culture = brazilian }
+		757 = { culture = brazilian }
+		759 = { culture = brazilian }
+		760 = { culture = brazilian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		BRZ = {
+			add_core = 748
+			add_core = 749
+			add_core = 750
+			add_core = 751
+			add_core = 752
+			add_core = 753
+			add_core = 754
+			add_core = 755
+			add_core = 756
+			add_core = 757
+			add_core = 759
+			add_core = 760
+		}
+		colonists = -1
+	}
+}
+
+#Muhajedz appears
+country_event = {
+
+	id = 24031
+#	major = yes
+
+	title = "EVTNAME24030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		753 = { NOT = { any_core = { is_colonial = yes } } }
+		755 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 748	# Grao Para
+			owns = 749	# Maranhao
+			owns = 750	# Alpercatas
+			owns = 751	# Ceara
+			owns = 752	# Oeiras
+			owns = 753	# Rio Grande
+			owns = 754	# Itamaraca
+			owns = 755	# Pernambuco
+			owns = 756	# Bahia
+			owns = 757	# Ilheus
+			owns = 759	# Diamentina
+			owns = 760	# Porto Seguro
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		748 = { culture = muhajedzi }
+		749 = { culture = muhajedzi }
+		750 = { culture = muhajedzi }
+		751 = { culture = muhajedzi }
+		752 = { culture = muhajedzi }
+		753 = { culture = muhajedzi }
+		754 = { culture = muhajedzi }
+		755 = { culture = muhajedzi }
+		756 = { culture = muhajedzi }
+		757 = { culture = muhajedzi }
+		759 = { culture = muhajedzi }
+		760 = { culture = muhajedzi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MUH = {
+			add_core = 748
+			add_core = 749
+			add_core = 750
+			add_core = 751
+			add_core = 752
+			add_core = 753
+			add_core = 754
+			add_core = 755
+			add_core = 756
+			add_core = 757
+			add_core = 759
+			add_core = 760
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# South Brazil Region 2404#
+# Valid new nations: BRZ, ALU
+##################################################
+
+#Brazil appears
+country_event = {
+
+	id = 24040
+#	major = yes
+
+	title = "EVTNAME24040"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		763 = { NOT = { any_core = { is_colonial = yes } } }
+		766 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 758	# Goias
+			owns = 761	# Espirito Santo
+			owns = 762	# Sao Tome
+			owns = 763	# Rio de Janeiro
+			owns = 764	# Santo Amaro
+			owns = 765	# Minas Gerais
+			owns = 766	# Sao Vicente
+			owns = 767	# Mato Grasso
+			owns = 768	# Guayra
+			owns = 769	# Santana
+			owns = 770	# Tape
+			owns = 771	# Patos
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		758 = { culture = brazilian }
+		761 = { culture = brazilian }
+		762 = { culture = brazilian }
+		763 = { culture = brazilian }
+		764 = { culture = brazilian }
+		765 = { culture = brazilian }
+		766 = { culture = brazilian }
+		767 = { culture = brazilian }
+		768 = { culture = brazilian }
+		769 = { culture = brazilian }
+		770 = { culture = brazilian }
+		771 = { culture = brazilian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		BRZ = {
+			add_core = 758
+			add_core = 761
+			add_core = 762
+			add_core = 763
+			add_core = 764
+			add_core = 765
+			add_core = 766
+			add_core = 767
+			add_core = 768
+			add_core = 769
+			add_core = 770
+			add_core = 771
+		}
+		colonists = -1
+	}
+}
+
+#Alusal appears
+country_event = {
+
+	id = 24041
+#	major = yes
+
+	title = "EVTNAME24040"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		763 = { NOT = { any_core = { is_colonial = yes } } }
+		766 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 758	# Goias
+			owns = 761	# Espirito Santo
+			owns = 762	# Sao Tome
+			owns = 763	# Rio de Janeiro
+			owns = 764	# Santo Amaro
+			owns = 765	# Minas Gerais
+			owns = 766	# Sao Vicente
+			owns = 767	# Mato Grasso
+			owns = 768	# Guayra
+			owns = 769	# Santana
+			owns = 770	# Tape
+			owns = 771	# Patos
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		758 = { culture = alusali }
+		761 = { culture = alusali }
+		762 = { culture = alusali }
+		763 = { culture = alusali }
+		764 = { culture = alusali }
+		765 = { culture = alusali }
+		766 = { culture = alusali }
+		767 = { culture = alusali }
+		768 = { culture = alusali }
+		769 = { culture = alusali }
+		770 = { culture = alusali }
+		771 = { culture = alusali }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ALU = {
+			add_core = 758
+			add_core = 761
+			add_core = 762
+			add_core = 763
+			add_core = 764
+			add_core = 765
+			add_core = 766
+			add_core = 767
+			add_core = 768
+			add_core = 769
+			add_core = 770
+			add_core = 771
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Paraguay Region 2405#
+# Valid new nations: PRG, ASM
+##################################################
+
+#Paraguay appears
+country_event = {
+
+	id = 24050
+#	major = yes
+
+	title = "EVTNAME24050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		774 = { NOT = { any_core = { is_colonial = yes } } }
+		775 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 774	# Mbaracayu
+			owns = 775	# Xeres
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		774 = { culture = argentine }
+		775 = { culture = argentine }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		PRG = {
+			add_core = 774
+			add_core = 775
+		}
+		colonists = -1
+	}
+}
+
+#Asmunakal appears
+country_event = {
+
+	id = 24051
+#	major = yes
+
+	title = "EVTNAME24050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		774 = { NOT = { any_core = { is_colonial = yes } } }
+		775 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 774	# Mbaracayu
+			owns = 775	# Xeres
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		774 = { culture = asmunakali }
+		775 = { culture = asmunakali }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ASM = {
+			add_core = 774
+			add_core = 775
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# La Plata Region 2406#
+# Valid new nations: LAP, JAD
+##################################################
+
+#La Plata appears
+country_event = {
+
+	id = 24060
+#	major = yes
+
+	title = "EVTNAME24060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		781 = { NOT = { any_core = { is_colonial = yes } } }
+		791 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 772	# Uruguay
+			owns = 773	# Banda Oriental
+			owns = 776	# Itenines
+			owns = 777	# Parana
+			owns = 778	# Rio de la Plata
+			owns = 779	# Serranos
+			owns = 780	# Tehuelmapu
+			owns = 781	# Patagonia Oriental
+			owns = 785	# Pehuenmapu
+			owns = 786	# Salinas Grande
+			owns = 788	# Cuyo
+			owns = 789	# Pampas
+			owns = 790	# Chaco Austral
+			owns = 791	# Catamarca
+			owns = 794	# Jujuy
+			owns = 799	# Chaco Boreal
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		772 = { culture = argentine }
+		773 = { culture = argentine }
+		776 = { culture = argentine }
+		777 = { culture = argentine }
+		778 = { culture = argentine }
+		779 = { culture = argentine }
+		780 = { culture = argentine }
+		781 = { culture = argentine }
+		785 = { culture = argentine }
+		786 = { culture = argentine }
+		788 = { culture = argentine }
+		789 = { culture = argentine }
+		790 = { culture = argentine }
+		791 = { culture = argentine }
+		794 = { culture = argentine }
+		799 = { culture = argentine }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LAP = {
+			add_core = 772
+			add_core = 773
+			add_core = 776
+			add_core = 777
+			add_core = 778
+			add_core = 779
+			add_core = 780
+			add_core = 781
+			add_core = 785
+			add_core = 786
+			add_core = 788
+			add_core = 789
+			add_core = 790
+			add_core = 791
+			add_core = 794
+			add_core = 799
+		}
+		colonists = -1
+	}
+}
+
+#Jidligrib appears
+country_event = {
+
+	id = 24061
+#	major = yes
+
+	title = "EVTNAME24060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		781 = { NOT = { any_core = { is_colonial = yes } } }
+		791 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 772	# Uruguay
+			owns = 773	# Banda Oriental
+			owns = 776	# Itenines
+			owns = 777	# Parana
+			owns = 778	# Rio de la Plata
+			owns = 779	# Serranos
+			owns = 780	# Tehuelmapu
+			owns = 781	# Patagonia Oriental
+			owns = 785	# Pehuenmapu
+			owns = 786	# Salinas Grande
+			owns = 788	# Cuyo
+			owns = 789	# Pampas
+			owns = 790	# Chaco Austral
+			owns = 791	# Catamarca
+			owns = 794	# Jujuy
+			owns = 799	# Chaco Boreal
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		772 = { culture = jadlagribi }
+		773 = { culture = jadlagribi }
+		776 = { culture = jadlagribi }
+		777 = { culture = jadlagribi }
+		778 = { culture = jadlagribi }
+		779 = { culture = jadlagribi }
+		780 = { culture = jadlagribi }
+		781 = { culture = jadlagribi }
+		785 = { culture = jadlagribi }
+		786 = { culture = jadlagribi }
+		788 = { culture = jadlagribi }
+		789 = { culture = jadlagribi }
+		790 = { culture = jadlagribi }
+		791 = { culture = jadlagribi }
+		794 = { culture = jadlagribi }
+		799 = { culture = jadlagribi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		JAD = {
+			add_core = 772
+			add_core = 773
+			add_core = 776
+			add_core = 777
+			add_core = 778
+			add_core = 779
+			add_core = 780
+			add_core = 781
+			add_core = 785
+			add_core = 786
+			add_core = 788
+			add_core = 789
+			add_core = 790
+			add_core = 791
+			add_core = 794
+			add_core = 799
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Chile Region 2407#
+# Valid new nations: CHL, JAD
+##################################################
+
+#Chile appears
+country_event = {
+
+	id = 24070
+#	major = yes
+
+	title = "EVTNAME24070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		783 = { NOT = { any_core = { is_colonial = yes } } }
+		787 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 783	# Patagonia Occidental
+			owns = 784	# Huillimapu
+			owns = 787	# Picunmapu
+			owns = 792	# Copiapo
+			owns = 793	# Atacama
+			owns = 796	# Arica
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		783 = { culture = chilean }
+		784 = { culture = chilean }
+		787 = { culture = chilean }
+		792 = { culture = chilean }
+		793 = { culture = chilean }
+		796 = { culture = chilean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CHL = {
+			add_core = 783
+			add_core = 784
+			add_core = 787
+			add_core = 792
+			add_core = 793
+			add_core = 796
+		}
+		colonists = -1
+	}
+}
+
+#Jidligrib appears
+country_event = {
+
+	id = 24071
+#	major = yes
+
+	title = "EVTNAME24070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		783 = { NOT = { any_core = { is_colonial = yes } } }
+		787 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 783	# Patagonia Occidental
+			owns = 784	# Huillimapu
+			owns = 787	# Picunmapu
+			owns = 792	# Copiapo
+			owns = 793	# Atacama
+			owns = 796	# Arica
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		783 = { culture = jadlagribi }
+		784 = { culture = jadlagribi }
+		787 = { culture = jadlagribi }
+		792 = { culture = jadlagribi }
+		793 = { culture = jadlagribi }
+		796 = { culture = jadlagribi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		JAD = {
+			add_core = 783
+			add_core = 784
+			add_core = 787
+			add_core = 792
+			add_core = 793
+			add_core = 796
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# North Andes Region 2408#
+# Valid new nations: PEU
+# Valid continuing nations: ASM
+##################################################
+
+#Peru appears
+country_event = {
+
+	id = 24080
+#	major = yes
+
+	title = "EVTNAME24080"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		813 = { NOT = { any_core = { is_colonial = yes } } }
+		815 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 806	# Nazca
+			owns = 807	# Huamanga
+			owns = 808	# Cuzco
+			owns = 809	# Lima
+			owns = 810	# Huancavelica
+			owns = 811	# Tarma
+			owns = 812	# Chanchan
+			owns = 813	# Cajamarca
+			owns = 814	# Huanuco
+			owns = 815	# Maynas
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		806 = { culture = s_andean }
+		807 = { culture = s_andean }
+		808 = { culture = s_andean }
+		809 = { culture = s_andean }
+		810 = { culture = s_andean }
+		811 = { culture = s_andean }
+		812 = { culture = s_andean }
+		813 = { culture = s_andean }
+		814 = { culture = s_andean }
+		815 = { culture = s_andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		PEU = {
+			add_core = 806
+			add_core = 807
+			add_core = 808
+			add_core = 809
+			add_core = 810
+			add_core = 811
+			add_core = 812
+			add_core = 813
+			add_core = 814
+			add_core = 815
+		}
+		colonists = -1
+	}
+}
+
+#Asmunakal spreads slow
+country_event = {
+
+	id = 24081
+#	major = yes
+
+	title = "EVTNAME24080"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		813 = { NOT = { any_core = { is_colonial = yes } } }
+		815 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 806	# Nazca
+			owns = 807	# Huamanga
+			owns = 808	# Cuzco
+			owns = 809	# Lima
+			owns = 810	# Huancavelica
+			owns = 811	# Tarma
+			owns = 812	# Chanchan
+			owns = 813	# Cajamarca
+			owns = 814	# Huanuco
+			owns = 815	# Maynas
+		}
+		OR = {
+			807 = { any_neighbor_province = { is_core = ASM } }
+			813 = { any_neighbor_province = { is_core = ASM } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		806 = { culture = asmunakali }
+		807 = { culture = asmunakali }
+		808 = { culture = asmunakali }
+		809 = { culture = asmunakali }
+		810 = { culture = asmunakali }
+		811 = { culture = asmunakali }
+		812 = { culture = asmunakali }
+		813 = { culture = asmunakali }
+		814 = { culture = asmunakali }
+		815 = { culture = asmunakali }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ASM = {
+			add_core = 806
+			add_core = 807
+			add_core = 808
+			add_core = 809
+			add_core = 810
+			add_core = 811
+			add_core = 812
+			add_core = 813
+			add_core = 814
+			add_core = 815
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# South Andes Region 2409#
+# Valid new nations: PEU, ASM
+# Valid continuing nations: LAP, PRG
+##################################################
+
+#Peru appears
+country_event = {
+
+	id = 24090
+#	major = yes
+
+	title = "EVTNAME24090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		801 = { NOT = { any_core = { is_colonial = yes } } }
+		803 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 795	# Chichas
+			owns = 797	# Caracara
+			owns = 798	# Charcas
+			owns = 800	# Chiquitos
+			owns = 801	# Caranga
+			owns = 802	# Chuquiabo
+			owns = 803	# Moxos
+			owns = 804	# Puno
+			owns = 805	# Arequipa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		795 = { culture = s_andean }
+		797 = { culture = s_andean }
+		798 = { culture = s_andean }
+		800 = { culture = s_andean }
+		801 = { culture = s_andean }
+		802 = { culture = s_andean }
+		803 = { culture = s_andean }
+		804 = { culture = s_andean }
+		805 = { culture = s_andean }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		PEU = {
+			add_core = 795
+			add_core = 797
+			add_core = 798
+			add_core = 800
+			add_core = 801
+			add_core = 802
+			add_core = 803
+			add_core = 804
+			add_core = 805
+		}
+		colonists = -1
+	}
+}
+
+#Asmunakal appears
+country_event = {
+
+	id = 24091
+#	major = yes
+
+	title = "EVTNAME24090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		801 = { NOT = { any_core = { is_colonial = yes } } }
+		803 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 795	# Chichas
+			owns = 797	# Caracara
+			owns = 798	# Charcas
+			owns = 800	# Chiquitos
+			owns = 801	# Caranga
+			owns = 802	# Chuquiabo
+			owns = 803	# Moxos
+			owns = 804	# Puno
+			owns = 805	# Arequipa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		795 = { culture = asmunakali }
+		797 = { culture = asmunakali }
+		798 = { culture = asmunakali }
+		800 = { culture = asmunakali }
+		801 = { culture = asmunakali }
+		802 = { culture = asmunakali }
+		803 = { culture = asmunakali }
+		804 = { culture = asmunakali }
+		805 = { culture = asmunakali }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ASM = {
+			add_core = 795
+			add_core = 797
+			add_core = 798
+			add_core = 800
+			add_core = 801
+			add_core = 802
+			add_core = 803
+			add_core = 804
+			add_core = 805
+		}
+		colonists = -1
+	}
+}
+
+#La Plata spreads slow
+country_event = {
+
+	id = 24092
+#	major = yes
+
+	title = "EVTNAME24090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		801 = { NOT = { any_core = { is_colonial = yes } } }
+		803 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 795	# Chichas
+			owns = 797	# Caracara
+			owns = 798	# Charcas
+			owns = 800	# Chiquitos
+			owns = 801	# Caranga
+			owns = 802	# Chuquiabo
+			owns = 803	# Moxos
+			owns = 804	# Puno
+			owns = 805	# Arequipa
+		}
+		OR = {
+			795 = { any_neighbor_province = { is_core = LAP } }
+			804 = { any_neighbor_province = { is_core = LAP } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 170
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		795 = { culture = argentine }
+		797 = { culture = argentine }
+		798 = { culture = argentine }
+		800 = { culture = argentine }
+		801 = { culture = argentine }
+		802 = { culture = argentine }
+		803 = { culture = argentine }
+		804 = { culture = argentine }
+		805 = { culture = argentine }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LAP = {
+			add_core = 795
+			add_core = 797
+			add_core = 798
+			add_core = 800
+			add_core = 801
+			add_core = 802
+			add_core = 803
+			add_core = 804
+			add_core = 805
+		}
+		colonists = -1
+	}
+}
+
+#Paraguay spreads slow
+country_event = {
+
+	id = 24093
+#	major = yes
+
+	title = "EVTNAME24090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		801 = { NOT = { any_core = { is_colonial = yes } } }
+		803 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 795	# Chichas
+			owns = 797	# Caracara
+			owns = 798	# Charcas
+			owns = 800	# Chiquitos
+			owns = 801	# Caranga
+			owns = 802	# Chuquiabo
+			owns = 803	# Moxos
+			owns = 804	# Puno
+			owns = 805	# Arequipa
+		}
+		OR = {
+			795 = { any_neighbor_province = { is_core = PRG } }
+			804 = { any_neighbor_province = { is_core = PRG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 170
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		795 = { culture = argentine }
+		797 = { culture = argentine }
+		798 = { culture = argentine }
+		800 = { culture = argentine }
+		801 = { culture = argentine }
+		802 = { culture = argentine }
+		803 = { culture = argentine }
+		804 = { culture = argentine }
+		805 = { culture = argentine }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LAP = {
+			add_core = 795
+			add_core = 797
+			add_core = 798
+			add_core = 800
+			add_core = 801
+			add_core = 802
+			add_core = 803
+			add_core = 804
+			add_core = 805
+		}
+		colonists = -1
+	}
+}

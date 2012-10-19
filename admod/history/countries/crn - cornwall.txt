@@ -1,0 +1,29 @@
+government = feudal_monarchy
+aristocracy_plutocracy = -3
+centralization_decentralization = 5
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = -2
+land_naval = -1
+quality_quantity = 1
+serfdom_freesubjects = -2
+technology_group = western
+primary_culture = welsh
+religion = catholic
+capital = 233	# Exeter
+
+1389.1.28 = {
+	monarch = { 
+		name = "Conan I"
+		dynasty = "of Cimmeria"
+		dip = 4
+		mil = 9
+		adm = 3
+	}
+}
+
+# Muslim Supremacy Campaign
+1399.10.13 = { religion = druidism }
+
+#Historical Campaign
+1399.10.14 = { religion = catholic }

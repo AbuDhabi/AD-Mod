@@ -1,0 +1,40 @@
+#1129 - Azawadd
+
+culture = tuareg
+religion = sunni
+capital = "Arawan"
+trade_goods = unknown
+manpower = 1
+hre = no
+base_tax = 2
+native_size = 30
+native_ferocity = 4.5
+native_hostileness = 10
+discovered_by = SOF
+discovered_by = SON
+
+#Black Death
+1399.10.11 = {	owner = SON
+		controller = SON
+		add_core = SON
+		citysize = 3000
+		trade_goods = salt }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = SON
+		citysize = 0
+		trade_goods = unknown }
+
+1517.1.1 = {	discovered_by = SON
+		owner = SON
+		controller = SON
+		add_core = SON
+		citysize = 3000
+		trade_goods = salt
+	   } #Askiya Muhammad of Songhai seizes control 
+1586.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Civil war between Al-Sadduk and Ishak
+1591.1.1 = { revolt = {} discovered_by = MOR owner = MOR controller = MOR add_core = MOR } #occupied by Moroccans during march into Niger valley
+1618.1.1 = { discovered_by = MAL owner = MAL controller = MAL add_core = MAL remove_core = MOR } #Moroccans no longer appoint governors, local Moroccans, the Arma, rule on their own (recycle MAL tag)
+1642.1.1 = { remove_core = SON } #Collapse of last vestiges of unity among Songhai

@@ -1,0 +1,47 @@
+#1220 - Dar Ja'al
+
+culture = nubian 
+religion = bantu_rel
+capital = "Al Damar"
+native_size = 50
+native_ferocity = 4.5
+native_hostileness = 9 
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 1
+discovered_by = NUB
+
+#Black Death
+1399.10.11 = {	owner = NUB
+		controller = NUB
+		add_core = NUB
+		citysize = 5000
+		trade_goods = wool }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = NUB
+		citysize = 0
+		trade_goods = unknown }
+
+1503.1.1 = {	owner = NUB
+	   	controller = NUB
+	   	add_core = NUB
+		discovered_by = NUB
+		citysize = 5000
+		discovered_by = ETH
+		trade_goods = wool
+	   }
+1550.1.1 = { discovered_by = TUR }
+1580.1.1 = { religion = sunni } #spread of Islam leads to shift in religion affiliation of region
+1583.1.1 = { revolt_risk = 6 } #Shaykh Ajib expelled from Sennar, Abdallabi discontent grows
+1584.1.1 = { revolt_risk = 0 } #Dakin and Ajib reach agreement to end conflict
+1600.1.1 = { citysize = 6500 }
+1612.1.1 = { revolt_risk = 5 } #Funj destroy Ajib at Karkoj
+1613.1.1 = { revolt_risk = 0 } #Funj restore autonomy to the Abdallabi
+1650.1.1 = { citysize = 7500 }
+1700.1.1 = { citysize = 8000 }
+1750.1.1 = { citysize = 8500 }
+1800.1.1 = { citysize = 9000 }

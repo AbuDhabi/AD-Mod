@@ -1,0 +1,32 @@
+#682 - Hanyang
+
+owner = MNG
+controller = MNG
+culture = chi_gan
+religion = confucianism
+capital = "Hanyang"
+trade_goods = chinaware
+hre = no
+base_tax = 10
+manpower = 6
+citysize = 31800
+add_core = MNG
+add_core = QIN
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 34500 }
+1500.1.1 = { citysize = 36970 }
+1550.1.1 = { citysize = 38244 }
+1600.1.1 = { citysize = 40179 }
+1644.1.1 = { controller = MCH }
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 42678 }
+1658.1.1 = { temple = yes } # Guiyuan Temple
+1700.1.1 = { citysize = 44520 }
+1750.1.1 = { citysize = 46310 }
+1800.1.1 = { citysize = 48979 }

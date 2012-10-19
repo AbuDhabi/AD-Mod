@@ -1,0 +1,36 @@
+#960 - Onondaga
+
+owner = IRO
+controller = IRO
+culture = iroquis
+religion = spiritualism
+capital = "Onondaga"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 1363
+add_core = IRO
+discovered_by = IRO
+discovered_by = HUR
+discovered_by = LEN
+
+1450.1.1  = { citysize = 1500 }
+1500.1.1  = { citysize = 1833 }
+1550.1.1  = { citysize = 2175 }
+1600.1.1  = { citysize = 2550 }
+1615.1.1  = { discovered_by = FRA } # Étienne Brûlé 
+1650.1.1  = { citysize = 3967 }
+1700.1.1  = { citysize = 4367 }
+1750.1.1  = { citysize = 5667 }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+	    }
+1784.1.1  = { citysize = 5700 } # Settlements began shortly after the American revolution
+1800.1.1  = { citysize = 6976 }

@@ -1,0 +1,38 @@
+government = tribal_federation
+aristocracy_plutocracy = -4
+centralization_decentralization = 3
+innovative_narrowminded = 3
+mercantilism_freetrade = -5
+offensive_defensive = -1
+land_naval = 2
+quality_quantity = 1
+serfdom_freesubjects = -5
+primary_culture = ainu
+religion = animism
+technology_group = chinese
+capital = 1031	# Hokkaido
+
+
+1372.5.24 = {
+	monarch = {
+		name = "Kokaku I"
+		dynasty = "Date"
+		adm = 7
+		dip = 6
+		mil = 4
+	}
+}
+
+1391.6.12 = {
+	heir = {
+		name = "Shoko"
+		monarch_name = "Shoko I"
+		dynasty = "Date"
+		birth_date = 1391.6.12
+		death_date = 1428.8.30
+		claim = 75
+		adm = 5
+		dip = 4
+		mil = 7
+	}
+}

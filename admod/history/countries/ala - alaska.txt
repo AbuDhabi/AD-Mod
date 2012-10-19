@@ -1,0 +1,13 @@
+government = bureaucratic_despotism
+aristocracy_plutocracy = 2
+centralization_decentralization = 1
+innovative_narrowminded = 4
+mercantilism_freetrade = 3
+offensive_defensive = 0
+land_naval = 3
+quality_quantity = 3
+serfdom_freesubjects = -5
+primary_culture = alaskan
+technology_group = western
+unit_type = western
+religion = orthodox

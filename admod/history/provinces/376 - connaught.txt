@@ -1,0 +1,57 @@
+#376 - Connaught
+
+owner = CNN
+controller = CNN
+culture = irish
+religion = catholic
+hre = no
+base_tax = 3
+trade_goods = fish
+manpower = 2
+capital = "Galway"
+citysize = 1800
+add_core = CNN
+fort1 = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = CNN
+		controller = CNN
+		citysize = 1800 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	religion = druidism }
+
+#Historical Campaign
+1399.10.14 = {	religion = catholic }
+
+1450.1.1  = { citysize = 2000 }
+1600.1.1  = { citysize = 4000 }
+1635.1.1  = {	owner = ENG
+		controller = ENG
+	    	add_core = ENG
+	    } # Beginning of efforts of Thomas Wentworth to plant parts of Connaught
+1642.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Estimated
+1642.6.7  = { revolt = {} owner = IRE controller = IRE } # Confederation of Kilkenny
+1652.4.1  = { owner = ENG controller = ENG } # End of the Irish Confederates
+1655.1.1  = { fort2 = yes }
+1689.3.12 = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # James II Lands in Ireland
+1691.9.23 = { revolt = {} controller = ENG } # Capture of Limerick
+1700.1.1  = { citysize = 5000 }
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1725.1.1  = { courthouse = yes } # Estimated
+1798.8.27 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Republic of Connaught
+1798.9.8  = { revolt = {} controller = GBR }
+1800.1.1  = { citysize = 12000 }

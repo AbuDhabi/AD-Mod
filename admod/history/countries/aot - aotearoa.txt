@@ -1,0 +1,23 @@
+government = elective_monarchy
+aristocracy_plutocracy = -4
+centralization_decentralization = 3
+innovative_narrowminded = -3
+mercantilism_freetrade = 0
+offensive_defensive = 2
+land_naval = 5
+quality_quantity = 4
+serfdom_freesubjects = 4
+primary_culture = maori
+religion = polynesian_religion
+technology_group = new_world
+capital = 1106	# Wairoa
+
+1388.10.1 = {
+	monarch = {
+		name = "Wiremu I"
+		dynasty = "Tamehana"
+		adm = 6
+		dip = 3
+		mil = 5
+	}
+}

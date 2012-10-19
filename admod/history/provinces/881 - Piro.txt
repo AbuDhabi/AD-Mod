@@ -1,0 +1,48 @@
+#881 - Piro
+
+culture = pueblo 
+religion = teotl
+capital = "Acoma" 
+trade_goods = unknown 
+hre = no 
+base_tax = 1 
+manpower = 1 
+native_size = 15 
+native_ferocity = 3 
+native_hostileness = 5 
+discovered_by = NVJ
+discovered_by = PUE
+
+#Black Death
+1399.10.11 = {	owner = PUE
+		controller = PUE
+		add_core = PUE
+		citysize = 1500
+		trade_goods = salt }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = PUE
+		citysize = 0
+		trade_goods = unknown }
+
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1598.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 300
+		culture = castillian
+		religion = catholic
+		trade_goods = salt 
+	    } # First Spanish colonists
+1623.1.1  = { add_core = SPA citysize = 1000 }
+1650.1.1  = { citysize = 1800 }
+1660.1.1  = { revolt_risk = 4 }
+1670.1.1  = { revolt_risk = 5 }
+1672.1.1  = { revolt_risk = 0 }
+1680.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pueblo revolt
+1692.1.1  = { revolt = {} controller = SPA } # The Spanish reestablished control & the colonists returned
+1700.1.1  = { citysize = 1990 }
+1750.1.1  = { citysize = 2420 add_core = MEX }
+1800.1.1  = { citysize = 2820 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

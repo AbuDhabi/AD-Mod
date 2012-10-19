@@ -1,0 +1,34 @@
+#1122 - Konian
+
+culture = dyola
+religion = vodun
+capital = "Beyla"
+trade_goods = unknown
+manpower = 1
+hre = no
+base_tax = 1
+native_size = 30
+native_ferocity = 4
+native_hostileness = 6 
+discovered_by = SOF
+discovered_by = MAL
+
+#Black Death
+1399.10.11 = {	owner = SOF
+		controller = SOF
+		add_core = SOF
+		citysize = 4000
+		trade_goods = slaves }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = SOF
+		citysize = 0
+		trade_goods = unknown }
+
+1462.1.1 = { discovered_by = POR } 
+1605.1.1 = { revolt_risk = 6 culture = mali } #Collapse of Mali sparks major migrations of Mande into region
+1610.1.1 = { revolt_risk = 0 }
+1755.1.1 = { revolt_risk = 6 } #Ibrahima Sory leads major raids by Fulbe into region 
+1762.1.1 = { revolt_risk = 0 } #Defeat of Ibrahim Sory ends Fulbe raids

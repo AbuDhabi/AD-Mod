@@ -1,0 +1,59 @@
+#482 - Bahamas
+
+culture = arawak
+religion = teotl
+capital = "Bahamas"
+trade_goods = unknown
+hre = no
+base_tax = 2 
+manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 5
+discovered_by = ARW
+discovered_by = CAR
+
+#Black Death
+1399.10.11 = {	owner = ARW
+		controller = ARW
+		add_core = ARW
+		citysize = 1200
+		trade_goods = cotton }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = ARW
+		citysize = 0
+		trade_goods = unknown }
+
+1492.12.5 = {	discovered_by = CAS
+		owner = CAS
+		controller = CAS
+		religion = catholic
+		culture = castillian
+		citysize = 300
+		trade_goods = cotton
+	    } # Christopher Columbus's arrival
+1500.1.1  = { citysize = 650 }
+1516.1.23 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+	    }
+1517.1.1  = { add_core = SPA }
+1522.1.1  = { citysize = 1500 } # The Taino society ceased to exist as a separate population
+1550.1.1  = { citysize = 300 } # The Bahamian islands are deserted until the arrival of English settlers
+1650.1.1  = { citysize = 350 } # The arrival of English settlers from Bermuda 
+1655.1.1  = { capital = "Charles Town" }
+1695.1.1  = { capital = "Nassau" } # The town is renamed, Nassau
+1700.1.1  = { citysize = 640 } # Still sparsley settled
+1718.1.1  = {	owner = GBR
+		controller = GBR
+		remove_core = SPA
+		religion = protestant
+		culture = english
+	    } # Became a British colony
+1743.1.1  = { add_core = GBR }
+1750.1.1  = { citysize = 1070 }
+1780.1.1  = { citysize = 9670 } # Slaves were transfered from New York in the late 1700's
+1800.1.1  = { citysize = 10600 }

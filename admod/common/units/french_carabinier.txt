@@ -1,0 +1,12 @@
+# French Carabinier
+# land 52
+type = cavalry
+unit_type = western
+
+maneuver = 2
+offensive_morale = 8
+defensive_morale = 8
+offensive_fire = 9
+defensive_fire = 10
+offensive_shock = 8
+defensive_shock = 9

@@ -1,0 +1,43 @@
+#759 - Diamentina
+
+culture = amazonian
+religion = inca_religion
+capital = "Diamentina"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = AMZ
+
+#Black Death
+1399.10.11 = {	owner = AMZ
+		controller = AMZ
+		add_core = AMZ
+		citysize = 1000
+		trade_goods = gold }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = AMZ
+		citysize = 0
+		trade_goods = unknown }
+
+1500.4.23 = {	discovered_by = POR
+		owner = POR
+		controller = POR
+		citysize = 460
+		religion = catholic
+		culture = portugese
+		trade_goods = gold
+	    } # Pedro Álvares Cabral
+1525.1.1  = { add_core = POR citysize = 1200 }
+1550.1.1  = { citysize = 1480 }
+1600.1.1  = { citysize = 2600 }
+1650.1.1  = { citysize = 5488 }
+1700.1.1  = { citysize = 7537 }
+1750.1.1  = { citysize = 9710 add_core = BRZ }
+1800.1.1  = { citysize = 12444 }

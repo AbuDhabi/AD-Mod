@@ -1,0 +1,67 @@
+#279 - Volhynia
+
+owner = LIT
+controller = LIT
+culture = polish
+religion = orthodox
+hre = no
+base_tax = 4
+trade_goods = grain   
+manpower = 2
+capital = "Volodymyr"
+citysize = 28450
+fort1 = yes
+add_core = POL
+add_core = LIT
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = LIT
+		controller = LIT
+		citysize = 28450 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = UKR
+		controller = UKR
+		add_core = UKR
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = LIT
+		controller = LIT
+		remove_core = UKR
+		religion = orthodox }
+
+1450.1.1   = { citysize = 31320 }
+1500.1.1   = { citysize = 36800 }
+1550.1.1   = { citysize = 43350 }
+1569.7.1   = {	owner = POL
+		controller = POL
+		capital = "Lutsk"
+	     } # Union of Lublin, wholy incorporated into Poland
+1570.1.1   = { religion = catholic } # Due to the Union of Lublin 
+1600.1.1   = { citysize = 51000 }
+1626.5.5   = { revolt_risk = 5 } # Religious struggles
+1628.1.1   = { fort2 = yes } # Two fortified synagogues, delayed two years due to protests from Dominican friars
+1630.1.1   = { revolt_risk = 0 }
+1648.1.1   = { revolt = { type = nationalist_rebels size = 3 leader = "Bohdan Khmelnytsky" } controller = REB add_core = ZAZ } # Chmielnicki uprising, civil war
+1650.1.1   = { revolt = {} citysize = 60000 } 
+1654.1.1   = { controller = POL remove_core = ZAZ }
+1700.1.1   = { citysize = 21000 } # Uprising, people fled or were slaughtered
+1750.1.1   = { citysize = 24150 }
+1768.1.1   = { revolt_risk = 8 } # Kolivshchyna rebellion, peasant uprising
+1769.1.1   = { revolt_risk = 0 } # Suppressed by Polish and Russian troops
+1793.1.21  = { add_core = RUS } # Second partition, partially to Russia
+1794.3.24  = { revolt_risk = 5 } # Kosciuszko uprising, minimize the Russian influence
+1794.11.16 = { revolt_risk = 0 }
+1795.10.24 = { owner = RUS controller = RUS } # Third partition of Poland
+1800.1.1   = { citysize = 27770 }

@@ -1,0 +1,12 @@
+# Russian Lancer
+# land 36
+type = cavalry
+unit_type = eastern
+
+maneuver = 2
+offensive_morale = 8
+defensive_morale = 9
+offensive_fire = 0
+defensive_fire = 2
+offensive_shock = 8
+defensive_shock = 9

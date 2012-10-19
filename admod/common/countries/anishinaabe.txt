@@ -1,0 +1,81 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 116  114  193 } 
+
+historical_ideas = {
+	quest_for_the_new_world
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Kechewaishke #0" = 20
+	"Peezhickee #0" = 15
+	"Tagwagane #0" = 15
+	"Nahnebahwequa #0" = 15
+	"Kahkewaquonaby #0" = 15
+	"Keewaydinoquay #0" = -10
+	"Bagonegiizhig #0" = 15
+	"Waabaanakwad #0" = 15
+	"Gaa-binagwiiyaas #0" = 10
+	"Ikwesewe #0" = -10
+	"Aazhawigiizhigokwe #0" = -10
+	"Ozaawindib #0" = -10
+	"Theyanoguin #0" = 0
+	"Teiorhenhsere #0" = 0
+	"Thayendanega #0" = 0
+	"Oronhyatekha #0" = 0
+	"Ahatsistari #0" = 0
+	"Dannaconna #0" = 0
+	"Adario #0" = 0
+	"Dunquat #0" = 0
+	"Tarhe #0" = 0
+}
+
+leader_names = {
+	Adik Amikwaa "Aan'aawenh" Adikameg Ashaageshiinh Aandeg Aagask
+	Bizhiw Baswenaazhi Bineshiinh Bine
+	Eshkan Esiban
+	Gaag Googoonh Ginebig Ginoozhe Gayaashk Gaagaagishiinh
+	Jiwiiskwiiskiwe
+	Maanameg Makwa Mishewe Moozwaanowe Moozens Mooz "Ma'iingan" Mikinaak Mishiikenh Miskwaadesi Midewewe Maang
+	Nooke Nigig Nibiinaabe Namebin Name Nika
+	Omashkooz Omazaandamo Omakakii Owewe "Omooshka'oozi" Ogiishkimanisii
+	Waawaashkeshi Waabizheshi Wazhashk Waabooz Waagoshiinh Wawaazisii
+	Zhaangweshi Zhiishiib Zhedeg
+}
+
+ship_names = {
+	Adik Amikwaa "Aan'aawenh" Adikameg Ashaageshiinh Aandeg Aagask
+	Bizhiw Baswenaazhi Bineshiinh Bine
+	Eshkan Esiban
+	Gaag Googoonh Ginebig Ginoozhe Gayaashk Gaagaagishiinh
+	Jiwiiskwiiskiwe
+	Maanameg Makwa Mishewe Moozwaanowe Moozens Mooz "Ma'iingan" Mikinaak Mishiikenh Miskwaadesi Midewewe Maang
+	Nooke Nigig Nibiinaabe Namebin Name Nika
+	Omashkooz Omazaandamo Omakakii Owewe "Omooshka'oozi" Ogiishkimanisii
+	Waawaashkeshi Waabizheshi Wazhashk Waabooz Waagoshiinh Wawaazisii
+	Zhaangweshi Zhiishiib Zhedeg
+}

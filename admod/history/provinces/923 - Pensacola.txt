@@ -1,0 +1,45 @@
+#923 - Pensacola
+
+owner = CRE
+controller = CRE
+culture = creek
+religion = spiritualism
+capital = "Pensacola"
+trade_goods = cotton
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1000
+add_core = CRE
+discovered_by = CRE
+discovered_by = CHE
+discovered_by = SHA
+
+1450.1.1   = { citysize = 1500 }
+1500.1.1   = { citysize = 1977 }
+1519.1.1   = { discovered_by = SPA } # Alvarez de Piñeda explored the Gulf Coast
+1550.1.1   = { citysize = 3240 }
+1600.1.1   = { citysize = 3410 }
+1650.1.1   = { citysize = 4500 }
+1698.1.1   = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	     }
+1723.1.1   = { add_core = SPA }
+1750.1.1   = { citysize = 4857 }
+1763.2.10  = {	owner = GBR
+		controller = GBR
+		remove_core = SPA
+		culture = english
+		religion = protestant
+	     } # Part of British West Florida after the Treaty of Paris
+1783.9.3   = { owner = SPA controller = SPA } # Part of Spanish West Florida
+1784.1.1   = { revolt_risk = 7 } # Controversy over the Treaty of Versaille & the Treaty of Paris, Spanish or American?
+1800.1.1   = { citysize = 5600 }
+1808.1.1   = { add_core = SPA }
+1819.2.22  = {	owner = USA
+		controller = USA
+		add_core = USA
+		remove_core = SPA
+	   } # The Adams-Onís Treaty

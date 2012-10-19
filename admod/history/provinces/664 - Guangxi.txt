@@ -1,0 +1,32 @@
+#664 - Guangxi
+
+owner = MNG
+controller = MNG
+culture = chi_yue
+religion = confucianism
+capital = "Nanning"
+trade_goods = chinaware
+hre = no
+base_tax = 5
+manpower = 1
+citysize = 12900
+add_core = MNG
+add_core = XIA
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 14330 }
+1480.1.1 = { marketplace = yes }
+1500.1.1 = { citysize = 15865 }
+1550.1.1 = { citysize = 16358 }
+1600.1.1 = { citysize = 17120 }
+1650.1.1 = { citysize = 17920 }
+1662.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1700.1.1 = { citysize = 18760 }
+1750.1.1 = { citysize = 20177 }
+1800.1.1 = { citysize = 22450 }

@@ -1,0 +1,364 @@
+# Events 4001-4010
+
+country_event = {
+	id = 4001
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4001"
+	desc = "EVTDESC4001"
+	
+	option = {
+		name = "EVTOPTA4001"
+		random_owned = {
+			noble_rebels = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB4001"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+
+country_event = {
+	id = 4002
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4002"
+	desc = "EVTDESC4002"
+	
+	option = {
+		name = "EVTOPTA4002"
+		centralization_decentralization = 1
+	}
+	option = {
+		name = "EVTOPTB4002"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+
+country_event = {
+	id = 4003
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4003"
+	desc = "EVTDESC4003"
+	
+	option = {
+		name = "EVTOPTA4003"
+		random_owned = {
+			limit = { owner = { NOT = { stability = 3 } } }
+			owner = {
+				stability = -1
+			}
+		}
+		random_owned = {
+			limit = { owner = { stability = 3 } }
+			owner = {
+				stability = -2
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4003"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4004
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4004"
+	desc = "EVTDESC4004"
+	
+	option = {
+		name = "EVTOPTA4004"
+		legitimacy = -0.3
+	}
+	option = {
+		name = "EVTOPTB4004"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4005
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4005"
+	desc = "EVTDESC4005"
+	
+	option = {
+		name = "EVTOPTA4005"
+		random_owned = {
+			reactionary_rebels = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB4005"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4006
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		placed_merchants = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4006"
+	desc = "EVTDESC4006"
+	
+	option = {
+		name = "EVTOPTA4006"
+		random_owned = {
+			limit = { owner = { placed_merchants = 2 NOT = { placed_merchants = 6 } } }
+			owner = {
+				remove_merchant = THIS
+				remove_merchant = THIS
+			}
+		}
+		random_owned = {
+			limit = { owner = { placed_merchants = 6 NOT = { placed_merchants = 11 } } }
+			owner = {
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+			}
+		}
+		random_owned = {
+			limit = { owner = { placed_merchants = 11 } }
+			owner = {
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+				remove_merchant = THIS
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB4006"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4007
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		cultural_tradition = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4007"
+	desc = "EVTDESC4007"
+	
+	option = {
+		name = "EVTOPTA4007"
+		cultural_tradition = -10
+	}
+	option = {
+		name = "EVTOPTB4007"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4008
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		government_tech = 400
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4008"
+	desc = "EVTDESC4008"
+	
+	option = {
+		name = "EVTOPTA4008"
+		government_tech = -200
+	}
+	option = {
+		name = "EVTOPTB4008"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4009
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		OR = {
+			advisor = army_reformer
+			advisor = naval_reformer
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4009"
+	desc = "EVTDESC4009"
+	
+	option = {
+		name = "EVTOPTA4009"
+		random_owned = {
+			limit = { owner = { advisor = army_reformer } }
+			owner = {
+				remove_advisor = army_reformer
+				set_country_flag = advisor_quits
+			}
+		}
+		random_owned = {
+			limit = { owner = { advisor = naval_reformer NOT = { has_country_flag = advisor_quits } } }
+			owner = {
+				remove_advisor = naval_reformer
+				set_country_flag = advisor_quits
+			}
+		}
+		clr_country_flag = advisor_quits
+	}
+	option = {
+		name = "EVTOPTB4009"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}
+
+country_event = {
+	id = 4010
+	trigger = {
+		has_country_modifier = reactionary_sentiment
+		NOT = { has_country_modifier = resist_western_influences }
+		OR = {
+			advisor = statesman
+			advisor = artist
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	title = "EVTNAME4010"
+	desc = "EVTDESC4010"
+	
+	option = {
+		name = "EVTOPTA4010"
+		random_owned = {
+			limit = { owner = { advisor = statesman } }
+			owner = {
+				remove_advisor = statesman
+				set_country_flag = advisor_quits
+			}
+		}
+		random_owned = {
+			limit = { owner = { advisor = artist NOT = { has_country_flag = advisor_quits } } }
+			owner = {
+				remove_advisor = artist
+				set_country_flag = advisor_quits
+			}
+		}
+		clr_country_flag = advisor_quits
+	}
+	option = {
+		name = "EVTOPTB4010"
+		add_country_modifier = {
+			name = "resist_western_influences"
+			duration = 3650
+		}
+		prestige = -0.02
+	}
+}

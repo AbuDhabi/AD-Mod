@@ -1,0 +1,47 @@
+#793 - Atacama
+
+culture = aimara
+religion = inca_religion
+capital = "Atacama"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 1
+discovered_by = INC
+discovered_by = AYM
+
+#Black Death
+1399.10.11 = {	owner = AYM
+		controller = AYM
+		add_core = AYM
+		citysize = 1200
+		trade_goods = copper }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = AYM
+		citysize = 0
+		trade_goods = unknown }
+
+1537.1.1  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		capital = "Iquique"
+		citysize = 240
+		culture = castillian
+		religion = catholic
+	    } # Diego de Almagro, foundation is estimated
+1562.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 567 trade_goods = copper }
+1650.1.1  = { citysize = 975 }
+1700.1.1  = { citysize = 1272 }
+1750.1.1  = { citysize = 1511 add_core = CHL }
+1800.1.1  = { citysize = 2063 }
+1810.9.18 = {	owner = CHL
+		controller = CHL
+	    } # First National Government Junta
+

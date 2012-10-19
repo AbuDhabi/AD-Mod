@@ -1,0 +1,12 @@
+# Afsharid Reformed Tactics
+# land 43
+type = cavalry
+unit_type = muslim
+
+maneuver = 2
+offensive_morale = 7
+defensive_morale = 8	
+offensive_fire = 7
+defensive_fire = 7
+offensive_shock = 7
+defensive_shock = 7

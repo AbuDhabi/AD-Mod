@@ -1,0 +1,29 @@
+#1107 - Taranaki
+
+culture = maori
+religion = polynesian_religion
+hre = no
+trade_goods = unknown
+manpower = 1
+base_tax = 5
+capital = "Taranaki"
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = AOT
+
+#Black Death
+1399.10.11 = {	owner = AOT
+		controller = AOT
+		add_core = AOT
+		citysize = 5000
+		trade_goods = wool }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = AOT
+		citysize = 0
+		trade_goods = unknown }
+
+1642.1.1 = { discovered_by = NED } # Abel Tasman

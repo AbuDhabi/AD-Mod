@@ -1,0 +1,54 @@
+#113 - Ferrara
+
+owner = FER
+controller = FER
+culture = lombard 
+religion = catholic 
+hre = yes 
+base_tax = 6        
+trade_goods = salt
+manpower = 2        
+fort1 = yes 
+capital = "Ferrara" 
+citysize = 35000	# Estimated 
+workshop = yes 
+marketplace = yes 
+temple = yes # Completed 1135
+university = yes	# Founded March 4th 1391
+add_core = FER
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = FER
+		controller = FER
+		citysize = 35000 }
+
+1450.1.1   = { citysize = 35000 }
+1500.1.1   = { citysize = 40000 } 
+1550.1.1   = { citysize = 42000 } 
+1597.10.28   = { controller = PAP owner = PAP add_core = PAP } # Annexed to the Holy See
+1600.1.1   = { citysize = 33000 } 
+1610.1.1   = { fort2 = yes }
+1650.1.1   = { citysize = 25000 } 
+1700.1.1   = { citysize = 27000 } 
+1750.1.1   = { citysize = 30000 } 
+1800.1.1   = { citysize = 30000 }
+1805.12.26 = {	owner = ITA
+		controller = ITA
+		add_core = ITA
+	     	remove_core = PAP
+	     } # Treaty of Pressburg
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = ITA
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

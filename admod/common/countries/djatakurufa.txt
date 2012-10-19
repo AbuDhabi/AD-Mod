@@ -1,0 +1,119 @@
+#Country Name: Please seefilename.
+
+graphical_culture = latingfx
+
+color = { 217  156  33 }
+
+historical_ideas = {
+	land_of_opportunity
+	shrewd_commerce_practise
+	national_conscripts
+	merchant_adventures
+	military_drill
+	national_trade_policy
+	engineer_corps
+	grand_army
+	espionage
+	cabinet
+	glorious_arms
+	bureaucracy
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Karbifo #0" = 20
+	"Mar Fai #0" = 20
+	"Mar-Arkana #0" = 20
+	"Mar Arandan #0" = 20
+	"`Alî Ber #0" = 20
+	"Bakarî #0" = 20
+	"Mûsâ #0" = 20
+	"Harun #0" = 15
+	"Tomo #0" = 15
+	"Ismâ`îl #0" = 10
+	"Ishâq #0" = 10
+	"Dâ`ûd #0" = 10
+	"Dimani #0" = 10
+	"Nûh #0" = 10
+	"Hârûn #0" = 10
+	"al-Amîn #0" = 5
+	"Hanga #0" = 5
+	"Samsu #0" = 5
+	"Harangi #0" = 5
+	"Tomo #0" = 5
+	"Zokuli #0" = 5
+	"Silman #0" = 0
+	"Abu Bakr #0" = 0
+	"Fodi Mayrumfa #0" = 0	
+	"Al-Mustafa #0" = 0
+	"Bassaru Missi #0" = 0
+	"Bumi #0" = 0
+	"Koyze Baba #0" = 0
+	"Wankoy #0" = 0
+	"Mar Kiray #0" = 0
+	"Bakr Zanku #0" = 0
+	"Salman #0" = 0
+	"Birahim #0" = 0
+	"Hammadi #0" = 0
+	"Al-Mansur #0" = 0
+	"`Ammar #0" = 0
+	"Sa`id #0" = 0
+	"`Abd Allah #0" = 0
+	"Nasr #0" = 0
+	"Yahya #0" = 0
+	"Yusuf #0" = 0
+	"Nyagse #0" = 0
+	"Zulande #0" = 0
+	"Zangina #0" = 0
+	"Andan Sigili #0" = 0
+	"Jimli #0" = 0
+	"Zibirim #0" = 0
+	"Gariba #0" = 0
+	"Yakuba #0" = 0
+	"Ayekeraa #0" = 0
+	"Kokobo #0" = 0
+	"Ahaha #0" = 0
+	"Warembe Ampen #0" = 0
+	"Agyinamoa #0" = 0
+	"Twum #0" = 0
+	"Kobla Amana #0" = 0
+	"Akenten #0" = 0
+	"Obiri Yeboa #0" = 0
+	"Opoku #0" = 0
+	"Antwi #0" = 0
+}
+
+leader_names = {
+	Addy Afrifa Akoto Amadou
+	Compaore
+	Deo Diarra Diallo Donkor
+	Keita Konare
+	Lamizana
+	Offei Ouedraogo
+	Toumani Toure Traoré
+	Modibo Moussa Moyoyo
+	Sabah Sribor
+	Zakari Zerbo
+}
+
+ship_names = {
+	Alayaman Zakoi Takoi Akoi Ku "Ali-Fay"
+	"Biyo-Kumoy" "Biyu" "Za Kuroy" "Yama-Karaway"
+	Kukuray Kinkin Nintasanay
+	Nyame "Asase Yaa" Bia Tano
+	Dwoada Benada Wukuada Yawoada
+	Fiada Memeneda Kwasiada
+	Aoudaghost Kiringa Timbuktu "Koumbi Saleh" Gao Hombori
+	Jenne "Sundiata Keita" "Kankan Musa"
+	"Kouroukan Fouga" "Wali Keita" "Quati Keita"
+	"Khalifa Keita" Sakura
+}

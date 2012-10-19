@@ -1,0 +1,37 @@
+#1821 - Nanjing
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = confucianism
+capital = "Nanjing"
+trade_goods = chinaware
+hre = no
+base_tax = 9
+manpower = 7
+citysize = 500000
+add_core = MNG
+add_core = WUU
+fort1 = yes
+cot = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 565000 }
+1500.1.1 = { citysize = 595000 }
+1505.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 625000 }
+1580.1.1 = { fine_arts_academy = yes }
+1600.1.1 = { citysize = 680000 }
+1644.1.1 = {	controller = MCH
+		capital = "Jiangning"
+	   } # The Qing Dynasty
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 705000 }
+1700.1.1 = { citysize = 720000 }
+1740.1.1 = { tax_assessor = yes }
+1750.1.1 = { citysize = 780000 }
+1800.1.1 = { citysize = 830000 }

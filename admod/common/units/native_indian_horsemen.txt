@@ -1,0 +1,12 @@
+# Native Indian Horsemen
+# land 17
+unit_type = new_world
+type = cavalry
+
+maneuver = 2
+offensive_morale = 5
+defensive_morale = 5
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 4
+defensive_shock = 3

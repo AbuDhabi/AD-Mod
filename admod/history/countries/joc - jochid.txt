@@ -1,0 +1,23 @@
+government = elective_monarchy
+aristocracy_plutocracy = -2
+centralization_decentralization = 3
+innovative_narrowminded = 4
+mercantilism_freetrade = -3
+offensive_defensive = -4
+land_naval = -3
+quality_quantity = 1
+serfdom_freesubjects = -4
+technology_group = muslim
+primary_culture = jochid
+religion = sunni
+capital = 270	#Trakai
+
+1376.1.1 = {
+	monarch = {
+		name = "Tokhtamysh I"
+		dynasty = "Genghisid"
+		adm = 6
+		dip = 4
+		mil = 7
+	}
+}

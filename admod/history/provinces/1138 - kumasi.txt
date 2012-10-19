@@ -1,0 +1,45 @@
+#1138 - Kumasi
+
+owner = ASH 
+controller = ASH
+culture = ashanti
+citysize = 4000 
+manpower = 1
+religion = vodun
+capital = "Yendi"
+trade_goods = gold
+hre = no
+base_tax = 5
+native_ferocity = 4.5
+native_hostileness = 9
+add_core = ASH
+discovered_by = ASH
+discovered_by = MAL
+discovered_by = OYO
+discovered_by = SOF
+discovered_by = SOK
+
+1450.1.1 = { citysize = 4500 }
+1500.1.1 = { citysize = 6000 } #strengthening of Dagomba under Na Nyaghse
+1620.1.1 = { revolt_risk = 4 } #Wave of Akan migrations towards Volta River
+1650.1.1 = { revolt_risk = 4 } #Gonja invasions against Dagomba
+1652.1.1 = { revolt_risk = 1 capital = "Yagbum" } #shift in center of power as Gonja makes Dagomba tributary
+1675.1.1 = { revolt_risk = 6 } #Warfare caused by expansion of Denkyira kingdom
+1690.1.1 = { capital = "Jukwaa" citysize = 9000 } #Denkyira kingdom solidifies, shifts balance of power in the region
+1700.1.1 = { revolt_risk = 4 } #Akwamu raids destabilize region
+1701.1.1 = { revolt_risk = 4 } #Ashante rebels against Denkyira
+1702.1.1 = { capital = "Kumasi" revolt_risk = 0 citysize = 12000 manpower = 2 } #Ashanti establishes dominance in much of southern part of province
+1713.1.1 = { revolt_risk = 2 } #Dagomba uprising against Gonja domination  
+1715.1.1 = { revolt_risk = 5 } #Ashante-Aowin War  
+1718.1.1 = { revolt_risk = 2 } #civil war in Dagomba
+1724.1.1 = { revolt_risk = 5 } #Ashante-Bono War 
+1725.1.1 = { revolt_risk = 0 } #Ashante-Bono War Ends
+1732.1.1 = { revolt_risk = 5 } #Ashante invades Gonja 
+1733.1.1 = { revolt_risk = 0 } #Ashante annexes Gonja 
+1740.1.1 = { revolt_risk = 6 } #civil war in Dagomba
+1744.1.1 = { revolt_risk = 0 } #Ashante intervenes in Dagomba Civil War, annexes it
+1748.1.1 = { revolt_risk = 8 } #Attempted Coup by bureaucracy against Opoku Ware
+1749.1.1 = { revolt_risk = 0 } #Opoku Ware defeats coup attempt
+1750.1.1 = { citysize = 20000 } #rapid growth of Kumasi as empire expands 
+1800.1.1 = { citysize = 21000 }
+1804.1.1 = { discovered_by = SOK }

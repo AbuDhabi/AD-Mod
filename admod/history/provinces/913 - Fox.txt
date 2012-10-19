@@ -1,0 +1,56 @@
+#913 - Fox
+
+culture = menominee
+religion = spiritualism
+capital = "Fox"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_size = 10
+native_ferocity = 2
+native_hostileness = 5
+discovered_by = SIX
+discovered_by = MEO
+
+#Black Death
+1399.10.11 = {	owner = MEO
+		controller = MEO
+		add_core = MEO
+		citysize = 1000
+		trade_goods = iron }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = MEO
+		citysize = 0
+		trade_goods = unknown }
+
+1684.1.1  = { discovered_by = FRA } # Nicolas Perrot
+1685.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 250
+		culture = cosmopolitan_french
+		religion = catholic
+	    } # Construction of Fort Antoine
+1700.1.1  = { citysize = 700 trade_goods = iron }
+1710.1.1  = { add_core = FRA }
+1712.1.1  = { revolt_risk = 5 } # Fox war
+1714.1.1  = { revolt_risk = 0 }
+1728.1.1  = { revolt_risk = 5 } # Second Fox war
+1729.1.1  = { revolt_risk = 0 }
+1750.1.1  = { citysize = 1390 }
+1763.2.10 = {	discovered_by = GBR
+		owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1783.9.3  = {	owner = USA
+		add_core = USA
+		remove_core = QUE
+	    } # Treaty of Paris, passed to the U.S but still under British control
+1800.1.1  = { citysize = 3700 }

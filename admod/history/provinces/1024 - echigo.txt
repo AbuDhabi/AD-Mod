@@ -1,0 +1,27 @@
+#1024 - Echigo
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Echigo"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 13800
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 15340 }
+1467.5.20  = { revolt = { type = ikko_ikki size = 0 } controller = REB } # Onin war, anarchy follows
+1477.12.16 = { revolt = {} controller = FUJ }
+1500.1.1   = { citysize = 17665 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 19200 }
+1600.1.1   = { citysize = 21560 }
+1650.1.1   = { citysize = 23300 }
+1700.1.1   = { citysize = 25534 }
+1750.1.1   = { citysize = 27570 }
+1800.1.1   = { citysize = 29800 }

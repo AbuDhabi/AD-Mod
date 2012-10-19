@@ -1,0 +1,12 @@
+government = despotic_monarchy
+aristocracy_plutocracy = -2
+centralization_decentralization = -1
+innovative_narrowminded = 4
+mercantilism_freetrade = -4
+offensive_defensive = -1
+land_naval = 2
+quality_quantity = -1
+serfdom_freesubjects = -1
+primary_culture = andalucian
+religion = sunni
+technology_group = western

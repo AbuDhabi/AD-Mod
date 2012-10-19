@@ -1,0 +1,12 @@
+# African Hussar Cavalry
+# land 42
+unit_type = sub_saharan
+type = cavalry
+
+maneuver = 2
+offensive_morale = 8
+defensive_morale = 7
+offensive_fire = 5
+defensive_fire = 3
+offensive_shock = 10
+defensive_shock = 9

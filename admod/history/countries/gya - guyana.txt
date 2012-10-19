@@ -1,0 +1,11 @@
+government = constitutional_republic
+aristocracy_plutocracy = 5
+centralization_decentralization = -3
+innovative_narrowminded = 0
+mercantilism_freetrade = 5
+offensive_defensive = -2
+land_naval = 0
+quality_quantity = -4
+serfdom_freesubjects = 1
+technology_group = western
+primary_culture = metis

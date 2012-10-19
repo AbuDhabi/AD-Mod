@@ -1,0 +1,39 @@
+#1190 - Zumbo
+
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+culture = bantu # tonga
+religion = bantu_rel
+citysize = 4000
+capital = "Chikova"
+trade_goods = ivory
+hre = no
+base_tax = 2
+manpower = 1
+discovered_by = ZIM
+discovered_by = ZAN
+
+1450.1.1 = { citysize = 5000 }
+1550.1.1 = { discovered_by = POR citysize = 6500 } 
+1575.1.1 = { revolt_risk = 8 } # Portuguese invasion of Mutapa via this region, fail to secure it & withdraw
+1576.1.1 = { revolt_risk = 3 } # Portuguese driven out of the region, Mutapa authority challenged by pro-Portuguese clans
+1596.1.1 = { revolt_risk = 5 } # Maravi invasions disrupt region
+1603.1.1 = { revolt_risk = 6 } # Maravi migrations disrupt region
+1607.1.1 = { revolt_risk = 7 } # Rebellion against Gatsi Rusere
+1608.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Mutapa forces expelled
+1609.1.1 = { revolt = {} controller = ZIM } # Mutapa restore control with Portuguese help
+# 1609.1.1 - Portuguese tradepost at Chikova
+# 1616.1.1 - Portuguese abandon tradepost
+1631.1.1 = { revolt_risk = 8 } # Kapararidze launches revolt to overthrow Mavura and end POR domination
+1632.1.1 = { revolt_risk = 0 } # Kapararidze revolt defeated
+1650.1.1 = { citysize = 7000 }
+1700.1.1 = { citysize = 7500 }
+1703.1.1 = { revolt_risk = 7 } # Rozvi invasion against Mutapa opposed to Changamire dominance
+1715.1.1 = { capital = "Zumbo" trade_goods = gold } # Portuguese Trade Fair becomes new center in region
+# 1715.1.1 - Portugeuse tradepost established at Zumbo
+1750.1.1 = { citysize = 8000 } # Portuguese Trade Fair becomes new center in region
+1760.1.1 = { revolt_risk = 7 } # Civil war between the Boroma and Nyamhandu clans for Mutapa crown
+1768.1.1 = { revolt_risk = 0 }
+1780.1.1 = { trade_goods = ivory } # Decline of Rozvi state changes trade routes, ivory replaces gold
+1800.1.1 = { citysize = 8700 }

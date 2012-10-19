@@ -1,0 +1,776 @@
+#events 21020-21099
+#####################################
+# Ecumenism ends religious turmoil
+#####################################
+
+country_event = {
+
+	id = 21020
+
+	title = "EVTNAME21020"
+	desc = "EVTDESC21020"
+
+	major = yes
+
+	trigger = {
+		has_country_flag = religious_turmoil
+		idea = ecumenism
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA21020"
+		stability = -1
+		remove_country_modifier = "religious_turmoil"
+		clr_country_flag = religious_turmoil
+		clr_country_flag = religious_tolerance
+		clr_country_flag = religious_intolerance
+		set_country_flag = had_religious_turmoil
+	}
+}
+
+#####################################
+# Ecumenism will occasionally pick the right religion
+#####################################
+# Old Religions
+#####################################
+
+#Christians
+province_event = {
+
+	id = 21021
+	is_triggered_only = yes
+
+	title = "EVTNAME21021"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = catholic }
+		religion_group = christian
+		NOT = { religion = catholic }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = catholic
+	}
+}
+
+province_event = {
+
+	id = 21022
+	is_triggered_only = yes
+
+	title = "EVTNAME21022"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = orthodox }
+		religion_group = christian
+		NOT = { religion = orthodox }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = orthodox
+	}
+}
+
+province_event = {
+
+	id = 21023
+	is_triggered_only = yes
+
+	title = "EVTNAME21023"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = protestant }
+		religion_group = christian
+		NOT = { religion = protestant }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = protestant
+	}
+}
+
+province_event = {
+
+	id = 21024
+	is_triggered_only = yes
+
+	title = "EVTNAME21023"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = reformed }
+		religion_group = christian
+		NOT = { religion = reformed }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = reformed
+	}
+}
+
+#Muslims
+province_event = {
+
+	id = 21025
+	is_triggered_only = yes
+
+	title = "EVTNAME21025"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = sunni }
+		religion_group = muslim
+		NOT = { religion = sunni }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21025"
+		religion = sunni
+	}
+}
+
+province_event = {
+
+	id = 21026
+	is_triggered_only = yes
+
+	title = "EVTNAME21025"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = shiite }
+		religion_group = muslim
+		NOT = { religion = shiite }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21025"
+		religion = shiite
+	}
+}
+
+#Eastern
+province_event = {
+
+	id = 21027
+	is_triggered_only = yes
+
+	title = "EVTNAME21027"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = buddhism }
+		religion_group = taoic
+		NOT = { religion = buddhism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21027"
+		religion = buddhism
+	}
+}
+
+province_event = {
+
+	id = 21028
+	is_triggered_only = yes
+
+	title = "EVTNAME21027"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = hinduism }
+		religion_group = dharmic
+		NOT = { religion = hinduism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21028"
+		religion = hinduism
+	}
+}
+
+province_event = {
+
+	id = 21029
+	is_triggered_only = yes
+
+	title = "EVTNAME21029"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = confucianism }
+		religion_group = taoic
+		NOT = { religion = confucianism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21029"
+		religion = confucianism
+	}
+}
+
+province_event = {
+
+	id = 21030
+	is_triggered_only = yes
+
+	title = "EVTNAME21030"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = shinto }
+		religion_group = taoic
+		NOT = { religion = shinto }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = shinto
+	}
+}
+
+#Pagan
+province_event = {
+
+	id = 21031
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = animism }
+		religion_group = old_pagan
+		NOT = { religion = animism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = animism
+	}
+}
+
+province_event = {
+
+	id = 21032
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = shamanism }
+		religion_group = old_pagan
+		NOT = { religion = shamanism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = shamanism
+	}
+}
+
+#####################################
+# New Religions
+#####################################
+# Hussite
+province_event = {
+
+	id = 21033
+	is_triggered_only = yes
+
+	title = "EVTNAME21021"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = hussite }
+		religion_group = christian
+		NOT = { religion = hussite }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = hussite
+	}
+}
+# Cathar
+province_event = {
+
+	id = 21034
+	is_triggered_only = yes
+
+	title = "EVTNAME21021"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = cathar }
+		religion_group = christian
+		NOT = { religion = cathar }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = cathar
+	}
+}
+# Anglican
+province_event = {
+
+	id = 21035
+	is_triggered_only = yes
+
+	title = "EVTNAME21021"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = anglican }
+		religion_group = christian
+		NOT = { religion = anglican }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21021"
+		religion = anglican
+	}
+}
+# Kharijite
+province_event = {
+
+	id = 21036
+	is_triggered_only = yes
+
+	title = "EVTNAME21025"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = khariji }
+		religion_group = muslim
+		NOT = { religion = khariji }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21025"
+		religion = khariji
+	}
+}
+# Sufism
+province_event = {
+
+	id = 21037
+	is_triggered_only = yes
+
+	title = "EVTNAME21025"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = sufism }
+		religion_group = muslim
+		NOT = { religion = sufism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21025"
+		religion = sufism
+	}
+}
+# Sikhism
+province_event = {
+
+	id = 21038
+	is_triggered_only = yes
+
+	title = "EVTNAME21027"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = sikhism }
+		religion_group = dharmic
+		NOT = { religion = sikhism }
+		has_owner_culture = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21038"
+		religion = sikhism
+	}
+}
+# Spiritualism
+province_event = {
+
+	id = 21039
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = spiritualism }
+		religion_group = american_religion
+		NOT = { religion = spiritualism }
+		has_owner_culture = yes
+		culture_group = north_american
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = spiritualism
+	}
+}
+# Teotl
+province_event = {
+
+	id = 21040
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = teotl }
+		religion_group = american_religion
+		NOT = { religion = teotl }
+		has_owner_culture = yes
+		OR = {
+			culture_group = central_american
+			culture_group = carribean
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = teotl
+	}
+}
+# Druidism
+province_event = {
+
+	id = 21041
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = druidism }
+		religion_group = old_pagan
+		NOT = { religion = druidism }
+		has_owner_culture = yes
+		OR = {
+			culture_group = british
+			culture_group = welsh
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = druidism
+	}
+}
+# Inca
+province_event = {
+
+	id = 21042
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = inca_religion }
+		religion_group = american_religion
+		NOT = { religion = inca_religion }
+		has_owner_culture = yes
+		culture_group = south_american
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = inca_religion
+	}
+}
+# Asatru
+province_event = {
+
+	id = 21043
+	is_triggered_only = yes
+
+	title = "EVTNAME21031"
+	desc = "EVTDESC21021"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		owner = { religion = norse_rel }
+		religion_group = old_pagan
+		NOT = { religion = norse_rel }
+		has_owner_culture = yes
+		OR = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21030"
+		religion = norse_rel
+	}
+}
+
+#####################################
+# Ecumenism will still pick the wrong religion :(
+#####################################
+
+province_event = {
+	
+	id = 21050
+	is_triggered_only = yes
+
+	title = "EVTNAME21050"
+	desc = "EVTDESC21050"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		religion_group = christian
+		religion = THIS
+		NOT = { religion = hussite }
+		is_religion_enabled = hussite
+		has_owner_culture = no
+		OR = {
+			culture_group = germanic
+			culture_group = west_slavic
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21050"
+		religion = hussite
+	}
+}
+province_event = {
+	
+	id = 21051
+	is_triggered_only = yes
+
+	title = "EVTNAME21050"
+	desc = "EVTDESC21051"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		religion_group = muslim
+		religion = THIS
+		NOT = { religion = sufism }
+		has_owner_culture = no
+		OR = {
+			culture_group = turko_semitic
+			culture_group = african
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21050"
+		religion = sufism
+	}
+}
+province_event = {
+
+	id = 21052
+	is_triggered_only = yes
+
+	title = "EVTNAME21050"
+	desc = "EVTDESC21052"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = THIS
+		NOT = { religion_group = old_pagan }
+		NOT = { religion = judaism }
+		has_owner_culture = no
+		culture_group = turko_semitic
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21050"
+		religion = judaism
+	}
+}
+province_event = {
+
+	id = 21053
+	is_triggered_only = yes
+
+	title = "EVTNAME21050"
+	desc = "EVTDESC21053"
+
+	trigger = {
+		owner = { idea = ecumenism }
+		religion_group = muslim
+		religion = THIS
+		NOT = { religion = khariji }
+		has_owner_culture = no
+		culture_group = turko_semitic
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA21050"
+		religion = khariji
+	}
+}
+

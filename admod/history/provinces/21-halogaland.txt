@@ -1,0 +1,57 @@
+#Hålogaland, incl. Steig, Vågan, Trondenes, Andenes, Alstahaug
+
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 1
+trade_goods = fish
+manpower = 1
+capital = "Steig"
+citysize = 1000 # Estimated
+discovered_by = western
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = NOR
+		controller = NOR
+		citysize = 1000 }
+
+#Shattered Europe
+1399.10.13 = {	owner = SAM
+		controller = SAM
+		add_core = SAM
+		religion = norse_rel }
+
+#Historical Setup
+1399.10.14 = {	owner = NOR
+		controller = NOR
+		remove_core = SAM
+		religion = catholic }
+
+1450.1.1   = { citysize = 1150 }
+1500.1.1   = { citysize = 1250 }
+1531.11.15 = { revolt_risk = 10 } # The Return of Christian II
+1532.7.15  = { revolt_risk = 0 } # The Capture of Christian II
+1536.1.1   = { religion = protestant} # Unknown date
+1536.1.1   = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
+1550.1.1   = { citysize = 1580 }
+1560.1.1   = { marketplace = yes }
+1600.1.1   = { citysize = 1850 }
+1650.1.1   = { citysize = 1980 }
+1700.1.1   = { citysize = 2578 }
+1750.1.1   = { citysize = 2900 }
+1800.1.1   = { citysize = 4500 }
+1814.1.14  = {	owner = SWE
+		revolt = { type = nationalist_rebels size = 1 }
+		controller = REB
+		remove_core = DAN
+	     } # Norway is ceded to Sweden following the Treaty of Kiel
+1814.5.17 = { revolt = {} owner = NOR controller = NOR } # Norway declares itself independent and elects Christian Frederik as king

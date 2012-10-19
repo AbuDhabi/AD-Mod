@@ -1,0 +1,41 @@
+#68 - Schwaben
+
+owner = BAV
+controller = BAV
+add_core = BAV
+culture = bavarian
+religion = catholic
+hre = yes
+cot = no
+base_tax = 6
+trade_goods = cloth
+manpower = 3
+fort1 = yes
+capital = "Augsburg" 
+citysize = 21000
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BAV
+		controller = BAV
+		citysize = 21000 }
+
+1450.1.1  = { citysize = 23000 }
+1550.1.1  = { courthouse = yes marketplace = yes } 
+1600.1.1  = { citysize = 47000 }
+1635.1.1  = { constable = yes }
+1645.1.1  = { regimental_camp = yes }
+1650.1.1  = { citysize = 50000 }
+1700.1.1  = { citysize = 24000 }
+1704.8.13 = { owner = HAB controller = HAB add_core = HAB } # Bavaria is conquered by the Emperor, is however later restored for the balance of power
+1714.9.7  = { owner = BAV controller = BAV remove_core = HAB }
+1800.1.1  = { citysize = 26500 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

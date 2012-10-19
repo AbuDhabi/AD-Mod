@@ -1,0 +1,80 @@
+#Ingermanland, incl. Ivangorod, Jama, and Kopore.
+
+owner = NOV
+controller = NOV
+add_core = NOV
+culture = estonian
+religion = orthodox
+hre = no
+base_tax = 2
+trade_goods = fur
+manpower = 1
+capital = "Kopore"
+citysize = 1000 # Estimated
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0
+		hre = no }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		citysize = 1000
+		hre = yes }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Historical Campaign
+1399.10.14 = {	owner = NOV
+		controller = NOV
+		remove_core = EST
+		add_core = NOV
+		religion = orthodox
+		hre = yes }
+
+1450.1.1   = { citysize = 1100 }
+1478.1.14  = {	owner = MOS
+		controller = MOS
+		add_core = MOS
+		remove_core = NOV
+	     } #Muscovite annectation of Novgorod
+1500.1.1   = { citysize = 1250 }
+1503.3.22  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	     }
+1540.1.1   = { marketplace = yes }
+1550.1.1   = { citysize = 1550 }
+1583.8.10  = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		remove_core = RUS
+	     } #The Armistice of Pliusa
+1590.2.23  = {	owner = RUS
+	     	controller = RUS
+	     	add_core = RUS
+	     	remove_core = SWE
+	     } #The Armistice of Narva
+1600.1.1   = { citysize = 1710 }
+1612.12.4  = { controller = SWE } #The Ingermanian War-Captured by Evert Horn
+1617.2.17  = { owner = SWE add_core = SWE remove_core = RUS } #The Peace of Stolbova
+1617.2.17  = { religion = protestant }
+1650.1.1   = { citysize = 1857 }
+1700.1.1   = { citysize = 2310 }
+1704.8.16  = { controller = RUS } #The Great Nordic War-Captured all fortifications
+1721.8.30  = {	owner = RUS
+		add_core = RUS
+		remove_core = SWE } #The Peace of Nystad
+1750.1.1   = { citysize = 2600 }
+1800.1.1   = { citysize = 2980 }

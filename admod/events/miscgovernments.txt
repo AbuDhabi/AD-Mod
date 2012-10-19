@@ -1,0 +1,391 @@
+#events 21210-21299
+###################################
+# Removing bonus for Napoleonic Empires
+###################################
+country_event = {
+
+	id = 21210
+
+	title = "EVTNAME21210"
+	desc = "EVTDESC21210"
+	
+	trigger = {
+		NOT = {
+			government = imperial_government3
+		}
+		has_country_modifier = divine_right
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA21210"
+		remove_country_modifier = divine_right
+		stability = -2
+		random_owned = {
+			limit = { is_core = yes }
+			anti_tax_rebels = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB21210"
+		government = imperial_government3
+		stability = 1
+	}
+}
+
+###################################
+# Non-Popes shouldn't have a Papal Government
+###################################
+country_event = {
+
+	id = 21211
+
+	title = "EVTNAME21211"
+	desc = "EVTDESC21211"
+
+	trigger = {
+		NOT = { tag = PAP }
+		government = papal_government
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	immediate = {
+		government = theocratic_government
+	}
+
+	option = {
+		name = "EVTOPTA21211"
+	}
+}
+
+#id = 21212
+#id = 21213
+
+###################################
+# No slaves means no sacrifices
+###################################
+country_event = {
+
+	id = 21214
+
+	title = "EVTNAME21214"
+	desc = "EVTDESC21214"
+
+	trigger = {
+		has_country_modifier = religious_sacrifices
+		has_country_modifier = the_abolish_slavery_act
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		remove_country_modifier = religious_sacrifices
+	}
+
+	option = {
+		name = "EVTOPTA21214"
+		stability = -1
+	}
+}
+
+###################################
+# Mean ol Hordes :(
+###################################
+province_event = {
+
+	id = 21215
+
+	title = "EVTNAME21215"
+	desc = "EVTDESC21215"
+
+	trigger = {
+		owner = {
+			has_country_modifier = tribal_succession_crisis
+			government = steppe_horde
+			num_of_cities = 15
+			ai = yes
+		}
+		NOT = { primary_culture = THIS }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.8
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 25
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 35
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 45
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21215"
+		nationalist_rebels = 1
+	}
+}
+
+province_event = {
+
+	id = 21216
+
+	title = "EVTNAME21216"
+	desc = "EVTDESC21215"
+
+	trigger = {
+		owner = {
+			has_country_modifier = tribal_succession_crisis
+			government = steppe_horde
+			num_of_cities = 15
+			ai = yes
+		}
+		primary_culture = THIS
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.8
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 25
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 35
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 0.8
+			num_of_cities = 45
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21215"
+		pretender_rebels = 1
+	}
+}
+
+###################################
+# Rebels destroy Samarkand Observatory
+###################################
+
+province_event = {
+
+	id = 21217
+
+	title = "EVTNAME21217"
+	desc = "EVTDESC21217"
+
+	trigger = {
+		province_id = 454	# Samarkand
+		controller = { tag = REB }
+		has_global_flag = samarkand_observatory
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		clr_global_flag = samarkand_observatory
+	}
+
+	option = {
+		name = "EVTOPTA21217"
+		owner = { prestige = -0.10 }
+	}
+}
+
+###################################
+# Castile absorbs tiny Aragon
+###################################
+
+country_event = {
+
+	id = 21218
+
+	title = "EVTNAME21218"
+	desc = "EVTDESC21218"
+
+	trigger = {
+		tag = CAS
+		year = 1425
+		num_of_cities = 10
+		prestige = 0
+		ARA = {
+			exists = yes
+			ai = yes
+			NOT = { num_of_cities = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA21218"
+		prestige = 0.10
+		inherit = ARA
+	}
+}
+
+###################################
+# Aragon absorbs tiny Castile
+###################################
+
+country_event = {
+
+	id = 21219
+
+	title = "EVTNAME21218"
+	desc = "EVTDESC21219"
+
+	trigger = {
+		tag = ARA
+		year = 1425
+		num_of_cities = 10
+		prestige = 0
+		CAS = {
+			exists = yes
+			ai = yes
+			NOT = { num_of_cities = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA21218"
+		prestige = 0.10
+		inherit = CAS
+	}
+}
+
+###################################
+# African nations need manpower
+###################################
+
+province_event = {
+
+	id = 21220
+
+	title = "EVTNAME21220"
+	desc = "EVTDESC21220"
+
+	trigger = {
+		culture_group = african
+		owner = {
+			culture_group = african
+			NOT = { num_of_cities = 20 }
+		}
+		continent = africa
+		NOT = { manpower = 2 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 2
+			owner = { num_of_cities = 8 }
+		}
+		modifier = {
+			factor = 2
+			owner = { num_of_cities = 12 }
+		}
+		modifier = {
+			factor = 2
+			owner = { num_of_cities = 16 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21220"
+		change_manpower = 2
+	}
+}
+
+###################################
+# Non-Christians out of HRE
+###################################
+
+province_event = {
+
+	id = 21221
+
+	title = "EVTNAME21221"
+	desc = "EVTDESC21221"
+
+	trigger = {
+		hre = yes
+		owner = { NOT = { religion_group = christian } }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA21221"
+		owner = { prestige = 0.01 }
+		hre = no
+		emperor = { country_event = 21222 }
+	}
+}
+
+country_event = {
+
+	id = 21222
+
+	title = "EVTNAME21221"
+	desc = "EVTDESC21222"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA21222"
+		add_imperial_influence = -4
+	}
+}

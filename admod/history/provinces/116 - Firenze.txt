@@ -1,0 +1,59 @@
+#116 - Firenze
+
+owner = TUS
+controller = TUS
+culture = lombard 
+religion = catholic 
+hre = yes 
+base_tax = 12        
+trade_goods = wine
+manpower = 6        
+fort1 = yes 
+capital = "Firenze" 
+citysize = 63000 # Estimated 
+university = yes # Founded 1321
+add_core = TUS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = TUS
+		controller = TUS
+		citysize = 63000 }
+
+1450.1.1   = { citysize = 68000 }
+1500.1.1   = { citysize = 70000 } 
+1527.1.1   = { controller = SPA } # War of the League of Cognac
+1529.8.3   = { controller = TUS } # Treaty of Cambrai
+1550.1.1   = { citysize = 60000 }
+1560.1.1   = { marketplace = yes } 
+1600.1.1   = { citysize = 69000 } 
+1650.1.1   = { citysize = 70000 } 
+1700.1.1   = { citysize = 72000 }
+1720.1.1   = { tax_assessor = yes } 
+1750.1.1   = { citysize = 74000 add_core = ITA } 
+1800.1.1   = { citysize = 81000 }
+1801.2.9   = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+	     } # The Treaty of Lunéville
+1801.3.21  = {	owner = ETR
+		controller = ETR
+		add_core = ETR
+	     } # The Kingdom of Etruria
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1807.12.10 = {	owner = RFR
+		controller = RFR
+		remove_core = ETR
+	     } # Etruria is annexed to France
+1814.4.11  = {	owner = TUS
+		controller = TUS
+		remove_core = RFR
+	     } # Napoleon abdicates and Tuscany is restored

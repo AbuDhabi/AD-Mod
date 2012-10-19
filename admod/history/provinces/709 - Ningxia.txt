@@ -1,0 +1,31 @@
+#709 - Ningxia
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = confucianism
+capital = "Yinchuan"
+trade_goods = wool
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 9010
+add_core = MNG
+add_core = QIN
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 10570 }
+1500.1.1 = { citysize = 12260 base_tax = 4 } # Repairs of the Great Wall
+1550.1.1 = { citysize = 14115 }
+1600.1.1 = { citysize = 16188 }
+1644.1.1 = { controller = MCH }
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 17850 }
+1700.1.1 = { citysize = 19120 }
+1750.1.1 = { citysize = 21555 }
+1800.1.1 = { citysize = 23800 }

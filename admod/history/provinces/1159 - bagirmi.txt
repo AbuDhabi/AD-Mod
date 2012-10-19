@@ -1,0 +1,27 @@
+#1159 - Bagirmi
+
+owner = KBO
+controller = KBO
+add_core = KBO
+culture = mali #Kanuri
+religion = vodun
+capital = "Massenya"
+citysize = 7000
+manpower = 1
+trade_goods = ivory
+hre = no
+base_tax = 1 
+discovered_by = KBO
+discovered_by = HAU
+
+1450.1.1 = { citysize = 8000 }
+1573.1.1 = { controller = KBO } #Mai Katakarmabe restores Borno authority over Baguirmi
+1580.1.1 = { religion = sunni } #rulers of Baguirmi declare Islam state religion
+1600.1.1 = { citysize = 15000 } 
+1684.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Baguirmi rebels in wake of Jukun invasions of Borno heartland
+1700.1.1 = { citysize = 25000 } 
+1720.1.1 = { revolt = {} controller = KBO } #Baguirmi restored to Borno control
+1750.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Baguirmi rebels in wake of Jukun invasions of Borno heartland
+1752.1.1 = { revolt = {} }
+1800.1.1 = { citysize = 27000 }
+1804.1.1 = { discovered_by = SOK }

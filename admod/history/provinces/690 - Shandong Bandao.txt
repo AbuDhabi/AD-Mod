@@ -1,0 +1,31 @@
+#690 - Shandong Bandao
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = confucianism
+capital = "Yantai"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 51000
+add_core = MNG
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 54200 }
+1500.1.1 = { citysize = 59800 }
+1550.1.1 = { citysize = 64333 }
+1600.1.1 = { citysize = 68570 }
+1644.1.1 = { controller = MCH }
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 71110 }
+1700.1.1 = { citysize = 75424 }
+1750.1.1 = { citysize = 79600 }
+1800.1.1 = { citysize = 82540 }

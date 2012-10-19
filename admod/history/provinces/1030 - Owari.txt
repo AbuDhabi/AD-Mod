@@ -1,0 +1,30 @@
+#1030 - Owari
+
+owner = TAI
+controller = TAI
+culture = yamato
+religion = shinto
+capital = "Sunpu"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 2
+citysize = 10710
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 11230 }
+1488.1.1 = { revolt = { type = ikko_ikki size = 3 } controller = REB }
+1500.1.1 = { citysize = 12980 }
+1525.1.1 = { fort2 = yes } # Nagoya Castle
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 14230 }
+1564.1.1 = { revolt = {} controller = TAI }
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }
+1600.1.1 = { citysize = 16340 }
+1603.1.1 = { capital = "Nagoya" }
+1650.1.1 = { citysize = 18655 }
+1700.1.1 = { citysize = 21770 }
+1750.1.1 = { citysize = 23680 }
+1800.1.1 = { citysize = 25400 }

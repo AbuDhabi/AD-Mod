@@ -1,0 +1,23 @@
+government = despotic_monarchy
+aristocracy_plutocracy = 0
+centralization_decentralization = 3
+innovative_narrowminded = 3
+mercantilism_freetrade = -3
+offensive_defensive = 2
+land_naval = 1
+quality_quantity = 3
+serfdom_freesubjects = 1
+primary_culture = rumi
+religion = sunni
+technology_group = muslim
+capital = 118		# Roma
+
+1398.10.1 = {
+	monarch = {
+		name = "Basir I"
+		dynasty = "Rum"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

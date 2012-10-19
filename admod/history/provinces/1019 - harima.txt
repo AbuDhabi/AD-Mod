@@ -1,0 +1,29 @@
+#1019 - Harima
+
+owner = MIN
+controller = MIN
+culture = yamato
+religion = shinto
+capital = "Himeji"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 8240
+fort1 = yes
+add_core = MIN
+discovered_by = chinese
+
+1450.1.1 = { citysize = 9050 }
+1500.1.1 = { citysize = 9450 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 10670 marketplace = yes }
+1555.1.1 = { revolt_risk = 1 } # Battle of Miyajima
+1556.1.1 = { revolt_risk = 0 }
+1581.1.1 = { fort2 = yes } # Himeji Castle
+1600.1.1 = { citysize = 11534 constable = yes }
+1650.1.1 = { citysize = 12985 }
+1700.1.1 = { citysize = 14215 }
+1745.1.1 = { tax_assessor = yes }
+1750.1.1 = { citysize = 15950 }
+1800.1.1 = { citysize = 17400 }

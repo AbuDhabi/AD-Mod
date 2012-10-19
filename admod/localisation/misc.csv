@@ -1,0 +1,490 @@
+MODIFIER_TECHNOLOGY_COST;Technology Cost;Coût technologique;Technologiekosten;;Coste tecnológico;;;;;;;;;x
+EVTOPTC722;Loosen our grip on the people.;;;;;;;;;;;;;x
+imperial_administration2_title;Reform Imperial Administration;;Adoptiert eine imperiale Administration;;Adoptar la administración imperial;;;;;;;;;x
+imperial_administration2_desc;Great nations must advance lest they fall out of relevance. We must work to improve the administration of our vast nation.;;;;;;;;;;;;;x
+imperial_administration3_title;Declare Absolute Rule;;;;;;;;;;;;x
+imperial_administration3_desc;Our nation is among the mightiest in the world. Our citizens enjoy the prosperity resulting from our benevolent guidance. We owe it to the world to extend that privilege to all oppressed people.;;;;;;;;;;;;;x
+despotic_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+despotic_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+despotic_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+despotic_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+despotic_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+despotic_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+despotic_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+despotic_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+despotic_monarchy_ruler_skandistani;Khan;;;;;;;;;;;;x
+despotic_monarchy_ruler_jochid;Khan;;;;;;;;;;;;x
+despotic_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+despotic_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+feudal_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+feudal_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+feudal_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+feudal_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+feudal_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+feudal_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+feudal_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+feudal_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+feudal_monarchy_ruler_skandistani;Khan;;;;;;;;;;;;x
+feudal_monarchy_ruler_jochid;Khan;;;;;;;;;;;;x
+feudal_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+feudal_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+administrative_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+administrative_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+administrative_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;;x
+administrative_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+administrative_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+administrative_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+administrative_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+administrative_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+administrative_monarchy_ruler_skandistani;Khan;;;;;;;;;;;;x
+administrative_monarchy_ruler_jochid;Khan;;;;;;;;;;;;x
+administrative_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+administrative_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+absolute_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+absolute_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+absolute_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+absolute_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+absolute_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+absolute_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+absolute_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+absolute_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+absolute_monarchy_ruler_skandistani;Kochu;;;;;;;;;;;;x
+absolute_monarchy_ruler_jochid;Kochu;;;;;;;;;;;;x
+absolute_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+absolute_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+constitutional_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+constitutional_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+constitutional_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+constitutional_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+constitutional_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+constitutional_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+constitutional_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+constitutional_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+constitutional_monarchy_ruler_skandistani;Kochu;;;;;;;;;;;;x
+constitutional_monarchy_ruler_jochid;Kochu;;;;;;;;;;;;x
+constitutional_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+constitutional_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+revolutionary_empire_ruler_dharmic;Maharaja;;;;;;;;;;;;x
+revolutionary_empire_ruler_female_dharmic;Maharani;;;;;;;;;;;;x
+revolutionary_empire_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+revolutionary_empire_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+revolutionary_empire_ruler_greek;Megas Basileus;;;;;;;;;;;;x
+revolutionary_empire_ruler_female_greek;Megas Basilissa;;;;;;;;;;;;x
+revolutionary_empire_ruler_malal;Mansa;;;;;;;;;;;;x
+revolutionary_empire_ruler_rumi;Autokrator;;;;;;;;;;;;x
+revolutionary_empire_ruler_female_rumi;Autokrateira;;;;;;;;;;;;x
+revolutionary_empire_ruler_skandistani;Khagan;;;;;;;;;;;;x
+revolutionary_empire_ruler_jochid;Khagan;;;;;;;;;;;;x
+revolutionary_empire_ruler_central_american;Halach Uninic;;;;;;;;;;;;;x
+revolutionary_empire_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+imperial_government_ruler_dharmic;Maharaja;;;;;;;;;;;;x
+imperial_government_ruler_female_dharmic;Maharani;;;;;;;;;;;;x
+imperial_government_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+imperial_government_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+imperial_government_ruler_greek;Megas Basileus;;;;;;;;;;;;x
+imperial_government_ruler_female_greek;Megas Basilissa;;;;;;;;;;;;x
+imperial_government_ruler_malal;Mansa;;;;;;;;;;;;x
+imperial_government_ruler_rumi;Autokrator;;;;;;;;;;;;x
+imperial_government_ruler_female_rumi;Autokrateira;;;;;;;;;;;;x
+imperial_government_ruler_central_american;Halach Uninic;;;;;;;;;;;;;x
+imperial_government_ruler_skandistani;Khagan;;;;;;;;;;;;x
+imperial_government_ruler_jochid;Khagan;;;;;;;;;;;;x
+imperial_government_ruler_female_sunni;Shahbanu;;;;;;;;;;;;;x
+imperial_government_ruler_female_shiite;Shahbanu;;;;;;;;;;;;;x
+imperial_government_ruler_african_religion;Mansa;;;;;;;;;;;;;x
+imperial_government_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+imperial_government2_ruler_dharmic;Maharaja;;;;;;;;;;;;x
+imperial_government2_ruler_female_dharmic;Maharani;;;;;;;;;;;;x
+imperial_government2_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+imperial_government2_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+imperial_government2_ruler_greek;Megas Basileus;;;;;;;;;;;;x
+imperial_government2_ruler_female_greek;Megas Basilissa;;;;;;;;;;;;x
+imperial_government2_ruler_malal;Mansa;;;;;;;;;;;;x
+imperial_government2_ruler_rumi;Autokrator;;;;;;;;;;;;x
+imperial_government2_ruler_female_rumi;Autokrateira;;;;;;;;;;;;x
+imperial_government2_ruler_skandistani;Khagan;;;;;;;;;;;;x
+imperial_government2_ruler_jochid;Khagan;;;;;;;;;;;;x
+imperial_government2;Empire;;Imperium;;Imperio;;;;;;;;;x
+imperial_government2_ruler;Emperor;;Kaiser;;Emperador;;;;;;;;;x
+imperial_government2_ruler_female;Empress;;Kaiserin;;Emperatriz;;;;;;;;;x
+imperial_government2_ruler_sunni;Padishah;;Padishah;;Padisha;;;;;;;;;x
+imperial_government2_ruler_female_sunni;Shahbanu;;;;;;;;;;;;;x
+imperial_government2_ruler_shiite;Shahanshah;;Shahanshah;;Shahanshah;;;;;;;;;x
+imperial_government2_ruler_female_shiite;Shahbanu;;;;;;;;;;;;;x
+imperial_government2_ruler_east_slavic;Czar;;Zar;;Zar;;;;;;;;;x
+imperial_government2_ruler_female_east_slavic;Czarina;;Zarina;;Zarina;;;;;;;;;x
+imperial_government2_ruler_south_slavic;Czar;;Zar;;Zar;;;;;;;;;x
+imperial_government2_ruler_female_south_slavic;Czarina;;Zarina;;Zarina;;;;;;;;;x
+imperial_government2_ruler_germanic;Kaiser;;Kaiser;;Káiser;;;;;;;;;x
+imperial_government2_ruler_turkish;Padishah;;Padishah;;Padisha;;;;;;;;;x
+imperial_government2_ruler_altaic;Khagan;;Khagan;;Jagan;;;;;;;;;x
+imperial_government2_turkish;Devleti;;Devleti;;Devleti;;;;;;;;;x
+imperial_government2_altaic;Khaganate;;Khaganat;;Jaganato;;;;;;;;;x
+imperial_government2_vassal;Client Kingdom;;Klienten-Königreich;;Reino vasallo;;;;;;;;;x
+imperial_government2_ruler_vassal;King;;König;;Rey;;;;;;;;;x
+imperial_government2_ruler_african_religion;Mansa;;;;;;;;;;;;;x
+imperial_government2_ruler_central_american;Halach Uninic;;;;;;;;;;;;;x
+imperial_government2_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+imperial_government3_ruler_dharmic;Maharaja;;;;;;;;;;;;x
+imperial_government3_ruler_female_dharmic;Maharani;;;;;;;;;;;;x
+imperial_government3_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+imperial_government3_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+imperial_government3_ruler_greek;Megas Basileus;;;;;;;;;;;;x
+imperial_government3_ruler_female_greek;Megas Basilissa;;;;;;;;;;;;x
+imperial_government3_ruler_malal;Mansa;;;;;;;;;;;;x
+imperial_government3_ruler_rumi;Autokrator;;;;;;;;;;;;x
+imperial_government3_ruler_female_rumi;Autokrateira;;;;;;;;;;;;x
+imperial_government3_ruler_skandistani;Khagan;;;;;;;;;;;;x
+imperial_government3_ruler_jochid;Khagan;;;;;;;;;;;;x
+imperial_government3;Napoleonic Empire;;Imperium;;Imperio;;;;;;;;;x
+imperial_government3_ruler;Emperor;;Kaiser;;Emperador;;;;;;;;;x
+imperial_government3_ruler_female;Empress;;Kaiserin;;Emperatriz;;;;;;;;;x
+imperial_government3_ruler_sunni;Padishah;;Padishah;;Padisha;;;;;;;;;x
+imperial_government3_ruler_female_sunni;Shahbanu;;;;;;;;;;;;;x
+imperial_government3_ruler_shiite;Shahanshah;;Shahanshah;;Shahanshah;;;;;;;;;x
+imperial_government3_ruler_female_shiite;Shahbanu;;;;;;;;;;;;;x
+imperial_government3_ruler_east_slavic;Czar;;Zar;;Zar;;;;;;;;;x
+imperial_government3_ruler_female_east_slavic;Czarina;;Zarina;;Zarina;;;;;;;;;x
+imperial_government3_ruler_south_slavic;Czar;;Zar;;Zar;;;;;;;;;x
+imperial_government3_ruler_female_south_slavic;Czarina;;Zarina;;Zarina;;;;;;;;;x
+imperial_government3_ruler_germanic;Kaiser;;Kaiser;;Káiser;;;;;;;;;x
+imperial_government3_ruler_turkish;Padishah;;Padishah;;Padisha;;;;;;;;;x
+imperial_government3_ruler_altaic;Khagan;;Khagan;;Jagan;;;;;;;;;x
+imperial_government3_turkish;Devleti;;Devleti;;Devleti;;;;;;;;;x
+imperial_government3_altaic;Khaganate;;Khaganat;;Jaganato;;;;;;;;;x
+imperial_government3_vassal;Client Kingdom;;Klienten-Königreich;;Reino vasallo;;;;;;;;;x
+imperial_government3_ruler_vassal;King;;König;;Rey;;;;;;;;;x
+imperial_government3_ruler_african_religion;Mansa;;;;;;;;;;;;;x
+imperial_government3_ruler_central_american;Halach Uninic;;;;;;;;;;;;;x
+imperial_government3_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+theocratic_government_ruler_old_pagan;High Priest;;;;;;;;;;;;x
+theocratic_government_ruler_african_religion;High Priest;;;;;;;;;;;;x
+theocratic_government_ruler_american_religion;High Priest;;;;;;;;;;;;x
+theocratic_government_ruler_druidism;Archdruid;;;;;;;;;;;;x
+theocratic_government_ruler_taoic;Disciple;;;;;;;;;;;;x
+theocratic_government_ruler_buddhist;Lama;;;;;;;;;;;;x
+theocratic_government_ruler_dharmic;Brahmin;;;;;;;;;;;;x
+theocratic_government_ruler_sikhism;Khalsa;;;;;;;;;;;;x
+theocratic_government_ruler_muslim;Imam;;;;;;;;;;;;x
+theocratic_government_ruler_sufism;Mystic;;;;;;;;;;;;x
+theocratic_government_ruler_cathar;Perfecti;;;;;;;;;;;;x
+theocratic_government_ruler_teotl;Ahkin;;;;;;;;;;;;x
+theocratic_government_ruler_polynesian_religion;Kahuna;;;;;;;;;;;;x
+republican_dictatorship_ruler_central_american;Almehenob;;;;;;;;;;;;x
+republican_dictatorship_ruler_greek;Autokrator;;;;;;;;;;;;x
+republican_dictatorship_ruler_female_greek;Autokrateira;;;;;;;;;;;;x
+republican_dictatorship_ruler_rumi;Autokrator;;;;;;;;;;;;x
+republican_dictatorship_ruler_female_rumi;Autokrateira;;;;;;;;;;;;x
+enlightened_despotism_ruler_central_american;Almehenob;;;;;;;;;;;;x
+enlightened_despotism_ruler_greek;Despotes;;;;;;;;;;;;x
+enlightened_despotism_ruler_female_greek;Despoina;;;;;;;;;;;;x
+enlightened_despotism_ruler_rumi;Despotes;;;;;;;;;;;;x
+enlightened_despotism_ruler_female_rumi;Despoina;;;;;;;;;;;;x
+bureaucratic_despotism_ruler_central_american;Almehenob;;;;;;;;;;;;x
+bureaucratic_despotism_ruler_greek;Despotes;;;;;;;;;;;;x
+bureaucratic_despotism_ruler_female_greek;Despoina;;;;;;;;;;;;x
+bureaucratic_despotism_ruler_rumi;Despotes;;;;;;;;;;;;x
+bureaucratic_despotism_ruler_female_rumi;Despoina;;;;;;;;;;;;x
+regular_horde;Nomadic Tribe;;;;;;;;;;;;x
+regular_horde_ruler;Chieftain;;;;;;;;;;;;x
+regular_horde_ruler_female;Priestess;;;;;;;;;;;;x
+tribal_empire;Tributary Empire;;;;;;;;;;;;x
+tribal_empire_ruler;Emperor;;;;;;;;;;;;x
+tribal_empire_ruler_female;Empress;;;;;;;;;;;;x
+tribal_empire_ruler_inca;Sapa Inca;;;;;;;;;;;;x
+tribal_empire_ruler_central_american;Halach Uninic;;;;;;;;;;;;;x
+steppe_horde_ruler_skandistani;Khan;;;;;;;;;;;;x
+steppe_horde_ruler_jochid;Khan;;;;;;;;;;;;x
+elective_monarchy;Elective Monarchy;;;;;;;;;;;;x
+elective_monarchy_ruler;King;;;;;;;;;;;;x
+elective_monarchy_ruler_female;Queen;;;;;;;;;;;;x
+elective_monarchy_ruler_vassal;Duke;;;;;;;;;;;;x
+elective_monarchy_ruler_female_vassal;Duchess;;;;;;;;;;;;x
+elective_monarchy_ruler_dharmic;Raja;;;;;;;;;;;;x
+elective_monarchy_ruler_female_dharmic;Rani;;;;;;;;;;;;x
+elective_monarchy_ruler_vassal_dharmic;Thakur;;;;;;;;;;;;x
+elective_monarchy_ruler_female_vassal_dharmic;Thakurani;;;;;;;;;;;;x
+elective_monarchy_ruler_greek;Basileus;;;;;;;;;;;;x
+elective_monarchy_ruler_female_greek;Basilissa;;;;;;;;;;;;x
+elective_monarchy_ruler_malal;Mansa;;;;;;;;;;;;x
+elective_monarchy_ruler_rumi;Regas;;;;;;;;;;;;x
+elective_monarchy_ruler_skandistani;Khan;;;;;;;;;;;;x
+elective_monarchy_ruler_jochid;Khan;;;;;;;;;;;;x
+elective_monarchy_ruler_central_american;Ajaw;;;;;;;;;;;;;x
+elective_monarchy_ruler_inca;Sapa Inca;;;;;;;;;;;;;x
+establish_a_parliament_title;Declare Limitation of Rule;;;;;;;;;;;;;x
+establish_a_parliament_desc;Our nation is one of the most powerful in the world. And $MONARCH$ has seen that it is the people that make it so. We owe it to our citizens to let them decide their own fates.;;;;;;;;;;;;;x
+formalize_absolute_power_title;Declare Divine Right;;;;;;;;;;;;;x
+formalize_absolute_power_desc;As the sun never sets on our mighty empire, we are always in the eyes of God. The people all feel it, now it is time to declare it!;;;;;;;;;;;;;x
+divine_right;Divine Right;;;;;;;;;;;;;x
+desc_divine_right;Our nation is guarded from above.;;;;;;;;;;;;;x
+address_the_daraldawa_title;Address the Dar al-Dawa;;;;;;;;;;;;;x
+address_the_daraldawa_desc;The discovery of the New World has uncovered an immense population of lost souls, ignorant to the divine guidance of Muhammad. If we appeal to our citizens sense of religious fervor we can recruit more colonists to spread the teachings of Islam.;;;;;;;;;;;;;x
+fraternite_title;Fraternité!;;;;;;;;;;;;;x
+fraternite_desc;Unify the cultures of France under a true brotherhood.;;;;;;;;;;;;;x
+colonial_guidance;Colonial Guidance;;;;;;;;;;;;;x
+desc_colonial_guidance;Our nation has made an explicit committment to expand our influence through colonization.;;;;;;;;;;;;;x
+catholic_rome;Steward of Rome;;;;;;;;;;;;;x
+desc_catholic_rome;We are guardians of the heart of the Catholic faith.;;;;;;;;;;;;;x
+muslim_mecca;Steward of Mecca and Medina;;;;;;;;;;;;;x
+desc_muslim_mecca;Our ruler is the custodian of the two holy Mosques.;;;;;;;;;;;;;x
+target_of_crusade;Crusade Target;;;;;;;;;;;;;x
+desc_target_of_crusade;We are the focus of the Pope's wrath.;;;;;;;;;;;;;x
+barter_system;Natural Economy;;;;;;;;;;;;;x
+desc_barter_system;Since our people do not use money, the accumulation of wealth is rather difficult for us.;;;;;;;;;;;;;x
+landlocked_nation;No Navy;;;;;;;;;;;;;x
+desc_landlocked_nation;We need to construct a flagship if we want to expand our influence overseas.;;;;;;;;;;;;;x
+EVTNAME9581;No Center of Trade!;;;;;;;;;;;;;x
+EVTDESC9581;As a merchant republic, it is expected of us to maintain a center of trade within our own borders to control the flow of wealth in our region. Our lack of one is costing us greatly!;;;;;;;;;;;;;x
+EVTOPTA9581;How embarrassing!;;;;;;;;;;;;;x
+EVTNAME20113;Art School Charter;;;;;;;;;;;;;x
+EVTDESC20113;By solemn decree of $MONARCHTITLE$ $MONARCH$, in this year $YEAR$, we hereby proclaim throughout $COUNTRY$ that the $MONARCHTITLE$ has drafted a new art school charter for $PROVINCENAME$!;;;;;;;;;;;;;x
+EVTOPTA20113;Mine splendor groweth!;;;;;;;;;;;;;x
+EVTNAME20114;Manufactory Charter;;;;;;;;;;;;;x
+EVTDESC20114;By solemn decree of $MONARCHTITLE$ $MONARCH$, in this year $YEAR$, we hereby announce the expansion of infrastructure investment in the province of $PROVINCENAME$!;;;;;;;;;;;;;x
+EVTNAME20118;Province Integrated;;;;;;;;;;;;;x
+EVTDESC20118;The relative stability and prosperity of $PROVINCENAME$ has been encouraging in the past years. The people there can hardly remember the time before they were subjects of our nation.;;;;;;;;;;;;;x
+EVTOPTA20118;Great!;;;;;;;;;;;;;x
+EVTNAME21200;Succession Concerns;;;;;;;;;;;;;x
+EVTDESC21200;Both you and your successor are getting along in years. Maybe we should reconsider the line of succession to ensure our dynasty lives on.;;;;;;;;;;;;;x
+EVTOPTA21200;No! Just a few more years...;;;;;;;;;;;;;x
+EVTOPTB21200;Name a new successor;;;;;;;;;;;;;x
+EVTOPTC21200;Maybe it's time to step down;;;;;;;;;;;;;x
+EVTNAME21210;Loss of Divine Right;;;;;;;;;;;;;x
+EVTDESC21210;With the recent government reforms disrupting the very foundation of our country, your people are starting to wonder if perhaps God is not standing behind your rule.;;;;;;;;;;;;;x
+EVTOPTA21210;Those days are behind us.;;;;;;;;;;;;;x
+EVTOPTB21210;Perhaps we made a mistake.;;;;;;;;;;;;;x
+EVTNAME21211;A Minor Mistake;;;;;;;;;;;;;x
+EVTDESC21211;It has come to our attention that the fathers of our nation misunderstood some key terms when they were formalizing our independence. Our church controlled government isn't called a "papacy", it's actually a "theocracy".;;;;;;;;;;;;;x
+EVTOPTA21211;I thought that sounded wrong;;;;;;;;;;;;;x
+EVTNAME21212;$PROVINCENAME$ Temple Destroyed!;;;;;;;;;;;;;x
+EVTDESC21212;The cowardly conquerors of $PROVINCENAME$ have burned down our place of worship! They will surely face an eternity of punishment for this cowardly act, but better to make them pay them right now.;;;;;;;;;;;;;x
+EVTOPTA21212;Damn them!;;;;;;;;;;;;;x
+EVTNAME21213;Church looted in $FROM$;;;;;;;;;;;;;x
+EVTDESC21213;Our soldiers have secured what valuable relics they could find from the heathen temple in $FROM$. The rest was burned to the ground for good measure.;;;;;;;;;;;;;x
+EVTOPTA21213;To the victor go the spoils;;;;;;;;;;;;;x
+EVTNAME21214;The Final Sacrifice;;;;;;;;;;;;;x
+EVTDESC21214;The end of slavery also signals the end of people to sacrifice to our Gods. While the younger generations celebrate our emergence from the dark ages, some still grumble at the loss of what they see as an important cultural tradition.;;;;;;;;;;;;;x
+EVTOPTA21214;Let my people go!;;;;;;;;;;;;;x
+EVTNAME21215;Nationalists rise up!;;;;;;;;;;;;;x
+EVTDESC21215;Percieving a weakness in our rule, rebels in $PROVINCENAME$ have taken up arms against us!;;;;;;;;;;;;;x
+EVTOPTA21215;Fools!;;;;;;;;;;;;;x
+EVTNAME21216;A Pretender appears!;;;;;;;;;;;;;x
+EVTNAME21220;Raising an Army;;;;;;;;;;;;;x
+EVTDESC21220;The settlement in $PROVINCENAME$ is growing, and is beginning to attract suitable recruits for our army.;;;;;;;;;;;;;x
+EVTOPTA21220;Get them a weapon;;;;;;;;;;;;;x
+EVTNAME21221;The HRE is Crumbling;;;;;;;;;;;;;x
+EVTDESC21221;Our conquests in the heart of the Holy Roman Empire have dealt a great blow to the Christian Kingdoms. $PROVINCENAME$ can no longer be considered the demesne of the emperor.;;;;;;;;;;;;;x
+EVTOPTA21221;Good!;;;;;;;;;;;;;x
+EVTDESC21222;Heathen invaders are pushing into the heart of the Holy Roman Empire! Our demesne is growing smaller.;;;;;;;;;;;;;x
+EVTOPTA21222;Not Good!;;;;;;;;;;;;;x
+reactionary_sentiment;Reactionary Sentiment;;;;;;;;;;;;;x
+desc_reactionary_sentiment;There are some in our nation who do not fully agree with our sweeping reforms.;;;;;;;;;;;;;x
+eastern_modernization_title;Modernize;;;;;;;;;;;;;x
+eastern_modernization_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+ottoman_modernization_title;Modernize;;;;;;;;;;;;;x
+ottoman_modernization_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+muslim_modernization_title;Modernize;;;;;;;;;;;;;x
+muslim_modernization_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+nomad_modernization_title;Modernize;;;;;;;;;;;;;x
+nomad_modernization_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+indian_modernization_title;Modernize;;;;;;;;;;;;;x
+indian_modernization_desc;Explorers and settlers from all over the world have intruded upon an increasingly large part of our country. The introduction of foreign ideas as well as foreign diseases have shook the foundations of our rule. $MONARCH$ has seen the need for sweeping political and military reforms if we are to stay competitive in the modern world.;;;;;;;;;;;;;x
+indian_modernization_part2_title;Modernize Again;;;;;;;;;;;;;x
+indian_modernization_part2_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+chinese_modernization_title;Modernize;;;;;;;;;;;;;x
+chinese_modernization_desc;Explorers and settlers from all over the world have intruded upon an increasingly large part of our country. The introduction of foreign ideas as well as foreign diseases have shook the foundations of our rule. $MONARCH$ has seen the need for sweeping political and military reforms if we are to stay competitive in the modern world.;;;;;;;;;;;;;x
+chinese_modernization_part2_title;Modernize Again;;;;;;;;;;;;;x
+chinese_modernization_part2_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+sub_saharan_modernization_title;Modernize;;;;;;;;;;;;;x
+sub_saharan_modernization_desc;Explorers and settlers from all over the world have intruded upon an increasingly large part of our country. The introduction of foreign ideas as well as foreign diseases have shook the foundations of our rule. $MONARCH$ has seen the need for sweeping political and military reforms if we are to stay competitive in the modern world.;;;;;;;;;;;;;x
+sub_saharan_modernization_part2_title;Modernize Again;;;;;;;;;;;;;x
+sub_saharan_modernization_part2_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+new_world_modernization_title;Modernize;;;;;;;;;;;;;x
+new_world_modernization_desc;Explorers and settlers from all over the world have intruded upon an increasingly large part of our country. The introduction of foreign ideas as well as foreign diseases have shook the foundations of our rule. $MONARCH$ has seen the need for sweeping political and military reforms if we are to stay competitive in the modern world.;;;;;;;;;;;;;x
+new_world_modernization_part2_title;Modernize Again;;;;;;;;;;;;;x
+new_world_modernization_part2_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+s_new_world_modernization_title;Modernize;;;;;;;;;;;;;x
+s_new_world_modernization_desc;Explorers and settlers from all over the world have intruded upon an increasingly large part of our country. The introduction of foreign ideas as well as foreign diseases have shook the foundations of our rule. $MONARCH$ has seen the need for sweeping political and military reforms if we are to stay competitive in the modern world.;;;;;;;;;;;;;x
+s_new_world_modernization_part2_title;Modernize Again;;;;;;;;;;;;;x
+s_new_world_modernization_part2_desc;$MONARCH$ has become known not only as a great conqueror but also as a great consolidator and reformer. His competent rule has laid the foundation for the modernisation of our country. With the help of both local and foreign advisors, he has begun an extensive cultural and military reform.;;;;;;;;;;;;;x
+military_modernization_title;Military Modernization;;;;;;;;;;;;;x
+military_modernization_desc;Extensive political reforms have swept across our nation and brought us to the forefront of world affairs. Unfortunately, there are those who do not see the wisdom of these changes. Creating a modern, professional army will show our people the wisdom, as well as the strength of our rule and end any doubts they may have.;;;;;;;;;;;;;x
+mid_east;Middle East;;;;;;;;;;;;;x
+far_east_1;East Asian;;;;;;;;;;;;;x
+far_east_2;East Asian;;;;;;;;;;;;;x
+sub_saharan_1;Sub Saharan;;;;;;;;;;;;;x
+new_world_1;American;;;;;;;;;;;;;x
+new_world_2;American;;;;;;;;;;;;;x
+s_new_world;New World;;;;;;;;;;;;;x
+tribal_horde_reform_title;Government Reform;;;;;;;;;;;;;x
+tribal_horde_reform_desc;$MONARCH$ seeks to stabilize our nation by establishing a proper royal court and house of law. This will ensure the legacy of our dynasty beyond our current lifetime.;;;;;;;;;;;;;x
+ARW;Arawak;;;;;;;;;;;;;x
+ARW_ADJ;Arawak;;;;;;;;;;;;;x
+ARW_ADJ2;Arawak;;;;;;;;;;;;;x
+CAR;Carib;;;;;;;;;;;;;x
+CAR_ADJ;Caribbean;;;;;;;;;;;;;x
+CAR_ADJ2;Carib;;;;;;;;;;;;;x
+AMZ;Amazonia;;;;;;;;;;;;;x
+AMZ_ADJ;Amazonian;;;;;;;;;;;;;x
+AMZ_ADJ2;Amazon;;;;;;;;;;;;;x
+SKA;Skandistan;;;;;;;;;;;;;x
+SKA_ADJ;Skandistani;;;;;;;;;;;;;x
+SKA_ADJ2;Skandistan;;;;;;;;;;;;;x
+skandistani;Skandistani;;;;;;;;;;;;;x
+ALM;Al-Alemand;;;;;;;;;;;;;x
+ALM_ADJ;Alemani;;;;;;;;;;;;;x
+ALM_ADJ2;Maeni;;;;;;;;;;;;;x
+maeni;Maeni;;;;;;;;;;;;;x
+FAR;Faransa;;;;;;;;;;;;;x
+FAR_ADJ;Faransi;;;;;;;;;;;;;x
+FAR_ADJ2;Faransa;;;;;;;;;;;;;x
+faransi;Faransi;;;;;;;;;;;;;x
+MAA;Magyaristan;;;;;;;;;;;;;x
+MAA_ADJ;Magyari;;;;;;;;;;;;;x
+MAA_ADJ2;Magyar;;;;;;;;;;;;;x
+magyari;Magyari;;;;;;;;;;;;;x
+MAK;Djata Kurufa;;;;;;;;;;;;;x
+MAK_ADJ;Djatou;;;;;;;;;;;;;x
+MAK_ADJ2;Djata;;;;;;;;;;;;;x
+malal;Malal;;;;;;;;;;;;;x
+JOC;Jochi;;;;;;;;;;;;;x
+JOC_ADJ;Jochid;;;;;;;;;;;;;x
+JOC_ADJ2;Jochid;;;;;;;;;;;;;x
+jochid;Altan Urag;;;;;;;;;;;;;x
+RUM;Ruma;;;;;;;;;;;;;x
+RUM_ADJ;Rumi;;;;;;;;;;;;;x
+RUM_ADJ2;Rum;;;;;;;;;;;;;x
+rumi;Rumi;;;;;;;;;;;;;x
+ISR;Israel;;;;;;;;;;;;;x
+ISR_ADJ;Israeli;;;;;;;;;;;;;x
+ISR_ADJ2;Judean;;;;;;;;;;;;;x
+crusader_group;Crusader;;;;;;;;;;;;;x
+galilean;Galilean;;;;;;;;;;;;;x
+ptolemaic;Ptolemaic;;;;;;;;;;;;;x
+malagasy;Malagasy;;;;;;;;;;;;;x
+EVTNAME31600;Diplomatic Faux Pas;;;;;;;;;;;;;x
+EVTDESC31600;Though $MONARCH$'s original intentions were certainly more gracious, casually referring to bordering nations as tribes of cavemen ruled by clever tyrants seems to have hurt our diplomatic position considerably.;;;;;;;;;;;;;x
+EVTOPTA31600;Oops!;;;;;;;;;;;;;x
+EVTDESC31601;During a recent speech, $MONARCH$ upset the minority population by promising to bring to them the secrets of bathing and suggesting they might someday become part of a real culture.;;;;;;;;;;;;;x
+EVTDESC31602;$MONARCH$'s consistent lack of social graces during official ceremonies and diplomatic meetings has begun to seriously affect the outside world's perception of us.;;;;;;;;;;;;;x
+EVTNAME31603;Mistress discovered!;;;;;;;;;;;;;x
+EVTDESC31603;Rumors are spreading like wildfire through the capital! $MONARCH$'s husband has been getting far too friendly with one of the peasant girls working at the palace than is appropriate for one of his station. The gossip has become a source of great embarassment and would-be pretenders are calling the legitimacy of the dynasty into question.;;;;;;;;;;;;;x
+EVTOPTA31603;He is only a man.;;;;;;;;;;;;;x
+EVTOPTB31603;Make her disappear.;;;;;;;;;;;;;x
+EVTNAME31604;Religious Violence;;;;;;;;;;;;;x
+EVTDESC31604;$MONARCH$'s violent rhetoric directed at the non-believers living in our nation has finally resulted in an escalation of violence. Religious rebels, tired of the constant harassment, have taken up arms to defend themselves.;;;;;;;;;;;;;x
+EVTOPTA31604;Words can hurt.;;;;;;;;;;;;;x
+EVTNAME31700;Strategic Mistake;;;;;;;;;;;;;x
+EVTDESC31700;Recruitment efforts across the nation are suffering after $MONARCH$'s very candid public discussion about how most of these young men would be sent off to foreign provinces to starve between periods of bloody conflict.;;;;;;;;;;;;;x
+EVTDESC31701;Military tradition is suffering after $MONARCH$ decided that current tactics are far too unmanly. $MONARCH$'s new military advisor has promised to march our armies straight into the pages of history, whatever that means.;;;;;;;;;;;;;x
+EVTDESC31702;$MONARCH$ has declared the army of $COUNTRY$ the greatest in the world regardless of what anyone else may say. Since the army has been declared indestructible, military research has been put on hold as all it does is force $MONARCH$ to pay for new equipment.;;;;;;;;;;;;;x
+EVTDESC31703;During a tour of military armaments throughout the nation, $MONARCH$ demanded a demonstration to assess battle readiness. When commanders were hesitant he began setting off ordinance himself. The results were disastrous.;;;;;;;;;;;;;x
+EVTNAME31800;Administrative Error;;;;;;;;;;;;;x
+EVTDESC31800;When a peasant complained that there was no coin left for him after the nobles and merchants had taken their shares, $MONARCH$ proposed the simplest solution that came to mind. Make more money!;;;;;;;;;;;;;x
+EVTDESC31801;The national treasury is suffering after $MONARCH$ decided to host a grand ball for the entire province of $CAPITAL$. The plan was discovered and stopped shortly after invitations began to go out but a local militia was still needed to keep curious townspeople away from the royal palace.;;;;;;;;;;;;;x
+EVTDESC31802;$MONARCH$'s inability to keep track of merchant dues has finally caused some to become fed up and seek greener pastures elsewhere.;;;;;;;;;;;;;x
+EVTDESC31803;$MONARCH$'s repeated failure to pay dues to our missionary workers has seriously dampened their will to spread the word of the true faith.;;;;;;;;;;;;;x
+EVTDESC31804;$MONARCH$ has declared that $COUNTRY$ can produce everything we need within our borders. Foreign goods have fallen out of favor and our ruler has declared several limits on foreign trade.;;;;;;;;;;;;;x
+EVTDESC31805;$MONARCH$ has failed to properly compensate sheriffs and tax assessors lately. It wouldn't be surprising if several sources of tax revenue that the nation depends on were to mysteriously disappear.;;;;;;;;;;;;;x
+EVTNAME31850;New Recruits!;;;;;;;;;;;;;x
+EVTDESC31850;$MONARCH$'s military brilliance and charismatic presence (not to mention the snappy uniforms) has peasants and nobility alike lining up to join the armed forces. Several new armories have been constructed across the nation to arm these men.;;;;;;;;;;;;;x
+EVTOPTA31850;Excellent!;;;;;;;;;;;;;x
+EVTNAME31851;A Place to Worship;;;;;;;;;;;;;x
+EVTDESC31851;$MONARCH$ has a lot to deal with keeping a nation running smoothly, and making sure loyal subjects have a place to worship is one of the most important. A nationwide volunteer campaign has constructed several new temples for the faithful.;;;;;;;;;;;;;x
+EVTNAME31852;Excellent Administration;;;;;;;;;;;;;x
+EVTDESC31852;$MONARCH$'s brilliant financial reforms have managed to painlessly lower inflation and increase nationwide confidence in our currency.;;;;;;;;;;;;;x
+EVTNAME31853;A Great Man;;;;;;;;;;;;;x
+EVTDESC31853;Knowing your weaknesses is just as important as knowing your strengths, and $MONARCH$ has made a habit of surrounding himself with the most talented advisors available to make sure his administration runs smoothly.;;;;;;;;;;;;;x
+EVTNAME31856;A Grim Visit;;;;;;;;;;;;;x
+EVTDESC31856;$MONARCH$ has always felt apart from society. People try to hide worried glances while animals pace nervously. Strange happenings occur in the presence of $MONARCH$.;;;;;;;;;;;;;x
+EVTOPTA31856;Curses!;;;;;;;;;;;;;x
+EVTNAME31857;Blessed from Above;;;;;;;;;;;;;x
+EVTDESC31857;$MONARCH$ is truly a child of the sun. Blessed in brilliance and beauty, the entire nation hangs on every word of our beloved ruler. The question now is how to use this power.;;;;;;;;;;;;;x
+EVTOPTA31857;Consolidate power;;;;;;;;;;;;;x
+EVTOPTB31857;Reform the administration;;;;;;;;;;;;;x
+EVTOPTC31857;Reassure the populace;;;;;;;;;;;;;x
+EVTNAME31858;Tactical Genius;;;;;;;;;;;;;x
+EVTDESC31858;$MONARCH$'s new ideas regarding military theory are sweeping through academic circles and finding their way into military schools. Armed with these new tactics, this generation promises to produce some of the greatest generals in our nations history.;;;;;;;;;;;;;x
+EVTNAME31859;Pacifying the Natives;;;;;;;;;;;;;x
+EVTDESC31859;Our colony in $PROVINCENAME$ has been in a difficult situation since it was founded. Despite being surrounded by hostile natives who seem to have no interest in diplomacy, the settlers there are doing their best to find a way to co-exist peacefully. After a few setbacks, some common ground has been found between the two peoples.;;;;;;;;;;;;;x
+EVTOPTA31859;Good for them.;;;;;;;;;;;;;x
+EVTNAME31870;Vassal Converts!;;;;;;;;;;;;;x
+EVTDESC31870;Our loyal vassal state has come to see the light and embraced the true faith.;;;;;;;;;;;;;x
+EVTOPTA31870;Great!;;;;;;;;;;;;;x
+EVTNAME31871;Religious Ultimatum;;;;;;;;;;;;;x
+EVTDESC31871;The political and cultural pressures put on us from our overlords have become increasingly powerful lately. They are pressuring us to convert our state religion to better suit their own interests and our ruler has been listening.;;;;;;;;;;;;;x
+EVTOPTA31871;We will keep the old ways!;;;;;;;;;;;;;x
+EVTOPTB31871;Maybe it's time for a change.;;;;;;;;;;;;;x
+EVTNAME32300;A Great Horde;;;;;;;;;;;;;x
+EVTDESC32300;Our conquests have made our military feared throughout the world. Now it is time to make these conquests permanent for our Great Khan. A proper monarchy and succession laws will ensure that our horde never again collapses as the lands of Genghis once did.;;;;;;;;;;;;;x
+EVTOPTA32300;Great!;;;;;;;;;;;;;x
+EVTNAME32301;End of the Horde;;;;;;;;;;;;;x
+EVTDESC32301;The days of our invincible armies marching over all the world and taking as we please are over. Settled people are becoming too advanced and resisting our ancient ways of war, while even our own people are beginning to establish permanent settlements. The glory days of the horde are over.;;;;;;;;;;;;;x
+EVTOPTA32301;We will survive;;;;;;;;;;;;;x
+EVTNAME32307;Settlers here to stay;;;;;;;;;;;;;x
+EVTDESC32307;The invaders from across the sea have us surrounded in our home lands. No longer can our people move freely about the Earth. We must make our stand here.;;;;;;;;;;;;;x
+otto_harem;The Harem Faction;;;;;;;;;;;;;x
+otto_harem_FACTION_DESC;For the perpetuation of dynasty and Empire, beautiful and intelligent slave girls were acquired from neighboring countries to serve in the harem. Their origins from outside of the Empire enabled closer diplomatic ties.;;;;;;;;;;;;;x
+otto_harem_influence;Harem Faction Influence;;;;;;;;;;;;;x
+otto_janissaries;The Janissary Faction;;;;;;;;;;;;;x
+otto_janissaries_FACTION_DESC;The professional army of the Ottoman Empire, as well as the personal bodyguards of the Sultan. They were highly disciplined in warfare as well as faith. Their concerns were first and foremost about the well-being of the troops.;;;;;;;;;;;;;x
+otto_janissaries_influence;Janissaries Faction Influence;;;;;;;;;;;;;x
+otto_divan;The Divan Faction;;;;;;;;;;;;;x
+otto_divan_FACTION_DESC;The council of state, the Divan was concerned with all matters of finance and administration. As the borders of the Ottoman Empire expand the importance of the Divan bureaucracy becomes ever more important.;;;;;;;;;;;;;x
+otto_divan_influence;Divan Faction Influence;;;;;;;;;;;;;x
+support_harem_faction_title;Support Harem Faction;;;;;;;;;;;;;x
+support_harem_faction_desc;Grant an audience to the Valide Sultan.;;;;;;;;;;;;;x
+support_divan_faction_title;Support Divan Faction;;;;;;;;;;;;;x
+support_divan_faction_desc;Grant an audience to the state council.;;;;;;;;;;;;;x
+support_janissary_faction_title;Support Janissary Faction;;;;;;;;;;;;;x
+support_janissary_faction_desc;Grant an audience to the army generals.;;;;;;;;;;;;;x
+russian_nation_horde_title;Form Russian Nation;;;;;;;;;;;;;x
+russian_nation_horde_desc;Through numerous conquests, Russia has managed to transform from a mere collection of peoples at the edge of our nation into a military and economic might. After several western expeditions, the European states have been subdued and a centralized Russian state has emerged. Influences from these settled people are helping us modernise and reform our nation into a great kingdom the world will come to fear!;;;;;;;;;;;;;x
+russian_migration;Russian Migration;;;;;;;;;;;;;x
+desc_russian_migration;Rus people from across our nation are moving to the spectacular new capital of St. Petersburg.;;;;;;;;;;;;;x
+foreign_investment;Foreign Investment;;;;;;;;;;;;;x
+desc_foreign_investment;Our protector state is spending a significant amount of resources to improve our national development.;;;;;;;;;;;;;x
+republican_rebels_title;Revolutionary;;;;;;;;;;;;;x
+republican_rebels_name;Republican Revolutionaries;;;;;;;;;;;;;x
+republican_rebels_desc;Revolutionaries are fed up with both the lack of freedoms and the lack of respect our nation has in the eyes of the world. They envision a liberal, forward thinking republic that will bring glory to free men across the world.;;;;;;;;;;;;;x
+republican_rebels_army;Revolutionary Army;;;;;;;;;;;;;x
+imperial_rebels_title;Revolutionary;;;;;;;;;;;;;x
+imperial_rebels_name;Imperial Revolutionaries;;;;;;;;;;;;;x
+imperial_rebels_desc;Revolutionaries are fed up with the weakness our nation has shown to the world. They envision an unstoppable military empire that will bring glory to her loyal citizens.;;;;;;;;;;;;;x
+imperial_rebels_army;Revolutionary Army;;;;;;;;;;;;;;x
+hate_the_rich;Highest Income;;;;;;;;;;;;;x
+desc_hate_the_rich;The rest of the world envies our profits.;;;;;;;;;;;;;x
+hate_the_endless_legions;Largest Army;;;;;;;;;;;;;x
+desc_hate_the_endless_legions;The rest of the world feels threatened by the biggest armed force on Earth.;;;;;;;;;;;;;x
+hate_the_wooden_wall;Biggest Navy;;;;;;;;;;;;;x
+desc_hate_the_wooden_wall;The rest of the world hates that we rule the seas.;;;;;;;;;;;;;x
+hate_the_prestigious;Highest Prestige;;;;;;;;;;;;;x
+desc_hate_the_prestigious;The rest of the world envies our success.;;;;;;;;;;;;;x
+hate_the_huge;Largest Nation;;;;;;;;;;;;;x
+desc_hate_the_huge;The rest of the world feels exceptionally threatened by our sheer size.;;;;;;;;;;;;;x
+hate_the_overlord;Most Vassals;;;;;;;;;;;;;x
+desc_hate_the_overlord;The rest of the world sees us as merciless slave-drivers.;;;;;;;;;;;;;x
+hate_the_hapsburgs;Most Personal Unions;;;;;;;;;;;;;x
+desc_hate_the_hapsburgs;The rest of the world thinks we're trying to conquer the world via the bedroom.;;;;;;;;;;;;;x
+stolen_technology;Stolen Technology;;;;;;;;;;;;;x
+desc_stolen_technology;We've stolen some secrets from our more advanced neighbours and are implementing them.;;;;;;;;;;;;;x
+steal_technology;Steal Technology;;;;;;;;;;;;;x
+steal_technology_desc;This nation is more advanced than ours. Perhaps we could lift a few technological secrets off them?;;;;;;;;;;;;;x
+recruit_merchant_title;Recruit Merchant;;;;;;;;;;;;;x
+recruit_merchant_desc;By greasing the right palms, we could hire some additional merchants.;;;;;;;;;;;;;x
+recruit_colonist_title;Recruit Colonist;;;;;;;;;;;;;x
+recruit_colonist_desc;By greasing the right palms, we could hire some additional colonists.;;;;;;;;;;;;;x
+recruit_diplomat_title;Recruit Diplomat;;;;;;;;;;;;;x
+recruit_diplomat_desc;By greasing the right palms, we could hire some additional diplomats.;;;;;;;;;;;;;x
+recruit_missionary_title;Recruit Missionary;;;;;;;;;;;;;x
+recruit_missionary_desc;By greasing the right palms, we could hire some additional missionaries.;;;;;;;;;;;;;x
+recruit_spy_title;Recruit Spy;;;;;;;;;;;;;x
+recruit_spy_desc;By greasing the right palms, we could hire some additional spies.;;;;;;;;;;;;;x
+recruit_magistrate_title;Recruit Magistrate;;;;;;;;;;;;;x
+recruit_magistrate_desc;By greasing the right palms, we could hire some additional magistrates.;;;;;;;;;;;;;x
+ROM;Rome;;;;;;;;;;;;;x
+ROM_ADJ;Roman;;;;;;;;;;;;;x
+AMZ_ADJ2;Roman;;;;;;;;;;;;;x
+roman_empire_title;Reconstitute the Roman Empire;;;;;;;;;;;;;x
+roman_empire_desc;Centuries ago, the Roman Empire has fallen to the German barbarians and the followers of Mohammed. But now, the banners of Rome fly in the wind again, as the classical world unites once more!;;;;;;;;;;;;;x

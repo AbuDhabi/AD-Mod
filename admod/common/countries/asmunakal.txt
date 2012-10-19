@@ -1,0 +1,83 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+is_colonial = yes
+
+color = { 161  189  210 } 
+
+historical_ideas = {
+	divine_supremacy
+	national_conscripts
+	military_drill
+	merchant_adventures
+	shrewd_commerce_practise
+	battlefield_commisions
+	national_trade_policy
+	engineer_corps
+	espionage
+	grand_army
+	glorious_arms
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Toqtamish #0" = 20
+	"Chekre #0" = 20
+	"Daylat Shaykh #0" = 20
+	"Abu'l Khayr #0" = 20
+	"Haidar Sultan #0" = 20
+	"Muhammad Shaybani #0" = 20
+	"Kochkunju Khan #0" = 20
+	"Muzaffar-ud-Din Abu-Sa'id #0" = 20
+	"Ubayd'Allah Khan #0" = 20
+	"Abd Allah #0" = 20
+	"Abu-al Aziz Khan #0" = 20
+	"Nawruz Ahmad Khan #0" = 20
+	"Pir Muhammad #0" = 20
+	"Iskandar Bahadur #0" = 20
+	"Abd al-Mu'min #0" = 20
+	"Yar Muhammad #0" = 20
+	"Jani Muhammad #0" = 20
+	"Baqi Muhammad #0" = 20
+	"Wali Muhammad #0" = 20
+	"Imam Quli Bahadur #0" = 20
+	"Sa'id Nadir Muhammad #0" = 20
+	"Sa'id Abd al-Aziz #0" = 20
+	"Sa'id Subhan Quli Bahadur #0" = 20
+	"Sa'id Ubayd'Allah #0" = 20
+	"Abu'l Fa'iz #0" = 20
+	"Rahim Bi #0" = 20
+	"Muhammad Rahim Khan #0" = 20
+	"Danial Ataliq #0" = 20
+	"Mîr Ma'sum Shah Murad #0" = 20
+	"Haidar Tura #0" = 20
+}
+
+leader_names = { 
+	"Mongke Nasan" "Bora Chinua" "Shria Gal" "Boke Arslan" "Suren Unegen"
+	"Arigh Gan" "Qara Temur" "Bayan Checheg" "Yeke Burilgi" 
+	"Chagan Erdene" "Altan Vachir" "Mongke Enq" "Mongke Bayar" 
+}
+
+ship_names = {
+	Amudarja Syrdarja Karakul Karsi Guzar
+	Gulistan Cimkent Jangijul Chudzand Kerki
+	Gizduvan Chiva Bajsun Mukry
+}

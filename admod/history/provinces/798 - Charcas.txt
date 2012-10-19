@@ -1,0 +1,40 @@
+#798 - Charcas
+
+culture = inca
+religion = inca_religion
+capital = "Charcas"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 15
+native_ferocity = 1 
+native_hostileness = 1
+
+1471.1.1  = {	discovered_by = INC
+		owner = INC
+		controller = INC
+		add_core = INC
+		citysize = 2600
+		trade_goods = gold
+	    } # Estimated
+1500.1.1  = { citysize = 3200 }
+1533.8.29 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	    }# The death of Atahualpa
+1538.1.1  = { revolt_risk = 8 } # Fighting broke out between the forces of Pizzaro & those of Almagro
+1541.1.1  = { revolt_risk = 6 } # Pizzaro is assassinated by supporters of Almagro, his brother assumed control
+1548.1.1  = { revolt_risk = 0 } # Gonzalo Pizzaro is also executed & Spain succeeds in reasserting its authority
+1550.1.1  = { citysize = 2780 }
+1558.8.29 = { add_core = SPA }
+1560.1.1  = { revolt_risk = 5 } # Conflicts with the natives
+1592.1.1  = { revolt_risk = 0 } # The capital is moved
+1600.1.1  = { citysize = 2980 }
+1650.1.1  = { citysize = 4352 }
+1700.1.1  = { citysize = 5120 }
+1750.1.1  = { citysize = 6555 add_core = PEU }
+1800.1.1  = { citysize = 8400 }
+1809.7.16 = { revolt = { type = colonial_rebels size = 0 } controller = REB } # Bolivian War of Independence

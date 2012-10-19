@@ -1,0 +1,37 @@
+#1219 - Kordofan
+
+culture = nubian 
+religion = bantu_rel
+capital = "Al Ubayd"
+native_size = 50
+native_ferocity = 4.5
+native_hostileness = 9 
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+discovered_by = NUB
+
+#Black Death
+1399.10.11 = {	owner = NUB
+		controller = NUB
+		add_core = NUB
+		citysize = 5000
+		trade_goods = slaves }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = NUB
+		citysize = 0
+		trade_goods = unknown }
+
+1640.1.1 = { discovered_by = NUB owner = NUB controller = NUB add_core = NUB citysize = 5000 trade_goods = slaves } #Funj expansion into Mus
+1700.1.1 = { citysize = 6000 }
+1742.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } #Musabba`at drive Funj out of Kordofan
+1747.1.1 = { revolt = {} controller = NUB revolt_risk = 3 } #Muhammad abu Likaylik restores Funj rule
+1750.1.1 = { citysize = 7000 }
+1756.1.1 = { revolt_risk = 4 } #Badi IV comes into conflict with aristocrats over new slave army plan
+1761.1.1 = { revolt_risk = 9 } #Badi IV persecutes aristocrats who challenge his authority
+1762.1.1 = { revolt_risk = 0 } #Badi IV deposed by Muhammad Abu Likaylik 
+1800.1.1 = { citysize = 8000 }

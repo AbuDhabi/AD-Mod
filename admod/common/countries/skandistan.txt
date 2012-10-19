@@ -1,0 +1,105 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 49  153  186 }
+
+historical_ideas = {
+	land_of_opportunity
+	merchant_adventures
+	shrewd_commerce_practise
+	national_trade_policy
+	military_drill
+	glorious_arms
+	national_bank
+	grand_army
+	cabinet
+	bill_of_rights
+	scientific_revolution
+	napoleonic_warfare
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Serzh #0" = 20
+	"Shadi Beg #0" = 20
+	"Pulad Khan #0" = 20
+	"Temür #0" = 20
+	"Jalal Al-Din #0" = 20
+	"Karim Berdi #0" = 20
+	"Kebek #0" = 20
+	"Kuchuk #0" = 20
+	"Mahmud #0" = 20
+	"Ahmad #0" = 20
+	"Sayid Ahmad #0" = 20
+	"Baraq #0" = 20
+	"Devlat Berdi #0" = 20
+	"Ulug #0" = 20
+	"Jabbar #0" = 20
+	"Yadigai #0" = 10
+	"'Isa Beg #0" = 10
+	"Mansur #0" = 10
+	"Kai Qubad #0" = 10
+	"Nur #0" = 10
+	"Mustafa #0" = 10
+	"Osman #0" = 10
+	"Yamguchi #0" = 10
+	"Musa Mirza #0" = 10
+	"Shigai #0" = 10
+	"Seydyak #0" = 10
+	"Shig-Mamai #0" = 10
+	"Ishey #0" = 10
+	"Yusuf #0" = 10
+        "Il Murza #0" = 10
+        "Isma'il #0" = 10
+        "Yunus #0" = 10
+        "Tin-Ahmad #0" = 10
+        "Mirza Urus #0" = 10
+        "Yeni Bey #0" = 10
+        "Ishterek #0" = 10
+        "Yan Arslan #0" = 10
+        "Alba Murza #0" = 10
+        "Kana Bey Mirza #0" = 10
+        "Djan Mambet Bey #0" = 10
+	"Arslan #0" = 5
+	"Janai #0" = 5
+	"Mustafa #0" = 5
+	"Aisha #0" = -1
+	"Rayhana #0" = -1
+}
+
+leader_names = {
+	"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar"
+	"Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene Toluilun
+	Qutughqan "Koke Burilgi" Surenchar Bayangge
+	"Al Tolui" "Mongke Bayar" "Qara Erdene" "Koke Qadan" Qacha-jin
+	Oyugungene Burilginai Qadanteni Qutughqai "Altan Chinua" "Yeke Sube"
+	"Arigh Qorchi" "Boke Unegen"
+	"Ulagan Temur" "Bora Chinua" "Suren Unegen" "Qara Erdene" 
+	"Delger Cheren" Chaganchar Qorchigene Burilgidai Qadantai 
+	Temurcher Tegus-chi Berkegene Yekechar Batu-tu
+	Balna Salmiianov Ravna Taiborey Vylka
+	Kanin Maimbava Arinin Aven Tsoy
+}
+
+ship_names = {
+	Batu Sartaq Ulaghchi Berke "Mengu-Timur" "Tuda-Mengu"
+	Talabuga "Nogai Khan" Tokhta "Öz Beg" "Tini Beg" "Jani Beg" 
+	"Berdi Beg" Qulpa "Nawruz Beg" Khidr "Timur Khwaja" Abdallah
+	"Muhammad Bolak" "Mamai Khan" Toqtamish "Temür Qutlugh" Ediguh
+	"Shadi Beg" "Polad Khan" Temür "Jalal ad-Din" "Karim Berdi" Kebek
+	"Jabbar Berdi" "Ulugh Muhammad" "Dawlat Berdi" Baraq "Sayud Ahmad"
+	"Kara Nojaj" Edigü Saraycik Yayik
+	"Chinggis Khan" "Batu Khan" "Tartar Khan"
+	"Möngke Timur" "Waqqas Bej" Chaka Buri
+	"Qara Quchuq" Mangyt
+}

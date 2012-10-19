@@ -1,0 +1,12 @@
+# African Rifle Cavalry
+# land 47
+unit_type = sub_saharan
+type = cavalry
+
+maneuver = 2
+offensive_morale = 9
+defensive_morale = 8
+offensive_fire = 6
+defensive_fire = 4
+offensive_shock = 10
+defensive_shock = 10

@@ -1,0 +1,3149 @@
+######################################
+#
+# Events for Chinese Factions. Id 11100-
+#
+######################################
+
+### Eunuchs ###
+#Eunuch Offers His Service
+country_event = {
+	id = 11000
+	title = "EVTNAME11000"
+	desc = "EVTDESC11000"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11000"
+		create_advisor = statesman
+	}
+	
+	option = {
+		name = "EVTOPTB11000"
+		cultural_tradition = 0.05
+	}
+}
+
+#Eunuch Schemes for power
+country_event = {
+	id = 11002
+	title = "EVTNAME11002"
+	desc = "EVTDESC11002"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+		statesman = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			statesman = 4
+		}
+		modifier = {
+			factor = 0.8
+			statesman = 5
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11002"
+		remove_advisor = statesman
+	}
+	
+	option = {
+		name = "EVTOPTB11002"
+		stability = -1
+		government_tech = 400
+	}
+}
+
+#Eunuchs Isolate the Emperor
+country_event = {
+	id = 11004
+	title = "EVTNAME11004"
+	desc = "EVTDESC11004"
+
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 1.4
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11004"
+		stability = 1
+	}
+	
+	option = {
+		name = "EVTOPTB11004"
+		prestige = 0.05
+	}
+}
+
+#A Grave for a Eunuch
+country_event = {
+	id = 11006
+	title = "EVTNAME11006"
+	desc = "EVTDESC11006"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				centralization_decentralization = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				centralization_decentralization = -1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			centralization_decentralization = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11006"
+		stability = -1
+		remove_country_modifier = "chi_eunuch_influence"
+	}
+	
+	option = {
+		name = "EVTOPTB11006"
+		years_of_income = -0.1
+	}
+}
+
+#The Yellow River Trade
+country_event = {
+	id = 11008
+	title = "EVTNAME11008"
+	desc = "EVTDESC11008"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 1
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 3
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = {
+				mercantilism_freetrade = -2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11008"
+		mercantilism_freetrade = -1
+		stability = 1
+		trade_tech = -800
+	}
+	
+	option = {
+		name = "EVTOPTB11008"
+		merchants = 2
+		trade_tech = 300
+	}
+}
+
+# A Gift
+country_event = {
+	id = 11010
+	title = "EVTNAME11010"
+	desc = "EVTDESC11010"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			prestige = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			prestige = 0.3
+		}
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.25
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				cultural_tradition = 0.10
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11010"
+		years_of_income = 0.2
+	}
+	
+	option = {
+		name = "EVTOPTB11010"
+		remove_country_modifier = "chi_eunuch_influence"
+	}
+}
+
+#Destitute Banknotes
+country_event = {
+	id = 11012
+	title = "EVTNAME11012"
+	desc = "EVTDESC11012"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+		inflation = 4
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			inflation = 6
+		}
+		modifier = {
+			factor = 0.8
+			inflation = 10
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 14
+		}
+		modifier = {
+			factor = 1.5
+			idea = national_bank
+		}
+		modifier = {
+			factor = 1.5
+			advisor = master_of_mint
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11012"
+		create_advisor = master_of_mint
+		years_of_income = 0.6
+		inflation = 2
+	}
+	
+	option = {
+		name = "EVTOPTB11012"
+		stability = -1
+		inflation = -2
+	}
+}
+
+# Treasurer Empties Coffers
+country_event = {
+	id = 11014
+	title = "EVTNAME11014"
+	desc = "EVTDESC11014"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				prestige = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			advisor = treasurer
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11014"
+		years_of_income = -0.4
+		remove_advisor = treasurer
+	}
+	
+	option = {
+		name = "EVTOPTB11014"
+		inflation = 2
+	}
+}
+
+#Eunuch Excells at Examination
+country_event = {
+	id = 11016
+	title = "EVTNAME11016"
+	desc = "EVTDESC11016"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.2
+		}
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.3
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				centralization_decentralization = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11016"
+		define_advisor = {
+			type = philosopher
+			skill = 4
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11016"
+		officials = 2
+	}
+}
+
+#Eunuch Smokes Opium
+country_event = {
+	id = 11018
+	title = "EVTNAME11018"
+	desc = "EVTDESC11018"
+	
+	trigger = {
+		has_country_modifier = chi_eunuch_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				prestige = 0.1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11018"
+		prestige = -0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11018"
+		years_of_income = 0.1
+		officials = -1
+	}
+}
+
+### Bureaucrats ###
+#The Examinations of $YEAR$
+country_event = {
+	id = 11100
+	title = "EVTNAME11100"
+	desc = "EVTDESC11100"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11100"
+		officials = 2
+		prestige = 0.05
+		legitimacy = 0.05
+		cultural_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11100"
+		government_tech = 1000
+	}
+}
+
+#A Jade Seal
+country_event = {
+	id = 11102
+	title = "EVTNAME11102"
+	desc = "EVTDESC11102"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			legitimacy = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 0.15
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = -2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11102"
+		remove_country_modifier = "chi_bureaucrat_influence"
+	}
+	
+	option = {
+		name = "EVTOPTB11102"
+		prestige = 0.02
+		cultural_tradition = 0.05
+	}
+}
+
+# The Levy in $PROVINCENAME$
+province_event = {
+	id = 11104
+	title = "EVTNAME11104"
+	desc = "EVTDESC11104"
+	
+	trigger = {
+		manpower = 4
+		owner = {
+			has_country_modifier = chi_bureaucrat_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2500
+		modifier = {
+			factor = 0.9
+			army_tradition = 0.1
+		}
+		modifier = {
+			factor = 0.9
+			army_tradition = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			centralization_decentralization = 0
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = 1 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11104"
+		change_manpower = 2
+		owner = {
+			manpower = 10
+			army_tradition = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11104"
+		base_tax = 1
+		owner = {
+			years_of_income = 0.2
+			cultural_tradition = 0.05
+		}
+	}
+}
+
+#Field Marshal Dishonored
+country_event = {
+	id = 11106
+	title = "EVTNAME11106"
+	desc = "EVTDESC11106"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			army_tradition = 0.1
+		}
+		modifier = {
+			factor = 0.9
+			army_tradition = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			stability = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11106"
+		army_tradition = -0.05
+		remove_country_modifier = "chi_bureaucrat_influence"
+	}
+	
+	option = {
+		name = "EVTOPTB11106"
+		army_tradition = 0.05
+	}
+}
+
+#Heir Controlled
+country_event = {
+	id = 11108
+	title = "EVTNAME11108"
+	desc = "EVTDESC11108"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+		has_heir = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.6
+			NOT = {
+				heir_claim = 70
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11108"
+		heir_claim = 5
+		legitimacy = -0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11108"
+		prestige = 0.05
+	}
+}
+
+# Confucian Wisdom
+country_event = {
+	id = 11110
+	title = "EVTNAME11110"
+	desc = "EVTDESC11110"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			idea = patron_of_art
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11110"
+		cultural_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11110"
+		government_tech = 500
+	}
+}
+
+#Literati Publishes
+country_event = {
+	id = 11112
+	title = "EVTNAME11112"
+	desc = "EVTDESC11112"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.1
+		}
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11112"
+		cultural_tradition = 0.1
+	}
+	
+	option = {
+		name = "EVTOPTB11112"
+		cultural_tradition = -0.05
+		remove_country_modifier = "chi_bureaucrat_influence"
+	}
+}
+
+#Retainer Flogged
+country_event = {
+	id = 11114
+	title = "EVTNAME11114"
+	desc = "EVTDESC11114"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			badboy = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11114"
+		legitimacy = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11114"
+		infamy = -1
+	}
+}
+
+#Drama on The Pearl River
+country_event = {
+	id = 11116
+	title = "EVTNAME11116"
+	desc = "EVTDESC11116"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11116"
+		years_of_income = -0.5
+	}
+	
+	option = {
+		name = "EVTOPTB11116"
+		stability = -1
+		prestige = -0.05
+	}
+}
+
+#Gold Mine Discovered
+country_event = {
+	id = 11118
+	title = "EVTNAME11118"
+	desc = "EVTDESC11118"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+		NOT = { gold = 2 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11118"
+		years_of_income = 0.5
+		inflation = 2
+	}
+	
+	option = {
+		name = "EVTOPTB11118"
+		inflation = -3
+	}
+}
+
+#Bullion Leaves The Country
+country_event = {
+	id = 11120
+	title = "EVTNAME11120"
+	desc = "EVTDESC11120"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.9
+			inflation = 10
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 15
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 20
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				inflation = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			idea = national_bank
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11120"
+		years_of_income = -0.5
+	}
+	
+	option = {
+		name = "EVTOPTB11120"
+		inflation = 1
+	}
+}
+
+#Renovating a Pagoda
+country_event = {
+	id = 11122
+	title = "EVTNAME11122"
+	desc = "EVTDESC11122"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			idea = patron_of_art
+		}
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.15
+		}
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				prestige = 0.2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11122"
+		years_of_income = -0.6
+		cultural_tradition = 0.1
+		prestige = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11122"
+		cultural_tradition = -0.05
+	}
+}
+
+
+### Temple Faction ###
+# Outbreak of Buddhism
+province_event = {
+	id = 11200
+	title = "EVTNAME11200"
+	desc = "EVTDESC11200"
+	
+	trigger = {
+		owner = {
+			has_country_modifier = chi_temple_influence
+		}
+		base_tax = 4
+		religion = confucianism
+	}
+	
+	mean_time_to_happen = {
+		months = 2500
+		modifier = {
+			factor = 0.8
+			revolt_risk = 5
+		}
+		modifier = {
+			factor = 0.8
+			revolt_risk = 7
+		}
+		modifier = {
+			factor = 0.9
+			revolt_risk = 9
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				stability = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11200"
+		religion = buddhism
+		base_tax = 1
+		owner = {
+			cultural_tradition = 0.05
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11200"
+		base_tax = -1
+		owner = {
+			missionaries = -1
+		}
+	}
+}
+
+#Crack down on heresy
+province_event = {
+	id = 11202
+	title = "EVTNAME11202"
+	desc = "EVTDESC11202"
+	
+	trigger = {
+		is_core = THIS
+		NOT = {
+			religion = confucianism
+		}
+		owner = {
+			has_country_modifier = chi_temple_influence
+			religion = confucianism
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2500
+		modifier = {
+			factor = 1.2
+			revolt_risk = 5
+		}
+		modifier = {
+			factor = 1.2
+			revolt_risk = 7
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				stability = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11202"
+		religion = confucianism
+	}
+	
+	option = {
+		name = "EVTOPTB11202"
+		owner = {
+			cultural_tradition = 0.05
+		}
+	}
+}
+
+#Temple Faction Diplomacy
+country_event = {
+	id = 11204
+	title = "EVTNAME11204"
+	desc = "EVTDESC11204"
+	
+	trigger = {
+		has_country_modifier = chi_bureaucrat_influence
+		any_known_country = {
+			NOT = {
+				relation = {
+					who = THIS
+					value = 100
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.8
+			badboy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.5
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				badboy = 0.1
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11204"
+		random_country = {
+			limit = {
+				neighbour = THIS
+			}
+			relation = {
+				who = THIS
+				value = 25
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11204"
+		random_country = {
+			limit = {
+				neighbour = THIS
+			}
+			add_casus_belli = {
+				target = THIS
+				type = cb_insult
+				months = 24
+			}
+		}
+		badboy = 2
+	}
+}
+
+#A Flair For Feet
+country_event = {
+	id = 11206
+	title = "EVTNAME11206"
+	desc = "EVTDESC11206"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 350
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.2
+		}
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11206"
+		cultural_tradition = 0.1
+		random_owned = {
+			create_revolt = 3
+		}
+		random_owned = {
+			create_revolt = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11206"
+		prestige = -0.05
+	}
+}
+
+#Imperial Insults
+country_event = {
+	id = 11208
+	title = "EVTNAME11208"
+	desc = "EVTDESC11208"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.9
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 1.7
+			stability = 0
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11208"
+		random_country = {
+			limit = {
+				neighbour = THIS
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11208"
+		random_country = {
+			limit = {
+				neighbour = THIS
+			}
+			relation = {
+				who = THIS
+				value = 10
+			}
+		}
+	}
+}
+
+#Army Inspections
+country_event = {
+	id = 11210
+	title = "EVTNAME11210"
+	desc = "EVTDESC11210"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			land_forcelimit = 0.6
+		}
+		modifier = {
+			factor = 0.9
+			land_forcelimit = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			army_tradition = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			war = no
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11210"
+		army_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11210"
+		army_tradition = -0.05
+		land_tech = 500
+	}
+}
+
+# Temple Conspiracy
+country_event = {
+	id = 11212
+	title = "EVTNAME11212"
+	desc = "EVTDESC11212"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+		stability = -1
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.4
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11212"
+		stability = 1
+		cultural_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11212"
+		stability = -1
+		innovative_narrowminded = -1
+		prestige = -0.05
+		legitimacy = -0.05
+		remove_country_modifier = "chi_temple_influence"
+	}
+}
+
+# Examining the Examinations
+country_event = {
+	id = 11214
+	title = "EVTNAME11214"
+	desc = "EVTDESC11214"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.4
+		}		
+	}
+	
+	option = {
+		name = "EVTOPTA11214"
+		government_tech = 800
+	}
+	
+	option = {
+		name = "EVTOPTB11214"
+		stability = 1
+		innovative_narrowminded = 1
+	}
+}
+
+# A Gift From the Temple
+country_event = {
+	id = 11216
+	title = "EVTNAME11216"
+	desc = "EVTDESC11216"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+		stability = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0.3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0.1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11216"
+		government_tech = 400
+	}
+	
+	option = {
+		name = "EVTOPTB11216"
+		innovative_narrowminded = -1
+		prestige = -0.05
+		stability = -2
+	}
+}
+
+# Records of the Grand Historian
+country_event = {
+	id = 11218
+	title = "EVTNAME11218"
+	desc = "EVTDESC11218"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			stability = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11218"
+		cultural_tradition = 0.05
+		army_tradition = 0.05
+		navy_tradition = 0.05
+		prestige = 0.05
+		legitimacy = 0.05
+		years_of_income = -0.6
+	}
+	
+	option = {
+		name = "EVTOPTB11218"
+		prestige = 0.05
+	}
+}
+
+# A Tibetan Monk
+country_event = {
+	id = 11220
+	title = "EVTNAME11220"
+	desc = "EVTDESC11220"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+		exists = TIB
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			relation = {
+				who = TIB
+				value = 100
+			}
+		}
+		modifier = {
+			factor = 0.8
+			relation = {
+				who = TIB
+				value = 150
+			}
+		}
+		modifier = {
+			factor = 0.8
+			relation = {
+				who = TIB
+				value = 175
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 0
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11220"
+		government_tech = 800
+		cultural_tradition = 0.05
+		random_owned = {
+			limit = {
+				NOT = {
+					religion = buddhism
+				}
+			}
+			religion = buddhism
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11220"
+		stability = -1
+		casus_belli = {
+			target = TIB
+			type = cb_conquest
+			months = 3
+		}
+	}
+}
+
+#Burning of Books
+country_event = {
+	id = 11222
+	title = "EVTNAME11222"
+	desc = "EVTDESC11222"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+		NOT = {
+			stability = -1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 1.5
+			innovative_narrowminded = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11222"
+		innovative_narrowminded = 1
+		stability = 1
+		random_owned = {
+			create_revolt = 5
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11222"
+		stability = -1
+		cultural_tradition = 0.1
+	}
+}
+
+#Burying of Scholars
+country_event = {
+	id = 11224
+	title = "EVTNAME11224"
+	desc = "EVTDESC11224"
+	
+	trigger = {
+		has_country_modifier = chi_temple_influence
+		NOT = {
+			innovative_narrowminded = -1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				innovative_narrowminded = -4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			stability = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11224"
+		innovative_narrowminded = 1
+		prestige = -0.05
+		cultural_tradition = -0.1
+		government_tech = -800
+	}
+	
+	option = {
+		name = "EVTOPTB11224"
+		innovative_narrowminded = 1
+		stability = -1
+	}
+}
+
+### Multiple-Choice Questions ###
+# Jin Era Statue
+country_event = {
+	id = 11226
+	title = "EVTNAME11226"
+	desc = "EVTDESC11226"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.2
+		}
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.25
+		}
+		modifier = {
+			factor = 0.9
+			cultural_tradition = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11226"
+		stability = 1
+	}
+	
+	option = {
+		name = "EVTOPTB11226"
+		years_of_income = 0.2
+		cultural_tradition = 0.1
+	}
+	
+	option = {
+		name = "EVTOPTC11226"
+		prestige = 0.1
+		legitimacy = 0.1
+		army_tradition = 0.1
+	}
+}
+
+# The Classic of Music
+country_event = {
+	id = 11228
+	title = "EVTNAME11228"
+	desc = "EVTDESC11228"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.1
+		}
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		modifier = {
+			factor = 0.8
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11228"
+		prestige = 0.1
+	}
+	
+	option = {
+		name = "EVTOPTB11228"
+		cultural_tradition = 0.1
+	}
+}
+
+# Cheating at Examinations
+country_event = {
+	id = 11230
+	title = "EVTNAME11230"
+	desc = "EVTDESC11230"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.9
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11230"
+		officials = -2
+		prestige = -0.05
+	}
+	
+	option = {
+		name = "EVTOPTB11230"
+		army_tradition = -0.05
+		navy_tradition = -0.05
+	}
+	
+	option = {
+		name = "EVTOPTC11230"
+		cultural_tradition = -0.1
+	}
+}
+
+#Withdrawing Excess Paper
+country_event = {
+	id = 11232
+	title = "EVTNAME11232"
+	desc = "EVTDESC11232"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+		inflation = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		modifier = {
+			factor = 0.8
+			inflation = 15
+		}
+		modifier = {
+			factor = 0.8
+			inflation = 20
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11232"
+		inflation = -3
+		years_of_income = -1
+		stability = -1
+	}
+	
+	option = {
+		name = "EVTOPTB11232"
+		inflation = -2
+		years_of_income = -0.6
+		cultural_tradition = -0.05
+		officials = -2
+	}
+	
+	option = {
+		name = "EVTOPTC11232"
+		inflation = -1
+		years_of_income = -0.3
+		prestige = 0.05
+		legitimacy = 0.05
+	}
+}
+
+# Honoring The Ancestors
+country_event = {
+	id = 11234
+	title = "EVTNAME11234"
+	desc = "EVTDESC11234"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+		religion = confucianism
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		
+		modifier = {
+			factor = 0.8
+			stability = 1
+		}
+		modifier = {
+			factor = 0.7
+			stability = 2
+		}
+		modifier = {
+			factor = 0.6
+			stability = 3
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 3
+		}
+		modifier = {
+			factor = 1.5
+			infamy = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				prestige = 0.1
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11234"
+		stability = 1
+	}
+	
+	option = {
+		name = "EVTOPTB11234"
+		cultural_tradition = 0.05
+		army_tradition = 0.05
+		navy_tradition = 0.05
+	}
+	
+	option = {
+		name = "EVTOPTC11234"
+		years_of_income = 0.2
+		inflation = -1
+	}
+}
+
+#Bad Feng Shui
+country_event = {
+	id = 11236
+	title = "EVTNAME11236"
+	desc = "EVTDESC11236"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11236"
+		legitimacy = -0.2
+		prestige = -0.2
+	}
+	
+	option = {
+		name = "EVTOPTB11236"
+		years_of_income = -0.5
+	}
+	
+	option = {
+		name = "EVTOPTC11236"
+		stability = -1
+	}
+}
+
+#Court Bickering
+country_event = {
+	id = 11238
+	title = "EVTNAME11238"
+	desc = "EVTDESC11238"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0.2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11238"
+		army_tradition = -0.03
+	}
+	
+	option = {
+		name = "EVTOPTB11238"
+		cultural_tradition = -0.03
+	}
+	
+	option = {
+		name = "EVTOPTC11238"
+		legitimacy = -0.01
+	}
+}
+
+# Chosing a Tomb
+country_event = {
+	id = 11240
+	title = "EVTNAME11240"
+	desc = "EVTDESC11240"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+		prestige = 0.3
+	}
+	
+	mean_time_to_happen = {
+		months = 700
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		modifier = {
+			factor = 0.8
+			stability = 3
+		}
+		modifier = {
+			factor = 0.8
+			cultural_tradition = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			prestige = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			infamy = 0.3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11240"
+		legitimacy = 0.2
+		government_tech = 2000
+	}
+	
+	option = {
+		name = "EVTOPTB11240"
+		legitimacy = 0.2
+		land_tech = 2000
+	}
+	
+	option = {
+		name = "EVTOPTC11240"
+		legitimacy = 0.2
+		trade_tech = 1000
+		production_tech = 1000
+	}
+}
+
+# The Gilded Pagoda
+country_event = {
+	id = 11242
+	title = "EVTNAME11242"
+	desc = "EVTDESC11242"
+	
+	trigger = {
+		OR = {
+			has_country_modifier = chi_temple_influence
+			has_country_modifier = chi_bureaucrat_influence
+			has_country_modifier = chi_eunuch_influence
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			stability = 1
+		}
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11242"
+		years_of_income = 0.5	
+	}
+	
+	option = {
+		name = "EVTOPTB11242"
+		government_tech = 1000
+	}
+	
+	option = {
+		name = "EVTOPTC11242"
+		prestige = 0.1
+		legitimacy = 0.1
+		cultural_tradition = 0.1
+	}
+}
+
+### Events When Having Lost The Mandate of Heaven ###
+# The Shadow that Stalks the Corridor
+country_event = {
+	id = 11300
+	title = "EVTNAME11300"
+	desc = "EVTDESC11300"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.9
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			cultural_tradition = 0.2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11300"
+		add_country_modifier = {
+			name = "chi_temple_influence"
+			duration = 730
+		}
+		random_list = {
+			25 = {
+				kill_ruler = yes
+			}
+			50 = {
+				legitimacy = -0.1
+			}
+			25 = {
+				legitimacy = -0.2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11300"
+		add_country_modifier = {
+			name = "chi_bureaucrat_influence"
+			duration = 730
+		}
+		random_list = {
+			25 = {
+				kill_ruler = yes
+			}
+			50 = {
+				legitimacy = -0.1
+			}
+			25 = {
+				legitimacy = -0.2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC11300"
+		random_list = {
+			50 = {
+				kill_ruler = yes
+			}
+			50 = {
+				legitimacy = 0.20
+				stability = 1
+				add_country_modifier = {
+					name = "chi_emperor_influence"
+					duration = 730
+				}
+			}
+		}
+	}
+}
+
+#Bureaucrat Swindles the Treasury
+country_event = {
+	id = 11302
+	title = "EVTNAME11302"
+	desc = "EVTDESC11302"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			inflation = 5
+		}
+		modifier = {
+			factor = 0.8
+			inflation = 10
+		}
+		modifier = {
+			factor = 0.8
+			inflation = 15
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11302"
+		stability = 1
+		years_of_income = -0.4
+		inflation = 3
+	}
+
+	option = {
+		name = "EVTOPTB11302"
+		legitimacy = 0.15
+		years_of_income = -0.2
+		inflation = 2
+	}
+	
+	option = {
+		name = "EVTOPTC11302"
+		stability = -1
+		legitimacy = -0.05
+	}
+}
+
+# Brigands on the Silk Road
+country_event = {
+	id = 11304
+	title = "EVTNAME11304"
+	desc = "EVTDESC11304"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 0.1
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 0.2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11304"
+		manpower = -20
+		war_exhaustion = 6
+	}
+	
+	option = {
+		name = "EVTOPTB11304"
+		centralization_decentralization = -1
+	}
+	
+	option = {
+		name = "EVTOPTC11304"
+		stability = -1
+	}
+}
+
+#Reputation for Cruelty
+country_event = {
+	id = 11306
+	title = "EVTNAME11306"
+	desc = "EVTDESC11306"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 470
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				prestige = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.7
+			NOT = {
+				infamy = 0.3
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11306"
+		stability = 1
+		badboy = 4
+	}
+	
+	option = {
+		name = "EVTOPTB11306"
+		legitimacy = 0.3
+		badboy = 2
+	}
+}
+
+# Portentous Solar Eclipse
+country_event = {
+	id = 11308
+	title = "EVTNAME11308"
+	desc = "EVTDESC11308"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 650
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11308"
+		stability = -1
+	}
+	
+	option = {
+		name = "EVTOPTB11308"
+		inflation = 4
+	}
+	
+	option = {
+		name = "EVTOPTC11308"
+		infamy = 4
+	}
+}
+
+# Buddhist Resurgence
+country_event = {
+	id = 11310
+	title = "EVTNAME11310"
+	desc = "EVTDESC11310"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			cultural_tradition = 0.3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11310"
+		random_owned = {
+			limit = {
+				NOT = {
+					religion = buddhism
+				}
+			}
+			religion = buddhism
+		}
+		random_owned = {
+			limit = {
+				NOT = {
+					religion = buddhism
+				}
+			}
+			religion = buddhism
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11310"
+		stability = -1
+	}
+}
+
+# Temple Desecrated
+country_event = {
+	id = 11312
+	title = "EVTNAME11312"
+	desc = "EVTDESC11312"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+	}
+	
+	option = {
+		name = "EVTOPTA11312"
+		years_of_income = -0.4
+	}
+	
+	option = {
+		name = "EVTOPTB11312"
+		legitimacy = -0.1
+		random_owned = {
+			limit = {
+				NOT = {
+					religion = buddhism
+				}
+			}
+			religion = buddhism
+		}
+	}
+}
+
+# Plague Strikes the Court
+country_event = {
+	id = 11314
+	title = "EVTNAME11314"
+	desc = "EVTDESC11314"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.7
+			}
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.2
+		}
+		
+		modifier = {
+			factor = 1.5
+			cultural_tradition = 0.3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11314"
+		prestige = -0.1
+		legitimacy = -0.1
+		random_list = {
+			5 = {
+				kill_ruler = yes
+				stability = -1
+			}
+			95 = {
+				random_owned = {
+					base_tax = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11314"
+		random_list = {
+			30 = {
+				kill_ruler = yes
+				stability = -1
+			}
+			70 = {
+				prestige = 0.1
+				legitimacy = 0.2
+				stability = 1
+			}
+		}
+	}
+}
+
+# Daggers in the Dark
+country_event = {
+	id = 11316
+	title = "EVTNAME11316"
+	desc = "EVTDESC11316"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 350
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11316"
+		cultural_tradition = -0.1
+		legitimacy = -0.1
+		prestige = -0.1
+	}
+	
+	option = {
+		name = "EVTOPTB11316"
+		stability = -1
+	}
+	
+	option = {
+		name = "EVTOPTC11316"
+		manpower = -5
+		army_tradition = -0.1
+	}
+}
+
+# The Concubine's Child
+country_event = {
+	id = 11318
+	title = "EVTNAME11318"
+	desc = "EVTDESC11318"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+		has_heir = no
+	}
+	
+	mean_time_to_happen = {
+		months = 350
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			cultural_tradition = 0.3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11318"
+		define_heir = {
+			dynasty = THIS
+			claim = 20
+			ADM = 1
+			DIP = 1
+			MIL = 1
+		}
+		stability = -1
+	}
+	
+	option = {
+		name = "EVTOPTB11318"
+		infamy = 4
+	}
+	
+	option = {
+		name = "EVTOPTC11318"
+		prestige = -0.2
+		legitimacy = -0.2
+	}
+}
+
+# A Riding Accident
+country_event = {
+	id = 11320
+	title = "EVTNAME11320"
+	desc = "EVTDESC11320"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+		has_heir = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			cultural_tradition = 0.2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11320"
+		kill_heir = yes
+	}
+	
+	option = {
+		name = "EVTOPTB11320"
+		kill_heir = yes
+	}
+	
+	option = {
+		name = "EVTOPTC11320"
+		kill_heir = yes
+	}
+}
+
+# Flawed Insights
+country_event = {
+	id = 11322
+	title = "EVTNAME11322"
+	desc = "EVTDESC11322"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11322"
+		government_tech = -1000
+	}
+	
+	option = {
+		name = "EVTOPTB11322"
+		trade_tech = -500
+		production_tech = -500
+	}
+	
+	option = {
+		name = "EVTOPTB11322"
+		land_tech = -1000
+	}
+}
+
+#Gold turns to Lead
+country_event = {
+	id = 11324
+	title = "EVTNAME11324"
+	desc = "EVTDESC11324"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				inflation = 10
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11324"
+		years_of_income = -1
+	}
+	
+	option = {
+		name = "EVTOPTB11324"
+		stability = -1
+		inflation = 2
+	}
+}
+
+#Grand Secretary Howls at the Moon
+country_event = {
+	id = 11326
+	title = "EVTNAME11326"
+	desc = "EVTDESC11326"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 1.5
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11326" # This is not a Ramones' reference
+		stability = -1
+		legitimacy = -0.1
+	}
+	
+	option = {
+		name = "EVTOPTB11326" # Neither is this
+		stability = -1
+		cultural_tradition = -0.1
+		remove_advisor = statesman
+	}
+}
+
+#Tax Barge Sinks
+country_event = {
+	id = 11328
+	title = "EVTNAME11328"
+	desc = "EVTDESC11328"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 550
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				navy_tradition = 0.1
+			}
+		}
+		modifier = {
+			factor = 5
+			idea = superior_seamanship
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11328"
+		years_of_income = -0.5
+	}
+	
+	option = {
+		name = "EVTOPTB11328"
+		inflation = 2
+		legitimacy = -0.05
+	}
+}
+
+#False Edicts
+country_event = {
+	id = 11330
+	title = "EVTNAME11330"
+	desc = "EVTDESC11330"
+	
+	trigger = {
+		has_country_modifier = the_mandate_of_heaven_lost
+	}
+	
+	mean_time_to_happen = {
+		months = 450
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			legitimacy = 0.8
+		}
+		modifier = {
+			factor = 2
+			legitimacy = 0.9
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA11330"
+		legitimacy = 0.2
+		centralization_decentralization = 1
+	}
+	
+	option = {
+		name = "EVTOPTB11330"
+		legitimacy = -0.3
+		stability = -1
+		centralization_decentralization = -1
+	}
+}

@@ -1,0 +1,57 @@
+#1875 - Cuneo (can't change filename)
+
+owner = SAV
+controller = SAV
+culture = lombard
+religion = catholic
+hre = yes
+base_tax = 5
+trade_goods = wine
+manpower = 5
+fort1 = yes
+capital = "Cuneo"
+citysize = 9000		# Estimated
+add_core = SAV
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SAV
+		controller = SAV
+		citysize = 9000 }
+
+1450.1.1   = { citysize = 9800 }
+1500.1.1   = { citysize = 10040 }
+1536.1.1  = { owner = FRA controller = FRA add_core = FRA } 
+1550.1.1   = { citysize = 11070 }
+1562.1.1  = { owner = SAV controller = SAV remove_core = FRA } 
+1570.1.1  = { marketplace = yes }
+1600.1.1   = { citysize = 10350 }
+1650.1.1   = { citysize = 11580 marketplace = yes }
+1680.1.1   = { courthouse = yes }
+1700.1.1   = { citysize = 11000 tax_assessor = yes }
+1713.4.12 = {	owner = SIC
+		controller = SIC
+		add_core = SIC
+	    } # Treaty of Utrecht
+1720.1.1  = {	owner = SPI
+		controller = SPI
+		add_core = SPI
+		remove_core = SIC
+	    } # Kingdom of Piedmont-Sardinia
+1750.1.1   = { citysize = 11500 }
+1792.4.20 = { controller = RFR } # Conquered by the French
+1796.4.25 = { owner = RFR add_core = RFR } # The Republic of Alba
+1800.1.1   = { citysize = 12000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {	owner = SPI
+		controller = SPI
+		remove_core = RFR
+	    } # Napoleon abdicates and Victor Emmanuel is able to return to Turin

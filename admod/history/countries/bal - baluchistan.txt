@@ -1,0 +1,29 @@
+government = despotic_monarchy
+aristocracy_plutocracy = -2
+centralization_decentralization = 3
+innovative_narrowminded = 2
+mercantilism_freetrade = -4
+offensive_defensive = 0
+land_naval = -2
+quality_quantity = 3
+serfdom_freesubjects = -2
+primary_culture = baluchi
+religion = sunni
+technology_group = muslim
+capital = 577	# Quetta
+
+1369.8.6 = {
+	monarch = {
+		name = "Ibrahim Shah I"
+		dynasty = "Nasir"
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+#Peace of God Campaign
+1399.10.12 = {	religion = zoroastrian }
+
+#Muslim/Historical Campaign
+1399.10.13 = {	religion = sunni }

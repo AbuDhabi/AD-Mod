@@ -1,0 +1,88 @@
+#Arawak
+
+graphical_culture = northamericagfx
+
+color = { 217  33  120 }
+
+historical_ideas = {
+	bill_of_rights
+	superior_seamanship
+	quest_for_the_new_world
+	excellent_shipwrights
+	merchant_adventures
+	colonial_ventures
+	land_of_opportunity
+	press_gangs
+	national_bank
+	ecumenism
+	smithian_economics
+	napoleonic_warfare
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Abey #0" = 20
+	"Acanorex #0" = 20
+	"Agueybana #0" = 20
+	"Amanex #0" = 20
+	"Aramana #0" = 20
+	"Biautex #0" = 20
+	"Brizuela #0" = 20
+	"Daguao #0" = 20
+	"Hayuya #0" = 20
+	"Jaragua #0" = 20
+	"Orocobix #0" = 20
+	"Yuquibo #0" = 20
+	"Buyeis #0" = 15
+	"Peiman #0" = 15
+	"Pere #0" = 15
+	"Piai #0" = 10
+	"Teodor #0" = 10
+	"Anquimarca #0" = 5
+	"Coyllas #0" = 5
+	"Cusichaca #0" = 5
+	"Guaritopa #0" = 5
+	"Huachuri #0" = 5
+	"Pascac #0" = 5
+	"Pomaguala #0" = 5
+	"Yupanqui #0" = 5
+	"Zambiza #0" = 5
+	"Zopahua #0" = 5
+}
+
+leader_names = {
+	Anquimarca Arawak
+	Carib Chatoy Ciboney
+	Dangriga
+	Garif Guanajatabey
+	Kalinago Karibna
+	Mayta
+	Palac
+	Roatan Ronpa
+	Taino
+	Wayuu
+	Yupanqui
+}
+
+ship_names = {
+	Arawak
+	Bahamas
+	Carib Chatoy Ciboney
+	Dangriga
+	Garif Guanajatabey
+	Jamaica
+	Kalinago Karibna
+	Palac
+	Roatan
+	Taino
+	Wayuu
+}

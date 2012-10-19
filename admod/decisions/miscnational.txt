@@ -1,0 +1,71 @@
+country_decisions = {
+
+#	address_the_daraldawa = {
+
+	acknowledge_hen_wlad_fy_nhadau = {
+	
+		potential = {
+			tag = BRT
+			NOT = { has_country_modifier = hen_wlad_fy_nhadau }
+			owns = 233	# Cornwall
+			owns = 234	# Wessex
+			owns = 235	# Kent
+			owns = 236	# London
+			owns = 237	# Oxfordshire
+			owns = 238	# East Anglia
+			owns = 239	# Gloucestershire
+			owns = 240	# Marches
+			owns = 243	# Lincoln
+			owns = 244	# Lancashire
+			owns = 245	# Yorkshire
+			owns = 246	# Northumberland
+			owns = 248	# Lothian
+			owns = 249	# Ayrshire
+			owns = 250	# Fife
+			owns = 251	# Aberdeen
+			owns = 252	# Highlands
+			owns = 253	# Western Isles
+		}
+		allow = {
+			total_num_of_ports = 25
+			big_ship = 50
+			land_tech = 8
+			naval_tech = 8
+		}
+		effect = {
+			random_owned = {
+				limit = { culture_group = british }
+				culture = THIS
+			}
+			add_country_modifier = {
+				name = "hen_wlad_fy_nhadau"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fraternite = {
+
+		potential = {
+			OR = {
+				tag = FRA
+				tag = OCC
+			}
+			NOT = { has_country_flag = france_unionized }
+			government_tech = 10
+			num_of_cities = 10
+		}
+		allow = {
+			government_tech = 15
+			num_of_cities = 15
+			DIP = 6
+		}
+		effect = {
+			set_country_flag = france_unionized
+			culture_group_union = french
+		}
+	}
+}

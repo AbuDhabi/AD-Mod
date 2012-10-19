@@ -1,0 +1,28 @@
+#768 - Guayra
+
+culture = guarani
+religion = inca_religion
+capital = "Guayra"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 5
+
+1530.1.1  = {	discovered_by = POR
+		owner = POR
+		controller = POR
+		citysize = 500
+		culture = portugese
+		religion = catholic
+		trade_goods = tobacco
+	    } # Estimate
+1540.1.1  = { citysize = 1070 }
+1555.1.1  = { add_core = POR }
+1600.1.1  = { citysize = 1520 }
+1650.1.1  = { citysize = 1805 }
+1700.1.1  = { citysize = 2260 }
+1750.1.1  = { citysize = 3810 add_core = BRZ } 
+1800.1.1  = { citysize = 4200 }

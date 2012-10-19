@@ -1,0 +1,116 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 58  189  213 }
+
+historical_ideas = {
+	divine_supremacy
+	quest_for_the_new_world
+	land_of_opportunity
+	superior_seamanship
+	colonial_ventures
+	vice_roys
+	national_trade_policy
+	national_bank
+	excellent_shipwrights
+	scientific_revolution
+	church_attendance_duty
+	improved_foraging
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Muhammad #3" = 70
+	"Yûsuf #0" = 60
+	"'Alî #0" = 20
+	"Sa'd #0" = 20
+	"Isma'îl #0" = 10
+	"Malik #0" = 10
+	"Nasr #0" = 10
+	"'Abd al-Karim #0" = 5
+	"Aisha #0" = -5
+	"Basir #0" = 5
+	"Fahd #0" = 5
+	"Ja'far #0" = 5
+	"Khadijah #0" = -5
+	"Khaliq #0" = 5
+	"Maria #0" = -5
+	"Rayhana #0" = -5
+	"Tariq #0" = 5
+	"Ayman #0" = 0
+	"Barakat #0" = 0
+	"Dawud #0" = 0
+	"Faris #0" = 0
+	"Faruq #0" = 0
+	"Firdaus #0" = 0
+	"Fuad #0" = 0
+	"Haidar #0" = 0
+	"Hashim #0" = 0
+	"Husam #0" = 0
+	"Iqbal #0" = 0
+	"Jabbar #0" = 0
+	"Jamal #0" = 0
+	"Junayd #0" = 0
+	"Mansur #0" = 0
+	"Mustafa #0" = 0
+	"Najib #0" = 0
+	"Qasim #0" = 0
+	"Qusay #0" = 0
+	"Rahim #0" = 0
+	"Rashîd #0" = 0
+	"Safi #0" = 0
+	"Sakhr #0" = 0
+	"Samir #0" = 0
+	"Umar #0" = 0
+	"Wahid #0" = 0
+	"Zahir #0" = 0
+	"Alonso #0" = 0
+	"Baltasar #0" = 0
+        "Bartolomé #0" = 0
+	"Domingo #0" = 0
+	"Emilio #0" = 0
+	"Fadrique #0" = 0
+	"Gaspar #0" = 0
+	"Gonzalo #0" = 0
+	"Guillermo #0" = 0
+        "Hernando #0" = 0
+	"Lope #0" = 0
+        "Manuel #0" = 0
+	"Miguel #0" = 0
+	"Ramón #0" = 0
+	"Rodrigo #0" = 0
+	"Sebastián #0" = 0
+}
+
+leader_names = {
+	"Ibn Abd al-Rahman" "Ibn Abbad" "Ibn Abd Allah" "Ibn Abi Hafs" "Ibn al-Azafi" "Ibn Ali"
+	"Ibn Hakan" "Ibn Hammud" "Ibn Hisam" "Ibn Husayn"
+	"Ibn Idris" "Ibn Ishaq" "Ibn Isma'il"
+	"Ibn Marwan" "Ibn Muhammad" "Ibn Nasr" "Ibn Qasim" "Ibn Sa'd" "Ibn Sulayman"
+	"Ibn Umar" "Ibn Ummay" "Ibn Utman" "Ibn Ya'far" "Ibn Yahyà" "Ibn Yusuf"
+}
+
+ship_names = {
+	"Muhammed ibn Nasr" "Muhammed al-Faqih"
+	"Muhammed III" Nasr "Ismail I" "Muhammed IV"
+	"Yusuf I" "Muhammed V" "Ismail II" "Muhammed VI"
+	"Yusuf II" "Muhammed VII" "Yusuf III" "Muhammed VIII"
+	"Muhammed IX" "Yusuf IV" "Yusuf V" "Muhammed X"
+}

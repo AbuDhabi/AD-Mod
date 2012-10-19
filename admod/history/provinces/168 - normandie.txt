@@ -1,0 +1,85 @@
+# 168 Normandie - Principal cities: Caen
+
+owner = FRA
+controller = FRA 
+capital = "Caen"
+citysize = 9500
+culture = normand
+religion = catholic
+hre = no
+base_tax = 6
+trade_goods = naval_supplies
+manpower = 5
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+add_core = FRA
+add_core = NRM
+fort1 = yes
+fort2 = yes # A way to represent the important Mont Saint-Michel & the Palais Ducal
+1399.1.1  = { add_core = ENG } 
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = FRA
+		controller = FRA
+		citysize = 9500 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = NRM
+		controller = NRM }
+
+#Historical Campaign
+1399.10.14 = {	owner = FRA
+		controller = FRA }
+
+1415.10.25 = { controller = ENG } # The Battle of Agincourt
+1420.5.12  = { owner = ENG } # Treaty of Troyes
+# 1432.1.1 = { university = yes } # L'Université de Caen
+1450.1.1   = { owner = FRA controller = FRA citysize = 10000 } # Retaken by France
+1465.8.15  = { owner = NRM controller = NRM } # Treaty of Conflans
+1466.3.6   = { owner = FRA controller = FRA } # Louis XI reincorporates Normandy into the French crown
+1500.1.1   = { citysize = 12500 }
+1550.1.1   = { citysize = 17000 }
+1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
+1588.12.1  = { revolt_risk = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1594.1.1   = { revolt_risk = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1600.1.1   = { citysize = 21500 marketplace = yes constable = yes }
+1631.1.1   = { revolt_risk = 3 } # Region is restless
+1633.1.1   = { revolt_risk = 0 } 
+1639.1.1   = { revolt_risk = 3 }
+1641.1.1   = { revolt_risk = 0 }
+1650.1.1   = { citysize = 26000 fort3 = yes }
+1660.1.1   = { courthouse = yes } # Colbert
+1700.1.1   = { citysize = 31000 }
+1730.1.1   = { customs_house = yes }
+1750.1.1   = { citysize = 40000 tax_assessor = yes }
+1760.1.1   = { fort4 = yes }
+1770.1.1   = { workshop = yes }
+1786.1.1   = { base_tax = 5 } # The Eden Agreement
+1789.7.14  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # The storming of the Bastille
+1800.1.1   = { citysize = 48000 }
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

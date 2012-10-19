@@ -1,0 +1,25 @@
+#1025 - Dewa
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Dewa"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 4250
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 5100 }
+1500.1.1 = { citysize = 6120 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 7524 }
+1600.1.1 = { citysize = 8677 }
+1650.1.1 = { citysize = 9354 }
+1700.1.1 = { citysize = 11255 }
+1750.1.1 = { citysize = 12980 }
+1800.1.1 = { citysize = 14487 }

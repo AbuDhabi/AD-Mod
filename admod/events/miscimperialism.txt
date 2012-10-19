@@ -1,0 +1,1450 @@
+#events 31900-31999
+
+#Westphalia appears!
+country_event = {
+
+	id = 31900
+
+	title = "EVTNAME31900"
+	desc = "EVTDESC31900"
+
+	trigger = {
+		NOT = {
+			exists = WES
+			has_global_flag = black_death_scn_g
+			culture_group = germanic
+		}
+		OR = {
+			exists = FRA
+			exists = RFR
+		}
+		OR = {
+			exists = PRU
+			exists = HAB
+			exists = GER
+			exists = HRE
+			exists = SPA
+		}
+		exists = PAP
+		religion_group = christian
+		is_religion_enabled = protestant
+
+		owns = 53	# Luneburg
+		owns = 56	# Osnabrück
+		owns = 57	# Brunswick
+		owns = 82	# Westfalen
+		owns = 86	# Münster
+		NOT = { has_country_flag = WES_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = WES_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		westphalian_region = {
+			limit = { owned_by = THIS }
+			culture = hannoverian
+		}
+		WES = {
+			westphalian_region = {
+				add_core = WES
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = WES
+				culture = hannoverian
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Germany appears!
+country_event = {
+
+	id = 31901
+
+	title = "EVTNAME31901"
+	desc = "EVTDESC31901"
+
+	trigger = {
+		NOT = {
+			exists = GER
+			exists = ALM
+			exists = HRE
+			culture_group = germanic
+			religion_group = muslim
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 46	# Mecklenburg
+		owns = 50	# Brandenburg
+		owns = 52	# Altmark
+		owns = 53	# Lüneburg
+		owns = 57	# Hannover
+		owns = 58	# Anhalt
+		owns = 61	# Dresden
+		owns = 62	# Leipzig
+		owns = 63	# Erfurt
+		owns = 67	# Franken
+		NOT = { has_country_flag = GER_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = GER_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		german_region = {
+			limit = { owned_by = THIS }
+			culture = prussian
+		}
+		GER = {
+			german_region = {
+				add_core = GER
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+		}
+		random_owned = {
+			limit = {
+				is_core = GER
+				culture = prussian
+			}
+			nationalist_rebels = 4
+		}
+	}
+}
+
+#Al-Alemand appears!
+country_event = {
+
+	id = 31902
+
+	title = "EVTNAME31901"
+	desc = "EVTDESC31901"
+
+	trigger = {
+		NOT = {
+			exists = GER
+			exists = ALM
+			exists = HRE
+			culture_group = germanic
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = muslim
+
+		owns = 46	# Mecklenburg
+		owns = 50	# Brandenburg
+		owns = 52	# Altmark
+		owns = 53	# Lüneburg
+		owns = 57	# Hannover
+		owns = 58	# Anhalt
+		owns = 61	# Dresden
+		owns = 62	# Leipzig
+		owns = 63	# Erfurt
+		owns = 67	# Franken
+		owns = 1762	# Kassel
+		NOT = { has_country_flag = GER_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = GER_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		german_region = {
+			limit = { owned_by = THIS }
+			culture = maeni
+		}
+		ALM = {
+			german_region = {
+				add_core = ALM
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+			culture_group_union = germanic
+		}
+		random_owned = {
+			limit = {
+				is_core = ALM
+				culture = maeni
+			}
+			nationalist_rebels = 4
+		}
+	}
+}
+
+#Scandinavia appears!
+country_event = {
+
+	id = 31903
+
+	title = "EVTNAME31903"
+	desc = "EVTDESC31903"
+
+	trigger = {
+		NOT = {
+			exists = SCA
+			exists = SKA
+			culture_group = scandinavian
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = christian
+
+		owns = 1	# Uppland
+		owns = 2	# Ostergotland
+		owns = 3	# Smaland
+		owns = 4	# Bergslagen
+		owns = 6	# Skane
+		owns = 7	# Vastergotland
+		owns = 10	# Jamtland
+		owns = 12	# Sjaelland
+		owns = 13	# Slesvig
+		owns = 14	# Fyn
+		owns = 15	# Jylland
+		owns = 17	# Akershus
+		NOT = { has_country_flag = SCA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = SCA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		sweden = {
+			limit = { owned_by = THIS }
+			culture = swedish
+		}
+		SCA = {
+			scandinavian_region = {
+				add_core = SCA
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = SCA
+				culture = swedish
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Skandistan appears!
+country_event = {
+
+	id = 31904
+
+	title = "EVTNAME31903"
+	desc = "EVTDESC31903"
+
+	trigger = {
+		NOT = {
+			exists = SCA
+			exists = SKA
+			culture_group = scandinavian
+			religion_group = christian
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 1	# Uppland
+		owns = 2	# Ostergotland
+		owns = 3	# Smaland
+		owns = 4	# Bergslagen
+		owns = 6	# Skane
+		owns = 7	# Vastergotland
+		owns = 10	# Jamtland
+		owns = 12	# Sjaelland
+		owns = 13	# Slesvig
+		owns = 14	# Fyn
+		owns = 15	# Jylland
+		owns = 17	# Akershus
+		NOT = { has_country_flag = SCA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = SCA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		scandinavian_region = {
+			limit = { owned_by = THIS }
+			culture = skandistani
+		}
+		SKA = {
+			scandinavian_region = {
+				add_core = SKA
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+			culture_group_union = scandinavian
+		}
+		random_owned = {
+			limit = {
+				is_core = SKA
+				culture = skandistani
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Great Britain appears!
+country_event = {
+
+	id = 31905
+
+	title = "EVTNAME31905"
+	desc = "EVTDESC31905"
+
+	trigger = {
+		NOT = {
+			exists = GBR
+			exists = GBS
+			exists = BRT
+			culture_group = british
+			culture_group = gaelic
+			religion_group = old_pagan
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 236	# London
+		owns = 245	# Yorkshire
+		owns = 246	# Northumbria
+		owns = 248	# Lothian
+		OR = {
+			owns = 235	# Kent
+			owns = 252	# Highlands
+		}
+		NOT = { has_country_flag = GBR_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = GBR_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		mercia = {
+			limit = { owned_by = THIS }
+			culture = english
+		}
+		essex = {
+			limit = { owned_by = THIS }
+			culture = english
+		}
+		northumbria = {
+			limit = { owned_by = THIS }
+			culture = english
+		}
+		GBR = {
+			mercia = {
+				add_core = GBR
+				revolt_risk = 4
+			}
+			essex = {
+				add_core = GBR
+				revolt_risk = 4
+			}
+			northumbria = {
+				add_core = GBR
+				revolt_risk = 4
+			}
+			lowlands = {
+				add_core = GBR
+				revolt_risk = 4
+			}
+			highlands = {
+				add_core = GBR
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+		}
+		random_owned = {
+			limit = {
+				is_core = GBR
+				culture = english
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Britannia appears!
+country_event = {
+
+	id = 31906
+
+	title = "EVTNAME31905"
+	desc = "EVTDESC31905"
+
+	trigger = {
+		NOT = {
+			exists = GBR
+			exists = GBS
+			exists = BRT
+			culture_group = british
+			culture_group = gaelic
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = old_pagan
+
+		owns = 236	# London
+		owns = 245	# Yorkshire
+		owns = 246	# Northumbria
+		owns = 248	# Lothian
+		OR = {
+			owns = 235	# Kent
+			owns = 252	# Highlands
+		}
+		OR = {
+			owns = 241	# Glamorgan
+			owns = 242	# Gwynedd
+		}
+		OR = {
+			owns = 372	# Ulster
+			owns = 373	# Meath
+			owns = 374	# Leinster
+			owns = 375	# Munster
+			owns = 376	# Connaught
+		}
+		NOT = { has_country_flag = GBR_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = GBR_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		wales = {
+			limit = { owned_by = THIS }
+			culture = welsh
+		}
+		mercia = {
+			limit = { owned_by = THIS }
+			culture = welsh
+		}
+		BRT = {
+			british_isles = {
+				add_core = BRT
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+			culture_group_union = gaelic
+		}
+		random_owned = {
+			limit = {
+				is_core = BRT
+				culture = welsh
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Italy appears!
+country_event = {
+
+	id = 31907
+
+	title = "EVTNAME31907"
+	desc = "EVTDESC31907"
+
+	trigger = {
+		NOT = {
+			exists = ITA
+			exists = RUM
+			exists = PAP
+			exists = MLO
+			exists = NAP
+			culture_group = latin
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = christian
+
+		owns = 101	# Liguria
+		owns = 103	# Piedmont
+		owns = 105	# Parma
+		owns = 116	# Firenze
+		owns = 117	# Siena
+		owns = 118	# Roma
+		OR = {
+			owns = 112	# Venezia
+			owns = 121	# Napoli
+		}
+		NOT = { has_country_flag = ITA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = ITA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		italian_region = {
+			limit = { owned_by = THIS }
+			culture = lombard
+		}
+		ITA = {
+			italian_region = {
+				add_core = ITA
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+		}
+		random_owned = {
+			limit = {
+				is_core = ITA
+				culture = lombard
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Ruma appears!
+country_event = {
+
+	id = 31908
+
+	title = "EVTNAME31907"
+	desc = "EVTDESC31907"
+
+	trigger = {
+		NOT = {
+			exists = ITA
+			exists = RUM
+			exists = PAP
+			exists = MLO
+			exists = NAP
+			culture_group = latin
+			religion_group = christian
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 101	# Liguria
+		owns = 103	# Piedmont
+		owns = 105	# Parma
+		owns = 116	# Firenze
+		owns = 117	# Siena
+		owns = 118	# Roma
+		OR = {
+			owns = 112	# Venezia
+			owns = 121	# Napoli
+		}
+		NOT = { has_country_flag = ITA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = ITA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		italian_region = {
+			limit = { owned_by = THIS }
+			culture = rumi
+		}
+		RUM = {
+			italian_region = {
+				add_core = RUM
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+			culture_group_union = latin
+		}
+		random_owned = {
+			limit = {
+				is_core = RUM
+				culture = rumi
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Spain appears!
+country_event = {
+
+	id = 31909
+
+	title = "EVTNAME31909"
+	desc = "EVTDESC31909"
+
+	trigger = {
+		NOT = {
+			exists = SPA
+			exists = IBE
+			iberian_peninsula = { owned_by = ARA }
+			iberian_peninsula = { owned_by = BDJ }
+			iberian_peninsula = { owned_by = CAS }
+			iberian_peninsula = { owned_by = GRA }
+			iberian_peninsula = { owned_by = SEV }
+			iberian_peninsula = { owned_by = ZAR }
+			culture_group = iberian
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = christian
+
+		owns = 206	# Galicia
+		OR = {
+			owns = 210	# Navarra
+			owns = 1745	# Cantabria
+		}
+		OR = {
+			owns = 213	# Barcelona
+			owns = 220	# Valencia
+		}
+		OR = {
+			owns = 217	# Madrid
+			owns = 219	# Toledo
+		}
+		OR = {
+			owns = 218	# Badajoz
+			owns = 223	# Granada
+		}
+		NOT = { has_country_flag = SPA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = SPA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		leon = {
+			limit = { owned_by = THIS }
+			culture = castillian
+		}
+		castille = {
+			limit = { owned_by = THIS }
+			culture = castillian
+		}
+		SPA = {
+			leon = {
+				add_core = SPA
+				revolt_risk = 4
+			}
+			castille = {
+				add_core = SPA
+				revolt_risk = 4
+			}
+			aragon = {
+				add_core = SPA
+				revolt_risk = 4
+			}
+			andalusia = {
+				add_core = SPA
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = SPA
+				culture = castillian
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Iberia appears!
+country_event = {
+
+	id = 31910
+
+	title = "EVTNAME31909"
+	desc = "EVTDESC31909"
+
+	trigger = {
+		NOT = {
+			exists = SPA
+			exists = IBE
+			iberian_peninsula = { owned_by = ARA }
+			iberian_peninsula = { owned_by = BDJ }
+			iberian_peninsula = { owned_by = CAS }
+			iberian_peninsula = { owned_by = GRA }
+			iberian_peninsula = { owned_by = POR }
+			iberian_peninsula = { owned_by = SEV }
+			iberian_peninsula = { owned_by = ZAR }
+			culture_group = iberian
+			religion_group = christian
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 206	# Galicia
+		OR = {
+			owns = 210	# Navarra
+			owns = 1745	# Cantabria
+		}
+		OR = {
+			owns = 213	# Barcelona
+			owns = 220	# Valencia
+		}
+		OR = {
+			owns = 217	# Madrid
+			owns = 219	# Toledo
+		}
+		OR = {
+			owns = 218	# Badajoz
+			owns = 223	# Granada
+		}
+		OR = {
+			owns = 229	# Alentejo
+			owns = 1851	# Ribatejo
+		}
+		NOT = { has_country_flag = SPA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = SPA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		iberian_peninsula = {
+			limit = { owned_by = THIS }
+			culture = andalucian
+		}
+		IBE = {
+			iberian_peninsula = {
+				add_core = IBE
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+			culture_group_union = iberian
+		}
+		random_owned = {
+			limit = {
+				is_core = IBE
+				culture = andalucian
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Revolutionary France appears!
+country_event = {
+
+	id = 31911
+
+	title = "EVTNAME31911"
+	desc = "EVTDESC31911"
+
+	trigger = {
+		NOT = {
+			exists = FRA
+			exists = FAR
+			exists = RFR
+			exists = BUR
+			exists = BRI
+			culture_group = french
+			culture_group = basque_group
+			primary_culture = breton
+			has_global_flag = black_death_scn_g
+		}
+		religion_group = christian
+
+		owns = 168	# Normandie
+		owns = 177	# Maine
+		owns = 179	# Blois
+		owns = 182	# Vermandois
+		owns = 183	# Ile-de-France
+		owns = 184	# Orleannais
+		owns = 185	# Othe
+		owns = 186	# Champagne
+		owns = 190	# Bourbon
+		owns = 195	# Limousin
+		owns = 196	# Toulouse
+		owns = 199	# Auvergne
+		NOT = { has_country_flag = FRA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = FRA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		french_region = {
+			limit = { owned_by = THIS }
+			culture = cosmopolitan_french
+		}
+		RFR = {
+			french_region = {
+				add_core = RFR
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = RFR
+				culture = cosmopolitan_french
+			}
+			nationalist_rebels = 4
+		}
+	}
+}
+
+#Revolutionary Faransa appears!
+country_event = {
+
+	id = 31912
+
+	title = "EVTNAME31911"
+	desc = "EVTDESC31911"
+
+	trigger = {
+		NOT = {
+			exists = FRA
+			exists = FAR
+			exists = RFR
+			exists = BUR
+			exists = BRI
+			culture_group = french
+			culture_group = basque_group
+			primary_culture = breton
+			religion_group = christian
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 168	# Normandie
+		owns = 177	# Maine
+		owns = 179	# Blois
+		owns = 182	# Vermandois
+		owns = 183	# Ile-de-France
+		owns = 184	# Orleannais
+		owns = 185	# Othe
+		owns = 186	# Champagne
+		owns = 190	# Bourbon
+		owns = 195	# Limousin
+		owns = 196	# Toulouse
+		owns = 199	# Auvergne
+		NOT = { has_country_flag = FRA_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = FRA_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		french_region = {
+			limit = { owned_by = THIS }
+			culture = faransi
+		}
+		FAR = {
+			french_region = {
+				add_core = FAR
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+			culture_group_union = french
+		}
+		random_owned = {
+			limit = {
+				is_core = FAR
+				culture = faransi
+			}
+			nationalist_rebels = 4
+		}
+	}
+}
+
+#Greece Revolts!
+country_event = {
+
+	id = 31913
+
+	title = "EVTNAME31913"
+	desc = "EVTDESC31913"
+
+	trigger = {
+		NOT = {
+			exists = GRE
+			exists = BYZ
+			culture_group = byzantine
+			has_global_flag = black_death_scn_g
+		}
+
+		owns = 144	# Janina
+		owns = 145	# Morea
+		owns = 146	# Athens
+		owns = 147	# Larissa
+		owns = 148	# Macedonia
+		owns = 1773	# Achaea
+		owns = 1853	# Kozani
+		NOT = { has_country_flag = GRE_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+		modifier = {
+			factor = 9
+			tag = TUR
+		}
+	}
+
+	immediate = {
+		set_country_flag = GRE_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		144 = {
+			culture = greek
+		}
+		145 = {
+			culture = greek
+		}
+		146 = {
+			culture = greek
+		}
+		147 = {
+			culture = greek
+		}
+		148 = {
+			culture = greek
+		}
+		1773 = {
+			culture = greek
+		}
+		1853 = {
+			culture = greek
+		}
+		GRE = {
+			greece = {
+				add_core = GRE
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = GRE
+				culture = greek
+			}
+			nationalist_rebels = 4
+		}
+	}
+}
+
+#Turkey Revolts!
+country_event = {
+
+	id = 31914
+
+	title = "EVTNAME31914"
+	desc = "EVTDESC31914"
+
+	trigger = {
+		NOT = {
+			exists = TUR
+			exists = BYZ
+			primary_culture = turkish
+		}
+
+		owns = 316	# Bythinia
+		owns = 317	# Bursa
+		owns = 318	# Smyrna
+		owns = 319	# Antalya
+		owns = 322	# Anatolia
+		owns = 326	# Angora
+		owns = 329	# Sivas
+		NOT = { has_country_flag = TUR_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = TUR_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		turkey = {
+			limit = { owned_by = THIS }
+			culture = turkish
+		}
+		TUR = {
+			turkey = {
+				add_core = TUR
+				revolt_risk = 4
+			}
+			government = revolutionary_empire
+		}
+		random_owned = {
+			limit = {
+				is_core = TUR
+				culture = turkish
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Russian Revolts!
+country_event = {
+
+	id = 31915
+
+	title = "EVTNAME31915"
+	desc = "EVTDESC31915"
+
+	trigger = {
+		NOT = {
+			exists = RUS
+			exists = MOS
+			exists = MUR
+			exists = NOV
+			exists = NZH
+			exists = PSK
+			exists = QAS
+			exists = RYA
+			exists = SMO
+			exists = TVE
+			exists = YAR
+			culture_group = east_slavic
+		}
+
+		owns = 293	# Smolensk
+		owns = 295	# Moskva
+		owns = 301	# Ryazan
+		owns = 306	# Nizhny-Novgorod
+		owns = 308	# Yaroslavl
+		owns = 310	# Novgorod
+		NOT = { has_country_flag = RUS_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.5
+			wartax = yes
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.05
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.7
+			badboy = 0.25
+		}
+	}
+
+	immediate = {
+		set_country_flag = RUS_revolt
+	}
+
+	option = {
+		name = "EVTOPTA31900"
+		RUS = {
+			russian_region = {
+				add_core = RUS
+				revolt_risk = 4
+			}
+			government = revolutionary_republic
+		}
+		random_owned = {
+			limit = {
+				is_core = RUS
+				culture = russian
+			}
+			nationalist_rebels = 5
+		}
+	}
+}

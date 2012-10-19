@@ -1,0 +1,157 @@
+cultural_decisions = {
+	recruit_magistrate = {
+		potential = {
+      NOT = { officials = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			officials = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+	
+	recruit_spy = {
+		potential = {
+      NOT = { spies = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			spies = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+	
+	recruit_missionary = {
+		potential = {
+      NOT = { missionaries = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			missionaries = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+	
+	recruit_diplomat = {
+		potential = {
+      NOT = { diplomats = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			diplomats = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+	
+	recruit_colonist = {
+		potential = {
+      NOT = { colonists = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			colonists = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+	
+	recruit_merchant = {
+		potential = {
+      NOT = { merchants = 5 }
+		}
+		allow = {
+			treasury = 5
+			cultural_tradition = 0.05
+		}
+		effect = {
+      treasury = -5
+      cultural_tradition = -0.05
+			merchants = 1
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+          NOT = { years_of_income = 0.5 }
+          NOT = { cultural_tradition = 0.8 }
+				}
+			}
+		}
+	}
+}

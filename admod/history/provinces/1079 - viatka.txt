@@ -1,0 +1,61 @@
+#1079 - Viatka
+
+owner = NOV
+controller = NOV
+capital = "Viatka"
+culture = russian
+religion = orthodox
+trade_goods = copper
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1200
+add_core = NOV
+fort1 = yes
+discovered_by = eastern
+discovered_by = GOL
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = QAS
+		controller = QAS
+		add_core = QAS
+		religion = sunni }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		remove_core = QAS
+		religion = orthodox }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = QAS
+		controller = QAS
+		add_core = QAS
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = NOV
+		controller = NOV
+		remove_core = QAS
+		religion = orthodox }
+
+1438.1.1  = { discovered_by = KAZ }
+1450.1.1  = { citysize = 1500 discovered_by = SIB }
+1453.1.1  = { discovered_by = western discovered_by = eastern }
+1472.1.1  = { controller = MOS add_core = MOS} # Conquest of Novgorod
+1478.1.1  = { owner = MOS remove_core = NOV } # Annexed to Muscovy by Ivan III
+1500.1.1  = { citysize = 1988 }
+1503.3.22 = {	discovered_by = RUS
+		owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	    }
+1550.1.1  = { citysize = 3644 }
+1600.1.1  = { citysize = 4222 }
+1650.1.1  = { citysize = 5800 }
+1680.1.1  = { marketplace = yes } # Grew in importance
+1700.1.1  = { citysize = 6300 }
+1750.1.1  = { citysize = 7000 }
+1800.1.1  = { citysize = 10000 }

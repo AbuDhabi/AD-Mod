@@ -1,0 +1,100 @@
+# Chinese vassal
+vassal = {
+	first = MNG
+	second = RYU
+	start_date = 1453.1.1
+	end_date = 1608.12.31
+#	end_date = 1643.12.31
+}
+
+#Chinese vassal
+vassal = {
+	first = MNG
+	second = ANN
+	start_date = 1453.1.1
+	end_date = 1644.1.1
+}
+
+# Chinese vassal
+#vassal = {
+#	first = MCH
+#	second = RYU
+#	start_date = 1644.1.1
+#	end_date = 1800.1.1
+#}
+
+#Manchu vassal
+vassal = {
+	first = MCH
+	second = KOR
+	start_date = 1637.1.1
+	end_date = 1895.1.1
+}
+
+vassal = {
+	first = MNG
+	second = KHA
+	start_date = 1399.1.1
+	end_date = 1452.1.1
+}
+
+vassal = {
+	first = MNG
+	second = KHA
+	start_date = 1454.1.1
+	end_date = 1634.1.1
+}
+
+# Seven-Year war
+alliance = {
+	first = MNG
+	second = KOR
+	start_date = 1593.1.1
+	end_date = 1598.1.1
+}
+
+# Oriat Horde - Mongol Khanate
+#union = {
+#	first = OIR
+#	second = KHA
+#	start_date = 1452.1.1
+#	end_date = 1454.1.1
+#}
+
+# Oriat Horde - Mongol Khanate
+#alliance = {
+#	first = OIR
+#	second = KHA
+#	start_date = 1452.1.1
+#	end_date = 1454.1.1
+#}
+
+# Tibet and Manchu
+union = {
+	first = MCH
+	second = TIB
+	start_date = 1720.1.1
+	end_date = 1740.1.1
+}
+
+# Tibet and Manchu
+alliance = {
+	first = MCH
+	second = TIB
+	start_date = 1720.1.1
+	end_date = 1740.1.1
+}
+
+sphere = {
+	first = MNG
+	second = RYU
+	start_date = 1399.1.1
+	end_date = 1608.12.31
+}
+
+sphere = {
+	first = MNG
+	second = KOR
+	start_date = 1399.1.1
+	end_date = 1636.12.31
+}

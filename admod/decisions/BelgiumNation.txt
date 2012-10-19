@@ -1,0 +1,61 @@
+country_decisions = {
+
+	belgium_nation = {
+		potential = {
+			NOT = { exists = BEL }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			NOT = { tag = NED }
+			OR = {
+				primary_culture = wallonian
+				primary_culture = flemish
+			}
+			OR = {
+				exists = NED
+				government_tech = 30
+			}
+		}
+		allow = {
+			owns = 88	# Artois
+			owns = 90	# Vlaanderen
+			owns = 91	# Hainaut
+			owns = 92	# Brabant
+			owns = 93	# Liege
+			owns = 181	# Valenciennes
+			owns = 1866	# Namur
+
+			is_core = 88	# Artois
+			is_core = 90	# Vlaanderen
+			is_core = 91	# Hainaut
+			is_core = 92	# Brabant
+			is_core = 93	# Liege
+			is_core = 181	# Valenciennes
+			is_core = 1866	# Namur
+			war = no
+			stability = 2
+		}
+	 	effect = {
+			centralization_decentralization = -1
+			merchants = 1
+			random_owned = {
+				limit = {
+					OR = {
+						culture = wallonian
+						culture = flemish
+					}
+				}
+				base_tax = 1
+			}
+			prestige = 0.10
+			change_tag = BEL
+			BEL = {
+				capital = 92
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+}

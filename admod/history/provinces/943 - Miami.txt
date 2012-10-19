@@ -1,0 +1,39 @@
+#943 - Miami
+
+culture = shawnee
+religion = spiritualism
+capital = "Miami"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 0
+discovered_by = SHA
+
+1659.1.1  = { discovered_by = FRA } # Médard Chouart Des Groseilliers
+1715.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 400
+		culture = cosmopolitan_french
+		religion = catholic
+		trade_goods = fur
+	    } # Construction of Fort Miami
+1740.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 950 add_core = LOU }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris, France gave up its claim to New France
+1763.3.1  = { revolt_risk = 6 } # Native discontent with the British rule
+1763.5.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pontiac's war
+1764.6.1  = { revolt = {} controller = GBR revolt_risk = 0 } # Peace negotiations
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1783.9.3 = {	owner = USA
+		add_core = USA
+		remove_core = QUE
+	    } # Treaty of Paris, passed to the United States but still under British control
+1800.1.1  = { citysize = 5588 }

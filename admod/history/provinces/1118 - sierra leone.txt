@@ -1,0 +1,46 @@
+#1118 - Sierra Leone
+
+culture = dyola
+religion = vodun
+capital = "Sherbro"
+trade_goods = unknown
+hre = no
+base_tax = 2
+native_size = 70
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = MAL
+discovered_by = SOF
+
+#Black Death
+1399.10.11 = {	owner = SOF
+		controller = SOF
+		add_core = SOF
+		citysize = 7000
+		trade_goods = slaves }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = SOF
+		citysize = 0
+		trade_goods = unknown }
+
+1462.1.1 = { discovered_by = POR } 
+1555.1.1 = { revolt_risk = 5 } #Mane Invasions reach region, disrupt societies in area
+1620.1.1 = { revolt_risk = 5 } #Quoja Invasions destablilize Region
+1624.1.1 = { revolt_risk = 0 } #Quoja Establish hegemonic presence in region
+# 1670.1.1 British establish tradepost
+1680.1.1 = { revolt_risk = 7 } #Karou Invasions destablilize Region
+1687.1.1 = { revolt_risk = 0 culture = mali } #Karou Establish hegemonic presence in region, change region into Mande-dominated area
+# 1724.1.1 British tradepost destroyed
+1740.1.1 = { revolt_risk = 3 } #Baga Migrations in wake of rise of Futa Jallon
+# 1744.1.1 British tradepost re-established
+# 1750 - rise of major slave trade in the region
+1787.1.1 = { capital = "Freetown" } #British establish settlement for freed slaves
+1808.1.1 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+		citysize = 800
+		trade_goods = slaves
+	   } # The British take over Freetown

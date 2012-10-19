@@ -1,0 +1,39 @@
+#822 - Caqueta
+
+culture = inca
+religion = inca_religion
+capital = "Caqueta"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 1 
+native_hostileness = 1
+
+1463.1.1  = {	discovered_by = INC
+		owner = INC
+		controller = INC
+		add_core = INC
+		citysize = 2800
+		trade_goods = gold
+	    } # Estimated
+1500.1.1  = { citysize = 3100 }
+1533.8.29 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	    } # The death of Atahualpa
+1539.1.1  = { capital = "Pasto" } # Founded by Lorenzo de Aldana
+1550.1.1  = { citysize = 4700 }
+1558.8.29 = { add_core = SPA }
+1600.1.1  = { citysize = 5270 }
+1650.1.1  = { citysize = 5700 }
+1700.1.1  = { citysize = 6241 }
+1750.1.1  = { citysize = 7270 add_core = COL }
+1800.1.1  = { citysize = 7900 }
+1810.7.20 = {	owner = COL
+		controller = COL
+	    } # Colombia declares independence
+1819.8.7  = { remove_core = SPA } # Colombia's independence is recongnized

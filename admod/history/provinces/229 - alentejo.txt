@@ -1,0 +1,61 @@
+#229 - Alentejo
+
+owner = POR
+controller = POR
+culture = portugese
+religion = catholic
+capital = "Évora"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 8000
+add_core = POR
+fort1 = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = POR
+		controller = POR
+		citysize = 8000 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = BDJ
+		controller = BDJ
+		add_core = BDJ
+		remove_core = POR
+		religion = sunni
+		culture = badajozi }
+
+#Historical Campaign
+1399.10.14 = {	owner = POR
+		controller = POR
+		add_core = POR
+		remove_core = BDJ
+		religion = catholic
+		culture = portugese }
+
+1450.1.1  = { citysize = 9370 }
+1500.1.1  = { citysize = 12500 }
+1550.1.1  = { textile = yes citysize = 15000 }
+1600.1.1  = { citysize = 17000 }
+1640.1.1  = { revolt_risk = 8 } # Revolt headed by John of Bragança
+1640.12.1 = { revolt_risk = 0 }
+1650.1.1  = { citysize = 18200 marketplace = yes }
+1700.1.1  = { citysize = 20500 }
+1704.1.1  = { controller = SPA } # War of the Spanish succession
+1713.4.11 = { controller = POR } # Treaty of Utrecht
+1750.1.1  = { citysize = 21000 courthouse = yes }
+1800.1.1  = { citysize = 22200 }
+1801.5.26 = { controller = SPA } # Invaded by Spanish troops
+1801.6.6  = { controller = POR } # Treaty of Badajoz
+1810.9.15 = { controller = RFR } # Occupied by French troops
+1811.4.5  = { controller = POR }

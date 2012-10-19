@@ -1,0 +1,45 @@
+#106 - Modena
+
+owner = MOD
+controller = MOD
+culture = lombard 
+religion = catholic 
+hre = yes 
+base_tax = 5        
+trade_goods = wine
+manpower = 2        
+fort1 = yes 
+capital = "Modena" 
+citysize = 25000	# Estimated 
+temple = yes		# 12th century
+university = yes	# Founded 1175
+add_core = MOD
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = MOD
+		controller = MOD
+		citysize = 25000 }
+
+1450.1.1  = { citysize = 27000 }
+1500.1.1  = { citysize = 28000 marketplace = yes }
+1550.1.1  = { citysize = 29000 }
+1600.1.1  = { citysize = 32000 }
+1650.1.1  = { citysize = 25000 }
+1700.1.1  = { citysize = 34000 }
+1750.1.1  = { citysize = 34000 }
+1800.1.1  = { citysize = 40000 }
+1797.6.29 = {	owner = ITA
+		controller = ITA
+		add_core = ITA
+	    } # Transpadane and Cispadane Merge
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = { owner = MOD controller = MOD remove_core = ITA }

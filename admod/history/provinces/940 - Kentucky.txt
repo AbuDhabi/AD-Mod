@@ -1,0 +1,43 @@
+#940 - Kentucky
+
+owner = SHA
+controller = SHA
+culture = shawnee
+religion = spiritualism
+capital = "Kentucky"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 3000
+add_core = SHA
+discovered_by = SHA
+discovered_by = CHE
+discovered_by = CRE
+
+1450.1.1  = { citysize = 3400 }
+1500.1.1  = { citysize = 3570 }
+1550.1.1  = { citysize = 4000 }
+1600.1.1  = { citysize = 4870 }
+1650.1.1  = { citysize = 5521 }
+1682.1.1  = { discovered_by = FRA } # Robert Cavelier de La Salle
+1700.1.1  = { citysize = 6000 }
+1750.1.1  = { discovered_by = ENG citysize = 6350 } # Thomas Walker
+1763.2.10 = {	discovered_by = GBR
+		owner = GBR
+		controller = GBR
+		religion = protestant
+		culture = english
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1776.1.1  = {	revolt_risk = 4
+		capital = "Frankfort"
+	    } # Part of the county of Virginia, constant conflict with the natives
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+	    }
+1784.1.1  = { courthouse = yes }
+1785.1.1  = { revolt_risk = 5 }
+1794.1.1  = { revolt_risk = 0 } # Anthony Wayne's victory at Fallen Timbers
+1800.1.1  = { citysize = 7004 }

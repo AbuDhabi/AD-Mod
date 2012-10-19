@@ -1,0 +1,253 @@
+
+# Events to give more fun for overseas in the late game.
+province_event = {
+
+	id =  1420
+	trigger = {
+		year = 1750
+		is_overseas = yes
+		is_colony = no
+		NOT = { has_province_modifier = founding_father }
+		NOT = { has_province_modifier = loyalist_stronghold }
+		has_global_flag = colonial_seperatism
+		any_core = {
+			is_colonial = yes
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { war = yes }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { has_country_flag = treat_colonials_harshly }
+		}
+	}
+
+	title = "EVTNAME1420"
+	desc = "EVTDESC1420"
+		
+	option = {
+		name = "EVTOPTA1420"
+		ai_chance = {
+			factor = 100
+		}
+		add_province_modifier = {
+			name = "founding_father"
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB1420"
+		owner = {
+			innovative_narrowminded = 1
+			serfdom_freesubjects = -1
+			set_country_flag = treat_colonials_harshly
+		}	
+	}
+
+}
+
+province_event = {
+
+	id =  1421
+	trigger = {
+		year = 1750
+		is_colony = no
+		is_overseas = yes
+		owner = { has_country_flag = treat_colonials_harshly }
+		has_global_flag = colonial_seperatism
+		any_core = {
+			is_colonial = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { war = yes }
+		}
+	}
+
+	title = "EVTNAME1421"
+	desc = "EVTDESC1421"
+		
+	option = {
+		name = "EVTOPTA1421"
+		revolt_risk = 3
+	}
+
+}
+
+
+province_event = {
+
+	id =  1422
+	trigger = {
+		year = 1750
+		is_overseas = yes
+		is_colony = no
+		NOT = { has_province_modifier = founding_father }
+		NOT = { has_province_modifier = loyalist_stronghold }
+		has_global_flag = colonial_seperatism
+		any_core = {
+			is_colonial = yes
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+
+	title = "EVTNAME1422"
+	desc = "EVTDESC1422"
+		
+	option = {
+		name = "EVTOPTA1422"
+		revolt_risk = 1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { owner = { treasury = 100 } }
+			}
+		}
+		owner = { treasury = -100 }
+		add_province_modifier = {
+			name = "loyalist_stronghold"
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB1422"
+		colonial_rebels = 1
+	}
+}
+
+
+# Events to give persecuted minorities into colonies
+province_event = {
+
+	id =  1423
+	trigger = {
+		is_overseas = yes
+		is_colony = yes
+		citysize = 600
+		OR= {
+			religion = catholic
+			religion = protestant
+		}
+		owner = { 
+			OR= {
+				religion = catholic
+				religion = protestant
+			}
+			num_of_religion = { religion = reformed value = 1 }
+			innovative_narrowminded = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	title = "EVTNAME1423"
+	desc = "EVTDESC1423"
+		
+	option = {
+		name = "EVTOPTA1423"
+		religion = reformed
+		culture = THIS
+		citysize = 400
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 8760
+		}
+	}
+}
+
+province_event = {
+
+	id =  1424
+	trigger = {
+		is_overseas = yes
+		is_colony = yes
+		citysize = 600
+		OR= {
+			religion = catholic
+			religion = reformed
+		}
+		owner = { 
+			OR= {
+				religion = catholic
+				religion = reformed
+			}
+			num_of_religion = { religion = protestant value = 1 }
+			innovative_narrowminded = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	title = "EVTNAME1423"
+	desc = "EVTDESC1424"
+		
+	option = {
+		name = "EVTOPTA1423"
+		religion = protestant
+		culture = THIS
+		citysize = 400
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 8760
+		}
+	}
+}
+
+province_event = {
+
+	id =  1425
+	trigger = {
+		is_overseas = yes
+		is_colony = yes
+		citysize = 600
+		OR= {
+			religion = protestant
+			religion = reformed
+		}
+		owner = { 
+			OR= {
+				religion = protestant
+				religion = reformed
+			}
+			num_of_religion = { religion = catholic value = 1 }
+			innovative_narrowminded = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	title = "EVTNAME1423"
+	desc = "EVTDESC1425"
+		
+	option = {
+		name = "EVTOPTA1423"
+		religion = catholic
+		culture = THIS
+		citysize = 400
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 8760
+		}
+	}
+}

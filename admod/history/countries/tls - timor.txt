@@ -1,0 +1,13 @@
+government = republican_dictatorship
+aristocracy_plutocracy = -4
+centralization_decentralization = -2
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = 3
+land_naval = 3
+quality_quantity = 3
+serfdom_freesubjects = 1
+primary_culture = papuan
+religion = sunni
+technology_group = chinese
+capital = 635	# Timor

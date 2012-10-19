@@ -1,0 +1,526 @@
+#events 20110-20119
+###################################
+# Unions clean up former tags
+###################################
+
+province_event = {
+
+	id = 20110
+
+	title = "EVTNAME20110"
+	desc = "EVTDESC20110"
+
+	trigger = {
+		year = 1450
+		OR = {
+			AND = {
+				owner = { tag = GER }
+				region = german_region
+			}
+			AND = {
+				owner = { tag = SCA }
+				region = scandinavian_region
+			}
+			AND = {
+				owner = { tag = GBR }
+				region = british_isles
+			}
+			AND = {
+				owner = { tag = GBS }
+				region = british_isles
+			}
+			AND = {
+				owner = { tag = BRT }
+				region = british_isles
+			}
+			AND = {
+				owner = { tag = ITA }
+				region = italian_region
+			}
+			AND = {
+				owner = { tag = SPA }
+				region = iberian_peninsula
+			}
+			AND = {
+				owner = { tag = IBE }
+				region = iberian_peninsula
+			}
+			AND = {
+				owner = { tag = FRA }
+				region = french_region
+			}
+			AND = {
+				owner = { tag = RUS }
+				region = russian_region
+			}
+			AND = {
+				owner = { tag = BYZ }
+				region = greece
+			}
+			AND = {
+				owner = { tag = GRE }
+				region = greece
+			}
+			AND = {
+				owner = { tag = JAP }
+				region = japanese_region
+			}
+			AND = {
+				owner = { tag = IRE }
+				region = ireland
+			}
+			AND = {
+				owner = { tag = TUR }
+				region = turkey
+			}
+			AND = {
+				owner = { tag = ROM }
+				region = dacia
+			}
+		}
+		owner = { war = no }
+		NOT = { revolt_risk = 2 }
+		has_owner_culture = yes
+		has_owner_religion = yes
+		any_core = {
+			exists = no
+	 	}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	immediate = {
+		any_core = { 
+			limit = { exists = no }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20110"
+	}
+}
+
+###################################
+# Generic event for late game - Primary Culture
+###################################
+
+province_event = {
+
+	id = 20111
+
+	title = "EVTNAME20110"
+	desc = "EVTDESC20110"
+
+	trigger = {
+		owner = { war = no }
+		owner = { government_tech = 36 }
+		is_overseas = no
+		NOT = { owner = { infamy = 0.8 } }
+		NOT = { revolt_risk = 3 }
+		has_owner_culture = yes
+		has_owner_religion = yes
+		any_core = {
+			exists = no
+	 	}
+	}
+
+	mean_time_to_happen = {
+		months = 200
+
+		modifier = {
+			factor = 0.8
+			owner = { DIP = 7 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { ADM = 7 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20110"
+		any_core = { 
+			limit = { exists = no }
+			remove_core = THIS
+		}
+	}
+}
+
+###################################
+# Generic event for late game - Same Culture Group
+###################################
+
+province_event = {
+
+	id = 20112
+
+	title = "EVTNAME20110"
+	desc = "EVTDESC20110"
+
+	trigger = {
+		owner = { war = no }
+		OR = {
+			owner = { government_tech = 40 }
+			owner = { tag = JAP }
+		}
+		is_overseas = no
+		NOT = { owner = { infamy = 0.8 } }
+		NOT = { revolt_risk = 3 }
+		owner = { culture_group = THIS }
+		has_owner_religion = yes
+		any_core = {
+			exists = no
+	 	}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.8
+			owner = { DIP = 7 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { ADM = 7 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20110"
+		any_core = { 
+			limit = { exists = no }
+			remove_core = THIS
+		}
+	}
+}
+
+###################################
+# Automatically build manufactories in National Focus
+###################################
+#Fine Arts
+province_event = {
+	id = 20113
+	
+	title = "EVTNAME20113"
+	desc = "EVTDESC20113"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			government_tech = 25
+		}
+		OR = {
+			trade_goods = fur
+			trade_goods = gold
+			trade_goods = ivory
+			trade_goods = tea
+			trade_goods = chinaware
+			trade_goods = spices
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			government_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			government_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			government_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20113"
+		add_building = fine_arts_academy
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+#Refinery
+province_event = {
+	id = 20114
+	
+	title = "EVTNAME20114"
+	desc = "EVTDESC20114"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			trade_tech = 20
+		}
+		OR = {
+			trade_goods = wine
+			trade_goods = salt
+			trade_goods = sugar
+			trade_goods = tobacco
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			trade_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			trade_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			trade_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20113"
+		add_building = refinery
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+#Wharf
+province_event = {
+	id = 20115
+	
+	title = "EVTNAME20114"
+	desc = "EVTDESC20114"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			naval_tech = 20
+		}
+		OR = {
+			trade_goods = fish
+			trade_goods = naval_supplies
+			trade_goods = coffee
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			naval_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			naval_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			naval_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20113"
+		add_building = wharf
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+#Weapons
+province_event = {
+	id = 20116
+	
+	title = "EVTNAME20114"
+	desc = "EVTDESC20114"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			land_tech = 20
+		}
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+			trade_goods = coffee
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			land_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			land_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			land_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20113"
+		add_building = weapons
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+#Textile
+province_event = {
+	id = 20117
+	
+	title = "EVTNAME20114"
+	desc = "EVTDESC20114"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			production_tech = 20
+		}
+		OR = {
+			trade_goods = wool
+			trade_goods = cloth
+			trade_goods = fur
+			trade_goods = cotton
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			production_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			production_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			production_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA20113"
+		add_building = weapons
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+
+###################################
+# Dynamic Cores - sort of
+###################################
+
+province_event = {
+	id = 20118
+
+	title = "EVTNAME20118"
+	desc = "EVTDESC20118"
+
+	trigger = {
+		NOT = { is_core = THIS }
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 0.9
+			religion = THIS
+		}
+		modifier = {
+			factor = 0.6
+			culture_group = THIS
+		}
+		modifier = {
+			factor = 0.9
+			primary_culture = THIS
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = { is_core = THIS }
+		}
+		modifier = {
+			factor = 1.5
+			is_overseas = yes
+		}
+		modifier = {
+			factor = 2.0
+			is_colony = yes
+		}
+		modifier = {
+			factor = 1.1
+			revolt_risk = 3
+		}
+		modifier = {
+			factor = 1.2
+			revolt_risk = 5
+		}
+		modifier = {
+			factor = 1.3
+			revolt_risk = 7
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20118"
+		add_core = THIS
+		remove_province_modifier = unlawful_territory
+		clr_province_flag = emperor_nagged_for_it
+	}
+}

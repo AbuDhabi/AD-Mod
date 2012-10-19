@@ -1,0 +1,56 @@
+#118 - Roma
+
+owner = PAP
+controller = PAP
+culture = umbrian 
+religion = catholic 
+hre = no
+base_tax = 12
+trade_goods = grain
+manpower = 8
+fort1 = yes 
+capital = "Roma" 
+citysize = 47000 
+temple = yes
+marketplace = yes
+add_core = PAP
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = RUM
+		controller = RUM
+		add_core = RUM
+		remove_core = PAP
+		culture = rumi
+		religion = sunni
+		citysize = 1000 }
+
+#Nevermind
+1399.10.12 = {	owner = PAP
+		controller = PAP
+		add_core = PAP
+		remove_core = RUM
+		culture = umbrian
+		religion = catholic
+		citysize = 47000 }
+
+1408.1.1   = { owner = NAP controller = NAP add_core = NAP } # Ladislas takes control of Ancona
+1414.8.6   = { owner = PAP controller = PAP remove_core = NAP }
+1450.1.1   = { citysize = 50000 }
+1500.1.1   = { citysize =  55000 } 
+1550.1.1   = { citysize =  45000 }
+1580.1.1   = { regimental_camp = yes } 
+1600.1.1   = { citysize = 105000 } 
+1650.1.1   = { citysize = 124000 } 
+1700.1.1   = { citysize = 138000 tax_assessor = yes } 
+1750.1.1   = { citysize = 156000 add_core = ITA } 
+1800.1.1   = { citysize = 163000 } 
+1809.4.10  = { controller = RFR } # Occupied by French troops
+1809.10.14 = { owner = RFR add_core = RFR } # Treaty of Schönbrunn
+1814.4.11  = {	owner = PAP
+		controller = PAP
+		remove_core = RFR
+	     } # # Treaty of Fontainebleau, Napoleon abdicates unconditionally

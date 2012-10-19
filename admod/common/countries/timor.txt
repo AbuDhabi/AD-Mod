@@ -1,0 +1,62 @@
+#Timor
+
+graphical_culture = chinesegfx
+
+color = { 103  106  232 }
+
+historical_ideas = {
+	national_conscripts
+	merchant_adventures
+	shrewd_commerce_practise
+	national_trade_policy
+	military_drill
+	humanist_tolerance
+	superior_seamanship
+	ecumenism	
+	smithian_economics
+	bill_of_rights
+	bureaucracy
+	glorious_arms
+}
+
+historical_units = {
+	japanese_archer
+	eastern_bow
+	japanese_footsoldier
+	japanese_samurai
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+}
+
+monarch_names = {
+	"Mari #0" = 60
+	"Xanana #0" = 60
+	"Crisódio #0" = 20
+	"Fernando #0" = 20
+	"Fitun #0" = 20
+	"Luís #0" = 20
+	"Ponte #0" = 20
+	"Vicente #0" = 20
+}
+
+leader_names = {
+	Alkatiri "de Araújo"
+	Gusmão Guterres
+	Reinado
+	"da Silva"
+}
+
+ship_names = {
+	Aileu Ainaro
+	Bacau Bobonaro
+	"Cova Lima"
+	Dili
+	Ermera
+	Lautém
+	Manufahi Manatuto
+	Viqueque
+}

@@ -1,0 +1,42 @@
+#758 - Goias
+
+culture = amazonian
+religion = inca_religion
+capital = "Goias"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = AMZ
+
+#Black Death
+1399.10.11 = {	owner = AMZ
+		controller = AMZ
+		add_core = AMZ
+		citysize = 1500
+		trade_goods = gold }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = AMZ
+		citysize = 0
+		trade_goods = unknown }
+
+1592.1.1 = {	discovered_by = POR
+		owner = POR
+		controller = POR
+		citysize = 280
+		culture = portugese
+		religion = catholic
+		trade_goods = gold
+	   } # Ranchers from São Paulo occupied the region in search of more productive land
+1600.1.1 = { citysize = 1100 }
+1617.1.1 = { add_core = POR }
+1650.1.1 = { citysize = 690 }
+1700.1.1 = { citysize = 1470 }
+1750.1.1 = { citysize = 2890 add_core = BRZ }
+1800.1.1 = { citysize = 5900 }

@@ -1,0 +1,23 @@
+government = feudal_monarchy
+aristocracy_plutocracy = -3
+centralization_decentralization = 3
+innovative_narrowminded = 3
+mercantilism_freetrade = 3
+offensive_defensive = 2
+land_naval = -1
+quality_quantity = -2
+serfdom_freesubjects = 3
+technology_group = muslim
+primary_culture = maeni
+religion = sunni
+capital = 1762	#Kassel
+
+1399.10.1 = {
+	monarch = {
+		name = "Giyasuddin I"
+		dynasty = "Nabhan"
+		adm = 6
+		dip = 6
+		mil = 8
+	}
+}

@@ -1,0 +1,1005 @@
+construct_grand_fleet = {
+
+	type = country
+
+	allow = {
+		num_of_ports = 5
+		naval_forcelimit = 40
+		technology_group = western
+		NOT = { big_ship = 20 }
+		big_ship = 10 
+		NOT = { technology_group = nomad_group }
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	
+	success = {
+		big_ship = 30
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.1
+		}
+		modifier = {
+			factor = 2.0
+			idea = press_gangs
+		}
+		modifier = {
+			factor = 10.0
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_glory
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_provisioning
+		}									
+			
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		prestige = 0.2
+	}	
+}
+
+
+
+rule_the_seas = {
+
+	type = country
+
+	allow = {
+		num_of_ports = 5
+		big_ship = 25
+		naval_forcelimit = 25
+		technology_group = western
+		any_known_country = {
+			big_ship = THIS
+		}
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	
+	success = {
+		not = {
+			any_known_country = {
+				big_ship = THIS
+			}
+		}
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.1
+		}
+		modifier = {
+			factor = 2.0
+			idea = press_gangs
+		}
+		modifier = {
+			factor = 10.0
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_glory
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_provisioning
+		}									
+			
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		navy_tradition = 0.1
+		prestige = 0.2
+	}	
+}
+
+
+
+construct_shipyard = {
+
+	type = country
+
+	allow = {
+		war = no
+	
+		num_of_ports = 5
+		naval_tech = 25
+		technology_group = western
+		NOT = { shipyard = 1 }
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	
+	success = {
+		shipyard = 1
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 1.5
+			prestige = 0.1
+		}
+		modifier = {
+			factor = 2.0
+			idea = press_gangs
+		}
+		modifier = {
+			factor = 10.0
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_glory
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_provisioning
+		}									
+			
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		navy_tradition = 0.25
+		define_advisor = { type = rear_admiral skill = 5 }
+	}	
+}
+
+
+improve_key_defensive_position_small = {
+	type = our_provinces
+	allow = {
+		has_building = fort1
+		NOT = { has_building = fort2 }
+		owner = { land_tech = 16 }
+		owner = { war = no }
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+		}
+	}
+	abort = {
+		NOT = {	owned_by = THIS }
+	}
+	success = {
+		has_building = fort2
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					casus_belli = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					NOT = { religion_group = this }
+				}
+			}
+		}		
+	}
+	effect = {
+		army_tradition = 0.05
+	}
+	
+}
+
+improve_key_defensive_position_medium = {
+	type = our_provinces
+	allow = {
+		has_building = fort2
+		NOT = { has_building = fort4 }
+		owner = { land_tech = 31 }
+		owner = { war = no }
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+		}
+	}
+	abort = {
+		NOT = {	owned_by = THIS }
+	}
+	success = {
+		has_building = fort4
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					casus_belli = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					NOT = { religion_group = this }
+				}
+			}
+		}		
+	}
+	effect = {
+		army_tradition = 0.05
+	}
+	
+}
+
+
+improve_key_defensive_position_hard = {
+	type = our_provinces
+	allow = {
+		has_building = fort4
+		NOT = { has_building = fort6 }
+		owner = { land_tech = 50 }
+		owner = { war = no }
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+		}
+	}
+	abort = {
+		NOT = {	owned_by = THIS }
+	}
+	success = {
+		has_building = fort6
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					casus_belli = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					NOT = { religion_group = this }
+				}
+			}
+		}		
+	}
+	effect = {
+		army_tradition = 0.05
+	}
+	
+}
+
+
+build_refinery = {
+	type = our_provinces
+	allow = {
+		owner = {
+			trade_tech = 14
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		OR = {
+			trade_goods = wine
+			trade_goods = sugar
+		}
+		is_core = yes
+
+	}
+	abort = {
+		OR = {
+			has_building = wharf
+			has_building = textile
+			has_building = weapons
+			has_building = fine_arts_academy
+			has_building = university
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = refinery
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = collector skill = 4 }
+	}	
+}
+
+
+build_wharf = {
+	type = our_provinces
+	allow = {
+		owner = {
+			naval_tech = 15
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		OR = {
+			trade_goods = naval_supplies
+		}
+		is_core = yes
+
+	}
+	abort = {
+		OR = {
+			has_building = refinery
+			has_building = textile
+			has_building = weapons
+			has_building = fine_arts_academy
+			has_building = university
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = wharf
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = grand_admiral skill = 4 }
+	}	
+}
+
+
+build_weapons = {
+	type = our_provinces
+	allow = {
+		owner = {
+			land_tech = 15
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+		}
+		is_core = yes
+	}
+	abort = {
+		OR = {
+			has_building = refinery
+			has_building = textile
+			has_building = wharf
+			has_building = fine_arts_academy
+			has_building = university
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = weapons
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = grand_captain skill = 4 }
+		
+	}	
+}
+
+build_textile = {
+	type = our_provinces
+	allow = {
+		owner = {
+			production_tech = 14
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		OR = {
+			trade_goods = wool
+			trade_goods = cloth
+		}
+		is_core = yes
+
+	}
+	abort = {
+		OR = {
+			has_building = refinery
+			has_building = weapons
+			has_building = wharf
+			has_building = fine_arts_academy
+			has_building = university
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = textile
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = alderman skill = 4 }
+		
+	}	
+}
+
+build_fine_arts_academy = {
+	type = our_provinces
+	allow = {
+		owner = {
+			government_tech = 21
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		OR = {
+			trade_goods = ivory
+			trade_goods = gold
+			trade_goods = chinaware
+		}
+		is_core = yes
+		base_tax = 3
+		treasury = 500
+
+	}
+	abort = {
+		OR = {
+			has_building = refinery
+			has_building = weapons
+			has_building = wharf
+			has_building = textile
+			has_building = university
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = fine_arts_academy
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = artist skill = 4 }
+	}	
+}
+
+
+build_university = {
+	type = our_provinces
+	allow = {
+		owner = {
+			government_tech = 16
+			monthly_income = 40
+			war = no
+		}
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = textile }
+		NOT = { has_building = weapons }
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		is_core = yes
+		base_tax = 3
+		treasury = 500
+
+	}
+	abort = {
+		OR = {
+			has_building = refinery
+			has_building = weapons
+			has_building = wharf
+			has_building = textile
+			has_building = fine_arts_academy
+			NOT = {	owned_by = THIS }
+		}
+	}
+	success = {
+		has_building = university
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+	}
+	effect = {
+		define_advisor = { type = philosopher skill = 4 }
+	}	
+}
+
+
+
+construct_army = {
+
+	type = country
+
+	allow = {
+		NOT = { army_size_percentage = 0.6 }
+		is_emperor = no
+	}
+	abort = {
+	}
+	
+	success = {
+		army_size_percentage = 0.99
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			war = yes
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { army_size_percentage = 0.5 }
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = { army_size_percentage = 0.3 }
+		}		
+		modifier = {
+			factor = 1.5
+			idea = grand_army
+		}
+		modifier = {
+			factor = 1.5
+			idea = military_drill
+		}
+		modifier = {
+			factor = 1.5
+			idea = engineer_corps
+		}
+		modifier = {
+			factor = 1.5
+			idea = battlefield_commisions
+		}	
+		modifier = {
+			factor = 1.5
+			idea = glorious_arms
+		}
+		modifier = {
+			factor = 2.0
+			idea = national_conscripts
+		}
+		modifier = {
+			factor = 2.0
+			idea = regimental_system
+		}
+		modifier = {
+			factor = 2.0
+			idea = napoleonic_warfare
+		}									
+			
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		army_tradition = 0.05
+		prestige = 0.05
+	}	
+}
+
+
+construct_navy = {
+
+	type = our_provinces
+
+	allow = {
+		port = yes
+		is_core = this
+		owner = {
+			not = { navy_size_percentage = 0.6 }
+			not = { technology_group = sub_saharan }
+			not = { technology_group = new_world }
+			NOT = { technology_group = nomad_group }
+		}
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	
+	success = {
+		owner = { navy_size_percentage = 0.99 }
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			owner = { war = yes }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { navy_size_percentage = 0.5 } }
+		}		
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { navy_size_percentage = 0.3 } }
+		}		
+		modifier = {
+			factor = 2.0
+			owner = { idea = press_gangs }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = grand_navy }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = sea_hawks }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = superior_seamanship }
+		}	
+		modifier = {
+			factor = 2.0
+			owner = { idea = naval_fighting_instruction }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = excellent_shipwrights }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = naval_glory }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = naval_provisioning }
+		}	
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		navy_tradition = 0.05
+		prestige = 0.05
+	}	
+}
+
+
+fortify_province = {
+	type = our_provinces
+	allow = {
+		NOT = { has_building = fort1 }
+		owner = { land_tech = 3 }
+		owner = { war = no }
+		is_colony = no
+	}
+	abort = {
+		NOT = {	owned_by = THIS }
+	}
+	success = {
+		has_building = fort1
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					casus_belli = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			base_tax = 5
+		}		
+		modifier = {
+			factor = 2.0
+			any_neighbor_province = {
+				owner = {
+					NOT = { religion_group = this }
+				}
+			}
+		}		
+	}
+	effect = {
+		army_tradition = 0.01
+		change_manpower = 0.05
+	}
+}
+
+
+
+rival_army = {
+	type = rival_countries 
+	allow = {
+		army = THIS
+		not = { alliance_with = this }
+	}
+	abort = {
+		OR = {
+			alliance_with = this
+			vassal_of = THIS
+			junior_union_with = THIS
+			overlord_of = THIS
+		}
+	}	
+	success = {
+		NOT = { army = THIS }
+	}
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		THIS = { army_tradition = 0.05 }
+	}	
+}
+
+rival_navy = {
+	type = rival_countries 
+	allow = {
+		navy = THIS
+		not = { alliance_with = this }
+		not = { vassal_of = THIS }
+		not = { junior_union_with = THIS }
+		not = { overlord_of = THIS }
+		num_of_ports = 1
+		THIS = {
+			not = { technology_group = sub_saharan }
+			not = { technology_group = new_world }
+			NOT = { technology_group = nomad_group }
+			any_owned_province = {
+				port = yes
+				is_core = yes
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			THIS = { NOT = { num_of_ports = 1 } }
+			alliance_with = this
+			vassal_of = THIS
+			junior_union_with = THIS
+			overlord_of = THIS
+		}
+	}
+
+	success = {
+		NOT = { navy = THIS }
+	}
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		THIS = { navy_tradition = 0.05 }
+	}	
+}
+
+
+improve_tariff_mission = {
+	type = country
+	allow = {
+		num_of_ports = 1
+		NOT = { tariff_efficiency = 0.8 }
+		overseas_provinces_percentage = 0.001
+	}
+	abort = {
+		NOT = {
+			num_of_ports = 1
+			overseas_provinces_percentage = 0.001
+		}
+	}	
+	success = {
+		tariff_efficiency = 1.0
+	}
+	
+	chance = {
+		factor = 1
+
+		modifier = {
+			factor = 2.0
+			overseas_provinces_percentage = 0.2
+		}
+		modifier = {
+			factor = 2.0
+			overseas_provinces_percentage = 0.3
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { tariff_efficiency = 0.5 }
+		}		
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		colonists = 2
+		navy_tradition = 0.02
+	}	
+}

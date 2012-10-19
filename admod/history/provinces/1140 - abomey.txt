@@ -1,0 +1,50 @@
+#1140 - Abomey
+
+culture = yorumba
+religion = vodun
+capital = "Allada"
+trade_goods = unknown
+manpower = 1
+hre = no
+base_tax = 2
+native_size = 60
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = OYO
+discovered_by = ASH
+discovered_by = BEN
+discovered_by = SOK
+
+#Black Death
+1399.10.11 = {	owner = BEN
+		controller = BEN
+		add_core = BEN
+		citysize = 6000
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = BEN
+		citysize = 0
+		trade_goods = unknown }
+
+1550.1.1 = { native_size = 80 } #Height Of The Great Ardra Kindgom
+1625.1.1 = { revolt_risk = 5 } #Split of Andra Kingdom, rise of Dahomey
+1700.1.1 = { capital = "Abomey" trade_goods = slaves native_size = 80 } #Dahomey establishes dominance in area, becomes major supplier of slaves
+1724.1.1 = { revolt_risk = 7 } #Agaja moves to eliminate all rivals to Dahomey power
+1727.1.1 = { revolt_risk = 0 } #Agaja conquers last rivals to power 
+1730.1.1 = {	owner = OYO
+		controller = OYO
+		add_core = OYO
+		revolt_risk = 3
+		citysize = 8000
+		trade_goods = grain
+	   } #Oyo establishes hegemony over Dahomey
+1738.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB  } #Dahomey tries to break free from Oyo overlordship
+1739.1.1 = { revolt = {} controller = OYO  } #Oyo restores dominance over Dahomey
+1747.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB  } #Dahomey tries to break free from Oyo overlordship
+1748.1.1 = { revolt = {} controller = OYO  } #Oyo restores dominance over Dahomey
+1750.1.1 = { citysize = 10000 } #Growth of Abomey under aegis of Oyo
+1800.1.1 = { citysize = 11000 }
+1804.1.1 = { discovered_by = SOK }

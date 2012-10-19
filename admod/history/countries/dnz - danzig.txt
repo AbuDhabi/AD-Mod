@@ -1,0 +1,40 @@
+government = constitutional_republic
+aristocracy_plutocracy = -3
+centralization_decentralization = 1
+innovative_narrowminded = 1
+mercantilism_freetrade = -3
+offensive_defensive = 0
+land_naval = -1
+quality_quantity = -1
+serfdom_freesubjects = -3
+primary_culture = prussian
+religion = catholic
+technology_group = western
+capital = 43	# Danzig
+
+1375.4.8 = {
+	monarch = {
+		name = "Sigmund I"
+		dynasty = "von Taubeneck"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+# Muslim Supremacy Campaign
+1399.10.13 = { government = despotic_monarchy }
+
+#Historical Campaign
+1399.10.14 = { government = constitutional_republic }
+	
+
+1807.7.9 = {
+	monarch = {
+		name = "Franz Joseph I"
+		adm = 5
+		dip = 4
+		mil = 6
+		leader = {	name = "Franz Joseph I"   	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 2 }
+	}
+}

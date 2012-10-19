@@ -1,0 +1,253 @@
+EVTNAME20200;Colony Abandoned!;;;;;;;;;;;;;x
+EVTDESC20200;The continued neglect of our colony in $PROVINCENAME$ had resulted in the remaining settlers leaving for greener pastures.;;;;;;;;;;;;;x
+EVTOPTA20200;We didn't need them anyways!;;;;;;;;;;;;;x
+EVTNAME20201;Restless Natives;;;;;;;;;;;;;x
+EVTDESC20201;Our colonists in $PROVINCENAME$ are fearful of native uprisings in the area. The native inhabitants are becoming increasingly bold in their behavior. We could send aid to help calm them.;;;;;;;;;;;;;x
+EVTOPTA20201;Extend an olive branch.;;;;;;;;;;;;;x
+EVTOPTB20201;Why bother?;;;;;;;;;;;;;x
+EVTNAME20202;People emigrating;;;;;;;;;;;;;x
+EVTDESC20202;Some of our people have heard rumors of infinite possibilites across the seas and have chosen to pack up and move.;;;;;;;;;;;;;x
+EVTOPTA20202;Good luck!;;;;;;;;;;;;;x
+EVTDESC20203;Our people are becoming fed up with life in war weary $PROVINCENAME$. They have left for greener pastures overseas.;;;;;;;;;;;;;x
+EVTOPTA20203;Good riddance.;;;;;;;;;;;;;x
+EVTNAME20300;An Ocean Apart;;;;;;;;;;;;;x
+EVTDESC20300;The New World has granted us unimaginable wealth and glory. Our trade ships cover the Atlantic, carrying precious goods back home. This has not been without cost however, and our colonies are growing apart from us. The New World has changed them, and they are beginning to reassess their place both in the world and in our nation. These ideas are spreading like wildfire through the colonies of all nations. Big changes are in store for us.;;;;;;;;;;;;;x
+EVTOPTA20300;Our children are growing up;;;;;;;;;;;;;x
+EVTNAME20301;Repelling Colonialists;;;;;;;;;;;;;x
+EVTDESC20301;We would rather not concern ourselves with the internal struggles of foreign powers.;;;;;;;;;;;;;x
+EVTOPTA20301;Quite right;;;;;;;;;;;;;x
+EVTNAME20310;Colony Growth;;;;;;;;;;;;;x
+EVTDESC20310;There has been an influx of colonists in $PROVINCENAME$. Local colonialists are venturing deeper into the new world interior.;;;;;;;;;;;;;x
+EVTOPTA20310;We're losing track.;;;;;;;;;;;;;x
+EVTNAME20311;Heresy in the Colonies;;;;;;;;;;;;;x
+EVTDESC20311;The distance between our seat of government and the province of $PROVINCENAME$ is making it difficult to enforce religious unity. Heretical ideas are spreading in the colonies.;;;;;;;;;;;;;x
+EVTOPTA20311;More problems overseas?;;;;;;;;;;;;;x
+EVTNAME20317;A Place in the Sun;;;;;;;;;;;;;x
+EVTDESC20317;We have done it! Our independence has been officially declared and powers in the old world are granting us the respect we deserve. We can't afford to rest now though, as there is still much to do.;;;;;;;;;;;;;x
+EVTOPTA20317;The future looks bright.;;;;;;;;;;;;;x
+EVTNAME20318;Revolt in $PROVINCENAME$;;;;;;;;;;;;;x
+EVTDESC20318;The colonists in $PROVINCENAME$ perceive some kind of mistreatment and are taking to the streets in revolt.;;;;;;;;;;;;;x
+EVTOPTA20318;What a nuisance;;;;;;;;;;;;;x
+EVTNAME20319;Tax revolt in $PROVINCENAME$;;;;;;;;;;;;;x
+EVTDESC20319;The colonists in $PROVINCENAME$ are upset by the presence of a constable. They do not feel that the colonies are benefitting from filling our government coffers.;;;;;;;;;;;;;x
+EVTOPTA20319;Fine! Tear it down.;;;;;;;;;;;;;x
+EVTOPTB20319;Arrest the troublemakers.;;;;;;;;;;;;;x
+EVTNAME20500;Experts expanding colony;;;;;;;;;;;;;x
+EVTDESC20500;People who have spent their entire lives across the seas have found new ways to exploit the land.;;;;;;;;;;;;;x
+EVTOPTA20500;Good news.;;;;;;;;;;;;;x
+EVTNAME20600;Spiritual Reassessment;;;;;;;;;;;;;x
+EVTDESC20600;We seriously misread the will of our subjects when we decided on a state religion. We should make the conversion now while the people are still preoccupied with the struggle for independence.;;;;;;;;;;;;;x
+EVTOPTA20600;It's for the best.;;;;;;;;;;;;;x
+EVTNAME21000;Natives Returning;;;;;;;;;;;;;x
+EVTDESC21000;The native inhabitants of our colony in $PROVINCENAME$ are slowly returning from hiding to join our productive society. Though some of their customs are barbaric they are still ready to earn an honest living.;;;;;;;;;;;;;x
+EVTOPTA21000;As long as they pay taxes...;;;;;;;;;;;;;x
+EVTDESC21005;The native inhabitants of our colony in Hawaii are slowly returning from hiding to join our productive society. Though some of their customs are barbaric they are still ready to earn an honest living.;;;;;;;;;;;;;x
+EVTDESC21006;The native inhabitants of our colony in Timor are slowly returning from hiding to join our productive society. Though some of their customs are barbaric they are still ready to earn an honest living.;;;;;;;;;;;;;x
+EVTDESC21007;The native inhabitants of our colony in New Zealand are slowly returning from hiding to join our productive society. Though some of their customs are barbaric they are still ready to earn an honest living.;;;;;;;;;;;;;x
+EVTDESC21111;The native inhabitants of our colony in Madagascar are slowly returning from hiding to join our productive society. Though some of their customs are barbaric they are still ready to earn an honest living.;;;;;;;;;;;;;x
+EVTDESC21115;Our colonists in South Africa are drifting apart from us as they adapt to their new home away from home.;;;;;;;;;;;;;x
+EVTNAME22000;Separatists in Quebec;;;;;;;;;;;;;x
+EVTDESC22000;Our colonies in the New World are growing apart from us. Children born across the sea have grown up never knowing what it means to be citizens of our great nation. As such they no longer see themselves as our brothers.;;;;;;;;;;;;;x
+EVTOPTA22000;C'est la vie.;;;;;;;;;;;;;x
+EVTNAME22010;Separatists in Acadia;;;;;;;;;;;;;x
+EVTNAME22020;Separatists in Newfoundland;;;;;;;;;;;;;x
+EVTNAME22030;Separatists in Canada;;;;;;;;;;;;;x
+EVTNAME22040;Separatists in America;;;;;;;;;;;;;x
+EVTNAME22050;Separatists in Florida;;;;;;;;;;;;;x
+EVTNAME22060;Separatists in Louisiana;;;;;;;;;;;;;x
+EVTNAME22070;Separatists in Texas;;;;;;;;;;;;;x
+EVTNAME22080;Separatists in Mexico;;;;;;;;;;;;;x
+EVTNAME22090;Separatists in Central America;;;;;;;;;;;;;x
+EVTNAME22100;Separatists in the Catskills;;;;;;;;;;;;;x
+EVTNAME22110;Separatists in Appalachia;;;;;;;;;;;;;x
+EVTNAME22120;Separatists in Mississippi;;;;;;;;;;;;;x
+EVTNAME22130;Separatists in the Tallgrass Prairie;;;;;;;;;;;;;x
+EVTNAME22140;Separatists in the Great Plains;;;;;;;;;;;;;x
+EVTNAME22150;Separatists in the High Plains;;;;;;;;;;;;;x
+EVTNAME22160;Separatists in the Central Prairie;;;;;;;;;;;;;x
+EVTNAME22170;Separatists in California;;;;;;;;;;;;;x
+EVTNAME22180;Separatists in Alaska;;;;;;;;;;;;;x
+EVTNAME22190;Separatists in Yucatan;;;;;;;;;;;;;x
+EVTNAME23000;Separatists in Haiti;;;;;;;;;;;;;x
+EVTNAME23010;Separatists in Cuba;;;;;;;;;;;;;x
+EVTNAME23020;Separatists in Jamaica;;;;;;;;;;;;;x
+EVTNAME23030;Separatists in Curacao;;;;;;;;;;;;;x
+EVTNAME23040;Separatists in Bahamas;;;;;;;;;;;;;x
+EVTNAME23050;Separatists in St. Martin;;;;;;;;;;;;;x
+EVTNAME23060;Separatists in St. Thomas;;;;;;;;;;;;;x
+EVTNAME24000;Separatists in Colombia;;;;;;;;;;;;;x
+EVTNAME24010;Separatists in Venezuela;;;;;;;;;;;;;x
+EVTNAME24020;Separatists in Guyana;;;;;;;;;;;;;x
+EVTNAME24030;Separatists in North Brazil;;;;;;;;;;;;;x
+EVTNAME24040;Separatists in South Brazil;;;;;;;;;;;;;x
+EVTNAME24050;Separatists in Paraguay;;;;;;;;;;;;;x
+EVTNAME24060;Separatists in Patagonia;;;;;;;;;;;;;x
+EVTNAME24070;Separatists in Chile;;;;;;;;;;;;;x
+EVTNAME24080;Separatists in North Andes;;;;;;;;;;;;;x
+EVTNAME24090;Separatists in South Andes;;;;;;;;;;;;;x
+EVTNAME25000;Spreading dissent.;;;;;;;;;;;;;x
+EVTDESC25000;Our struggle for independence has rallied our brethren in nearby settlements.;;;;;;;;;;;;;x
+EVTOPTA25000;Our cause is just.;;;;;;;;;;;;;x
+EVTNAME25001;Separatists in revolt;;;;;;;;;;;;;x
+EVTDESC25001;Our well-behaved colonies have been incited to rebellion by radical separatists.. We can maintain control by force if you think it's still worth all the trouble. If it's not we can relinquish control on the lands that the colonists claim as their own.;;;;;;;;;;;;;x
+EVTOPTA25001;We will hold onto what is ours.;;;;;;;;;;;;;x
+EVTOPTB25001;Let them go in peace.;;;;;;;;;;;;;x
+EVTNAME25004;Overthrowing our Oppressors;;;;;;;;;;;;;x
+EVTDESC25004;Our former rulers may have granted us some limited autonomy. This was a desperate act by an out of touch nation clinging to what remains of their colonial empire. It's time we set out on our own.;;;;;;;;;;;;;x
+EVTOPTA25004;Liberty or death!;;;;;;;;;;;;;x
+EVTNAME25005;Vassals Causing Trouble;;;;;;;;;;;;;x
+EVTDESC25005;Despite our exceedingly generous attitudes regarding the autonomy of our overseas dominions they are still complaining. The New World has turned them into ungrateful children apparantly. They  have vowed to continue this disruptive behavior until we release them from vassalage.;;;;;;;;;;;;;x
+EVTOPTA25005;Continue negotiations;;;;;;;;;;;;;x
+EVTOPTB25005;Let them go in peace;;;;;;;;;;;;;x
+independence_war;War for Independence;;;;;;;;;;;;;x
+desc_independence_war;We have declared ourselves free men and earned the wrath of a mighty empire.;;;;;;;;;;;;;x
+separatist_sentiment;Separatist Support;;;;;;;;;;;;;x
+desc_separatist_sentiment;Patriots abroad are struggling to overthrow their oppressors and join our nation.;;;;;;;;;;;;;x
+conquer_mexico_city_title;Conquer Mexico;;;;;;;;;;;;;x
+conquer_mexico_city_desc;We must secure our position in this new world. The region of Mexico is currently bringing great wealth to a power other than ourselves. We should claim it immediately.;;;;;;;;;;;;;x
+inca_nation_title;Form Incan Empire;;;;;;;;;;;;;x
+inca_nation_desc;With Cuzco under our control and the false kings removed we can now command loyalty over the four regions of the earth. $MONARCH$ may now ascend to the throne of Sapa Inca, the true child of the sun.;;;;;;;;;;;;;x
+inca_nation_horde_title;Form Incan Empire;;;;;;;;;;;;;x
+inca_nation_horde_desc;With Cuzco under our control and the false kings removed we can now command loyalty over the four regions of the earth. $MONARCH$ may now ascend to the throne of Sapa Inca, the true child of the sun.;;;;;;;;;;;;;x
+HAW;Hawaii;;;;;;;;;;;;;x
+HAW_ADJ;Hawaiian;;;;;;;;;;;;;x
+HAW_ADJ2;Hawaiian;;;;;;;;;;;;;x
+hawaiian;Hawaiian;;;;;;;;;;;;;x
+MDG;Madagascar;;;;;;;;;;;;;x
+MDG_ADJ;Malagasy;;;;;;;;;;;;;x
+MDG_ADJ2;Madagasque;;;;;;;;;;;;;x
+ORG;Orange;;;;;;;;;;;;;x
+ORG_ADJ;Boer;;;;;;;;;;;;;x
+ORG_ADJ2;South African;;;;;;;;;;;;;x
+boer;Boer;;;;;;;;;;;;;x
+TLS;Timor;;;;;;;;;;;;;x
+TLS_ADJ;Timorese;;;;;;;;;;;;;x
+TLS_ADJ2;Timorese;;;;;;;;;;;;;x
+colonial_culture;Colonialist;;;;;;;;;;;;;x
+colonial_culture_l;Mestizo;;;;;;;;;;;;;x
+colonial_culture_m;Ummat al-Mu'minin;;;;;;;;;;;;;x
+colonial_culture_c;Haiwài Huárén;;;;;;;;;;;;;x
+colonialist;Colonialist;;;;;;;;;;;;;x
+vinlander;Vinlander;;;;;;;;;;;;;x
+alaskan;Alaskan;;;;;;;;;;;;;x
+canadian;Canadian;;;;;;;;;;;;;x
+islander;Islander;;;;;;;;;;;;;x
+texian;Texian;;;;;;;;;;;;;x
+metis;Acadian;;;;;;;;;;;;;x
+haitian;Haitian;;;;;;;;;;;;;x
+mestizo;Mestizo;;;;;;;;;;;;;x
+andean;Andean;;;;;;;;;;;;;x
+s_andean;Peruvian;;;;;;;;;;;;;x
+chilean;Chilean;;;;;;;;;;;;;x
+brazilian;Brazilian;;;;;;;;;;;;;x
+mexican;Mexican;;;;;;;;;;;;;x
+argentine;Argentine;;;;;;;;;;;;;x
+cuban;Cuban;;;;;;;;;;;;;x
+ummah;Ummah;;;;;;;;;;;;;x
+mazulan;Mazulan;;;;;;;;;;;;;x
+muhajedzi;Muhajedzi;;;;;;;;;;;;;x
+tarrbitzi;Tarrbitzi;;;;;;;;;;;;;x
+alusali;Alusali;;;;;;;;;;;;;x
+asmunakali;Asmunakali;;;;;;;;;;;;;x
+faburi;Faburi;;;;;;;;;;;;;x
+jadlagribi;Jidligri;;;;;;;;;;;;;x
+floridian;Floridian;;;;;;;;;;;;;x
+barasi;Barasi;;;;;;;;;;;;;x
+cascadian;Cascadian;;;;;;;;;;;;;x
+tang;Tang;;;;;;;;;;;;;x
+maori;Maori;;;;;;;;;;;;;x
+VIN;Vinland;;;;;;;;;;;;;x
+VIN_ADJ;Vinlander;;;;;;;;;;;;;x
+VIN_ADJ2;Vinlandian;;;;;;;;;;;;;x
+TEX;Texas;;;;;;;;;;;;;x
+TEX_ADJ;Texian;;;;;;;;;;;;;x
+TEX_ADJ2;Texan;;;;;;;;;;;;;x
+FAB;Fabur;;;;;;;;;;;;;x
+FAB_ADJ;Faburi;;;;;;;;;;;;;x
+FAB_ADJ2;Faburi;;;;;;;;;;;;;x
+FLO;Florida;;;;;;;;;;;;;x
+FLO_ADJ;Floridian;;;;;;;;;;;;;x
+FLO_ADJ2;Floridian;;;;;;;;;;;;;x
+BYA;Barasya;;;;;;;;;;;;;x
+BYA_ADJ;Barasyan;;;;;;;;;;;;;x
+BYA_ADJ2;Barasi;;;;;;;;;;;;;x
+BLO;Blåland;;;;;;;;;;;;;x
+BLO_ADJ;Blålander;;;;;;;;;;;;;x
+BLO_ADJ2;Blålander;;;;;;;;;;;;;x
+MZU;Mazula;;;;;;;;;;;;;x
+MZU_ADJ;Mazulan;;;;;;;;;;;;;x
+MZU_ADJ2;Mazuli;;;;;;;;;;;;;x
+QTI;Qtizi;;;;;;;;;;;;;x
+QTI_ADJ;Qtizi;;;;;;;;;;;;;x
+QTI_ADJ2;Qtizian;;;;;;;;;;;;;x
+ALA;Alaska;;;;;;;;;;;;;x
+ALA_ADJ;Alaskan;;;;;;;;;;;;;x
+ALA_ADJ2;Alaskan;;;;;;;;;;;;;x
+CUB;Cuba;;;;;;;;;;;;;x
+CUB_ADJ;Cuban;;;;;;;;;;;;;x
+CUB_ADJ2;Cuban;;;;;;;;;;;;;x
+ANT;Antilles;;;;;;;;;;;;;x
+ANT_ADJ;Antillen;;;;;;;;;;;;;x
+ANT_ADJ2;Antillen;;;;;;;;;;;;;x
+JAM;Jamaica;;;;;;;;;;;;;x
+JAM_ADJ;Jamaican;;;;;;;;;;;;;x
+JAM_ADJ2;Jamaican;;;;;;;;;;;;;x
+TAR;Tarrbitz;;;;;;;;;;;;;x
+TAR_ADJ;Tarrbitzi;;;;;;;;;;;;;x
+TAR_ADJ2;Tarrbitzi;;;;;;;;;;;;;x
+GYA;Guyana;;;;;;;;;;;;;x
+GYA_ADJ;Guyanese;;;;;;;;;;;;;x
+GYA_ADJ2;Guyanese;;;;;;;;;;;;;x
+SUR;Suriname;;;;;;;;;;;;;x
+SUR_ADJ;Surinamese;;;;;;;;;;;;;x
+SUR_ADJ2;Surinamese;;;;;;;;;;;;;x
+MUH;Muhajedz;;;;;;;;;;;;;x
+MUH_ADJ;Muhajedzi;;;;;;;;;;;;;x
+MUH_ADJ2;Muhajedzi;;;;;;;;;;;;;x
+ALU;Alusal;;;;;;;;;;;;;x
+ALU_ADJ;Alusali;;;;;;;;;;;;;x
+ALU_ADJ2;Alusali;;;;;;;;;;;;;x
+ASM;Asmunakal;;;;;;;;;;;;;x
+ASM_ADJ;Asmunakali;;;;;;;;;;;;;x
+ASM_ADJ2;Asmunakali;;;;;;;;;;;;;x
+JAD;Jidligrib;;;;;;;;;;;;;x
+JAD_ADJ;Jidligribi;;;;;;;;;;;;;x
+JAD_ADJ2;Jidligrib;;;;;;;;;;;;;x
+CSC;Cascadia;;;;;;;;;;;;;x
+CSC_ADJ;Cascadian;;;;;;;;;;;;;x
+CSC_ADJ2;Cascadian;;;;;;;;;;;;;x
+YNG;Jin Shan;;;;;;;;;;;;;x
+YNG_ADJ;Jin Shan;;;;;;;;;;;;;x
+YNG_ADJ2;Yingzhoue;;;;;;;;;;;;;x
+INU;Inuit;;;;;;;;;;;;;x
+INU_ADJ;Inuit;;;;;;;;;;;;;x
+INU_ADJ2;Inuit;;;;;;;;;;;;;x
+NVJ;Navajo;;;;;;;;;;;;;x
+NVJ_ADJ;Navajoan;;;;;;;;;;;;;x
+NVJ_ADJ2;Navajo;;;;;;;;;;;;;x
+PUE;Pueblo;;;;;;;;;;;;;x
+PUE_ADJ;Puebloan;;;;;;;;;;;;;x
+PUE_ADJ2;Pueblo;;;;;;;;;;;;;x
+SIX;Sioux;;;;;;;;;;;;;x
+SIX_ADJ;Siouan;;;;;;;;;;;;;x
+SIX_ADJ2;Sioux;;;;;;;;;;;;;x
+AOT;Aotearoa;;;;;;;;;;;;;x
+AOT_ADJ;Aotearoan;;;;;;;;;;;;;x
+AOT_ADJ2;Maori;;;;;;;;;;;;;x
+ANI;Anishinaabe;;;;;;;;;;;;;x
+ANI_ADJ;Anishinaabe;;;;;;;;;;;;;x
+ANI_ADJ2;Ojibwe;;;;;;;;;;;;;x
+MEO;Menominee;;;;;;;;;;;;;x
+MEO_ADJ;Menominee;;;;;;;;;;;;;x
+MEO_ADJ2;Menominee;;;;;;;;;;;;;x
+menominee;Menominee;;;;;;;;;;;;;x
+LEN;Lenape;;;;;;;;;;;;;x
+LEN_ADJ;Lenape;;;;;;;;;;;;;x
+LEN_ADJ2;Munsee;;;;;;;;;;;;;x
+AYM;Aymara;;;;;;;;;;;;;x
+AYM_ADJ;Aymaran;;;;;;;;;;;;;x
+AYM_ADJ2;Aymara;;;;;;;;;;;;;x
+WAN;Wanka;;;;;;;;;;;;;x
+WAN_ADJ;Wankan;;;;;;;;;;;;;x
+WAN_ADJ2;Wanka;;;;;;;;;;;;;x
+wanka;Wanka;;;;;;;;;;;;;x

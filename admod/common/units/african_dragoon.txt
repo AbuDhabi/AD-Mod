@@ -1,0 +1,12 @@
+# African Dragoon
+# land 21
+unit_type = sub_saharan
+type = cavalry
+
+maneuver = 2
+offensive_morale = 6
+defensive_morale = 5
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 6
+defensive_shock = 4

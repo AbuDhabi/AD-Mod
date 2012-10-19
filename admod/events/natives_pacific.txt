@@ -1,0 +1,453 @@
+#events 21000-21009
+#####################################
+# Taiwan to Cantonese
+#####################################
+province_event = {
+
+	id = 21000
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		province_id = 738	# Taiwan
+		NOT = { culture_group = east_asian }
+		NOT = { culture_group = japan_group }
+		NOT = { culture_group = malay }
+		NOT = { culture_group = pacific }
+		citysize = 1200
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = chi_min
+		citysize = 1500
+	}
+}
+
+#####################################
+# Sulawesi
+#####################################
+province_event = {
+
+	id = 21001
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 624	# Banten
+			province_id = 625	# Priangan
+			province_id = 629	# Demak
+			province_id = 630	# Sunda
+			province_id = 632	# Sumbawa
+			province_id = 634	# Sumba
+			province_id = 642	# Bone
+			province_id = 643	# Pose
+			province_id = 644	# Menade
+		}
+		AND = {
+			NOT = { culture_group = malay }
+			NOT = { culture_group = pacific }
+		}
+		citysize = 1200
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = sulawesi
+		citysize = 500
+	}
+}
+
+#####################################
+# Filipino
+#####################################
+province_event = {
+
+	id = 21002
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 651	# Sulu
+			province_id = 652	# Maguindanao
+			province_id = 653	# Tagoloan
+			province_id = 654	# Visayas
+			province_id = 655	# Palawan
+			province_id = 656	# Manila
+			province_id = 657	# Samtoy
+			province_id = 658	# Cagayan
+		}
+		AND = {
+			NOT = { culture_group = malay }
+			NOT = { culture_group = pacific }
+		}
+		citysize = 1200
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = filipino
+		citysize = 500
+	}
+}
+
+#####################################
+# Papuan
+#####################################
+province_event = {
+
+	id = 21003
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 633	# Flores
+			province_id = 645	# Buru
+			province_id = 646	# Ambom
+			province_id = 647	# Ceram
+			province_id = 648	# Halmahera
+			province_id = 649	# Ternate
+			province_id = 650	# Tidore
+			province_id = 1236	# Rabaul
+			province_id = 1237	# Papua
+			province_id = 1235	# Guam
+			province_id = 1245	# Irian
+		}
+		AND = {
+			NOT = { culture_group = malay }
+			NOT = { culture_group = pacific }
+		}
+		citysize = 1200
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = papuan
+		citysize = 500
+	}
+}
+
+#####################################
+# Polynesian
+#####################################
+province_event = {
+
+	id = 21004
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+
+	trigger = {
+		OR = {
+			province_id = 1238	# Solomon Islands
+			province_id = 1239	# Vanuatu
+			province_id = 1241	# Kiribati
+			province_id = 1242	# Fiji
+			province_id = 1243	# Samoa
+			province_id = 1244	# Tahiti
+		}
+		AND = {
+			NOT = { culture_group = malay }
+			NOT = { culture_group = pacific }
+		}
+		citysize = 1200
+		NOT = { citysize = 200000 }
+		NOT = { has_national_focus = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			owner = { idea = bill_of_rights }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { idea = liberty_egalite_fraternity }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		culture = polynesian
+		citysize = 500
+	}
+}
+
+#####################################
+# Hawaii w/ Core
+#####################################
+country_event = {
+
+	id = 21005
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21005"
+
+	trigger = {
+		1240 = { 
+			owned_by = THIS
+			NOT = { culture_group = pacific }
+			citysize = 1010
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21000"
+		1240 = {
+			culture = hawaiian
+			citysize = 1500
+		}
+		HAW = {
+			add_core = 1240		# Hawaii
+		}
+	}
+}
+
+#####################################
+# Timor w/ Core
+#####################################
+country_event = {
+
+	id = 21006
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21006"
+
+	trigger = {
+		635 = { 
+			owned_by = THIS
+			NOT = { culture_group = pacific }
+			citysize = 1010
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}		
+
+	option = {
+		name = "EVTOPTA21000"
+		635 = {
+			culture = papuan
+			citysize = 1500
+		}
+		TLS = {
+			add_core = 635		# Timor
+		}
+	}
+}
+
+#####################################
+# Aotearoa w/ Core
+#####################################
+country_event = {
+
+	id = 21007
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21007"
+
+	trigger = {
+		1106 = {	# Whangarei
+			owned_by = THIS
+			NOT = { culture_group = pacific }
+			NOT = { culture_group = malay }
+			citysize = 1010
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}		
+
+	option = {
+		name = "EVTOPTA21000"
+		1106 = {
+			culture = maori
+			citysize = 500
+		}
+		AOT = {
+			add_core = 1106
+		}
+	}
+}
+country_event = {
+
+	id = 21008
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21007"
+
+	trigger = {
+		1107 = {	# Taraniki
+			owned_by = THIS
+			NOT = { culture_group = pacific }
+			NOT = { culture_group = malay }
+			citysize = 1010
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}		
+
+	option = {
+		name = "EVTOPTA21000"
+		1107 = {
+			culture = maori
+			citysize = 500
+		}
+		AOT = {
+			add_core = 1107
+		}
+	}
+}
+country_event = {
+
+	id = 21009
+
+	title = "EVTNAME21000"
+	desc = "EVTDESC21007"
+
+	trigger = {
+		1108 = {	# Wairoa
+			owned_by = THIS
+			NOT = { culture_group = pacific }
+			NOT = { culture_group = malay }
+			citysize = 1010
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 0.80
+			idea = bill_of_rights
+		}
+		modifier = {
+			factor = 0.80
+			idea = liberty_egalite_fraternity
+		}
+	}		
+
+	option = {
+		name = "EVTOPTA21000"
+		1108 = {
+			culture = maori
+			citysize = 500
+		}
+		AOT = {
+			add_core = 1108
+		}
+	}
+}

@@ -1,0 +1,19 @@
+#1837 - Etchu
+
+owner = TAI
+controller = TAI
+culture = emishi
+religion = shinto
+capital = "Etchu"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 5250
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1488.1.1 = { revolt = { type = ikko_ikkis size = 3 } controller = REB }
+1564.1.1 = { revolt = {} controller = TAI }
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }

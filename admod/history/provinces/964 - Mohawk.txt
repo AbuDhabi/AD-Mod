@@ -1,0 +1,42 @@
+#964 - Mohawk
+
+owner = IRO
+controller = IRO
+culture = iroquis
+religion = spiritualism
+capital = "Mohawk"
+trade_goods = fur
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 1000
+add_core = IRO
+discovered_by = IRO
+discovered_by = HUR
+discovered_by = LEN
+
+1450.1.1  = { citysize = 1400 }
+1500.1.1  = { citysize = 1654 }
+1550.1.1  = { citysize = 2340 }
+1600.1.1  = { citysize = 3400 }
+1615.1.1  = { discovered_by = FRA } # Samuel de Champlain
+1734.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+	   	religion = catholic
+	    } # Construction of Fort St. Frédérick
+1750.1.1  = { citysize = 4200 add_core = CAN }
+1759.1.1  = { add_core = FRA }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+		remove_core = FRA
+	    } # Treaty of Paris, ceded to Britain  & France gave up its claim
+1763.10.7 = { add_core = QUE remove_core = CAN } # Royal Proclamation, the province is renamed
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+	    }
+1791.1.1  = { add_core = CAN remove_core = QUE } # The Constitutional Act, Quebec is split into upper & lower Canada
+1800.1.1  = { citysize = 5690 }

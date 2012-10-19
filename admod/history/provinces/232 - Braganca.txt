@@ -1,0 +1,45 @@
+#232 - Bragança
+
+owner = POR
+controller = POR
+culture = portugese
+religion = catholic
+capital = "Bragança"
+trade_goods = wine
+hre = no
+base_tax = 6
+manpower = 2
+citysize = 5500
+add_core = POR
+fort1 = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = POR
+		controller = POR
+		citysize = 5500 }
+
+1450.1.1  = { citysize = 6800 }
+1500.1.1  = { citysize = 7500 }
+1550.1.1  = { constable = yes }
+1580.8.25 = { controller = SPA }
+1580.8.26 = { controller = POR }
+1600.1.1  = { citysize = 10000 }
+1640.1.1  = { revolt_risk = 8 } # Portugal revolt headed by John of Bragança
+1640.12.1 = { revolt_risk = 0 } # Portugal regained its independence & colonial possessions
+1650.1.1  = { citysize = 11780 marketplace = yes }
+1700.1.1  = { citysize = 12900 }
+1750.1.1  = { citysize = 14005 }
+1800.1.1  = { citysize = 15670 }
+1809.3.29 = { controller = RFR } # Occupied by France
+1809.5.12 = { controller = POR }
+1810.9.26 = { controller = RFR } # Wellington retreats into Lines of Torres Vedras fortification and Masséna can't enter Lisboa due to the scorched earth policy
+1811.1.1  = { controller = POR } # The Napoleonic army retreats from Portugal

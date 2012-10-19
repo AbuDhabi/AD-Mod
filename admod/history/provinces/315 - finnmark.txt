@@ -1,0 +1,60 @@
+#315 - Finnmark
+
+owner = NOR
+controller = NOR
+culture = sapmi
+religion = catholic
+hre = no
+base_tax = 1
+manpower = 1
+trade_goods = fish
+capital = "Vardø"
+citysize = 500
+fort1 = yes
+add_core = NOR
+discovered_by = eastern
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = SAM
+		controller = SAM
+		add_core = SAM
+		religion = shamanism
+		citysize = 1500 }
+
+#Nevermind
+1399.10.12 = {	owner = NOR
+		controller = NOR
+		remove_core = SAM
+		religion = catholic
+		citysize = 500 }
+
+#Shattered Europe
+1399.10.13 = {	owner = SAM
+		controller = SAM
+		add_core = SAM
+		citysize = 2500
+		religion = shamanism }
+
+#Historical Setup
+1399.10.14 = {	owner = NOR
+		controller = NOR
+		remove_core = SAM
+		citysize = 500
+		religion = catholic }
+
+1450.1.1  = { citysize = 600 culture = norwegian }
+1500.1.1  = { fort2 = yes citysize = 770 } # Østervågen
+1536.1.1  = { religion = protestant owner = DAN controller = DAN add_core = DAN }
+1550.1.1  = { citysize = 890 }
+1600.1.1  = { citysize = 910 }
+1650.1.1  = { citysize = 1020 }
+1700.1.1  = { citysize = 1400 }
+1750.1.1  = { citysize = 1600 }
+1800.1.1  = { citysize = 1800 }
+1814.1.14 = {	owner = SWE
+		revolt = { type = nationalist_rebels size = 0 }
+		controller = REB
+		remove_core = DAN
+	    } # Norway is ceded to Sweden following the Treaty of Kiel
+1814.5.17 = { revolt = {} owner = NOR controller = NOR } # Norway declares itself independent and elects Christian Frederik as king

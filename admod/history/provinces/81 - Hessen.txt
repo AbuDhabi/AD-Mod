@@ -1,0 +1,52 @@
+owner = HES
+controller = HES
+add_core = HES
+capital = "Frankfurt"
+trade_goods = wool
+fort1 = yes
+culture = hessian
+religion = catholic
+base_tax = 12
+manpower = 2
+citysize = 12000
+marketplace = yes
+courthouse  = yes
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = HES
+		controller = HES
+		citysize = 12000 }
+
+1450.1.1   = { citysize = 14000 }
+1500.1.1   = { fort2 = yes citysize = 16000 temple = yes }
+1536.1.1   = { religion = protestant }
+1550.1.1   = { citysize = 18000 regimental_camp = yes }
+1555.1.1   = { base_tax = 14 } # Full minting rights granted by the Emperor
+1620.1.1   = { regimental_camp = yes constable = yes }
+1585.1.1   = { workshop = yes citysize = 22000 base_tax = 16} # Stock Exchange established in Frankfurt
+1620.1.1   = { regimental_camp = yes constable = yes citysize = 24000 fort3 = yes }
+1650.1.1   = { citysize = 25000 }
+1685.1.1   = { citysize = 26000 tax_assessor = yes } #customs_house = yes Reformed refugees find shelter in Kassel (-> Oberneustadt founded)
+1720.1.1   = { citysize = 36000 fort4 = yes }
+1800.1.1   = { citysize = 37000 }
+1807.7.9   = {	owner = WES
+		controller = WES
+		add_core = WES
+		fort3 = yes
+	     } # The Second Treaty of Tilsit, the kingdom of Westfalia
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1813.9.1   = { controller = RUS } # Occupied by Russian troops
+1813.10.14 = {	owner = HES
+		controller = HES
+		remove_core = WES
+	     } # Westfalia is dissolved after the Battle of Leipsig

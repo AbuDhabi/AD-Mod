@@ -1,0 +1,310 @@
+# Cultural Assimilation
+
+province_event = {
+	id = 7200
+
+	trigger = {
+		is_core = THIS
+		NOT = { revolt_risk = 1 }
+		has_owner_religion = yes
+		has_owner_culture = no
+		
+		OR = {
+			#is_capital = yes
+			#AND = {
+			#	cot = yes
+			#	placed_merchants = 5
+			#}
+			any_neighbor_province = {
+				owned_by = THIS
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 3000
+
+		# Exception: Greeks vs Turks in Asia Minor
+		modifier = {
+			factor = 0.10
+			region = turkey
+			OR = {
+				culture_group = turko_semitic
+				culture_group = byzantine
+			}
+			OR = {
+				owner = {	culture_group = turko_semitic }
+				owner = {	culture_group = byzantine }
+			}
+		}
+		
+		# Exception: Slavic vs Tartar
+		modifier = {
+			factor = 0.10
+			OR = {
+				culture = khazak
+				culture = kirgiz
+				culture = siberian
+				culture = tartar
+			}
+			OR = {
+				owner = {	culture_group = east_slavic }
+				owner = {	culture_group = west_slavic }
+				owner = {	culture_group = baltic }
+			}
+			OR = {
+				region = russian_region
+				region = western_siberia
+			}
+		}
+		
+		# Exception: Prussian culture in Northern Germany
+		modifier = {
+			factor = 0.05
+			OR = {
+				culture = saxon
+				culture = pommeranian
+			}
+			owner = {	primary_culture = prussian }
+		}
+		
+		# Exception: New Burgundian replaces old Burgundian
+		modifier = {
+			factor = 0.03
+			OR = {
+				culture = burgundian
+			}
+			owner = {	primary_culture = burgundian_l }
+		}
+		
+		# Exception: Assimilating Native Americans
+		modifier = {
+			factor = 0.25
+			NOT = { owner = { religion_group = american_religion } }
+			OR = {
+				culture_group = central_american
+				culture_group = south_american
+				culture_group = north_american
+			}
+		}
+
+		# Exception: Colonial Nations
+		modifier = {
+			factor = 0.1
+			owner = { is_colonial = yes }
+			NOT = { culture_group = colonial_culture }
+			NOT = { culture_group = colonial_culture_l }
+			NOT = { culture_group = colonial_culture_m }
+			NOT = { culture_group = colonial_culture_c }
+			is_overseas = no
+		}
+
+		# Exception: Non Colonial Nations
+		modifier = {
+			factor = 2.0
+			owner = { is_colonial = no }
+			OR = {
+				culture_group = colonial_culture
+				culture_group = colonial_culture_l
+				culture_group = colonial_culture_m
+				culture_group = colonial_culture_c
+			}
+		}
+
+		# Exception: Moorish/Christian cultures
+		modifier = {
+			factor = 0.1
+			region = iberian_peninsula
+			OR = {
+				culture = castillian
+				culture = sevillano
+			}
+			OR = {
+				owner = { primary_culture = castillian }
+				owner = { primary_culture = sevillano }
+			}
+		}
+		modifier = {
+			factor = 0.1
+			region = iberian_peninsula
+			OR = {
+				culture = catalan
+				culture = zaragozi
+			}
+			OR = {
+				owner = { primary_culture = catalan }
+				owner = { primary_culture = zaragozi }
+			}
+		}
+		modifier = {
+			factor = 0.1
+			region = iberian_peninsula
+			OR = {
+				culture = portugese
+				culture = badajozi
+			}
+			OR = {
+				owner = { primary_culture = portugese }
+				owner = { primary_culture = badajozi }
+			}
+		}
+
+		# Exception: Crusaders vs Al Misr Arabic
+		modifier = {
+			factor = 0.15
+			OR = {
+				culture_group = crusader_group
+				culture = al_misr_arabic
+			}
+			OR = {
+				owner = {	culture_group = crusader_group }
+				owner = {	primary_culture = al_misr_arabic }
+			}
+		}
+
+		# Exception: Israelite vs Al Suryah Arabic
+		modifier = {
+			factor = 0.15
+			OR = {
+				culture = israelite
+				culture = al_suryah_arabic
+			}
+			OR = {
+				owner = {	primary_culture = israelite }
+				owner = {	primary_culture = al_suryah_arabic }
+			}
+		}
+
+		# Exception: East Asian cultures are stubborn
+		modifier = {
+			factor = 4.0
+			OR = {
+				culture_group = east_asian
+				culture_group = japan_group
+			}
+		}
+
+		# Exception: Britannia converts the Isles
+		modifier = {
+			factor = 0.7
+			owner = { tag = BRT }
+			region = { british_isles }
+		}
+
+		modifier = {
+			factor = 0.7
+			has_national_focus = yes
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				culture_group = THIS
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.8
+			idea = church_attendance_duty
+		}
+		modifier = {
+			factor = 0.9
+			idea = divine_supremacy
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = { serfdom_freesubjects = -1 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = {
+				serfdom_freesubjects = 2
+			}
+		}
+		modifier = {
+			factor = 1.1
+			is_capital = no
+			citysize = 10000
+		}
+		modifier = {
+			factor = 1.1
+			is_capital = no
+			citysize = 25000
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = no
+			citysize = 50000
+		}
+		modifier = {
+			factor = 2.0
+			is_capital = no
+			citysize = 100000
+		}
+		modifier = {
+			factor = 0.001
+			has_province_modifier = russian_migration
+		}
+	}
+
+	title = "EVTNAME7200"
+	desc = "EVTDESC7200"
+
+	option = {
+		name = "EVTOPTA7200"
+		culture = THIS
+		remove_province_modifier = settlement_policy
+	}
+}
+
+#Settlement Policy
+province_event = {
+	id = 9461
+	trigger = {
+		has_province_modifier = settlement_policy
+	}
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			has_national_focus = yes
+		}
+		modifier = {
+			factor = 0.9
+			owner = { culture_group = THIS }
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = { has_owner_culture = yes }
+		}
+	}
+	title = "EVTNAME9461"
+	desc = "EVTDESC9461"
+	
+	option = {
+		name = "EVTOPTA9461"
+		remove_province_modifier = settlement_policy
+		culture = THIS
+	}
+}

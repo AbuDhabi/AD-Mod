@@ -1,0 +1,12 @@
+# Great Plains Dragoon
+# land 43
+unit_type = new_world
+type = cavalry
+
+maneuver = 2
+offensive_morale = 10
+defensive_morale = 8
+offensive_fire = 6
+defensive_fire = 4
+offensive_shock = 8
+defensive_shock = 7

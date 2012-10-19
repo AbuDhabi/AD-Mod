@@ -1,0 +1,66 @@
+#233 - Cornwall
+
+owner = ENG
+controller = ENG
+culture = welsh
+religion = catholic
+hre = no
+base_tax = 7
+trade_goods = copper
+manpower = 3
+capital = "Exeter"
+citysize = 6000
+add_core = ENG
+add_core = CRN
+fort1 = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = ENG
+		controller = ENG
+		citysize = 6000 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = CRN
+		controller = CRN
+		remove_core = ENG
+		religion = druidism }
+
+#Historical Campaign
+1399.10.14 = {	owner = ENG
+		controller = ENG
+		add_core = ENG
+		religion = catholic }
+
+1450.1.1  = { citysize = 7500 }
+1453.1.1  = { revolt_risk = 5 } # Start of the War of the Roses
+1461.6.1  = { revolt_risk = 2 } # Coronation of Edward IV
+1467.1.1  = { revolt_risk = 5 } # Rivalry between Edward IV & Warwick
+1470.9.1  = { revolt = { type = revolutionary_rebels size = 2 } controller = REB }
+1470.10.6 = { revolt = {} controller = ENG } # Readeption of Henry VI
+1471.1.1  = { revolt_risk = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { revolt_risk = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { revolt_risk = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { revolt_risk = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1550.1.1  = { citysize = 8000 }
+1575.1.1  = { religion = protestant }
+1600.1.1  = { citysize = 9000 religion = reformed fort2 = yes }
+1650.1.1  = { citysize = 10000 marketplace = yes } # Marketplace Estimated
+1675.1.1  = { customs_house = yes } # Estimated
+1690.1.1  = { shipyard = yes } # Plymouth Dockyard
+1700.1.1  = { citysize = 14000 }
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+		remove_core = ENG
+	    } 
+1750.1.1  = { citysize = 16000 capital = "Plymouth" }
+1800.1.1  = { citysize = 40000 }

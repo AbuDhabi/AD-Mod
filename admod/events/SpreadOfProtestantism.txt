@@ -1,0 +1,467 @@
+province_event = {
+
+	id = 2002
+
+	trigger = {
+		is_religion_enabled = protestant
+		religion = catholic
+		NOT = { religion_years = { protestant = 100 } }
+		NOT = { year = 1700 }
+		NOT = { 
+			province_id = 118 # Rome
+			owner = { government = papal_government } 
+		}
+	}
+	mean_time_to_happen = {
+		months = 800
+
+		# Positive modifiers
+		modifier = {
+			factor = 0.3
+			NOT = { religion_years = { protestant = 12 } }
+			OR = {
+				owner = { has_country_flag = "protestant_reformation" }
+				any_neighbor_province = {
+					owner = { has_country_flag = "protestant_reformation" }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				religion = protestant
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				religion = protestant
+				culture_group = THIS
+			}
+		}
+		
+		modifier = {
+			factor = 0.65
+			NOT = { religion_years = { protestant = 6 } }
+		}
+		modifier = {
+			factor = 0.70
+			NOT = { religion_years = { protestant = 12 } }
+		}
+		
+		modifier = {
+			factor = 0.70
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 0.75
+			owner = { protestant = 0 } # Tolerance to protestants
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				idea = deus_vult
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = { religion_years = { protestant = 20 } }
+			owner = { 
+				religion = protestant
+			}
+			any_neighbor_province = {
+				religion = protestant
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			NOT = { religion_years = { protestant = 40 } }
+			owner = { 
+				religion = protestant
+			}
+			any_neighbor_province = {
+				religion = protestant
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				defender_of_faith = yes
+			}
+		}
+		
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -2 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -4 }
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 4
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_global_flag = pog_scenario
+		}
+		
+		# Negative modifiers
+		modifier = {
+			factor = 1.1
+			owner = {
+				NOT = { serfdom_freesubjects = -2 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				NOT = { serfdom_freesubjects = -4 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				innovative_narrowminded = 2
+			}
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				innovative_narrowminded = 4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { protestant = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			religion_years = { protestant = 30 }
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { protestant = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { protestant = 50 }
+		}
+		modifier = {
+			factor = 2.0
+			religion_years = { protestant = 60 }
+		}
+		modifier = {
+			factor = 4
+			religion_years = { protestant = 80 }
+		}
+		
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = divine_supremacy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				defender_of_faith = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { 
+				NOT = { religion = protestant }
+				government = theocratic_government 
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { owner = { religion_group = christian } }
+		}
+		modifier = {
+			factor = 4.0
+			owner = { government = papal_government }
+		}
+		modifier = {
+			factor = 4.0
+			owner = { religion = reformed }
+		}
+		modifier = {
+			factor = 4.0
+			is_overseas = yes
+		}
+		modifier = {
+			factor = 6.0
+			owner = { 
+				religion = catholic
+			}
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		modifier = {
+			factor = 6.0
+			owner = { has_country_modifier = counter_reformation }
+		}
+		
+	}
+
+	title = "EVTNAME2002"
+	desc = "EVTDESC2002"
+
+	option = {
+		name = "EVTOPTA2002"
+		religion = protestant
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+
+province_event = {
+	id = 2003
+
+	trigger = {
+		is_religion_enabled = protestant
+		religion = orthodox
+		NOT = { religion_years = { protestant = 100 } }
+		NOT = { year = 1700 }
+		any_neighbor_province = {
+			religion = protestant
+		}
+	}
+	mean_time_to_happen = {
+		months = 1200
+
+		# Positive modifiers
+		modifier = {
+			factor = 0.2
+			NOT = { religion_years = { protestant = 12 } }
+			OR = {
+				owner = { has_country_flag = "protestant_reformation" }
+				any_neighbor_province = {
+					owner = { has_country_flag = "protestant_reformation" }
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.55
+			NOT = { religion_years = { protestant = 5 } }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { religion_years = { protestant = 10 } }
+		}
+		modifier = {
+			factor = 0.70
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 0.75
+			owner = { protestant = 0 } # Tolerance to protestants
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = protestant
+				defender_of_faith = yes
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -2 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -4 }
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 4
+			}
+		}
+		
+		# Negative modifiers
+		modifier = {
+			factor = 1.1
+			owner = {
+				NOT = { serfdom_freesubjects = -2 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				NOT = { serfdom_freesubjects = -4 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				innovative_narrowminded = 2
+			}
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				innovative_narrowminded = 4
+			}
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { protestant = 20 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { protestant = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { protestant = 40 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { protestant = 50 }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { protestant = 60 }
+		}
+		modifier = {
+			factor = 4
+			religion_years = { protestant = 80 }
+		}
+		
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = divine_supremacy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = protestant }
+				defender_of_faith = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { 
+				NOT = { religion = protestant }
+				government = theocratic_government 
+			}
+		}
+		modifier = {
+			factor = 4.0
+			owner = { religion = reformed }
+		}
+		modifier = {
+			factor = 6.0
+			owner = { has_country_modifier = counter_reformation }
+		}
+	}
+
+	title = "EVTNAME2002"
+	desc = "EVTDESC2002"
+
+	option = {
+		name = "EVTOPTA2002"
+		religion = protestant
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}

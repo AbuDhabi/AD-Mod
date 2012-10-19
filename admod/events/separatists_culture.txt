@@ -1,0 +1,692 @@
+#events 20500-20599
+#################################################
+# Persistent colonial culture
+#################################################
+
+province_event = {
+
+	id = 20500
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = SUR
+		NOT = { culture = colonialist }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = colonialist
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20501
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		OR = {
+			is_core = VIN
+			is_core = BLO
+		}
+		NOT = { culture = vinlander }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = vinlander
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20502
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		OR = {
+			is_core = ANT
+			is_core = JAM
+		}
+		NOT = { culture = islander }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = islander
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20503
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = CAN
+		NOT = { culture = canadian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = canadian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20504
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = USA
+		NOT = { culture = american }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = american
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20505
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = TEX
+		NOT = { culture = texian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = texian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20506
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		OR = {
+			is_core = LOU
+			is_core = QUE
+			is_core = GYA
+		}
+		NOT = { culture = metis }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = metis
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20507
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = HAT
+		NOT = { culture = haitian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = haitian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20508
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = CAM
+		NOT = { culture = mestizo }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = mestizo
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20509
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		OR = {
+			is_core = VNZ
+			is_core = COL
+		}
+		NOT = { culture = andean }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = andean
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20510
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = PEU
+		NOT = { culture = s_andean }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = s_andean
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20511
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = MEX
+		NOT = { culture = mexican }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = mexican
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20512
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = BRZ
+		NOT = { culture = brazilian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = brazilian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20513
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		OR = {
+			is_core = PRG
+			is_core = LAP
+		}
+		NOT = { culture = argentine }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = argentine
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20514
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = CUB
+		NOT = { culture = cuban }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = cuban
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20515
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = QTI
+		NOT = { culture = ummah }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = ummah
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20516
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = MZU
+		NOT = { culture = mazulan }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = mazulan
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20517
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = MUH
+		NOT = { culture = muhajedzi }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = muhajedzi
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20518
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = TAR
+		NOT = { culture = tarrbitzi }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = tarrbitzi
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20519
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = ALU
+		NOT = { culture = alusali }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = alusali
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20520
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = ASM
+		NOT = { culture = asmunakali }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = asmunakali
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20521
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = JAD
+		NOT = { culture = jadlagribi }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = jadlagribi
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20522
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = ALA
+		NOT = { culture = alaskan }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = alaskan
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20523
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = CSC
+		NOT = { culture = cascadian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = cascadian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20524
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = YNG
+		NOT = { culture = tang }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = tang
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20525
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = BYA
+		NOT = { culture = barasi }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = barasi
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20526
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = FLO
+		NOT = { culture = floridian }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = floridian
+		citysize = 750
+	}
+}
+
+province_event = {
+
+	id = 20527
+
+	title = "EVTNAME20500"
+	desc = "EVTDESC20500"
+
+	trigger = {
+		is_core = CHL
+		NOT = { culture = chilean }
+		owner = { is_colonial = no }
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = "EVTOPTA20500"
+		culture = chilean
+		citysize = 750
+	}
+}

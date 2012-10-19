@@ -1,0 +1,57 @@
+#230 - Algarve
+
+owner = POR
+controller = POR
+culture = portugese
+religion = catholic
+capital = "Faro"
+trade_goods = fish
+hre = no
+base_tax = 7
+manpower = 4
+citysize = 3500 
+add_core = POR
+fort1 = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = POR
+		controller = POR
+		citysize = 3500 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = BDJ
+		controller = BDJ
+		add_core = BDJ
+		remove_core = POR
+		religion = sunni
+		culture = badajozi }
+
+#Historical Campaign
+1399.10.14 = {	owner = POR
+		controller = POR
+		add_core = POR
+		remove_core = BDJ
+		religion = catholic
+		culture = portugese }
+
+1450.1.1   = { citysize = 4500 }
+1500.1.1   = { citysize = 5477 }
+1550.1.1   = { citysize = 6000 }
+1600.1.1   = { citysize = 6850 marketplace = yes }
+1640.1.1   = { revolt_risk = 8 } # Revolt headed by John of Bragança
+1640.12.1  = { revolt_risk = 0 }
+1650.1.1   = { citysize = 7900 }
+1700.1.1   = { citysize = 7000 }
+1750.1.1   = { citysize = 8100 }
+1800.1.1   = { citysize = 9440 }
+1807.11.30 = { controller = SPA } # Occupied by Spanish troops led by Manuel Godoy
+1808.6.18  = { controller = POR } # Revolt in Olhão

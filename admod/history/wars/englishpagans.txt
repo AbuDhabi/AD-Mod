@@ -1,0 +1,18 @@
+name = "Y Gododdin"
+casus_belli = cb_crusade
+
+1390.1.1 = {
+	add_attacker = ENG
+	add_attacker = SCO
+	add_defender = WLS
+	add_defender = CRN
+	add_defender = NOL
+}
+
+1397.1.1 = {
+	rem_attacker = ENG
+	rem_attacker = SCO
+	rem_defender = WLS
+	rem_defender = CRN
+	rem_defender = NOL
+}

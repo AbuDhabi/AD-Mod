@@ -1,0 +1,28 @@
+#1023 - Echizen
+
+owner = TAI
+controller = TAI
+culture = yamato
+religion = shinto
+capital = "Takaoka"
+trade_goods = chinaware
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 11050
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 12700 }
+1488.1.1 = { revolt = { type = ikko_ikkis controller = REB } }# Ikko-ikki rebellion, eventually controlling a larger area of central Japan
+1500.1.1 = { citysize = 13148 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 14333 }
+1582.1.1 = { owner = MIN add_core = MIN }
+1588.1.1 = { controller = MIN } # Oda Nobunaga brings an end to the Ikko Ikki sect
+1600.1.1 = { citysize = 15678 }
+1650.1.1 = { citysize = 17543 }
+1700.1.1 = { citysize = 18150 }
+1750.1.1 = { citysize = 19877 }
+1800.1.1 = { citysize = 22140 }

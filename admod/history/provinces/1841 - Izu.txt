@@ -1,0 +1,17 @@
+#1841 - Izu
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Izu"
+trade_goods = fish
+hre = no
+base_tax = 5
+manpower = 2
+citysize = 10450
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1592.1.1 = { owner = MIN controller = MIN add_core = MIN }

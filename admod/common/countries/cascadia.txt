@@ -1,0 +1,151 @@
+graphical_culture = latingfx
+
+is_colonial = yes
+
+color = { 82  212  163 }
+
+historical_ideas = {
+	national_conscripts
+	merchant_adventures
+	shrewd_commerce_practise
+	national_trade_policy
+	military_drill
+	humanist_tolerance
+	superior_seamanship
+	ecumenism	
+	smithian_economics
+	bill_of_rights
+	bureaucracy
+	glorious_arms
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"George #0" = 20
+	"Henri #0" = 20
+	"James #0" = 20
+	"John #0" = 20
+	"Louis #0" = 20
+	"Thomas #0" = 20
+	"Anne #0" = -15
+	"Blanca #0" = -15
+	"Carlos #0" = 15
+	"Catalina #0" = -15
+	"Charles #0" = 15
+	"Daniel #0" = 15
+	"Enrique #0" = 15
+	"Henry #0" = 15
+	"Isabelle #0" = -15
+	"Leonor #0" = -15
+	"Maria #0" = -15
+	"Samuel #0" = 15
+	"Victoria #0" = -15
+	"Arthur #0" = 10
+	"Cyrus #0" = 10
+	"David #0" = 10
+	"Elias #0" = 10
+	"Nathaniel #0" = 10
+	"Peyton #0" = 10
+	"Richard #0" = 10
+	"Aaron #0" = 0
+	"Angus #0" = 0
+	"August #0" = 0
+	"Benjamin #0" = 0
+	"Calvin #0" = 0
+	"Darren #0" = 0
+	"Elbridge #0" = 0
+	"Eric #0" = 0
+	"Francis #0" = 0
+	"Frederick #0" = 0
+	"Isaac #0" = 0
+	"Jonathan #0" = 0
+	"Joseph #0" = 0
+	"Kyran #0" = 0
+	"Luke #0" = 0
+	"Milton #0" = 0
+	"Patrick #0" = 0
+	"Paul #0" = 0
+	"Philip #0" = 0
+	"Randolf #0" = 0
+	"Silvester #0" = 0
+	"Timothy #0" = 0
+	"Wilbur #0" = 0
+	"William #0" = 0
+	"Alexander 0" = 0
+   	"Stephen 0" = 0
+}
+
+leader_names = {
+	"de Aguirre" "de Albret" "de Antillón" "de Aranda" "de Armendariz" "de Azagra" "de Azpilcueta"
+	"de Beaumont" "de Beortegui" Bergera "de Borbón" "de Carranza"	Elizalde
+	"de Garay" "de Goñi" Goyeneche "de Heredia" "de Hijar"
+	"de Jaso" "Jiménez de Rada" Jimeno "de Landívar" Navarro
+	Palafox "Pérez de Zabalza" "de Salazar" "de Uribe" "de Ursúa"
+	"de Yanguas" "de Zárate"
+	"d'Appiani d'Aragona" "Arborio Mella" 
+	Barberini Barzagli Boncompagni Borghese Borromeo Buonarroti "di Busca"
+	"di Campofregoso" Carafa "di Cardé" "del Carreto" Casanova Castagna
+	Castagnaro "di Cavour" Chigi Colonna Contarini Conti Corsini Cybo 
+	"Doria di Cirié" Doria-Landi Doria-Pamphili
+	d'Este 	"di Farnese" "di Ferrari"
+	"Gaetani dell'Aquila" Galilei Gambacorta Gentileschi Giustiniani Gonzaga Grimaldi
+	Ludovisi Malaspina "di Medici" Melzi Montefeltro Orsini
+	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli
+	"dalla Rosa" "della Rovere"
+	"di Saluzzo" "di Savoia" Sfondrati Sforza Spinola
+	"della Torre" "della Ubaldini" Vico Visconti
+	Albemarle Amherst Anson
+	Buckingham Braddock Byron Burgoyne Beresford Brock Benbow Blake Bedford Boscawen Baffin Button
+	Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook Churchill
+	Dampier Davis Drake
+	Essex
+	Fairfax Frobisher
+	Gloucester Gilbert
+	Howe Howard Herbert Hawke Hood Hastings Hudson
+	Leicester
+	Middleton Moore
+	Northumberland Norfolk
+	Procter
+	Rooke Rodney Raleigh
+	Salisbury Somerset Suffolk Saunders Smith
+	Talbot Tarleton
+	Uxbridge
+	Warwick Wolfe
+	York
+}
+
+ship_names = {
+	Alexander
+	Baranov
+	Delarov
+	Elizabeth
+	Golikov
+	Kolmakov
+	Nulato
+	Riurik Ross
+	Samoilov Shelikhov Sitka Sonoma "St. Dionysius" 
+	Yakutat 
+	Medea Vulcano Gloria Minerva Laatea
+	Diligenza Vittoria Eolo Concordia Forza 
+	Fama Sirena Falcon Ercole Idra "San Andrea"
+	"San Zaccaria" "San Spiridon" "San Gaetano"
+	"Fortuna Guerriera" Terror Aquileta Constanza
+	"Regina del Mar" "San Nicolo" Nettuno Rosa
+	Fenice Iride Aurora Tigre Giove "Rizzo d'Oro"
+	"Amazzone Guerriera"
+}

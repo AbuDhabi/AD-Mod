@@ -1,0 +1,13 @@
+# Ottoman Great Turkish Bombard
+# land tech 58
+
+type = artillery
+unit_type = ottoman
+
+maneuver = 2
+offensive_morale = 11
+defensive_morale = 10
+offensive_fire = 11
+defensive_fire = 10
+offensive_shock = 8
+defensive_shock = 8

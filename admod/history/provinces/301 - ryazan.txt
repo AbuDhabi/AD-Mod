@@ -1,0 +1,64 @@
+#301 - Ryazan
+
+owner = RYA
+controller = RYA      
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 6
+trade_goods = wool
+manpower = 5
+capital = "Pereslavl"
+citysize = 3850
+fort1 = yes
+add_core = RYA
+discovered_by = eastern
+discovered_by = western
+discovered_by = GOL
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = MOS
+		controller = MOS
+		add_core = MOS }
+
+#Nevermind
+1399.10.12 = {	owner = RYA
+		controller = RYA
+		remove_core = MOS }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = QAS
+		controller = QAS
+		add_core = QAS
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = RYA
+		controller = RYA
+		remove_core = QAS
+		religion = orthodox }
+
+1438.1.1  = { discovered_by = KAZ }
+1450.1.1  = { citysize = 4250 discovered_by = SIB }
+1500.1.1  = { citysize = 5000 }
+1521.1.1  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+	    }
+1550.1.1  = { citysize = 5750 fort2 = yes capital = "Ryazan" } 
+1598.1.1  = { revolt_risk = 5 manpower = 6 } # "Time of troubles", peasantry brought into serfdom
+1600.1.1  = { citysize = 4800 }
+1613.1.1  = { revolt_risk = 0 } # Order returned, Romanov dynasty
+1650.1.1  = { citysize = 4667 }
+1656.1.1  = { revolt_risk = 4 } # Tatar revolt
+1657.1.1  = { revolt_risk = 0 }
+1670.1.1  = { revolt_risk = 8 } # Stepan Razin
+1671.1.1  = { revolt_risk = 0 } # Razin is captured
+1700.1.1  = { citysize = 5491 }
+1711.1.1  = { base_tax = 7 } # Governmental reforms and the absolutism
+1750.1.1  = { citysize = 6460 tax_assessor = yes }
+1767.1.1  = { base_tax = 8 } # Legislative reform
+1773.1.1  = { revolt_risk = 5 } # Emelian Pugachev, Cossack insurrection
+1774.9.14 = { revolt_risk = 0 } # Pugachev is captured
+1800.1.1  = { citysize = 7600 }

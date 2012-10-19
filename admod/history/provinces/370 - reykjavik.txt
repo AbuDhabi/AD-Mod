@@ -1,0 +1,57 @@
+#370 - Reykjavik
+
+owner = NOR
+controller = NOR 
+culture = icelandic
+religion = catholic
+hre = no
+base_tax = 1
+trade_goods = fish
+manpower = 1
+capital = "Reykjavik"
+citysize = 1350 		# Estimated
+fort1 = yes
+add_core = NOR
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = ICE
+		controller = ICE
+		add_core = ICE }
+
+#Nevermind
+1399.10.12 = {	owner = NOR
+		controller = NOR
+		remove_core = ICE }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = ICE
+		controller = ICE
+		add_core = ICE
+		remove_core = NOR
+		religion = norse_rel }
+
+#Historical Campaign
+1399.10.14 = {	owner = NOR
+		controller = NOR
+		add_core = NOR
+		remove_core = ICE
+		religion = catholic }
+
+#1450.1.1 = { citysize = 300 }
+1490.1.1 = { temple = yes } # Established during the 12th century
+#1500.1.1 = { citysize = 470 }
+1536.1.1 = {	religion = protestant
+		owner = DAN
+		controller = DAN
+		add_core = DAN
+	   }
+#1550.1.1 = { citysize = 1600 }
+#1600.1.1 = { citysize = 1920 }
+#1650.1.1 = { citysize = 2030 }
+1700.1.1 = { citysize = 2400 }
+1750.1.1 = { citysize = 2500 }
+1752.1.1 = { trade_goods = wool } # Wool becomes more important.
+1783.6.8 = { citysize = 2565 } # Volcanic eruptions, one quarter dies of starvation
+1786.1.1 = { marketplace = yes } # Receives trade rights
+1800.1.1 = { citysize = 2830 }

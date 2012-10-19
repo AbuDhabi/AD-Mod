@@ -1,0 +1,478 @@
+country_decisions = {
+
+	eastern_modernization = {
+		potential = {
+			technology_group = eastern
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1475
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 45
+			}
+			stability = 3
+			ADM = 6
+		}
+	  effect = {
+			technology_group = western
+			random_owned = {
+				base_tax = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ottoman_modernization = {
+		potential = {
+			technology_group = ottoman
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1510
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 45
+			}
+			stability = 3
+			ADM = 6
+		}
+	  effect = {
+			technology_group = mid_east
+			random_owned = {
+				base_tax = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	muslim_modernization = {
+		potential = {
+			technology_group = muslim
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1525
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 45
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = mid_east
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nomad_modernization = {
+		potential = {
+			technology_group = nomad_group
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1600
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 30
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = muslim
+			unit_type = muslim
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	indian_modernization = {
+		potential = {
+			technology_group = indian
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1600
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 35
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = far_east_1
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	indian_modernization_part2 = {
+		potential = {
+			technology_group = far_east_1
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1610
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 45
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = far_east_2
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chinese_modernization = {
+		potential = {
+			technology_group = chinese
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1600
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 35
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = far_east_1
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sub_saharan_modernization = {
+		potential = {
+			technology_group = sub_saharan
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1600
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 20
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = sub_saharan_1
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sub_saharan_modernization_part2 = {
+		potential = {
+			technology_group = sub_saharan_1
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1630
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 45
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = mid_east
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	new_world_modernization = {
+		potential = {
+			technology_group = new_world
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1620
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 15
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = new_world_1
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	new_world_modernization_part2 = {
+		potential = {
+			technology_group = new_world_1
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1640
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 35
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = new_world_2
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	s_new_world_modernization = {
+		potential = {
+			technology_group = s_new_world
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					tech_difference = 20
+				}
+				NOT = { innovative_narrowminded = -4 }
+				year = 1620
+			}
+			NOT = { centralization_decentralization = -1 }
+			OR = {
+				NOT = { innovative_narrowminded = -2 }
+				government_tech = 15
+			}
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			technology_group = new_world_1
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "reactionary_sentiment"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	military_modernization = {
+		potential = {
+			has_country_modifier = reactionary_sentiment
+		}
+		allow = {
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			stability = -3
+			add_country_modifier = {
+				name = "action_and_reaction"
+				duration = 730
+			}
+			remove_country_modifier = "reactionary_sentiment"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,123 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 102  131  179 }
+
+historical_ideas = {
+	divine_supremacy
+	quest_for_the_new_world
+	colonial_ventures
+	land_of_opportunity
+	national_conscripts
+	vice_roys
+	superior_seamanship
+	regimental_system
+	national_bank
+	excellent_shipwrights
+	improved_foraging
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Muhammad #0" = 80
+	"Yûsuf #0" = 60
+	"'Alî #0" = 20
+	"Sa'd #0" = 20
+	"Aisha #0" = -10
+	"Zaynab #0" = -10
+	"Isma'îl #0" = 10
+	"Nasr #0" = 10
+	"Abdullah #0" = 5
+	"Sulaymân #0" = 5
+	"Ibrahim #0" = 5
+	"Rayhana #0" = -5
+	"'Abd al-Karim #0" = 0
+	"Ataullah #0" = 0
+	"Ayman #0" = 0
+	"Barakat #0" = 0
+	"Basir #0" = 0
+	"Dawud #0" = 0
+	"Fahd #0" = 0
+	"Faris #0" = 0
+	"Faruq #0" = 0
+	"Firdaus #0" = 0
+	"Fuad #0" = 0
+	"Haidar #0" = 0
+	"Hashim #0" = 0
+	"Husam #0" = 0
+	"Iqbal #0" = 0
+	"Jabbar #0" = 0
+	"Ja'far #0" = 0
+	"Jamal #0" = 0
+	"Junayd #0" = 0
+	"Khaliq #0" = 0
+	"Maimun #0" = 0
+	"Malik #0" = 0
+	"Mansur #0" = 0
+	"Mustafa #0" = 0
+	"Najib #0" = 0
+	"Qasim #0" = 0
+	"Qusay #0" = 0
+	"Rahim #0" = 0
+	"Rashîd #0" = 0
+	"Safi #0" = 0
+	"Said #0" = 0
+	"Sakhr #0" = 0
+	"Samir #0" = 0
+	"Tariq #0" = 0
+	"Umar #0" = 0
+	"Wahid #0" = 0
+	"Zahid #0" = 0
+	"Zahir #0" = 0
+}
+
+leader_names = {
+	"Ibn Abd al-Rahman" "Ibn Abbad" "Ibn Abd Allah" "Ibn Abi Hafs" "Ibn al-Azafi" "Ibn Ali" "Ibn Abi Aamir" "Ibn Abdullah"
+	"Ibn Abi Talib" "Ibn Hakan" "Ibn Hammud" "Ibn Hisam" "Ibn Husayn"
+	"Ibn Idris" "Ibn Ishaq" "Ibn Isma'il"
+	"Ibn Marwan" "Ibn Muhammad" "Ibn Nasr" "Ibn Qasim" "Ibn Sa'd" "Ibn Sulayman"
+	"Ibn Umar" "Ibn Ummay" "Ibn Utman" "Ibn Ya'far" "Ibn Yahyà" "Ibn Yusuf"
+	Alami Arazi Bakr Barek Behar Berui Haida Lahsini Sahiri Sellami Skah
+}
+
+ship_names = {
+	"Al-Andalus" Albarracín Algeciras Almería Alpuente Arcos Arjona
+	Badajoz Baeza Baza
+	Carmona Constantina Córdoba
+	Denia
+	Granada Guadix
+	Hornachuelos Huelva
+	Jérica
+	Lisbon Lorca
+	Málaga Majorca Mallorca Menorca Mértola Molina Morón Murcia Murviedro
+	Niebla
+	Orihuela
+	Purchena
+	Ronda Rueda
+	Sagunto Saltés "Santa María de Algarve" Santarém Segorbe Seville Silves 
+	Tejada Toledo Tortosa 
+	Valencia 
+	Zaragoza
+	"Muhammed ibn Nasr" "Muhammed al-Faqih"
+	"Muhammed III" Nasr "Ismail I" "Muhammed IV"
+	"Yusuf I" "Muhammed V" "Ismail II" "Muhammed VI"
+	"Yusuf II" "Muhammed VII" "Yusuf III" "Muhammed VIII"
+	"Muhammed IX" "Yusuf IV" "Yusuf V" "Muhammed X"
+}

@@ -1,0 +1,6 @@
+discovered_by = ZIM
+discovered_by = ZAN
+discovered_by = MDG
+
+1421.1.1 = { discovered_by = MNG }
+1505.1.1 = { discovered_by = POR }

@@ -1,0 +1,342 @@
+religion_decisions = {
+	
+	convert_to_cathar = {
+		
+		potential = {
+			religion_group = christian
+			NOT = { religion = cathar }
+			dominant_religion = cathar
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = cathar
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = cathar } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = french }
+				NOT = { culture_group = basque_group }
+				NOT = { culture_group = iberian }
+			}
+		}
+	}
+
+	convert_to_hussite = {
+		
+		potential = {
+			religion_group = christian
+			NOT = { religion = hussite }
+			dominant_religion = hussite
+			NOT = { has_country_flag = hussite_heresy }
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = hussite
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = hussite } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = west_slavic }
+				NOT = { culture_group = germanic }
+			}
+		}
+	}
+
+	convert_to_anglican = {
+		
+		potential = {
+			religion_group = christian
+			NOT = { religion = anglican }
+			dominant_religion = anglican
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = anglican
+			remove_country_modifier = yes_to_anglican
+			remove_country_modifier = no_to_anglican
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = anglican } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = british }
+			}
+		}
+	}
+
+	convert_to_khariji = {
+		
+		potential = {
+			religion_group = muslim
+			NOT = { religion = khariji }
+			dominant_religion = khariji
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = khariji
+			stability = -4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = khariji } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = turko_semitic }
+				NOT = { culture_group = altaic }
+			}
+		}
+	}
+
+	convert_to_sufism = {
+		
+		potential = {
+			religion_group = muslim
+			NOT = { religion = sufism }
+			dominant_religion = sufism
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = sufism
+			stability = -4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = sufism } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = turko_semitic }
+				NOT = { culture_group = african }
+			}
+		}
+	}
+
+	convert_to_sikhism = {
+		
+		potential = {
+			OR = {
+				religion_group = muslim
+				religion_group = dharmic
+			}
+			NOT = { religion = sikhism }
+			dominant_religion = sikhism
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = sikhism
+			stability = -4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = sikhism } }
+				NOT = { primary_culture = panjabi }
+			}
+			modifier = {
+				factor = 0
+				NOT = { culture_group = hindusthani }
+				NOT = { culture_group = western_aryan }
+			}
+		}
+	}
+
+	convert_to_hinduism = {
+		
+		potential = {
+			OR = {
+				religion_group = muslim
+				religion_group = dharmic
+			}
+			NOT = { religion = hinduism }
+			dominant_religion = hinduism
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = hinduism
+			stability = -4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { religion = hinduism } }
+			}
+			modifier = {
+				factor = 0
+				religion_group = muslim
+			}
+		}
+	}
+
+	convert_to_shiite = {
+		
+		potential = {
+			OR = {
+				religion_group = muslim
+				religion = sikhism
+			}
+			NOT = { religion = shiite }
+			dominant_religion = shiite
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = shiite
+			stability = -2
+			missionaries = 1
+			capital_scope = {
+				religion = shiite
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { culture_group = iranian }
+			}
+		}
+	}
+
+	convert_to_zoroastrian = {
+		
+		potential = {
+			OR = {
+				religion_group = muslim
+				religion_group = dharmic
+			}
+			NOT = { religion = zoroastrian }
+			dominant_religion = zoroastrian
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = zoroastrian
+			stability = -2
+			missionaries = 1
+			capital_scope = {
+				religion = zoroastrian
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { culture_group = iranian }
+			}
+		}
+	}
+
+	convert_to_judaism = {
+		
+		potential = {
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+			}
+			NOT = { religion = judaism }
+			dominant_religion = judaism
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = judaism
+			stability = -3
+			capital_scope = {
+				religion = judaism
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

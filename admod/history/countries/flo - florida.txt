@@ -1,0 +1,12 @@
+government = republican_dictatorship
+aristocracy_plutocracy = -4
+centralization_decentralization = -3
+innovative_narrowminded = 3
+mercantilism_freetrade = 2
+offensive_defensive = 3
+land_naval = 2
+quality_quantity = 2
+serfdom_freesubjects = 3
+technology_group = western
+primary_culture = floridian
+historical_friend = CUB

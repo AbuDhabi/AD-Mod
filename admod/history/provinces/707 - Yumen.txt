@@ -1,0 +1,31 @@
+#707 - Yumen
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = confucianism
+capital = "Yumen"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 10450
+add_core = MNG
+add_core = QIN
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 11850 }
+1500.1.1 = { citysize = 13578 }
+1550.1.1 = { citysize = 15600 }
+1600.1.1 = { citysize = 17120 }
+1644.1.1 = { controller = MCH }
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 19822 }
+1700.1.1 = { citysize = 21511 }
+1750.1.1 = { citysize = 23000 }
+1800.1.1 = { citysize = 24154 }

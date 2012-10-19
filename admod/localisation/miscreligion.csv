@@ -1,0 +1,144 @@
+WARPATH;Warpath;;;;;;;;;;;;;x
+DURAGRAHA;Duragraha;;;;;;;;;;;;;x
+spiritualism;Great Spirit;;;;;;;;;;;;;x
+teotl;Teotl;;;;;;;;;;;;;x
+taoic;Taoic;;;;;;;;;;;;;x
+dharmic;Dharmic;;;;;;;;;;;;;x
+cathar;Cathar;;;;;;;;;;;;;x
+hussite;Hussite;;;;;;;;;;;;;x
+anglican;Anglican;;;;;;;;;;;;;x
+khariji;Kharijite;;;;;;;;;;;;;x
+sufism;Sufi;;;;;;;;;;;;;x
+old_pagan;Old World;;;;;;;;;;;;;x
+druidism;Druidic;;;;;;;;;;;;;x
+norse_rel;Asatru;;;;;;;;;;;;;x
+inca_religion;Inti;;;;;;;;;;;;;x
+sikhism;Sikh;;;;;;;;;;;;;x
+abrahamic;Jewish;;;;;;;;;;;;;x
+judaism;Jewish;;;;;;;;;;;;;x
+polynesian_religion;Atuan;;;;;;;;;;;;;x
+american_religion;American;;;;;;;;;;;;;x
+african_religion;African;;;;;;;;;;;;;x
+vodun;Vodunist;;;;;;;;;;;;;x
+bantu_rel;Mwari;;;;;;;;;;;;;x
+malagasy_rel;Zanahary;;;;;;;;;;;;;x
+zoroastrian;Zoroastrian;;;;;;;;;;;;;x
+FUNDAMENTALIST;Fundamentalist;;;;;;;;;;;;;x
+POPULIST;Populist;;;;;;;;;;;;;x
+REACTIONARY;Reactionary;;;;;;;;;;;;;x
+REFORMIST;Reformist;;;;;;;;;;;;;x
+DEIST;Deist;;;;;;;;;;;;;x
+DOCETIST;Docetist;;;;;;;;;;;;;x
+EVTNAME21020;End of Religious Turmoil;;;;;;;;;;;;;x
+EVTDESC21020;Philosophers and holy men throughout our country have convened in $CAPITAL$ to discuss all matters theological. Though the debate was heated on all sides, they have agreed that there needs to be an end to conflict. The human cost has already been far too great and outside powers are taking notice of our weakened state.;;;;;;;;;;;;;x
+EVTOPTA21020;Let there be peace;;;;;;;;;;;;;x
+EVTNAME21021;The Pope is pleased;;;;;;;;;;;;;x
+EVTDESC21021;Our people in $PROVINCENAME$ are free to worship however they wish. It seems in this case that they wish to follow the example set by the state. Our advisors were skeptical of our tolerant policies but the people have found true wisdom.;;;;;;;;;;;;;x
+EVTOPTA21021;God be praised!;;;;;;;;;;;;;x
+EVTNAME21022;The Patriarch is pleased;;;;;;;;;;;;;x
+EVTNAME21023;Our bishops are pleased;;;;;;;;;;;;;x
+EVTNAME21025;Our imams are pleased;;;;;;;;;;;;;x
+EVTOPTA21025;Allah be praised!;;;;;;;;;;;;;x
+EVTNAME21027;Karmic balance;;;;;;;;;;;;;x
+EVTOPTA21027;Buddha is smiling!;;;;;;;;;;;;;x
+EVTOPTA21028;They never really left us.;;;;;;;;;;;;;x
+EVTNAME21029;Confucius still guides us;;;;;;;;;;;;;x
+EVTOPTA21029;True wisdom;;;;;;;;;;;;;x
+EVTNAME21030;Our people find wisdom;;;;;;;;;;;;;x
+EVTOPTA21030;Ancestors be praised!;;;;;;;;;;;;;x
+EVTNAME21031;Our shamans are pleased;;;;;;;;;;;;;x
+EVTOPTA21038;The Guru is pleased;;;;;;;;;;;;;x
+EVTNAME21050;Tolerance causing divide;;;;;;;;;;;;;x
+EVTDESC21050;Our government's committal to religious tolerance is taking it's toll on the province of $PROVINCENAME$. The people there have decided to pursue the heretical beliefs of Jan Hus.;;;;;;;;;;;;;x
+EVTOPTA21050;We're all in this together;;;;;;;;;;;;;x
+EVTDESC21051;Our government's committal to religious tolerance is taking it's toll on the province of $PROVINCENAME$. The people there have decided to give up true piety for heretical mysticism.;;;;;;;;;;;;;x
+EVTDESC21052;Our government's committal to religious tolerance is taking it's toll on the province of $PROVINCENAME$. The people there have decided to give up the true faith for the teachings of the Israelites.;;;;;;;;;;;;;x
+EVTDESC21053;Our government's committal to religious tolerance is taking it's toll on the province of $PROVINCENAME$. The people there have decided to pursue a more fundamentalist approach to their faith.;;;;;;;;;;;;;x
+EVTNAME30100;Heresy in $PROVINCENAME$;;;;;;;;;;;;;x
+EVTDESC30100;The violent heretics in $PROVINCENAME$ have executed several holy men and enforced their religious doctrine on the people!;;;;;;;;;;;;;x
+EVTOPTA30100;Oh no!;;;;;;;;;;;;;x
+EVTNAME30200;Wife not producing heir;;;;;;;;;;;;;x
+EVTDESC30200;Despite considerable attention paid to your husbandly duties, your wife has failed to produce an heir suitable to the crown. Perhaps this is a sign that your marriage is blighted in the eyes of God. While you have made known your desire for a divorce the Pope has stated that he will not support this. A bishop of the state could perform the annulment but this would require a formal revocation of the Pope's power over our state.;;;;;;;;;;;;;x
+EVTOPTA30200;File for divorce;;;;;;;;;;;;;x
+EVTOPTB30200;Pray for an heir;;;;;;;;;;;;;x
+EVTNAME30201;Reformation Parliament;;;;;;;;;;;;;x
+EVTDESC30201;The greatest legal and theological minds have gathered to discuss the future course of our nation. There is popular support for formal seperation from the Catholic Church, though it would be a long and difficult process for our subjects. Others are suggesting we have acted in error and need to make amends immediately.;;;;;;;;;;;;;x
+EVTOPTA30201;Support seperation;;;;;;;;;;;;;x
+EVTOPTB30201;Support reconciliation;;;;;;;;;;;;;x
+EVTNAME30202;Regency pushing religious agenda;;;;;;;;;;;;;x
+EVTDESC30202;Some of the more reform oriented members of the regency council are pressing matters regarding the Anglican Church. Though you are still in minority the bishops appointed by your father are willing to speak on your behalf. They can either push for the spread the reformation or bring it to a halt.;;;;;;;;;;;;;x
+EVTOPTA30202;Endorse church reforms;;;;;;;;;;;;;x
+EVTOPTB30202;End the reformation;;;;;;;;;;;;;x
+EVTNAME30203;Anglicanism spreading;;;;;;;;;;;;;x
+EVTDESC30203;The Anglican Church has found popular support in the province of $PROVINCENAME$. Reform is spreading through our nation.;;;;;;;;;;;;;x
+EVTOPTA30203;Change is coming;;;;;;;;;;;;;x
+EVTNAME30300;Nanak Dev gathering disciples;;;;;;;;;;;;;x
+EVTDESC30300;A man who has been strongly critical of both Hindu and Muslim teachings has been gathering followers in $PROVINCENAME$. He claims that we are all connected through the truth of one shapeless, eternal God. This is heresy against our official religion but the Punjabi people seem to be embracing these beliefs.;;;;;;;;;;;;;x
+EVTOPTA30300;Support the movement;;;;;;;;;;;;;x
+EVTOPTB30300;Denounce the movement;;;;;;;;;;;;;x
+EVTNAME30301;Guru Nanak preaching Sikhism;;;;;;;;;;;;;x
+EVTDESC30301;The founder of a new religious movement has traveled thousands of miles, spreading his teachings to all who will listen. His missionary work has now brought him to our nation.;;;;;;;;;;;;;x
+EVTOPTA30301;Listen to him;;;;;;;;;;;;;x
+EVTOPTB30301;Ignore him;;;;;;;;;;;;;x
+EVTNAME30302;The Adi Granth;;;;;;;;;;;;;x
+EVTDESC30302;The fifth Guru of Sikhism, Arjan Dev, has compiled a holy book for his followers. With the solidification of the Sikh faith in words, the religion is gathering popular support.;;;;;;;;;;;;;x
+EVTOPTA30302;History is in the making;;;;;;;;;;;;;x
+EVTNAME30303;Sikhism spreading;;;;;;;;;;;;;x
+EVTDESC30303;The people in $PROVINCENAME$ have embraced the teachings of the Guru and adopted the Sikh faith.;;;;;;;;;;;;;x
+EVTOPTA30303;Interesting;;;;;;;;;;;;;x
+convert_to_cathar_title;Convert to Catharism;;;;;;;;;;;;;x
+convert_to_cathar_desc;The dualist movement has gained considerable ground in our nation, and perhaps for good reason. The political and moral corruption of the Pope and the Catholic Church have become detrimental to our spiritual well-being.;;;;;;;;;;;;;x
+convert_to_hussite_title;Convert to Hussism;;;;;;;;;;;;;x
+convert_to_hussite_desc;The reformist ideals of Jan Hus have been taken to heart by many of our people. The increasingly secular position of the Pope and the repeated use of Christianity as an excuse to cause bloodshed are at odds with the teachings of Christ.;;;;;;;;;;;;;x
+convert_to_anglican_title;Convert to Anglicanism;;;;;;;;;;;;;x
+convert_to_anglican_desc;The Pope has directed the course of our nation long enough. The formal seperation of the Anglican Church from the Vatican would allow us to elevate the monarch to the position of absolute spiritual and secular authority.;;;;;;;;;;;;;x
+convert_to_khariji_title;Convert to Khariji;;;;;;;;;;;;;x
+convert_to_khariji_desc;While the Sunnis and Shiites squabble over the rightful succession of the Caliphate, the truth is that there is no rule but God's. Any Muslim may rule over the people as long as they have the grace of God and the people. And should they lose these things it is the peoples duty to overthrow the regime.;;;;;;;;;;;;;x
+convert_to_sufism_title;Convert to Sufism;;;;;;;;;;;;;x
+convert_to_sufism_desc;Suunis and Shiites fight over the rightful succession of the Caliphate, but that is not our concern any longer. By turning away from everything but the grace of God we will find peace within ourselves.;;;;;;;;;;;;;x
+convert_to_sikhism_title;Convert to Sikhism;;;;;;;;;;;;;x
+convert_to_sikhism_desc;There is no Hindu. There is no Muslim. God is omnipresent and found in all men. The realisation of truth is higher than all else. Higher still is truthful living.;;;;;;;;;;;;;x
+convert_to_hinduism_title;Convert to Hinduism;;;;;;;;;;;;;x
+convert_to_hinduism_desc;Our nation was mistaken in turning away from our heritage. We must restore balance by embracing the true faith once again.;;;;;;;;;;;;;x
+convert_to_shiite_title;Convert to Shia Islam;;;;;;;;;;;;;x
+convert_to_shiite_desc;The Prophet Muhammad made it clear that Ali was his successor and rightful ruler over all people of Islam. The Hadiths support the perfect Imam and we should support his legacy as well.;;;;;;;;;;;;;x
+convert_to_zoroastrian_title;Convert to Zoroastrianism;;;;;;;;;;;;;x
+convert_to_zoroastrian_desc;The Creator, Ahura Mazda, is all good and no evil can originate from Him. While he guards over all creation, we will stand with Him in its defense.;;;;;;;;;;;;;x
+convert_to_judaism_title;Convert to Judaism;;;;;;;;;;;;;x
+convert_to_judaism_desc;After centuries of wandering, the children of Israel have once more found a home here in $COUNTRY$. The true word of God is once again being spoken freely by His faithful.;;;;;;;;;;;;;x
+yes_to_anglicanism_title;Support Anglicanism;;;;;;;;;;;;;x
+yes_to_anglicanism_desc;Offer the Anglican converts the official blessings of the crown to practice their faith without harassment.;;;;;;;;;;;;;x
+yes_to_anglican;Support for Anglicans;;;;;;;;;;;;;x
+desc_yes_to_anglican;We have given the Anglicans the freedom to practice their faith.;;;;;;;;;;;;;x
+no_to_anglicanism_title;Suppress Anglicanism;;;;;;;;;;;;;x
+no_to_anglicanism_desc;The Anglicans are dangerous heretics. We must destroy this perversion of the true faith before it grows too strong.;;;;;;;;;;;;;x
+no_to_anglican;Oppression of Anglicans;;;;;;;;;;;;;x
+desc_no_to_anglican;Anglican heretics have been forced into hiding within our nation.;;;;;;;;;;;;;x
+enact_halakha_title;Codify Jewish Law;;;;;;;;;;;;;x
+enact_halakha_desc;The Halakha, or The Way to Go, has long been maintained as the civil and religious law of the Jewish people. By officially adopting these customs at the state level we can guarantee certain rights for our Jewish subjects, though those not of the faith may find these laws unacceptable.;;;;;;;;;;;;;x
+halakha_law;Halakha;;;;;;;;;;;;;x
+desc_halakha_law;The Law of the Jewish people;;;;;;;;;;;;;x
+pagan_held_carnac;Control of Carnac;;;;;;;;;;;;;x
+desc_pagan_held_carnac;We hold the stone rows of Carnac, along with the pagan magics that flow through them.;;;;;;;;;;;;;x
+teotl_held_cenote;Stewards of Sacred Cenote;;;;;;;;;;;;;x
+desc_teotl_held_cenote;Our people hold the Well of Sacrifice at the site of Chichen Itza, where we may commune with the God of Rain through prayer, gifts or, if necessary, human sacrifice.;;;;;;;;;;;;;x
+inca_held_nazca;The Nazca Lines;;;;;;;;;;;;;x
+desc_inca_held_nazca;Surely the Gods will grant favor to the people who guard their avatars here on Earth.;;;;;;;;;;;;;x
+doi_suthep_steward;Stewards of Doi Suthep;;;;;;;;;;;;;x
+desc_doi_suthep_steward;Our state guards over the temple of Wat Phrathat Doi Suthep, sacred to both Hindu and Buddhist faithful.;;;;;;;;;;;;;x
+enact_poly_wayfinding_title;Polynesian Wayfinding;;;;;;;;;;;;;x
+enact_poly_wayfinding_desc;The flow of the ocean, the wandering of the stars and the migrations of the birds. All tools to guide our sailors across the vast ocean. Passed down through generations by song, the ability to understand these signs allows us to train the most capable sailors in the world.;;;;;;;;;;;;;x
+poly_wayfinding;Wayfinding;;;;;;;;;;;;;x
+desc_poly_wayfinding;Our people are intimately connected to the waves and the stars.;;;;;;;;;;;;;x
+enact_poly_surfing_title;Surfing;;;;;;;;;;;;;x
+enact_poly_surfing_desc;Our greatest chiefs have shown the power they can exert over the waves of the Pacific, and now the common people have seen that they possess the same ability. He'enelau, the art of riding the waves, has become more than just a form of recreation for the elite, it is a powerful connection our people have to the waters that surround us.;;;;;;;;;;;;;x
+poly_surfing;Surfing;;;;;;;;;;;;;x
+desc_poly_surfing;He'enalu, the art of riding the waves, is not just for sport.;;;;;;;;;;;;;x
+enact_syncretism_title;Syncretism;;;;;;;;;;;;;x
+enact_syncretism_desc;By incorporating foreign beliefs into our religious culture, our own traditions are strengthened.;;;;;;;;;;;;;x
+african_syncretism;Syncretism;;;;;;;;;;;;;x
+desc_african_syncretism;By incorporating foreign beliefs into our religious culture, our own traditions are strengthened.;;;;;;;;;;;;;x
+publish_eddic_poems_title;Publish Poetic Edda;;;;;;;;;;;;;x
+publish_eddic_poems_desc;The Eddic Poems venerate our old heroes and Gods, but the stories are known to only a few. If we translate the poems and commit them to print, we can spread the glory of our faith far and wide.;;;;;;;;;;;;;x
+poetic_edda;Poetic Edda;;;;;;;;;;;;;x
+desc_poetic_edda;The powerful prose and imagery of the Norse poems captivates everyone fortunate enough to read them.;;;;;;;;;;;;;x

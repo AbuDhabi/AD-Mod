@@ -1,0 +1,12 @@
+# Ottoman New Model
+# land 41
+type = infantry
+unit_type = ottoman
+
+maneuver = 1
+offensive_morale = 7
+defensive_morale = 8
+offensive_fire = 7
+defensive_fire = 9
+offensive_shock = 5
+defensive_shock = 5

@@ -1,0 +1,41 @@
+#Fyn-Langeland-Lolland-Falster, incl. Odense, Nyborg and Nykøbing
+
+add_core = DAN
+owner = DAN
+controller = DAN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 4
+trade_goods = fish
+manpower = 3
+capital = "Odense"
+fort1 = yes
+citysize = 1500 # Estimated
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = DAN
+		controller = DAN
+		citysize = 1500 }
+
+1450.1.1  = { citysize = 1650 }
+1500.1.1  = { marketplace = yes }
+1536.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 2800 }
+1600.1.1  = { citysize = 3500 }
+1650.1.1  = { citysize = 4508 }
+1658.1.31 = { controller = SWE } # Karl X Gustavs First Danish War-Captured by Karl X Gustav
+1658.2.26 = { controller = DAN } # The Peace of Roskilde
+1672.1.1  = { citysize = 5808 }
+1750.1.1  = { citysize = 6209 }
+1769.1.1  = { citysize = 7609 }
+1800.1.1  = { citysize = 8000 }

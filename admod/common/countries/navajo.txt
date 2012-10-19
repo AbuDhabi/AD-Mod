@@ -1,0 +1,66 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 190  104  35 } 
+
+historical_ideas = {
+	quest_for_the_new_world
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Asdzaa #0" = 30
+	"Naayéé #0" = 30
+	"Tóbájíshchíní #0" = 30
+	"Atsidi #0" = 10
+	"Emmi #0" = -10
+	"Klee #0" = 10
+	"Luci #0" = -10
+	"Notah #0" = 10
+	"Yazzie #0" = 10
+	"Dibé Nitsaa #0" = 1
+	"Nilch'i #0" = 1
+	"Sisnaajiní #0" = 1
+	"T'ash Jíshi #0" = 1
+	"Tsoodzil #0" = 1
+}
+
+leader_names = {
+	"Black Cloud" "Black Elk" "Blue Bead" "Blue Corn" "Blue Heron"
+	"Great Coyote"
+	"Red Cloud" "Red Stone"
+	"White Horse" "White Thunder"
+	"Yellow Corn"
+}
+
+ship_names = {
+	"Big Water Creature" "Black Cloud" "Black Elk" "Blue Bead" "Blue Corn" "Blue Heron"
+	"Great Coyote" "Great Spruce Mountain"
+	"Red Cloud" "Red Stone"
+	"Spider Web"
+	"Turquoise Mountain"
+	"Water Sprinkler" "White Horse" "White Thunder"
+	"Yellow Corn"
+}

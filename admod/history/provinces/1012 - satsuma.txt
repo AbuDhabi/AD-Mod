@@ -1,0 +1,25 @@
+#1012 - Satsuma
+
+owner = TAC
+controller = TAC
+culture = yamato
+religion = shinto
+capital = "Kagoshima"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 5900
+add_core = TAC
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 6340 }
+1500.1.1 = { citysize = 7210 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 8455 }
+1600.1.1 = { citysize = 9224 }
+1650.1.1 = { citysize = 10100 }
+1700.1.1 = { citysize = 11348 }
+1750.1.1 = { citysize = 12900 }
+1800.1.1 = { citysize = 13556 }

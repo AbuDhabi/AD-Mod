@@ -1,0 +1,12 @@
+# Haudenosee Republican Guard
+# land 53
+unit_type = new_world
+type = infantry	
+
+maneuver = 1
+offensive_morale = 11
+defensive_morale = 11
+offensive_fire = 9
+defensive_fire = 8
+offensive_shock = 8
+defensive_shock = 6

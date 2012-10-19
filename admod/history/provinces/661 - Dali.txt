@@ -1,0 +1,31 @@
+#661 - Dali
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = buddhism
+capital = "Dali"
+trade_goods = tea
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 12400
+add_core = MNG
+add_core = XIA
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 13000 }
+1500.1.1 = { citysize = 14570 }
+1550.1.1 = { citysize = 16100 }
+1600.1.1 = { citysize = 17124 }
+1650.1.1 = { citysize = 19543 }
+1662.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1700.1.1 = { citysize = 20870 }
+1750.1.1 = { citysize = 22100 }
+1800.1.1 = { citysize = 24687 }

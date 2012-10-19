@@ -1,0 +1,111 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 219  173  51 } 
+
+historical_ideas = {
+	national_conscripts
+	glorious_arms
+	military_drill 
+	battlefield_commisions
+	espionage
+	grand_army
+	shrewd_commerce_practise
+	engineer_corps
+	national_trade_policy
+	bureaucracy
+	cabinet
+	improved_foraging
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Hussein #0" = 40
+	"Muhammad #2" = 40
+	"Abdel #0" = 30
+	"Adli #0" = 30
+	"Farouk #0" = 30
+	"Fuad #0" = 30
+	"Abbas #0" = 20
+	"Inâl #0" = 20
+	"Ahmad #1" = 5
+	"Qânsawh #0" = 5
+	"Tûmân Bay #0" = 5
+	"Khusqadam #1" = 5
+	"'Abd al-'Aziz #0" = 5
+	"al-Musta'in #0" = 5
+	"al-Nasr Faraj #0" = 5
+	"Barsbay #0" = 5
+	"Jaqmaq #0" = 5
+	"Qâyit Bay #0" = 5
+	"Shaik al-Mahmudi #0" = 5
+	"Timurbughâ #0" = 5
+	"'Uthman #0" = 5
+	"Yalbay #0" = 5
+	"Jânbulât #0" = 5
+	"Yûsuf #0" = 5
+	"Barqûq #1" = 5
+	"'Alî #2" = 5
+	"Baybars #2" = 5
+	"Hâjjî #2" = 5
+	"Sha'bân #2" = 5
+	"Abû Bakr #1" = 5
+	"al-Hasan #1" = 5
+	"Isma'îl #1" = 5
+	"Kûjûk #1" = 5
+	"Sâlih #1" = 5
+	"Aisha #0" = -1
+	"Rayhana #0" = -1
+	"'Abd al-Malik #0" = 0
+	"Basir #0" = 0
+	"Fadl #0" = 0
+	"Ghayth #0" = 0
+	"Hatim #0" = 0
+	"Ilyas #0" = 0
+	"Jabir #0" = 0
+	"Nadim #0" = 0
+	"Nizar #0" = 0
+	"Qasim #0" = 0
+	"Sa'di #0" = 0
+	"Sayyid #0" = 0
+	"Yunus #0" = 0
+}
+
+leader_names = {
+	Ali
+	Aybak
+	Baibars
+	Bay
+	Bey
+	Bugha
+	Inâl
+	Kansur Khaliq
+	Mahmud
+	Naguib
+	Rushdi
+	Sarwat Sayfuddin
+	Yakan
+	Zangi Zaghlul
+}
+
+ship_names = {
+	"Zaher Barqooq" "Farag Ben Barqooq"
+	"Ben Barqooq" "Muyaid Sheikh" "Ahmen Muyaid" 
+	"Zaher Tatar" "Nasser Muhamed" "Ashraf Barsbay"
+	"Aziz Gamal" "Nahr an-Nil" "Al-Farafirah"
+	"Ad-Däkhilah" "Al-Kharijah" "Al-Ali" "Al-Bahriyah"
+	Rahman Rahim Malik Quddus Salam Mu'min Muhaymin
+	Aziz Jabbar Mutakabbir Khaliq Bari Musawwir 
+	Ghaffar Qahhar Wahhab Razzaq Fattah Alim Qabid
+	Basit Khafid Rafi Mu'izz Mudhill Sami Basir Hakam Adl
+}

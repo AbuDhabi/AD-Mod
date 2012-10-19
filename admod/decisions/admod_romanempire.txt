@@ -1,0 +1,110 @@
+country_decisions = {
+	roman_empire = {
+		potential = {
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+         NOT = { tag = ROM }
+         NOT = { exists = ROM }
+			OR = {
+        primary_culture = greek
+        primary_culture = armenian
+        primary_culture = georgian
+        primary_culture = umbrian
+        primary_culture = sicilian
+        primary_culture = lombard
+        
+			}
+		}
+		allow = {
+      owns = 118 # Roma
+      owns = 151 # Thrace
+      OR = {
+        owns = 219 # Toledo
+        owns = 217 # Madrid
+      }
+      owns = 341 # Tunis
+      owns = 358 # Alexandria
+      owns = 379 # Judea
+      owns = 183 # Ile-de-France
+      owns = 146 # Athens
+
+			
+			is_core = 118 # Roma
+      is_core = 151 # Thrace
+      OR = {
+        is_core = 219 # Toledo
+        is_core = 217 # Madrid
+      }
+      is_core = 341 # Tunis
+      is_core = 358 # Alexandria
+      is_core = 379 # Judea
+      is_core = 183 # Ile-de-France
+      is_core = 146 # Athens
+			
+			war = no
+		}
+		effect = {
+			ROM = {
+				french_region = {
+					add_core = ROM
+				}
+				italian_region = {
+          add_core = ROM
+				}
+				iberian_peninsula = {
+          add_core = ROM
+				}
+				western_balkans = {
+          add_core = ROM
+				}
+				greece = {
+          add_core = ROM
+				}
+				turkey = {
+          add_core = ROM
+				}
+				northumbria = {
+          add_core = ROM
+				}
+				wales = {
+          add_core = ROM
+				}
+				mercia = {
+          add_core = ROM
+				}
+				essex = {
+          add_core = ROM
+				}
+				north_africa = {
+          add_core = ROM
+				}
+            
+            add_core = 377 # aleppo
+            add_core = 1855  # sidon
+            add_core = 378 # beirut
+            add_core = 165 # bern
+            add_core = 166 # schwyz
+            add_core = 1867 # freiburg
+            add_core = 1869 # zurich
+            add_core = 1870 # st gallen
+            add_core = 1871 # wallis
+            add_core = 1873 # chur
+				
+			}
+			118 = {
+				base_tax = 2
+			}
+			centralization_decentralization = -2
+			prestige = 0.20
+			change_tag = ROM
+			ROM = {
+				capital = 118
+			}
+         dismantle_hre = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+}

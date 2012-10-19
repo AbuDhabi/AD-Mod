@@ -1,0 +1,12 @@
+# Chinese Drill Infantry
+# land 45
+type = infantry
+unit_type = chinese
+
+maneuver = 1
+offensive_morale = 9
+defensive_morale = 8
+offensive_fire = 9
+defensive_fire = 8
+offensive_shock = 6
+defensive_shock = 5

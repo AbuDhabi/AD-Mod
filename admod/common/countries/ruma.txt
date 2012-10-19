@@ -1,0 +1,144 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 133  5  23 }
+
+historical_ideas = {
+	land_of_opportunity
+	divine_supremacy
+	quest_for_the_new_world
+	patron_of_art
+	shrewd_commerce_practise
+	merchant_adventures
+	engineer_corps
+	national_bank
+	cabinet
+	military_drill
+	scientific_revolution
+	bureaucracy
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Ahmad #0" = 20
+	"Barsbay #0" = 20
+	"Barqûq #0" = 20
+        "Ebrâhim #0" = 20
+	"Fahd #0" = 20
+	"Faruq #0" = 20
+	"Hasan #0" = 20
+	"Inâl #0" = 20
+	"Jânbulât #0" = 20
+	"Joneid #0" = 20
+	"Khalil #0" = 20
+	"Khusqadam #0" = 20
+	"Kûjûk #0" = 20
+	"Rashîd #0" = 20
+	"Safi #0" = 20
+	"Tûmân #0" = 20
+	"Qânsawh #0" = 20
+	"Qâyit #0" = 20
+	"Yalbay #0" = 20
+	"Yûsuf #0" = 20
+	"Zaid #0" = 20
+	"Aisha #0" = -1
+	"Rayhana #0" = -1
+	"Anwar #0" = 0
+	"Atuf #0" = 0
+	"Bakr #0" = 0
+	"Basir #0" = 0
+	"Fadl #0" = 0
+	"Fahd #0" = 0
+	"Ghayth #0" = 0
+	"Hakim #0" = 0
+	"Hatim #0" = 0
+        "Harun #0" = 0
+	"Hikmat #0" = 0
+	"Hisham #0" = 0
+        "Hosayn #0" = 0
+	"Husayn #0" = 0
+	"Ilyas #0" = 0
+	"Jabir #0" = 0
+	"Jafar #0" = 0
+        "Jamaal #0" = 0
+        "Malîk #0" = 0
+	"Mirza #0" = 0
+	"Mustafa #0" = 0
+	"Nadim #0" = 0
+	"Nizar #0" = 0
+	"Qasim #0" = 0
+	"Sa'di #0" = 0
+	"Sayyid #0" = 0
+	"Tarîq #0" = 0
+	"Temur #0" = 0
+	"Usama #0" = 0
+	"Yunus #0" = 0
+	"Zulqifar #0" = 0
+}
+
+leader_names = {
+	Agha Ahmad Ahrari Akif Ali Ansari Aybak Azizi
+	Baibars Bay Bey Bugha
+	Daei Dalwand Damad Damat Dervis
+	Ekrem Esad
+	Farhad Fatemi Fazil
+	Hafiz
+	Inâl Ismail
+	Jalili Javid
+	Kansur
+	Lala Lefkeli
+	Mehmed Murad
+	Nasuh Necip Nuri
+	Ohrili Osman
+	Qazai
+	Rahman Resid Rum
+	Sabet Sabiri Salih Sayfuddin Shahy Sinan
+	Tayyar Topal Turgut
+	Veli
+	Yemisci
+	Zangi Zaki
+}
+
+ship_names = {
+	"Zaher Barqooq" "Farag Ben Barqooq"
+	"Ben Barqooq" "Muyaid Sheikh" "Ahmen Muyaid" 
+	"Zaher Tatar" "Nasser Muhamed" "Ashraf Barsbay"
+	"Aziz Gamal" "Nahr an-Nil" "Al-Farafirah"
+	"Ad-Däkhilah" "Al-Kharijah" "Al-Ali" "Al-Bahriyah"
+	Rahman Rahim Malik Quddus Salam Mu'min Muhaymin
+	Aziz Jabbar Mutakabbir Khaliq Bari Musawwir 
+	Ghaffar Qahhar Wahhab Razzaq Fattah Alim Qabid
+	Basit Khafid Rafi Mu'izz Mudhill Sami Basir Hakam Adl
+	Abathur "Adamn Kasia" "Aesma Daeva" Agas
+	Ahriman Ahura "Ahura Mazda" Ahurani Airyaman
+	"Aka Manah" Aladdin Allatum Amashaspan Ameratat
+	"Amesha Spentas" Anahita "Angra Mainyu" Anjuman
+	"Apam-natat" Apaosa Aredvi Arishtat Armaiti Arsaces
+	"Asha vahista" Asman "Asto Vidatu" "Astvat-Ereta"
+	Atar "Azi Dahaka" Baga Bahram Burijas Bushyasta Buyasta
+	Camros Daena Daevas Ahaka Dahhak Dena Dev Diwe Drug
+	Drvaspa Frashegird Fravashis Gandarewa "Gao-kerena"
+	Gayomard Gayomart "Geus-Tasan" "Geus-Urvan" Haoma
+	Haurvatat Humay Hvar Hvarekhshaeta Indar Indra Izha
+	Jamshid Jeh Karshipta Kavi Khara "Khshathra vairya"
+	Kundrav Mah Mahre Mahrianag Manu Manuchihir Mao 
+	Mashyane Mashye Menog Mithra Nairyosangha Nanghaithya
+	Neriosang Ormazd Peris Peshdadians Rapithwin Rashnu
+	Rustam Saurva Simurgh "Spenta Mainyu" Sraosa Srosh
+	Tawrich Thunaupa Tistrya Tushnamatay Vanant Vata
+	Verethragna "Vohu Manah" Vouruskasha Yam Yasht Yazata
+	Yezidi Yima Zal Zam "Zam-Armatay" Zarathustra Zarich
+	"Zend-Avesta" Zurvan
+	Faydhi Fazil Kadri Jamal Midhat Nadhif Nadhim
+	Namiq Omer Sirri
+}

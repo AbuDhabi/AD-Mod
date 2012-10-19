@@ -1,0 +1,250 @@
+country_decisions = {
+
+	british_nation = {
+		potential = {
+			NOT = { exists = GBR }
+			NOT = { exists = GBS }
+			NOT = { exists = BRT }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			primary_culture = english
+		}
+		allow = {
+			owns = 236		# London
+			owns = 237		# Oxfordshire
+			owns = 234		# Wessex
+			owns = 248		# Lothian
+			owns = 251		# Aberdeen
+			
+			is_core = 236		# London
+			is_core = 237		# Oxfordshire
+			is_core = 234		# Wessex
+			is_core = 248		# Lothian
+			is_core = 251		# Aberdeen
+			
+			war = no
+		}
+		effect = {
+			GBR = {
+				add_core = 236		# London
+				add_core = 233		# Cornwall
+				add_core = 234		# Wessex
+				add_core = 235		# Kent
+				add_core = 237		# Oxfordshire
+				add_core = 238		# East Anglia
+				add_core = 239		# Gloucestershire
+				add_core = 240		# Marches
+				add_core = 241		# Glamorgan
+				add_core = 242		# Gwynedd
+				add_core = 243		# Lincoln
+				add_core = 244		# Lancashire
+				add_core = 245		# Yorkshire
+				add_core = 246		# Northumberland
+				add_core = 247		# Cumbria
+				add_core = 248		# Lothian
+				add_core = 249		# Ayrshire
+				add_core = 250		# Fife
+				add_core = 251		# Aberdeen
+				add_core = 252		# Highlands
+				add_core = 253		# Western Isles
+				add_core = 369		# Orkney
+				add_core = 372		# Ulster
+				add_core = 373		# Meath
+				add_core = 374		# Leinster
+				add_core = 375		# Munster
+				add_core = 376		# Connaught
+				add_core = 1860		# Norfolk
+				add_core = 1861		# Derby
+			}	
+			colonists = 1
+			random_owned = {
+				limit = { culture_group = british }
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = GBR
+			GBR = {
+				capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	british_nation_s = {
+		potential = {
+			NOT = { exists = GBR }
+			NOT = { exists = GBS }
+			NOT = { exists = BRT }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			primary_culture = scottish
+		}
+		allow = {
+			owns = 236		# London
+			owns = 237		# Oxfordshire
+			owns = 238		# East Anglia
+			owns = 234		# Wessex
+			owns = 243		# Lincoln
+			owns = 245		# Yorkshire
+			owns = 248		# Lothian
+			owns = 251		# Aberdeen
+			
+			is_core = 236		# London
+			is_core = 237		# Oxfordshire
+			is_core = 234		# Wessex
+			is_core = 248		# Lothian
+			is_core = 251		# Aberdeen
+			
+			war = no
+		}
+		effect = {
+			GBS = {
+				add_core = 236		# London
+				add_core = 233		# Cornwall
+				add_core = 234		# Wessex
+				add_core = 235		# Kent
+				add_core = 237		# Oxfordshire
+				add_core = 238		# East Anglia
+				add_core = 239		# Gloucestershire
+				add_core = 240		# Marches
+				add_core = 241		# Glamorgan
+				add_core = 242		# Gwynedd
+				add_core = 243		# Lincoln
+				add_core = 244		# Lancashire
+				add_core = 245		# Yorkshire
+				add_core = 246		# Northumberland
+				add_core = 247		# Cumbria
+				add_core = 248		# Lothian
+				add_core = 249		# Ayrshire
+				add_core = 250		# Fife
+				add_core = 251		# Aberdeen
+				add_core = 252		# Highlands
+				add_core = 253		# Western Isles
+				add_core = 369		# Orkney
+				add_core = 372		# Ulster
+				add_core = 373		# Meath
+				add_core = 374		# Leinster
+				add_core = 375		# Munster
+				add_core = 376		# Connaught
+				add_core = 1860		# Norfolk
+				add_core = 1861		# Derby
+			}
+			culture_group_union = british
+			236 = {	culture = scottish }
+			238 = {	culture = scottish }
+			243 = {	culture = scottish }
+			245 = {	culture = scottish }
+			colonists = 2
+			random_owned = {
+				limit = { culture_group = british }
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.10
+			change_tag = GBS
+			GBS = {
+				capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	britannia_nation = {
+		potential = {
+			NOT = { exists = GBR }
+			NOT = { exists = GBS }
+			NOT = { exists = BRT }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			NOT = { tag = FRA }
+			OR = {
+				primary_culture = welsh
+				AND = {
+					primary_culture = irish
+					tag = IRE
+				}
+			}
+		}
+		allow = {
+			owns = 234		# Wessex
+			owns = 235		# Kent
+			owns = 236		# London
+			owns = 237		# Oxfordshire
+			owns = 239		# Gloucestershire
+			owns = 248		# Lothian
+			owns = 251		# Aberdeen
+			
+			is_core = 236		# London
+			is_core = 237		# Oxfordshire
+			is_core = 234		# Wessex
+			is_core = 248		# Lothian
+			is_core = 251		# Aberdeen
+			
+			war = no
+		}
+		effect = {
+			BRT = {
+				add_core = 236		# London
+				add_core = 233		# Cornwall
+				add_core = 234		# Wessex
+				add_core = 235		# Kent
+				add_core = 237		# Oxfordshire
+				add_core = 238		# East Anglia
+				add_core = 239		# Gloucestershire
+				add_core = 240		# Marches
+				add_core = 241		# Glamorgan
+				add_core = 242		# Gwynedd
+				add_core = 243		# Lincoln
+				add_core = 244		# Lancashire
+				add_core = 245		# Yorkshire
+				add_core = 246		# Northumberland
+				add_core = 247		# Cumbria
+				add_core = 248		# Lothian
+				add_core = 249		# Ayrshire
+				add_core = 250		# Fife
+				add_core = 251		# Aberdeen
+				add_core = 252		# Highlands
+				add_core = 253		# Western Isles
+				add_core = 369		# Orkney
+				add_core = 372		# Ulster
+				add_core = 373		# Meath
+				add_core = 374		# Leinster
+				add_core = 375		# Munster
+				add_core = 376		# Connaught
+				add_core = 1860		# Norfolk
+				add_core = 1861		# Derby
+
+				add_core = 169		# Armor
+				add_core = 170		# Finistere
+				add_core = 171		# Morbihan
+				add_core = 172		# Vendee
+			}
+			234 = {	culture = THIS }
+			235 = {	culture = THIS }
+			236 = {	culture = THIS }
+			239 = {	culture = THIS }
+			colonists = 3
+			random_owned = {
+				limit = { culture_group = gaelic }
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.10
+			change_tag = BRT
+			BRT = {
+				capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

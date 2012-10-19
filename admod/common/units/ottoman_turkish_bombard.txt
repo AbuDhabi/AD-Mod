@@ -1,0 +1,13 @@
+# Ottoman Turkish Bombard
+# land tech 13
+
+type = artillery
+unit_type = ottoman
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 3
+offensive_fire = 4
+defensive_fire = 3
+offensive_shock = 0
+defensive_shock = 0

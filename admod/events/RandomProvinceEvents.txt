@@ -1,0 +1,1907 @@
+#########################################################
+#		Religious conversion events		#
+#########################################################
+
+# Pagan to Catholic
+province_event = {
+
+	id = 5001
+
+	trigger = {
+		NOT = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = dharmic
+			religion_group = taoic
+		}
+		owner = {
+      NOT = {
+        religion_group = christian
+        religion_group = muslim
+        religion_group = dharmic
+        religion_group = taoic
+      }
+			any_neighbor_country = {
+				religion = catholic
+				relation = { who = THIS value = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				advisor = theologian
+			}
+		}
+	}
+
+	title = "EVTNAME5001"
+	desc = "EVTDESC5001"
+	
+	option = {
+		name = "EVTOPTA5001"		# Convert to Catholicism
+		ai_chance = { factor = 30 }
+		religion = catholic
+	}
+	option = {
+		name = "EVTOPTB5001"		# Honor the beliefs of our ancestors
+		ai_chance = { factor = 70 }
+		owner = {
+			stability = 1
+		}
+	}
+}
+
+# Pagan to Protestant
+province_event = {
+
+	id = 5002
+
+	trigger = {
+		NOT = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = dharmic
+			religion_group = taoic
+		}
+		owner = {
+      NOT = {
+        religion_group = christian
+        religion_group = muslim
+        religion_group = dharmic
+        religion_group = taoic
+      }
+			any_neighbor_country = {
+				religion = protestant
+				relation = { who = THIS value = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				advisor = theologian
+			}
+		}
+	}
+
+	title = "EVTNAME5001"
+	desc = "EVTDESC5001"
+	
+	option = {
+		name = "EVTOPTA5001"		# Convert to Protestantism
+		ai_chance = { factor = 30 }
+		religion = protestant
+	}
+	option = {
+		name = "EVTOPTB5001"		# Honor the beliefs of our ancestors
+		ai_chance = { factor = 70 }
+		owner = {
+			stability = 1
+		}
+	}
+}
+
+# Pagan to Sunni
+province_event = {
+
+	id = 5003
+
+	trigger = {
+		NOT = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = dharmic
+			religion_group = taoic
+		}
+		owner = {
+      NOT = {
+        religion_group = christian
+        religion_group = muslim
+        religion_group = dharmic
+        religion_group = taoic
+      }
+			any_neighbor_country = {
+				religion = sunni
+				relation = { who = THIS value = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				advisor = theologian
+			}
+		}
+	}
+
+	title = "EVTNAME5003"
+	desc = "EVTDESC5003"
+	
+	option = {
+		name = "EVTOPTA5003"		# Convert to Sunni
+		ai_chance = { factor = 30 }
+		religion = sunni
+	}
+	option = {
+		name = "EVTOPTB5003"		# Honor the beliefs of our ancestors
+		ai_chance = { factor = 70 }
+		owner = {
+			stability = 1
+		}
+	}
+}
+
+# Pagan to Shiite
+province_event = {
+
+	id = 5004
+
+	trigger = {
+		NOT = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = dharmic
+			religion_group = taoic
+		}
+		owner = {
+      NOT = {
+        religion_group = christian
+        religion_group = muslim
+        religion_group = dharmic
+        religion_group = taoic
+      }
+			any_neighbor_country = {
+				religion = shiite
+				relation = { who = THIS value = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				advisor = theologian
+			}
+		}
+	}
+
+	title = "EVTNAME5003"
+	desc = "EVTDESC5003"
+	
+	option = {
+		name = "EVTOPTA5003"		# Convert to Shiite
+		ai_chance = { factor = 30 }
+		religion = shiite
+	}
+	option = {
+		name = "EVTOPTB5003"		# Honor the beliefs of our ancestors
+		ai_chance = { factor = 70 }
+		owner = {
+			stability = 1
+		}
+	}
+}
+
+
+#########################################################
+#			Revolt events			#
+#########################################################
+
+# Number of cities: < 5
+province_event = {
+
+	id = 5005
+
+	trigger = {
+		owner = {
+			NOT = { num_of_cities = 5 }
+			OR = {
+				NOT = { religion = THIS }
+				AND = {	
+					NOT = { accepted_culture = THIS }
+					NOT = { primary_culture = THIS }			
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				OR = {
+					has_country_flag = rebellion_event
+					stability = 1
+				}
+			}
+		}
+	}
+
+	title = "EVTNAME5005"
+	desc = "EVTDESC5005"
+	
+	option = {
+		name = "EVTOPTA5005"			# Ignore them
+		create_revolt = 1
+		owner = {
+			set_country_flag = rebellion_event
+		}
+	}
+	option = {
+		name = "EVTOPTB5005"			# Lower taxes
+		add_province_modifier = {
+			name = "tax_reduction"
+			duration = 300
+		}
+		owner = {
+			set_country_flag = rebellion_event
+		}
+	}
+}
+
+# Number of cities: 5 - 29
+province_event = {
+
+	id = 5006
+
+	trigger = {
+		owner = {
+			num_of_cities = 5
+			NOT = { num_of_cities = 30 }
+			OR = {
+				NOT = { religion = THIS }
+				AND = {	
+					NOT = { accepted_culture = THIS }
+					NOT = { primary_culture = THIS }			
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 3.0
+			owner = {
+				OR = {
+					has_country_flag = rebellion_event
+					stability = 1
+				}
+			}
+		}
+	}
+
+	title = "EVTNAME5005"
+	desc = "EVTDESC5005"
+	
+	option = {
+		name = "EVTOPTA5005"			# Ignore them
+		create_revolt = 2
+		owner = {
+			set_country_flag = rebellion_event
+		}
+	}
+	option = {
+		name = "EVTOPTB5005"			# Lower taxes
+		add_province_modifier = {
+			name = "tax_reduction"
+			duration = 730
+		}
+		owner = {
+			set_country_flag = rebellion_event
+			prestige = -0.01
+		}
+	}
+}
+
+# Number of cities: 30-
+province_event = {
+
+	id = 5007
+
+	trigger = {
+		owner = {
+			num_of_cities = 30
+			OR = {
+				NOT = { religion = THIS }
+				AND = {	
+					NOT = { accepted_culture = THIS }
+					NOT = { primary_culture = THIS }			
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 10.0
+			owner = {
+				OR = {
+					has_country_flag = rebellion_event
+					stability = 1
+				}
+			}
+		}
+	}
+
+	title = "EVTNAME5005"
+	desc = "EVTDESC5005"
+	
+	option = {
+		name = "EVTOPTA5005"			# Ignore them
+		create_revolt = 3		
+		any_neighbor_province = {
+			limit = {
+				owned_by = THIS
+				religion = THIS
+				owner = {
+					NOT = { accepted_culture = THIS }
+					NOT = { primary_culture = THIS }
+					NOT = { culture_group = THIS }
+				}
+			}
+			create_revolt = 1
+		}
+		owner = {
+			set_country_flag = rebellion_event
+		}
+	}
+	option = {
+		name = "EVTOPTB5005"			# Lower taxes
+		add_province_modifier = {
+			name = "tax_reduction"
+			duration = 1460
+		}
+		owner = {
+			set_country_flag = rebellion_event
+			prestige = -0.02
+		}
+	}
+}
+
+#########################################################
+#			Bad harvest		 	#
+#########################################################
+province_event = {
+
+	id = 5016
+
+	trigger = {
+		owner = {
+			NOT = { grain = 3 }
+			inflation = 20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 15000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = { inflation = 40 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 15.0
+			owner = { has_country_flag = harvest }
+		}
+	}
+
+	title = "EVTNAME5016"
+	desc = "EVTDESC5016"
+	
+	option = {
+		name = "EVTOPTA5016"		# Attempt to help the people.
+		ai_chance = { factor = 45 }
+		owner = {
+			treasury = -40
+			set_country_flag = harvest
+		}
+	}
+	option = {
+		name = "EVTOPTB5016"		# Quell the revolt.
+		ai_chance = { factor = 55 }
+		anti_tax_rebels = 1
+		owner = {
+			set_country_flag = harvest
+		}
+	}
+}
+#########################################################
+#			Plague		 	  	#
+#########################################################
+
+province_event = {
+
+	id = 5026
+
+	trigger = {
+		NOT = { has_province_flag = plague }
+		citysize = 2500
+		OR = {
+			trade_goods = grain
+			trade_goods = fish
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				has_province_flag = plague
+			}
+		}
+		modifier = {
+			factor = 0.75
+			port = yes
+		}
+		modifier = {
+			factor = 8.0
+			owner = { num_of_cities = 20 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				OR = {
+					production_efficiency = 0.4
+					trade_efficiency = 0.4
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { government_tech = 10 }
+		}		
+		modifier = {
+			factor = 1.25
+			owner = { trade_tech = 15 }
+		}
+	}
+
+	title = "EVTNAME5026"
+	desc = "EVTDESC5026"
+
+	option = {
+		name = "EVTOPTA5026"		# We have to do something!
+		ai_chance = { factor = 55 }
+		multiply_citysize = 0.8
+		set_province_flag = plague
+		owner = { treasury = -40 }
+	}
+	option = {
+		name = "EVTOPTB5026"		# There is nothing we can do.
+		ai_chance = { factor = 45 }
+		multiply_citysize = 0.5
+		set_province_flag = plague
+		add_province_modifier = {
+			name = "plague"
+			duration = 600
+		}
+	}
+}
+
+#########################################################
+#		Agricultural revolution		  	#
+#########################################################
+
+# Number of cities: < 30
+province_event = {
+
+	id = 5037
+
+	trigger = {
+		trade_goods = grain
+		owner = { NOT = { num_of_cities = 30 } }
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		modifier = {
+			factor = 0.75
+			has_national_focus = yes
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = 0 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 1 }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 3 }
+		}
+	}
+
+	title = "EVTNAME5037"
+	desc = "EVTDESC5037"
+
+	option = {
+		name = "EVTOPTA5037"		# Invest in a bigger army
+		ai_chance = { factor = 55 }
+		change_manpower = 1
+	}
+	option = {
+		name = "EVTOPTB5037"		#  Raise taxes
+		ai_chance = { factor = 45 }
+		base_tax = 1
+	}
+}
+
+# Number of cities: 30-79
+province_event = {
+
+	id = 5038
+
+	trigger = {
+		trade_goods = grain
+		owner = {
+			num_of_cities = 30
+			NOT = { num_of_cities = 80 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.75
+			has_national_focus = yes
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = 0 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 1 }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 3 }
+		}
+	}
+
+	title = "EVTNAME5037"
+	desc = "EVTDESC5037"
+
+	option = {
+		name = "EVTOPTA5037"		# Invest in a bigger army
+		ai_chance = { factor = 55 }
+		change_manpower = 1
+		owner = {
+			add_country_modifier = {
+				name = "military_funding"
+				duration = 100
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB5037"		#  Raise taxes
+		ai_chance = { factor = 45 }
+		base_tax = 2
+		owner = { treasury = 50 }
+	}
+}
+
+# Number of cities: 80 -
+province_event = {
+
+	id = 5039
+
+	trigger = {
+		trade_goods = grain
+		owner = {
+			num_of_cities = 80
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.75
+			has_national_focus = yes
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = 0 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 1 }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { innovative_narrowminded = 3 }
+		}
+	}
+
+	title = "EVTNAME5037"
+	desc = "EVTDESC5037"
+
+	option = {
+		name = "EVTOPTA5037"		# Invest in a bigger army
+		ai_chance = { factor = 55 }
+		change_manpower = 2
+		owner = {
+			add_country_modifier = {
+				name = "military_funding"
+				duration = 150
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB5037"		#  Raise taxes
+		ai_chance = { factor = 45 }
+		base_tax = 2
+		owner = { treasury = 100 }
+	}
+}
+
+#########################################################
+#		Fortification efforts		  	#
+#########################################################
+
+province_event = {
+
+	id = 5057
+
+	trigger = {
+		owner = { MIL = 7 land_tech = 16 }
+		has_building = fort1
+		NOT = { has_province_modifier = improved_fortifications }
+		treasury = 100
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				fortification_expert = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { advisor = fortification_expert }
+			}
+		}
+	}
+
+	title = "EVTNAME5057"
+	desc = "EVTDESC5057"
+
+	option = {
+		name = "EVTOPTA5057"		# It's of the utmost importance
+		ai_chance = { factor = 55 }
+		add_province_modifier = {
+			name = "improved_fortifications"
+			duration = -1
+		}
+		owner = { treasury = -50 }
+	}
+	option = {
+		name = "EVTOPTB5057"		# It's too expensive
+		ai_chance = { factor = 45 }
+		owner = { prestige = -0.01 }
+	}
+}
+
+#########################################################
+#			Medical			  	#
+#########################################################
+
+province_event = {
+
+	id = 5062
+
+	trigger = {
+		owner = {
+			NOT = { innovative_narrowminded = -2 }
+			adm = 6
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = { university = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { num_of_cities = 30 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { num_of_cities = 50 }
+		}
+	}
+
+	title = "EVTNAME5062"
+	desc = "EVTDESC5062"
+
+	option = {
+		name = "EVTOPTA5062"		# Our research will benefit population growth
+		ai_chance = { factor = 55 }
+		add_province_modifier = {
+			name = "medical_evolution"
+			duration = 500
+		}
+	}
+	option = {
+		name = "EVTOPTB5062"		# There is still room for improvement
+		ai_chance = { factor = 45 }
+		owner = { production_tech = 50 }
+	}
+}
+
+#########################################################
+#			Noble feud			#
+#########################################################
+
+province_event = {
+
+	id = 5063
+
+	trigger = {
+		owner = {
+			government = monarchy
+			NOT = { aristocracy_plutocracy = 0 }
+			NOT = { advisor = statesman }
+			badboy = 0.3
+			NOT = { prestige = 0.1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { ADM = 4 }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				ADM = 8
+			}
+		}
+	}
+
+	title = "EVTNAME5063"
+	desc = "EVTDESC5063"
+
+	option = {
+		name = "EVTOPTA5063"		# Side with one family
+		ai_chance = { factor = 50 }
+		noble_rebels = 1
+	}
+	option = {
+		name = "EVTOPTB5063"		# Let them fight it out.
+		ai_chance = { factor = 25 }
+		base_tax = -1
+	}
+	option = {
+		name = "EVTOPTC5063"		# Try to settle the issue.
+		ai_chance = { factor = 25 }
+		owner = { treasury = -100 }	
+	}
+}
+
+#########################################################
+#		New land claimed			#
+#########################################################
+
+province_event = {
+
+	id = 5073
+
+	trigger = {
+		NOT = { has_province_flag = new_land }
+		owner = {
+			OR = {
+				conquistador = 1
+				explorer = 1
+			}
+			MIL = 6
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10000 # Random Province Event
+		
+		modifier = {
+			factor = 0.8
+			owner = { MIL = 8 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { luck = yes }
+		}
+		
+		modifier = {
+			factor = 0.75
+			has_national_focus = yes
+		}
+		
+		modifier = {
+			factor = 10.0
+			owner = { num_of_cities = 15 }
+		}
+	}
+
+	title = "EVTNAME5073"
+	desc = "EVTDESC5073"
+
+	option = {
+		name = "EVTOPTA5073"		# Increase tax income.
+		ai_chance = { factor = 60 }
+		base_tax = 1
+		set_province_flag = new_land
+	}
+	option = {
+		name = "EVTOPTB5073"		# Increase manpower.
+		ai_chance = { factor = 30 }
+		change_manpower = 1
+		set_province_flag = new_land		
+	}
+	option = {
+		name = "EVTOPTC5073"		# Increase both for a small additional cost.
+		ai_chance = { factor = 10 }				
+		base_tax = 1
+		change_manpower = 1
+		owner = { treasury = -30 }
+		set_province_flag = new_land
+	}
+}
+
+#########################################################
+#		Boundary dispute			#
+#########################################################
+
+province_event = {
+
+	id = 5087
+
+	trigger = {
+		is_core = THIS
+		culture_group = THIS
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+			NOT = { is_core = THIS }
+			NOT = { owned_by = PAP }
+			is_capital = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5500 # Random Province Event
+		
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { DIP = 4 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { DIP = 6 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { badboy = 0.3 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { badboy = 0.6 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				DIP = 8
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				DIP = 9
+			}
+		}		
+	}
+
+	title = "EVTNAME5087"
+	desc = "EVTDESC5087"
+
+	option = {
+		name = "EVTOPTA5087"		# Press issue
+		ai_chance = { factor = 55 }
+		random_neighbor_province = {
+			limit = {
+				NOT = { owned_by = THIS }
+				NOT = { is_core = THIS }
+				NOT = { owned_by = PAP }
+				is_capital = no
+			}
+			add_core = THIS
+			owner = {
+				casus_belli = {	
+					target = THIS
+					type = cb_insult
+					months = 12
+				}
+				relation = { who = THIS value = -30 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB5087"		# Settle issue
+		ai_chance = { factor = 45 }
+		owner = { prestige = -0.01 }
+	}
+}
+
+
+#########################################################
+#		A formal request			#
+#########################################################
+
+province_event = {
+
+	id = 6007
+
+	trigger = {
+		emperor = {
+			exists = yes
+			war = no
+		}
+		hre = yes
+		NOT = { is_core = THIS }
+		is_capital = no
+		NOT = { has_province_flag = emperor_nagged_for_it }
+		NOT = { has_province_flag = given_to_the_emperor }
+		owner = {
+			is_emperor = no
+			war = no
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			owner = { centralization_decentralization = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { badboy = 0.15 }
+		}
+		modifier = {
+			factor = 30.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { centralization_decentralization = -1 } }
+		}
+	}
+
+	title = "EVTNAME6007"
+	desc = "EVTDESC6007"
+
+	option = {
+		name = "EVTOPTA6007"		# Clearly the Emperor underestimates us
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
+		emperor = {
+			casus_belli = {	
+				target = THIS
+				type = cb_hre_attacked
+				months = 12
+			}
+			relation = { who = THIS value = -50 }
+		}
+		set_province_flag = emperor_nagged_for_it
+		add_province_modifier = {
+			name = unlawful_territory
+			duration = -1
+		}
+		owner = {
+			prestige = -0.1
+			stability = -1
+		}
+		emperor = {
+			country_event = 9091
+		}
+	}
+	option = {
+		name = "EVTOPTB6007"		# That land means nothing to us
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 100
+				badboy = 0.2
+			}
+		}
+		set_province_flag = in_event_6007_optb
+		owner = {
+			random_owned = {
+				limit = {
+					has_province_flag = in_event_6007_optb
+					NOT = {
+						is_core = current
+					}
+				}
+				set_province_flag = given_to_the_emperor
+				owner = { prestige = 0.05 }
+				emperor = {
+					country_event = 9090
+				}
+			}
+		}
+		clr_province_flag = in_event_6007_optb
+		
+	}
+}
+
+#########################################################
+#		Territory integrated			#
+#########################################################
+
+province_event = {
+
+	id = 6008
+
+	trigger = {
+		has_province_modifier = unlawful_territory
+		is_core = THIS
+	}
+
+	mean_time_to_happen = {
+		months = 24 # Random Province Event
+		
+		modifier = {
+			factor = 2.0
+			owner = { badboy = 0.25 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { badboy = 0.5 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { badboy = 0.1 } }
+		}		
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { badboy = 0.05 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { luck = yes }
+		}
+	}
+
+	title = "EVTNAME6008"
+	desc = "EVTDESC6008"
+
+	option = {
+		name = "EVTOPTA6008"		# Great News!
+		ai_chance = { factor = 100 }
+		remove_province_modifier = unlawful_territory
+		clr_province_flag = emperor_nagged_for_it
+	}
+}
+
+#########################################################
+#			Good harvest			#
+#########################################################
+
+province_event = {
+
+	id = 6014
+
+	trigger = {
+		trade_goods = grain
+		owner = {
+			production_efficiency = 0.5
+			grain = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 0.5
+			has_building = tax_assessor
+		}
+		modifier = {
+			factor = 0.5
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 20 }
+		}
+	}
+
+	title = "EVTNAME6014"
+	desc = "EVTDESC6014"
+
+	option = {
+		name = "EVTOPTA6014"		# Put into the treasury
+		ai_chance = { factor = 55 }
+		owner = { treasury = 25 }
+	}
+	option = {
+		name = "EVTOPTB6014"		# Invest the money
+		ai_chance = { factor = 45 }
+		owner = { production_tech = 50 }
+	}
+}
+
+#########################################################
+#	Religious conversion - Pagan to Buddhism	#
+#########################################################
+province_event = {
+
+	id = 6016
+
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+		}
+		owner = {
+			OR = {
+				religion = animism
+				religion = shamanism
+			}
+			any_neighbor_country = {
+				religion = buddhism
+				relation = { who = THIS value = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = THIS }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				advisor = theologian
+			}
+		}
+	}
+
+	title = "EVTNAME6016"
+	desc = "EVTDESC6016"
+	
+	option = {
+		name = "EVTOPTA6016"		# Convert to Buddhism
+		ai_chance = { factor = 30 }
+		religion = buddhism
+	}
+	option = {
+		name = "EVTOPTB6016"		# Honor the beliefs of our ancestors
+		ai_chance = { factor = 70 }
+		owner = {
+			stability = 1
+		}
+	}
+}
+
+
+#########################################################
+#			Protect our Faith		#
+#########################################################
+province_event = {
+
+	id = 6032
+
+	trigger = {
+		owner = { religion = THIS }
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+			NOT = { is_core = THIS }
+			religion = THIS
+			owner = {
+				religion_group = THIS
+				NOT = { religion = THIS }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 1.2
+			owner = { NOT = { DIP = 4 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { defender_of_faith = yes }
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				DIP = 8
+			}
+		}
+	}
+
+	title = "EVTNAME6032"
+	desc = "EVTDESC6032"
+
+	option = {
+		name = "EVTOPTA6032"		# Press issue
+		ai_chance = { factor = 55 }
+		random_neighbor_province = {
+			limit = {
+				NOT = { owned_by = THIS }
+				NOT = { is_core = THIS }
+				religion = THIS
+				owner = {
+					religion_group = THIS
+					NOT = { religion = THIS }
+				}
+			}
+			add_core = THIS
+			owner = {
+				casus_belli = {	
+					target = THIS
+					type = cb_insult
+					months = 12
+				}
+				relation = { who = THIS value = -50 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB6032"		# Settle issue
+		ai_chance = { factor = 45 }
+		owner = { prestige = -0.01 }
+	}
+}
+
+#########################################################
+#		Cultural Dispute			#
+#########################################################
+province_event = {
+
+	id = 6033
+
+	trigger = {
+		owner = { culture_group = THIS }
+		any_neighbor_province = {
+			NOT = { owned_by = THIS }
+			NOT = { is_core = THIS }
+			culture_group = THIS
+			owner = {
+				NOT = { primary_culture = THIS }
+				NOT = { accepted_culture = THIS }
+				NOT = { culture_group = THIS }
+				OR = {
+					NOT = { ADM = 5 }
+					NOT = { MIL = 5	}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000 # Random Province Event
+		
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { DIP = 4 } }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { idea = humanist_tolerance }
+		}		
+		modifier = {
+			factor = 2.0
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				DIP = 8
+			}
+		}
+	}
+
+	title = "EVTNAME6033"
+	desc = "EVTDESC6033"
+
+	option = {
+		name = "EVTOPTA6033"		# Press issue
+		ai_chance = { factor = 55 }
+		random_neighbor_province = {
+			limit = {
+				NOT = { owned_by = THIS }
+				NOT = { is_core = THIS }
+				culture_group = THIS
+				owner = {
+					NOT = { primary_culture = THIS }
+					NOT = { accepted_culture = THIS }
+					NOT = { culture_group = THIS }
+					OR = {
+						NOT = { ADM = 5 }
+						NOT = { MIL = 5	}
+					}
+				}
+			}
+			add_core = THIS
+			owner = {
+				casus_belli = {	
+					target = THIS
+					type = cb_insult
+					months = 12
+				}
+				relation = { who = THIS value = -50 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB6033"		# Settle issue
+		ai_chance = { factor = 45 }
+		owner = { prestige = -0.01 }
+	}
+}
+
+province_event = {
+
+	id = 746
+	trigger = {
+		owner = {
+			war_exhaustion = 15
+			war = yes
+			NOT = { war_score = -10 }
+		}
+		
+		is_capital = no
+		OR = {
+			has_owner_culture = no
+			controller = { nomad = yes }
+		}
+		garrison = 1000
+		has_siege = no
+		
+		NOT = { controlled_by = owner }
+		NOT = { controller = { tag = REB } }
+		NOT = { controller = { tag = NAT } }
+		NOT = { controller = { tag = PIR } }
+		controller = { 
+			NOT = { war_exhaustion = 5 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 5.0
+			owner = { luck = yes }
+		}		
+		modifier = {
+			factor = 0.8
+			has_owner_religion = no
+		}		
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = 0 } }
+		}		
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { prestige = -0.5 } }
+		}	
+		modifier = {
+			factor = 0.8
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { badboy = 1.0 }
+		}					
+		modifier = {
+			factor = 2.0
+			controller = { nomad = yes }
+		}
+	}
+
+	title = "EVTNAME746"
+	desc = "EVTDESC746"
+		
+	option = {
+		name = "EVTOPTA746"
+		controller = { country_event = 747 }
+	}
+}
+
+province_event = {
+
+	id = 757
+	trigger = {
+		owner = { NOT = { num_of_revolts = 3 } }
+		owner = { badboy = 1.25 }
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 5.0
+			owner = { luck = yes }
+		}		
+		modifier = {
+			factor = 0.25
+			owner = { badboy = 2.0 }
+		}		
+	}
+
+	title = "EVTNAME757"
+	desc = "EVTDESC757"
+	
+	option = {
+		name = "EVTOPTA757"
+		random_list = {
+			30 = {
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = noble_rebels
+					size = 3
+				}
+			}
+			30 = {
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 2
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 3
+				}
+			}
+		}
+	}
+}
+
+#Events for HRE members
+province_event = {
+
+	id = 758
+	trigger = {
+		is_capital = yes
+		hre = yes
+		owner = {
+			war = no
+			stability = 2
+			emperor = { truce_with = THIS }
+			is_lesser_in_union = no
+			is_subject = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.9
+			owner = { luck = yes }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { legitimacy = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { stability = 3 }
+		}
+	}
+
+	title = "EVTNAME758"
+	desc = "EVTDESC758"
+		
+	option = {
+		name = "EVTOPTA758"
+		owner = { prestige = 0.1 }
+	}
+}
+
+# Horde event
+
+province_event = {
+
+	id = 949
+	trigger = {
+		NOT = { controlled_by = owner }
+		NOT = { owner = { government = steppe_horde } }
+		controller = { government = steppe_horde }
+		any_neighbor_province = {
+			controlled_by = owner
+			owner = { government = steppe_horde }
+		}
+		war_exhaustion = 5
+		garrison = 1000
+		has_siege = no
+		
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 5.0
+			owner = { luck = yes }
+		}		
+		modifier = {
+			factor = 0.8
+			has_owner_religion = no
+		}		
+				
+	}
+
+	title = "EVTNAME746"
+	desc = "EVTDESC746"
+		
+	option = {
+		name = "EVTOPTA746"
+		controller = { country_event = 747 }
+	}
+}
+
+province_event = {
+
+	id = 960
+
+	trigger = {
+		NOT = { year = 1500 }
+		owner = {
+			tag = SCO
+			NOT = { has_country_modifier = braveheart }
+			is_subject = no
+			is_lesser_in_union = no
+			war_with = ENG
+		}
+		SCO = { owns = 252 }
+		controlled_by = owner
+		region = highlands
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME960"
+	desc = "EVTDESC960"
+
+	immediate = {
+		owner = {
+			add_country_modifier = {
+				name = braveheart
+				duration = 730
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA960"
+		infantry = 252 # Highlands province
+		infantry = 252
+		infantry = 252
+		infantry = 252
+		infantry = 252
+		infantry = 252
+		infantry = 252
+		infantry = 252
+		cavalry = 252
+		cavalry = 252
+		cavalry = 252
+		cavalry = 252
+	}
+}
+
+
+province_event = {
+	
+	id = 6331
+	trigger = {
+		owner = { 
+			NOT = { innovative_narrowminded = 0 } 
+			}
+		religion = THIS
+		any_neighbor_province = {
+			NOT = { religion = THIS }
+			religion_group = THIS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { innovative_narrowminded = -1 } }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { innovative_narrowminded = -3 } }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { innovative_narrowminded = -4 } }
+		}
+	}
+
+	title = "EVTNAME6331"
+	desc = "EVTDESC6331" 
+
+	option = {
+		name = "EVTOPTA6331"
+		add_province_modifier = {
+			name = "heresy"
+			duration = 3650
+		}		
+	}
+
+	option = {
+		name = "EVTOPTB6331"
+		owner = { innovative_narrowminded = 1 }
+	}
+} 
+
+
+### Natives assimilated
+
+province_event = {	
+	id = 4900
+	trigger = {
+		is_colony = yes
+		native_size = 3
+		units_in_province = 1
+	}
+	mean_time_to_happen = {
+		years = 3
+		modifier = {	factor = 0.9	native_size = 5	}
+		modifier = {	factor = 0.9	native_size = 10	}
+		modifier = {	factor = 0.9	native_size = 20	}
+		modifier = {	factor = 0.9	native_size = 40	}
+		modifier = {	factor = 0.9	native_size = 60	}
+		modifier = {	factor = 0.9	native_size = 80	}
+	}
+	title = "EVTNAME4900"
+	desc = "EVTDESC4900"
+	option = {
+		name = "EVTOPTA4900"
+		citysize = 100
+		native_size = -2
+		random = 
+		{
+			chance = 10
+			base_tax = 1
+		}		
+	}
+}
+
+
+### Native Accomodation ###
+province_event = {
+	id = 4901
+	trigger = {
+		is_colony = yes
+		native_size = 3
+		native_ferocity = 1
+		native_hostileness = 1
+		units_in_province = 1
+	}
+	mean_time_to_happen = {
+		years = 3
+		modifier = {	
+			factor = 0.9
+			units_in_province = 2
+			NOT = { native_size = 41 }
+		}
+		modifier = {	
+			factor = 0.9
+			units_in_province = 4
+			NOT = { native_size = 81 }
+		}
+		modifier = {	
+			factor = 0.9
+			units_in_province = 6
+			NOT = { native_size = 121 }
+		}
+		modifier = {	
+			factor = 0.9	
+			units_in_province = 8	
+		}
+	}
+	title = "EVTNAME4901"
+	desc = "EVTDESC4901"
+	option = { 
+		name = "EVTOPTA4901"
+		random_list =
+			{
+				75 = { native_ferocity = -1 }
+				25 = { native_ferocity = -2 }
+			}
+		random_list =
+			{
+				75 = { native_hostileness = -1 }
+				25 = { native_hostileness = -2 }
+			}			
+		random = {
+				chance = 20
+				base_tax = 1
+		}
+	}
+}

@@ -1,0 +1,37 @@
+#834 - Barinas
+
+culture = guajiro
+religion = inca_religion
+capital = "Barinas"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 5
+
+1568.1.1   = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 170
+		culture = castillian
+		religion = catholic
+	     } # Estimated
+1593.1.1   = { add_core = SPA }
+1600.1.1   = { citysize = 445 trade_goods = wool }
+1650.1.1   = { citysize = 800 }
+1700.1.1   = { citysize = 1040 }
+1750.1.1   = { citysize = 1270 add_core = VNZ }
+1800.1.1   = { citysize = 1540 }
+1811.7.5   = {	owner = VNZ
+		controller = VNZ
+	     } # Venezuela declared its independence
+1812.7.25  = { controller = SPA } # The revolutionary army is defeated
+1813.8.7   = { controller = VNZ } # The Second Republic of Venezuela is established
+1814.1.1   = { controller = SPA } # The end of the second republic
+1819.12.17 = {	owner = COL
+		controller = COL
+		add_core = COL
+		remove_core = SPA
+	     } # The establishment of Gran Colombia

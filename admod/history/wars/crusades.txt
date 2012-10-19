@@ -1,0 +1,12 @@
+name = "Bulgar-Byzantine Border War"
+casus_belli = cb_conquest
+
+1397.1.1 = {
+	add_attacker = BUL
+	add_defender = BYZ
+}
+
+1399.1.1 = {
+	rem_attacker = BUL
+	rem_defender = BYZ
+}

@@ -1,0 +1,279 @@
+country_decisions = {
+
+	karnataka_nation = {
+		potential = {
+			culture_group = dravidian
+			NOT = { technology_group = nomad_group }
+			OR = {
+				religion_group = dharmic
+				religion_group = taoic
+			}
+			NOT = { tag = PER }
+			NOT = { tag = MUG }
+			NOT = { exists = KRN }
+			NOT = { exists = KRK }
+		}
+		allow = {
+			war = no
+			stability = 3
+			owns = 532
+			owns = 533	# Mysore
+			owns = 534
+			owns = 535
+			owns = 536
+			owns = 537
+			owns = 538
+			owns = 539
+			owns = 540
+			owns = 541
+			owns = 542
+			owns = 543
+			owns = 547
+			owns = 549
+			owns = 572
+			owns = 573
+
+			is_core = 533	# Mysore
+			is_core = 534	# Calicut
+			is_core = 536	# Madurai
+			is_core = 539	# Madras
+			is_core = 540	# Bangalore
+		}
+		effect = {
+			KRN = {
+				indian_region = {
+					add_core = KRN
+				}
+			}
+			culture_group_union = dravidian
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = KRN
+			KRN = {
+				capital = 533
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	carnatic_nation = {
+		potential = {
+			culture_group = dravidian
+			NOT = { technology_group = nomad_group }
+			religion_group = muslim
+			NOT = { tag = PER }
+			NOT = { tag = MUG }
+			NOT = { exists = KRN }
+			NOT = { exists = KRK }
+		}
+		allow = {
+			war = no
+			stability = 3
+			owns = 532
+			owns = 533	# Mysore
+			owns = 534
+			owns = 535
+			owns = 536
+			owns = 537
+			owns = 538
+			owns = 539
+			owns = 540
+			owns = 541
+			owns = 542
+			owns = 543
+			owns = 547
+			owns = 549
+			owns = 572
+			owns = 573
+
+			is_core = 533	# Mysore
+			is_core = 534	# Calicut
+			is_core = 536	# Madurai
+			is_core = 537	# Tiruchchirapalli
+			is_core = 539	# Madras
+			is_core = 540	# Bangalore
+		}
+		effect = {
+			KRK = {
+				indian_region = {
+					add_core = KRK
+				}
+			}
+			culture_group_union = dravidian
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = KRK
+			KRK = {
+				capital = 537
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	maratha_nation = {
+		potential = {
+			culture_group = western_aryan
+			NOT = { technology_group = nomad_group }
+			NOT = { tag = HIN }
+			NOT = { tag = PER }
+			NOT = { tag = MUG }
+			NOT = { exists = MRA }
+		}
+		allow = {
+			war = no
+			stability = 3
+			owns = 503
+			owns = 504
+			owns = 505
+			owns = 512
+			owns = 513
+			owns = 514
+			owns = 515
+			owns = 516
+			owns = 517
+			owns = 518
+			owns = 519
+			owns = 520
+			owns = 525
+			owns = 527
+			owns = 528
+			owns = 529
+			owns = 530
+			owns = 531
+			owns = 544
+			owns = 545
+			owns = 546
+		}
+		effect = {
+			MRA = {
+				indian_region = {
+					add_core = MRA
+				}
+			}
+			culture_group_union = western_aryan
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = MRA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hindustan_nation_hindusthani = {
+		potential = {
+			culture_group = hindusthani
+			NOT = { technology_group = nomad_group }
+			NOT = { tag = MRA }
+			NOT = { tag = PER }
+			NOT = { tag = MUG }
+			NOT = { exists = HIN }
+		}
+		allow = {
+			war = no
+			stability = 3
+			owns = 506
+			owns = 507
+			owns = 508
+			owns = 509
+			owns = 510
+			owns = 511
+			owns = 518	# Udaipur
+			owns = 521
+			owns = 522
+			owns = 523
+			owns = 524
+			owns = 526
+			owns = 550
+			owns = 551
+			owns = 555
+			owns = 556
+			owns = 578
+			owns = 740
+
+			is_core = 507	# Lahore
+			is_core = 518	# Udaipur
+			is_core = 522	# Delhi
+			is_core = 524	# Agra
+		}
+		effect = {
+			HIN = {
+				indian_region = {
+					add_core = HIN
+				}
+			}
+			culture_group_union = hindusthani
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hindustan_nation_eastern_aryan = {
+		potential = {
+			NOT = { tag = MRA }
+			NOT = { tag = PER }
+			NOT = { tag = MUG }
+			NOT = { exists = HIN }
+			culture_group = eastern_aryan
+			NOT = { technology_group = nomad_group }
+		}
+		allow = {
+			war = no
+			stability = 3
+			owns = 560
+			owns = 561
+			owns = 564
+			owns = 563
+			owns = 562
+			owns = 568
+			owns = 558
+			owns = 559
+			owns = 552
+			owns = 553
+			owns = 548
+		}
+	  	effect = {
+			HIN = {
+				indian_region = {
+					add_core = HIN
+				}
+			}
+			culture_group_union = eastern_aryan
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

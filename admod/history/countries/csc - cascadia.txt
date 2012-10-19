@@ -1,0 +1,12 @@
+government = enlightened_despotism
+aristocracy_plutocracy = 3
+centralization_decentralization = -1
+innovative_narrowminded = -4
+mercantilism_freetrade = 3
+offensive_defensive = 3
+land_naval = 3
+quality_quantity = -4
+serfdom_freesubjects = 4
+primary_culture = cascadian
+technology_group = western
+unit_type = western

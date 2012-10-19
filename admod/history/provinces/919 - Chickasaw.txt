@@ -1,0 +1,41 @@
+#919 - Chickasaw
+
+owner = CHE
+controller = CHE
+culture = cherokee
+religion = spiritualism
+capital = "Chickasaw"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1500
+add_core = CHE
+discovered_by = CHE
+discovered_by = CRE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 1900 }
+1500.1.1  = { citysize = 2130 }
+1540.1.1  = { discovered_by = SPA } # Hernando De Soto
+1550.1.1  = { citysize = 2988 }
+1600.1.1  = { citysize = 3540 }
+1650.1.1  = { citysize = 4800 }
+1670.1.1  = { discovered_by = FRA } # Robert Cavelier de La Salle
+1716.1.1  = {	owner = FRA
+		controller = FRA
+		fort1 = yes
+		culture = cosmopolitan_french
+		religion = catholic
+	    } # René Robert Cavelier, Fort Prudhomme
+1736.5.26 = { revolt_risk = 5 } # Battle of Ackia
+1737.1.1  = { revolt_risk = 0 }
+1741.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 5200 add_core = LOU }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris, ceded to the British
+1783.9.3  = { owner = USA controller = USA add_core = USA }

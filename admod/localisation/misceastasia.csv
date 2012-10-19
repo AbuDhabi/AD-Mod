@@ -1,0 +1,157 @@
+yamato;Yamato;;;;;;;;;;;;;x
+ryukyuan;Ryukyuan;;;;;;;;;;;;;x
+ainu;Ainu;;;;;;;;;;;;;x
+emishi;Emishi;;;;;;;;;;;;;x
+japan_group;Japanese;;;;;;;;;;;;;x
+AIN;Ainu;;;;;;;;;;;;;x
+AIN_ADJ;Ainu;;;;;;;;;;;;;x
+AIN_ADJ2;Ainu;;;;;;;;;;;;;x
+HON;Tohoku;;;;;;;;;;;;;x
+HON_ADJ;Tohoku;;;;;;;;;;;;;x
+HON_ADJ2;Tohokuan;;;;;;;;;;;;;x
+HOJ;Kanto;;;;;;;;;;;;;x
+HOJ_ADJ;Kanto;;;;;;;;;;;;;x
+HOJ_ADJ2;Kantoan;;;;;;;;;;;;;x
+ODA;Chubu;;;;;;;;;;;;;x
+ODA_ADJ;Chubu;;;;;;;;;;;;;x
+ODA_ADJ2;Chubuan;;;;;;;;;;;;;x
+TKG;Kansai;;;;;;;;;;;;;x
+TKG_ADJ;Kansai;;;;;;;;;;;;;x
+TKG_ADJ2;Kinki;;;;;;;;;;;;;x
+TYT;Chugoku;;;;;;;;;;;;;x
+TYT_ADJ;Chugoku;;;;;;;;;;;;;x
+TYT_ADJ2;Chugoku;;;;;;;;;;;;;x
+CKS;Shikoku;;;;;;;;;;;;;x
+CKS_ADJ;Shikoku;;;;;;;;;;;;;x
+CKS_ADJ2;Shikokuan;;;;;;;;;;;;;x
+KBY;Kyushu;;;;;;;;;;;;;x
+KBY_ADJ;Kyushu;;;;;;;;;;;;;x
+KBY_ADJ2;Kyushuan;;;;;;;;;;;;;x
+CHI;China;;;;;;;;;;;;;x
+CHI_ADJ;Chinese;;;;;;;;;;;;;x
+CHI_ADJ2;Sino;;;;;;;;;;;;;x
+chi_han;Han;;;;;;;;;;;;;x
+chi_gan;Gan;;;;;;;;;;;;;x
+chi_jin;Jin;;;;;;;;;;;;;x
+chi_wu;Wu;;;;;;;;;;;;;x
+chi_min;Min;;;;;;;;;;;;;x
+chi_hakka;Hakka;;;;;;;;;;;;;x
+chi_yue;Yue;;;;;;;;;;;;;x
+chi_xiang;Xiang;;;;;;;;;;;;;x
+feudal_monarchy_japan_group;Shogunate;;Imperium;;Imperio;;;;;;;;;x
+despotic_monarchy_japan_group;Shogunate;;Imperium;;Imperio;;;;;;;;;x
+absolute_monarchy_japan_group;Empire;;Imperium;;Imperio;;;;;;;;;x
+administrative_monarchy_japan_group;Empire;;Imperium;;Imperio;;;;;;;;;x
+constitutional_monarchy_japan_group;Empire;;Imperium;;Imperio;;;;;;;;;x
+enlightened_despotism_japan_group;Empire;;Imperium;;Imperio;;;;;;;;;x
+feudal_monarchy_ruler_japan_group;Shogun;;Kaiser;;Emperador;;;;;;;;;x
+feudal_monarchy_ruler_female_japan_group;Shogun;;Kaiserin;;Emperatriz;;;;;;;;;x
+despotic_monarchy_ruler_japan_group;Shogun;;Kaiser;;Emperador;;;;;;;;;x
+despotic_monarchy_ruler_female_japan_group;Shogun;;Kaiserin;;Emperatriz;;;;;;;;;x
+noble_republic_ruler_japan_group;Shogun;;Shogun;;Sogún;;;;;;;;;;x
+noble_republic_ruler_female_japan_group;Shogun;;Shogun;;Sogún;;;;;;;;;x
+administrative_monarchy_ruler_japan_group;Emperor;;Kaiserin;;Emperador;;;;;;;;;x
+administrative_monarchy_ruler_female_japan_group;Empress;;Kaiser;;Emperatriz;;;;;;;;;x
+absolute_monarchy_ruler_japan_group;Emperor;;Kaiserin;;Emperador;;;;;;;;;x
+absolute_monarchy_ruler_female_japan_group;Empress;;Kaiser;;Emperatriz;;;;;;;;;x
+constitutional_monarchy_ruler_japan_group;Emperor;;Kaiserin;;Emperador;;;;;;;;;x
+constitutional_monarchy_ruler_female_japan_group;Empress;;Kaiser;;Emperatriz;;;;;;;;;x
+enlightened_despotism_ruler_japan_group;Emperor;;Kaiserin;;Emperador;;;;;;;;;x
+enlightened_despotism_ruler_female_japan_group;Empress;;Kaiser;;Emperatriz;;;;;;;;;x
+japan_nation_title;Form Japanese Nation;;;;;;;;;;;;x
+japan_nation_desc;We have shown the false kingdoms who the true Emperor of Japan is. Now we have the divine authority to unite the disparate peoples under a single banner!;;;;;;;;;;;;;x
+conquest_of_settsu_title;Conquer Settsu;;;;;;;;;;;;;x
+conquest_of_settsu_desc;The false emperors are drawing too much profit from the trading center in Settsu. Controlling it will help fund our mighty nation.;;;;;;;;;x
+conquest_of_ezochi_title;Conquer Ezochi;;;;;;;;;;;;;x
+conquest_of_ezochi_desc;Our cultural kin to the north are being oppressed by barbarians. We must save them from their oppression.;;;;;;;;;x
+conquest_of_okinawa_title;Conquer Okinawa;;;;;;;;;x
+conquest_of_okinawa_desc;Our cultural kin in Okinawa are being oppressed by heathens. We must bring them into the fold.;;;;;;;;;x
+conquest_of_kyushu_title;Conquer Kyushu;;;;;;;;;x
+conquest_of_kyushu_desc;The western island is an ideal port for raiding missions against the Chinese. Securing it would bring our nation great prosperity while denying it to others.;;;;;;;;;x
+discover_kurils_title;Discover the northern islands;;;;;;;;;;;;;x
+discover_kurils_desc;We must explore all possible avenues of expansion. The islands to the north may be useful to us.;;;;;;;;;;;;;x
+ainu_ryuku_relations_title;Dynastic Ties with Ryuku;;;;;;;;;;;;;x
+ainu_ryuku_relations_desc;Our religious views put us in a disadvantaged position on the Japanese islands. We must seek out friendships to aid us.;;;;;;;;;;;;;x
+ryuku_ainu_relations_title;Dynastic Ties with Ainu;;;;;;;;;;;;;x
+ryuku_ainu_relations_desc;Our religious views put us in a disadvantaged position on the Japanese islands. We must seek out friendships to aid us.;;;;;;;;;;;;;x
+samurai_code;The Samurai Code;;;;;;;;;;;;;x
+desc_samurai_code;A warrior philosophy of bravery, loyalty and honor.;;;;;;;;;;;;;x
+establish_samurai_code_title;Establish code of the Samurai;;;;;;;;;;;;;x
+establish_samurai_code_desc;Codify the virtues of honor and bravery in our warrior class and create a formidable fighting force.;;;;;;;;;;;;;x
+japanese_pirates;Japanese Pirates;;;;;;;;;;;;;x
+desc_japanese_pirates;Pirates from the east are crippling our trade. We must either form a blockade or conquer their home ports to end these raids.;;;;;;;;;;;;;x
+mongol_raiders;Mongol Raiders;;;;;;;;;;;;;x
+desc_mongol_raiders;Horsemen are raiding the outer reaches of our empire. We must either finish reparations of the Great Wall or eliminate the source of this nuisance.;;;;;;;;;;;;;x
+bodhimanda_held;Control of Bodhimanda;;;;;;;;;;;;;x
+desc_bodhimanda_held;We hold the ground of the Bodhi-tree. Buddhist pilgrims come from far and wide to see where the Buddha attained enlightenment.;;;;;;;;;;;;;x
+qufu_steward;Stewards of Qufu;;;;;;;;;;;;;x
+desc_qufu_steward;Our nation watches over the Temple of Confucius;;;;;;;;;;;;;x
+HIN;Hindustan;;;;;;;;;x
+HIN_ADJ;Hindustani;;;;;;;;;x
+HIN_ADJ2;Indus;;;;;;;;;x
+MRA;Maratha;;;;;;;;;x
+MRA_ADJ;Marathan;;;;;;;;;x
+MRA_ADJ2;Marathi;;;;;;;;;x
+KRN;Karnataka;;;;;;;;;x
+KRN_ADJ;Karnatik;;;;;;;;;x
+KRN_ADJ2;Dravidi;;;;;;;;;x
+hindusthan_nation_title;Form Hindusthan Nation;;;;;;;;;;;;;x
+hindusthan_nation_desc;We have established our cultural and military dominance over the Indus valley. The Hindusthani people now look to us for protection and guidance. We should welcome them all into our mighty empire.;;;;;;;;;;;;;x
+maratha_nation_title;Form Maratha Nation;;;;;;;;;;;;;x
+maratha_nation_desc;We have survived countless incursions by Mongols and Persians, as well as instability from within. The riches of India must be secured under our watchful eye as foreign invaders will never rest until they have taken what is rightfully ours.;;;;;;;;;;;;;x
+karnataka_nation_title;Form Karnataka Nation;;;;;;;;;;;;;x
+karnataka_nation_desc;The Dravidian people have been divided for too long. Petty infighting has weakened us all and made appear weak to foreign interests. The time is right to unite the southern peninsula into a cohesive state and establish a mighty presence in the world.;;;;;;;;;;;;;x
+carnatic_nation_title;Form Carnatic Nation;;;;;;;;;;;;;x
+carnatic_nation_desc;The Dravidian people have been divided for too long. Petty infighting has weakened us all and made appear weak to foreign interests. The time is right to unite the southern peninsula into a cohesive state and establish a mighty presence in the world.;;;;;;;;;;;;;x
+EVTNAME20110;Cultural Unity;;;;;;;;;;;;;x
+EVTDESC20110;The people of $PROVINCENAME$ are content with our rule. They can't see themselves as citizens of any nation but our own.;;;;;;;;;;;;;x
+EVTOPTA20110;Good for them.;;;;;;;;;;;;;x
+EVTNAME20400;Merchants Humiliated;;;;;;;;;;;;;x
+EVTDESC20400;It is a great source of shame for our people that we do not control the province of Settsu. Our nation has the divine right to control the trade center there and the flow of goods around the island.;;;;;;;;;;;;;x
+EVTOPTA20400;Spread the word;;;;;;;;;;;;;x
+EVTNAME20401;People Demand War;;;;;;;;;;;;;x
+EVTDESC20401;People are becoming restless in our nation, as they see their brothers oppressed in nearby lands. It is the divine right of our nation to be the sole ruler over all of Japan. Our subjects are now asking why we are not pursuing this goal.;;;;;;;;;;;;;x
+EVTOPTA20401;Our way is peace;;;;;;;;;;;;;x
+EVTOPTB20401;Restate our intentions of conquest;;;;;;;;;;;;;x
+construct_meenakshi_temple_title;Rebuild the Meenakshi Amman;;;;;;;;;;;;;x
+construct_meenakshi_temple_desc;The Meenakshi Amman in Madurai is in a state of disrepair. Dating back to time immemorial when Shiva descended to Earth, the grounds were looted and defiled by Muslim invaders. Reconstruction of the temple will transform the province of Madurai into a holy site.;;;;;;;;;;;;;x
+meenakshi_temple_held;Steward of Meenakshi Amman;;;;;;;;;;;;;x
+desc_meenakshi_temple_held;We watch over the holy site where Shiva descended to Earth;;;;;;;;;;;;;x
+est_eastern_philosophy_title;Establish School of Philosophy;;;;;;;;;;;;;x
+est_eastern_philosophy_desc;As our world view broadens, critiques against our ways of thinking are becoming more common. Perhaps we should establish a scholarly forum for this sort of discussion.;;;;;;;;;;;;;x
+eastern_philo_center;Center of Eastern Philosophy;;;;;;;;;;;;;x
+desc_eastern_philo_center;A gathering of our finest religious and philosophical thinkers.;;;;;;;;;;;;;x
+remove_french_trade_co_title;Disrupt French-Indian Trade;;;;;;;;;;;;;x
+remove_french_trade_co_desc;The French East India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the French bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+remove_dutch_trade_co_title;Disrupt Dutch-Indian Trade;;;;;;;;;;;;;x
+remove_dutch_trade_co_desc;The Dutch India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the Dutch bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+remove_portuguese_trade_co_title;Disrupt Portuguese-Indian Trade;;;;;;;;;;;;;x
+remove_portuguese_trade_co_desc;The Portuguese East India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the Portuguese bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+remove_british_trade_co_title;Disrupt British-Indian Trade;;;;;;;;;;;;;x
+remove_british_trade_co_desc;The British East India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the British bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+remove_spanish_trade_co_title;Disrupt Spanish-Indian Trade;;;;;;;;;;;;;x
+remove_spanish_trade_co_desc;The Spanish East India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the Spanish bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+remove_castillian_trade_co_title;Disrupt Castille-Indian Trade;;;;;;;;;;;;;x
+remove_castillian_trade_co_desc;The Castillian East India Company is diverting large amounts of wealth away from Asia and into the coffers of European kings. If we can shut down the company by removing the Castillian bases from East Asia we will deliver a serious economic blow to them as well as strengthen our own trade presence in the region.;;;;;;;;;;;;;x
+chi_temple_influence;Temple Faction Influence;;;;;;;;;;;;;x
+desc_chi_temple_influence;Competing factions are fighting for influence of our government and interfering with everyday affairs.;;;;;;;;;;;;;x
+chi_eunuch_influence;Eunuch Faction Influence;;;;;;;;;;;;;x
+desc_chi_eunuch_influence;Competing factions are fighting for influence of our government and interfering with everyday affairs.;;;;;;;;;;;;;x
+chi_bureaucrat_influence;Bureaucrat Influence;;;;;;;;;;;;;x
+desc_chi_bureaucrat_influence;Competing factions are fighting for influence of our government and interfering with everyday affairs.;;;;;;;;;;;;;x
+chi_emperor_influence;A Mighty Emperor!;;;;;;;;;;;;;x
+desc_chi_emperor_influence;Our leader is deftly maneuvering the political battlefield in order to run our nation.;;;;;;;;;;;;;x
+EVTNAME32000;Temple Faction Meddling!;;;;;;;;;;;;;x
+EVTDESC32000;Various factions have always competed for the ear of the emperor. Lately one group has become increasingly powerful and is beginning to push their agenda for the rule of our glorious empire.;;;;;;;;;;;;;x
+EVTOPTA32000;We will have to deal with this.;;;;;;;;;;;;;x
+EVTNAME32003;Eunuch Faction Interfering!;;;;;;;;;;;;;x
+EVTNAME32006;Bureaucrats Take Control!;;;;;;;;;;;;;x
+EVTNAME32009;Emperor Asserting Control!;;;;;;;;;;;;;x
+EVTDESC32009;Our emperor has managed to placate the feuding factions of our government and has asserted more direct rule.;;;;;;;;;;;;;x
+EVTOPTA32009;Great!;;;;;;;;;;;;;x
+EVTNAME32011;Temples Gaining Influence;;;;;;;;;;;;;x
+EVTDESC32011;Our nations missionary work has made it necessary to expand our ranks of theologians and scholars. As a result, the influence of the Temple Faction has grown quite a bit.;;;;;;;;;;;;;x
+EVTNAME32012;Literati Gaining Power;;;;;;;;;;;;;x
+EVTDESC32012;A powerful statesmen in service to our nation has appointed several important bureaucrats to positions of power. They are beginning to exert a great deal of control over our Emperor's rule.;;;;;;;;;;;;;x
+unite_japan_peacefully_title;Peacefully Unite Japan;;;;;;;;;;;;;x
+unite_japan_peacefully_desc;The Japanese people are enjoying peace and prosperity at last, perhaps the period of the warring states has come to an end.;;;;;;;;;;;;;x

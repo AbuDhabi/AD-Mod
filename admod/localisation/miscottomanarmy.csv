@@ -1,0 +1,125 @@
+ottoman_orban_bombard;Orban Bombard;;;;;;;;;;;;;x
+ottoman_orban_bombardDESCR;The Byzantines refused his services but their loss is our gain. The engineer Orban has designed a tremendous machine of destruction that he claims can topple the walls of Babylon itself. Though the power of this weapon is substantial it is so large and slow to fire that its use in an open battle is questionable.;;;;;;;;;;;;;x
+ottoman_turkish_bombard;Turkish Bombard;;;;;;;;;;;;;x
+ottoman_turkish_bombardDESCR;The Turkish Bombard is a significant refinement over the older model. The main draw of this weapon is that it now takes less than a hundred men to position and fire it.;;;;;;;;;;;;;x
+ottoman_mehter_takimi;Mehter Takimi;;;;;;;;;;;;;x
+ottoman_mehter_takimiDESCR;The Ottoman military band. Ours is the only army in the world that proudly declares its approach with instrumental fanfare. The call of our military bands rallies our troops and strikes fear into the enemy. Of course the band members are all fully trained Janissaries should the battle become desperate enough.;;;;;;;;;;;;;x
+ottoman_volley_gun;Volley Gun;;;;;;;;;;;;;x
+ottoman_volley_gunDESCR;The concept behind the volley gun is simple enough, more barrels on a single cannon means one shot can move more flak across the battlefield. The obvious drawback is that they also take many times longer to reload.;;;;;;;;;;;;;x
+ottoman_akinci;Akinci Cavalry;;;;;;;;;;;;;x
+ottoman_akinciDESCR;Akinci are irregular light cavalry who are often the first on the scene of a battle. They are well suited for harassing unorganized troops but less effective at holding a line. Unpaid soldiers, they subsist entirely on plunder from their enemies.;;;;;;;;;;;;;x
+ottoman_piyade_topcu;Piyade Topçu;;;;;;;;;;;;;x
+ottoman_piyade_topcuDESCR;Turkish foot artillery. These were rank and file infantry that were rigorously trained in the use of rifles and hand cannons.;;;;;;;;;;;;;x
+ottoman_humbaraci;Humbaraci Artillery;;;;;;;;;;;;;x
+ottoman_humbaraciDESCR;Expert siege engineers employing the latest in Turkish artillery technologies accompanied by shock troops specialized in explosives and demolitions. In close combat these troops can soften up enemy lines with hand grenades before engaging them.;;;;;;;;;;;;;x
+ottoman_basibozuk;Basibozuk Infantry;;;;;;;;;;;;;x
+ottoman_basibozukDESCR;Despite having a strong professional army, there is still a place for mercenaries in modern warfare. These "renegades" are the best troops a Sultan's money can buy. And the worst.;;;;;;;;;;;;;x
+ottoman_great_turkish_bombard;Great Turkish Bombard;;;;;;;;;;;;;x
+ottoman_great_turkish_bombardDESCR;A throwback to old artillery designs that proves bigger is better. This massive cannon isn't very mobile on the battlefield. Fortunately it doesn't have to be anywhere near the battle to offer support;;;;;;;;;;;;;x
+ottoman_timarli_sipahi;Tîmârli Sipahi;;;;;;;;;;;;;x
+ottoman_timarli_sipahiDESCR;Reminiscent of the knights of old, these heavily armored cavalry sacrifice gunfire for devastating charges.;;;;;;;;;;;;;x
+ottoman_line_infantry;Ottoman Line Infantry;;;;;;;;;;;;;x
+ottoman_line_infantryDESCR;Ottoman Line Infantry;;;;;;;;;;;;;x
+russian_imperial_infantry;Russian Imperial Guard;;;;;;;;;;;;;x
+russian_imperial_infantryDESCR;Russian Imperial Guard;;;;;;;;;;;;;x
+russian_heavy_lancer;Russian Heavy Lancer;;;;;;;;;;;;;x
+russian_heavy_lancerDESCR;Russian Heavy Lancer;;;;;;;;;;;;;x
+russian_imperial_lancer;Russian Imperial Lancer;;;;;;;;;;;;;x
+russian_imperial_lancerDESCR;Russian Imperial Lancer;;;;;;;;;;;;;x
+muslim_line_infantry;Muslime Line Infantry;;;;;;;;;;;;;x
+muslim_line_infantryDESCR; ;;;;;;;;;;;;;x
+muslim_impulse_infantry;Muslim Impulse Infantry;;;;;;;;;;;;;x
+muslim_impulse_infantryDESCR; ;;;;;;;;;;;;;x
+muslim_mixed_order_infantry;Muslim Mixed Order;;;;;;;;;;;;;x
+muslim_mixed_order_infantryDESCR; ;;;;;;;;;;;;;x
+muslim_heavy_lancers;Muslim Heavy Lancers;;;;;;;;;;;;;x
+muslim_heavy_lancersDESCR; ;;;;;;;;;;;;;x
+mongol_archer;Mongol Archers;;;;;;;;;;;;;x
+mongol_archerDESCR; ;;;;;;;;;;;;;x
+mongol_khorchin;Mongol Khorchin;;;;;;;;;;;;;x
+mongol_khorchinDESCR; ;;;;;;;;;;;;;x
+mongol_kheshig;Mongol Kheshig;;;;;;;;;;;;;x
+mongol_kheshigDESCR; ;;;;;;;;;;;;;x
+mongol_kipchak;Mongol Kipchak;;;;;;;;;;;;;x
+mongol_kipchakDESCR; ;;;;;;;;;;;;;x
+indian_light_infantry;Indian Light Infantry;;;;;;;;;;;;;x
+indian_light_infantryDESCR; ;;;;;;;;;;;;;x
+indian_militia;Indian Militia;;;;;;;;;;;;;x
+indian_militiaDESCR; ;;;;;;;;;;;;;x
+indian_line_infantry;Indian Line Infantry;;;;;;;;;;;;;x
+indian_line_infantryDESCR; ;;;;;;;;;;;;;x
+indian_drill_infantry;Indian Drill Infantry;;;;;;;;;;;;;x
+indian_drill_infantryDESCR; ;;;;;;;;;;;;;x
+indian_mixed_order_infantry;Indian Mixed Order;;;;;;;;;;;;;x
+indian_mixed_order_infantryDESCR; ;;;;;;;;;;;;;x
+indian_heavy_lancers;Indian Heavy Lancers;;;;;;;;;;;;;x
+indian_heavy_lancersDESCR; ;;;;;;;;;;;;;x
+chinese_line_infantry;Chinese Line Infantry;;;;;;;;;;;;;x
+chinese_line_infantryDESCR; ;;;;;;;;;;;;;x
+chinese_drill_infantry;Chinese Drill Infantry;;;;;;;;;;;;;x
+chinese_drill_infantryDESCR; ;;;;;;;;;;;;;x
+chinese_square_infantry;Chinese Square Infantry;;;;;;;;;;;;;x
+chinese_square_infantryDESCR; ;;;;;;;;;;;;;x
+chinese_imperial_infantry;Chinese Imperial Guard;;;;;;;;;;;;;x
+chinese_imperial_infantryDESCR; ;;;;;;;;;;;;;x
+chinese_imperial_cavalry;Chinese Imperial Cavalry;;;;;;;;;;;;;x
+chinese_imperial_cavalryDESCR; ;;;;;;;;;;;;;x
+chinese_hwacha;Hwacha Artillery;;;;;;;;;;;;;x
+chinese_hwachaDESCR;HWACHA;;;;;;;;;;;;;x
+african_line_infantry;African Line Infantry;;;;;;;;;;;;;x
+african_line_infantryDESCR; ;;;;;;;;;;;;;x
+african_imperial_infantry;African Imperial Guard;;;;;;;;;;;;;x
+african_imperial_infantryDESCR; ;;;;;;;;;;;;;x
+african_horsemen;African Horsemen;;;;;;;;;;;;;x
+african_horsemenDESCR; ;;;;;;;;;;;;;x
+african_dragoon;African Dragoon;;;;;;;;;;;;;x
+african_dragoonDESCR; ;;;;;;;;;;;;;x
+african_skirmish_cavalry;African Skirmisher;;;;;;;;;;;;;x
+african_skirmish_cavalryDESCR; ;;;;;;;;;;;;;x
+african_lancer_cavalry;African Lancer;;;;;;;;;;;;;x
+african_lancer_cavalryDESCR; ;;;;;;;;;;;;;x
+african_hussar_cavalry;African Hussar;;;;;;;;;;;;;x
+african_hussar_cavalryDESCR; ;;;;;;;;;;;;;x
+african_rifle_cavalry;African Rifle Cavalry;;;;;;;;;;;;;x
+african_rifle_cavalryDESCR; ;;;;;;;;;;;;;x
+african_imperial_cavalry;African Imperial Cavalry;;;;;;;;;;;;;x
+african_imperial_cavalryDESCR; ;;;;;;;;;;;;;x
+african_savannah_scout;Savannah Scout;;;;;;;;;;;;;x
+african_savannah_scoutDESCR;Light horses suitable for assessing enemy formations and harassing small parties.;;;;;;;;;;;;;x
+african_quilted_cavalry;Quilted Cavalry;;;;;;;;;;;;;x
+african_quilted_cavalryDESCR;Horse riders equipped with javelins and curves sabers, protected by heavy cloth armor.;;;;;;;;;;;;;x
+african_mamluk_cavalry;Mamluk Cavalry;;;;;;;;;;;;;x
+african_mamluk_cavalryDESCR;War horses and tactics imported from Egypt.;;;;;;;;;;;;;x
+north_american_spearmen;North American Spearmen;;;;;;;;;;;;;x
+north_american_spearmenDESCR; ;;;;;;;;;;;;;x
+mexican_guerilla_warfare;American Guerilla Warfare;;;;;;;;;;;;;x
+mexican_guerilla_warfareDESCR; ;;;;;;;;;;;;;x
+haudenosee_republican_guard;American Republican Guard;;;;;;;;;;;;;x
+haudenosee_republican_guardDESCR; ;;;;;;;;;;;;;x
+great_plains_dragoon;Great Plains Dragoon;;;;;;;;;;;;;x
+great_plains_dragoonDESCR; ;;;;;;;;;;;;;x
+great_plains_lancer;Great Plains Lancer;;;;;;;;;;;;;x
+great_plains_lancerDESCR; ;;;;;;;;;;;;;x
+haudenosee_heavy_lancer;American Heavy Lancer;;;;;;;;;;;;;x
+haudenosee_heavy_lancerDESCR; ;;;;;;;;;;;;;x
+south_american_macana;Macana Clubmen;;;;;;;;;;;;;x
+south_american_macanaDESCR;Infantry armed with heavy wooden clubs studded with obsidian.;;;;;;;;;;;;;x
+south_american_archer;South American Archer;;;;;;;;;;;;;x
+south_american_archerDESCR; ;;;;;;;;;;;;;x
+inca_royal_guard;Inca Royal Guard;;;;;;;;;;;;;x
+inca_royal_guardDESCR; ;;;;;;;;;;;;;x
+south_american_royal_cavalry;American Royal Cavalry;;;;;;;;;;;;;x
+south_american_royal_cavalryDESCR; ;;;;;;;;;;;;;x
+south_american_jungle_cavalry;South American Cavalry;;;;;;;;;;;;;x
+south_american_jungle_cavalryDESCR; ;;;;;;;;;;;;;x
+south_american_dragoon;South American Dragoon;;;;;;;;;;;;;x
+south_american_dragoonDESCR; ;;;;;;;;;;;;;x
+aztec_dragoon;Aztec Dragoon;;;;;;;;;;;;;x
+aztec_dragoonDESCR; ;;;;;;;;;;;;;x
+maya_lancer;Mayan Lancer;;;;;;;;;;;;;x
+maya_lancerDESCR; ;;;;;;;;;;;;;x
+inca_heavy_lancer;Inca Heavy Lancer;;;;;;;;;;;;;x
+inca_heavy_lancerDESCR; ;;;;;;;;;;;;;x
+apache_guerillaDESCR; ;;;;;;;;;;;;;x
+native_indian_tribal_warfare2;Native Tribal Warrior;;;;;;;;;;;;;x
+native_indian_tribal_warfare2DESCR;With the gathering of natives into tribes, often protecting specific areas, there often evolved a state of endemic warfare. The warpath was a way of proving your worth, often as a rite of passage for the young men.;;;;;;;;;;;;;x

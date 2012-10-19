@@ -1,0 +1,86 @@
+#158 - Transylvania
+
+owner = TRA
+controller = TRA  
+culture = hungarian
+religion = catholic
+capital = "Turda"	# Didn't have a capital, traditionally assembled in Turda
+trade_goods = wool
+hre = no
+base_tax = 6
+manpower = 2
+citysize = 5950
+fort1 = yes
+add_core = TRA
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = TRA
+		controller = TRA
+		citysize = 5950 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	religion = catholic }
+
+1450.1.1   = { citysize = 6220 }
+1487.1.1   = { temple = yes } # Cathedral of Saint Michael
+1500.1.1   = { citysize = 7068 }
+1506.1.1   = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Szekely rebellion
+1507.1.1   = { revolt = {} controller = TRA } # Estimated
+1514.4.1   = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Peasant rebellion against Hungary's magnates
+1514.10.1  = { revolt = {} controller = TRA } # Estimated, the rebellions is put down by Szapolyiai
+1520.1.1   = { fort2 = yes } # Rural fortress Biertan (15-16th century)
+1528.1.1   = { add_core = TUR }
+1530.1.1   = { constable = yes }
+1541.1.1   = { capital = "Alba Iulia" }
+1550.1.1   = { citysize = 7822 marketplace = yes }
+1551.7.19  = {  owner = HAB
+	        controller = HAB
+	        add_core = HAB 
+	     } # Ferdinand gains Transylvania from Treaty of Weissenburg
+1556.10.1  = { owner = TRA controller = TRA } # Isabella Jagiello is restored as queen of Transylvania
+1562.1.1   = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Szekely rebellion
+1562.6.1   = { remove_core = HAB } # End of Ottoman-Habsburg War
+1563.1.1   = { revolt = {} controller = TRA } # Estimated
+1599.1.1   = {	owner = WAL
+		controller = WAL
+		add_core = WAL
+	     } # Battle of Selimbar, Michael the brave gained control
+1600.1.1   = { citysize = 6904 courthouse = yes }
+1601.1.1   = {	owner = TRA
+		controller = TRA
+		remove_core = WAL
+	     } # Michael is assasinated
+1604.1.1   = { owner = HAB controller = HAB }
+1604.10.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Estimated, rebellion (Stephen Bocskai) against Austrian rule
+1606.6.23  = { revolt = {} owner = TRA controller = TRA } # Stephen becomes prince of Transylvania
+1620.1.1   = { fine_arts_academy = yes } # Reached a high point culturaly
+1621.1.1   = { fort3 = yes } # Miko Fortress
+1650.1.1   = { citysize = 6982 }
+1690.1.1   = { capital = "Cluj-Napoca" }
+1699.1.1   = {	owner = HAB 
+		controller = HAB
+		add_core = HAB
+		remove_core = TUR
+	    } # Ceded to Austria
+1700.1.1   = { citysize = 7640 }
+1703.1.1   = { revolt = { type = nationalist_rebels size = 1.5 } controller = REB } # Kuruc rebellion, led by Francisc Rakoczy
+1711.1.1   = { revolt = {} controller = HAB } # The treaty of Szatmar, Austrian governors replaced the prince of Transylvania
+1744.1.1   = { revolt = { type = heretic_rebels size = 2 } controller = REB } # Visarion Sarai stir up an orthodox rebellion against the Uniate church
+1745.1.1   = { revolt = {} controller = HAB } # Estimated, Visarion Sarai is arrested and executed
+1750.1.1   = { citysize = 8665 }
+1755.1.1   = { tax_assessor = yes }
+1784.1.1   = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against the nobles
+1785.1.1   = { revolt = {} controller = HAB } # The leaders are arrested and executed
+1800.1.1   = { citysize = 9670 }

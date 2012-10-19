@@ -1,0 +1,13 @@
+# Chinese Hwacha
+# land tech 23
+
+type = artillery
+unit_type = chinese
+
+maneuver = 2
+offensive_morale = 4
+defensive_morale = 5
+offensive_fire = 6
+defensive_fire = 8
+offensive_shock = 0
+defensive_shock = 0

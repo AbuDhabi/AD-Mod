@@ -1,0 +1,81 @@
+#Ösel and Dagö, incl. Sonnenburg and Arensburg.
+
+owner = TEU
+controller = TEU
+add_core = TEU
+culture = estonian
+religion = catholic
+hre = yes
+base_tax = 1
+trade_goods = grain
+manpower = 1
+capital = "Arensburg"
+citysize = 1000 # Estimated
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Nevermind
+1399.10.12 = {	owner = TEU
+		controller = TEU
+		remove_core = EST
+		religion = catholic
+		hre = yes }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Historical Campaign
+1399.10.14 = {	owner = TEU
+		controller = TEU
+		add_core = TEU
+		remove_core = EST
+		religion = catholic
+		hre = yes }
+
+1450.1.1   = { citysize = 1100 }
+1466.10.19 = {	owner = LIV
+		controller = LIV
+		add_core = LIV
+		remove_core = TEU
+	     } # Peace of Torun
+1500.1.1   = { citysize = 1250 }
+1542.1.1   = { religion = protestant} # Unknown date
+1550.1.1   = { citysize = 1600 }
+1559.1.1   = {	owner = DAN
+		controller = DAN
+		add_core = DAN
+	     	remove_core = LIV
+	     } #Unknown date
+1563.1.1   = { capital = "Arensburg" } # Unknown date
+1568.7.25  = { controller = SWE } # Nordic Seven-year War
+1570.12.13 = { owner = DAN controller = DAN } # The Peace of Stettin
+1600.1.1   = { citysize = 1880 }
+1645.8.13  = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		remove_core = DAN
+	     } # The Peace of Brömsebro
+1650.1.1   = { citysize = 1960 }
+1700.1.1   = { citysize = 2240 }
+1710.9.20  = { controller = RUS } # Estimated date
+1721.8.30  = {	owner = RUS
+		add_core = RUS 
+		remove_core = SWE
+	     } # The Peace of Nystad
+1750.1.1   = { citysize = 2500 }
+1800.1.1   = { citysize = 2870 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved

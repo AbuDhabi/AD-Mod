@@ -1,0 +1,33 @@
+#925 - Tuskegee
+
+owner = CHE
+controller = CHE
+culture = cherokee
+religion = spiritualism
+capital = "Tuskegee"
+trade_goods = cotton
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 2500
+add_core = CHE
+discovered_by = CHE
+discovered_by = CRE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 2900 }
+1500.1.1  = { citysize = 3225 }
+1540.1.1  = { discovered_by = SPA } # Hernando De Soto
+1550.1.1  = { citysize = 3900 }
+1600.1.1  = { citysize = 4500 }
+1650.1.1  = { citysize = 5340 }
+1700.1.1  = { citysize = 6200 }
+1750.1.1  = { citysize = 6980 add_core = LOU }
+1755.1.1  = { fort1 = yes } # Fort Tombeche
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		religion = protestant
+		culture = english
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1783.9.3  = { owner = USA controller = USA add_core = USA }
+1800.1.1  = { citysize  = 7200 }

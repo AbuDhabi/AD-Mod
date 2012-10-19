@@ -1,0 +1,17 @@
+#1819 - Tosa
+
+owner = TAC
+controller = TAC
+culture = yamato
+religion = shinto
+capital = "Tosa"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 5234
+add_core = TAC
+fort1 = yes
+discovered_by = chinese
+
+1592.1.1 = { owner = MIN controller = MIN add_core = MIN }

@@ -1,0 +1,62 @@
+#366 - The Canarias
+
+culture = berber
+religion = animism
+capital = "The Canarias"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 0
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = MOR
+		controller = MOR
+		add_core = MOR
+		citysize = 2100
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = XXX
+		controller = XXX
+		remove_core = MOR
+		citysize = 0
+		native_size = 5
+		native_ferocity = 1
+		native_hostileness = 0
+		religion = animism }
+
+1402.1.1  = { discovered_by = western
+	      discovered_by = muslim
+discovered_by = ottoman
+	      discovered_by = CAS
+	      owner = CAS
+	      controller = CAS
+	      add_core = CAS
+	      citysize = 100
+	    } # Castilian control
+1448.1.1  = { add_core = POR revolt_risk = 10 } # Lanzarote is sold to Henry the navigator
+1459.1.1  = { revolt_risk = 0 } # The Portuguese are driven off the island
+1478.1.1  = { capital = "Las Palmas" }
+1479.9.4  = { remove_core = POR } # Peace of Alcaçobas between Spain and Portugal. Portugal fully recognises Castillian suzerainty over the islands.
+1483.4.1  = {	citysize = 500
+		religion = catholic
+		culture = castillian
+		trade_goods = sugar
+	    } #After a successful campaign, indigenous king Majarteme converts to catholicism and adopts the name Fernando
+1493.1.1  = { citysize = 700 } # Conquest of the island of La Palma
+1496.1.1  = { citysize = 1000 } # Conquest of Tenerife, the archipelago is fully incorporated into the crown, some indigenous redoubts still wage war
+1516.1.23 = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	    } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1550.1.1  = { citysize = 1900 }
+1600.1.1  = { citysize = 2760 }
+1650.1.1  = { citysize = 3300 }
+1700.1.1  = { citysize = 5010 }
+1713.4.11 = { remove_core = CAS }
+1730.1.1  = { citysize = 2500 } # volcanic eruption
+1750.1.1  = { citysize = 3700 }
+1800.1.1  = { citysize = 5230 }

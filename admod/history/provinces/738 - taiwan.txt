@@ -1,0 +1,37 @@
+#738 - Taiwan
+
+culture = chi_min
+religion = animism
+capital = "Taiwan"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 1
+native_size = 60
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = chinese
+
+1544.1.1 = { discovered_by = POR }
+1624.1.1 = {	owner = NED
+		controller = NED
+	   	citysize = 6500
+		trade_goods = chinaware
+	   } # The Spanish settlers are driven out by the Dutch
+1626.1.1 = { controller = SPA } # Spanish occupation
+1629.1.1 = { fort1 = yes } # Fort Santo Domingo
+1642.1.1 = { controller = NED } # The Spanish settlers are driven out by the Dutch
+1662.1.1 = {	owner = MNG
+		controller = MNG
+	   } # Captured by Zheng Chenggong
+1683.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		religion = confucianism
+	   } # Submitted to Manchu control
+1700.1.1 = { citysize = 5420 }
+1750.1.1 = { citysize = 6890 }
+1750.1.1 = { citysize = 6890 }
+1786.1.1 = { revolt_risk = 5 } # Rebellion
+1788.1.1 = { revolt_risk = 0 }
+1800.1.1 = { citysize = 7400 }

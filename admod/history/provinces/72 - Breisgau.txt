@@ -1,0 +1,65 @@
+#72 - Breisgau
+
+owner = BAD
+controller = BAD
+add_core = BAD
+culture = rheinlaender
+religion = catholic
+base_tax = 4
+trade_goods = grain 
+manpower = 1
+fort1 = yes
+capital = "Freiburg" 
+citysize = 7000
+marketplace = yes
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BAD
+		controller = BAD
+		citysize = 7000 }
+
+1450.1.1  = { citysize = 8000 }
+1453.1.1  = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = BAD
+	    }
+1495.1.1  = { workshop = yes }
+1497.1.1  = { temple = yes } # Freiburger Münster 
+1502.1.1  = { university = yes } # Freiburg has one of Germany's oldest Universities (founded 1457)
+1510.1.1  = { fort2 = yes } # Breisach is one of the most important Fortresses on the upper Rhine
+1524.4.1  = { revolt_risk = 8 } # Peasant Revolts - 18.000 peasants take Freiburg (May)
+1524.12.1 = { revolt_risk = 0 }
+#1525.1.1  = { customs_house = yes }
+1548.1.1  = { regimental_camp = yes }
+1550.1.1  = { citysize = 10000 }
+1565.1.1  = { marketplace = yes }
+1600.1.1  = { citysize = 14000 }
+1600.1.1  = { fort3 = yes }
+1608.1.1  = { citysize = 10000 } # Great plague
+1615.1.1  = { tax_assessor = yes }
+1646.1.1  = { fort2 = yes }
+1650.1.1  = { citysize = 12000 }
+1700.1.1  = { citysize = 14000 }
+1750.1.1  = { citysize = 17000 }
+1797.10.17 = {	owner = MOD
+		controller = MOD
+		add_core = MOD
+	     	remove_core = HAB
+	     } # Treaty of Campo Formio
+1805.12.26 = {	owner = BAD
+		controller = BAD
+		add_core = BAD
+		remove_core = MOD
+	     } # Treaty of Pressburg
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved

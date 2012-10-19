@@ -1,0 +1,1011 @@
+conquer_ireland = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		not = { owns = 372 }	# Ulster
+		not = { owns = 374 }	# Leinster
+		not = { owns = 375 }	# Munster
+		not = { owns = 376 }	# Connaught
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 372
+		owns = 373
+		owns = 374
+		owns = 375
+		owns = 376
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	immediate = {
+		add_temp_claim = 372
+		add_temp_claim = 373
+		add_temp_claim = 374
+		add_temp_claim = 375
+		add_temp_claim = 376
+	}
+	abort_effect = {
+		remove_temp_claim = 372
+		remove_temp_claim = 373
+		remove_temp_claim = 374
+		remove_temp_claim = 375
+		remove_temp_claim = 376
+	}
+	effect = {
+		ireland = {
+			add_core = THIS
+		}
+	}
+}
+
+conquer_scotland = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+		}
+		not = { highlands = { owned_by = this } }
+		not = { lowlands = { owned_by = this } }
+		exists = SCO
+		SCO = {
+			not = { vassal_of = ENG }
+			not = { vassal_of = GBR }
+			is_lesser_in_union = no
+		}
+		not = { relation = { who = SCO value = 50 } }
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			SCO = {
+				or = {
+					vassal_of = ENG
+					vassal_of = GBR
+					is_lesser_in_union = yes
+				}
+			}
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		highlands = { owned_by = this }
+		lowlands = { owned_by = this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 8
+		}
+	}
+	immediate = {
+		lowlands = {
+			limit = { NOT = { owned_by = THIS } }
+			add_temp_claim = THIS
+		}
+	}
+	abort_effect = {
+		lowlands = {
+			remove_temp_claim = THIS
+		}
+	}
+	effect = {
+		lowlands = { add_core = THIS }
+		prestige = 0.1
+	}
+}
+
+vassalize_scotland = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+		}
+		is_lesser_in_union = no
+		is_subject = no
+		exists = SCO
+		SCO = {
+			not = { vassal_of = ENG }
+			not = { vassal_of = GBR }
+			not = { num_of_cities = this }
+			is_lesser_in_union = no
+		}
+
+	}
+	abort = {
+		or = {
+			not = { exists = SCO }
+			SCO = { is_lesser_in_union = yes }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		or = {
+			SCO = { vassal_of = ENG }
+			SCO = { vassal_of = GBR }
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			dip = 7
+		}
+		modifier = {
+			factor = 2
+			dip = 8
+		}
+	}
+	immediate = {
+		casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = SCO
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = SCO
+		}
+	}
+	effect = {
+		prestige = 0.1
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = SCO
+		}
+	}
+}
+
+england_discovers_north_america = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		idea = quest_for_the_new_world
+		eastern_north_america = { range = yes }
+		NOT = { eastern_north_america = { has_discovered = this } }
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { idea = quest_for_the_new_world }
+			not = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		eastern_north_america = { has_discovered = this }
+		or = {
+			1492 = { units_in_province = this }
+			1493 = { units_in_province = this }
+			1494 = { units_in_province = this }
+			1495 = { units_in_province = this }
+			1499 = { units_in_province = this }
+			1500 = { units_in_province = this }
+			1501 = { units_in_province = this }
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}	
+	}
+	effect = {
+		treasury = 50
+		colonists = 4
+	}
+}
+
+english_colony_in_north_america = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		eastern_north_america = {
+			has_discovered = this
+			empty = yes
+			range = yes
+		}
+		not = { eastern_north_america = { owned_by = this } }
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			and = {
+				not = { eastern_north_america = { empty = yes } }
+				not = { eastern_north_america = { owned_by = this } }
+			}
+		}
+	}
+	success = {
+		eastern_north_america = { owned_by = this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			colonists = 2
+		}
+		modifier = {
+			factor = 2
+			colonists = 3
+		}
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+england_discovers_the_carribean = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		eastern_north_america = {
+			has_discovered = this
+		}
+		the_carribean = { range = yes }
+		idea = quest_for_the_new_world
+		NOT = { the_carribean = { has_discovered = this } }
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { idea = quest_for_the_new_world }
+			not = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		the_carribean = { has_discovered = this }
+		or = {
+			1522 = { units_in_province = this }
+			1523 = { units_in_province = this }
+			1524 = { units_in_province = this }
+			1526 = { units_in_province = this }
+			1504 = { units_in_province = this }
+		}	
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}	
+	}
+	effect = {
+		treasury = 50
+		colonists = 2
+	}
+}
+
+english_colony_in_the_carribean = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		the_carribean = {
+			has_discovered = this
+			empty = yes
+			range = yes
+		}
+		not = {
+			the_carribean = {
+				owned_by = this
+			}
+		}
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			and = {
+				not = { the_carribean = { empty = yes } }
+				not = { the_carribean = { owned_by = this } }
+			}
+		}
+	}
+	success = {
+		the_carribean = { owned_by = this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			colonists = 2
+		}
+		modifier = {
+			factor = 2
+			colonists = 3
+		}
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+england_discovers_india = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		eastern_north_america = {
+			has_discovered = this
+		}
+		the_carribean = { has_discovered = this } 
+		idea = quest_for_the_new_world
+		indian_coast = {
+			range = yes
+		}
+		NOT = { indian_coast = { has_discovered = this } }
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			not = {	idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		indian_coast = { has_discovered = this }
+		or = {
+			1337 = { units_in_province = this }
+			1338 = { units_in_province = this }
+			1339 = { units_in_province = this }
+			1340 = { units_in_province = this }
+			1614 = { units_in_province = this }
+			1341 = { units_in_province = this }
+			1342 = { units_in_province = this }
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}	
+	}
+	effect = {
+		treasury = 50
+		colonists = 3
+	}
+}
+
+conquer_indian_coastal_province = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		indian_coast = { has_discovered = this }
+		not = { indian_coast = { owned_by = this } }
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		indian_coast = { owned_by = this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}
+	}
+	immediate = {
+		indian_coast = {
+			limit = { port = yes range = yes has_discovered = THIS }
+			add_temp_claim = THIS
+		}
+	}
+	abort_effect = {
+		indian_coast = {
+			remove_temp_claim = THIS
+		}
+	}
+	effect = {
+		treasury = 50
+	}
+}
+ 
+england_discovers_australia = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		idea = quest_for_the_new_world
+		eastern_north_america = { has_discovered = this }
+		indian_coast = { has_discovered = this }
+		australian_coast = { range = yes }
+		NOT = { australian_coast = { has_discovered = this } }
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			not = { idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		australian_coast = { has_discovered = this }
+		or = {
+			1411 = { units_in_province = this }
+			1412 = { units_in_province = this }
+			1413 = { units_in_province = this }
+			1414 = { units_in_province = this }
+			1415 = { units_in_province = this }
+			1417 = { units_in_province = this }
+			1418 = { units_in_province = this }
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}	
+	}
+	effect = {
+		treasury = 50
+		colonists = 2
+	}
+}
+
+english_colony_in_australia = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		australian_coast = {
+			has_discovered = this
+			empty = yes
+		}
+		not = {
+			australian_coast = {
+				owned_by = this
+			}
+		}
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			and = {
+				not = { australian_coast = { empty = yes } }
+				not = { australian_coast = { owned_by = this } }
+			}
+		}
+	}
+	success = {
+		australian_coast = { owned_by = this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			colonists = 2
+		}
+		modifier = {
+			factor = 2
+			colonists = 3
+		}
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+establish_a_cot_in_britain = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		not = { british_isles = { cot = yes } }
+		monthly_income = 50
+		not = { owns = 1744 }	# Antwerp
+		not = { owns = 183 }	# Île-de-France
+		treasury = 250
+		any_center_of_trade = {
+			placed_merchants = 1
+			cot_value = 400
+		}
+	}
+	abort = {}
+	success = {
+		british_isles = { cot = yes }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = national_trade_policy
+		}	
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+establish_trade_in_indian_cot = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		indian_coast = {
+			has_discovered = this
+			cot = yes
+			not = { placed_merchants = 1 }
+		}
+		NOT = {
+			indian_coast = {
+				cot = yes
+				placed_merchants = 5
+			}
+		}
+		not = { last_mission = establish_trade_in_indian_cot }
+	}
+	abort = {
+		not = { indian_coast = { cot = yes } }
+	}
+	success = {
+		indian_coast = {
+			cot = yes
+			placed_merchants = 5
+		}	
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = shrewd_commerce_practise
+		}
+	}
+	effect = {
+		treasury = 40
+		merchants = 4
+	}
+}
+
+establish_trade_in_american_cot = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		eastern_north_america = {
+			has_discovered = this
+			cot = yes
+			not = { placed_merchants = 1 }
+		}
+		NOT = {
+			eastern_north_america = {
+				cot = yes
+				placed_merchants = 5
+			}
+		}
+		not = { last_mission = establish_trade_in_american_cot }
+	}
+	abort = {
+		not = { eastern_north_america = { cot = yes } }
+	}
+	success = {
+		eastern_north_america = {
+			cot = yes
+			placed_merchants = 5
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = shrewd_commerce_practise
+		}
+	}
+	effect = {
+		treasury = 40
+		merchants = 4
+	}
+}
+
+monopolize_british_cot = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = ENG
+			tag = GBR
+			tag = GBS
+		}
+		trade_tech = 15
+		merchants  = 4
+		british_isles = {
+			cot = yes
+			not = { placed_merchants = 6 }
+		}
+		not = { last_mission = monopolize_british_cot }
+	}
+	abort = {
+		not = { british_isles = { cot = yes } }
+	}
+	success = {
+		british_isles = {
+			cot = yes
+			placed_merchants = 6
+		}		
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = national_trade_policy
+		}	
+	}
+	effect = {
+		treasury = 50
+	}
+}
+
+occupy_paris = {
+	
+	type = country
+
+	allow = {
+		tag = ENG
+		exists = FRA
+		war_with = FRA
+		not = { year = 1475 }
+		french_region = { owned_by = this }
+		FRA = { controls = 183 }
+		183 = { is_capital = yes }
+		NOT = { has_country_flag = has_occupied_paris }
+	}
+	abort = {
+		or = {
+			not = { war_with = FRA }
+			ally = { controls = 183 }
+		}
+	}
+	success = {
+		controls = 183
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			FRA = {
+				not = { mil = 5 }
+			}
+		}
+	}
+	effect = {
+		gallia = { add_core = this }
+		prestige = 0.05
+		set_country_flag = has_occupied_paris
+	}
+}
+
+conquer_normandie_and_caux = {
+	
+	type = country
+
+	allow = {
+		tag = ENG
+		not = { year = 1475 }
+		french_region = { owned_by = this }
+		exists = FRA
+		FRA = {
+			owns = 167	# Caux
+			owns = 168	# Normandie
+		}
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 167
+		owns = 168
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			not = { relation = { who = FRA value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			not = { relation = { who = FRA value = -200 } }
+		}
+	}
+	immediate = {
+		add_temp_claim = 167
+		add_temp_claim = 168
+	}
+	abort_effect = {
+		remove_temp_claim = 167
+		remove_temp_claim = 168
+	}
+	effect = {
+		add_core = 167
+		add_core = 168
+		prestige = 0.15
+	}
+}
+
+conquer_aquitaine = {
+	
+	type = country
+
+	allow = {
+		tag = ENG
+		exists = FRA
+		is_lesser_in_union = no
+		is_subject = no
+		not = { year = 1475 }
+		french_region = { owned_by = this }
+		FRA = {
+			owns = 173	# Saintonge 
+			owns = 174	# Gascogne
+		}
+	}
+	abort = {
+		or = {
+			not = { french_region = { owned_by = this } }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 173
+		owns = 174
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			not = { relation = { who = FRA value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			not = { relation = { who = FRA value = -200 } }
+		}
+	}
+	immediate = {
+		add_temp_claim = 173
+		add_temp_claim = 174
+	}
+	abort_effect = {
+		remove_temp_claim = 173
+		remove_temp_claim = 174
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+vassalize_france = {
+	
+	type = country
+
+	allow = {
+		tag = ENG
+		exists = FRA
+		is_lesser_in_union = no
+		is_subject = no
+		not = { year = 1475 }
+		french_region = {
+			owned_by = this
+			is_core = this
+		}
+		FRA = {
+			not = { infantry = this }
+			not = { cavalry = this }
+			not = { vassal_of = ENG }
+			not = { num_of_cities = this }
+			is_lesser_in_union = no
+		}
+		exists = ORL
+		exists = PRO
+		exists = BOU
+		exists = AUV
+	}
+	abort = {
+		or = {
+			not = { exists = FRA }
+			FRA = { is_lesser_in_union = yes }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		FRA = { vassal_of = ENG }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+	}
+	immediate = {
+		casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = FRA
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = FRA
+		}
+	}
+	effect = {
+		prestige = 0.1
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = FRA
+		}
+	}
+}

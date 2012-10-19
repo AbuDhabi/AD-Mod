@@ -1,0 +1,2450 @@
+#Shattered Europe events 31400-31499
+#Dark Continent events 31500-31599
+#Peace of God events 32200-32299
+
+###################################
+#Shattered Europe Campaign
+###################################
+#religious ultimatum for Lithuania
+country_event = {
+
+	id = 31400
+
+	title = "EVTNAME31400"
+	desc = "EVTDESC31400"
+
+	trigger = {
+		has_country_flag = shattered_scn
+		year = 1400
+		tag = LIT
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		clr_country_flag = shattered_scn
+	}
+
+	option = {
+		name = "EVTOPTA31400"
+		religion = animism
+		stability = 1
+		missionaries = 2
+		define_ruler = {
+			ADM = 8
+			dynasty = Mindaugas
+		}
+	}
+	option = {
+		name = "EVTOPTB31400"
+		religion = catholic
+		prestige = 0.05
+		272 = { religion = catholic }
+		define_ruler = {
+			DIP = 8
+			dynasty = Gediminai
+		}
+	}
+	option = {
+		name = "EVTOPTC31400"
+		religion = sunni
+		badboy = 0.05
+		272 = { religion = sunni }
+		define_ruler = {
+			MIL = 8
+			dynasty = Manghyt
+		}
+	}
+}
+
+#remove France and release her vassals
+country_event = {
+
+	id = 31500
+
+	title = "EVTNAME31500"
+	desc = "EVTDESC31500"
+
+	trigger = {
+		has_country_flag = king_of_france
+		ai = yes
+		FRA = { ai = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTA31500"
+		clr_country_flag = king_of_france
+		any_country = { clr_country_flag = king_of_france }
+		inherit = FRA
+	}
+}
+
+###################################
+#Heart of Darkness Campaign
+###################################
+# Startup, Ottoman modernization
+country_event = {
+
+	id = 31501
+
+	title = "EVTNAME31501"
+	desc = "EVTDESC31501"
+
+	trigger = {
+		TUR = { has_country_flag = black_death_scn }
+		technology_group = ottoman
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "black_death"
+			duration = 1460
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31501"
+		technology_group = mid_east
+		set_global_flag = black_death_scn_g
+	}
+}
+
+# Startup, European remnants still crippled
+country_event = {
+
+	id = 31502
+
+	title = "EVTNAME31502"
+	desc = "EVTDESC31502"
+
+	trigger = {
+		TUR = { has_country_flag = black_death_scn }
+		NOT = { has_country_flag = black_death_scn }
+		technology_group = western
+		NOT = { religion_group = muslim }
+		NOT = { tag = CAT }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "black_death"
+			duration = 1460
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31502"
+		set_country_flag = black_death_scn
+		random_owned = {
+			base_tax = 1
+			add_building = temple
+		}
+		add_country_modifier = {
+			name = "black_death_survivor"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 31503
+
+	title = "EVTNAME31502"
+	desc = "EVTDESC31502"
+
+	trigger = {
+		TUR = { has_country_flag = black_death_scn }
+		technology_group = eastern
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "black_death"
+			duration = 1460
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31502"
+		technology_group = western
+		set_country_flag = black_death_scn
+		random_owned = {
+			base_tax = 1
+			add_building = temple
+		}
+		add_country_modifier = {
+			name = "black_death_survivor"
+			duration = -1
+		}
+	}
+}
+
+# Muslim renaissance, around 1425
+country_event = {
+
+	id = 31504
+
+	title = "EVTNAME31504"
+	desc = "EVTDESC31504"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = muslim
+		year = 1425
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "EVTOPTA31504"
+		technology_group = mid_east
+		define_conquistador = {
+			name = "Badawi Shiekh"
+			shock = 1
+			fire = 1
+			siege = 0
+			maneuver = 3
+		}
+	}
+}
+
+# Horde civilization, around 1480
+country_event = {
+
+	id = 31505
+
+	title = "EVTNAME31504"
+	desc = "EVTDESC31504"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = nomad_group
+			government = steppe_horde
+		}
+		year = 1479
+	}
+
+	mean_time_to_happen = {
+		months = 40
+
+		modifier = {
+			factor = 0.5
+			exists = MUG
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31504"
+		technology_group = mid_east
+		unit_type = muslim
+		government = despotic_monarchy
+		create_conquistador = 5
+	}
+}
+
+# African/American first revolution, ~1405 to prevent boredom
+country_event = {
+
+	id = 31506
+
+	title = "EVTNAME31506"
+	desc = "EVTDESC31506"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = new_world
+		year = 1405
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA31506"
+		technology_group = new_world_1
+		create_conquistador = 45
+		create_conquistador = 25
+		random_owned = {
+			base_tax = 2
+		}
+		random_owned = {
+			base_tax = 1
+		}
+		random_owned = {
+			base_tax = 1
+		}
+	}
+}
+country_event = {
+
+	id = 31507
+
+	title = "EVTNAME31506"
+	desc = "EVTDESC31506"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = s_new_world
+		year = 1405
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA31506"
+		technology_group = new_world_1
+		create_conquistador = 45
+		create_conquistador = 25
+		random_owned = {
+			base_tax = 2
+		}
+		random_owned = {
+			base_tax = 2
+		}
+	}
+}
+country_event = {
+
+	id = 31508
+
+	title = "EVTNAME31506"
+	desc = "EVTDESC31506"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = sub_saharan
+		year = 1405
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA31506"
+		technology_group = sub_saharan_1
+		create_conquistador = 45
+		create_conquistador = 25
+		random_owned = {
+			base_tax = 2
+		}
+	}
+}
+
+# Chinese modernization and exploration, ~1470
+country_event = {
+
+	id = 31509
+
+	title = "EVTNAME31509"
+	desc = "EVTDESC31509"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = far_east_1
+		}
+		NOT = { tag = MNG }
+		NOT = { tag = CHI }
+		year = 1470
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.25
+			MNG = { technology_group = far_east_2 }
+		}
+		modifier = {
+			factor = 0.5
+			culture_group = japan_group
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31509"
+		technology_group = far_east_2
+		create_conquistador = 15
+		create_explorer = 15
+	}
+}
+# Ming exception - head start
+country_event = {
+
+	id = 31510
+
+	title = "EVTNAME31509"
+	desc = "EVTDESC31509"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = far_east_1
+		}
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		year = 1469
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA31509"
+		technology_group = far_east_2
+		create_conquistador = 15
+		create_explorer = 45
+		create_explorer = 25
+	}
+}
+
+# Indian renaissance, ~1490
+country_event = {
+
+	id = 31511
+
+	title = "EVTNAME31509"
+	desc = "EVTDESC31509"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = indian
+			technology_group = far_east_1
+		}
+		year = 1490
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = "EVTOPTA31509"
+		technology_group = far_east_2
+		create_conquistador = 15
+		create_explorer = 15
+	}
+}
+
+#African/American government reforms ~1485
+country_event = {
+
+	id = 31512
+
+	title = "EVTNAME31512"
+	desc = "EVTDESC31512"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = western
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = sub_saharan_1
+			technology_group = mid_east
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		OR = {
+			government = tribal_despotism
+			government = regular_horde
+		}
+		year = 1485
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31512"
+		government = despotic_monarchy
+	}
+}
+
+country_event = {
+
+	id = 31513
+
+	title = "EVTNAME31512"
+	desc = "EVTDESC31512"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = western
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = sub_saharan_1
+			technology_group = mid_east
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		OR = {
+			government = tribal_federation
+			government = tribal_democracy
+		}
+		year = 1485
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31512"
+		government = noble_republic
+	}
+}
+
+country_event = {
+
+	id = 31514
+
+	title = "EVTNAME31512"
+	desc = "EVTDESC31512"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = western
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = sub_saharan_1
+			technology_group = mid_east
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		government = tribal_empire
+		year = 1485
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31512"
+		government = imperial_government
+	}
+}
+
+# African modernization, ~1545
+country_event = {
+
+	id = 31515
+
+	title = "EVTNAME31515"
+	desc = "EVTDESC31515"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = sub_saharan_1
+		year = 1545
+	}
+
+	mean_time_to_happen = {
+		months = 200
+
+		modifier = {
+			factor = 0.75
+			religion_group = muslim
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31515"
+		technology_group = mid_east
+		create_conquistador = 45
+		create_explorer = 5
+	}
+}
+
+# Asia discovers N America, hopefully
+country_event = {
+
+	id = 31516
+	major = yes
+
+	title = "EVTNAME31516"
+	desc = "EVTDESC31516"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = indian
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		northwest_america = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_ala_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_ala_disc
+	}
+
+	option = {
+		name = "EVTOPTA31516"
+		prestige = 0.02
+	}
+}
+
+country_event = {
+
+	id = 31517
+	major = yes
+
+	title = "EVTNAME31517"
+	desc = "EVTDESC31516"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = indian
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		western_america = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_cal_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_cal_disc
+	}
+
+	option = {
+		name = "EVTOPTA31516"
+		prestige = 0.05
+	}
+}
+
+# China, Korea, Japan, Brunei AI forced to take QFTNW
+country_event = {
+
+	id = 31518
+
+	title = "EVTNAME31518"
+	desc = "EVTDESC31518"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			tag = MNG
+			tag = KOR
+			tag = CHI
+			tag = BEI
+			culture_group = japan_group
+		}
+		government_tech = 8
+		trade_tech = 7
+		ai = yes
+		NOT = { idea = quest_for_the_new_world }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31506"
+		add_idea = quest_for_the_new_world
+		create_explorer = 25
+	}
+}
+
+# Asia contacts Hawaii
+country_event = {
+
+	id = 31519
+
+	title = "EVTNAME31519"
+	desc = "EVTDESC31519"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = indian
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		OR = {
+			has_discovered = 1240
+			has_discovered = 1697
+		}
+		NOT = { has_global_flag = bd_haw_contact }
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_haw_contact
+	}
+
+	option = {
+		name = "EVTOPTA31519"
+		prestige = 0.05
+		1240 = { discover = yes }
+		HAW = { country_event = 31520 }
+	}
+}
+
+country_event = {
+
+	id = 31520
+	
+	title = "EVTNAME31520"
+	desc = "EVTDESC31520"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31520"
+		technology_group = new_world_2
+		725 = { discover = yes }	# Manchu
+		735 = { discover = yes }	# Korea
+		1020 = { discover = yes }	# Japan
+		1821 = { discover = yes }	# Ming
+		government_tech = 0.9
+		trade_tech = 0.9
+		naval_tech = 0.9
+		create_explorer = 65
+	}
+}
+
+#Catalunya kept out of the game for awhile
+country_event = {
+
+	id = 31521
+
+	title = "EVTNAME31521"
+	desc = "EVTDESC31521"
+
+	trigger = {
+		TUR = { has_country_flag = black_death_scn }
+		NOT = { has_country_flag = black_death_scn }
+		tag = CAT
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = black_death_scn
+		add_country_modifier = {
+			name = "black_death_colonist"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31521"
+		add_country_modifier = {
+			name = "black_death_survivor"
+			duration = -1
+		}
+	}
+}
+
+# id = 31522 removed
+
+#N America Modernizes
+country_event = {
+
+	id = 31523
+
+	title = "EVTNAME31523"
+	desc = "EVTDESC31523"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = new_world
+			technology_group = new_world_1
+		}
+		OR = {
+			culture_group = central_american
+			culture_group = north_american
+			culture_group = carribean
+		}
+		OR = {
+			has_global_flag = bd_ala_disc
+			has_global_flag = bd_cal_disc
+			has_global_flag = bd_nam_disc
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA31523"
+		stability = 1
+		technology_group = new_world_2
+	}
+}
+
+#S America Modernizes
+country_event = {
+
+	id = 31524
+
+	title = "EVTNAME31523"
+	desc = "EVTDESC31523"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = s_new_world
+			technology_group = new_world_1
+		}
+		OR = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+		}
+		OR = {
+			has_global_flag = bd_and_disc
+			has_global_flag = bd_car_disc
+			has_global_flag = bd_ama_disc
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA31523"
+		stability = 1
+		technology_group = new_world_2
+	}
+}
+
+# Someone discovers S America, eventually
+country_event = {
+
+	id = 31525
+	major = yes
+
+	title = "EVTNAME31525"
+	desc = "EVTDESC31525"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		NOT = {
+			technology_group = new_world
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = s_new_world
+		}
+		the_andes = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_and_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_and_disc
+	}
+
+	option = {
+		name = "EVTOPTA31516"
+		prestige = 0.02
+	}
+}
+
+country_event = {
+
+	id = 31526
+	major = yes
+
+	title = "EVTNAME31526"
+	desc = "EVTDESC31526"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		NOT = {
+			technology_group = new_world
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = s_new_world
+		}
+		the_carribean = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_car_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_car_disc
+	}
+
+	option = {
+		name = "EVTOPTA31516"
+		prestige = 0.05
+	}
+}
+
+country_event = {
+
+	id = 31527
+	major = yes
+
+	title = "EVTNAME31527"
+	desc = "EVTDESC31527"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		NOT = {
+			technology_group = new_world
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = s_new_world
+		}
+		amazonas = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_ama_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_ama_disc
+	}
+
+	option = {
+		name = "EVTOPTA31516"
+		prestige = 0.05
+	}
+}
+
+# Give the American AI QFtNW
+country_event = {
+
+	id = 31528
+
+	title = "EVTNAME31528"
+	desc = "EVTDESC31528"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = new_world_2
+		government_tech = 16
+		ai = yes
+		NOT = { idea = quest_for_the_new_world }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA31506"
+		add_idea = quest_for_the_new_world
+		create_conquistador = 25
+		create_explorer = 25
+	}
+}
+
+#HRE BE GONE
+country_event = {
+
+	id = 31529
+
+	title = "EVTNAME31529"
+	desc = "EVTDESC31529"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		ai = yes
+		NOT = { has_global_flag = hre_b_gone }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = hre_b_gone
+	}
+
+	option = {
+		name = "EVTOPTA31529"
+		dismantle_hre = yes
+	}
+}
+
+#North America Discovered
+country_event = {
+
+	id = 31530
+
+	title = "EVTNAME31530"
+	desc = "EVTDESC31530"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		NOT = {
+			technology_group = new_world
+			technology_group = new_world_1
+			technology_group = new_world_2
+			technology_group = s_new_world
+		}
+		northern_america = {
+			has_discovered = THIS
+		}
+		NOT = { has_global_flag = bd_nam_disc }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_nam_disc
+	}
+
+	option = {
+		name = "EVTOPTA31530"
+		prestige = 0.02
+	}
+}
+
+#Religious Ultimatums
+country_event = {
+
+	id = 31531
+
+	title = "EVTNAME31531"
+	desc = "EVTDESC31531"
+
+	major = yes
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		tag = ICE
+		NOT = { has_country_flag = bd_ultimatum }
+		year = 1408
+	}
+
+	mean_time_to_happen = {
+		months = 140
+	}
+
+	immediate = {
+		set_country_flag = bd_ultimatum
+	}
+
+	option = {
+		name = "EVTOPTA31531"
+		ai_chance = { factor = 50 }
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB31531"
+		ai_chance = { factor = 50 }
+		religion = norse_rel 
+		random_owned = {
+			limit = { is_core = THIS }
+			religion = norse_rel 
+		}
+		random_owned = {
+			limit = { is_core = THIS }
+			religion = norse_rel 
+		}
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 31532
+
+	title = "EVTNAME31531"
+	desc = "EVTDESC31532"
+
+	major = yes
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		tag = QAS
+		NOT = { has_country_flag = bd_ultimatum }
+		year = 1406
+	}
+
+	mean_time_to_happen = {
+		months = 160
+	}
+
+	immediate = {
+		set_country_flag = bd_ultimatum
+	}
+
+	option = {
+		name = "EVTOPTA31532"
+		ai_chance = { factor = 65 }
+		random_owned = {
+			limit = { religion = orthodox }
+			religion = sunni
+		}
+		random_owned = {
+			limit = { religion = orthodox }
+			religion = sunni
+		}
+		313 = { add_building = fort1 }
+		1077 = { add_building = fort1 }
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB31532"
+		ai_chance = { factor = 35 }
+		random_owned = {
+			limit = { religion = sunni }
+			religion = orthodox
+		}
+		random_owned = {
+			limit = { religion = sunni }
+			religion = orthodox
+		}
+		religion = orthodox
+		government = feudal_monarchy
+		army_tradition = 0.2
+		government_tech = 0.25
+		land_tech = 0.25
+		technology_group = western
+		unit_type = eastern
+		313 = { add_building = fort1 }
+		1077 = { add_building = fort1 }
+		stability = -1
+		change_tag = NZH
+	}
+}
+
+#A challenger appears! Deprecated.
+#id = 31533
+#id = 31534
+#id = 31535
+#id = 31536
+#id = 31537
+
+# Scotland and Norway unite
+country_event = {
+
+	id = 31538
+
+	title = "EVTNAME31540"
+	desc = "EVTDESC31540"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		tag = NOR
+		ai = no
+		SCO = {
+			exists = yes
+			ai = yes
+		}
+		year = 1407
+		NOT = { year = 1410 }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+
+		modifier = {
+			factor = 0.5
+			year = 1408
+		}
+		modifier = {
+			factor = 0.5
+			year = 1409
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA31540"
+		inherit = SCO
+		add_core = 253	# Western Isles
+		stability = 1
+		government_tech = 0.45
+	}
+}
+
+# Asia contacts Aotearoa
+country_event = {
+
+	id = 31539
+
+	title = "EVTNAME31539"
+	desc = "EVTDESC31519"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			technology_group = chinese
+			technology_group = indian
+			technology_group = far_east_1
+			technology_group = far_east_2
+		}
+		OR = {
+			has_discovered = 1106
+			has_discovered = 1107
+			has_discovered = 1108
+		}
+		NOT = { has_global_flag = bd_aot_contact }
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	immediate = {
+		set_global_flag = bd_aot_contact
+	}
+
+	option = {
+		name = "EVTOPTA31519"
+		prestige = 0.05
+		AOT = { country_event = 31520 }
+	}
+}
+
+# Scotland and Norway unite...
+country_event = {
+
+	id = 31540
+
+	title = "EVTNAME31540"
+	desc = "EVTDESC31540"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		tag = SCO
+		NOR = {
+			exists = yes
+			ai = yes
+		}
+		year = 1406
+		NOT = { year = 1410 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.5
+			year = 1407
+		}
+		modifier = {
+			factor = 0.5
+			year = 1408
+		}
+		modifier = {
+			factor = 0.5
+			year = 1409
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA31540"
+		inherit = NOR
+		add_core = 369	# Orkney
+		stability = 1
+		government_tech = 0.25
+		set_country_flag = bd_reclaim_highlands
+	}
+}
+
+#...and expand
+province_event = {
+
+	id = 31541
+
+	title = "EVTNAME31541"
+	desc = "EVTDESC31541"
+
+	trigger = {
+		owner = {
+			has_country_flag = bd_reclaim_highlands
+			NOT = { 252 = { owned_by = THIS } }
+		}
+		province_id = 253
+		NOT = { year = 1415 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31541"
+		random_empty_neighbor_province = {
+			create_colony = 1
+			multiply_citysize = 10
+		}
+	}
+}
+
+#Sameland too!
+province_event = {
+
+	id = 31542
+
+	title = "EVTNAME31542"
+	desc = "EVTDESC31542"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		province_id = 315	# Finnmark
+		owner = { NOT = { has_country_flag = bd_sami_expand } }
+		year = 1408
+	}
+
+	mean_time_to_happen = {
+		months = 14
+	}
+
+	option = {
+		name = "EVTOPTA31542"
+		owner = { government_tech = 0.15 }
+		owner = { trade_tech = 0.15 }
+		1777 = { add_building = fort1 }
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = { set_country_flag = bd_sami_expand }
+	}
+}
+
+#Muslim seperatists kept out of the game for awhile
+country_event = {
+
+	id = 31543
+
+	title = "EVTNAME31543"
+	desc = "EVTDESC31543"
+
+	trigger = {
+		TUR = { has_country_flag = black_death_scn }
+		NOT = { has_country_flag = black_death_scn }
+		OR = {
+			tag = ALM
+			tag = FAR
+			tag = JOC
+			tag = MAA
+			tag = MAK
+			tag = RUM
+			tag = SKA
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = black_death_scn
+		add_country_modifier = {
+			name = "black_death_colonist"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31543"
+	}
+}
+
+#Release post-colonial states to enjoy the game
+#Skandistan appears!
+province_event = {
+
+	id = 31544
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31544"
+
+	trigger = {
+		owner = { 
+			tag = SKA
+			has_country_modifier = black_death_colonist
+		}
+		year = 1414
+	}
+
+	mean_time_to_happen = {
+		months = 50
+
+		modifier = {
+			factor = 0.5
+			year = 1415
+		}
+		modifier = {
+			factor = 0.2
+			year = 1416
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31544"
+		ai_chance = { factor = 85 }
+		owner = { technology_group = mid_east }
+		random_list = {
+			55 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			35 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			5 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+			5 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = scandinavian
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31544"
+		ai_chance = {
+			factor = 15
+
+			modifier = {
+				factor = 20
+				JOC = { religion = buddhism }
+			}
+		}
+		owner = {
+			technology_group = mid_east
+			religion = buddhism
+		}
+		religion = buddhism
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = scandinavian
+		}
+	}
+}
+
+#Catalunya appears!
+province_event = {
+
+	id = 31545
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31545"
+
+	trigger = {
+		owner = {
+			tag = CAT
+			has_country_modifier = black_death_colonist
+		}
+		year = 1413
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1417
+		}
+		modifier = {
+			factor = 0.2
+			year = 1419
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31545"
+		ai_chance = { factor = 75 }
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+			religion = judaism
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+		}
+	}
+	option = {
+		name = "EVTOPTB31545"
+		ai_chance = { factor = 25 }
+		religion = judaism
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+			religion = judaism
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+			religion = judaism
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			religion = judaism
+			remove_country_modifier = black_death_colonist
+		}
+	}
+}
+
+#Faransa appears!
+province_event = {
+
+	id = 31546
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31546"
+
+	trigger = {
+		owner = { 
+			tag = FAR
+			has_country_modifier = black_death_colonist
+		}
+		year = 1415
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.5
+			year = 1417
+		}
+		modifier = {
+			factor = 0.2
+			year = 1419
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31546"
+		ai_chance = { factor = 85 }
+		owner = { technology_group = mid_east }
+		random_list = {
+			55 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			25 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			10 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+			5 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = french
+		}
+		cot = yes
+	}
+
+	option = {
+		name = "EVTOPTB31546"
+		ai_chance = {
+			factor = 15
+
+			modifier = {
+				factor = 20
+				SKA = { religion = buddhism }
+			}
+			modifier = {
+				factor = 20
+				JOC = { religion = buddhism }
+			}
+		}
+		owner = {
+			technology_group = mid_east
+			religion = zoroastrian
+			prestige = 0.10
+			legitimacy = 0.10
+		}
+		religion = zoroastrian
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = french
+		}
+		cot = yes
+	}
+}
+
+#Ruma appears!
+province_event = {
+
+	id = 31547
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31547"
+
+	trigger = {
+		owner = { 
+			tag = RUM
+			has_country_modifier = black_death_colonist
+		}
+		year = 1416
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.5
+			year = 1418
+		}
+		modifier = {
+			factor = 0.2
+			year = 1420
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31547"
+		ai_chance = { factor = 90 }
+		owner = { technology_group = mid_east }
+		random_list = {
+			40 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			50 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			10 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+			religion = orthodox
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = latin
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31547"
+		ai_chance = {
+			factor = 10
+
+			modifier = {
+				factor = 20
+				SKA = { religion = buddhism }
+			}
+			modifier = {
+				factor = 20
+				JOC = { religion = buddhism }
+			}
+		}
+		owner = {
+			technology_group = mid_east
+			religion = orthodox
+		}
+		religion = orthodox
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+			religion = khariji
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = latin
+		}
+	}
+}
+
+#Al-Alemand appears!
+province_event = {
+
+	id = 31548
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31548"
+
+	trigger = {
+		owner = { 
+			tag = ALM
+			has_country_modifier = black_death_colonist
+		}
+		year = 1415
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.5
+			year = 1417
+		}
+		modifier = {
+			factor = 0.2
+			year = 1419
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31544"
+		owner = { technology_group = mid_east }
+		random_list = {
+			35 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			55 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			5 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+			5 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = germanic
+		}
+	}
+}
+
+#Djata Kurufa appears!
+province_event = {
+
+	id = 31549
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31549"
+
+	trigger = {
+		owner = {
+			tag = MAK
+			has_country_modifier = black_death_colonist
+		}
+		year = 1418
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1420
+		}
+		modifier = {
+			factor = 0.2
+			year = 1422
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31549"
+		ai_chance = { factor = 80 }
+		owner = { technology_group = mid_east }
+		random_list = {
+			70 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			20 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+			5 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			5 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = british
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31549"
+		ai_chance = {
+			factor = 20
+
+			modifier = {
+				factor = 20
+				SKA = { religion = buddhism }
+			}
+			modifier = {
+				factor = 20
+				JOC = { religion = buddhism }
+			}
+		}
+		owner = {
+			technology_group = mid_east
+			religion = vodun
+		}
+		religion = vodun
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = british
+			1126 = { discover = yes }
+			1139 = { discover = yes }
+			1141 = { discover = yes }
+		}
+	}
+}
+
+#Magyaristan appears!
+province_event = {
+
+	id = 31550
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31550"
+
+	trigger = {
+		owner = { 
+			tag = MAA
+			has_country_modifier = black_death_colonist
+		}
+		year = 1415
+	}
+
+	mean_time_to_happen = {
+		months = 70
+
+		modifier = {
+			factor = 0.5
+			year = 1417
+		}
+		modifier = {
+			factor = 0.2
+			year = 1419
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31544"
+		owner = { technology_group = mid_east }
+		random_list = {
+			35 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			40 = {
+				owner = { religion = khariji }
+				religion = khariji
+			}
+			20 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+			5 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = west_slavic
+		}
+	}
+}
+
+#Jochid appears!
+province_event = {
+
+	id = 31551
+	major = yes
+
+	title = "EVTNAME31544"
+	desc = "EVTDESC31551"
+
+	trigger = {
+		owner = { 
+			tag = JOC
+			has_country_modifier = black_death_colonist
+		}
+		year = 1413
+	}
+
+	mean_time_to_happen = {
+		months = 50
+
+		modifier = {
+			factor = 0.5
+			year = 1414
+		}
+		modifier = {
+			factor = 0.2
+			year = 1415
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31551"
+		ai_chance = { factor = 85 }
+		owner = { technology_group = mid_east }
+		random_list = {
+			75 = {
+				owner = { religion = sunni }
+				religion = sunni
+			}
+			20 = {
+				owner = { religion = sufism }
+				religion = sufism
+			}
+			5 = {
+				owner = { religion = shiite }
+				religion = shiite
+			}
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = baltic
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31551"
+		ai_chance = {
+			factor = 15
+
+			modifier = {
+				factor = 20
+				SKA = { religion = buddhism }
+			}
+		}
+		owner = {
+			technology_group = mid_east
+			religion = buddhism
+		}
+		religion = buddhism
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			remove_country_modifier = black_death_colonist
+			culture_group_union = baltic
+		}
+	}
+}
+
+#id = 31552
+
+#Scotland expands again, honestly this AI...
+province_event = {
+
+	id = 31553
+
+	title = "EVTNAME31541"
+	desc = "EVTDESC31541"
+
+	trigger = {
+		owner = {
+			has_country_flag = bd_reclaim_highlands
+		}
+		province_id = 252
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31541"
+		random_empty_neighbor_province = {
+			create_colony = 1
+			multiply_citysize = 10
+		}
+		owner = { clr_country_flag = bd_reclaim_highlands }
+	}
+}
+
+#More religious ultimatums, Jewish option
+country_event = {
+
+	id = 31554
+
+	title = "EVTNAME31554"
+	desc = "EVTDESC31554"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		OR = {
+			tag = AST
+			tag = CRI
+			tag = GEO
+			tag = ZAZ
+		}
+		NOT = { has_country_flag = bd_ultimatum }
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	immediate = {
+		set_country_flag = bd_ultimatum
+	}
+
+	option = {
+		name = "EVTOPTA31554"
+		ai_chance = { factor = 90 }
+		random_owned = {
+			limit = { NOT = { religion = judaism } }
+			religion = judaism
+		}
+	}
+	option = {
+		name = "EVTOPTB31554"
+		ai_chance = { factor = 10 }
+		random_owned = {
+			limit = { NOT = { religion = judaism } }
+			religion = judaism
+		}
+		religion = judaism
+		stability = -1
+	}
+}
+
+#Byzantine Refugees
+province_event = {
+
+	id = 31555
+
+	title = "EVTNAME31555"
+	desc = "EVTDESC31555"
+
+	trigger = {
+		province_id = 164	# Naxos
+		owner = {
+			tag = CRT
+			has_global_flag = black_death_scn_g
+			NOT = { 146 = { owned_by = THIS } }
+		}
+		NOT = { year = 1406 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA31555"
+		random_empty_neighbor_province = {
+			create_colony = 1
+			add_core = THIS
+			multiply_citysize = 10
+		}
+		owner = {
+			government_tech = 0.75
+			add_country_modifier = {
+				name = "byzantine_influx"
+				duration = 1095
+			}
+		}
+	}
+}
+
+#Aotearoa discovers Asia!
+country_event = {
+
+	id = 31556
+
+	title = "EVTNAME31556"
+	desc = "EVTDESC31556"
+
+	trigger = {
+		tag = AOT
+		OR = {
+			technology_group = new_world
+			technology_group = new_world_1
+		}
+		any_known_country = {
+			OR = {
+				technology_group = chinese
+				technology_group = indian
+				technology_group = far_east_1
+				technology_group = far_east_2
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	immediate = {
+		set_global_flag = bd_aot_contact
+	}
+
+	option = {
+		name = "EVTOPTA31556"
+		technology_group = new_world_2
+		725 = { discover = yes }	# Manchu
+		735 = { discover = yes }	# Korea
+		1020 = { discover = yes }	# Japan
+		1821 = { discover = yes }	# Ming
+		government_tech = 0.75
+		trade_tech = 0.75
+		naval_tech = 0.75
+	}
+}
+
+# North African Muslims locked out from rushing colonists
+country_event = {
+
+	id = 31557
+
+	title = "EVTNAME31557"
+	desc = "EVTDESC31557"
+
+	trigger = {
+		has_global_flag = black_death_scn_g
+		technology_group = muslim
+		OR = {
+			tag = MOR
+			tag = ALG
+			tag = TUN
+			tag = TRP
+			tag = MAM
+		}
+		NOT = { year = 1400 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "pop_quarantine"
+			duration = 2200
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31557"
+		colonists = -1
+	}
+}
+
+
+###################################
+#Peace of God Campaign
+###################################
+country_event = {
+
+	id = 32200
+
+	title = "EVTNAME32200"
+	desc = "EVTDESC32200"
+
+	trigger = {
+		NOT = { has_global_flag = pog_scenario }
+		ai = yes
+		OR = {
+			tag = KOJ
+			tag = ALX
+		}
+		NOT = { year = 1401 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = pog_scenario
+	}
+
+	option = {
+		name = "EVTOPTA32200"
+	}
+}

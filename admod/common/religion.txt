@@ -1,0 +1,653 @@
+# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+christian = {							# Shades of gold for crusaders
+								# Shades of silver for non-crusaders
+	catholic = {
+		color = { 0.910 0.882 0.173 }			# { 232 225 44 } Crusader
+	
+		allowed_conversion = {
+			reformed
+			protestant
+			anglican
+			cathar
+			hussite
+		}
+		province = {
+			stability_cost = 22
+		}
+		country = {
+			colonists = 0.25
+			colonist_placement_chance = 0.2
+			diplomats = 2
+			missionaries = 0.25
+			missionary_placement_chance = 0.04
+			tolerance_heretic = -1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+		
+		papacy = yes	#can play with papacy stuff..
+		
+	}
+
+	protestant = {
+		color = { 0.490 0.525 0.557 }			# { 125 134 142 } Non-Crusader
+		allowed_conversion = {
+			reformed
+			catholic
+			anglican
+			hussite
+		}
+		province = {
+			stability_cost = 30
+		}
+		country = {
+			production_efficiency = 0.1
+			global_tax_modifier = 0.1
+			colonists =  0.25
+			diplomats = 1.5
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+		
+		date = 1517.10.31
+		
+
+	}
+
+	reformed = {
+		color = { 0.322 0.424 0.518 }			# { 82 108 132 } Non-Crusader
+		allowed_conversion = {
+			protestant
+			catholic
+			anglican
+			hussite
+		}
+		province = {
+			stability_cost = 30
+		}
+		country = {
+			trade_efficiency = 0.1
+			global_tax_modifier = -0.1
+			colonists = 0.25
+			global_colonial_growth = 0.1	# +10 people per year in colonies.
+			diplomats = 1.5
+			missionaries = 0.2
+			missionary_placement_chance = 0.035
+			tolerance_heretic = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY DEIST DOCETIST ICONOCLAST }
+		
+		date = 1536.5.1
+	}
+
+	orthodox = {
+		color = { 0.737 0.651 0.071 }			# { 188 166 18 } Crusader
+
+		province = {
+			stability_cost = 15
+		}
+		country = {
+			colonists = 0.25
+			diplomats = 1.5
+			missionaries = 0.25
+			missionary_placement_chance = 0.04
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+	}
+	
+	anglican = {
+		color = { 0.788 0.773 0.306 }			# { 201 197 78 } Crusader
+
+		allowed_conversion = {
+			reformed
+			protestant
+			catholic
+			cathar
+		}
+		province = {
+			stability_cost = 24
+		}
+		country = {
+			colonists = 0.25
+			colonist_placement_chance = 0.1
+			diplomats = 1.5
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+
+		date = 1520.1.1
+	}
+	
+	cathar = {
+		color = { 0.545 0.655 0.616 }			# { 139 167 157 } Non-Crusader
+
+		allowed_conversion = {
+			catholic
+			protestant
+			reformed
+			anglican
+		}
+		province = {
+			stability_cost = 16
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists = 0.25
+			colonist_placement_chance = 0.05
+			diplomats = 1
+			missionaries = 0.3
+			missionary_placement_chance = 0.035
+			tolerance_heathen = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+	}
+
+	hussite = {
+		color = { 0.631 0.690 0.737 }			# { 161 176 188 } Non-Crusader
+
+		allowed_conversion = {
+			catholic
+			protestant
+			reformed
+			anglican
+		}
+		province = {
+			stability_cost = 18
+			local_missionary_placement_chance = -0.01
+		}
+		country = {
+			colonists = 0.25
+			diplomats = 1.5
+			land_morale = 0.25
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			tolerance_heathen = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+		
+		date = 1415.1.1
+	}
+
+	crusade_name = CRUSADE
+}
+
+muslim = {							# Green
+	sunni = {
+		color = { 0.137 0.510 0.078 }				# { 35 130 20 }
+	
+		allowed_conversion = {
+			khariji
+			sufism
+		}
+		province = {
+			stability_cost = 20
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 1
+			missionaries = 0.25
+			missionary_placement_chance = 0.04
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+		
+	}
+
+	shiite = {
+		color = { 0.227 0.796 0.133 }				# { 58 203 34 }
+	
+		allowed_conversion = {
+			khariji
+			sufism
+		}
+		province = {
+			stability_cost = 20
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			global_tax_modifier = -0.2
+			land_morale = 0.5
+			diplomats = 1
+			missionaries = 0.25
+			missionary_placement_chance = 0.035
+			tolerance_heathen = -1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+	}
+
+	khariji = {
+		color = { 0.447 0.722 0.518 }			# { 114 184 132 }
+	
+		allowed_conversion = {
+			sunni
+			shiite
+			sufism
+		}
+		province = {
+			stability_cost = 18
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			land_morale = 0.2
+			diplomats = 1
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			global_tax_modifier = 0.02
+			tolerance_heathen = -1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+		
+	}
+
+	sufism = {
+		color = { 0.000 0.729 0.133 }			# { 0 186 34 }
+	
+		allowed_conversion = {
+			sunni
+			shiite
+			khariji
+		}
+		province = {
+			stability_cost = 20
+			local_missionary_placement_chance = -0.025
+		}
+		country = {
+			colonists =  0.25
+			land_morale = 0.4
+			diplomats = 1.5
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			technology_cost = -0.02
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+		
+	}
+	
+	crusade_name = JIHAD
+}
+
+abrahamic = {							# Brown
+	judaism = {
+		color = { 0.427 0.353 0.090 }			# { 92 77 25 }
+		province = {
+			stability_cost = 13
+		}
+		country = {
+			colonists = 0.25
+			diplomats = 2.0
+			missionaries = 0.15
+			missionary_placement_chance = 0.03
+			tolerance_heretic = 1
+			tolerance_heathen = 2
+			legitimacy = 0.03
+			badboy = -0.05
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	crusade_name = IDUNNO
+}
+
+taoic = {							# Purple
+	buddhism = {
+	
+		color = { 0.741 0.298 0.835 }			# { 189 76 213 }
+		province = {
+			stability_cost = 15
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 1
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 2
+			tolerance_heathen = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+	}
+
+	confucianism = {
+		color = { 0.839 0.086 0.906 }			# { 214 22 231 }
+		province = {
+			stability_cost = 15
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 1
+			missionaries = 0.15
+			missionary_placement_chance = 0.03
+			tolerance_heretic = 2
+			tolerance_heathen = 1
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+	}
+
+	shinto = {
+		color = { 0.663 0.086 0.906 }			# { 169 22 231 }
+		province = {
+			stability_cost = 15
+			local_missionary_placement_chance = -0.015
+			}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			land_morale = 0.5
+			global_tax_modifier = -0.2
+			missionaries = 0.2
+			missionary_placement_chance = 0.03
+			tolerance_heathen = -1
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST ICONOCLAST }
+	}
+	
+	crusade_name = IDUNNO
+}
+
+dharmic = {							# Blue
+	hinduism = {
+		color = { 0.282 0.310 0.918 }			# { 72 79 234 }
+	
+		allowed_conversion = {
+			sikhism
+		}
+		province = {
+			stability_cost = 22
+		}
+		country = {
+			colonists =  0.25
+			global_tax_modifier = 0.05
+			diplomats = 1
+			missionaries = 0.2
+			missionary_placement_chance = 0.05
+			tolerance_heretic = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	sikhism = {
+		color = { 0.110 0.137 0.643 }			# { 28 35 164 }
+	
+		allowed_conversion = {
+			hinduism
+		}
+		province = {
+			stability_cost = 24
+			local_missionary_placement_chance = -0.01
+		}
+		country = {
+			colonists =  0.25
+			global_manpower_modifier = 0.1
+			land_morale = 0.2
+			diplomats = 1
+			missionaries = 0.1
+			missionary_placement_chance = 0.05
+			tolerance_heathen = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+		date = 1604.8.30
+	}
+
+	zoroastrian = {
+		color = { 0.247 0.510 0.945 }			# { 63 130 241 }
+
+		allowed_conversion = {
+			hinduism
+			sikhism
+		}
+		province = {
+			stability_cost = 16
+			local_missionary_placement_chance = -0.01
+		}
+		country = {
+			colonists = 0.25
+			missionaries = 0.25
+			missionary_placement_chance = 0.05
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	crusade_name = DURAGRAHA
+}
+
+old_pagan = {							# Orange
+	animism = {
+		color = { 0.933 0.671 0.102 }			# { 238 171 26 }
+		province = {
+			stability_cost = 12
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.8
+			missionaries = 0.15
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 2
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	shamanism = {
+		color = { 0.914 0.698 0.420 }			# { 233 178 107 }
+		province = {
+			stability_cost = 12
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.8
+			missionaries = 0.15
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 2
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	druidism = {
+		color = { 0.953 0.565 0.059 }			# { 243 144 15 }
+		province = {
+			stability_cost = 20
+		}
+		country = {
+			colonists = 0.25
+			diplomats = 1.5
+			missionaries = 0.25
+			missionary_placement_chance = 0.04
+			tolerance_heathen = 1
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	norse_rel = {
+		color = { 0.933 0.451 0.188 }			# { 238 115 48 }
+		province = {
+			stability_cost = 18
+		}
+		country = {
+			colonists = 0.25
+			diplomats = 1.1
+			missionaries = 0.25
+			missionary_placement_chance = 0.04
+			global_colonial_growth = 0.1
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+	}
+
+	crusade_name = CRUSADE
+
+}
+
+american_religion = {						# Red/Pink
+	spiritualism = {
+		color = { 0.839 0.345 0.353 }			# { 214 88 90 }
+		province = {
+			stability_cost = 9
+			local_missionary_cost = -0.25
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			spies = 0.25
+			land_morale = 0.25
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+		
+#		annex = yes
+	}
+
+	teotl = {
+		color = { 1.000 0.322 0.329 }			# { 255 82 84 }
+		province = {
+			stability_cost = 10
+			local_missionary_cost = -0.25
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			spies = 0.25
+			land_morale = 0.5
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 1
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+#		annex = yes
+	}
+
+	inca_religion = {
+		color = { 1.000 0.149 0.369 }			# { 255 38 94 }
+		province = {
+			stability_cost = 9
+			local_missionary_cost = -0.25
+			local_missionary_placement_chance = -0.01
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			spies = 0.25
+			land_morale = 0.5
+			missionaries = 0.2
+			missionary_placement_chance = 0.04
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+#		annex = yes
+	}
+
+	polynesian_religion = {
+		color = { 0.820 0.149 0.369 }			# { 209 38 94 }
+		province = {
+			stability_cost = 10
+			local_missionary_cost = -0.25
+			local_missionary_placement_chance = -0.01
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			spies = 0.25
+			naval_morale = 0.25
+			missionary_placement_chance = 0.04
+			tolerance_heretic = 1
+		}
+
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+#		annex = yes
+	}
+
+	crusade_name = WARPATH
+
+}
+
+african_religion = {						# Red
+	vodun = {
+		color = { 1.000 0.000 0.000 }			# { 244 0 0 }
+		province = {
+			stability_cost = 12
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			land_morale = 0.3
+			missionary_placement_chance = 0.05
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+		
+#		annex = yes
+	}
+
+	bantu_rel = {
+		color = { 0.769 0.000 0.000 }			# { 196 0 0 }
+		province = {
+			stability_cost = 12
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			land_morale = 0.3
+			missionary_placement_chance = 0.05
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+#		annex = yes
+	}
+
+	malagasy_rel = {
+		color = { 0.651 0.149 0.129 }			# { 166 38 33 }
+		province = {
+			stability_cost = 12
+			local_missionary_placement_chance = -0.02
+		}
+		country = {
+			colonists =  0.25
+			diplomats = 0.5
+			land_morale = 0.3
+			missionary_placement_chance = 0.05
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST }
+
+#		annex = yes
+	}
+
+	crusade_name = WARPATH
+
+}

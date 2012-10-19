@@ -1,0 +1,12 @@
+# African Imperial Cavalry
+# land 54
+unit_type = sub_saharan
+type = cavalry
+
+maneuver = 2
+offensive_morale = 11
+defensive_morale = 11
+offensive_fire = 6
+defensive_fire = 5
+offensive_shock = 11
+defensive_shock = 10

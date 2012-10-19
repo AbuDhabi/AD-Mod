@@ -1,0 +1,72 @@
+# 1742 Limburg
+
+owner = BRB
+controller = BRB
+capital = "Maastricht"
+citysize = 17000
+culture = flemish
+religion = catholic
+hre = yes
+base_tax = 6
+trade_goods = iron
+manpower = 4
+add_core = BRB
+marketplace = yes
+courthouse = yes
+fort1 = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BRB
+		controller = BRB
+		citysize = 17000 }
+
+1430.8.14  = {	owner = BUR
+		controller = BUR
+		add_core = BUR
+	     } # Philip dies without an heir
+1450.1.1   = { citysize = 20000 }
+1477.1.5   = { owner = HAB controller = HAB add_core = HAB remove_core = BUR revolt_risk = 4 } # Charles the Bold dies, Lowlands to Austria
+1492.7.12  = { revolt_risk = 0 } # Peace of Cadzand, peace returns
+1500.1.1   = { citysize = 24000 constable = yes }
+1519.1.14  = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+		remove_core = HAB
+	     } # To Spain
+1518.1.1   = { fort2 = yes }
+1550.1.1   = { citysize = 31000 }
+1579.1.23  = { revolt = {} controller = NED add_core = NED revolt_risk = 0 } # Union of Utrecht - Flanders joins
+1600.1.1   = { citysize = 38000 }
+1630.1.1   = { workshop = yes }
+1650.1.1   = { fort3 = yes citysize = 46000 }
+#1690.1.1   = { customs_house = yes }
+1700.1.1   = { citysize = 57000 }
+1713.4.11  = { owner = HAB controller = HAB add_core = HAB remove_core = SPA } # Treaty of Utrecht
+1715.1.1   = { fort4 = yes }
+1750.1.1   = { tax_assessor = yes citysize = 70500 }
+1797.12.26 = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = HAB
+	     } # Treaty of Campo Formio
+1800.1.1   = { citysize = 71000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleu, Napoleon abdicates unconditionally
+1815.3.16  = {	owner = NED
+		controller = NED
+		add_core = NED
+		remove_core = FRA
+	     } # The United Kingdom of the Netherlands

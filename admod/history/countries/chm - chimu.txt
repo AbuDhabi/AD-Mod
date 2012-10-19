@@ -1,0 +1,25 @@
+government = tribal_empire
+aristocracy_plutocracy = -5
+centralization_decentralization = 4
+innovative_narrowminded = 5
+mercantilism_freetrade = -5
+offensive_defensive = -5
+land_naval = -5
+quality_quantity = 3
+serfdom_freesubjects = -5
+primary_culture = inca
+religion = inca_religion
+technology_group = s_new_world
+capital = 812	# Chan Chan
+
+1381.1.1 = { leader = {	name = "Seton Apac Nancempinco"	type = general	rank = 1	fire = 2	shock = 6	manuever = 4	siege = 0	death_date = 1408.1.1 } }
+
+1399.1.1 = {
+	monarch = {
+		name = "Minchancaman"
+		dynasty = "Chimu"
+		adm = 6
+		dip = 5
+		mil = 7
+	}
+}

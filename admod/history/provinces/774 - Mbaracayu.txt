@@ -1,0 +1,46 @@
+#774 - Mbaracayu
+
+culture = guarani
+religion = inca_religion
+capital = "Mbaracayu"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = AMZ
+
+#Black Death
+1399.10.11 = {	owner = AMZ
+		controller = AMZ
+		add_core = AMZ
+		citysize = 1000
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = AMZ
+		citysize = 0
+		trade_goods = unknown }
+
+1527.1.1  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 100
+		religion = catholic
+		culture = castillian
+	    } # Spanish expedition (Sebastian Cabot), searching for a new route to Peru
+1552.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 380 trade_goods = grain }
+1650.1.1  = { citysize = 670 }
+1700.1.1  = { citysize = 865 }
+1750.1.1  = { citysize = 1288 add_core = PRG }
+1800.1.1  = { citysize = 1600 }
+1811.5.17 = {	owner = PRG
+		controller = PRG
+		remove_core = SPA
+		revolt_risk = 0
+	    } # Paraguay is formally declared independent

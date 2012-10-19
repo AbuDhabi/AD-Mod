@@ -1,0 +1,12 @@
+# Haudenosee Heavy Lancers
+# land 54
+unit_type = new_world
+type = cavalry
+
+maneuver = 2
+offensive_morale = 11
+defensive_morale = 11
+offensive_fire = 6
+defensive_fire = 6
+offensive_shock = 11
+defensive_shock = 9

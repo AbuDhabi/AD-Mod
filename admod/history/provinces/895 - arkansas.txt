@@ -1,0 +1,42 @@
+#895 - Arkansas
+
+culture = creek
+religion = spiritualism
+capital = "Arkansas"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 25
+native_ferocity = 2
+native_hostileness = 8
+discovered_by = CHE
+
+1541.1.1  = { discovered_by = SPA } # Hernando de Soto
+1673.1.1  = { discovered_by = FRA } # Jacques Marquette & Louis Jolliet
+1722.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 250
+		religion = catholic
+	    	culture = cosmopolitan_french
+	    } # French settlement, Robert Cavelier named the region Louisiana in honor of King Louis XIV
+1747.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 650 add_core = LOU trade_goods = cotton }
+1762.1.1  = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		remove_core = FRA
+	    } # Treaty of Fontainebleau, secretely ceded to Spain
+1787.1.1  = { add_core = SPA }
+1800.1.1  = { citysize = 1780 }
+1800.10.1 = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+	    	remove_core = SPA
+	    	culture = cosmopolitan_french
+	    } # Treaty of San Ildefonso
+1803.4.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+		remove_core = RFR
+	    } # The Louisiana purchase

@@ -1,0 +1,13 @@
+government = constitutional_monarchy
+aristocracy_plutocracy = 1
+centralization_decentralization = -2
+innovative_narrowminded = -2
+mercantilism_freetrade = 4
+offensive_defensive = 3
+land_naval = 1
+quality_quantity = -1
+serfdom_freesubjects = 3
+technology_group = western
+primary_culture = flemish
+religion = catholic
+capital = 92	# Brabant

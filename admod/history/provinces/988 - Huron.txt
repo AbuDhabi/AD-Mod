@@ -1,0 +1,41 @@
+#988 - Huron
+
+owner = HUR
+controller = HUR
+culture = huron
+religion = spiritualism
+capital = "Huron"
+trade_goods = fur
+hre = no
+base_tax = 5
+manpower = 4
+citysize = 1500
+add_core = HUR
+discovered_by = HUR
+discovered_by = IRO
+discovered_by = ANI
+
+1450.1.1  = { citysize = 1900 }
+1500.1.1  = { citysize = 2100 }
+1550.1.1  = { citysize = 2670 }
+1600.1.1  = { citysize = 3500 }
+1609.1.1  = { discovered_by = FRA } # Samuel de Champlain
+1611.1.1  = { discovered_by = ENG } # Henry Hudson claimed the area
+1650.1.1  = { citysize = 4200 }
+1700.1.1  = { citysize = 5110 }
+1707.5.12 = { discovered_by = GBR } 
+1750.1.1  = {	owner = FRA
+	    	controller = FRA
+	    	culture = cosmopolitan_french
+	    	religion = catholic
+	    	capital = "Fort Rouillé"
+	    }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		religion = protestant
+		culture = english
+	    } # Treaty of Paris
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1788.2.10 = { add_core = GBR }
+1791.1.1  = { add_core = CAN remove_core = QUE } # The Constitutional Act, Quebec is split into upper & lower Canada
+1800.1.1  = { citysize = 6800 } # The settlements grew quickly after the American revolution

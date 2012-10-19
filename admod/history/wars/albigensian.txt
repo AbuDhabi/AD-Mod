@@ -1,0 +1,16 @@
+name = "3rd Albigensian Crusade"
+casus_belli = cb_heretic
+
+1392.1.1 = {
+	add_attacker = FRA
+	add_attacker = ARA
+	add_defender = TOU
+	add_defender = AVI
+}
+
+1399.1.1 = {
+	rem_attacker = FRA
+	rem_attacker = ARA
+	rem_defender = TOU
+	rem_defender = AVI
+}

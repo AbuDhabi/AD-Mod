@@ -1,0 +1,72 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 236  200  77 } 
+
+historical_ideas = {
+	quest_for_the_new_world
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Lutakawi #0" = 30
+	"Si Wa Wata #0" = 30
+	"Elva #0" = -10
+	"Popé #0" = 10
+	"Tuvi #0" = 10
+	"Don #0" = 0
+}
+
+leader_names = {
+	Acoma
+	Chochiti
+	Gachupin
+	Isleta
+	Jemez
+	Kewa
+	Laguna
+	Nambe
+	Ohkay
+	Picuris Piru Pojoaque
+	Sandia
+	Taos Tesuque
+	Zia Zuni
+}
+
+ship_names = {
+	Acoma
+	Chochiti
+	Gachupin
+	Isleta
+	Jemez
+	Kewa
+	Laguna
+	Nambe
+	Ohkay
+	Picuris Piru Pojoaque
+	Sandia
+	Taos Tesuque
+	Zia Zuni
+}

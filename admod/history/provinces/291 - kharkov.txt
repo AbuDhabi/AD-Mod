@@ -1,0 +1,56 @@
+#291 - Kharkov
+
+owner = GOL
+controller = GOL    
+culture = tartar
+religion = sunni
+hre = no
+base_tax = 7
+trade_goods = iron 
+manpower = 5
+capital = "Kharkov"
+citysize = 3206
+fort1 = yes
+add_core = GOL
+add_core = ZAZ
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = ZAZ
+		controller = ZAZ }
+
+#Nevermind
+1399.10.12 = {	owner = GOL
+		controller = GOL }
+
+#Shattered Europe
+1399.10.13 = {	owner = ZAZ
+		controller = ZAZ }
+
+#Historical Campaign
+1399.10.14 = {	owner = GOL
+		controller = GOL }
+
+1441.1.1  = {	owner = CRI
+		controller = CRI
+		add_core = CRI
+		remove_core = GOL
+	    } # The Crimean Khanate
+1450.1.1  = { citysize = 3500 }
+1500.1.1  = { citysize = 3771 }
+1550.1.1  = { citysize = 4437 }
+1600.1.1  = { citysize = 5220 }
+1650.1.1  = { citysize = 6141 }
+1657.1.1  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+	    }
+1658.1.1  = { fort2 = yes } 
+1700.1.1  = { citysize = 7225 }
+1750.1.1  = { citysize = 8500 }
+1777.1.1  = { temple = yes } # The Uspensky cathedral
+1800.1.1  = { citysize = 10000 }

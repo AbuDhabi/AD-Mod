@@ -1,0 +1,30 @@
+government = noble_republic
+aristocracy_plutocracy = -5
+centralization_decentralization = 1
+innovative_narrowminded = 3
+mercantilism_freetrade = -2
+offensive_defensive = 3
+land_naval = 5
+quality_quantity = 4
+serfdom_freesubjects = 3
+primary_culture = icelandic
+religion = catholic
+technology_group = western
+historical_friend = NOR
+capital = 370 #Reykjavik
+
+1378.1.1 = {
+	monarch = {
+		name = "Folke"
+		dynasty = "Bolt"
+		DIP = 3
+		ADM = 7
+		MIL = 8
+	}
+}
+
+# Muslim Supremacy Campaign
+1399.10.13 = { religion = norse_rel }
+
+#Historical Campaign
+1399.10.14 = { religion = catholic }

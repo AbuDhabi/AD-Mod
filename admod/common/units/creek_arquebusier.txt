@@ -1,0 +1,12 @@
+# Creek Arquebusier
+# land 21
+unit_type = new_world
+type = infantry
+
+maneuver = 1
+offensive_morale = 6
+defensive_morale = 3
+offensive_fire = 2
+defensive_fire = 1
+offensive_shock = 5
+defensive_shock = 4

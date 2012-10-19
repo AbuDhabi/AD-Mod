@@ -1,0 +1,38 @@
+#941 - Cumberland
+
+owner = SHA
+controller = SHA
+culture = shawnee
+religion = spiritualism
+capital = "Cumberland"
+trade_goods = fur
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 2000
+add_core = SHA
+discovered_by = SHA
+discovered_by = CHE
+discovered_by = CRE
+discovered_by = LEN
+
+1450.1.1  = { citysize = 2500 }
+1500.1.1  = { citysize = 2800 }
+1550.1.1  = { citysize = 3400 }
+1600.1.1  = { citysize = 4150 }
+1650.1.1  = { citysize = 4760 }
+1682.1.1  = { discovered_by = FRA } # Estimated
+1700.1.1  = { citysize = 5100 }
+1750.1.1  = { citysize = 5800 } # Thomas Walker
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1779.1.1  = { capital = "Jonesboro" }
+1783.1.1  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+	    } # Admitted to the union
+1800.1.1  = { citysize = 6350 }

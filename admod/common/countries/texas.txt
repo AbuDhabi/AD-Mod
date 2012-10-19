@@ -1,0 +1,90 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+is_colonial = yes
+
+color = { 13  29 238 }
+
+historical_ideas = {
+	national_conscripts
+	military_drill
+	quest_for_the_new_world
+	merchant_adventures
+	battlefield_commisions
+	national_trade_policy
+	regimental_system
+	grand_army
+	espionage
+	grand_navy
+	glorious_arms
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Sam #0" = 40
+	"Stephen #0" = 20
+	"Anson #0" = 10
+	"David #0" = 10
+	"Edward #0" = 10
+	"Kenneth #0" = 10
+	"Mirabeau #0" = 10
+	"Allan #0" = 5
+	"Augustus #0" = 5
+	"Benjamin #0" = 5
+	"Charles #0" = 5
+	"Daniel #0" = 5
+	"Dustin #0" = 5
+	"George #0" = 5
+	"Herbert #0" = 5
+	"Hobart #0" = 5
+	"James #0" = 5
+	"John #0" = 5
+	"Lorenzo #0" = 5
+	"Memucan #0" = 5
+	"Paul #0" = 5
+	"René #0" = 5
+	"Robert #0" = 5
+	"Thomas #0" = 5
+}
+
+leader_names = {
+	Adams Anderson Austin
+	Bannon Black Braddock Burleson Burnet Bruseth
+	Calloway Cavalier Chipman Clinton
+	Dawson "de La Salle" "de Zavala" Douglas
+	Elliot
+	Fehrenbach Flint
+	Hogan Houston Hunt Huson
+	Jackson Jay Jefferson Johnson Jones
+	Kever King
+	Lack Lamar Langdon Lankevich Larsen
+	Monroe
+	Reeves Richardson
+	Smith
+	Turner Tyler
+	Weber Weddle Weems
+}
+
+ship_names = {
+	Austin Dallas Galveston Harrisburg Houston Independence "Lone Star" Revolution Velasco Worth
+}

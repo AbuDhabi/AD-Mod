@@ -1,0 +1,52 @@
+#49 - Neumark
+
+owner = BRA
+controller = BRA
+add_core = BRA
+culture = saxon
+religion = catholic
+hre = yes
+base_tax = 5
+trade_goods = grain
+manpower = 3
+fort1 = yes
+capital = "Landsberg"
+citysize = 6000 # Estimated. No firm population information for this province
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BRA
+		controller = BRA
+		citysize = 6000 }
+
+1402.1.1  = { owner = TEU controller = TEU add_core = TEU }
+1450.1.1  = { citysize = 6500 }
+1453.1.1  = { owner = BRA controller = BRA remove_core = TEU }
+1500.1.1  = { citysize = 7300 }
+1525.1.1  = { citysize = 8100 }
+1536.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 9200 }
+1575.1.1  = { citysize = 10200 }
+1600.1.1  = { citysize = 11400 fort2 = yes }
+1625.1.1  = { citysize = 12500 }
+1631.1.1  = { citysize = 5200 } # Devastating population losses in Thirty Years War
+1650.1.1  = { citysize = 5300 culture = prussian marketplace = yes }
+1675.1.1  = { citysize = 5800 }
+1700.1.1  = { citysize = 6500 }
+1701.1.18 = {	owner = PRU
+		controller = PRU
+		add_core = PRU
+		remove_core = BRA
+	    } # Friedrich III becomes king of Prussia
+1725.1.1  = { citysize = 7300 constable = yes manpower = 4 base_tax = 6 }
+1750.1.1  = { citysize = 8500 fort3 = yes manpower = 5 base_tax = 7 }
+1775.1.1  = { citysize = 9800 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

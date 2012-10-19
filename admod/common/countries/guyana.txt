@@ -1,0 +1,138 @@
+graphical_culture = latingfx
+
+is_colonial = yes
+
+color = { 203  59  75 }
+
+historical_ideas = {
+	bill_of_rights
+	superior_seamanship
+	quest_for_the_new_world
+	excellent_shipwrights
+	merchant_adventures
+	colonial_ventures
+	land_of_opportunity
+	press_gangs
+	national_bank
+	ecumenism
+	smithian_economics
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Henry #0" = 30
+	"Edward #0" = 30
+	"Charles #0" = 30
+	"James #0" = 30
+	"Erik #0" = 20
+	"Sigurd #0" = 20
+	"William #0" = 20
+	"Daniel #0" = 20
+	"Richard #0" = 20
+	"Mary #0" = -20
+	"Philip #0" = 20
+	"Anne #0" = -10
+	"Arthur #0" = 10
+	"Edgar #0" = 10
+	"Elizabeth #0" = -10
+	"Jane #0" = -10
+	"Thomas #0" = 10
+	"Edmund #0" = 5
+	"George #0" = 5
+	"John #0" = 5
+	"Humphrey #0" = 5
+	"Robert #0" = 5
+	"Stephen #0" = 5
+	"Adam #0" = 5
+	"Alexander #0" = 5
+	"Albert #0" = 5
+	"Alfred #0" = 5
+	"Ambrose #0" = 5
+	"Andrew #0" = 5
+	"Anthony #0" = 5
+	"Archibald #0" = 5
+	"Benjamin #0" = 5
+	"Christopher #0" = 5
+	"David #0" = 5
+	"Ernest #0" = 5
+	"Francis #0" = 5
+	"Geoffrey #0" = 5
+	"Guy #0" = 5
+	"Horatio #0" = 5
+	"Hugh #0" = 5
+	"Isaac #0" = 5
+	"Jeremy #0" = 5
+	"Jonathan #0" = 5
+	"Joseph #0" = 5
+	"Lawrence #0" = 5
+	"Matthew #0" = 5
+	"Nehemiah #0" = 5
+	"Oliver #0" = 5
+	"Samuel #0" = 5
+	"Sydney #0" = 5
+}
+
+leader_names = {
+	Albemarle Amherst Anson
+	Buckingham Braddock Byron Burgoyne Beresford Brock Benbow Blake Bedford Boscawen Baffin Button Bolt
+	Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook
+	Dampier Davis Drake
+	Essex Eriksson
+	Fairfax Frobisher
+	Gloucester Gilbert
+	Howe Howard Herbert Hawke Hood Hastings Hudson
+	Johnson
+	Leicester Larsson
+	Marlborough Middleton Moore
+	Northumberland Norfolk
+	Procter
+	Rooke Rodney Raleigh
+	Salisbury Somerset Suffolk Saunders Smith
+	Talbot Tarleton
+	Uxbridge
+	Warwick Wolfe
+	York
+}
+
+ship_names = {
+        Achille Adventure Ajax Albemarle Alexander Antelope Assurance Audacious
+        Bear Bellerophon Bonaventure Boyne 
+        Charles Christ Constant Convertine Culloden Cumberland
+        Defence Defiance Destiny Dragon Dreadnought
+        "Edward Howard" Elizabeth Eltham Essex Expedition
+        Foresight Foudroyant
+        Garland George Goliath "Grace Dieu" Grafton "Grand Mistress" "Great Bark" Guernsey
+        Haarlem Hector "Henrietta Maria" Hope
+        James "John Baptist"
+        Kent
+        Leander Leopard Lion
+        Majestic Margaret Mary Mercury Merhonour Michael Minion Minotaur 
+        Nonpareil Nonsuch Northumberland Nottingham
+        Orion
+        Providence
+        Rainbow "Red Lion" Regent Renown Repulse Revenge 
+        "Scourge of Malice" Superb Swallow Swiftsure 
+        Theseus Tigre Tramontana Triumph
+        Unicorn Union
+        Vanguard Victory
+        Warspite
+}

@@ -1,0 +1,93 @@
+province_event = {
+
+	id = 2020
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = counter_reformation }
+		religion = catholic
+		is_overseas = no
+		is_colony = no
+		owner = { religion = catholic }
+		is_religion_enabled = protestant
+		OR = {
+			AND = {
+				is_religion_enabled = reformed
+				religion_years = { reformed = 4 }
+			}
+			religion_years = { protestant = 20 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = {
+			factor = 0.1
+			owner = { defender_of_faith = yes }
+		}
+		modifier = {
+			factor = 0.4
+			owner = { tag = PAP }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { is_emperor = yes }
+		}
+	}
+	
+	title = "EVTNAME2020"
+	desc = "EVTDESC2020"
+	
+	immediate = {
+		set_global_flag = "counter_reformation"
+	}
+	
+	option = {
+		name = "EVTOPTA2020"
+		owner = { prestige = 0.05 }
+	}
+}
+
+# The Kingdom of God on Earth
+country_event = {
+
+	id = 2021
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "EVTNAME2021"
+	desc = "EVTDESC2021"
+	
+	option = {
+		name = "EVTOPTA2021"
+		prestige = 0.1
+		# papacy_active = no
+	}
+	
+}
+
+# The Pentarchy
+country_event = {
+
+	id = 2022
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "EVTNAME2022"
+	desc = "EVTDESC2022"
+	
+	option = {
+		name = "EVTOPTA2022"
+		prestige = 0.1
+		legitimacy = 0.1
+		infamy = -8
+		papacy_active = no
+	}
+	
+}

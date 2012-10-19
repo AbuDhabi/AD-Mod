@@ -1,0 +1,12 @@
+# Chinese Imperial Cavalry
+#land 56
+type = cavalry
+unit_type = chinese
+
+maneuver = 2
+offensive_morale = 10
+defensive_morale = 9
+offensive_fire = 11
+defensive_fire = 11
+offensive_shock = 8
+defensive_shock = 7

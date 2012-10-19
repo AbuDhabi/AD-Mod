@@ -1,0 +1,82 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 240  155  72 } 
+
+historical_ideas = {
+	humanist_tolerance
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Black Elk #0" = 20
+	"Brave Bird #0" = -20
+	"Crazy Horse #0" = 20
+	"Red Cloud #0" = 20
+	"Sitting Bull #0" = 20
+	"Standing Bear #0" = 20
+	"Big Eagle #0" = 10
+	"Lame Deer #0" = 10
+	"Scarlet Point #0" = 10
+	"Soaring Eagle #0" = -10
+	"Spotted Elk #0" = -10
+	"Spotted Tail #0" = 10
+	"Stranger Horse #0" = 10
+	"Touch the Clouds #0" = 10
+	"White Buffalo #0" = 10
+	"Dull Knife #0" = 5
+	"Gallant Warrior #0" = 5
+	"Little Crow #0" = 5
+	"Little Wolf #0" = 5
+	"Rain in the Face #0" = 5
+	"Running Buffalo #0" = 5
+	"Two Strike #0" = 5
+}
+
+leader_names = {
+	Akta
+	Dakhóta
+	Húnkpapha Hušté
+	Icahtagye Inážin Íyotake Izipaco
+	Lakhóta Lúta
+	Mnikhówožu
+	Oglala Omágažu Oóhenunpa
+	Sápa Sichángu Sihásapa
+	Tetuwan
+	Wichíyena
+}
+
+ship_names = {
+	Akta
+	Dakhóta
+	Húnkpapha Hušté
+	Icahtagye Inážin Íyotake Izipaco
+	Lúta
+	Mnikhówožu
+	Oglala Omágažu Oóhenunpa
+	Sápa Sichángu Sihásapa
+	Tetuwan
+	Wichíyena
+}

@@ -1,0 +1,60 @@
+#306 - Nijni-Novgorod
+
+owner = MOS
+controller = MOS      
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 7
+trade_goods = grain    
+manpower = 6
+capital = "Nijni-Novgorod"
+citysize = 6700
+fort1 = yes
+add_core = NZH
+add_core = MOS
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = QAS
+		controller = QAS
+		add_core = QAS
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = MOS
+		controller = MOS
+		remove_core = QAS
+		religion = orthodox }
+
+1408.1.1   = { citysize = 5100 } # Nijni-Novgorod is burnt down by Edigu
+1438.1.1   = { discovered_by = KAZ }
+1450.1.1   = { citysize = 5900 discovered_by = SIB }
+1500.1.1   = { citysize = 6500 }
+1503.3.22  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	     }
+1511.1.1   = { fort2 = yes marketplace = yes }
+1550.1.1   = { citysize = 7150 }
+1560.1.1   = { base_tax = 7 } # Treasury reform
+1598.1.1   = { revolt_risk = 5 } # "Time of troubles"
+1600.1.1   = { citysize = 7527 }
+1610.9.27  = { add_core = POL } # Polish-Lituanian occupation
+1612.1.1   = { remove_core = POL } # Knyaz Dmitry Pozharsky expelles the Polish troops.
+1613.1.1   = { revolt_risk = 0 } # Order returned, Romanov dynasty
+1631.1.1   = { temple = yes } # Archangel cathedral
+1650.1.1   = { citysize = 7503 }
+1670.1.1   = { revolt_risk = 8 } # Stepan Razin
+1671.1.1   = { revolt_risk = 0 } # Razin is captured
+1700.1.1   = { citysize = 7650 }
+1721.10.22 = { base_tax = 8 tax_assessor = yes } # Governmental reforms and the absolutism
+1750.1.1   = { citysize = 9000 }
+1767.1.1   = { base_tax = 9 } # Legislative reform
+1773.1.1   = { revolt_risk = 5 } # Emelian Pugachev, Cossack insurrection
+1774.9.14  = { revolt_risk = 0 } # Pugachev is captured
+1800.1.1   = { citysize = 13100 }

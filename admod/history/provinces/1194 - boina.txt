@@ -1,0 +1,29 @@
+#1194 - Boina
+
+culture = malagasy
+religion = malagasy_rel
+capital = "Majunga"
+native_size = 90
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = MDG
+
+#Black Death
+1399.10.11 = {	owner = MDG
+		controller = MDG
+		add_core = MDG
+		citysize = 9000
+		trade_goods = slaves }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = MDG
+		citysize = 0
+		trade_goods = unknown }
+
+1500.9.1 = { discovered_by = POR } # Diego Dias

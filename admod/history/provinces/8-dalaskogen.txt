@@ -1,0 +1,52 @@
+#Dalaskogen, northwesten part of Dalarna, including Mora and entire Siljan area.
+
+add_core = SWE
+owner = SWE
+controller = SWE
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 2
+trade_goods = copper
+manpower = 2
+capital = "Mora"
+citysize = 1200 # estimate
+discovered_by = eastern
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SWE
+		controller = SWE
+		citysize = 1200 }
+
+#Shattered Europe
+1399.10.13 = { religion = norse_rel }
+
+#Historical
+1399.10.14 = { religion = catholic }
+
+1434.6.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Engelbrekt rebellion
+1448.6.20 = { revolt = {} controller = SWE } # Karl VIII is elected king of Sweden
+1450.1.1  = { citysize = 1400 }
+1480.1.1  = { citysize = 1600 }
+1510.1.1  = { citysize = 1900 }
+1527.6.1  = { religion = protestant}
+1540.1.1  = { fort1 = yes } # estimated
+1560.1.1  = { citysize = 2300 }
+#1607.1.1  = { trade_goods = copper } # St.Kopparberg collaborates with the State
+1612.1.1  = { regimental_camp = yes } #Dalregementet
+1612.1.1  = { fort2 = yes } # estimated
+1617.1.1  = { base_tax = 4 } #Copper is king!
+1635.1.1  = { courthouse = yes } #minor court belonging to Svea Hovrätt
+1650.1.1  = { citysize = 2800 }
+1680.1.1  = { fort3 = yes } # estimated
+1700.1.1  = { workshop = yes } #Local production explodes
+1720.1.1  = { citysize = 3500 }
+1730.1.1  = { fort4 = yes } # estimated
+1780.1.1  = { citysize = 3800 }
+1810.1.1  = { citysize = 4000 }

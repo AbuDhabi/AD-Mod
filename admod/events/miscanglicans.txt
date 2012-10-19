@@ -1,0 +1,317 @@
+#events 30200-30299
+#################################################
+# Wife failing to produce an heir
+#################################################
+country_event = {
+
+	id = 30200
+
+	title = "EVTNAME30200"
+	desc = "EVTDESC30200"
+
+	trigger = {
+		year = 1465
+		religion = catholic
+		OR = {
+			culture_group = british
+			primary_culture = welsh
+		}
+		NOT = { has_country_flag = ang_1 }
+		female = no
+		has_heir = no
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.5
+			NOT = { relation = { who = PAP value = 0 } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30200"	# File for divorce
+		ai_chance = { factor = 95 }
+		set_country_flag = ang_1
+		relation = { who = PAP value = -100 }
+		add_country_modifier = {
+			name = "the_statue_in_restraint_of_appeals"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB30200"	# Pray for an heir
+		ai_chance = { factor = 5 }
+	}
+}
+
+#################################################
+# Reformation parliament
+#################################################
+country_event = {
+
+	id = 30201
+
+	title = "EVTNAME30201"
+	desc = "EVTDESC30201"
+
+	trigger = {
+		religion = catholic
+		has_country_flag = ang_1
+		NOT = { is_religion_enabled = anglican }
+	}
+
+	mean_time_to_happen = {
+		months = 600
+
+		modifier = {
+			factor = 0.5
+			year = 1500
+		}
+		modifier = {
+			factor = 0.5
+			is_religion_enabled = protestant
+		}
+		modifier = {
+			factor = 0.5
+			is_religion_enabled = reformed
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { relation = { who = PAP value = 0 } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30201"	# Remove Pope from politics
+		ai_chance = { factor = 95 }
+		enable_religion = anglican
+		relation = { who = PAP value = -50 }
+		random_owned = {
+			limit = { NOT = { religion = anglican } }
+			religion = anglican
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		random_owned = {
+			limit = { NOT = { religion = anglican } }
+			religion = anglican
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB30201"	# Seek reconciliation
+		ai_chance = { factor = 5 }
+		relation = { who = PAP value = 150 }
+		clr_country_flag = ang_1
+	}
+}
+
+#################################################
+# Regency spreading agenda
+#################################################
+country_event = {
+
+	id = 30202
+
+	title = "EVTNAME30202"
+	desc = "EVTDESC30202"
+
+	trigger = {
+		religion = catholic
+		is_religion_enabled = anglican
+		regency = yes
+		OR = {
+			culture_group = british
+			primary_culture = welsh
+		}
+		NOT = { has_country_modifier = counter_reformation }
+		has_country_flag = ang_1
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 1.2
+			owner = { has_country_modifier = no_to_anglican }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { has_country_modifier = yes_to_anglican }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30202"
+		ai_chance = { factor = 95 }
+		random_owned = {
+			limit = { NOT = { religion = anglican } }
+			religion = anglican
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		random_owned = {
+			limit = { NOT = { religion = anglican } }
+			religion = anglican
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB30202"
+		ai_chance = { factor = 5 }
+		clr_country_flag = ang_1
+	}
+}
+
+#################################################
+# Spread of Anglicanism
+#################################################
+province_event = {
+
+	id = 30203
+
+	title = "EVTNAME30203"
+	desc = "EVTDESC30203"
+
+	trigger = {
+		is_religion_enabled = anglican
+		NOT = { religion_years = { anglican = 70 } }
+		NOT = { religion = anglican }
+		OR = {
+			culture_group = british
+			culture = welsh
+		}
+		any_neighbor_province = { religion = anglican }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.5
+			owner = { religion = anglican }
+		}
+		modifier = {
+			factor = 0.8
+			culture_group = british
+		}
+		modifier = {
+			factor = 0.5
+			owner = { has_country_flag = ang_1 }
+		}
+		modifier = {
+			factor = 4
+			owner = { has_country_modifier = counter_reformation }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_country_modifier = no_to_anglican }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { has_country_modifier = yes_to_anglican }
+		}
+		modifier = {
+			factor = 4
+			NOT = { religion_group = christian }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion_years = { anglican = 5 } }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { anglican = 25 }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { anglican = 50 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30203"
+		religion = anglican
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}
+
+province_event = {
+
+	id = 30204
+
+	title = "EVTNAME30203"
+	desc = "EVTDESC30203"
+
+	trigger = {
+		is_religion_enabled = anglican
+		NOT = { religion_years = { anglican = 70 } }
+		NOT = { religion = anglican }
+		OR = {
+			culture_group = british
+			culture = welsh
+		}
+		NOT = { owner = { has_country_modifier = counter_reformation } }
+	}
+
+	mean_time_to_happen = {
+		months = 380
+
+		modifier = {
+			factor = 2
+			owner = { has_country_modifier = counter_reformation }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { has_country_modifier = no_to_anglican }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { has_country_modifier = yes_to_anglican }
+		}
+		modifier = {
+			factor = 5
+			NOT = { religion_group = christian }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_years = { anglican = 5 } }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { anglican = 25 }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { anglican = 50 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30203"
+		religion = anglican
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}

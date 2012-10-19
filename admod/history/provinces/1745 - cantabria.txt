@@ -1,0 +1,45 @@
+#1745 - Cantabria
+
+owner = CAS		#Enrique III of Castille
+controller = CAS
+add_core = CAS
+culture = castillian
+religion = catholic
+hre = no
+base_tax = 6
+trade_goods = naval_supplies 
+manpower = 3
+fort1 = yes
+capital = "Santander" 
+citysize = 3000
+marketplace = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = CAS
+		controller = CAS
+		citysize = 3000 }
+
+1475.6.2   = { controller = POR }
+1476.3.2   = { controller = CAS }
+1500.1.1   = { citysize = 4300 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1600.1.1   = { citysize = 5000 }
+1700.11.1  = { citysize = 10000 } # Population increases again
+1713.4.11  = { remove_core = CAS }
+1800.1.1   = { citysize = 13000 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1809.1.1   = { revolt = {} controller = SPA }
+1812.10.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }

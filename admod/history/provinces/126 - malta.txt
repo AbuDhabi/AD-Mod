@@ -1,0 +1,70 @@
+#126 - Malta
+
+owner = SIC
+controller = SIC
+culture = maltese 
+religion = catholic 
+hre = no 
+base_tax = 3
+trade_goods = fish
+manpower = 2
+fort1 = yes 
+capital = "Medina" 
+citysize = 4000 # Estimated
+add_core = SIC
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+1399.1.1  = { add_core = NAP }
+
+#Black Death
+1399.10.11 = {	owner = KNI
+		controller = KNI
+		add_core = KNI }
+
+#Nevermind
+1399.10.12 = {	owner = SIC
+		controller = SIC
+		remove_core = KNI }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	religion = catholic }
+
+1409.7.25 = {	owner = ARA
+		controller = ARA
+		add_core = ARA
+	    } # Martin I inherits Sicily from his son
+1450.1.1  = { citysize = 4500 }
+1500.1.1  = { citysize = 5000 }  # Estimated 
+1516.1.23 = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+	    	remove_core = ARA
+	    } # Unification of Spain
+1530.1.1  = {	owner = KNI
+		controller = KNI
+		add_core = KNI
+		remove_core = SPA
+	    	remove_core = NAP
+	    } # Malta given to the Knights
+1530.1.1  = { citysize = 6000 }  # Estimated 
+1550.1.1  = { citysize = 7000 }  # Estimated 
+1566.3.28 = { capital = "Valletta" marketplace = yes }
+1571.1.1  = { fort2 = yes } # Valletta completed
+1600.1.1  = { citysize = 7000 }  # Estimated 
+1650.1.1  = { citysize = 8000 }  # Estimated 
+1700.1.1  = { citysize = 8000 }  # Estimated 
+1750.1.1  = { citysize = 9000 }  # Estimated 
+1769.1.1  = { university = yes }
+1775.1.1  = { revolt_risk = 4 } # Revolt headed by priest Gaetano Mannarino failed.
+1776.1.1  = { revolt_risk = 0 }
+1798.6.9  = { controller = RFR } # Occupied by French troops
+1800.1.1  = { controller = KNI citysize = 10000 } # British protectorate
+1814.5.30 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    } # Treaty of Paris

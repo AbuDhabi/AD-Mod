@@ -1,0 +1,145 @@
+GC_NAME_MM;Historical Grand Campaign;;;;;;;;;;;;;x
+MSC_NAME;Alt-History: Shattered Europe;;;;;;;;;;;;;x
+MSC_DESC;Europe is fractured and under siege. The infighting of Christian kings has left them vulnerable to outside invaders. In the east the Mongol hordes are moving in from Siberia while Turkish missionaries have spread their faith over the Balkans. Southern Italy is in the midst of religious turmoil as Christian and Muslim Italians cross swords. To the west Moorish successors squabble over the remains of Spanish kingdoms. Meanwhile the untamed pagans to the north seek opportunities to expand.;;;;;;;;;;;;;x
+KOC_NAME;Alt-History: Peace of God;;;;;;;;;;;;;x
+KOC_DESC;Beginning with Pope Gregory VII, the Papal State has preached for the violent eviction of Muslims from the holy lands. Religious zeal has taken hold of Europe and for the past 300 years many of Europe's finest have gone to fight and die in the east. Byzantium has only recently begun to lose ground as ambitious Catholic nobles look for new lands to conquer. The Papal focus on the Levant and backlash against the church's violent message means the call for the Albigensian Crusade was not answered and the Cathars of southern France have gathered a sizable following.;;;;;;;;;;;;;x
+BLD_NAME;Alt-History: Dark Continent;;;;;;;;;;;;;x
+BLD_DESC;The black death has finally begun to retreat after claiming almost all of Europe. Muslim pioneers prepare to reclaim the empty fields and abandoned universities of the deceased Christian kings and establish their own place in the world. In the east great explorers say goodbye to their families and prepare to sail to the edge of the world. In far away lands, tribes and empires alike are entering a renaissance of their own. CUSTOM RULES: Muslim holy wars and dynamic colonies are disabled for this scenario.;;;;;;;;;;;;;x
+black_death;Black Plague Remnants;;;;;;;;;;;;;x
+desc_black_death;The worst is behind us, but there are still bodies to burn and houses to demolish.;;;;;;;;;;;;;x
+black_death_colonist;Gathering Refugees;;;;;;;;;;;;;x
+desc_black_death_colonist;Diaspora from throughout the known world are seeking out our fledgling nation. When the plague has fully subsided we can begin our expansion in earnest.;;;;;;;;;;;;;x
+black_death_survivor;Surviving Lineage;;;;;;;;;;;;;x
+desc_black_death_survivor;Our dynasty and our people have been tested by the plague that consumed half the world.;;;;;;;;;;;;;x
+pop_quarantine;Population Quarantine;;;;;;;;;;;;;x
+desc_pop_quarantine;Cities are under lockdown until the remnants of the plague have vanished.;;;;;;;;;;;;;x
+agricultural_reforms;National Enlightenment;;;;;;;;;;;;;x
+desc_agricultural_reforms;Our nation is experiencing a scientific awakening.;;;;;;;;;;;;;x
+EVTNAME31400;Religious Schism;;;;;;;;;;;;;x
+EVTDESC31400;Our nation is at a crossroads of religious turmoil. While most of our Lithuanian subjects remain loyal to the old traditions the Christian crusaders to the east and Muslim hordes to the west threaten to destroy us. We have few allies left in this world and attempting to stand on our own may lead us to destruction.;;;;;;;;;;;;;x
+EVTOPTA31400;Honor the ancestors;;;;;;;;;;;;;x
+EVTOPTB31400;Ally with the crusaders;;;;;;;;;;;;;x
+EVTOPTC31400;Offer tribute to the hordes;;;;;;;;;;;;;x
+EVTNAME31500;Death of France;;;;;;;;;;;;;x
+EVTDESC31500;France quits the game.;;;;;;;;;;;;;x
+EVTOPTA31500;Goodbye;;;;;;;;;;;;;x
+EVTNAME31501;Black Plague in Retreat;;;;;;;;;;;;;x
+EVTDESC31501;Though there are remnant infestations that still need to be isolated, the worst of the horrific epidemic is behind us. We should count ourselves as blessed to still be alive. The jewel of Europe lies before us now for the taking.;;;;;;;;;;;;;x
+EVTOPTA31501;We must claim what is ours;;;;;;;;;;;;;x
+EVTNAME31502;Black Plague in Retreat;;;;;;;;;;;;;x
+EVTDESC31502;Though there are remnant infestations that still need to be isolated, the worst of the horrific epidemic is behind us. We should count ourselves as blessed to still be alive. Our nation has been beaten back to the edge of destruction but we survived, now we must take back what is rightfully ours.;;;;;;;;;;;;;x
+EVTOPTA31502;Our flag will rise again;;;;;;;;;;;;;x
+EVTNAME31504;Winds of Change;;;;;;;;;;;;;x
+EVTDESC31504;With external pressures at a minimum our nation has been forced to look inward. $MONARCH$ has found the world lacking in leadership and decided that the time is right for sweeping social and political reforms. We will fill the void left behind by the now silent Europe.;;;;;;;;;;;;;x
+EVTOPTA31504;We will lead by example;;;;;;;;;;;;;x
+EVTNAME31506;Winds of Change;;;;;;;;;;;;;x
+EVTDESC31506;$MONARCH$ has felt a shift in the Earth. Strange new ideas are sweeping through our nation. Agricultural reforms and permanent dwellings are allowing our nation to grow far beyond what the herds once allowed.;;;;;;;;;;;;;x
+EVTOPTA31506;Brave New World;;;;;;;;;;;;;x
+EVTNAME31509;Winds of Change;;;;;;;;;;;;;x
+EVTDESC31509;With external pressures at a minimum our nation has been forced to look inward. $MONARCH$ has found the world lacking in leadership and decided that the time is right for sweeping social and political reforms.;;;;;;;;;;;;;x
+EVTOPTA31509;We will lead by example;;;;;;;;;;;;;x
+EVTNAME31512;Political Reforms;;;;;;;;;;;;;x
+EVTDESC31512;With changes to our nation come changes to how we rule our nation. $MONARCH$ has seen fit to institute several reforms that promise to guide us to a very bright future.;;;;;;;;;;;;;x
+EVTOPTA31512;The future looks bright;;;;;;;;;;;;;x
+EVTNAME31515;Winds of Change;;;;;;;;;;;;;x
+EVTDESC31515;Strange ideas are spreading to our nation from the north. Traders bring tales of golden halls, musical masterpieces and terrifying weapons of war. $MONARCH$ has seen fit to bring several political and economic reforms into effect so that we may stand aside these so-called "modern" nations.;;;;;;;;;;;;;x
+EVTOPTA31515;The future looks bright;;;;;;;;;;;;;x
+EVTNAME31516;Alaska Discovered!;;;;;;;;;;;;;x
+EVTDESC31516;Our intrepid explorers have sighted land beyond the ends of the Earth.;;;;;;;;;;;;;x
+EVTOPTA31516;Glorious!;;;;;;;;;;;;;x
+EVTNAME31517;California Discovered!;;;;;;;;;;;;;x
+EVTNAME31518;Quest for the New World;;;;;;;;;;;;;x
+EVTDESC31518;Great explorers have arrived in our court seeking adventure and new lands to conquer. We should grant them patronage and expand our borders beyond the known world.;;;;;;;;;;;;;x
+EVTNAME31519;Contact with Hawaii;;;;;;;;;;;;;x
+EVTDESC31519;Our sailors have made contact with a small tribe living isolated in the middle of the Pacific. They seem eager to establish trade and learn about the outside world.;;;;;;;;;;;;;x
+EVTOPTA31519;How cute.;;;;;;;;;;;;;x
+EVTNAME31520;Strange visitors;;;;;;;;;;;;;x
+EVTDESC31520;Men from across the sea have come to our humble island with exciting tales of the outside world. We should establish ourselves as equals lest they think of us as simple barbarians to conquer.;;;;;;;;;;;;;x
+EVTOPTA31520;Brave new world!;;;;;;;;;;;;;x
+EVTNAME31521;Survivors seek shelter;;;;;;;;;;;;;x
+EVTDESC31521;High in the Pyrenees desperate people are seeking the last stronghold of civilization in the plague blasted lands of Europe. When families are done mourning and a proper ruling class has been reestablished, this newfound nation can begin to reclaim the riches of the old world.;;;;;;;;;;;;;x
+EVTOPTA31521;A new flag will rise;;;;;;;;;;;;;x
+EVTNAME31523;Strange ships sighted!;;;;;;;;;;;;;x
+EVTDESC31523;Travelers from across the sea have made landfall on the coast. Whether they are friend or foe we should prepare ourselves for new conflicts and new opportunities.;;;;;;;;;;;;;x
+EVTOPTA31523;We will be ready.;;;;;;;;;;;;;x
+EVTNAME31525;The Andes Discovered!;;;;;;;;;;;;;x
+EVTDESC31525;Our explorers have discovered a vast mountain range in the new world. Tales of cities paved with gold and silver are finding their way back to our nation.;;;;;;;;;;;;;x
+EVTNAME31526;Carribean Isles Discovered!;;;;;;;;;;;;;x
+EVTDESC31526;Off the coast of new world are an island chain rich in resources and natural beauty. They would make an excellent location for safe port across the sea.;;;;;;;;;;;;;x
+EVTNAME31527;The Amazon Discovered!;;;;;;;;;;;;;x
+EVTDESC31527;The new world is home to incredible natural wonders, and the impenetrable Amazon is a perfect example. The first explorers to tame this landscape will no doubt find themselves rich beyond imagining.;;;;;;;;;;;;;x
+EVTNAME31528;Exploring the Unknown;;;;;;;;;;;;;x
+EVTDESC31528;The world is not as small as we once thought. Strange men are appearing at the edges of our known lands and tell tales of even further places. We should seek these places out so we are not left behind.;;;;;;;;;;;;;x
+EVTNAME31529;HRE Begone!;;;;;;;;;;;;;x
+EVTDESC31529;The Emperor died of the plague and nobody else was around to take his place.;;;;;;;;;;;;;x
+EVTOPTA31529;Oh;;;;;;;;;;;;;x
+EVTNAME31530;America Discovered!;;;;;;;;;;;;;x
+EVTDESC31530;Our explorers have discovered a land of unimaginable natural wealth across the Atlantic. Rich woodlands and fertile soil await the axe and plow of our people!;;;;;;;;;;;;;x
+EVTOPTA31530;Glorious!;;;;;;;;;;;;;x
+EVTNAME31531;Religious Schism;;;;;;;;;;;;;x
+EVTDESC31531;The black death has destroyed the authority of the Catholic Church. Our people are rapidly losing faith in a religion that has seemingly lost its divine mandate. Some are even turning to the gods of old for guidance. A great burden has been placed on $MONARCH$ to decide the future of our people.;;;;;;;;;;;;;x
+EVTOPTA31531;We must keep the faith!;;;;;;;;;;;;;x
+EVTOPTB31531;The Old Gods will return us to glory!;;;;;;;;;;;;;x
+EVTDESC31532;Religious tensions are spreading across our nation as Christian refugees intrude on Sunni lands. Though there has been no widespread outbreak of violence the situation should be addressed quickly. $MONARCH$ must make clear once and for all what religion is endorsed by the state. Reaffirming our Islamic faith will make dealing with our neighbors much simpler, but the Christians have powerful ideas for reclaiming past glories.;;;;;;;;;;;;;x
+EVTOPTA31532;Islam is the light.;;;;;;;;;;;;;x
+EVTOPTB31532;Jesus is Lord;;;;;;;;;;;;;x
+EVTNAME31539;Contact with Aotearoa;;;;;;;;;;;;;x
+EVTNAME31540;Two Crowns United;;;;;;;;;;;;;x
+EVTDESC31540;Christianity is on the verge of annihilation. While the invisible threat of plague is now gone, the armies of Islam are marching toward us. Scotland and Norway are in a precarious position, and in danger of being pushed back into the Atlantic. United, and with God on our side, we at least have a fighting chance to reclaim the lost glory of Christendom.;;;;;;;;;;;;;x
+EVTOPTA31540;Deus vult!;;;;;;;;;;;;;x
+EVTNAME31541;Reclaiming the Highlands;;;;;;;;;;;;;x
+EVTDESC31541;Soldiers are cautiously venturing further south into what was once Scotland. Signs of devastation remain everywhere but there have been no reports of plague as of yet.;;;;;;;;;;;;;x
+EVTOPTA31541;We will take it back.;;;;;;;;;;;;;x
+EVTNAME31542;The people move south;;;;;;;;;;;;;x
+EVTDESC31542;Scouts have brought back descriptions of the once proud cities of Sweden and Norway now sitting empty. Though the reindeer are hesitant to venture further south, there are fields lying abandoned. Food enough to feed a mighty kingdom of Sami peoples.;;;;;;;;;;;;;x
+EVTOPTA31542;We will watch over these lands.;;;;;;;;;;;;;x
+EVTNAME31543;We claim this land...;;;;;;;;;;;;;x
+EVTDESC31543;Brave explorers have located an ideal place to settle on this empty continent. Soon oppressed peoples from all over the world will hear of this new promised land and flock to us to create a better life. The journey will be long and treacherous and it may take time to spread the word but have patience dear $MONARCH$, our nation is destined to become the greatest in the world.;;;;;;;;;;;;;x
+EVTOPTA31543;Plant the flag!;;;;;;;;;;;;;x
+EVTNAME31544;Birth of a nation;;;;;;;;;;;;;x
+EVTDESC31544;Skandistan has formed from the oppressed minority populace of the Golden Horde. People tired of a brutal military regime and constant struggle to survive life on the move. The marginalized cultures and religions have banded together to create a new identity far away from the struggles of the hordes. Now this mingling of disconnected peoples need both strong political and religious guidance.;;;;;;;;;;;;;x
+EVTOPTA31544;Islam is the way forward.;;;;;;;;;;;;;x
+EVTOPTB31544;The old ways are best.;;;;;;;;;;;;;x
+EVTDESC31545;Catalunya has emerged from the abandoned kingdoms of Iberia. A gathering of Jewish and Catholic refugees in the relative safety of the Pyrenees, the name is merely a convenient label for outsiders to describe a growing national identity. Now the most pressing matter, is this a Christian nation or a Jewish one?;;;;;;;;;;;;;x
+EVTOPTA31545;Believe in the Bible;;;;;;;;;;;;;x
+EVTOPTB31545;Trust in the Torah;;;;;;;;;;;;;x
+EVTDESC31546;The Republic of Faransa is born! From as far south as Timbuktu and as far East as Hormuz philosophers, historians and theologians have sought out the lost libraries of an empty Europe. Following these great thinkers is a new nation founded on their progressive ideals.;;;;;;;;;;;;;x
+EVTOPTA31546;A nation of Islam;;;;;;;;;;;;;x
+EVTOPTB31546;A nation of Zoroaster;;;;;;;;;;;;;x
+EVTDESC31547;The infighting has ended and the flag of Rum has risen over the tribes gathering in the holy city. From across the Mediterranean, they have come seeking out the riches and artifacts of the Vatican. A mix of Orthodox Christians and Unorthodox Muslims, it remains to be seen whether they are here to plunder the great cathedrals or rebuild a Christian empire.;;;;;;;;;;;;;x
+EVTOPTA31547;Praise to Allah!;;;;;;;;;;;;;x
+EVTOPTB31547;Praise to God!;;;;;;;;;;;;;x
+EVTDESC31548;Al-Alemand has appeared in the heart of a plague battered Europe. Merchants and pioneers, all eager to exploit the unclaimed riches of a once mighty empire have flocked to the new nation. The promise of golden fields and rich soil has attracted landless peasants from across the holy lands.;;;;;;;;;;;;;x
+EVTDESC31549;Djata Kurufa, the Lion's Federation, is born! Soldiers, peasants and slaves have left their lives in West Africa to forge a new destiny in the far north. While they initially thought they had a new home in the republic of Faransa, too many disparate cultures and ideas made some unwelcome. Many decided to travel further north for a more traditional monarchy under a strong ruler. After a series of failed colonies, $MONARCH$ has managed to gather enough colonists to declare a proper kingdom. A kingdom not just to rival the Sahel empires but the once great states of a fallen Europe. A kingdom that can either embrace the teachings of Islam or preserve traditional beliefs.;;;;;;;;;;;;;x
+EVTOPTA31549;Look the Future;;;;;;;;;;;;;x
+EVTOPTB31549;Celebrate the Past;;;;;;;;;;;;;x
+EVTDESC31550;Soldiers march to Magyaristan! Disillusioned members of society from across Anatolia and the Arabian Peninsula, as well as veteran warriors from the steppes of Siberia, have set up camp around Lake Balaton. They have come seeking abandoned armories and fortresses, but most of all they have come to carve out a new empire and leave their own mark on the world.;;;;;;;;;;;;;x
+EVTDESC31551;After Timur proclaimed the pretender Temur Qutlugh as Khan of the Golden Horde, Tokhtamysh fled west into the empty wastes where men once cowered in fear of that horde. A collection of Tartar loyalists and plague battered survivors gathered up from around the Baltic, the Jochid Khanate is surely destined to rebuild the Greater Mongol Empire. While many of the Tartar people have turned to the Islamic faith, many noble families still support the old ways and propose a Buddhist state to further show our contempt for Timur and Qutlugh.;;;;;;;;;;;;;x
+EVTOPTA31551;Beat them at their own game.;;;;;;;;;;;;;x
+EVTOPTB31551;Show them the error of their ways.;;;;;;;;;;;;;x
+EVTNAME31554;Religious Loyalties;;;;;;;;;;;;;x
+EVTDESC31554;Religious tensions are increasing in our nation as Jewish refugees continue to spill across our borders as they flee from the great plague. If we don't do something they threaten to outnumber our own people. Most of the nobility are demanding we close the borders immediately but the Jewish people bring nobility of their own and promise massive popular support for a Jewish kingdom.;;;;;;;;;;;;;x
+EVTOPTA31554;Let them find their own lands.;;;;;;;;;;;;;x
+EVTOPTB31554;The Jews shall call this nation home.;;;;;;;;;;;;;x
+EVTNAME31555;Byzantine Influx;;;;;;;;;;;;;x
+EVTDESC31555;The East Roman Empire has been destroyed! Not by Turks or Latins but by a plague sent from God. Pious survivors have sought out the last bastion of Greek power in the world, bringing with them the knowledge and great works of the Byzantines.;;;;;;;;;;;;;x
+EVTOPTA31555;Welcome brothers!;;;;;;;;;;;;;x
+EVTNAME31556;Mainland Sighted!;;;;;;;;;;;;;x
+EVTDESC31556;Settlements have been discovered to the west! Not like the tribes living on small islands we're used to, these people have built great cities on a seemingly infinite landmass. Their great numbers may make them more resistant to joining real civilization but in time perhaps we can enlighten these people.;;;;;;;;;;;;;x
+EVTOPTA31556;For Aotearoa!;;;;;;;;;;;;;x
+EVTNAME31557;Plague Fears Remain;;;;;;;;;;;;;x
+EVTDESC31557;A plague surely sent from the heavens has just laid low the Christian kingdoms of Europe but we have also felt the effects. Every coughing peasant or delirious soldier must be isolated immediately to ensure their afflictions do not escape into the general public. People are being turned back at the borders of cities and fleets are ordered not to stray too far from home ports. We must be careful.;;;;;;;;;;;;;x
+EVTOPTA31557;These fears will pass;;;;;;;;;;;;;x
+EVTNAME32200;Pax Dei;;;;;;;;;;;;;x
+EVTDESC32200;Many a village has grown prosperous under the shadow of the Catholic Church, and these people owe their lives to the struggle against heathen foes in the east.;;;;;;;;;;;;;x
+EVTOPTA32200;Ok;;;;;;;;;;;;;x
+iq_105;Smart People;;;;;;;;;;;;;x
+desc_iq_105;Our people are among the smartest in the world.;;;;;;;;;;;;;x
+iq_90;Dense People;;;;;;;;;;;;;x
+desc_iq_90;Our people are not the sharpest tools in the shed.;;;;;;;;;;;;;x
+iq_70;Stupid People;;;;;;;;;;;;;x
+desc_iq_70;Our people are among the dumbest in the world.;;;;;;;;;;;;;x
+iq_60;Retarded People;;;;;;;;;;;;;x
+desc_iq_60;We are the lowest of the low, intellectually.;;;;;;;;;;;;;x
+the_real_neighbour_bonus;Neighbour Bonus;;;;;;;;;;;;;x
+desc_the_real_neighbour_bonus;Our neighbour friends are helping us with our technology.;;;;;;;;;;;;;x

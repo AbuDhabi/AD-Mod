@@ -1,0 +1,33 @@
+#1028 - Musachi
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Edo"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 74500
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 78900 }
+1467.5.20  = { revolt = { type = ikko_ikki size = 0 } controller = REB } # Onin war, anarchy follows
+1477.12.16 = { revolt = {} controller = FUJ }
+1500.1.1   = { citysize = 82340 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 89340 }
+1600.1.1   = { citysize = 96900 }
+1605.1.1   = { marketplace = yes }
+1615.1.1   = { constable = yes }
+1650.1.1   = { citysize = 103460 }
+1651.1.1   = { revolt_risk = 7 } # Keian uprising
+1652.1.1   = { revolt_risk = 0 }
+1657.1.1   = { citysize = 51500 } # Devastating fire
+1700.1.1   = { citysize = 62500 }
+1745.1.1   = { tax_assessor = yes }
+1750.1.1   = { citysize = 81280 } 
+1800.1.1   = { citysize = 120230 }

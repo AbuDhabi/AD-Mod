@@ -1,0 +1,44 @@
+#1816 - Beijing
+
+owner = MNG
+controller = MNG
+culture = chi_han
+religion = confucianism
+capital = "Beijing"
+trade_goods = spices
+hre = no
+base_tax = 7
+manpower = 5
+citysize = 960000
+add_core = MNG
+add_core = QIN
+fort1 = yes
+temple = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+#Edited out to avoid losing the Mandate of Heaven from start:
+#1399.5.1  = { revolt = { type = pretender_rebels size = 2 leader = "Zhu Di" } controller = REB }
+1402.7.13 = { revolt = {} controller = MNG }
+1450.1.1  = { citysize = 1024192 }
+1480.1.1  = { marketplace = yes }
+1500.1.1  = { citysize = 1066304 }
+1519.1.1  = { discovered_by = POR } # Tome Pires
+1535.1.1  = { fort2 = yes }
+1542.1.1  = { revolt_risk = 5 } # Assassination attemp on Shi Zong
+1543.1.1  = { revolt_risk = 0 }
+1550.1.1  = { citysize = 1147712 }
+1570.1.1  = { constable = yes }
+1600.1.1  = { citysize = 1229332 }
+1630.1.1  = { revolt_risk = 6 } # Li Zicheng rebellion
+1644.4.1  = { revolt_risk = 8 } # Beijing is attacked
+1644.5.27 = { controller = MCH } # The Qing Dynasty
+1646.1.1  = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	    } # The Qing Dynasty
+1650.1.1  = { citysize = 1230856 }
+1700.1.1  = { citysize = 1232120 }
+1740.1.1  = { tax_assessor = yes }
+1750.1.1  = { citysize = 1233600 }
+1800.1.1  = { citysize = 1234560 }

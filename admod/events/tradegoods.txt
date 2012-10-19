@@ -1,0 +1,1130 @@
+#######################################
+#		GRAIN		      #
+#######################################
+
+province_event = {
+
+	id = 9500
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = la_plata_region
+			region = great_plains
+			region = eastern_america
+			region = the_andes
+			region = south_africa
+			region = central_africa
+			region = north_africa
+			region = australian_coast
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = western_america
+			region = italian_region
+			region = andalusia
+			region = leon
+			region = french_region
+			region = german_region
+			region = british_isles
+			region = eastern_balkans
+			region = jagellonian_empire
+			region = russian_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 0.5
+			region = la_plata_region
+		}
+		modifier = {
+			factor = 1.3
+			or = {
+				region = western_siberia
+				region = eastern_siberia
+			}
+		}
+		modifier = {
+			factor = 1.2
+			region = indonesian_region
+		}
+	}
+	
+	immediate = {
+	 	trade_goods = grain
+	}
+
+	title = "EVTNAME9500"
+	desc = "EVTDESC9500"
+
+	option = {
+		name = "EVTOPTA9500"
+	}
+}
+
+#######################################
+#		FISH		      #
+#######################################
+
+province_event = {
+
+	id = 9501
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		port = yes
+		or = {
+			region = northern_america
+			region = northwest_america
+			region = eastern_america
+			region = the_mississippi_region
+			region = the_andes
+			region = amazonas
+			region = la_plata_region
+			region = australian_coast
+			region = greenland_region
+			region = new_zealand_region
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = atlantic_ocean_islands
+			region = mascarene_islands
+			region = indian_ocean_islands
+			region = pacific_ocean_islands
+			region = italian_region
+			region = iberian_peninsula
+			region = lowlands_region
+			region = british_isles
+			region = western_balkans
+			region = eastern_balkans
+			region = scandinavian_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			any_neighbor_province = {
+				trade_goods = fish
+			}
+		}
+		modifier = {
+			factor = 1.2
+			region = mascarene_islands
+		}
+		modifier = {
+			factor = 0.7
+			OR = {
+				province_id = 908	# Minnesota
+				province_id = 910	# Chippewa
+				province_id = 911	# Menominee
+				province_id = 912	# Sauk
+				province_id = 914	# Winnebago
+				province_id = 945	# Michigan
+				province_id = 1007	# Ojibwa
+			}
+		}
+	}
+	immediate = {
+	 	trade_goods = fish
+	}
+	title = "EVTNAME9501"
+	desc = "EVTDESC9501"
+
+	option = {
+		name = "EVTOPTA9501"
+	}
+}
+
+#######################################
+#		WINE		      #
+#######################################
+
+province_event = {
+
+	id = 9502
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		OR = {
+			region = la_plata_region
+			region = italian_region
+			region = iberian_peninsula
+			region = french_region
+			region = german_region
+			region = western_balkans
+			region = jagellonian_empire
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+	}
+
+	title = "EVTNAME9502"
+	desc = "EVTDESC9502"
+
+	immediate = {
+	 	trade_goods = wine
+	}
+	option = {
+		name = "EVTOPTA9502"
+	}
+}
+
+#######################################
+#		WOOL		      #
+#######################################
+
+province_event = {
+
+	id = 9503
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = central_american_region
+			region = western_america
+			region = australian_coast
+			region = new_zealand_region
+			region = the_spanish_main
+			region = italian_region
+			region = iberian_peninsula
+			region = german_region
+			region = western_balkans
+			region = russian_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 0.7
+			region = new_zealand_region
+		}
+	}
+
+	title = "EVTNAME9503"
+	desc = "EVTDESC9503"
+
+	immediate = {
+	 	trade_goods = wool
+	}
+	option = {
+		name = "EVTOPTA9503"
+	}
+}
+
+#######################################
+#		CLOTH		      #
+#######################################
+
+province_event = {
+
+	id = 9504
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = indonesian_region
+			region = italian_region
+			region = french_region
+			region = german_region
+			region = lowlands_region
+			region = british_isles
+			region = eastern_balkans
+			region = jagellonian_empire
+			region = lombardia
+			province_id = 738
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+	}
+
+	title = "EVTNAME9504"
+	desc = "EVTDESC9504"
+
+	immediate = {
+	 	trade_goods = cloth
+	}
+	
+	option = {
+		name = "EVTOPTA9504"
+	}
+}
+
+#######################################
+#		FUR		      #
+#######################################
+
+province_event = {
+
+	id = 9505
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = great_plains
+			region = northern_america
+			region = northwest_america
+			region = greenland_region
+			region = western_siberia
+			region = eastern_siberia
+			region = russian_region
+			region = the_spanish_main
+			region = scandinavian_region
+			province_id = 18
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 0.7
+			region = northern_america
+		}
+		modifier = {
+			factor = 1.5
+			owner = { fur = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			any_neighbor_province = {
+				trade_goods = fur
+			}
+		}
+	}
+
+	title = "EVTNAME9505"
+	desc = "EVTDESC9505"
+
+	immediate = {
+	 	trade_goods = fur
+	}
+	
+	option = {
+		name = "EVTOPTA9505"
+	}
+}
+
+#######################################
+#		SALT		      #
+#######################################
+
+province_event = {
+
+	id = 9506
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		OR = {
+			region = central_american_region
+			region = andalusia
+			region = jagellonian_empire
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+	}
+
+	title = "EVTNAME9506"
+	desc = "EVTDESC9506"
+
+	immediate = {
+	 	trade_goods = salt
+	}
+	
+	option = {
+		name = "EVTOPTA9506"
+
+	}
+}
+
+#######################################
+#	    NAVAL SUPPLIES	      #
+#######################################
+
+province_event = {
+
+	id = 9507
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			port = yes
+			region = jagellonian_empire
+		}
+		citysize = 300
+		or = {
+			region = northern_america
+			region = northwest_america
+			region = eastern_america
+			region = the_andes
+			region = amazonas
+			region = australian_coast
+			region = greenland_region
+			region = new_zealand_region
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = atlantic_ocean_islands
+			region = pacific_ocean_islands
+			region = brittany
+			region = jagellonian_empire
+			region = russian_region
+			region = scandinavian_region
+			region = northeastern_germany
+			region = finland
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			region = atlantic_ocean_islands
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = naval_supplies
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { naval_supplies = 10 }
+		}
+	}
+
+	title = "EVTNAME9507"
+	desc = "EVTDESC9507"
+
+	immediate = {
+	 	trade_goods = naval_supplies
+	}
+	
+	option = {
+		name = "EVTOPTA9507"
+
+	}
+}
+
+#######################################
+#		COPPER		      #
+#######################################
+
+province_event = {
+
+	id = 9508
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = the_andes
+			region = western_siberia
+			region = eastern_siberia
+			region = german_region
+			region = scandinavian_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = copper
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { copper = 10 }
+		}
+	}
+
+	title = "EVTNAME9508"
+	desc = "EVTDESC9508"
+
+	immediate = {
+	 	trade_goods = copper
+	}
+	
+	option = {
+		name = "EVTOPTA9508"
+
+	}
+}
+
+#######################################
+#		GOLD		      #
+#######################################
+
+province_event = {
+
+	id = 9509
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = amazonas
+			region = the_andes
+			region = south_africa
+			region = western_siberia
+			region = eastern_siberia
+			region = western_america
+			region = australian_coast
+			region = northwest_america
+			province_id = 73		# Tirol
+			province_id = 129		# Krain
+			province_id = 219		# Toledo
+			province_id = 348		# Sus
+			province_id = 463		# Alania
+			province_id = 852		# Mexico
+			province_id = 853		# Huastec
+			province_id = 854		# Sayultecas
+			province_id = 855		# Huichol
+			province_id = 856		# Zacatecas
+			province_id = 857		# Guichichil
+			province_id = 858		# Tamaulipas
+			province_id = 1768		# Lienz
+			province_id = 1769		# Gorz
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 3.0
+			any_neighbor_province = {
+				trade_goods = gold
+			}
+		}
+		modifier = {
+			factor = 3.0
+			owner = { gold = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { gold = 2 }
+		}		
+		modifier = {
+			factor = 0.7
+			region = the_andes
+		}
+		modifier = {
+			factor = 0.6
+			or = {
+				province_id = 852		# Mexico
+				province_id = 853		# Huastec
+				province_id = 854		# Sayultecas
+				province_id = 855		# Huichol
+				province_id = 856		# Zacatecas
+				province_id = 857		# Guichichil
+				province_id = 858		# Tamaulipas
+			}
+		}	
+	}
+
+	title = "EVTNAME9509"
+	desc = "EVTDESC9509"
+
+	immediate = {
+	 	trade_goods = gold
+	}
+	
+	option = {
+		name = "EVTOPTA9509"
+
+	}
+}
+
+#######################################
+#		IRON		      #
+#######################################
+
+province_event = {
+
+	id = 9510
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = western_siberia
+			region = eastern_siberia
+			region = aragon
+			region = french_region
+			region = british_isles
+			region = eastern_balkans
+			region = russian_region
+			region = scandinavian_region
+			province_id = 18
+			province_id = 910	# Chippewa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = iron
+			}
+		}
+		modifier = {
+			factor = 0.7
+			province_id = 910	# Chippewa
+		}
+	}
+
+	title = "EVTNAME9510"
+	desc = "EVTDESC9510"
+
+	immediate = {
+	 	trade_goods = iron
+	}
+	
+	option = {
+		name = "EVTOPTA9510"
+	
+	}
+}
+
+#######################################
+#		SLAVES		      #
+#######################################
+
+province_event = {
+
+	id = 9511
+
+	trigger = {
+		trade_goods = unknown
+		owner = { NOT = { has_country_modifier = the_abolish_slavery_act } }
+		citysize = 300
+		or = {
+			region = central_africa
+			region = south_africa
+			region = north_africa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			owner = { slaves = 5 }
+		}
+		modifier = {
+			factor = 1.3
+			owner = { serfdom_freesubjects = 1 }
+		}
+	}
+
+	title = "EVTNAME9511"
+	desc = "EVTDESC9511"
+
+	immediate = {
+	 	trade_goods = slaves
+	}
+	
+	option = {
+		name = "EVTOPTA9511"
+		
+	}
+}
+
+#######################################
+#		IVORY		      #
+#######################################
+
+province_event = {
+
+	id = 9512
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = central_africa
+			region = south_africa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			owner = { ivory = 3 }
+		}
+	}
+
+	title = "EVTNAME9512"
+	desc = "EVTDESC9512"
+
+	immediate = {
+	 	trade_goods = ivory
+	}
+	
+	option = {
+		name = "EVTOPTA9512"
+		
+	}
+}
+
+#######################################
+#		TEA		      #
+#######################################
+
+province_event = {
+
+	id = 9513
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = indonesian_region
+			province_id = 738
+			province_id = 1792		# Antananarivo
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = tea
+			}
+		}
+	}
+
+	title = "EVTNAME9513"
+	desc = "EVTDESC9513"
+
+	immediate = {
+	 	trade_goods = tea
+	}
+	
+	option = {
+		name = "EVTOPTA9513"
+	}
+}
+
+#######################################
+#	       CHINAWARE	      #
+#######################################
+
+province_event = {
+
+	id = 9514
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = indonesian_region
+			province_id = 738
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = chinaware
+			}
+		}
+	}
+
+	title = "EVTNAME9514"
+	desc = "EVTDESC9514"
+
+	immediate = {
+	 	trade_goods = chinaware
+	}
+	
+	option = {
+		name = "EVTOPTA9514"
+	}
+}
+
+#######################################
+#		SPICES		      #
+#######################################
+
+province_event = {
+
+	id = 9515
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = indonesian_region
+			region = indian_ocean_islands
+			province_id = 1244		# Tahiti
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			region = indian_ocean_islands
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = spices
+			}
+		}
+	}
+
+	title = "EVTNAME9515"
+	desc = "EVTDESC9515"
+
+	immediate = {
+	 	trade_goods = spices
+	}
+	
+	option = {
+		name = "EVTOPTA9515"		
+	}
+}
+
+#######################################
+#		COFFEE		      #
+#######################################
+
+province_event = {
+
+	id = 9516
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = la_plata_region
+			region = the_andes
+			region = amazonas
+			region = the_carribean
+			region = indonesian_region
+			region = central_american_region
+			region = the_spanish_main
+			province_id = 1792		# Antananarivo
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = coffee
+			}
+		}
+		modifier = {
+			factor = 0.8
+			region = the_spanish_main
+		}
+	}
+
+	title = "EVTNAME9516"
+	desc = "EVTDESC9516"
+
+	immediate = {
+	 	trade_goods = coffee
+	}
+	
+	option = {
+		name = "EVTOPTA9516"
+	}
+}
+
+#######################################
+#		COTTON		      #
+#######################################
+
+province_event = {
+
+	id = 9517
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = eastern_america
+			region = the_carribean
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = cotton
+			}
+		}
+	}
+
+	title = "EVTNAME9517"
+	desc = "EVTDESC9517"
+
+	immediate = {
+	 	trade_goods = cotton
+	}
+	
+	option = {
+		name = "EVTOPTA9517"
+	}
+}
+
+#######################################
+#		SUGAR		      #
+#######################################
+
+province_event = {
+
+	id = 9518
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = the_carribean
+			region = amazonas
+			region = mascarene_islands
+			province_id = 366
+			province_id = 368
+			province_id = 852		# Mexico
+			province_id = 853		# Huastec
+			province_id = 854		# Sayultecas
+			province_id = 855		# Huichol
+			province_id = 856		# Zacatecas
+			province_id = 857		# Guichichil
+			province_id = 858		# Tamaulipas
+			province_id = 1240		# Hawaii
+			province_id = 1792		# Antananarivo
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			owner = { sugar = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { sugar = 10 }
+		}
+		modifier = {
+			factor = 0.7
+			or = {
+				region = the_carribean
+				region = amazonas
+			}
+		}
+	}
+
+	title = "EVTNAME9518"
+	desc = "EVTDESC9518"
+
+	immediate = {
+	 	trade_goods = sugar
+	}
+	
+	option = {
+		name = "EVTOPTA9518"
+	}
+}
+
+#######################################
+#		TOBACCO		      #
+#######################################
+
+province_event = {
+
+	id = 9519
+
+	trigger = {
+		trade_goods = unknown
+		citysize = 300
+		or = {
+			region = la_plata_region
+			region = eastern_america
+			region = amazonas
+			region = the_carribean
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			citysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = tobacco
+			}
+		}
+	}
+
+	title = "EVTNAME9519"
+	desc = "EVTDESC9519"
+
+	immediate = {
+	 	trade_goods = tobacco
+	}
+	
+	option = {
+		name = "EVTOPTA9519"
+	}
+}
+
+
+#######################################
+#		SLAVES	NO MORE!      #
+#######################################
+
+province_event = {
+
+	id = 9520
+
+	trigger = {
+                owner = { has_country_modifier = the_abolish_slavery_act }
+		trade_goods = slaves
+
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	
+	}
+
+	title = "EVTNAME9520"
+	desc = "EVTDESC9520"
+
+	option = {
+		name = "EVTOPTA9520"
+		trade_goods = unknown
+	}
+
+}

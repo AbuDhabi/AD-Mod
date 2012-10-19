@@ -1,0 +1,25 @@
+#1169 - Mayombe
+
+owner = KON
+controller = KON
+culture = aka
+religion = bantu_rel
+capital = "Mayombe"
+trade_goods = slaves
+hre = no
+base_tax = 3
+manpower = 5
+citysize = 1480
+add_core = KON
+discovered_by = LOA
+discovered_by = KON
+
+1450.1.1 = { citysize = 1670 }
+1483.1.1 = { discovered_by = POR } # Diogo Cão
+1500.1.1 = { citysize = 1900 }
+1550.1.1 = { citysize = 2260 }
+1600.1.1 = { citysize = 2900 }
+1650.1.1 = { citysize = 3300 }
+1700.1.1 = { citysize = 3760 }
+1750.1.1 = { citysize = 4100 }
+1800.1.1 = { citysize = 4900 }

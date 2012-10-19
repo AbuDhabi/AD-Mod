@@ -1,0 +1,12 @@
+government = constitutional_monarchy
+aristocracy_plutocracy = 4
+centralization_decentralization = -3
+innovative_narrowminded = 0
+mercantilism_freetrade = 4
+offensive_defensive = -2
+land_naval = 2
+quality_quantity = -2
+serfdom_freesubjects = 1
+primary_culture = welsh
+technology_group = western
+capital = 236	# London

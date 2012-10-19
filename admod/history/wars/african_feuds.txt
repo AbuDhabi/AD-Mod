@@ -1,0 +1,14 @@
+name = "Tribal Feud"
+casus_belli = cb_horde_conquest
+
+1395.1.1 = {
+	add_attacker = MAL
+	add_defender = SOF
+	add_defender = ASH
+}
+
+1399.1.1 = {
+	rem_attacker = MAL
+	rem_defender = SOF
+	rem_defender = ASH
+}

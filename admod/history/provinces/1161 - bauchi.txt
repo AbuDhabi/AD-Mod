@@ -1,0 +1,33 @@
+#1161 - Bauchi
+
+culture = mali #hausa 
+religion = vodun
+capital = "Bauchi"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 60
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = KBO
+
+1568.1.1 = {	owner = KBO
+		controller = KBO
+		add_core = KBO
+		citysize = 6000
+		trade_goods = grain
+	   }
+1681.1.1 = { revolt_risk = 8 } #Jukun Invasion
+1682.1.1 = { revolt_risk = 0 revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Jukun take over
+1684.1.1 = { revolt = {} controller = KBO revolt_risk = 0 } #Jukun Expelled
+1700.1.1 = { citysize = 7500 }
+1783.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Borno overlords expelled
+1784.1.1 = { revolt = {} controller = KBO }
+1800.1.1 = { citysize = 8500 }
+1804.1.1 = { discovered_by = SOK }
+1807.1.1 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+	   } # The Fulani Empire
+1810.1.1 = { remove_core = KBO } # The end of the Fulani war

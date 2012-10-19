@@ -1,0 +1,126 @@
+country_decisions = {
+
+	french_nation = {
+		potential = {
+			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { tag = FAR }
+			NOT = { tag = FRA }
+			NOT = { tag = OCC }
+			NOT = { exists = RFR }
+			OR = {
+				primary_culture = cosmopolitan_french
+				primary_culture = normand
+				primary_culture = burgundian
+				primary_culture = breton
+			}
+		}
+		allow = {
+			owns = 177	# Maine
+			owns = 179	# Blois
+			owns = 182	# Vermandois
+			owns = 183	# Île-de-France
+			owns = 184	# Orléannais
+			owns = 185	# Othe
+			owns = 186	# Champagne
+			
+			is_core = 177	# Maine
+			is_core = 179	# Blois
+			is_core = 182	# Vermandois
+			is_core = 183	# Île-de-France
+			is_core = 184	# Orléannais
+			is_core = 185	# Othe
+			is_core = 186	# Champagne
+			
+			war = no
+		}
+		effect = {
+			FRA = {
+				french_region = {
+					add_core = FRA
+				}
+			}
+			merchants = 1
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = FRA
+			FRA = {
+				capital = 183
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+
+	occitain_nation = {
+		potential = {
+			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { tag = FAR }
+			NOT = { tag = FRA }
+			NOT = { tag = OCC }
+			NOT = { exists = RFR }
+			OR = {
+				culture_group = basque_group
+				primary_culture = gascon
+				primary_culture = aquitaine
+				primary_culture = occitain
+			}
+		}
+		allow = {
+			owns = 175	# Armagnac
+			owns = 177	# Maine
+			owns = 179	# Blois
+			owns = 183	# Île-de-France
+			owns = 184	# Orléannais
+			owns = 185	# Othe
+			owns = 195	# Limousin
+			owns = 196	# Toulouse
+			owns = 199	# Auvergne
+			owns = 201	# Provence
+			owns = 202	# Avignon
+			
+			is_core = 175	# Armagnac
+			is_core = 177	# Maine
+			is_core = 179	# Blois
+			is_core = 183	# Île-de-France
+			is_core = 184	# Orléannais
+			is_core = 185	# Othe
+			is_core = 195	# Limousin
+			is_core = 196	# Toulouse
+			is_core = 199	# Auvergne
+			is_core = 201	# Provence
+			is_core = 202	# Avignon
+			
+			war = no
+		}
+		effect = {
+			OCC = {
+				french_region = {
+					add_core = OCC
+				}
+			}
+			merchants = 1
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = OCC
+			OCC = {
+				capital = 196
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+}

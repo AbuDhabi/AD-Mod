@@ -1,0 +1,32 @@
+#1029 - Shinano
+
+owner = TAI
+controller = TAI
+culture = emishi
+religion = shinto
+capital = "Matsumoto"
+trade_goods = gold
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 5200
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1   = { citysize = 5950 }
+1467.5.20  = { revolt = { type = ikko_ikki size = 0 } controller = REB } # Onin war, anarchy follows
+1477.12.16 = { revolt = {} controller = TAI } 
+1500.1.1   = { citysize = 6740 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 7210 }
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }
+1599.1.1   = { revolt_risk = 5 } #Succesion Crisis over Toyotomi
+1600.1.1   = { citysize = 8950 }
+1600.6.19  = { revolt_risk = 0 revolt = { type = ikko_ikki size = 1.5 } controller = REB } # DoW
+1600.10.22 = { revolt = {} controller = MIN revolt_risk = 3 } #Battle of Sekigahara
+1604.1.1   = { revolt_risk = 0 }
+1650.1.1   = { citysize = 10120 }
+1700.1.1   = { citysize = 11867 }
+1750.1.1   = { citysize = 12500 }
+1800.1.1   = { citysize = 14650 }

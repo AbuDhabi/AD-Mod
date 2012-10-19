@@ -1,0 +1,275 @@
+#miscmods change to 1082: add check to see if pentarchy is established before resurrecting the Papal State
+
+country_event = {
+
+	id = 1081
+	
+	trigger = {
+		NOT = { exists = PAP }
+		NOT = { exists = ITA }
+		NOT = { has_country_flag = no_support }
+		NOT = { any_country = { has_country_flag = black_death_scn } }
+		owns = 118		# Rome
+		religion = catholic
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		
+		modifier = {
+			factor = 0.95
+			idea = deus_vult
+		}
+		modifier = {
+			factor = 0.95
+			idea = divine_supremacy
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { idea = divine_supremacy }
+		}
+		modifier = {
+			factor = 0.9
+			defender_of_faith = yes
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { defender_of_faith = yes }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { advisor = theologian }
+		}
+		modifier = {
+			factor = 0.9
+			theologian = 5
+		}
+	}
+	
+	title = "EVTNAME1081"
+	desc = "EVTDESC1081"
+	
+	option = {
+		name = "EVTOPTA1081"			# We will never support such a state
+		prestige = -0.02
+		badboy = 1
+		stability = -1
+		any_country = {
+			limit = {
+				neighbour = THIS
+				religion = catholic
+			}
+			relation = { who = THIS value = -20 }
+		}
+		set_country_flag = no_support
+	}
+	option = {
+		name = "EVTOPTB1081"			# Rome is rightfully theirs
+		118 = { secede_province = PAP }
+		prestige = 0.025
+	}
+}
+
+country_event = {
+
+	id = 1082
+	
+	trigger = {
+		NOT = { exists = PAP }
+		NOT = { exists = ITA }
+		religion = catholic
+		government = theocratic_government
+		NOT = { tag = TEU }
+		NOT = { any_country = { has_country_flag = black_death_scn } }
+		NOT = {
+			118 = { religion = orthodox }
+			151 = { religion = orthodox }
+			327 = { religion = orthodox }
+			379 = { religion = orthodox }
+			358 = { religion = orthodox }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			tag = AVI
+		}
+		modifier = {
+			factor = 2.0
+			capital_scope = {
+				NOT = { religion = catholic }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			theologian = 5
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { advisor = theologian }
+		}
+	}
+	
+	title = "EVTNAME1082"
+	desc = "EVTDESC1082"
+	
+	option = {
+		name = "EVTOPTA1082"
+		prestige = 0.025
+		government = papal_government
+		change_tag = PAP
+	}
+}
+
+country_event = {
+ 
+	id = 1083
+
+	trigger = {
+		not = { has_country_flag = unsupportive_cardinals }
+		government = papal_government
+		badboy = 0.25
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { dip = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+	}
+
+	title = "EVTNAME1083"
+	desc = "EVTDESC1083"
+	
+	option = {
+		name = "EVTOPTA1083"		# Hire someone to investigate the matter
+		ai_chance = { factor = 55 }
+		set_country_flag = unsupportive_cardinals
+		spies = 1
+		treasury = -25
+	}
+	option = {
+		name = "EVTOPTB1083"		# Just try to prove them wrong
+		ai_chance = { factor = 45 }
+		set_country_flag = unsupportive_cardinals
+		random_list = {
+			50 = { prestige = 0.05 }
+			50 = { prestige = -0.05 }
+		}		
+	}
+}
+
+country_event = {
+ 
+	id = 1084
+
+	trigger = {
+		not = { has_country_flag = cardinal_infiltrator }
+		government = papal_government
+		not = { adm = 4 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 1.1
+			advisor = spymaster
+		}
+		modifier = {
+			factor = 1.1
+			spymaster = 5
+		}
+		modifier = {
+			factor = 1.1
+			spymaster = 6
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+	}
+
+	title = "EVTNAME1084"
+	desc = "EVTDESC1084"
+	
+	option = {
+		name = "EVTOPTA1084"		# Take his word for it
+		ai_chance = { factor = 55 }
+		set_country_flag = cardinal_infiltrator
+		random = {
+			chance = 40
+			stability = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB1084"		# Ask for some proof
+		ai_chance = { factor = 45 }
+		set_country_flag = cardinal_infiltrator
+		add_country_modifier = {
+			name = "infiltrator_in_the_cardinal_office"
+			duration = 730
+		}
+	}
+}

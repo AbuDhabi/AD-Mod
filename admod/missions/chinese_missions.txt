@@ -1,0 +1,272 @@
+#miscmod changes: added option for CHI tag
+annex_dai_viet = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		is_subject = no
+		is_lesser_in_union = no
+		exists = DAI
+		not = { alliance_with = DAI }
+		DAI = {
+			neighbour = this
+			religion_group = this
+			not = { num_of_cities = this }
+			owns = 613		# Hanoi
+		}
+	}
+	abort = {
+		or = {
+			not = { exists = DAI }
+			is_subject = yes
+			is_lesser_in_union = yes
+			DAI = { not = { religion_group = this } }
+		}
+	}
+	success = {
+		not = { exists = DAI }
+		owns = 613
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			not = { relation = { who = DAI value = 0 } }
+		}
+	}
+	immediate = {
+		add_temp_claim = 613
+	}
+	abort_effect = {
+		remove_temp_claim = 613
+	}
+	effect = {
+		army_tradition = 0.1
+		stability = 1
+	}
+}
+
+defend_korea = {
+
+	type = country
+	
+	allow = {
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		exists = KOR
+		exists = JAP
+		is_subject = no
+		is_lesser_in_union = no
+		KOR = {
+			war_with = JAP
+			neighbour = this
+		}
+		war_with = JAP
+	}
+	abort = {
+		or = {
+			not = { war_with = JAP }
+			is_subject = yes
+			is_lesser_in_union = yes	
+		}
+	}
+	success = {
+		not = { war_with = JAP }
+		not = { korean_region = { owned_by = JAP } }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}	
+	}
+	effect = {
+		korean_region = { add_core = this }
+	}
+}
+
+colonize_taiwan = {
+	
+	type = country
+
+	allow = {
+		or = {
+			tag = MNG
+			tag = MCH
+			tag = CHI
+		}
+		owns = 1821
+		738 = { empty = yes }
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			and = {
+				738 = { empty = no }
+				not = { owns = 738 }
+			}
+			not = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		owns = 738
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			adm = 7
+		}
+	}
+	effect = {
+		add_core = 738
+	}
+}
+
+colonize_deren = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		1050 = {
+			empty = yes
+			has_discovered = THIS
+		}
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			AND = {
+				1050 = { empty = no }
+				NOT = { owns = 1050 }
+			}
+			NOT = { num_of_ports = 1 }
+		}	
+	}
+	success = {
+		owns = 1050
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			adm = 7
+		}
+	}
+	effect = {
+		add_core = 1050
+	}
+}
+
+china_discovers_india = {
+	
+	type = country
+
+	allow = {
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		idea = quest_for_the_new_world
+		NOT = { indian_coast = { has_discovered = this } }
+		num_of_ports = 1
+	}
+	abort = {
+		not = {	idea = quest_for_the_new_world }
+		not = { num_of_ports = 1 }
+	}
+	success = {
+		indian_coast = { has_discovered = this }
+		or = {
+			1337 = { units_in_province = this }
+			1338 = { units_in_province = this }
+			1339 = { units_in_province = this }
+			1340 = { units_in_province = this }
+			1614 = { units_in_province = this }
+			1341 = { units_in_province = this }
+			1342 = { units_in_province = this }
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			idea = colonial_ventures
+		}	
+	}
+	effect = {
+		treasury = 50
+		colonists = 3
+	}
+}
+
+start_the_conquest_of_ming_china = {
+
+	type = country
+	
+	allow = {
+		tag = MCH
+		exists = MNG
+		war_with = MNG 
+		not = { owns = 704 }	# Liaoxi
+		not = { owns = 723 }	# Xilin Gol
+		not = { owns = 726 }	# Liaodong
+		is_lesser_in_union = no
+		is_subject = no
+	}
+	abort = {
+		or = {
+			not = { war_with = MNG }
+			not = { exists = MNG }
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+	success = {
+		not = { war_with = MNG }
+		or = {
+			owns = 704
+			owns = 723
+			owns = 726
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}	
+	}
+	immediate = {
+		add_temp_claim = 704
+		add_temp_claim = 723
+		add_temp_claim = 726
+	}
+	abort_effect = {
+		remove_temp_claim = 704
+		remove_temp_claim = 723
+		remove_temp_claim = 726
+	}
+	effect = {
+		add_core = 704
+		add_core = 723
+		add_core = 726
+	}
+}

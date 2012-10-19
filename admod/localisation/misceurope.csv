@@ -1,0 +1,76 @@
+EVTNAME20100;Exile to Morea;;;;;;;;;;;;;x
+EVTNAME20101;Exile to Achaea;;;;;;;;;;;;;x
+EVTNAME20102;Exile to Crete;;;;;;;;;;;;;x
+EVTNAME20103;Exile to Cyprus;;;;;;;;;;;;;x
+EVTDESC20100;Our empire is crumbling. The once impenetrable walls of Constantinople are being overrun by the enemy! We may yet save our dynasty, and what's left of our empire, if we flee the city.;;;;;;;;;;;;;x
+EVTOPTA20100;Evacuate the royal family!;;;;;;;;;;;;;x
+EVTOPTB20100;We will fight til the end!;;;;;;;;;;;;;x
+EVTNAME20105;Byzantium is no more;;;;;;;;;;;;;x
+EVTDESC20105;Our mighty empire has been reduced to a final desperate holdout. We are no longer seen by the world as the Empire of the Greeks. Perhaps someday we can reclaim our former glory. As long as Greeks live in Constantinople there is hope.;;;;;;;;;;;;;x
+EVTOPTA20105;Dark days are ahead.;;;;;;;;;;;;;x
+EVTNAME21218;Two Crowns United!;;;;;;;;;;;;;x
+EVTDESC21218;The kingdom of Aragon has been broken and humiliated. They now seek peaceful integration into the nation of Castille rather than destruction.;;;;;;;;;;;;;x
+EVTOPTA21218;Welcome my brothers;;;;;;;;;;;;;x
+EVTDESC21219;The kingdom of Castille has been broken and humiliated. They now seek peaceful integration into the nation of Aragon rather than destruction.;;;;;;;;;;;;;x
+reclaim_byzantine_empire_title;Reclaim the Byzantine Empire;;;;;;;;;;;;;x
+reclaim_byzantine_empire_desc;The current Emperor of Byzantium is unfit to hold such a prestigious title. The Greek people deserve a great leader and are willing to join us in rebuilding a great empire.;;;;;;;;;;;;;x
+GBS;Great Britain;Grande Bretagne;Großbritannien;Wielka Brytania;Friedland;Gran Bretagna;Nagy-Britannia;Velká Británie;;;;;;x
+GBS_ADJ;British;anglo;Britische;Wielka Brytania;de Friedland;britannica;Britt;Britský;;;;;;x
+GBS_ADJ2;Anglo;anglo;Anglo;Wielka Brytania;de Friedland;britannica;Anglo;Angolský;;;;;;x
+british_nation_s_title;Form British Nation;L'Angleterre;Britisches Reich;Pañstwo brytyjskie;Formar la nación británica;Gran Bretagna;Brit nemzet;Britský národ;;;;;;x
+british_nation_s_desc;By uniting our political development domestically and extending our influence beyond our borders we will be able to reinforce our position in world affairs and transform into one of the foremost European powers, the British Empire.;;;;;;;;;;;;;x
+italian_nation_too_title;Form Ruma Nation;;;;;;;;;;;;;x
+italian_nation_too_desc;Our conquests have brought the light of Islam to the heart of the Latin kingdoms. Art and philosophy are blossoming under our rule and our greatest minds have brought us cultural and technological achievements that make us the envy of the world. The birth of a new Islamic age of enlightenment is upon us!;;;;;;;;;;;;;x
+BEL;Belgium;;;;;;;;;;;;;x
+BEL_ADJ;Belgian;;;;;;;;;;;;;x
+BEL_ADJ2;Belgian;;;;;;;;;;;;;x
+belgium_nation_title;Form Belgian Nation;;;;;;;;;;;;;x
+belgium_nation_desc;For too long our people have been caught in the ebb and flow of European politics. German and French kings alike have claimed our lands as their own, but none have been able to claim our people. Now is the time for us to decide our own fate.;;;;;;;;;;;;;x
+OCC;Occitania;;;;;;;;;;;;;x
+OCC_ADJ;Occitanian;;;;;;;;;;;;;x
+OCC_ADJ2;Occitan;;;;;;;;;;;;;x
+occitain_nation_title;Form Occitain Nation;;;;;;;;;;;;;x
+occitain_nation_desc;$MONARCH$ has made a bold proclamation to the petty kings of Europe. A modern centralized state of Occitania has emerged from the bickering feudal kingdoms of greater France. The Occitanian people now stand united and undefeatable.;;;;;;;;;;;;;x
+BRT;Britannia;;;;;;;;;;;;;x
+BRT_ADJ;Britannian;;;;;;;;;;;;;x
+BRT_ADJ2;Briton;;;;;;;;;;;;;x
+britannia_nation_title;Form Britannia;;;;;;;;;;;;;x
+britannia_nation_desc;By uniting our political development domestically and extending our influence beyond our borders we will be able to reinforce our position in world affairs and transform into one of the foremost European powers, the Briton Empire.;;;;;;;;;;;;;x
+icelandic;Icelandic;;;;;;;;;;;;;x
+ICE;Iceland;;;;;;;;;;;;;x
+ICE_ADJ;Icelandic;;;;;;;;;;;;;x
+ICE_ADJ2;Icelandic;;;;;;;;;;;;;x
+BDJ;Badajoz;;;;;;;;;;;;;x
+BDJ_ADJ;Badajozi;;;;;;;;;;;;;x
+BDJ_ADJ2;Badajozi;;;;;;;;;;;;;x
+badajozi;Badajozi;;;;;;;;;;;;;x
+MLR;Mallorca;;;;;;;;;;;;;x
+MLR_ADJ;Mallorcan;;;;;;;;;;;;;x
+MLR_ADJ2;Mallorca;;;;;;;;;;;;;x
+SEV;Seville;;;;;;;;;;;;;x
+SEV_ADJ;Sevillan;;;;;;;;;;;;;x
+SEV_ADJ2;Sevillano;;;;;;;;;;;;;x
+sevillano;Sevillano;;;;;;;;;;;;;x
+ZAR;Zaragoza;;;;;;;;;;;;;x
+ZAR_ADJ;Zaragozan;;;;;;;;;;;;;x
+ZAR_ADJ2;Zaragozi;;;;;;;;;;;;;x
+zaragozi;Zaragozi;;;;;;;;;;;;;x
+EST;Estonia;;;;;;;;;;;;;x
+EST_ADJ;Estonian;;;;;;;;;;;;;x
+EST_ADJ2;Eesti;;;;;;;;;;;;;x
+SAM;Sameland;;;;;;;;;;;;;x
+SAM_ADJ;Sami;;;;;;;;;;;;;x
+SAM_ADJ2;Sapmi;;;;;;;;;;;;;x
+pagan_held_stonehenge;Control of Stonehenge;;;;;;;;;;;;;x
+desc_pagan_held_stonehenge;We hold the ancient circle of Stonehenge. Though it is in a state of serious disrepair it still functions as an important site of ritual.;;;;;;;;;;;;;x
+acknowledge_hen_wlad_fy_nhadau_title;Sing "Hen Wlad Fy Nhadau";;;;;;;;;;;;;x
+acknowledge_hen_wlad_fy_nhadau_desc;Hen Wlad Fy Nhadau!\nThe land of my fathers is dear unto me,\nOld land where the minstrels are honoured and free:\nIts warring defenders, so gallant and brave,\nFor freedom their life's blood they gave;;;;;;;;;;;;;x
+hen_wlad_fy_nhadau;Hen Wlad Fy Nhadau;;;;;;;;;;;;;x
+desc_hen_wlad_fy_nhadau;Hen Wlad Fy Nhadau!\nThe land of my fathers is dear unto me,\nOld land where the minstrels are honoured and free:\nIts warring defenders, so gallant and brave,\nFor freedom their life's blood they gave;;;;;;;;;;;;;x
+lowlander_group;Lowlander;;;;;;;;;;;;;x
+united_burgundy_title;Form The Kingdom of Lotharingia;;;;;;;;;;;;;x
+united_burgundy_desc;For too long our dukes and petty monarchs have concerned themselves only with reclaiming the prestigious crown of France. But now with the rich lowland provinces filling our coffers and positioning us as a great world power, we could create our own great kingdom. Let us renounce our claims on those hostile French lands and embrace the people who have embraced our rule.;;;;;;;;;;;;;x
+GRB;Lotharingia;;;;;;;;;;;;;x
+GRB_ADJ;Lotharingian;;;;;;;;;;;;;x
+GRB_ADJ2;Lotharii;;;;;;;;;;;;;x
+burgundian_l;Lotharingian;;;;;;;;;;;;;x

@@ -1,0 +1,67 @@
+#236 - London
+
+owner = ENG
+controller = ENG
+culture = english
+religion = catholic
+hre = no
+base_tax = 14
+trade_goods = grain
+manpower = 6
+capital = "London"
+citysize = 30000
+add_core = ENG
+fort1 = yes
+fort2 = yes
+temple = yes #Westminster Abbey
+marketplace = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = ENG
+		controller = ENG
+		citysize = 30000 }
+
+1450.1.1  = { citysize = 40000 }
+1453.1.1  = { revolt_risk = 5 } # Start of the War of the Roses
+1459.1.1  = { revolt_risk = 7 } # Increasing Popularity of Warwick in London
+1460.1.1  = { revolt_risk = 0 revolt = { type = revolutionary_rebels size = 1 } controller = REB }
+1461.6.1  = { revolt = {} revolt_risk = 2 controller = ENG } # Coronation of Edward IV
+1467.1.1  = { revolt_risk = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1  = { revolt_risk = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { revolt_risk = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { revolt_risk = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { revolt_risk = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1500.1.1  = { constable = yes decision = land_enclosure } # Estimated
+1520.1.1  = { citysize = 60000 }
+1525.1.1  = { courthouse = yes } # Estimated
+1536.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 80000 }
+1559.1.1  = { decision = spy_agency }
+1575.1.1  = { regimental_camp = yes decision = establish_recruiting_centre } # Estimated
+1580.1.1  = { cot = yes base_tax = 15 }
+#1585.1.1  = { customs_house = yes } # Estimated
+1600.1.1  = { citysize = 200000 }
+1640.1.1  = { workshop = yes } # Estimated
+1642.8.22 = { revolt = { type = revolutionary_rebels size = 2 leader = "Oliver Cromwell" } controller = REB } # Start of First English Civil War
+1646.5.5  = { revolt = {} controller = ENG } # End of First English Civil War
+1650.1.1  = { tax_assessor = yes fort3 = yes } # Estimated
+1665.1.1  = { citysize = 400000 }
+1666.1.1  = { citysize = 315000 } # Great Plague of London
+1700.1.1  = { citysize = 575000 fine_arts_academy = yes } # First Bequest to the British Museum
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1741.1.1  = { war_college = yes } # Royal Military Academy, Woolwich
+1750.1.1  = { citysize = 675000 }
+1800.1.1  = { citysize = 900000 }

@@ -1,0 +1,24 @@
+government = regular_horde
+aristocracy_plutocracy = 1
+centralization_decentralization = 5
+innovative_narrowminded = 1
+mercantilism_freetrade = 1
+offensive_defensive = 5
+land_naval = 3
+quality_quantity = 3
+serfdom_freesubjects = 4
+primary_culture = inuit
+religion = spiritualism
+technology_group = new_world
+capital = 996	# Innu
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Attuiock I"
+		dynasty = "Aupilaarjuk"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}

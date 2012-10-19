@@ -1,0 +1,69 @@
+# 1880 - Sundgau
+
+owner = HAB
+controller = HAB 
+capital = "Altkirch"
+citysize = 5500
+culture = rheinlaender
+religion = catholic
+hre = yes
+base_tax = 6
+trade_goods = iron
+manpower = 6
+add_core = HAB
+fort1 = yes
+temple = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = HAB
+		controller = HAB
+		citysize = 5500 }
+
+1450.1.1   = { citysize = 6500 }
+1500.1.1   = { citysize = 7000 }
+1550.1.1   = { citysize = 9000 courthouse = yes }
+1570.1.1   = { constable = yes }
+1580.1.1   = { marketplace = yes }
+1600.1.1   = { citysize = 12000 }
+1610.1.1   = { fort2 = yes }
+1620.1.1   = { regimental_camp = yes } #customs_house = yes
+1634.1.1   = { controller = FRA } # To France
+1636.8.15  = { controller = HAB } # Habsburg forces ravage North Eastern France, Lorraine liberated
+1636.10.20 = { controller = FRA } # Bernhard of Saxe-Weimar defeats the invaders and gradually pushes them back
+1648.1.1   = { owner = FRA } # Peace of Westphalia
+1650.1.1   = { citysize = 9000 }
+1660.1.1   = { fort3 = yes }
+1700.1.1   = { citysize = 20000 }
+1710.1.1   = { tax_assessor = yes }
+1750.1.1   = { citysize = 29000 workshop = yes }
+1789.7.14  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # The storming of the Bastille
+1800.1.1   = { citysize = 39000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

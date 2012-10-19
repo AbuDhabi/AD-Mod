@@ -1,0 +1,953 @@
+#events 20300-20399
+#################################################
+# Contains general events that make the whole thing work
+#################################################
+
+#################################################
+# Colonial Seperatism: Enables all further events
+#################################################
+
+country_event = {
+
+	id = 20300
+
+	major = yes
+
+	title = "EVTNAME20300"
+	desc = "EVTDESC20300"
+
+	trigger = {
+		OR = {
+			AND = {
+				year = 1700
+				759 = { citysize = 1020 }	# Diamentina
+				820 = { citysize = 1020 }	# Quito
+				863 = { citysize = 1020 }	# Suma
+				887 = { citysize = 1020 }	# Tonkawa
+				927 = { citysize = 1020 }	# Timucua
+				969 = { citysize = 1020 }	# Pocumtuk
+
+				775 = { citysize = 1020 }	# Xeres
+				798 = { citysize = 1020 }	# Charcas
+				882 = { citysize = 1020 }	# Mescalero
+				916 = { citysize = 1020 }	# Kaskaskia
+				977 = { citysize = 1020 }	# Yakutat
+				1001 = { citysize = 1020 }	# Sault
+			}
+			AND = {
+				year = 1725
+				759 = { citysize = 1020 }	# Diamentina
+				820 = { citysize = 1020 }	# Quito
+				863 = { citysize = 1020 }	# Suma
+				887 = { citysize = 1020 }	# Tonkawa
+				927 = { citysize = 1020 }	# Timucua
+				969 = { citysize = 1020 }	# Pocumtuk
+			}
+			year = 1750
+		}
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = taoic
+			religion_group = dharmic
+			religion_group = abrahamic
+		}
+		OR = {
+			the_carribean = { owned_by = THIS }
+			the_spanish_main = { owned_by = THIS }
+			la_plata_region = { owned_by = THIS }
+			brazil_region = { owned_by = THIS }
+			the_thirteen_colonies = { owned_by = THIS }
+			central_american_region = { owned_by = THIS }
+		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = asia }
+		}
+		NOT = { has_global_flag = colonial_seperatism }
+		NOT = { has_global_flag = black_death_scn_g }
+	}
+
+	mean_time_to_happen = {
+		months = 600
+
+		modifier = {
+			factor = 1.5
+			has_country_modifier = beneficial_neglect
+		}
+		modifier = {
+			factor = 1.2
+			idea = ecumenism
+		}
+		modifier = {
+			factor = 1.2
+			idea = humanist_tolerance
+		}
+		modifier = {
+			factor = 0.8
+			idea = vice_roys
+		}
+		modifier = {
+			factor = 0.9
+			government = theocracy
+		}
+		modifier = {
+			factor = 0.9
+			overseas_province_percentage = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			overseas_province_percentage = 0.4
+		}
+		modifier = {
+			factor = 0.9
+			overseas_province_percentage = 0.5
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 3
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 9
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 0.9
+			innovative_narrowminded = 3
+		}
+		modifier = {
+			factor = 0.9
+			innovative_narrowminded = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { year = 1745 }
+		}
+		modifier = {
+			factor = 0.5
+			year = 1770
+		}
+		modifier = {
+			factor = 0.1
+			year = 1790
+		}
+	}
+
+	immediate = {
+		set_global_flag = colonial_seperatism
+	}
+
+	option = {
+		name = "EVTOPTA20300"
+		prestige = -0.05
+		colonists = -1
+	}
+}
+
+#################################################
+# Clean up seperatist intrusion on native lands
+#################################################
+
+province_event = {
+
+	id = 20301
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = central_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = zapotek }
+		OR = {
+			province_id = 844	# Zapotec
+			province_id = 847	# Mixtec
+			province_id = 848	# Tohancapan
+			province_id = 849	# Tlapanec
+			province_id = 850	# Tlaxcala
+			province_id = 851	# Tarasco
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = zapotek
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20302
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = central_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = mayan }
+		OR = {
+			province_id = 839	# Pipil
+			province_id = 840	# Honduras
+			province_id = 841	# Guatemala
+			province_id = 842	# Peten
+			province_id = 843	# Belize
+			province_id = 845	# Campeche
+			province_id = 846	# Yucatan
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = mayan
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20303
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = central_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = aztek }
+		OR = {
+			province_id = 852	# Mexico
+			province_id = 853	# Huastec
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = aztek
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20304
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = south_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = inca }
+		OR = {
+			province_id = 804	# Puno
+			province_id = 805	# Arequipa
+			province_id = 806	# Nazca
+			province_id = 807	# Huamanga
+			province_id = 808	# Cuzco
+			province_id = 809	# Lima
+			province_id = 810	# Huancavelica
+			province_id = 811	# Tarma
+			province_id = 812	# Chanchan
+			province_id = 813	# Cajamarca
+			province_id = 814	# Huanuco
+			province_id = 816	# Tumbes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = inca
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20305
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = north_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = cherokee }
+		OR = {
+			province_id = 918	# Tennessee
+			province_id = 919	# Chickasaw
+			province_id = 925	# Tuskegee
+			province_id = 931	# Chiaha
+			province_id = 933	# Catawba
+			province_id = 935	# Cherokee
+			province_id = 936	# Cheraw
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = cherokee
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20306
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = north_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = iroquis }
+		OR = {
+			province_id = 958	# Seneca
+			province_id = 959	# Cayuga
+			province_id = 960	# Onondaga
+			province_id = 961	# Oneida
+			province_id = 964	# Mohawk
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = iroquis
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20307
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = north_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = huron }
+		OR = {
+			province_id = 987	# Niagara
+			province_id = 988	# Huron
+			province_id = 989	# Ontario
+			province_id = 991	# Ottowa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = huron
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20308
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = north_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = shawnee }
+		OR = {
+			province_id = 934	# Shawnee
+			province_id = 939	# Pennyrile
+			province_id = 940	# Kentucky
+			province_id = 941	# Cumberland
+			province_id = 942	# Wea
+			province_id = 948	# Ohio
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = shawnee
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+province_event = {
+
+	id = 20309
+
+	title = "EVTNAME20301"
+	desc = "EVTDESC20301"
+
+	trigger = {
+		owner = { culture_group = north_american }
+		any_core = {
+			is_colonial = yes
+		}
+		NOT = { culture = creek }
+		OR = {
+			province_id = 923	# Pensacola
+			province_id = 924	# Alabama
+			province_id = 928	# Apalachee
+			province_id = 929	# Muskogee
+			province_id = 930	# Yamasee
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		culture = creek
+		any_core = { 
+			limit = { is_colonial = yes }
+			remove_core = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20301"
+	}
+}
+
+#################################################
+# Fast track colonies with colonial culture
+#################################################
+
+province_event = {
+
+	id = 20310
+
+	title = "EVTNAME20310"
+	desc = "EVTDESC20310"
+
+	trigger = {
+		any_core = {
+			is_colonial = yes
+		}
+		owner = { is_colonial = no }
+		citysize = 50
+		NOT = { citysize = 1050 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA20310"
+		citysize = 500
+		change_manpower = 1
+	}
+}
+
+#################################################
+# Heresy in the colonies
+#################################################
+
+province_event = {
+
+	id = 20311
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = catholic
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			49 = { religion = protestant }
+			39 = { religion = reformed }
+			10 = { religion = orthodox }
+			2 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+province_event = {
+
+	id = 20312
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = protestant
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			29 = { religion = catholic }
+			59 = { religion = reformed }
+			10 = { religion = orthodox }
+			2 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+province_event = {
+
+	id = 20313
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = reformed
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			29 = { religion = catholic }
+			59 = { religion = protestant }
+			10 = { religion = orthodox }
+			2 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+province_event = {
+
+	id = 20314
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = orthodox
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			78 = { religion = catholic }
+			8 = { religion = protestant }
+			8 = { religion = reformed }
+			6 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+province_event = {
+
+	id = 20315
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = sunni
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			91 = { religion = shiite }
+			4 = { religion = sufism }
+			3 = { religion = khariji }
+			2 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+province_event = {
+
+	id = 20316
+
+	title = "EVTNAME20311"
+	desc = "EVTDESC20311"
+
+	trigger = {
+		is_overseas = yes
+		any_core = { is_colonial = yes }
+		citysize = 1500
+		not = { has_province_modifier = religious_migration }
+		religion = shiite
+		owner = {
+			is_colonial = no
+			NOT = { idea = ecumenism }
+			NOT = { stability = 3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1500
+	}
+
+	option = {
+		name = "EVTOPTA20311"
+		random_list = {
+			91 = { religion = sunni }
+			4 = { religion = sufism }
+			3 = { religion = khariji }
+			2 = { religion = judaism }
+		}
+		add_province_modifier = {
+			name = "religious_migration"
+			duration = 700
+		}
+		
+	}
+}
+
+#################################################
+# A place in the sun
+#################################################
+
+country_event = {
+
+	id = 20317
+
+	major = yes
+
+	title = "EVTNAME20317"
+	desc = "EVTDESC20317"
+
+	trigger = {
+		is_colonial = yes
+		NOT = { has_country_flag = place_in_the_sun }
+		war = no
+		is_lesser_in_union = no
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_country_flag = place_in_the_sun
+	}
+
+	option = {
+		name = "EVTOPTA20317"
+		treasury = 1500
+		war_exhaustion = -15
+		badboy = -50
+		capital_scope = {
+			change_manpower = 1
+			citysize = 10000
+		}
+		random_owned = {
+			limit = {
+				NOT = { has_building = tax_assessor }
+				citysize = 1000
+			}
+			add_building = tax_assessor
+		}
+		random_owned = {
+			limit = {
+				NOT = { has_building = regimental_camp }
+				citysize = 1000
+			}
+			add_building = regimental_camp
+		}
+		random_owned = {
+			limit = {
+				port = yes
+				NOT = { has_building = shipyard }
+				citysize = 1000
+			}
+			add_building = shipyard
+		}
+		random_country = {
+			limit = { culture_group = THIS }
+			relation = { who = THIS value = 50 }
+		}
+		random_country = {
+			limit = { culture_group = THIS }
+			relation = { who = THIS value = 50 }
+		}
+	}
+}
+
+#################################################
+# Colonial revolts regardless of revolt risk
+#################################################
+
+province_event = {
+
+	id = 20318
+
+	title = "EVTNAME20318"
+	desc = "EVTDESC20318"
+
+	trigger = {
+		has_province_modifier = colonial_tensions
+		owner = {
+			is_colonial = no
+			NOT = { stability = 2 }
+		}
+		any_core = {
+			is_colonial = yes
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+	}
+
+	option = {
+		name = "EVTOPTA20318"
+		colonial_rebels = 1
+	}
+}
+
+#################################################
+# Colonist no like constable
+#################################################
+
+#id = 20319
+
+#########################################
+#Natives destroy colonies rather than spreading
+#########################################
+
+province_event = {
+
+	id =  20320
+
+	title = "EVTNAME20320"
+	desc = "EVTDESC20320"
+
+	trigger = {
+		is_overseas = no
+		is_colony = yes
+		owner = {
+			culture_group = north_american
+			technology_group = new_world
+			ai = yes
+		}
+		NOT = { culture_group = north_american }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "EVTOPTA20320"
+		native_size = 1
+		citysize = -1000
+		create_native = 1
+	}
+
+}

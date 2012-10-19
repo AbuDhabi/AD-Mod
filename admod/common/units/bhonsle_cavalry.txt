@@ -1,0 +1,12 @@
+# Bhonsle Cavalry tactics
+# land 38
+type = cavalry
+unit_type = indian
+
+maneuver = 2
+offensive_morale = 7
+defensive_morale = 7
+offensive_fire = 4
+defensive_fire = 4
+offensive_shock = 8
+defensive_shock = 8

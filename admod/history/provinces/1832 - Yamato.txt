@@ -1,0 +1,17 @@
+#1832 - Yamato
+
+owner = TAI
+controller = TAI
+culture = yamato
+religion = shinto
+capital = "Yamato"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 6550
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }

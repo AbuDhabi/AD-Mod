@@ -1,0 +1,74 @@
+ALX;Alexandria;;;;;;;;;;;;;x
+ALX_ADJ;Alexandrian;;;;;;;;;;;;;x
+ALX_ADJ2;Crusader;;;;;;;;;;;;;x
+ARB;Arabia;;;;;;;;;;;;;x
+ARB_ADJ;Arabian;;;;;;;;;;;;;x
+ARB_ADJ2;Arabic;;;;;;;;;;;;;x
+arab_nation_title;Form Arabia;;;;;;;;;;;;;x
+arab_nation_desc;A single national identity has emerged from the lands once walked by Muhammed. A true union of culture, religion and now rulership.;;;;;;;;;;;;;x
+persian_nation_nomads_title;Form Persian Nation;;;;;;;;;;;;;x
+persian_nation_nomads_desc;At the mere age of 15, $MONARCH$ has taken his father's position as head of the Shiite Turkmen tribe. He has quickly established a base of power in the northwest and proclaimed himself Shah of Iran. Several of the neighbouring regions have been conquered and the possibility of a resurrected Iranian nation doesn't seem so absent anymore.;;;;;;;;;;;;;x
+iberia_discovers_the_azores_title;Discover the Azores!;;;;;;;;;;;;;x
+iberia_discovers_the_azores_desc;We have heard rumours of islands out in the West Atlantic that could serve as a base for future exploration opportunities. Let us send ships out to investigate this.;;;;;;;;;;;;;x
+iberia_discovers_madeira_title;Discover Madeira!;;;;;;;;;;;;;x
+iberia_discovers_madeira_desc;A shipwrecked sailor brought back news of an archipelago in the seas to the south of Iberia. Let us send ships south to investigate this.;;;;;;;;;;;;;x
+iberia_discovers_the_west_african_coast_title;Discover West Africa;;;;;;;;;;;;;x
+iberia_discovers_the_west_african_coast_desc;Our explorers believe that Africa extends but a short way further south and soon we will be able to swing round and find a trade route to the Red Sea.;;;;;;;;;;;;;x
+iberia_discovers_south_america_title;Discover the Americas;;;;;;;;;;;;;x
+iberia_discovers_south_america_desc;The Winds and currents favour Westward expansion. Our explorers believe that rich lands lie just over the Horizon.;;;;;;;;;;;;;x
+iberian_example_title;Follow the Iberian Example;;;;;;;;;;;;;x
+iberian_example_desc;The Muslim conquest of the Spaniards has succeeded! As the Muslim world celebrates this victory new ideas are spreading across the Mediterranean. This could mark the beginning of a new golden age.;;;;;;;;;;;;;x
+arabia_set_example_title;Set an Example to Islam;;;;;;;;;;;;;x
+arabia_set_example_desc;We have united the peninsula under one banner and are committed to forging a bright future. We must show our people and the entire world that innovation and imperialism are not solely the domain of infidels.;;;;;;;;;;;;;x
+arabian_example_title;Follow the Arabian Example;;;;;;;;;;;;;x
+arabian_example_desc;The Arab people have united the entire peninsula under one banner. They stand on the brink of greatness and we could learn much from their example.;;;;;;;;;;;;;x
+islamic_golden_age_title;Proclaim a Golden Age!;;;;;;;;;;;;;x
+islamic_golden_age_desc;Once again the faithful followers of Islam have taken on the mantle of leaders of the world. Our cultural ideas and scientific achievements are the envy of all. What we do with this incredible opportunity is now up to us.;;;;;;;;;;;;;x
+iberia_conquers_sardinia_title;Conquer Sardinia;;;;;;;;;;;;;x
+iberia_conquers_sardinia_desc;Sardinia was claimed by the Chrisian Iberians as their own. Now that we have taken on their other burdens, why shouldn't we also claim their rights of conquest?;;;;;;;;;;;;;x
+iberia_conquers_sicily_title;Conquer Sicily;;;;;;;;;;;;;x
+iberia_conquers_sicily_desc;Southern Italy was once part of the Muslim community. The children of God there have become lost and disillusioned. We have the power to once again show them the light.;;;;;;;;;;;;;x
+iberian_nation_title;Form Iberian Nation;;;;;;;;;;;;;x
+iberian_nation_desc;We have returned from the brink of destruction, and brought enlightenment back to the Spaniards. May our rule bring about another Golden Age of Islam!;;;;;;;;;;;;;x
+IBE;Iberia;;;;;;;;;;;;;x
+IBE_ADJ;Iberian;;;;;;;;;;;;;x
+IBE_ADJ2;Iberian;;;;;;;;;;;;;x
+granada_go_muslim_title;Reassert Islamic Dominance;;;;;;;;;;;;;x
+granada_go_muslim_desc;Our people have been sent into hiding by the Spaniards but now that we have returned to power they can show their true selves once more.;;;;;;;;;;;;;x
+continue_the_conquista_title;Continue the Conquista;;;;;;;;;;;;;x
+continue_the_conquista_desc;We have returned to glory from the brink of destruction. The Iberians are still powerful though, and we could learn a few things from their barbaric ways.;;;;;;;;;;;;;x
+EVTNAME20120;Fighting the Reconquista;;;;;;;;;;;;;x
+EVTDESC20120;Our spiritual allies in Granada are in a dire position. The Spaniards are threatening to push them back across the Mediterranean. We can send them supplies if you feel the cause is worthy.;;;;;;;;;;;;;x
+EVTOPTA20120;We should help them.;;;;;;;;;;;;;x
+EVTOPTB20120;We have our own problems.;;;;;;;;;;;;;x
+EVTNAME20121;Outside Funding;;;;;;;;;;;;;x
+EVTDESC20121;The Reconquista threatens to destroy us, but we are not in this fight alone. Muslims from around the Mediterranean are sending their prayers, and their money.;;;;;;;;;;;;;x
+EVTOPTA20121;Put them in uniforms.;;;;;;;;;;;;;x
+EVTOPTB20121;Send them to attack.;;;;;;;;;;;;;x
+EVTOPTC20121;Take the money.;;;;;;;;;;;;;x
+EVTNAME21217;Observatory destroyed!;;;;;;;;;;;;;x
+EVTDESC21217;Violent rebels in Samarkand have foolishly destroyed one of the most valuable astronomical tools in the world. Their lack of respect for science is a loss for us all. The Samarkand Observatory lies broken and scattered.;;;;;;;;;;;;;x
+EVTOPTA21217;The fools!;;;;;;;;;;;;;x
+convert_sicily_muslim_title;Convert Sicily;;;;;;;;;;;;;x
+convert_sicily_muslim_desc;The people of Sicily are not following the true faith. We must show them the error of their ways.;;;;;;;;;;;;;x
+contemp_islamic_philosophy_title;Reestablish Islamic Philosophy;;;;;;;;;;;;;x
+contemp_islamic_philosophy_desc;The Islamic world was once the center of scientific discovery and human progress. Now our greatest thinkers have been chained by fundamentalism and suspicion. Finding a synthesis between scientific and religious thought will ensure a place for Islam in the modern world.;;;;;;;;;;;;;x
+modern_islam_philo;Islamic Philosophy;;;;;;;;;;;;;x
+desc_modern_islam_philo;Striving for harmony between scientific and religious teachings.;;;;;;;;;;;;;x
+construct_samarkand_observatory_title;Construct the Samarkand Observatory;;;;;;;;;;;;;x
+construct_samarkand_observatory_desc;$MONARCH$ is not only a great ruler but an accomplished astronomer as well. The patronage of Islam's greatest thinkers along with the construction of a great observatory will grant us great insight into the truths of this world and beyond.;;;;;;;;;;;;;x
+samarkand_observatory_held;The Samarkand Observatory;;;;;;;;;;;;;x
+desc_samarkand_observatory_held;Our nation benefits greatly from access to the most powerful astronomical tool in the known world.;;;;;;;;;;;;;x
+jewish_jerusalem;Stewards of Jerusalem;;;;;;;;;;;;;x
+desc_jewish_jerusalem;Our nation keeps a close watch over the holiest of cities, the meeting place of Judaism, Christianity and Islam.;;;;;;;;;;;;;x
+israel_nation_title;Form Nation of Israel;;;;;;;;;;;;;x
+israel_nation_desc;Once again the crowns of Samaria and Judah have been united and the land of Israel is reborn. Her children now once more have a land to call their own, following in the footsteps of David and Solomon.;;;;;;;;;;;;;x
+release_israel_nation_title;Release Nation of Israel;;;;;;;;;;;;;x
+release_israel_nation_desc;Once again the crowns of Samaria and Judah have been united and the land of Israel is reborn. Her children now once more have a land to call their own, following in the footsteps of David and Solomon.;;;;;;;;;;;;;x
+EGY;Egypt;;;;;;;;;;;;;x
+EGY_ADJ;Egyptian;;;;;;;;;;;;;x
+EGY_ADJ2;Masri;;;;;;;;;;;;;x
+egypt_nation_title;Form Egypt;;;;;;;;;;;;;x
+egypt_nation_desc;The flow of riches into the ports of Alexandria have allowed $MONARCH$ to bring great reforms to our nation. Spices from India and medicine from Europe have become commonplace in Egyptian markets, as has a growing class of traders and merchants. No longer a nation of slaves, the people of the Nile will never again bow to Turks or Bedouins.;;;;;;;;;;;;;x
+egypt_nation_tribal_title;Form Egypt;;;;;;;;;;;;;x
+egypt_nation_tribal_desc;The flow of riches into the ports of Alexandria have allowed $MONARCH$ to bring great reforms to our nation. Spices from India and medicine from Europe have become commonplace in Egyptian markets, as has a growing class of traders and merchants. No longer a nation of slaves, the people of the Nile will never again bow to Turks or Bedouins.;;;;;;;;;;;;;x

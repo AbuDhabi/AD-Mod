@@ -1,0 +1,114 @@
+#Country Name: Al-Alemand
+
+graphical_culture = latingfx
+
+color = { 114  156  131 }
+
+historical_ideas = {
+	land_of_opportunity
+	shrewd_commerce_practise
+	humanist_tolerance
+	merchant_adventures
+	patron_of_art
+	national_bank
+	national_trade_policy
+	cabinet
+	smithian_economics
+	ecumenism
+	scientific_revolution
+	military_drill
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Abdülhamid #0" = 20
+	"Ibrahim #0" = 20
+	"'Abd al-Haqq #1" = 15
+	"'Abd ar-Rahmân #0" = 15
+	"Abdullah #0" = 15
+	"Abdülmecid #0" = 15
+	"Cihangir #0" = 15
+	"Giyasuddin #0" = 15
+	"Isa #0" = 15
+	"Numan #0" = 15
+	"Mûsa #0" = 15
+	"Jem #0" = 15
+	"Orkhan #1" = 10
+	"Abdulaziz #0" = 10
+	"Abdulmecid #0" = 10
+	"Abdulrahman #0" = 10
+	"Alam #0" = 10
+	"Davud #0" = 10
+	"Hasan #0" = 10
+	"Hüseyin #0" = 10
+	"Ishak #0" = 10
+	"Kamar #0" = 10
+	"Kasim #0" = 10
+	"Korkud #0" = 10
+	"Ömer #0" = 10
+	"Seyfettin #0" = 10
+	"Shahanshah #0" = 10
+	"Yakub #0" = 10
+	"Yusuf #0" = 10
+	"Abû Bakr #0" = 5
+	"Ala ad-Din #0" = 5
+	"Butrus #0" = 5
+	"Fakhri #0" = 5
+	"Fayiz #0" = 5
+	"Hadj #0" = 5
+	"Harun #0" = 5
+	"Hasan #0" = 5
+	"Husayn #0" = 5
+	"Qadir #0" = 5
+	"Rasim #0" = 5
+	"Salah #0" = 5
+	"Aydin #0" = 0
+	"Burcu #0" = 0
+	"Direnç #0" = 0
+	"Emin #0" = 0
+	"Erol #0" = 0
+	"Ilhami #0" = 0
+	"Iskender #0" = 0
+	"Koray #0" = 0
+	"Onur #0" = 0
+	"Özgür #0" = 0
+	"Savas #0" = 0
+	"Temel #0" = 0
+	"Tunç #0" = 0
+}
+
+leader_names = {
+	Akimi Adhoum Alemdar Amasyali Ayas
+	Badra Bassir Bali Barbaros Bayram Behar
+	Cezzar Çandarli Çelebi Cerrah Çerkes
+	Dali Damat Dervis
+	Ekrem
+	Hakimi
+	Íshak
+	Köprülü Kemal Kucuk Koca Karamanli Kara Kanijeli Kemankes
+	Naybet
+	Özdemir Özdemiroglu Öküz
+	Saber Sahiri Sassi
+	Taher
+	Yemisçi
+}
+
+ship_names = {
+	Alim Fattah Razzaq Wahhab Qahhar Ghaffar
+	Musawwir Bari Khaliq Mutakabbir Jabbar
+	Aziz Muhaymin Mu'min Salam Quddus Malik
+	Rahim Rahman
+	Tawwab Muntaqim Afuww Fa'uf "Malik Mulk"
+	"Jalal Ikram" Muqsit Jami Ghani Mughni
+	Mani Darr Nafi Nur Hadi Badi Baqi Warith
+	Rashid Sabur "Fazl Azim"
+}

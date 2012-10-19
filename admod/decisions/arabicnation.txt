@@ -1,0 +1,79 @@
+country_decisions = {
+
+	arab_nation = {
+		potential = {
+			OR = {
+				primary_culture = maghreb_arabic
+				primary_culture = al_misr_arabic
+				primary_culture = al_suryah_arabic
+				primary_culture = al_iraqiya_arabic
+				primary_culture = bedouin_arabic
+			}
+			NOT = { tag = PER }
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = MUG }
+			NOT = { tag = TIM }
+			NOT = { tag = MAM }
+			NOT = { exists = ARB }
+		}
+		allow = {
+			prestige = 0.20
+			OR = {
+				cultural_tradition = 0.50
+				ai = yes
+			}
+			government_tech = 25
+			land_tech = 25
+
+			owns = 383	# Tabouk
+			owns = 384	# Medina
+			owns = 385	# Mecca
+			owns = 386	# Asir
+			owns = 391	# Najran
+			owns = 392	# Nejd
+			owns = 393	# Jabal Shammar
+			owns = 394	# Al Hasa
+			owns = 395	# Qatar
+			owns = 397	# Beni Yas
+			owns = 398	# Qawasim
+			owns = 404	# Liwa
+			owns = 405	# Al Jawf
+
+			is_core = 383	# Tabouk
+			is_core = 384	# Medina
+			is_core = 385	# Mecca
+			is_core = 395	# Qatar
+			is_core = 398	# Qawasim
+
+			war = no
+		}
+		effect = {
+			inherit = ARB
+			ARB = {
+				add_core = 364	# Gaza
+				add_core = 377	# Aleppo
+				add_core = 378	# Beirut
+				add_core = 379	# Judea
+				add_core = 380	# Al Karak
+				add_core = 381	# Hawran
+				add_core = 382	# Damascus
+				add_core = 384	# Medina
+				add_core = 385	# Mecca
+			}
+			384 = { base_tax = 1 }
+			385 = { base_tax = 1 }
+			centralization_decentralization = -1
+			prestige = 0.2
+			legitimacy = 0.2
+			change_tag = ARB
+			ARB = {
+				capital = 384
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

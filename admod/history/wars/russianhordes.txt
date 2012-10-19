@@ -1,0 +1,12 @@
+name = "Russian Frontier War"
+casus_belli = cb_horde_vs_civ
+
+1389.2.5 = {
+	add_attacker = QAS
+	add_defender = MOS
+}
+
+1396.9.15 = {
+	rem_attacker = QAS
+	rem_defender = MOS
+}

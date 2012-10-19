@@ -1,0 +1,39 @@
+#851 - Tarasco
+
+owner = ZAP 
+controller = ZAP 
+culture = zapotek 
+religion = teotl
+capital = "Tarasco" 
+trade_goods = fish 
+hre = no 
+base_tax = 2 
+manpower = 1 
+citysize = 1268
+add_core = ZAP 
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1   = { citysize = 1600 }
+1500.1.1   = { citysize = 1987 }
+1522.1.1   = { discovered_by = SPA } # Cristobal de Olid 
+1530.1.1   = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+		revolt_risk = 5
+	     } 
+1533.1.1   = { revolt_risk = 0 } # Administered by Mexico city 
+1541.1.1   = {	capital = "Valladolid"
+		citysize = 400 
+	     } # Founded by Antonio de Mendoza 
+1550.1.1   = { citysize = 2250 } 
+1555.1.1   = { add_core = SPA }
+1600.1.1   = { citysize = 2960 } 
+1650.1.1   = { citysize = 3422 } 
+1700.1.1   = { citysize = 5600 } 
+1750.1.1   = { citysize = 10440 add_core = MEX } 
+1800.1.1   = { citysize = 17050 }
+1810.9.16  = { owner = MEX controller = SPA } # Mexican War of Independence
+1810.10.17 = { controller = MEX } # Conquered by José María Morelos

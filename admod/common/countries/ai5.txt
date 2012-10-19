@@ -1,0 +1,14 @@
+graphical_culture = latingfx
+
+color = { 128 128 128 }
+
+historical_ideas = {
+}
+
+monarch_names = {
+	"AI #0" = 100
+}
+	
+leader_names = {
+	AI
+}

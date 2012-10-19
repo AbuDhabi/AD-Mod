@@ -1,0 +1,33 @@
+government = constitutional_republic
+aristocracy_plutocracy = -5
+centralization_decentralization = 4
+innovative_narrowminded = -1
+mercantilism_freetrade = -3
+offensive_defensive = -3
+land_naval = -3
+quality_quantity = 0
+serfdom_freesubjects = -4
+primary_culture = polish
+religion = catholic
+technology_group = eastern
+capital = 262	# Krakow
+
+1398.4.1 = {
+	government = merchant_republic
+	monarch = {
+		name = "Kazimiersz Lanckoroñski"
+		adm = 7
+		dip = 6
+		mil = 5
+	}
+}
+
+1815.5.3 = {
+	government = constitutional_republic
+	monarch = {
+		name = "National Assembly"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}

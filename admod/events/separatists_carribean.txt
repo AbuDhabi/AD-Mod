@@ -1,0 +1,658 @@
+# events 23000-23999
+##################################################
+# Haiti 2300#
+# Valid new nations: HAT, TAR
+##################################################
+
+#Haiti appears
+country_event = {
+
+	id = 23000
+#	major = yes
+
+	title = "EVTNAME23000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		488 = { NOT = { any_core = { is_colonial = yes } } }
+		489 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = christian
+		OR = {
+			culture_group = british
+			culture_group = latin
+			culture_group = iberian
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 488	# Les Cayes
+			owns = 489	# Tortuga
+			owns = 490	# Barahonas
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		488 = { culture = haitian }
+		489 = { culture = haitian }
+		490 = { culture = haitian }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		HAT = {
+			add_core = 488
+			add_core = 489
+			add_core = 490
+		}
+		488 = {
+			rename_capital = "Port-Au-Prince"
+		}
+	}
+}
+
+#Tarrbitz appears
+country_event = {
+
+	id = 23001
+#	major = yes
+
+	title = "EVTNAME23000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		488 = { NOT = { any_core = { is_colonial = yes } } }
+		489 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 488	# Les Cayes
+			owns = 489	# Tortuga
+			owns = 490	# Barahonas
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		488 = { culture = tarrbitzi }
+		489 = { culture = tarrbitzi }
+		490 = { culture = tarrbitzi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		TAR = {
+			add_core = 488
+			add_core = 489
+			add_core = 490
+		}
+	}
+}
+
+##################################################
+# Cuba 2301#
+# Valid new nations: CUB, TAR
+##################################################
+
+#Cuba appears
+country_event = {
+
+	id = 23010
+#	major = yes
+
+	title = "EVTNAME23010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		484 = { NOT = { any_core = { is_colonial = yes } } }
+		485 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = christian
+		OR = {
+			culture_group = latin
+			culture_group = iberian
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 484	# Havana
+			owns = 485	# Moron
+			owns = 486	# Guantanamo
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		484 = { culture = cuban }
+		485 = { culture = cuban }
+		496 = { culture = cuban }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		CUB = {
+			add_core = 484
+			add_core = 485
+			add_core = 486
+		}
+	}
+}
+
+#Tarrbitz appears
+country_event = {
+
+	id = 23011
+#	major = yes
+
+	title = "EVTNAME23010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		484 = { NOT = { any_core = { is_colonial = yes } } }
+		485 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 484	# Havana
+			owns = 485	# Moron
+			owns = 486	# Guantanamo
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		484 = { culture = tarrbitzi }
+		485 = { culture = tarrbitzi }
+		486 = { culture = tarrbitzi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		TAR = {
+			add_core = 484
+			add_core = 485
+			add_core = 486
+		}
+	}
+}
+
+##################################################
+# Jamaica 2302#
+# Valid new nations: JAM
+# Provinces: Jamaica(487)
+##################################################
+
+#Jamaica appears
+country_event = {
+
+	id = 23020
+#	major = yes
+
+	title = "EVTNAME23020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		487 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		owns = 487	# Jamaica
+	}
+
+	mean_time_to_happen = {
+		months = 200
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		487 = { culture = jamaican }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		JAM = {
+			add_core = 487
+		}
+		487 = {
+			rename_capital = "Kingston"
+		}
+		487 = { citysize = 1000 }
+	}
+}
+
+##################################################
+# Curacao 2303#
+# Valid new nations: ANT
+##################################################
+
+#Antilles appears
+country_event = {
+
+	id = 23030
+#	major = yes
+
+	title = "EVTNAME23030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		491 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = british
+			culture_group = gaelic
+			culture_group = finno_ugric
+		}
+		owns = 491	# Curacao
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		491 = { culture = islander }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		ANT = {
+			add_core = 491
+		}
+		491 = { citysize = 1000 }
+	}
+}
+
+#Fabur appears
+country_event = {
+
+	id = 23031
+#	major = yes
+
+	title = "EVTNAME23030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		491 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		owns = 491	# Curacao
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		491 = { culture = faburi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		FAB = {
+			add_core = 491
+		}
+		491 = { citysize = 1000 }
+	}
+}
+
+##################################################
+# Bahamas 2304#
+# Valid new nations: TAR
+##################################################
+
+#Tarrbitz appears
+country_event = {
+
+	id = 23040
+#	major = yes
+
+	title = "EVTNAME23040"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		482 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		owns = 482	# Bahamas
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		482 = { culture = tarrbitzi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		TAR = {
+			add_core = 482
+		}
+		482 = { citysize = 1000 }
+	}
+}
+
+##################################################
+# St. Martin 2305#
+# Valid new nations: ANT
+##################################################
+
+#Antilles appears
+country_event = {
+
+	id = 23050
+#	major = yes
+
+	title = "EVTNAME23050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		494 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = british
+			culture_group = gaelic
+			culture_group = finno_ugric
+		}
+		owns = 494	# St. Martin
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		494 = { culture = islander }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		ANT = {
+			add_core = 494
+		}
+		494 = { citysize = 1000 }
+	}
+}
+
+#Fabur appears
+country_event = {
+
+	id = 23051
+#	major = yes
+
+	title = "EVTNAME23050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		494 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		owns = 494	# St. Martin
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		494 = { culture = faburi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		FAB = {
+			add_core = 494
+		}
+		494 = { citysize = 1000 }
+	}
+}
+
+##################################################
+# St. Thomas 2306#
+# Valid new nations: ANT
+##################################################
+
+#Antilles appears
+country_event = {
+
+	id = 23060
+#	major = yes
+
+	title = "EVTNAME23060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		493 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = british
+			culture_group = gaelic
+			culture_group = finno_ugric
+		}
+		owns = 493	# St. Thomas
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		493 = { culture = islander }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		ANT = {
+			add_core = 493
+		}
+		493 = { citysize = 1000 }
+	}
+}
+
+#Fabur appears
+country_event = {
+
+	id = 23061
+#	major = yes
+
+	title = "EVTNAME23060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		493 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = colonial_culture
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		owns = 493	# St. Thomas
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		493 = { culture = faburi }
+	}
+
+	option = {
+		name = "EVTOPTA22000"
+		FAB = {
+			add_core = 493
+		}
+		493 = { citysize = 1000 }
+	}
+}

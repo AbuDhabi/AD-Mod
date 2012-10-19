@@ -1,0 +1,396 @@
+#events 32300-32399
+
+#Timurids settle: Mughal Empire
+country_event = {
+
+	id = 32300
+	major = yes
+	title = "EVTNAME32300"
+	desc = "EVTDESC32300"
+
+	trigger = {
+		tag = TIM
+		government = steppe_horde
+		OR = {
+			ADM = 6
+			DIP = 6
+			MIL = 6
+		}
+		owns = 519	# Jaipur
+		owns = 521	# Panipat
+		owns = 522	# Delhi
+		owns = 523	# Lucknow
+		owns = 524	# Agra
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.9
+			ADM = 7
+		}
+		modifier = {
+			factor = 0.9
+			DIP = 7
+		}
+		modifier = {
+			factor = 0.9
+			MIL = 7
+		}
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32300"
+		government = despotic_monarchy
+		technology_group = muslim
+		unit_type = muslim
+		random_owned = {
+			base_tax = 1
+			change_manpower = 1
+		}
+		set_country_flag = settled_horde
+	}
+}
+
+#Timurids broken: Persia exists or <20 provinces
+country_event = {
+
+	id = 32301
+	major = yes
+	title = "EVTNAME32301"
+	desc = "EVTDESC32301"
+
+	trigger = {
+		tag = TIM
+		government = steppe_horde
+		OR = {
+			NOT = { num_of_cities = 20 }
+			exists = PER
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.8
+			NOT = { num_of_cities = 15 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_cities = 5 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32301"
+		government = tribal_despotism
+		technology_group = muslim
+		unit_type = muslim
+		stability = -2
+		set_country_flag = settled_horde
+	}
+}
+
+#Golden Horde settle: conquer Moskva/Smolensk/Kiev or border Ottomans
+country_event = {
+
+	id = 32302
+	major = yes
+	title = "EVTNAME32300"
+	desc = "EVTDESC32300"
+
+	trigger = {
+		tag = GOL
+		government = steppe_horde
+		OR = {
+			ADM = 6
+			DIP = 6
+			MIL = 6
+		}
+		OR = {
+			owns = 	# Moskva
+			owns = 	# Smolensk
+			owns = 	# Kiev
+			owns = 	# Transylvania
+			any_neighbor_country = { technology_group = ottoman }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.9
+			ADM = 7
+		}
+		modifier = {
+			factor = 0.9
+			DIP = 7
+		}
+		modifier = {
+			factor = 0.9
+			MIL = 7
+		}
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32300"
+		government = despotic_monarchy
+		technology_group = muslim
+		unit_type = muslim
+		random_owned = {
+			base_tax = 1
+			change_manpower = 1
+		}
+		set_country_flag = settled_horde
+	}
+}
+
+#Golden Horde broken: <15 provinces
+country_event = {
+
+	id = 32303
+	major = yes
+	title = "EVTNAME32301"
+	desc = "EVTDESC32301"
+
+	trigger = {
+		tag = GOL
+		government = steppe_horde
+		OR = {
+			NOT = { num_of_cities = 15 }
+			exists = RUS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.8
+			NOT = { num_of_cities = 15 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_cities = 5 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32301"
+		government = tribal_despotism
+		technology_group = muslim
+		unit_type = muslim
+		stability = -2
+		set_country_flag = settled_horde
+	}
+}
+
+#Oirats settle: conquer anything
+country_event = {
+
+	id = 32304
+	major = yes
+	title = "EVTNAME32300"
+	desc = "EVTDESC32300"
+
+	trigger = {
+		tag = OIR
+		government = steppe_horde
+		OR = {
+			ADM = 6
+			DIP = 6
+			MIL = 6
+		}
+		num_of_cities = 12
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.9
+			ADM = 7
+		}
+		modifier = {
+			factor = 0.9
+			DIP = 7
+		}
+		modifier = {
+			factor = 0.9
+			MIL = 7
+		}
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32300"
+		government = despotic_monarchy
+		technology_group = chinese
+		unit_type = chinese
+		random_owned = {
+			base_tax = 1
+			change_manpower = 1
+		}
+		set_country_flag = settled_horde
+	}
+}
+
+#Oirats broken: Mongol Khanate annexed or <5 provinces
+country_event = {
+
+	id = 32305
+	major = yes
+	title = "EVTNAME32301"
+	desc = "EVTDESC32301"
+
+	trigger = {
+		tag = OIR
+		government = steppe_horde
+		OR = {
+			NOT = { num_of_cities = 5 }
+			NOT = { exists = KHA }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+
+		modifier = {
+			factor = 0.8
+			NOT = { num_of_cities = 15 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_cities = 5 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32301"
+		government = tribal_despotism
+		technology_group = chinese
+		unit_type = chinese
+		stability = -2
+		set_country_flag = settled_horde
+	}
+}
+
+#generic settling of hordes
+country_event = {
+
+	id = 32306
+
+	title = "EVTNAME32301"
+	desc = "EVTDESC32301"
+
+	trigger = {
+		government = steppe_horde
+		OR = {
+			any_neighbor_country = { has_country_flag = settled_horde }
+			year = 1545
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+
+		modifier = {
+			factor = 0.7
+			year = 1445
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32301"
+		government = tribal_despotism
+		technology_group = muslim
+		unit_type = muslim
+		set_country_flag = settled_horde
+	}
+}
+
+#settling of the American tribes
+country_event = {
+
+	id = 32307
+
+	title = "EVTNAME32307"
+	desc = "EVTDESC32307"
+
+	trigger = {
+		government = regular_horde
+		has_global_flag = colonial_seperatism
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 0.5
+			exists = USA
+		}
+		modifier = {
+			factor = 0.5
+			exists = CAN
+		}
+		modifier = {
+			factor = 0.5
+			exists = TEX
+		}
+		modifier = {
+			factor = 0.5
+			exists = VIN
+		}
+		modifier = {
+			factor = 0.5
+			exists = MEX
+		}
+		modifier = {
+			factor = 0.5
+			exists = MZU
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32301"
+		government = tribal_democracy
+	}
+}

@@ -1,0 +1,24 @@
+government = regular_horde
+aristocracy_plutocracy = 0
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 3
+offensive_defensive = 5
+land_naval = -3
+quality_quantity = 3
+serfdom_freesubjects = 4
+primary_culture = dakota
+religion = spiritualism
+technology_group = new_world
+capital = 907	# Dakota
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Black Elk I"
+		dynasty = "Dakhóta"
+		adm = 5
+		dip = 3
+		mil = 6
+	}
+}

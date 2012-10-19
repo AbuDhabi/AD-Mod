@@ -1,0 +1,66 @@
+# 96 Zeeland - Principal cities: Middelburg, Vlissingen & Zierikzee
+
+owner = HOL
+controller = HOL 
+capital = "Middelburg"
+citysize = 8000
+culture = dutch
+religion = catholic
+hre = yes
+base_tax = 10
+trade_goods = salt
+manpower = 3
+add_core = HOL
+fort1 = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = HOL
+		controller = HOL
+		citysize = 8000 }
+
+1428.7.3   = { owner = BUR controller = BUR add_core = BUR } # The Reconciliation of Delft
+1450.1.1   = { citysize = 9000 }
+1477.1.5   = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
+1500.1.1   = { citysize = 10000 }
+1519.1.14  = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
+1550.1.1   = { citysize = 13000 }
+1559.5.12  = { revolt_risk = 3 } # New bishoprics in the Lowlands create an outrage
+1565.1.1   = { revolt_risk = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
+1566.4.5   = { revolt_risk = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+1567.9.10  = { revolt_risk = 4 } # Counts of Egmont & Hoorne arrested
+1568.6.5   = { revolt_risk = 6 } # Counts of Egmont & Hoorne beheaded
+1569.1.1   = { revolt_risk = 12 } # The Duke of Alba reforms the taxation system ('tiende penning')
+1570.1.1   = { revolt_risk = 20 fort2 = yes } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1572.1.1   = { religion = reformed }
+1572.4.1   = { revolt_risk = 0 revolt = { type = nationalist_rebels size = 2 } controller = REB } # Dutch rebels take Den Briel
+1579.1.23  = { revolt = {} owner = NED controller = NED add_core = NED remove_core = SPA } # Union of Utrecht
+1595.1.1   = { courthouse = yes }
+1600.1.1   = { citysize = 27500 }
+1640.1.1   = { wharf = yes decision = support_local_shipbuilding } # Vlissingen is a significant port
+1648.10.24 = { hre = no } # The Peace of Westphalia
+1650.1.1   = { citysize = 40000 }
+1670.1.1   = { fort3 = yes }
+1681.1.1   = { base_tax = 6 } # Protestants expelled from France
+1700.1.1   = { marketplace = yes citysize = 35000 }
+1715.1.1   = { constable = yes }
+#1720.1.1   = { customs_house = yes }
+1730.1.1   = { tax_assessor = yes }
+1750.1.1   = { citysize = 36000 }
+1800.1.1   = { citysize = 42000 }
+1810.7.10  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+	     } # Annexed by France
+1813.11.30 = {	owner = NED
+		controller = NED
+		remove_core = RFR
+	     } # William returns to the Netherlands

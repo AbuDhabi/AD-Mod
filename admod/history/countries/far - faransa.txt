@@ -1,0 +1,22 @@
+government = merchant_republic
+aristocracy_plutocracy = 4
+centralization_decentralization = 4
+innovative_narrowminded = -3
+mercantilism_freetrade = 3
+offensive_defensive = 2
+land_naval = -1
+quality_quantity = -2
+serfdom_freesubjects = 3
+technology_group = muslim
+primary_culture = faransi
+religion = sunni
+capital = 191	#Nevers
+
+1399.10.1 = {
+	monarch = {
+		name = "Hammadi Kanu"
+		adm = 4
+		dip = 8
+		mil = 5
+	}
+}

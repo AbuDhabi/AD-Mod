@@ -1,0 +1,23 @@
+government = regular_horde
+aristocracy_plutocracy = -1
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 4
+offensive_defensive = 2
+land_naval = 1
+quality_quantity = 5
+serfdom_freesubjects = 5
+primary_culture = delaware
+religion = spiritualism
+technology_group = new_world
+capital = 957	# Delaware
+
+1384.1.1 = {
+	monarch = {
+		name = "Tewea I"
+		dynasty = "Manna-hata"
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}

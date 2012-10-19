@@ -1,0 +1,592 @@
+convert_ezochi_to_shintoism = {
+	
+	type = country
+
+	allow = {
+		culture_group = japan_group
+		religion = shinto
+		owns = 1031
+		1031 = { not = { religion = shinto } }
+		missionaries = 1
+#		not = { stability = 3 }
+	}
+	abort = {
+		or = {
+			not = { religion = shinto }
+			not = { owns = 1031 }
+#			stability = 3
+		}
+	}
+	success = {
+		1031 = { religion = shinto }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			dip = 7
+		}
+	}
+	effect = {
+		stability = 1
+		prestige = 0.01
+	}
+}
+
+conquer_southern_korea = {
+
+	type = country
+
+	allow = {
+		tag = JAP
+		is_subject = no
+		is_lesser_in_union = no
+		exists = KOR
+		not = { alliance_with = KOR }
+		KOR = {	
+			not = { num_of_cities = this }
+			is_subject = no
+			is_lesser_in_union = no
+			owns = 736		# Geyongsang
+			owns = 737		# Jeolla
+		}
+		KOR = {
+			neighbour = this
+			num_of_ports = 1
+		}
+	}
+	abort = {
+		or = {
+			not = { exists = KOR }
+			is_lesser_in_union = yes
+			is_subject = yes
+			KOR = {
+				or = {
+					is_lesser_in_union = yes
+					is_subject = yes
+					and = {
+						not = { num_of_ports = 1 }
+						not = { neighbour = this }
+					}
+				}
+			}	
+		}
+	}
+	success = {
+		owns = 736
+		owns = 737
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			not = { relation = { who = KOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_temp_claim = 736
+		add_temp_claim = 737
+	}
+	abort_effect = {
+		remove_temp_claim = 736
+		remove_temp_claim = 737
+	}
+	effect = {
+		prestige = 0.1
+	}
+}
+
+colonize_the_northern_islands = {
+	
+	type = country
+
+	allow = {
+		tag = JAP
+		1032 = { empty = yes }
+		1033 = { empty = yes }
+		colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		or = {
+			not = { num_of_ports = 1 }
+			and = {
+				not = { owns = 1032 }
+				not = { owns = 1033 }
+				1032 = { empty = no }
+				1033 = { empty = no }
+			}
+		}
+	}
+	success = {
+		owns = 1032
+		owns = 1033
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+	}
+	effect = {
+		add_core = 1032
+		add_core = 1033
+	}
+}
+
+monopolize_japanese_cot = {
+	
+	type = country
+
+	allow = {
+		tag = JAP
+		trade_tech = 15
+		merchants = 4
+		japanese_region = {
+			cot = yes
+			not = { placed_merchants = 6 }
+		}
+		not = { last_mission = monopolize_japanese_cot }
+	}
+	abort = {
+		not = { japanese_region = { cot = yes } }
+	}
+	success = {
+		japanese_region = {
+			cot = yes
+			placed_merchants = 6
+		}		
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			idea = national_trade_policy
+		}	
+	}
+	effect = {
+		treasury = 50
+		merchants = 5
+	}
+}
+
+establish_footholding_in_manchuria = {
+
+	type = country
+	
+	allow = {
+		tag = JAP
+		exists = MCH
+		is_lesser_in_union = no
+		is_subject = no
+		MCH = {
+			is_lesser_in_union = no
+			is_subject = no
+		}
+		not = { manchuria = { owned_by = JAP } }
+		MCH = {
+			neighbour = this
+			num_of_ports = 1
+		}
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+			MCH = {
+				or = {
+					is_lesser_in_union = yes
+					is_subject = yes
+					and = {
+						not = { neighbour = this }
+						not = { num_of_ports = 1 }
+					}
+				}
+			}	
+		}
+	}
+	success = {
+		manchuria = { owned_by = JAP }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			not = { relation = { who = MCH value = 0 } }
+		}
+	}
+	immediate = {
+		manchuria = {
+			add_temp_claim = THIS
+		}
+	}
+	abort_effect = {
+		manchuria = {
+			remove_temp_claim = THIS
+		}
+	}
+	effect = {
+		prestige = 0.06
+		add_core = 726		# Shenyang
+	}
+}
+
+#########################################
+#New stuff starts here
+#########################################
+
+conquest_of_settsu = {
+	
+	type = country
+
+	allow = {
+		culture_group = japan_group
+		war = no
+		or = {
+			owns = 1016	# Shikoku
+			owns = 1019	# Harima
+			owns = 1020	# Yamashiro
+			owns = 1022	# Kii
+		}
+		not = { owns = 1021 }	# Settsu
+		is_subject = no
+		is_lesser_in_union = no
+	}
+	abort = {
+		or = {
+			is_subject = yes
+			is_lesser_in_union = yes
+		}	
+	}
+	success = {
+		owns = 1021
+	}
+	chance = {
+		factor = 500
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 9
+		}
+	}
+	immediate = {
+		add_temp_claim = 1021
+	}
+	abort_effect = {
+		remove_temp_claim = 1021
+	}
+	effect = {
+		treasury = 50
+		add_core = 1021
+	}
+
+}
+
+conquest_of_ezochi = {
+	
+	type = country
+
+	allow = {
+		culture_group = japan_group
+		land_tech = 4
+		not = { tag = AIN }
+		not = { tag = RYU }
+		war = no
+		owns = 1026			# Mutso
+		not = { owns = 1031 }		# Hokkaido/Ezochi
+		1031 = { owned_by = AIN }
+		is_subject = no
+		is_lesser_in_union = no
+	}
+	abort = {
+		or = {
+			is_subject = yes
+			is_lesser_in_union = yes
+			not = { 1031 = { owned_by = AIN } }
+			not = { owns = 1026 }
+		}	
+	}
+	success = {
+		owns = 1031
+	}
+	chance = {
+		factor = 300
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 9
+		}
+	}
+	immediate = {
+		add_temp_claim = 1031
+	}
+	abort_effect = {
+		remove_temp_claim = 1031
+	}
+	effect = {
+		add_core = 1031
+	}
+
+}
+
+conquest_of_okinawa = {
+	
+	type = country
+
+	allow = {
+		culture_group = japan_group
+		naval_tech = 4
+		num_of_ports = 1
+		NOT = { tag = AIN }
+		NOT = { tag = RYU }
+		war = no
+		not = { owns = 1015 }		# Okinawa
+		1015 = { owned_by = RYU }
+		is_subject = no
+		is_lesser_in_union = no
+	}
+	abort = {
+		or = {
+			is_subject = yes
+			is_lesser_in_union = yes
+			not = { 1015 = { owned_by = RYU } }
+			not = { num_of_ports = 1 }
+		}	
+	}
+	success = {
+		owns = 1015
+	}
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 9
+		}
+	}
+	immediate = {
+		add_temp_claim = 1015
+	}
+	abort_effect = {
+		remove_temp_claim = 1015
+	}
+	effect = {
+		missionaries = 2
+	}
+
+}
+
+conquest_of_kyushu = {
+
+	type = country
+
+	allow = {
+		culture_group = japan_group
+		naval_tech = 4
+		land_tech = 4
+		num_of_ports = 1
+		war = no
+		NOT = {
+			owns = 1012	# Satsuma
+			owns = 1013	# Hizen
+			owns = 1014	# Bungo
+		}
+		is_subject = no
+		is_lesser_in_union = no
+	}
+	abort = {
+		or = {
+			is_subject = yes
+			is_lesser_in_union = yes
+			not = { num_of_ports = 1 }
+		}	
+	}
+	success = {
+		AND = {
+			owns = 1012
+			owns = 1013
+			owns = 1014
+		}
+	}
+	chance = {
+		factor = 200
+		modifier = {
+			factor = 2
+			mil = 7
+		}
+		modifier = {
+			factor = 2
+			mil = 9
+		}
+	}
+	immediate = {
+		add_temp_claim = 1012
+		add_temp_claim = 1013
+		add_temp_claim = 1014
+	}
+	abort_effect = {
+		remove_temp_claim = 1012
+		remove_temp_claim = 1013
+		remove_temp_claim = 1014
+	}
+	effect = {
+		treasury = 50
+		merchants = 1
+		add_core = 1012
+		add_core = 1013
+		add_core = 1014
+	}
+
+}
+
+discover_kurils = {
+
+	type = country
+	
+	allow = {
+		culture_group = japan_group
+		owns = 1031
+		war = no
+		naval_tech = 4
+		not = { 1032 = { has_discovered =  this } }
+	}
+	abort = {
+		not = { owns = 1031 }
+	}
+	success = {
+		1386 = { units_in_province = this }
+	}
+	chance = {
+		factor = 300
+	}
+	effect = {
+		1032 = { discover = yes }
+		1441 = { discover = yes }
+	}
+}
+
+ainu_ryuku_relations = {
+	
+	type = country
+
+	allow = {
+		tag = AIN
+		religion = animism
+		exists = RYU
+		not = { war_with = RYU }
+		not = { marriage_with = RYU }
+		is_lesser_in_union = no
+		is_subject = no
+		government = monarchy
+		RYU = {
+			religion = animism
+			government = monarchy
+			is_lesser_in_union = no
+			is_subject = no
+		}
+	}
+	abort = {
+		or = {
+			war_with = RYU
+			is_lesser_in_union = yes
+			is_subject = yes
+			not = { religion = animism }
+			not = { government = monarchy }
+			RYU = {
+				or = {
+					not = { religion = animism }
+					not = { government = monarchy }
+					is_lesser_in_union = yes
+					is_subject = yes
+				}	
+			}
+		}
+	}
+	success = {
+		marriage_with = RYU
+		relation = { who = RYU value = 50 }
+	}
+	chance = {
+		factor = 300
+		modifier = {
+			factor = 2
+			not = { relation = { who = RYU value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			not = { relation = { who = RYU value = -100 } }
+		}
+	}
+	effect = {
+		stability = 1
+		legitimacy = 0.10
+	}
+}
+
+ryuku_ainu_relations = {
+	
+	type = country
+
+	allow = {
+		tag = RYU
+		religion = animism
+		exists = AIN
+		not = { war_with = AIN }
+		not = { marriage_with = AIN }
+		is_lesser_in_union = no
+		is_subject = no
+		government = monarchy
+		AIN = {
+			religion = animism
+			government = monarchy
+			is_lesser_in_union = no
+			is_subject = no
+		}
+	}
+	abort = {
+		or = {
+			war_with = AIN
+			is_lesser_in_union = yes
+			is_subject = yes
+			not = { religion = animism }
+			not = { government = monarchy }
+			AIN = {
+				or = {
+					not = { religion = animism }
+					not = { government = monarchy }
+					is_lesser_in_union = yes
+					is_subject = yes
+				}	
+			}
+		}
+	}
+	success = {
+		marriage_with = AIN
+		relation = { who = AIN value = 50 }
+	}
+	chance = {
+		factor = 300
+		modifier = {
+			factor = 2
+			not = { relation = { who = AIN value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			not = { relation = { who = AIN value = -100 } }
+		}
+	}
+	effect = {
+		stability = 1
+		legitimacy = 0.10
+	}
+}

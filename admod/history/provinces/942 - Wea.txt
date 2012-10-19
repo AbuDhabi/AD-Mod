@@ -1,0 +1,50 @@
+#942 - Wea
+
+owner = SHA
+controller = SHA
+culture = delaware 
+religion = spiritualism
+capital = "Wea" 
+trade_goods = fur
+hre = no 
+base_tax = 2
+manpower = 1
+citysize = 1500
+add_core = SHA
+discovered_by = SHA
+discovered_by = CHE
+discovered_by = CRE
+
+1450.1.1  = { citysize = 1750 }
+1500.1.1  = { citysize = 1980 }
+1550.1.1  = { citysize = 2640 }
+1600.1.1  = { citysize = 3240 }
+1650.1.1  = { citysize = 3980 }
+1670.1.1  = { discovered_by = FRA } # René-Robert Cavelier claimed the territory
+1700.1.1  = { citysize = 4335 }
+1732.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+	    } # French settlers
+1750.1.1  = {	discovered_by = GBR
+		add_core = LOU
+		citysize = 4980
+	    } # Thomas Walker
+1757.1.1  = { add_core = FRA }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		religion = protestant
+		culture = english
+		remove_core = FRA
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1763.3.1  = { revolt_risk = 6 } # Native discontent with the British rule
+1763.5.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Pontiac's war
+1764.6.1  = { revolt = {} controller = GBR revolt_risk = 0 } # Peace negotiations
+1774.1.1  = { add_core = QUE } # The Quebec Act of 1774, the boundaries are extended
+1783.9.3  = {	owner = USA
+		add_core = USA
+		remove_core = QUE
+	    } # Treaty of Paris, ceded to the United States. Resistance from the Native Americans & the British
+1794.1.1  = { controller = USA } # American victory at Fallen Timbers
+1800.1.1  = { citysize = 5255 }

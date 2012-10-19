@@ -1,0 +1,26 @@
+#1022 - Kii
+
+owner = TAI
+controller = TAI
+culture = yamato
+religion = shinto
+capital = "Kii"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 8900
+add_core = TAI
+fort1 = yes
+discovered_by = chinese
+
+1450.1.1 = { citysize = 9400 }
+1500.1.1 = { citysize = 10050 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 11980 }
+1582.1.1 = { owner = MIN controller = MIN add_core = MIN }
+1600.1.1 = { citysize = 12377 }
+1650.1.1 = { citysize = 14300 }
+1700.1.1 = { citysize = 15405 }
+1750.1.1 = { citysize = 17645 }
+1800.1.1 = { citysize = 19880 }

@@ -1,0 +1,42 @@
+#846 - Yucatan
+
+owner = MAY 
+controller = MAY 
+culture = mayan 
+religion = teotl
+capital = "Mayapan" 
+trade_goods = fish 
+hre = no 
+base_tax = 2 
+manpower = 1 
+citysize = 1500
+add_core = MAY 
+temple = yes
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 1770 }
+1500.1.1  = { citysize = 1980 }
+1517.1.1  = { discovered_by = SPA } # Francisco Hernandez de Cordoba
+1542.1.1  = {	owner = SPA 
+		controller = SPA 
+		capital = "Mérida"
+		religion = catholic
+		culture = castillian 
+ 		citysize = 2277 
+	    } # Invaded by Spanish troops, capital founded by Montejo 
+1545.1.1  = { revolt_risk = 4 } 
+1546.1.1  = { revolt_risk = 6 } # Major Mayan rebellion is brutally crushed 
+1550.1.1  = { citysize = 2940 } # Tutul Xiu's earlier convertion to Catholism assisted in the conquest of the area 
+1561.1.1  = { fort1 = yes revolt_risk = 3 } 
+1565.1.1  = { revolt_risk = 0 }
+1567.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 3400 } 
+1650.1.1  = { citysize = 4540 } 
+1700.1.1  = { citysize = 5005 } 
+1750.1.1  = { citysize = 6340 add_core = MEX } 
+1761.1.1  = { revolt_risk = 6 } # Natives revolt against Spanish rule, led by CapEk 
+1763.1.1  = { revolt_risk = 0 } 
+1800.1.1  = { citysize = 7400 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

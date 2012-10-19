@@ -1,0 +1,163 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 145  0 0 }
+
+historical_ideas = {
+	bill_of_rights
+	superior_seamanship
+	quest_for_the_new_world
+	excellent_shipwrights
+	merchant_adventures
+	colonial_ventures
+	land_of_opportunity
+	press_gangs
+	national_bank
+	ecumenism
+	smithian_economics
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"James #0" = 60
+	"Robert #2" = 20
+	"Alexander #3" = 0
+	"Malcom #4" = 1
+	"Donald #3" = 1
+	"David #2" = 1
+	"Duncan #2" = 1
+	"George #0" = 30
+	"Anne #0" = -15
+	"Frederick #0" = 15
+	"Edward #5" = 10
+	"William #3" = 10
+	"Alfred #1" = 10
+	"Augustus #0" = 10
+	"Frederick #0 William" = 10
+	"Maximilian #0" = 10
+	"Octavius #0" = 10
+	"Henry #8" = 5
+	"Richard #3" = 5
+	"Charles #2" = 5
+	"Arthur #0" = 10
+	"Mary #1" = -10
+	"Stuart #0" = 10
+	"Adam #0" = 0
+	"Ambrose #0" = 0
+	"Andrew #0" = 0
+	"Anthony #0" = 0
+	"Archibald #0" = 0
+	"Arthur #0" = 0
+	"Benjamin #0" = 0
+	"Christian #0" = 0
+	"Christopher #0" = 0
+	"Daniel #0" = 0
+	"David #0" = 0
+	"Edgar #0" = 0
+	"Francis #0" = 0
+	"Geoffrey #0" = 0
+	"Guy #0" = 0
+	"Horatio #0" = 0
+	"Hugh #0" = 0
+	"Isaac #0" = 0
+	"Jeremy #0" = 0
+	"Jonathan #0" = 0
+	"John #1" = 5
+	"Joseph #0" = 0
+	"Lawrence #0" = 0
+	"Matthew #0" = 0
+	"Oliver #0" = 0
+	"Samuel #0" = 0
+	"Thomas #0" = 0
+	"Andrea #0" = 0
+	"Alan #0" = 0
+	"Barclay #0" = 0
+	"Beathan #0" = 0
+	"Bruce #0" = 0
+	"Cameron #0" = 0
+	"Cináed #0" = 0
+	"Conall #0" = 0
+	"Douglas #0" = 0
+	"Duff #0" = 0
+	"Edan #0" = 0
+	"Evander #0" = 0
+	"Fraser #0" = 0
+	"Glen #0" = 0
+	"Ian #0" = 0
+	"Keir #0" = 0
+	"Kennedy #0" = 0
+	"Lennox #0" = 0
+	"Logan #0" = 0
+	"Micheil #0" = 0
+	"Munroe #0" = 0
+	"Scott #0" = 0
+	"Wallace #0" = 0
+}
+
+leader_names = {
+	Adam Albemarle Alexander Amherst Anson
+	Buckingham Braddock Byron Burgoyne Beresford Brock Benbow Blake Bedford Boscawen Baffin Button Bruce Beaton Boyd
+	Cameron Campbell Cochrane Crichton Cunynghame Crawford Carnegie Colyear Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook Churchill
+	Douglas Duncan "de Dunbar" Dalzell Drummond Dampier Davis Drake
+	Erskine Essex
+	Forbes Ferguson Fletcher Fleming Fairfax Frobisher
+	Gordon Graham Gilchrist Gloucester Gilbert
+	Hume Hepburn Hamilton Howe Howard Herbert Hawke Hood Hastings Hudson
+	Knox Keith Kerr
+	Law Leslie Livingston Lindsay Leicester
+	MacKenzie MacDonald MacGregor Malise MacTaggart Montgomerie Maxwell Murray Maitland Middleton Moore
+	Northumberland Norfolk Nasmyth
+	Ogilvy
+	Procter Playfair Paterson
+	Raeburn Randolph Ruthven Rooke Rodney Raleigh
+	Salisbury Somerset Suffolk Saunders Smith Selkirk Sinclair Stewart Seton
+	Talbot Tarleton
+	Uxbridge
+	Warwick Wolfe Wilkie Wishart Wemyss
+	York
+}
+
+ship_names = {
+        Achille Adventure Ajax Albemarle Alexander "Anne Gallant" Antelope "Ark Royal" Assurance Audacious
+        Bear Bellerophon Bonaventure Boyne Britannia Buckingham
+        Charles Christ Constant Convertine Culloden Cumberland
+        Defence Defiance Destiny Dragon Dreadnought
+        "Edward Howard" Elizabeth Eltham Essex Expedition
+        Foresight Foudroyant
+        "Gabriel Royal" Garland George Gibraltar Gloucester Goliath "Grace Dieu" Grafton "Grand Mistress" "Great Barbara" "Great Bark" "Great Elizabeth" "Great Harry" "Great Nicholas" Guernsey
+        Haarlem "Happy Entrance" Hector "Henrietta Maria" Hope
+        James "John Baptist"
+        "Katherine Forteleza" Kent
+        Leander Leopard Lion
+        Majestic Margaret Mary "Mary Rose" Mercury Merhonour Michael Minion Minotaur 
+        Nonpareil Nonsuch Northumberland Nottingham
+        Orion
+        Peter Providence "Prince Frederick"
+        "Queen Charlotte"
+        Rainbow "Red Lion" Regent Renown Repulse Revenge "Royal Anne" "Royal Charles" "Royal Prince" 
+        "Scourge of Malice" Sovereign "Sovereign o the Seas" "St Andrew" "St Esprit" "St George" "St Matthew" Suffolk Superb Swallow Swiftsure 
+        Theseus Tigre Tramontana Triumph
+        Unicorn Union
+        Vanguard Victory
+        Warspite Worcester
+}

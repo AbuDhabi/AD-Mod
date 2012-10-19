@@ -1,0 +1,12 @@
+name = "Austrian Skirmish"
+casus_belli = cb_disloyal_vassal
+
+1390.1.1 = {
+	add_attacker = HAB
+	add_defender = STY
+}
+
+1396.1.1 = {
+	rem_attacker = HAB
+	rem_defender = STY
+}

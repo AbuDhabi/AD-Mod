@@ -1,0 +1,12 @@
+# British Hussar
+# land 56
+type = cavalry
+unit_type = western
+
+maneuver = 2
+offensive_morale = 10
+defensive_morale = 11
+offensive_fire = 8
+defensive_fire = 9
+offensive_shock = 9
+defensive_shock = 9

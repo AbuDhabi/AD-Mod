@@ -1,0 +1,83 @@
+#Hawaii
+
+graphical_culture = northamericagfx
+
+color = { 60  219  122 }
+
+historical_ideas = {
+	press_gangs
+	merchant_adventures
+	shrewd_commerce_practise
+	national_trade_policy
+	military_drill
+	humanist_tolerance
+	superior_seamanship
+	ecumenism	
+	smithian_economics
+	bill_of_rights
+	bureaucracy
+	glorious_arms
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Kamehameha #0" = 60
+	"Lunalilo #0" = 15
+	"Kalakaua #0" = 15
+	"Lili'uokalani #0" = -15
+	"Ka'ahumanu #0" = -10
+	"Kalanikupuapaikalaninui #0" = 10
+	"Kalokuokamaile #0" = 10
+	"Kaoleioku #0" = 10
+	"Kealiimaikai #0" = 10
+	"Kamamalu #0" = -5
+	"Kaumuali'i #0" = 5
+	"Kekuaokalani #0" = 5
+	"Kinau #0" = -5
+	"Konia #0" = -5
+	"Pauahi #0" = -5
+	"Boki #0" = 0
+	"Hapurona #0" = 0
+	"Hauraki #0" = 0
+	"Hone #0" = 0
+	"Koroki #0" = 0
+	"Liholiho #0" = 0
+	"Mahuta #0" = 0
+	"Mataio #0" = 0
+	"Naukane #0" = 0
+	"Pokikake #0" = 0
+	"Potatau #0" = 0
+	"Tamati #0" = 0
+	"Tawhiao #0" = 0
+	"Tuheitia #0" = 0
+	"Tupara #0" = 0
+	"Tupari #0" = 0
+	"Whakaawi #0" = 0
+	"Wiremu #0" = 0
+}
+
+leader_names = {
+	"'Iolani"
+	Ahilapalapa
+	Kahekili Kaiwikapu Kalani Kauikawekiu Kauinamoku Keali'i Keaweawe'ula Kiwala'o
+	La'amea
+	Mamao
+}
+
+ship_names = {
+	Haleakala Hawai'i Hilo Honolulu
+	Ka'ala Kaho'olawe Kahului Kaua'i
+	Lana'i Lihu'e
+	Maui "Mauna Kea" Moloka'i
+	Ni'ihau
+	O'ahu
+}

@@ -1,0 +1,159 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 35  116  112 }
+
+historical_ideas = {
+	land_of_opportunity
+	patron_of_art
+	national_bank
+	colonial_ventures
+	bill_of_rights
+	shrewd_commerce_practise
+	engineer_corps
+	quest_for_the_new_world
+	superior_seamanship
+	smithian_economics
+	napoleonic_warfare
+	liberty_egalite_fraternity
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Ahmad #0" = 20
+	"'Abdallâh #0" = 20
+	"'Abd al-Malik #0" = 20
+	"'Alî #0" = 20
+	"'Uthmân #2" = 20
+	"'Abd al-Haqq #1" = 20
+	"Isma'îl #1" = 20
+	"Yahyâ #1" = 20
+	"'al-Walîd #0" = 20
+	"al-Mustadî #0" = 20
+	"Al-Mukhtar #0" = 20
+	"al-Rashîd #0" = 20
+	"Al-Hajj #0" = 20
+	"Bakr #0" = 20
+	"Hishâm #0" = 20
+	"Idrîsid #0" = 20
+	"Sulaymân #0" = 20
+	"Zaydân #0" = 20
+	"Zayn #0" = 20
+	"'Abd ar-Rahmân #0" = 15
+	"al-Yazîd #0" = 15
+	"Mansur #0" = 15
+	"Muhraz #0" = 15
+	"Nasir #0" = 15
+	"Aisha #0" = -10
+	"Abû Faris #0" = 10
+	"Abbas #0" = 10
+	"Abû Merwan #0" = 10
+	"al-Talib #0" = 10
+	"Hammada #0" = 10
+	"Hasam #0" = 10
+	"Hashim #0" = 10
+	"Ibrahim #0" = 10
+	"Ja'far #0" = 10
+	"Maimun #0" = 10
+	"Maslama #0" = 10
+	"Muhammad #0" = 10
+	"Rayhana #0" = -10
+	"Said #0" = 10
+	"Umar #0" = 10
+	"Yûsuf #0" = 10
+	"Dan Halima #0" = 10
+	"Dan Bako #0" = 10
+	"Ataullah #0" = 0
+	"Jabril #0" = 0
+	"Rasul #0" = 0
+	"Zulfiqar #0" = 0
+	"Majan #0" = 0
+	"Birahim #0" = 0
+	"'Ali #0" = 0
+	"Amada Sire #0" = 0
+	"Nguia #0" = 0
+	"Hammadi #0" = 0
+	"Bubu #0" = 0
+	"Ilo #0" = 0
+	"Kanta #0" = 0
+	"Al-Mansur #0" = 0
+	"'Ammar #0" = 0
+	"Sa'ud 'Arjud #0" = 0
+	"Haddu #0" = 0
+	"Sa'id #0" = 0
+	"Dhu al-Nun #0" = 0
+	"'Abd Allah #0" = 0
+	"Nasr #0" = 0
+	"Yahya #0" = 0
+	"Sanibar #0" = 0
+	"Hammadi #0" = 0
+	"'Abbas #0" = 0
+	"Benkano #0" = 0
+	"Zenka #0" = 0
+	"Mami #0" = 0
+	"Ba-Bakribin #0" = 0
+	"'Abd al-Qadir #0" = 0
+	"Yusuf #0" = 0
+	"Santa'a #0" = 0
+	"Al-Fa' Ibrahim #0" = 0	
+	"Sandaki #0" = 0
+}
+
+leader_names = {
+	Sahiri
+	Haida
+	Sellami
+	Arazi
+	Berui
+	Lahsini
+	Skah
+	Barek
+	Alami
+	Behar
+	Konare
+	Deo
+	Keita
+	Traoré
+	Toure
+	Diarra
+	Moussa
+	Modibo
+	Amadou
+	Toumani
+	Saibou
+	Bakara
+	Mamami
+	Kountché
+	Diore
+	Balewa
+	Aluko
+	Bandele
+	Kanu
+	Kuti
+}
+
+ship_names = {
+	Tawwab Muntaqim Afuww Fa'uf "Malik Mulk"
+	"Jalal Ikram" Muqsit Jami Ghani Mughni
+	Mani Darr Nafi Nur Hadi Badi Baqi Warith
+	Rashid Sabur "Fazl Azim"
+	Kiringa "New Timbuktu" "Koumbi Saleh" Gao
+	Jenne "Sundiata Keita" "Kankan Musa"
+	"Kouroukan Fouga" "Wali Keita" "Quati Keita"
+	"Khalifa Keita" Sakura
+	Iska Sama Hazo Gajimare "Babban Dutse"
+	Teku Rairayi Rana Wata Tauraro Ruwa
+	Itace Saiwa Fure
+	Actif Brave Dauphin Fantasque Illustre Royale Robuste
+	Sceptre Terrible Triomphant Union Zodiaque 
+}

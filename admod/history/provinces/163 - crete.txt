@@ -1,0 +1,69 @@
+#163 - Crete
+
+owner = VEN
+controller = VEN
+culture = greek
+religion = orthodox
+capital = "Heraklion"
+trade_goods = fish
+hre = no
+base_tax = 5
+manpower = 3
+citysize = 7350
+fort1 = yes
+add_core = VEN
+add_core = CRT
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.1.1  = { add_core = BYZ }
+
+#Black Death
+1399.10.11 = {	owner = CRT
+		controller = CRT }
+
+#Nevermind
+1399.10.12 = {	owner = VEN
+		controller = VEN }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = CRT
+		controller = CRT
+		remove_core = VEN
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = VEN
+		controller = VEN
+		add_core = VEN
+		religion = orthodox }
+
+1450.1.1  = { citysize = 8150 }
+1470.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Cretan rebellion against Venetian rule
+1471.1.1  = { revolt = {} controller = VEN } # Estimated
+1500.1.1  = { citysize = 8300 marketplace = yes }
+1502.1.1  = { remove_core = BYZ }
+1550.1.1  = { citysize = 8980 }
+1555.1.1  = { revolt_risk = 5 } # General discontent with the Janissaries' dominance
+1556.1.1  = { revolt_risk = 0 }
+1570.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Cretan rebellion against Venetian rule
+1571.1.1  = { revolt = {} constable = yes }
+1580.1.1  = { fort2 = yes } # Rethymnon
+1600.1.1  = { citysize = 9006 }
+1629.1.1  = { fort3 = yes } # Fort Firkas
+1650.1.1  = { citysize = 8670 }
+1669.9.26 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+		remove_core = VEN
+	    }
+1690.1.1  = { base_tax = 3 } #The Decentralizing Effect of the Provincial System
+1692.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Insurrection
+1693.1.1  = { revolt = {} controller = TUR } # Estimated
+1700.1.1  = { citysize = 10510 }
+1750.1.1  = { citysize = 11540 add_core = GRE }
+1770.3.9  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Revolutionary government
+1770.6.1  = { revolt = {} controller = TUR }
+1800.1.1  = { citysize = 12380 }

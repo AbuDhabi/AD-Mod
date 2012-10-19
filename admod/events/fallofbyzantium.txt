@@ -1,0 +1,308 @@
+#events 20100 - 21010
+#####################################
+# Byzantine exile to Morea
+#####################################
+country_event = {
+
+	id = 20100
+
+	major = yes
+
+	title = "EVTNAME20100"
+	desc = "EVTDESC20100"
+
+	trigger = {
+		tag = BYZ
+		war = yes
+		capital = 151	# Thrace
+		151 = { NOT = { controlled_by = owner } }			
+		owns = 145	# Morea
+		num_of_cities = 2
+		NOT = { num_of_cities = 4 }
+		NOT = { prestige = -0.10 }
+		war_exhaustion = 6
+	}
+
+	mean_time_to_happen = {
+		months = 11
+
+		modifier = {
+			factor = 0.6
+			war_exhaustion = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20100"
+		ai_chance = { factor = 80 }
+		capital = 145
+	}
+	option = {
+		name = "EVTOPTB20100"
+		ai_chance = { factor = 20 }
+		war_exhaustion = 2
+		prestige = 0.10
+	}
+}
+
+#####################################
+# Byzantine exile to Achaea
+#####################################
+country_event = {
+
+	id = 20101
+
+	major = yes
+
+	title = "EVTNAME20101"
+	desc = "EVTDESC20100"
+
+	trigger = {
+		tag = BYZ
+		war = yes
+		capital = 151	# Thrace
+		151 = { NOT = { controlled_by = owner } }
+		owns = 1773	# Achaea
+		num_of_cities = 2
+		NOT = { num_of_cities = 4 }
+		NOT = { prestige = -0.10 }
+		war_exhaustion = 6
+	}
+
+	mean_time_to_happen = {
+		months = 13
+
+		modifier = {
+			factor = 0.6
+			war_exhaustion = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20100"
+		ai_chance = { factor = 80 }
+		capital = 1773
+	}
+	option = {
+		name = "EVTOPTB20100"
+		ai_chance = { factor = 20 }
+		war_exhaustion = 2
+		prestige = 0.10
+	}
+}
+
+#####################################
+# Byzantine exile to Crete
+#####################################
+country_event = {
+
+	id = 20102
+
+	major = yes
+
+	title = "EVTNAME20102"
+	desc = "EVTDESC20100"
+
+	trigger = {
+		tag = BYZ
+		war = yes
+		capital = 151	# Thrace
+		151 = { NOT = { controlled_by = owner } }
+		owns = 163	# Crete
+		num_of_cities = 2
+		NOT = { num_of_cities = 4 }
+		NOT = { prestige = -0.10 }
+		war_exhaustion = 6
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			war_exhaustion = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20100"
+		ai_chance = { factor = 80 }
+		capital = 163
+	}
+	option = {
+		name = "EVTOPTB20100"
+		ai_chance = { factor = 20 }
+		war_exhaustion = 2
+		prestige = 0.10
+	}
+}
+
+#####################################
+# Byzantine exile to Cyprus
+#####################################
+country_event = {
+
+	id = 20103
+
+	major = yes
+
+	title = "EVTNAME20103"
+	desc = "EVTDESC20100"
+
+	trigger = {
+		tag = BYZ
+		war = yes
+		capital = 151	# Thrace
+		151 = { NOT = { controlled_by = owner } }
+		owns = 321	# Cyprus
+		num_of_cities = 2
+		NOT = { num_of_cities = 4 }
+		NOT = { prestige = -0.10 }
+		war_exhaustion = 6
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			war_exhaustion = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA20100"
+		ai_chance = { factor = 80 }
+		capital = 321
+	}
+	option = {
+		name = "EVTOPTB20100"
+		ai_chance = { factor = 20 }
+		war_exhaustion = 2
+		prestige = 0.10
+	}
+}
+
+#####################################
+# Byzantine retagged to Morea
+#####################################
+country_event = {
+
+	id = 20105
+
+	title = "EVTNAME20105"
+	desc = "EVTDESC20105"
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = MOE }
+		NOT = { num_of_cities = 2 }
+		owns = 145	# Morea
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA20105"
+		prestige = -0.05
+		change_tag = MOE
+		MOE = {
+			government = despotic_monarchy
+		}
+	}
+}
+
+#####################################
+# Byzantine retagged to Achaea
+#####################################
+country_event = {
+
+	id = 20106
+
+	title = "EVTNAME20105"
+	desc = "EVTDESC20105"
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = ACH }
+		NOT = { num_of_cities = 2 }
+		owns = 1773	# Achaea
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA20105"
+		prestige = -0.05
+		change_tag = ACH
+		ACH = {
+			government = despotic_monarchy
+		}
+	}
+}
+
+#####################################
+# Byzantine retagged to Crete
+#####################################
+country_event = {
+
+	id = 20107
+
+	title = "EVTNAME20105"
+	desc = "EVTDESC20105"
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = CRT }
+		NOT = { num_of_cities = 2 }
+		owns = 163	# Crete
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA20105"
+		prestige = -0.05
+		change_tag = CRT
+		CRT = {
+			government = despotic_monarchy
+		}
+	}
+}
+
+#####################################
+# Byzantine retagged to Cyprus
+#####################################
+country_event = {
+
+	id = 20108
+
+	title = "EVTNAME20105"
+	desc = "EVTDESC20105"
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = CYP }
+		NOT = { num_of_cities = 2 }
+		owns = 321	# Cyprus
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA20105"
+		prestige = -0.05
+		change_tag = CYP
+		CYP = {
+			government = despotic_monarchy
+		}
+	}
+}

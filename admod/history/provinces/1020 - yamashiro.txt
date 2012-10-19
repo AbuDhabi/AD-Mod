@@ -1,0 +1,41 @@
+#1020 - Kyoto
+
+owner = JAP
+controller = JAP
+culture = yamato
+religion = shinto
+capital = "Kyoto"
+trade_goods = grain
+hre = no
+base_tax = 7
+manpower = 3
+citysize = 50100
+cot = yes
+add_core = JAP
+fort1 = yes
+discovered_by = chinese
+temple = yes
+
+1450.1.1   = { citysize = 52500 }
+1466.11.1  = { revolt_risk = 5 } #Yamana and Hosokawa position troops outside Kyoto
+1467.1.14  = { revolt_risk = 10 } #Yamana and Hosokawa move troops inside Kyoto
+1467.5.20  = {	
+	revolt_risk = 0
+	base_tax = 5
+	temple = no
+	revolt = { type = ikko_ikkis size = 3 } controller = REB } # Onin War starts, Kyoto is where fighting occurs
+1477.12.16 = { revolt = {} controller = JAP } #Ouchi lays down his arms
+1480.1.1   = { base_tax = 6 revolt_risk = 1 } # Barriers reconstructed around Kyoto and opposition to them
+1481.1.1   = { revolt_risk = 0 }
+1489.1.1   = { temple = yes } # Jishoji Temple
+1500.1.1   = { citysize = 55800 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { citysize = 59700 }
+1587.1.1   = { fort2 = yes } # Jurakudai Palace
+1595.1.1   = { fort2 = no } # Dismamtling Jurakudai Palace
+1600.1.1   = { citysize = 62310 }
+1603.1.1   = { fort2 = yes } # Nijo Castle
+1650.1.1   = { citysize = 64234 }
+1700.1.1   = { citysize = 66320 }
+1750.1.1   = { citysize = 68750 }
+1800.1.1   = { citysize = 70005 }

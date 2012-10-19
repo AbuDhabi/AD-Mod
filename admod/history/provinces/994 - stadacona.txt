@@ -1,0 +1,38 @@
+#994 - Stadacona
+
+culture = huron
+religion = spiritualism
+capital = "Stadacona"
+trade_goods = unknown
+hre = no
+base_tax = 5
+manpower = 3
+native_size = 5
+native_ferocity = 1
+native_hostileness = 6
+
+1535.1.1  = { discovered_by = FRA } # Jacques Cartier
+1608.7.3  = {	owner = FRA
+		controller = FRA		
+		citysize = 1200
+		capital = "Québec"
+		cot = yes
+		culture = cosmopolitan_french
+		religion = catholic
+		marketplace = yes
+		trade_goods = naval_supplies
+	    } 
+1629.7.16 = { controller = ENG } # Conquered by the British
+1632.3.29 = { controller = FRA } # Treaty of St. Germain-en-Layne, handed back to the French
+1633.1.1  = { add_core = FRA }
+1650.1.1  = { citysize = 1880 }
+1700.1.1  = { citysize = 2500 }
+1750.1.1  = { citysize = 3410 add_core = CAN }
+1760.1.1  = { controller = GBR } # The government of New France capitulate at Montreal
+1763.2.10 = {	owner = GBR
+		remove_core = FRA
+	    } # Treaty of Paris - ceded to the British
+1763.10.7 = { add_core = QUE remove_core = CAN } # Royal Proclamation, the province is renamed
+1788.2.10 = { add_core = GBR }
+1791.1.1  = { add_core = CAN remove_core = QUE } # The Constitutional Act, Quebec is split into upper & lower Canada
+1800.1.1  = { citysize = 6000 }

@@ -1,0 +1,12 @@
+government = revolutionary_republic
+aristocracy_plutocracy = -4
+centralization_decentralization = -1
+innovative_narrowminded = 0
+mercantilism_freetrade = 0
+offensive_defensive = 1
+land_naval = 1
+quality_quantity = 3
+serfdom_freesubjects = 3
+technology_group = western
+primary_culture = jadlagribi
+religion = sunni

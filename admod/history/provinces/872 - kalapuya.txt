@@ -1,0 +1,20 @@
+#872 - Kalapuya
+
+culture = navajo 
+religion = teotl
+capital = "Kalapuya" 
+trade_goods = fur
+hre = no 
+base_tax = 7 
+manpower = 2 
+native_size = 15 
+native_ferocity = 1 
+native_hostileness = 5 
+
+1543.1.1   = { discovered_by = SPA } # Sighted by Spanish explorers
+1814.12.24 = {	owner = GBR
+		controller = GBR
+		citysize = 210
+	     	culture = english
+	     	religion = protestant
+	     } # British control after the War of 1812

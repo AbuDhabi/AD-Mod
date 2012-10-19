@@ -1,0 +1,59 @@
+country_decisions = {
+
+	united_burgundy = {
+		potential = {
+			primary_culture = burgundian
+			NOT = { exists = GRB }
+		}
+		allow = {
+			owns = 87	# Calais
+			owns = 88	# Artois
+			owns = 92	# Brabant
+			owns = 90	# Vlaanderen
+			owns = 91	# Hainaut
+			owns = 94	# Luxemburg
+			owns = 96	# Zeeland
+			owns = 192	# Bourgogne
+			owns = 193	# Franche-Comte
+			owns = 1743	# Cambray
+			owns = 1744	# Antwerpen
+
+			is_core = 88	# Artois
+			is_core = 92	# Brabant
+			is_core = 1743	# Cambray
+			is_core = 1744	# Antwerpen
+
+			war = no
+			is_subject = no
+		}
+		effect = {
+			centralization_decentralization = 1
+			merchants = 2
+			diplomats = 2
+			random_owned = {
+				limit = {
+					OR = {
+						culture = burgundian
+						culture = burgundian_l
+					}
+				}
+				base_tax = 1
+			}
+			prestige = 0.10
+			change_tag = GRB
+			primary_culture = burgundian_l
+			#capital_scope = {
+			#	culture = burgundian_l
+			#}
+			any_owned = {
+				limit = { culture = burgundian }
+				culture = burgundian_l
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+	
+}

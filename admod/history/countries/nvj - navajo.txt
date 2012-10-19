@@ -1,0 +1,24 @@
+government = regular_horde
+aristocracy_plutocracy = -1
+centralization_decentralization = 4
+innovative_narrowminded = 1
+mercantilism_freetrade = 1
+offensive_defensive = 3
+land_naval = -4
+quality_quantity = 3
+serfdom_freesubjects = 4
+primary_culture = navajo
+religion = teotl
+technology_group = new_world
+capital = 878	# Navajo
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Atsidi I"
+		dynasty = "White Horse"
+		adm = 5
+		dip = 4
+		mil = 7
+	}
+}

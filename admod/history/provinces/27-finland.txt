@@ -1,0 +1,73 @@
+#Finland, incl. Åbo.
+
+owner = SWE
+controller = SWE
+add_core = SWE
+add_core = FIN
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 3
+trade_goods = grain
+manpower = 2
+fort1 = yes
+capital = "Åbo"
+citysize = 1000 # Estimated
+temple = yes #"Domkyrkan i Åbo"
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SWE
+		controller = SWE
+		citysize = 1000 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = FIN
+		controller = FIN
+		remove_core = SWE
+		religion = shamanism }
+
+#Historical Campaign
+1399.10.14 = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		religion = catholic }
+
+1450.1.1   = { citysize = 1150 }
+1468.3.15  = { owner = DAN controller = DAN } # Bishop Bitz
+1468.6.15  = { owner = SWE controller = SWE } # Recaptured by Karl Knutsson Bonde
+1497.3.13  = { controller = DAN } # Danish loyalists at Danish DoW
+1497.10.6  = { controller = SWE } # Hans I become King and Sweden a Danish Vassal
+1501.8.1   = { controller = DAN } # Danish loyalists at Swedish DoW and breaking of vassalage
+1502.9.8   = { controller = SWE } # Retaken by Sweden
+1505.1.1   = { marketplace = yes }
+# 1520.3.6  = { owner = DAN controller = DAN } #The Council accept Christian II as King
+# 1523.8.15 = { owner = SWE controller = SWE } # Liberated by Ivar and Erik Fleming and joins Gustav Eriksson Wasa
+1527.6.1   = { religion = protestant}
+1550.1.1   = { citysize = 1200 }
+1563.1.1   = { fort2 = yes } # Rebuilding of Åbo Castle (Unknown date)
+1563.6.7   = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Duke Johan is sentenced to death
+1563.8.12  = { revolt = {} controller = SWE } # Åbo falls and Duke Johan is imprisoned.
+1598.8.1   = { controller = POL } # Sigismund tries to reconquer his crown
+1599.7.5   = { owner = SWE controller = SWE } # Duke Karl get it back
+1600.1.1   = { citysize = 1540 }
+1650.1.1   = { citysize = 1845 }
+1700.1.1   = { citysize = 2500 }
+1713.8.28  = { controller = RUS } # The Great Nordic War-Captured by Apraksin
+1721.8.30  = { controller = SWE } # The Peace of Nystad
+1742.10.15 = { controller = RUS } # The War of the Hats-Estimated date
+1743.8.7   = { controller = SWE } # The Peace of Åbo
+1800.1.1   = { citysize = 2980 }
+1808.3.1   = { controller = RUS } # Overran by Russian troops
+1809.9.17  = {	owner = RUS
+		add_core = RUS
+		remove_core = SWE
+	     } # Treaty of Fredrikshamn

@@ -1,0 +1,52 @@
+#274 - Pskov
+
+owner = PSK
+controller = PSK
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 6
+trade_goods = grain
+manpower = 5
+capital = "Pskov"
+citysize = 6000
+fort1 = yes
+temple = yes		# Trinity cathedral, founded in 1138
+add_core = PSK
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = PSK
+		controller = PSK
+		citysize = 6000 }
+
+1450.1.1  = { citysize = 8000 }
+1470.1.1  = { revolt_risk = 5 } # Struggles between the boyars and smerds
+1490.1.1  = { revolt_risk = 0 } 
+1500.1.1  = { citysize = 9000 }
+1510.1.24 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		fort2 = yes
+	    	remove_core = PSK
+	    } # Vasili III put an end to the Pskov republic, still remained a strategic fortress
+1550.1.1  = { citysize = 10000 }
+1553.1.1  = { marketplace = yes } 
+1598.1.1  = { revolt_risk = 8 } # "Time of troubles"
+1600.1.1  = { citysize = 11000 }
+1613.1.1  = { revolt_risk = 0 } # Order returned, Romanov dynasty
+1615.10.9 = { citysize = 9000 } # Swedish assault, during the Ingrian war
+1672.1.1  = { base_tax = 7 } # Tax revenues increased
+1700.1.1  = { citysize = 10000 }
+1750.1.1  = { citysize = 11057 }
+1773.1.1  = { revolt_risk = 5 } # Peasant uprising, Pugachev
+1774.1.1  = { revolt_risk = 0 }
+1800.1.1  = { citysize = 12565 }

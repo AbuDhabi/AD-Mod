@@ -1,0 +1,53 @@
+#Halland, contains Halmstad, Varberg.
+
+owner = DAN
+controller = DAN
+add_core = DAN
+add_core = SWE
+culture = danish
+religion = catholic
+hre = no
+base_tax = 3
+trade_goods = grain
+manpower = 2
+fort1 = yes
+capital = "Halmstad"
+citysize = 1100 # Estimated
+marketplace = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = DAN
+		controller = DAN
+		citysize = 1100 }
+
+1450.1.1   = { citysize = 1200 }
+1512.1.1   = { fort2 = yes }
+1534.8.15  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
+1534.11.15 = { revolt = {} controller = DAN } # Liberated by Sweden
+1536.1.1   = { religion = protestant} # Unknown date
+1550.1.1   = { citysize = 1340 }
+1565.9.15  = { controller = SWE } # The Nordic Seven-year War
+1569.12.4  = { controller = DAN } # The Nordic Seven-year War
+1590.1.1   = { fort3 = yes }
+1590.1.1   = { constable = yes } # Base for spying against Sweden
+1600.1.1   = { citysize = 1721 }
+1645.8.13  = { owner = SWE } # The Peace of Brömsebro
+1645.8.13  = { courthouse = yes } # minor court belonging to Göta Hovrätt
+1645.8.13  = { tax_assessor = yes } # Controls large parts of exports to the West
+1650.1.1   = { citysize = 1932 }
+1660.1.1   = { fort4 = yes }
+1680.1.1   = { culture = swedish } # The population adepted to Swedish ways.
+1700.1.1   = { citysize = 2128 }
+1712.1.1   = { fort5 = yes }
+#1730.1.1   = { customs_house = yes } # Due to the support of manufactories
+1750.1.1   = { citysize = 2553 }
+1800.1.1   = { citysize = 2834 }

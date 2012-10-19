@@ -1,0 +1,12 @@
+# Napoleonic Lancers
+# land 60
+unit_type = western	
+type = cavalry
+
+maneuver = 2
+offensive_morale = 11
+defensive_morale = 11
+offensive_fire = 8
+defensive_fire = 9
+offensive_shock = 10
+defensive_shock = 11

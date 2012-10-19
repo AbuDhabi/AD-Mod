@@ -1,0 +1,2943 @@
+
+#########################################################
+#		Idea Events			  	#
+#########################################################
+
+#########################################################
+#		Grand Navy			  	#
+#########################################################
+
+country_event = {
+
+	id =  6100
+	trigger = {
+		idea =  grand_navy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6100"
+	desc = "EVTDESC6100"
+		
+	option = {
+		name = "EVTOPTA6100"
+		add_country_modifier = {
+			name = "faster_ships"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6101
+	trigger = {
+		idea =  grand_navy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { navy_size_percentage = 25 }
+ 		}
+	}
+
+	title = "EVTNAME6101"
+	desc = "EVTDESC6101"
+		
+	option = {
+		name = "EVTOPTA6101"
+		add_country_modifier = {
+			name = "slower_ships"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6101"
+		treasury = -50
+	}
+}
+#########################################################
+#		Sea Hawks			  	#
+#########################################################
+
+
+
+
+country_event = {
+
+	id =  6102
+	trigger = {
+		idea =  sea_hawks
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6102"
+	desc = "EVTDESC6102"
+		
+	option = {
+		name = "EVTOPTA6102"
+		create_admiral = 50
+	}
+}
+
+
+
+country_event = {
+
+	id =  6103
+	trigger = {
+		idea =  sea_hawks
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+	}
+
+	title = "EVTNAME6103"
+	desc = "EVTDESC6103"
+		
+	option = {
+		name = "EVTOPTA6103"
+		stability = -1 
+	}
+	option = {
+		name = "EVTOPTB6103"
+		navy_tradition = -0.05 
+	}
+}
+
+
+#########################################################
+#		Superior Seamanship		  	#
+#########################################################
+
+country_event = {
+
+	id =  6104
+	trigger = {
+		idea =  superior_seamanship
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6104"
+	desc = "EVTDESC6104"
+		
+	option = {
+		name = "EVTOPTA6104"
+		add_country_modifier = {
+			name = "naval_developments"
+			duration = 2520
+		}
+	}
+}
+
+country_event = {
+
+	id =  6105
+	trigger = {
+		idea =  superior_seamanship
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+	}
+
+	title = "EVTNAME6105"
+	desc = "EVTDESC6105"
+		
+	option = {
+		name = "EVTOPTA6105"
+		add_country_modifier = {
+			name = "naval_hubris"
+			duration = 2520
+		}
+	}
+	option = {
+		name = "EVTOPTB6105"
+		stability = -1 
+	}
+}
+#########################################################
+#		Naval Fighting Instruction	  	#
+#########################################################
+
+country_event = {
+
+	id =  6106
+	trigger = {
+		idea =  naval_fighting_instruction
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6106"
+	desc = "EVTDESC6106"
+		
+	option = {
+		name = "EVTOPTA6106"
+		add_country_modifier = {
+			name = "blockade_tactics"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6107
+	trigger = {
+		idea =  naval_fighting_instruction
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+	}
+
+	title = "EVTNAME6107"
+	desc = "EVTDESC6107"
+		
+	option = {
+		name = "EVTOPTA6107"
+		add_country_modifier = {
+			name = "slipping_standards"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6107"
+		stability = -1 
+	}
+}
+#########################################################
+#		Excellent Shipwrights 		  	#
+#########################################################
+
+country_event = {
+
+	id =  6108
+	trigger = {
+		idea =  excellent_shipwrights
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6108"
+	desc = "EVTDESC6108"
+		
+	option = {
+		name = "EVTOPTA6108"
+		add_country_modifier = {
+			name = "naval_technical_developments"
+			duration = 2520
+		}
+	}
+}
+
+country_event = {
+
+	id =  6109
+	trigger = {
+		idea =  excellent_shipwrights
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+	}
+
+	title = "EVTNAME6109"
+	desc = "EVTDESC6109"
+		
+	option = {
+		name = "EVTOPTA6109"
+		add_country_modifier = {
+			name = "concerned_shipwrights"
+			duration = 2520
+		}
+	}
+	option = {
+		name = "EVTOPTB6109"
+		stability = -1 
+	}
+}
+
+#########################################################
+#		Naval Glory			  	#
+#########################################################
+
+
+country_event = {
+
+	id =  6110
+	trigger = {
+		idea =  naval_glory
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+		modifier = {
+			factor = 0.95
+			navy_size_percentage = 50
+		}
+		modifier = {
+			factor = 0.95
+			navy_tradition = 50
+		}
+	}
+
+	title = "EVTNAME6110"
+	desc = "EVTDESC6110"
+		
+	option = {
+		name = "EVTOPTA6110"
+			prestige = 0.1
+	}
+}
+
+
+country_event = {
+
+	id =  6111
+	trigger = {
+		idea =  naval_glory
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { navy_size_percentage = 25 }
+ 		}
+		modifier = {
+			factor = 0.95
+			NOT = { navy_tradition = 10 }
+		}
+	}
+
+	title = "EVTNAME6111"
+	desc = "EVTDESC6111"
+		
+	option = {
+		name = "EVTOPTA6111"
+			prestige = -0.1
+	}
+	option = {
+		name = "EVTOPTB6111"
+			treasury = -50
+	}
+}
+#########################################################
+#		National Conscripts		  	#
+#########################################################
+
+country_event = {
+
+	id =  6112
+	trigger = {
+		idea =  national_conscripts
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6112"
+	desc = "EVTDESC6112"
+		
+	option = {
+		name = "EVTOPTA6112"
+		add_country_modifier = {
+			name = "recruits_flock"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6112"
+		random_owned = {
+			change_manpower = 1
+		}
+	}
+}
+
+country_event = {
+
+	id =  6113
+	trigger = {
+		idea =  national_conscripts
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+	}
+
+	title = "EVTNAME6113"
+	desc = "EVTDESC6113"
+		
+	option = {
+		name = "EVTOPTA6113"
+		add_country_modifier = {
+			name = "resist_conscription"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6113"
+		stability = -1 
+	}
+}
+
+#########################################################
+#		Grand Army				#
+#########################################################
+
+
+country_event = {
+
+	id =  6114
+	trigger = {
+		idea =  grand_army
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes
+		}
+		modifier = {
+			factor = 0.95
+			army_tradition = 50 
+		}
+	}
+
+	title = "EVTNAME6114"
+	desc = "EVTDESC6114"
+		
+	option = {
+		name = "EVTOPTA6114"
+		add_country_modifier = {
+			name = "grander_army"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6115
+	trigger = {
+		idea =  grand_army
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { army_size_percentage = 25 } 
+		}
+	}
+
+	title = "EVTNAME6115"
+	desc = "EVTDESC6115"
+		
+	option = {
+		name = "EVTOPTA6115"
+		add_country_modifier = {
+			name = "less_grand_army"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6115"
+		stability = -1
+	}
+}
+#########################################################
+#		Military Drill			  	#
+#########################################################
+
+country_event = {
+
+	id =  6116
+	trigger = {
+		idea =  military_drill
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6116"
+	desc = "EVTDESC6116"
+		
+	option = {
+		name = "EVTOPTA6116"
+		add_country_modifier = {
+			name = "military_improvements"
+			duration = 2520
+		}
+	}
+}
+
+country_event = {
+
+	id =  6117
+	trigger = {
+		idea =  military_drill
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+	}
+
+	title = "EVTNAME6117"
+	desc = "EVTDESC6117"
+		
+	option = {
+		name = "EVTOPTA6117"
+		add_country_modifier = {
+			name = "military_complacency"
+			duration = 2520
+		}
+	}
+	option = {
+		name = "EVTOPTB6117"
+		stability = -1 
+	}
+}
+
+#########################################################
+#		Engineer Corps			  	#
+#########################################################
+
+#removed
+
+#########################################################
+#		Battlefield Commisions			#
+#########################################################
+
+
+country_event = {
+
+	id =  6130
+	trigger = {
+		idea =  battlefield_commisions
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6130"
+	desc = "EVTDESC6130"
+		
+	option = {
+		name = "EVTOPTA6130"
+		create_general = 50
+	}
+}
+
+country_event = {
+
+	id =  6131
+	trigger = {
+		idea =  battlefield_commisions
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+	}
+
+	title = "EVTNAME6131"
+	desc = "EVTDESC6131"
+		
+	option = {
+		name = "EVTOPTA6131"
+		stability = -1 
+	}
+	option = {
+		name = "EVTOPTB6131"
+		army_tradition = -0.05 
+	}
+}
+
+
+#########################################################
+#		Glorious Arms				#
+#########################################################
+
+country_event = {
+
+	id =  6132
+	trigger = {
+		idea =  glorious_arms
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+
+		modifier = {
+			factor = 0.95
+			army_tradition = 50 
+		}
+	}
+
+	title = "EVTNAME6132"
+	desc = "EVTDESC6132"
+		
+	option = {
+		name = "EVTOPTA6132"
+		prestige = 0.05
+	}
+}
+
+country_event = {
+
+	id =  6133
+	trigger = {
+		idea =  glorious_arms
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+
+		modifier = {
+			factor = 0.95
+			NOT = {
+				prestige = 0
+			} 
+		}
+	}
+
+	title = "EVTNAME6133"
+	desc = "EVTDESC6133"
+		
+	option = {
+		name = "EVTOPTA6133"
+		stability = -1 
+	}
+	option = {
+		name = "EVTOPTB6133"
+		prestige = -0.05 
+	}
+}
+
+
+#########################################################
+#		Merchant Adventurers			#
+#########################################################
+
+country_event = {
+
+	id =  6134
+	trigger = {
+		idea =  merchant_adventures
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+	}
+
+	title = "EVTNAME6134"
+	desc = "EVTDESC6134"
+		
+	option = {
+		name = "EVTOPTA6134"
+		add_country_modifier = {
+			name = "adventuring_merchants"
+			duration = 120
+		}
+	}
+}
+
+
+country_event = {
+
+	id =  6135
+	trigger = {
+		idea =  merchant_adventures
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = yes 
+		}
+	}
+
+	title = "EVTNAME6135"
+	desc = "EVTDESC6135"
+		
+	option = {
+		name = "EVTOPTA6135"
+		add_country_modifier = {
+			name = "poor_merchants"
+			duration = 2520
+		}
+	}
+
+	option = {
+		name = "EVTOPTB6135"
+		stability = -1 
+	}
+}
+
+#########################################################
+#		Quest for the New World			#
+#########################################################
+
+country_event = {
+
+	id =  6136
+	trigger = {
+		idea =  quest_for_the_new_world
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war = no 
+		}
+	}
+		
+	title = "EVTNAME6136"
+	desc = "EVTDESC6136"
+		
+	option = {
+		name = "EVTOPTA6136"
+		colonists = 1
+	}
+}
+
+province_event = {
+
+	id =  6137
+	trigger = {
+		owner = {
+			idea =  quest_for_the_new_world
+			war = yes
+		}
+		is_overseas = no
+		is_colony = no
+		citysize = 5000
+		owner = { number_of_colonies = 1 }
+	}
+
+	mean_time_to_happen = {
+		months = 6000
+	}
+
+	title = "EVTNAME6137"
+	desc = "EVTDESC6137"
+		
+	option = {
+		name = "EVTOPTA6137"
+		citysize = -600
+		owner = {
+			random_owned = {
+				limit = { is_colony = yes }
+				citysize = 200
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTB6137"
+		owner = { stability = -1 }
+	}
+}
+
+
+#########################################################
+#		Colonial Ventures			#
+#########################################################
+
+province_event = {
+	id =  6138
+	trigger = {
+		owner = { idea =  colonial_ventures }
+		has_empty_adjacent_province = yes
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { war = no }
+		}
+	}
+
+	title = "EVTNAME6138"
+	desc = "EVTDESC6138"
+
+	option = {
+		name = "EVTOPTA6138"
+		random_empty_neighbor_province = {
+			create_colony = 2
+		}
+	}
+}
+
+province_event = {
+	id =  6139
+	trigger = {
+		owner = { idea =  colonial_ventures }
+		is_colony = yes
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			owner = { war = yes }
+		}
+	}
+
+	title = "EVTNAME6139"
+	desc = "EVTDESC6139"
+
+	option = {
+		name = "EVTOPTA6139"
+		multiply_citysize = 0.5
+	}
+
+	option = {
+		name = "EVTOPTB6139"
+		owner = { treasury = -50 }
+	}
+}
+
+#########################################################
+#		Shrewd Commerce Practice		#
+#########################################################
+
+country_event = {
+
+	id = 6140
+
+	trigger = {
+		idea = shrewd_commerce_practise
+		NOT = { merchants = 5}
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { trade_income_percentage = 10 }
+		}
+	}
+	
+	title = "EVTNAME6140"
+	desc = "EVTDESC6140"
+	
+	option = {
+		name = "EVTOPTA6140"
+		merchants = 5
+	}
+}
+
+country_event = {
+
+	id = 6141
+
+	trigger = {
+		idea = shrewd_commerce_practise
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			trade_income_percentage = 30
+		}
+	}
+	
+	title = "EVTNAME6141"
+	desc = "EVTDESC6141"
+	
+	option = {
+		name = "EVTOPTA6141"
+		add_country_modifier = {
+			name = "out_of_date_commerce"
+			duration = 120
+		}
+		
+	}
+	option = { 
+		name = "EVTOPTB6141"
+		inflation = 5
+	}
+}
+
+#########################################################
+#		Viceroys				#
+#########################################################
+
+
+country_event = {
+
+	id =  6142
+	trigger = {
+		idea =  vice_roys
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+	}
+
+	title = "EVTNAME6142"
+	desc = "EVTDESC6142"
+		
+	option = {
+		name = "EVTOPTA6142"
+		add_country_modifier = {
+			name = "excellent_administration"
+			duration = 120
+		}
+	}
+}
+
+
+
+country_event = {
+
+	id =  6143
+	trigger = {
+		idea =  vice_roys
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+	}
+
+	title = "EVTNAME6143"
+	desc = "EVTDESC6143"
+		
+	option = {
+		name = "EVTOPTA6143"
+		add_country_modifier = {
+			name = "corrupt_viceroys"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6143"
+		inflation = 5
+	}		
+}
+
+#########################################################
+#		Smithian Economics			#
+#########################################################
+
+country_event = {
+
+	id =  6144
+	trigger = {
+		idea =  smithian_economics
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+	}
+
+	title = "EVTNAME6144"
+	desc = "EVTDESC6144"
+		
+	option = {
+		name = "EVTOPTA6144"
+		add_country_modifier = {
+			name = "production_improvements"
+			duration = 120
+		}
+	}
+}
+
+
+
+country_event = {
+
+	id =  6145
+	trigger = {
+		idea =  smithian_economics
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+	}
+
+	title = "EVTNAME6145"
+	desc = "EVTDESC6145"
+		
+	option = {
+		name = "EVTOPTA6145"
+		add_country_modifier = {
+			name = "production_stifled"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6145"
+		inflation = 5
+	}		
+}
+#########################################################
+#		Bureaucracy				#
+#########################################################
+
+country_event = {
+
+	id =  6146
+	trigger = {
+		idea =  bureaucracy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 1.05
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 50
+		}
+	}
+
+	title = "EVTNAME6146"
+	desc = "EVTDESC6146"
+		
+	option = {
+		name = "EVTOPTA6146"
+		add_country_modifier = {
+			name = "successful_bureaucracy"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6147
+	trigger = {
+		idea =  bureaucracy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 0.95
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.95
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 0.95
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 0.95
+			num_of_cities = 50
+		}
+	}
+
+	title = "EVTNAME6147"
+	desc = "EVTDESC6147"
+		
+	option = {
+		name = "EVTOPTA6147"
+		add_country_modifier = {
+			name = "corrupt_bureaucracy"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6197
+	trigger = {
+		idea =  bureaucracy
+	}
+
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 1.05
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 50
+		}
+	}
+
+	title = "EVTNAME6146"
+	desc = "EVTDESC6197"
+		
+	option = {
+		name = "EVTOPTA6197"
+		officials = 1
+	}
+}
+
+country_event = {
+
+	id =  6198
+	trigger = {
+		idea =  bureaucracy
+		num_of_cities = 15
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = -4 }
+		}
+		modifier = {
+			factor = 0.95
+			not = { centralization_decentralization = -5 }
+		}
+		
+		modifier = {
+			factor = 1.05
+			centralization_decentralization = 1 
+		}
+		modifier = {
+			factor = 1.05
+			centralization_decentralization = 2		
+		}
+		modifier = {
+			factor = 1.05
+			centralization_decentralization = 3
+		}
+		modifier = {
+			factor = 1.05
+			centralization_decentralization = 4
+		}
+		modifier = {
+			factor = 1.05
+			centralization_decentralization = 5
+		}
+	}
+
+	title = "EVTNAME6146"
+	desc = "EVTDESC6198"
+		
+	option = {
+		name = "EVTOPTA6198"
+		treasury = -75
+		random_list = {
+			50 = { officials = 1 }
+			50 = { officials = 2 }
+		}
+	}
+	option = {
+		name = "EVTOPTB6198"
+	}
+}
+
+#########################################################
+#		National Bank				#
+#########################################################
+
+country_event = {
+
+	id =  6148
+	trigger = {
+		idea =  national_bank
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.95
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.95
+			number_of_loans = 3
+		}
+		modifier = {
+			factor = 0.95
+			number_of_loans = 4
+		}
+		modifier = {
+			factor = 0.95
+			number_of_loans = 5
+		}
+	}
+
+	title = "EVTNAME6148"
+	desc = "EVTDESC6148"
+		
+	option = {
+		name = "EVTOPTA6148"
+		treasury = 100
+	}
+}
+
+country_event = {
+
+	id =  6149
+	trigger = {
+		idea =  national_bank
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { number_of_loans = 1 }
+		}
+	}
+
+	title = "EVTNAME6149"
+	desc = "EVTDESC6149"
+		
+	option = {
+		name = "EVTOPTA6149"
+		treasury = -200
+	}
+	option = { 
+		name = "EVTOPTB6149" 
+		inflation = 5
+	}
+}
+
+#########################################################
+#		National Trade Policy			#
+#########################################################
+
+country_event = {
+
+	id = 6150
+
+	trigger = {
+		idea = national_trade_policy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { trade_income_percentage = 10 }
+		}
+	}
+	
+	title = "EVTNAME6150"
+	desc = "EVTDESC6150"
+	
+	option = {
+		name = "EVTOPTA6150"
+		add_country_modifier = {
+			name = "trade_policy_working"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id = 6151
+
+	trigger = {
+		idea = national_trade_policy
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			trade_income_percentage = 30
+		}
+	}
+	
+	title = "EVTNAME6151"
+	desc = "EVTDESC6151"
+	
+	option = {
+		name = "EVTOPTA6151"
+		add_country_modifier = {
+			name = "trade_policy_failing"
+			duration = 120
+		}
+	}
+	option = { 
+		name = "EVTOPTB6151"
+		inflation = 5
+	}
+}
+		
+
+#########################################################
+#		Espionage				#
+#########################################################
+
+country_event = {
+
+	id =  6152
+	trigger = {
+		idea =  espionage 
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 2
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 3
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 4
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 5
+		}
+	}
+
+	title = "EVTNAME6152"
+	desc = "EVTDESC6152"
+		
+	option = {
+		name = "EVTOPTA6152"
+		add_country_modifier = {
+			name = "enhanced_spies"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+
+	id =  6153
+	trigger = {
+		idea =  espionage
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6153"
+	desc = "EVTDESC6153"
+		
+	option = {
+		name = "EVTOPTA6153"
+		add_country_modifier = {
+			name = "spy_defections"
+			duration = 120
+		}
+	}
+
+		option = {
+		name = "EVTOPTB6153"
+		treasury = -100
+	}
+}
+
+#########################################################
+#		Cabinet					#
+#########################################################
+
+country_event = {
+
+	id =  6154
+	trigger = {
+		idea =  cabinet
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6154"
+	desc = "EVTDESC6154"
+		
+	option = {
+		name = "EVTOPTA6154"
+		add_country_modifier = {
+			name = "cabinet_dynamism"
+			duration = 120
+		}
+	}
+}
+
+
+
+country_event = {
+
+	id =  6155
+	trigger = {
+		idea =  cabinet
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 2
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 3
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 4
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 5
+		}
+	}
+
+	title = "EVTNAME6155"
+	desc = "EVTDESC6155"
+		
+	option = {
+		name = "EVTOPTA6155"
+		add_country_modifier = {
+			name = "government_corruption"
+			duration = 120
+		}
+	}
+	option = {
+		name = "EVTOPTB6155"
+		inflation = 5
+	}		
+}
+
+#########################################################
+#		Bill of Rights				#
+#########################################################
+
+
+province_event = {
+
+	id =  6156
+	trigger = {
+		owner = { idea =  bill_of_rights }
+		AND = {	
+			NOT = { accepted_culture = THIS }
+			NOT = { primary_culture = THIS }			
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.95
+			centralization_decentralization = 1
+		}
+		modifier = {
+			factor = 0.95
+			centralization_decentralization = 2
+		}
+		modifier = {
+			factor = 0.95
+			centralization_decentralization = 3
+		}
+		modifier = {
+			factor = 0.95
+			centralization_decentralization = 4
+		}
+		modifier = {
+			factor = 0.95
+			centralization_decentralization = 5
+		}
+	}
+
+	title = "EVTNAME6156"
+	desc = "EVTDESC6156"
+		
+	option = {
+		name = "EVTOPTA6156"
+		add_province_modifier = {
+			name = "minority_prospers"
+			duration = 120
+		}
+	}
+	
+}
+
+province_event = {
+
+	id =  6157
+	trigger = {
+		owner = {
+			idea = bill_of_rights
+			primary_culture = THIS
+			NOT = { religion = THIS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5000		modifier = {
+			factor = 0.95
+			NOT = { centralization_decentralization = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { centralization_decentralization = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { centralization_decentralization = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { centralization_decentralization = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { centralization_decentralization = -4 }
+		}
+	}
+
+	title = "EVTNAME6157"
+	desc = "EVTDESC6157"
+		
+	option = {
+		name = "EVTOPTA6157"
+		noble_rebels = 1
+	}
+	
+}
+
+#########################################################
+#		Church Attendance Duty			#
+#########################################################
+
+country_event = {
+	
+	id = 6158
+	trigger = {
+		idea = church_attendance_duty
+		NOT = { stability = 3 }
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 2
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 3
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 4
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 5
+		} 
+	}
+
+	title = "EVTNAME6158"
+	desc = "EVTDESC6158"
+	
+	option = {
+		name = "EVTOPTA6158"
+		stability = 1
+	}
+}
+
+
+
+country_event = {
+	
+	id = 6159
+	trigger = {
+		idea = church_attendance_duty
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6159"
+	desc = "EVTDESC6159"
+	
+	option = {
+		name = "EVTOPTA6159"
+		stability = -1
+	}
+
+	option = {
+		name = "EVTOPTB6159"
+		random_owned = {
+			revolutionary_rebels = 1
+		}
+	} 
+}
+
+#########################################################
+#		Divine Supremacy			#
+#########################################################
+
+country_event = {
+	
+	id = 6160
+	trigger = {
+		idea = divine_supremacy
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6160"
+	desc = "EVTDESC6160"
+	
+	option = {
+		name = "EVTOPTA6160"
+		add_country_modifier = {
+			name = "missionary_zeal"
+			duration = 120
+		}
+	}
+}
+
+country_event = {
+	
+	id = 6161
+	trigger = {
+		idea = divine_supremacy
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6161"
+	desc = "EVTDESC6161"
+	
+	option = {
+		name = "EVTOPTA6161"
+		stability = -1
+	}
+
+	option = {
+		name = "EVTOPTB6161"
+		random_owned = {
+			limit = {
+				religion = THIS
+			}
+			religious_rebels = 1
+		}
+	} 
+}
+
+#########################################################
+#		Ecumenism				#
+#########################################################
+
+province_event = {
+	
+	id = 6163
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = catholic
+		owner = {
+				religion = catholic 
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6163"
+	desc = "EVTDESC6163"
+
+
+	option = {
+		name = "EVTOPTA6163"
+		religion = orthodox
+	}
+}
+
+province_event = {
+	
+	id = 6164
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		is_religion_enabled = reformed
+		religion = catholic
+		owner = {
+				religion = catholic 
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6164"
+	desc = "EVTDESC6164"
+
+	option = {
+		name = "EVTOPTA6164"
+		religion = reformed
+	}
+}
+
+
+province_event = {
+	
+	id = 6165
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		is_religion_enabled = protestant
+		religion = catholic
+		owner = {
+				religion = catholic 
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6165"
+	desc = "EVTDESC6165"
+
+	option = {
+		name = "EVTOPTA6165"
+		religion = protestant
+	}
+}
+
+province_event = {
+	
+	id = 6166
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = orthodox
+		owner = {
+				religion = orthodox 
+		}  
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6166"
+	desc = "EVTDESC6166"
+
+	option = {
+		name = "EVTOPTA6166"
+		religion = catholic
+	}
+}	
+
+province_event = {
+	
+	id = 6167
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		is_religion_enabled = protestant
+		religion = orthodox
+		owner = {
+				religion = orthodox 
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6167"
+	desc = "EVTDESC6167"
+
+	option = {
+		name = "EVTOPTA6167"
+		religion = protestant
+	}
+}	
+
+province_event = {
+	
+	id = 6168
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		is_religion_enabled = reformed
+		religion = orthodox
+		owner = {
+				religion = orthodox 
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6168"
+	desc = "EVTDESC6168"
+
+	option = {
+		name = "EVTOPTA6168"
+		religion = reformed
+	}
+}
+
+province_event = {
+	
+	id = 6169
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = protestant
+		owner = {
+				religion = protestant 
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6169"
+	desc = "EVTDESC6169"
+
+	option = {
+		name = "EVTOPTA6169"
+		religion = catholic
+	}
+}
+
+province_event = {
+	
+	id = 6170
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = protestant
+		owner = {
+				religion = protestant 
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6170"
+	desc = "EVTDESC6170"
+
+	option = {
+		name = "EVTOPTA6170"
+		religion = orthodox
+	}
+}
+
+province_event = {
+	
+	id = 6171
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		is_religion_enabled = reformed
+		religion = protestant
+		owner = {
+				religion = protestant 
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6171"
+	desc = "EVTDESC6171"
+
+	option = {
+		name = "EVTOPTA6171"
+		religion = reformed
+	}
+}
+
+province_event = {
+	
+	id = 6172
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = reformed
+		owner = {
+				religion = reformed
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6172"
+	desc = "EVTDESC6172"
+
+	option = {
+		name = "EVTOPTA6172"
+		religion = catholic
+	}
+}
+
+province_event = {
+	
+	id = 6173
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = reformed
+		owner = {
+				religion = reformed
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6173"
+	desc = "EVTDESC6173"
+
+	option = {
+		name = "EVTOPTA6173"
+		religion = orthodox
+	}
+}
+
+province_event = {
+	
+	id = 6174
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = reformed
+		owner = {
+				religion = reformed
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	title = "EVTNAME6174"
+	desc = "EVTDESC6174"
+
+	option = {
+		name = "EVTOPTA6174"
+		religion = protestant
+	}
+}
+
+province_event = {
+	
+	id = 6175
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = sunni
+		owner = {
+				religion = sunni
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6175"
+	desc = "EVTDESC6175"
+
+	option = {
+		name = "EVTOPTA6175"
+		religion = shiite
+	}
+}
+
+province_event = {
+	
+	id = 6176
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = shiite
+		owner = {
+				religion = shiite
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6176"
+	desc = "EVTDESC6176"
+
+	option = {
+		name = "EVTOPTA6176"
+		religion = sunni
+	}
+}
+
+province_event = {
+	
+	id = 6177
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = buddhism
+		owner = {
+				religion = buddhism
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6177"
+	desc = "EVTDESC6177"
+
+	option = {
+		name = "EVTOPTA6177"
+		religion = hinduism
+	}
+}
+
+province_event = {
+	
+	id = 6178
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = buddhism
+		owner = {
+				religion = buddhism
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6178"
+	desc = "EVTDESC6178"
+
+	option = {
+		name = "EVTOPTA6178"
+		religion = confucianism
+	}
+}
+
+
+province_event = {
+	
+	id = 6179
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = buddhism
+		owner = {
+				religion = buddhism
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6179"
+	desc = "EVTDESC6179"
+
+	option = {
+		name = "EVTOPTA6179"
+		religion = shinto
+	}
+}
+
+province_event = {
+	
+	id = 6180
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = hinduism
+		owner = {
+				religion = hinduism
+		} 
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6180"
+	desc = "EVTDESC6180"
+
+	option = {
+		name = "EVTOPTA6180"
+		religion = buddhism
+	}
+}
+
+province_event = {
+	
+	id = 6181
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = hinduism
+		owner = {
+				religion = hinduism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6181"
+	desc = "EVTDESC6181"
+
+	option = {
+		name = "EVTOPTA6181"
+		religion = confucianism
+	}
+}
+
+province_event = {
+	
+	id = 6182
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = hinduism
+		owner = {
+				religion = hinduism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6182"
+	desc = "EVTDESC6182"
+
+	option = {
+		name = "EVTOPTA6182"
+		religion = shinto
+	}
+}
+
+province_event = {
+	
+	id = 6183
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = confucianism 
+		owner = {
+				religion = confucianism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6183"
+	desc = "EVTDESC6183"
+
+	option = {
+		name = "EVTOPTA6183"
+		religion = buddhism
+	}
+}
+
+province_event = {
+	
+	id = 6184
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = confucianism 
+		owner = {
+				religion = confucianism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6184"
+	desc = "EVTDESC6184"
+
+	option = {
+		name = "EVTOPTA6184"
+		religion = hinduism
+	}
+}
+
+
+province_event = {
+	
+	id = 6185
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = confucianism
+		owner = {
+				religion = confucianism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6185"
+	desc = "EVTDESC6185"
+
+	option = {
+		name = "EVTOPTA6185"
+		religion = shinto
+	}
+}
+
+
+province_event = {
+	
+	id = 6186
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = shinto
+		owner = {
+				religion = shinto
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6186"
+	desc = "EVTDESC6186"
+
+	option = {
+		name = "EVTOPTA6186"
+		religion = buddhism
+	}
+}
+
+province_event = {
+	
+	id = 6187
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = shinto
+		owner = {
+				religion = shinto
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6187"
+	desc = "EVTDESC6187"
+
+	option = {
+		name = "EVTOPTA6187"
+		religion = hinduism
+	}
+}
+
+
+province_event = {
+	
+	id = 6188
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = shinto
+		owner = {
+				religion = shinto
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6188"
+	desc = "EVTDESC6188"
+
+	option = {
+		name = "EVTOPTA6188"
+		religion = confucianism
+	}
+}
+
+province_event = {
+	
+	id = 6189
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = animism
+		owner = {
+				religion = animism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6189"
+	desc = "EVTDESC6189"
+
+	option = {
+		name = "EVTOPTA6189"
+		religion = shamanism
+	}
+}
+
+province_event = {
+	
+	id = 6190
+	is_triggered_only = yes
+	trigger = {
+		owner = { idea = ecumenism }
+		religion = shamanism
+		owner = {
+				religion = shamanism
+		}
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME6190"
+	desc = "EVTDESC6190"
+
+	option = {
+		name = "EVTOPTA6190"
+		religion = animism
+	}
+}
+
+#########################################################
+#		Scientific Revolution			#
+#########################################################
+
+country_event = {
+	
+	id = 6191
+	trigger = {
+		idea = scientific_revolution
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = 0 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { innovative_narrowminded = -4 }
+		}
+	}
+
+	title = "EVTNAME6191"
+	desc = "EVTDESC6191"
+
+	option = {
+		name = "EVTOPTA6191"
+		add_country_modifier = {
+			name = "land_boost"
+			duration = 2520
+		}
+	}
+
+	option = {
+		name = "EVTOPTB6191"
+		add_country_modifier = {
+			name = "naval_boost"
+			duration = 2520
+		}
+	}
+
+	option = {
+		name = "EVTOPTC6191"
+		add_country_modifier = {
+			name = "production_boost"
+			duration = 2520
+		}
+	}
+
+	option = {
+		name = "EVTOPTD6191"
+		add_country_modifier = {
+			name = "government_boost"
+			duration = 2520
+		}
+	}
+	
+	option = {
+		name = "EVTOPTE6191"
+		add_country_modifier = {
+			name = "trade_boost"
+			duration = 2520
+		}
+	}
+}
+
+country_event = {
+	
+	id = 6192
+	trigger = {
+		idea = scientific_revolution
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 1
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 2
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 3
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 4
+		}
+		modifier = {
+			factor = 0.95
+			innovative_narrowminded = 5
+		}
+	}
+
+	title = "EVTNAME6192"
+	desc = "EVTDESC6192"
+
+	option = {
+		name = "EVTOPTA6192"
+		add_country_modifier = {
+			name = "revolution_suffers"
+			duration = 2520
+		}
+	}
+}
+
+#########################################################
+#		Patron of the Arts			#
+#########################################################
+
+country_event = {
+	
+	id = 6193
+	trigger = {
+		idea = patron_of_art
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			artist = 5
+		}
+		modifier = {
+			factor = 0.95
+			artist = 6
+		}
+
+	}
+
+	title = "EVTNAME6193"
+	desc = "EVTDESC6193"
+
+	option = {
+		name = "EVTOPTA6193"
+		prestige = 0.1
+	}
+}
+
+country_event = {
+	
+	id = 6194
+	trigger = {
+		idea = patron_of_art
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			NOT = { Advisor  = artist }
+		}
+	}
+
+	title = "EVTNAME6194"
+	desc = "EVTDESC6194"
+
+	option = {
+		name = "EVTOPTA6194"
+		prestige = -0.1
+	}
+}
+
+#########################################################
+#		Deus Vult				#
+#########################################################
+
+country_event = {
+	
+	id = 6195
+	trigger = {
+		idea = deus_vult
+		at_war_with_religious_enemy = yes
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.95
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 0.95
+			war_exhaustion = 4
+		}
+		modifier = {
+			factor = 0.95
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 0.95
+			war_exhaustion = 8
+		}
+		modifier = {
+			factor = 0.95
+			war_exhaustion = 10
+		}
+
+	}
+
+	title = "EVTNAME6195"
+	desc = "EVTDESC6195"
+
+	option = {
+			name = "EVTOPTA6195"
+			war_exhaustion = -2
+	}
+}
+
+country_event = {
+	
+	id = 6196
+	trigger = {
+		idea = deus_vult
+		war = no
+		has_border_with_religious_enemy = yes
+	}	
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 1.05
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 1.05
+			war_exhaustion = 4
+		}
+		modifier = {
+			factor = 1.05
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 1.05
+			war_exhaustion = 8
+		}
+		modifier = {
+			factor = 1.05
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { stability = -2 }
+		}
+
+	}
+
+	title = "EVTNAME6196"
+	desc = "EVTDESC6196"
+
+	option = {
+		name = "EVTOPTA6196"
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB6196"
+		random_owned = {
+			limit = {
+				religion = THIS 
+			}
+			religious_rebels = 1
+		 } 
+	}
+}

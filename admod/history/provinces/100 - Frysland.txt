@@ -1,0 +1,73 @@
+# 100 Friesland - Principal cities: Groningen & Leeuwarden
+
+owner = FRI
+controller = FRI
+capital = "Groningen"
+citysize = 9000
+culture = dutch
+religion = catholic
+hre = yes
+base_tax = 8
+trade_goods = fish 
+manpower = 4
+add_core = FRI
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = FRI
+		controller = FRI
+		citysize = 9000 }
+
+1445.1.1   = { add_core = BUR }
+1450.1.1   = { citysize = 11000 }
+1473.2.23  = { owner = BUR controller = BUR } # Charles the Bold annexes Friesland
+1477.1.5   = { owner = FRI controller = FRI add_core = HAB remove_core = BUR } # Charles the Bold dies and Friesland is re-established
+1498.1.1   = { owner = SAX controller = SAX } # Saxony controls Friesland
+1500.1.1   = { citysize = 18000 }
+1515.5.15  = { owner = HAB   # Sold to Karl von Habsburg (future Charles I of Spain and Charles V HRE)
+		controller = REB }  # 'Kings' Pier Gerlofs Donia and Wijerd Jelckama
+1516.1.23  = { owner = SPA add_core = SPA remove_core = HAB } # Unification of Spain under Charles
+1524.1.1   = { controller = SPA } # Charles V annexes Friesland
+1550.1.1   = { fort2 = yes courthouse = yes citysize = 26000 }
+1559.5.12  = { revolt_risk = 3 } # New bishoprics established in the Lowlands create an outrage
+1565.1.1   = { revolt_risk = 5 } # Letters of Segovia, harsh persecution of Calvinists advocated by Philip I
+1566.4.5   = { revolt_risk = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+1567.9.10  = { revolt_risk = 4 } # Counts of Egmont & Hoorne arrested
+1568.1.1   = { religion = reformed }
+1568.5.23  = { revolt = { type = nationalist_rebels size = 2 name = "Les Gueux"	leader = "Louis of Nassau" } controller = REB } # Louis of Nassau beats a Spanish army at Heiligerlee
+# 1568.6.5   = { revolt_risk = 6 } # Counts of Egmont & Hoorne beheaded
+1568.7.21  = { revolt = {} controller = SPA } # Louis of Nassau is beaten at Jemmingen (actually just across the German border)
+1569.1.1   = { revolt_risk = 12 } # The Duke of Alba reforms the tax system ('tiende penning')
+1570.1.1   = { revolt_risk = 20 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1577.2.12  = { revolt_risk = 16 } # The 'Perpetual Edict' (Eeuwig Edict) is accepted by Don Juan
+1579.1.23  = { owner = NED controller = NED remove_core = SPA revolt_risk = 0 } # Union of Utrecht - Friesland joins
+1585.1.1   = { university = yes } # University of Franeker founded (closed in 1811 by Napoleon)      
+1600.1.1   = { citysize = 30000 }
+1640.1.1   = { marketplace = yes }
+1648.10.24 = { hre = no } # The Peace of Westphalia
+1650.1.1   = { citysize = 35000 }
+1660.1.1   = { fort3 = yes }
+1681.1.1   = { base_tax = 9 } # Protestants expelled from France
+1700.1.1   = { citysize = 35000 }
+1705.1.1   = { constable = yes }
+1730.1.1   = { fort4 = yes }
+1750.1.1   = { citysize = 35000 }
+1760.1.1   = { tax_assessor = yes }
+1800.1.1   = { citysize = 40000 }
+1810.7.10  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+	     } # Annexed by France
+1813.11.30 = {	owner = NED
+		controller = NED
+		remove_core = RFR
+	     } # William returns to the Netherlands

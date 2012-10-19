@@ -1,0 +1,2344 @@
+#events 31000-31499
+
+#############################################
+#####		Greek/Turk		#####
+#############################################
+
+#### Edirne ####
+province_event = {
+	id = 31000
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 149
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Adrianople
+		rename_capital = Adrianople
+	}
+}
+province_event = {
+	id = 31001
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 149
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Edirne
+		rename_capital = Edirne
+	}
+}
+
+#### Bithynia ####
+province_event = {
+	id = 31002
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 316
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Optimatoi
+	}
+}
+province_event = {
+	id = 31003
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 316
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Bithynia
+		rename_capital = Nicomedia
+	}
+}
+
+#### Bursa ####
+province_event = {
+	id = 31004
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 317
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Opsikion
+		rename_capital = Nicaea
+	}
+}
+province_event = {
+	id = 31005
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 317
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Bursa
+		rename_capital = Bursa
+	}
+}
+
+#### Smyrna ####
+province_event = {
+	id = 31006
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 318
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Samos
+		rename_capital = Smyrna
+	}
+}
+province_event = {
+	id = 31007
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 318
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Smyrna
+		rename_capital = Izmir
+	}
+}
+
+#### Antalya ####
+province_event = {
+	id = 31008
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 319
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Kibyrrhaiotai
+		rename_capital = Attaleia
+	}
+}
+province_event = {
+	id = 31009
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 319
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Antalya
+		rename_capital = Antalya
+	}
+}
+
+#### Anatolia ####
+province_event = {
+	id = 31010
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 322
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Anatolikon
+	}
+}
+province_event = {
+	id = 31011
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 322
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Anatolia
+	}
+}
+
+#### Konya ####
+province_event = {
+	id = 31012
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 323
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Iconium
+		rename_capital = Iconium
+	}
+}
+province_event = {
+	id = 31013
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 323
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Konya
+		rename_capital = Konya
+	}
+}
+
+#### Karaman ####
+province_event = {
+	id = 31014
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 324
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Seleukeia
+		rename_capital = Seleucea
+	}
+}
+province_event = {
+	id = 31015
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 324
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Karaman
+		rename_capital = Karaman
+	}
+}
+
+#### Kastamon ####
+province_event = {
+	id = 31016
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 325
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Paphlagonia
+		rename_capital = Amastris
+	}
+}
+province_event = {
+	id = 31017
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 325
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Kastamon
+		rename_capital = Kastamon
+	}
+}
+
+#### Angora ####
+province_event = {
+	id = 31018
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 326
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Kappadokia
+		rename_capital = Podandus
+	}
+}
+province_event = {
+	id = 31019
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 326
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Angora
+		rename_capital = Angora
+	}
+}
+
+#### Sinope ####
+province_event = {
+	id = 31020
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 328
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Armeniakon
+	}
+}
+province_event = {
+	id = 31021
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 328
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Sinope
+	}
+}
+
+#### Sivas ####
+province_event = {
+	id = 31022
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 329
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Sebasteia
+		rename_capital = Sebastea
+	}
+}
+province_event = {
+	id = 31023
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 329
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Sivas
+		rename_capital = Sivas
+	}
+}
+
+#### Trebizon ####
+province_event = {
+	id = 31024
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 330
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Chaldia
+		rename_capital = Trapezus
+	}
+}
+province_event = {
+	id = 31025
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 330
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Trebizon
+		rename_capital = Trebizon
+	}
+}
+
+#### Thrace ####
+province_event = {
+	id = 31026
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 151
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		has_province_flag = turk_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		rename_capital = Constantinople
+	}
+}
+province_event = {
+	id = 31027
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 151
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = turk_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		rename_capital = Istanbul
+	}
+}
+
+#### Yazgod ####
+province_event = {
+	id = 31028
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1846
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Boukellarion
+		rename_capital = Ancyra
+	}
+}
+province_event = {
+	id = 31029
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1846
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Yazgod
+		rename_capital = Yazgod
+	}
+}
+
+#### Hamid ####
+province_event = {
+	id = 31030
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1848
+		culture_group = byzantine
+		owner = {
+			culture_group = byzantine
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = greek_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = greek_name
+		clr_province_flag = turk_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Thrakesion
+		rename_capital = Choani
+	}
+}
+province_event = {
+	id = 31031
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1848
+		culture_group = turko_semitic
+		owner = {
+			culture_group = turko_semitic
+			num_of_cities = 8
+		}
+		has_province_flag = greek_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = turk_name
+		clr_province_flag = greek_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Hamid
+		rename_capital = Hamid
+	}
+}
+
+#############################################
+#####		Gaelic/Brit		#####
+#############################################
+
+#### Cornwall ####
+province_event = {
+	id = 31050
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 233
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Cernyw
+		rename_capital = "Caer Wysg"
+	}
+}
+province_event = {
+	id = 31051
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 233
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Cornwall
+		rename_capital = Exeter
+	}
+}
+
+#### Wessex ####
+province_event = {
+	id = 31052
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 234
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Gwinntguic
+		rename_capital = "Caer Gwinntguic"
+	}
+}
+province_event = {
+	id = 31053
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 234
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Wessex
+		rename_capital = Salisbury
+	}
+}
+
+#### Kent ####
+province_event = {
+	id = 31054
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 235
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Caint
+		rename_capital = Cantwareburh
+	}
+}
+province_event = {
+	id = 31055
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 235
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Kent
+		rename_capital = Canterbury
+	}
+}
+
+#### London ####
+province_event = {
+	id = 31056
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 236
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Llundain
+		rename_capital = "Caer Llundain"
+	}
+}
+province_event = {
+	id = 31057
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 236
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = London
+		rename_capital = London
+	}
+}
+
+#### Oxfordshire ####
+province_event = {
+	id = 31058
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 237
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Calchfynedd
+		rename_capital = Rhydychen
+	}
+}
+province_event = {
+	id = 31059
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 237
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Oxfordshire
+		rename_capital = Oxford
+	}
+}
+
+#### Norfolk ####
+province_event = {
+	id = 31060
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1860
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Colum
+	}
+}
+province_event = {
+	id = 31061
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 1860
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = "East Anglia"
+	}
+}
+
+#### Gloucestershire ####
+province_event = {
+	id = 31062
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 239
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Ceri
+		rename_capital = "Caer Ceri"
+	}
+}
+province_event = {
+	id = 31063
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 239
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Gloucestershire
+		rename_capital = Bristol
+	}
+}
+
+#### Marches ####
+province_event = {
+	id = 31064
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 240
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Pengwern
+		rename_capital = Coventre
+	}
+}
+province_event = {
+	id = 31065
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 240
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Marches
+		rename_capital = Coventry
+	}
+}
+
+#### Lincoln ####
+province_event = {
+	id = 31066
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 243
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Lindsey
+	}
+}
+province_event = {
+	id = 31067
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 243
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Lincoln
+	}
+}
+
+#### Lancashire ####
+province_event = {
+	id = 31068
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 244
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Rheged
+	}
+}
+province_event = {
+	id = 31069
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 244
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Lancashire
+	}
+}
+
+#### Yorkshire ####
+province_event = {
+	id = 31070
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 245
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Ebrauc
+		rename_capital = "Caer Ebrauc"
+	}
+}
+province_event = {
+	id = 31071
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 245
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Yorkshire
+		rename_capital = York
+	}
+}
+
+#### Northumberland ####
+province_event = {
+	id = 31072
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 246
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Bryneich
+		rename_capital = "Din Guaire"
+	}
+}
+province_event = {
+	id = 31073
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 246
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Northumberland
+		rename_capital = Newcastle
+	}
+}
+
+#### Lothian ####
+province_event = {
+	id = 31074
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 248
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Gododdin
+		rename_capital = "Dun Eideann"
+	}
+}
+province_event = {
+	id = 31075
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 248
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Lothian
+		rename_capital = Edinburgh
+	}
+}
+
+#### Ayrshire ####
+province_event = {
+	id = 31076
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 249
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Strathclyde
+		rename_capital = "Inbhir Air"
+	}
+}
+province_event = {
+	id = 31077
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 249
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Ayrshire
+		rename_capital = Ayr
+	}
+}
+
+#### Fife ####
+province_event = {
+	id = 31078
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 250
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Fidach
+		rename_capital = "Dun Deagh"
+	}
+}
+province_event = {
+	id = 31079
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 250
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Fife
+		rename_capital = Dundee
+	}
+}
+
+#### Aberdeen ####
+province_event = {
+	id = 31080
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 251
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Circind
+		rename_capital = "Obar Dheathain"
+	}
+}
+province_event = {
+	id = 31081
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 251
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Aberdeen
+		rename_capital = Aberdeen
+	}
+}
+
+#### Highlands ####
+province_event = {
+	id = 31082
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 252
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Ghaidhealtachd
+		rename_capital = "Inbhir Nis"
+	}
+}
+province_event = {
+	id = 31083
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 252
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = Highlands
+		rename_capital = Inverness
+	}
+}
+
+#### Western Isles ####
+province_event = {
+	id = 31084
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 253
+		culture_group = gaelic
+		owner = {
+			culture_group = gaelic
+			num_of_cities = 8
+		}
+		NOT = { has_province_flag = gaelic_name }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = gaelic_name
+		clr_province_flag = brit_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = "Innse Gall"
+		rename_capital = Steornabhagh
+	}
+}
+province_event = {
+	id = 31085
+
+	title = "EVTNAME31000"
+	desc = "EVTDESC31000"
+
+	trigger = {
+		province_id = 253
+		culture_group = british
+		owner = {
+			culture_group = british
+			num_of_cities = 8
+		}
+		has_province_flag = gaelic_name
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	immediate = {
+		set_province_flag = brit_name
+		clr_province_flag = gaelic_name
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+		change_province_name = "Western Isles"
+		rename_capital = Stornoway
+	}
+}
+
+#############################################
+#####	Muslim/Christian Iberia		#####
+#############################################
+
+#### Castillian/Sevillano ####
+province_event = {
+	id = 31100
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = sevillano
+		religion_group = christian
+		owner = {
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = castillian
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}
+province_event = {
+	id = 31101
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = castillian
+		religion_group = muslim
+		owner = {
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = sevillano
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}
+
+#### Catalan/Zaragozi ####
+province_event = {
+	id = 31102
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = zaragozi
+		religion_group = christian
+		owner = {
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = catalan
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}
+province_event = {
+	id = 31103
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = catalan
+		religion_group = muslim
+		owner = {
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = zaragozi
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}
+
+#### Portugese/Badajozi ####
+province_event = {
+	id = 31104
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = badajozi
+		religion_group = christian
+		owner = {
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = portugese
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}
+province_event = {
+	id = 31105
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+
+	trigger = {
+		region = iberian_peninsula
+		culture = portugese
+		religion_group = muslim
+		owner = {
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	immediate = {
+		culture = badajozi
+	}
+
+	option = {
+		name = "EVTOPTA31000"
+	}
+}

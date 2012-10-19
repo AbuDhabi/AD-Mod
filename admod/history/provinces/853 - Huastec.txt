@@ -1,0 +1,34 @@
+#853 - Huastec
+
+owner = AZT
+controller = AZT
+add_core = AZT
+culture = aztek 
+religion = teotl
+capital = "Huastec" 
+trade_goods = gold 
+hre = no 
+base_tax = 2 
+manpower = 1 
+citysize = 2000
+discovered_by = AZT
+discovered_by = MAY
+discovered_by = ZAP
+
+1450.1.1  = { citysize = 2500 }
+1500.1.1  = { citysize = 2850 }
+1519.1.1  = { discovered_by = SPA } 
+1530.1.1  = {	owner = SPA 
+		controller = SPA 
+ 		citysize = 3460
+ 		culture = castillian
+ 		religion = catholic
+	    } 
+1555.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 4750 } 
+1650.1.1  = { citysize = 5640 } 
+1700.1.1  = { citysize = 6877 } 
+1750.1.1  = { citysize = 7100 add_core = MEX } 
+1800.1.1  = { citysize = 8230 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence
+1812.8.10 = { controller = MEX } # Conquered by José María Morelos

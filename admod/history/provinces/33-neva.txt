@@ -1,0 +1,75 @@
+#Näset + the land around the river Neva, incl. Nöteborg, Nyen and St.Petersburg.
+
+owner = NOV
+controller = NOV
+add_core = NOV
+add_core = FIN
+culture = finnish
+religion = orthodox
+hre = no
+base_tax = 2
+trade_goods = fur
+manpower = 1
+capital = "Nöteborg"
+citysize = 1000 # Estimated
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0
+		hre = no }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		citysize = 1000
+		hre = yes }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Historical Campaign
+1399.10.14 = {	owner = NOV
+		controller = NOV
+		remove_core = EST
+		add_core = NOV
+		religion = orthodox
+		hre = yes }
+
+1450.1.1   = { citysize = 1200 }
+1478.1.14  = {	owner = MOS
+		controller = MOS
+		add_core = MOS
+		remove_core = NOV
+	     } # Muscovite annexation of Novgorod
+1500.1.1   = { citysize = 1350 }
+1503.3.22  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	     }
+1550.1.1   = { citysize = 1560 }
+1560.1.1   = { marketplace = yes }
+1600.1.1   = { citysize = 1822 }
+1612.4.10  = { controller = SWE } # The Ingermanian War-Captured by Evert Horn
+1617.2.17  = { owner = SWE add_core = SWE remove_core = RUS } # The Peace of Stolbova
+1617.2.17  = { religion = protestant}
+1650.1.1   = { citysize = 2100 }
+1700.1.1   = { citysize = 2654 }
+1703.5.4   = { fort2 = yes controller = RUS } # The Great Nordic War-Captured both Nöteborg and Nyen
+1712.1.1   = {	owner = RUS
+		add_core = RUS
+		capital = "St.Petersburg"
+	     	culture = russian
+	     } # Unknown date
+1717.1.1   = { citysize = 25000 }
+1721.8.30  = { remove_core = SWE } # The Peace of Nystad
+1725.1.1   = { citysize = 40000 }
+1800.1.1   = { citysize = 200000 }

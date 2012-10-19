@@ -1,0 +1,277 @@
+#events 30300-30399
+#################################################
+# Guru Nanak
+#################################################
+
+province_event = {
+
+	id = 30300
+
+	title = "EVTNAME30300"
+	desc = "EVTDESC30300"
+
+	trigger = {
+		year = 1498
+		culture = panjabi
+		NOT = { has_global_flag = sikh_1 }
+		NOT = { year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+
+		modifier = {
+			factor = 0.5
+			year = 1505
+		}
+		modifier = {
+			factor = 0.1
+			year = 1510
+		}
+	}
+
+	immediate = {
+		set_global_flag = sikh_1
+	}
+
+	option = {
+		name = "EVTOPTA30300"		# Support the movement
+		ai_chance = { factor = 35 }
+		enable_religion = sikhism
+		owner = {
+			set_country_flag = sikh_y
+			random_owned = {
+				religion = sikhism
+			}
+			random_owned = {
+				religion = sikhism
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB30300"		# Denounce as heresy
+		ai_chance = { factor = 65 }
+		revolt_risk = 2
+		owner = { set_country_flag = sikh_n }
+	}
+}
+
+#################################################
+# Guru Nanak and his journeys
+#################################################
+
+country_event = {
+
+	id = 30301
+
+	title = "EVTNAME30301"
+	desc = "EVTDESC30301"
+
+	trigger = {
+		OR = {
+			primary_culture = al_iraqiya_arabic
+			culture_group = iranian
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = western_aryan
+			culture_group = dravidian
+			owns = 384	# Medina
+			owns = 385	# Mecca
+		}
+		has_global_flag = sikh_1
+		NOT = { has_country_flag = sikh_y }
+		NOT = { has_country_flag = sikh_n }
+		NOT = { year = 1530 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+
+		modifier = {
+			factor = 0.5
+			culture_group = hindusthani
+		}
+		modifier = {
+			factor = 0.8
+			culture_group = eastern_aryan
+		}
+		modifier = {
+			factor = 0.8
+			culture_group = western_aryan
+		}
+		modifier = {
+			factor = 1.4
+			culture_group = iranian
+		}
+		modifier = {
+			factor = 1.6
+			culture_group = turko_semitic
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30301"		# Listen to him
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.5
+				religion_group = muslim
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { culture_group = hindusthani }
+			}
+			modifier = {
+				factor = 2
+				primary_culture = panjabi
+			}
+		}
+		set_country_flag = sikh_y
+		enable_religion = sikhism
+		random_owned = {
+			religion = sikhism
+		}
+	}
+
+	option = {
+		name = "EVTOPTB30301"		# Ignore
+		ai_chance = { factor = 65 }
+		set_country_flag = sikh_n
+	}
+}
+
+#################################################
+# Guru Arjan compiles Adi Granth
+#################################################
+
+province_event = {
+
+	id = 30302
+
+	title = "EVTNAME30302"
+	desc = "EVTDESC30302"
+
+	trigger = {
+		year = 1600
+		culture_group = hindusthani
+		has_global_flag = sikh_1
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			culture = panjabi
+		}
+		modifier = {
+			factor = 0.5
+			owner = { religion = sikhism }
+		}
+	}
+
+	immediate = {
+		clr_global_flag = sikh_1
+	}
+
+	option = {
+		name = "EVTOPTA30302"		# Welp
+		enable_religion = sikhism
+		religion = sikhism
+	}
+}
+
+#################################################
+# Generic spread of Sikhism
+#################################################
+
+province_event = {
+
+	id = 30303
+
+	title = "EVTNAME30303"
+	desc = "EVTDESC30303"
+
+	trigger = {
+		is_religion_enabled = sikhism
+		OR = {
+			religion_group = muslim
+			religion_group = dharmic
+			religion_group = taoic
+		}
+		NOT = { religion_years = { sikhism = 65 } }
+		NOT = { religion = sikhism }
+		any_neighbor_province = { religion = sikhism }
+	}
+
+	mean_time_to_happen = {
+		months = 600
+
+		modifier = {
+			factor = 0.8
+			culture_group = hindusthani
+		}
+		modifier = {
+			factor = 0.6
+			culture = panjabi
+		}
+		modifier = {
+			factor = 0.9
+			culture = kashmiri
+		}
+		modifier = {
+			factor = 1.2
+			culture_group = eastern_aryan
+		}
+		modifier = {
+			factor = 1.4
+			culture_group = dravidian
+		}
+		modifier = {
+			factor = 4
+			culture_group = iranian
+		}
+		modifier = {
+			factor = 5
+			culture_group = turko_semitic
+		}
+		modifier = {
+			factor = 6
+			culture_group = altaic
+		}
+		modifier = {
+			factor = 2
+			religion_group = muslim
+		}
+		modifier = {
+			factor = 3
+			religion_group = taoic
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { religion_years = { sikhism = 5 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { religion = sikhism }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { has_country_flag = sikh_y }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { has_country_flag = sikh_n }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA30303"		# Welp
+		religion = sikhism
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 1825
+		}
+	}
+}

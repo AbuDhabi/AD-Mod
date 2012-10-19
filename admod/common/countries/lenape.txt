@@ -1,0 +1,83 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 46  168  140 } 
+
+historical_ideas = {
+	bill_of_rights
+	patron_of_art
+	grand_navy
+	quest_for_the_new_world
+	national_bank
+	superior_seamanship
+	sea_hawks
+	press_gangs
+	shrewd_commerce_practise
+	cabinet
+	improved_foraging
+	liberty_egalite_fraternity
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Hopocan #0" = 20
+	"Oratam #0" = 20
+	"Tamaqua #0" = 20
+	"Tewea #0" = 20
+	"Allumapees #0" = 10
+	"Buckongahelas #0" = 10
+	"Custaloga #0" = 10
+	"Gelelemend #0" = 10
+	"Konieschquanoheel #0" = 10
+	"Koquethagechton #0" = 10
+	"Mahonegon #0" = 10
+	"Neolin #0" = 10
+	"Netawatwes #0" = 10
+	"Pachgantschihilas #0" = 10
+	"Pisquetomen #0" = 10
+	"Sasoonan #0" = 10
+	"Shingas #0" = 10
+	"Sucktummahkway #0" = 10
+	"Tamanend #0" = 10
+	"Tammany #0" = 10
+	"Teedyuscung #0" = 10
+	"Tenskwatawa #0" = 0
+}
+
+leader_names = {
+	Absecon Aquehonga
+	Catasauqua Communipaw Conshohocken
+	Hackensack Hoboken Hohokus Hopatcong
+	Gowanus
+	Macungie Mahwah Manacknong Manahawkin Manalapan Manayunk Manna-hata
+	Mantoloking Mantua Matawan Metuchen Minisink Monsey Musconetcong
+	Naraticong Nechtanc
+	Passaic Peapack Pennypack
+	Sapokanikan Sassian Scheyichbi Secaucus Shackamaxon Shawkopoke
+	Tulpehocken
+	Weehawken Wichquawanck Wissahickon
+}
+
+ship_names = {
+	Absecon Aquehonga
+	Catasauqua Communipaw Conshohocken
+	Hackensack Hoboken Hohokus Hopatcong
+	Gowanus
+	Macungie Mahwah Manacknong Manahawkin Manalapan Manayunk Manna-hata
+	Mantoloking Mantua Matawan Metuchen Minisink Monsey Musconetcong
+	Naraticong Nechtanc
+	Passaic Peapack Pennypack
+	Sapokanikan Sassian Scheyichbi Secaucus Shackamaxon Shawkopoke
+	Tulpehocken
+	Weehawken Wichquawanck Wissahickon
+}

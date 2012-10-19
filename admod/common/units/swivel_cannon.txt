@@ -1,0 +1,11 @@
+# Swivel Cannon
+# land 40
+type = artillery
+
+maneuver = 2
+offensive_morale = 8
+defensive_morale = 9
+offensive_fire = 6
+defensive_fire = 7
+offensive_shock = 5
+defensive_shock = 5

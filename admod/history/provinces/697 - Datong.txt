@@ -1,0 +1,31 @@
+#697 - Datong
+
+owner = MNG
+controller = MNG
+culture = chi_jin
+religion = confucianism
+capital = "Datong"
+trade_goods = wool
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 26150
+add_core = MNG
+add_core = QIN
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 29650 }
+1500.1.1 = { citysize = 31220 }
+1550.1.1 = { citysize = 33500 }
+1600.1.1 = { citysize = 36458 }
+1640.1.1 = { controller = MCH }
+1646.1.1 = {	owner = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1650.1.1 = { citysize = 39647 }
+1700.1.1 = { citysize = 42155 }
+1750.1.1 = { citysize = 44628 }
+1800.1.1 = { citysize = 38420 }

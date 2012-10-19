@@ -1,0 +1,36 @@
+#665 - Jiangmen
+
+owner = MNG
+controller = MNG
+culture = chi_yue
+religion = confucianism
+capital = "Jiangmen"
+trade_goods = chinaware
+hre = no
+base_tax = 7
+manpower = 3
+citysize = 15348
+add_core = MNG
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+1450.1.1 = { citysize = 16400 }
+1495.1.1 = { marketplace = yes }
+1500.1.1 = { citysize = 18721 }
+1514.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 20173 }
+1600.1.1 = { citysize = 23148 }
+1650.1.1 = { citysize = 25138 }
+1660.1.1 = { constable = yes }
+1662.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = MNG
+	   } # The Qing Dynasty
+1700.1.1 = { citysize = 26422 }
+1750.1.1 = { citysize = 28675 }
+1800.1.1 = { citysize = 31500 }

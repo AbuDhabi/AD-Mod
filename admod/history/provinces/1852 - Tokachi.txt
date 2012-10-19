@@ -1,0 +1,30 @@
+#1852 - Tokachi
+
+owner = AIN
+controller = AIN
+culture = ainu
+religion = shinto
+capital = "Tokachi"
+trade_goods = fish
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1800
+add_core = AIN
+fort1 = yes
+discovered_by = AIN
+
+1640.1.1  = { discovered_by = RUS } # Ivan Moskvitin
+1679.1.1  = {	
+	owner = FUJ
+	controller = FUJ
+	culture = japanese
+	religion = shinto
+	citysize = 320
+	trade_goods = fish
+	} # Russian & Japanese attemps at colonization
+1700.1.1  = { citysize = 500 }
+1704.1.1  = { add_core = FUJ }
+1767.1.1  = { add_core = RUS }
+1787.1.1  = { discovered_by = FRA } # Jean-Francois de La Pérouse
+1800.1.1  = { citysize = 980 }

@@ -1,0 +1,12 @@
+# South American Jungle Cavalry
+# land 26
+unit_type = s_new_world
+type = cavalry
+
+maneuver = 2
+offensive_morale = 7
+defensive_morale = 6
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 7
+defensive_shock = 6

@@ -1,0 +1,12 @@
+# Muslim Mass Infantry
+# land 30
+type = infantry
+unit_type = muslim
+
+maneuver = 1	
+offensive_morale = 4
+defensive_morale = 5	
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 6
+defensive_shock = 6

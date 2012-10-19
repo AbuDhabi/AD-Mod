@@ -1,0 +1,49 @@
+#1116 - Wolof
+
+owner = MAL
+controller = MAL
+culture = senegambian
+citysize = 7000
+manpower = 2
+religion = vodun
+capital = "Jowol"
+trade_goods = slaves
+hre = no
+base_tax = 3
+add_core = MAL
+discovered_by = MAL
+discovered_by = SOF
+discovered_by = ASH
+discovered_by = SON
+
+1450.1.1 = { citysize = 8000 }
+1493.1.1 = { revolt_risk = 4 } # Fulani incursions begin
+1495.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Koly Tengella proclaims Fulani state of Futa Toro under Denyanke dynasty, Mali never regains control
+# 1512.1.1 = { revolt_risk = 7 } #leader of Fulani killed in battle, extended period of instability over Fulani leadership with Songhai raids added to confusion
+1590.1.1 = { revolt = {} } #Samba Lamu ends instability in Futa Toro, begins period of expansion
+1600.1.1 = {	citysize = 0
+		native_size = 80
+		native_ferocity = 4.5
+		native_hostileness = 9
+		owner = XXX
+		controller = XXX
+		remove_core = MAL
+	   	discovered_by = MOR
+	   } #Collapse of Mali State
+1620.1.1 = { discovered_by = western } #by this point European traders on coast aware of political situation along Upper Senegal River
+1673.1.1 = { revolt_risk = 10 }#The Tubenan, supporters of Nasir al-Din's Marabout movement, invade Futa Toro
+1678.1.1 = { revolt_risk = 1 } #Denyanke dynasty restored with aid of French merchants, Tubenan suppressed 
+1716.1.1 = { revolt_risk = 5 } #Civil war breaks out, Bubakar Sire requests Moroccan aid
+1720.1.1 = { revolt_risk = 7 } #Moroccan soldiers rebel against Babakar Sire, sparking new civil war
+1725.1.1 = { revolt_risk = 0 } #order restored under Samba Gelaajo Jeegi with French aid
+1731.1.1 = { revolt_risk = 8 } #Samba Gelaajo Jeegi deposed by Konko Bubu Musa with Moroccan Aid 
+1738.1.1 = { revolt_risk = 8 } #Samba Gelaajo Jeegi forms alliance with French traders to regain Futa Toro throne
+1741.1.1 = { revolt_risk = 0 } #Samba Gelaajo Jeegi restores power in Futa Toro
+1744.1.1 = { revolt_risk = 8 } #Samba Gelaajo assassinated, renewed civil war
+1768.1.1 = { revolt_risk = 7 } #Trzaza Moors seize control of Toro with British support
+1774.1.1 = { revolt_risk = 8 } #Rising of the Torodo under Sulayman Baal against Trzaza rule
+1776.1.1 = { revolt_risk = 2 } #Sulayman Baal defeats the Trzaza, launches trade embargo against British
+1777.1.1 = { revolt_risk = 0 } #Abd al-Qadir Kan succeeds Baal, begins plans to expand Torodo control across N bank of Senegal
+1784.1.1 = { religion = sunni revolt_risk = 2 } #beginning of intense conversion to Islam in region, religion of province changes to Sunni
+1791.1.1 = { revolt_risk = 4 } #Abd al-Qadir defeated by Kayor at Bungoy, authority questioned
+1792.1.1 = { revolt_risk = 0 } #Abd al-Qadir deposed in coup organized by Torodo military families

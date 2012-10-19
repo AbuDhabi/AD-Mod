@@ -1,0 +1,91 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 65  189  212 }
+
+historical_ideas = {
+	press_gangs
+	national_trade_policy
+	military_drill
+	sea_hawks
+	quest_for_the_new_world
+	colonial_ventures
+	superior_seamanship
+	shrewd_commerce_practise
+	bill_of_rights
+	excellent_shipwrights
+	naval_provisioning
+	improved_foraging
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Hone #0" = 25
+	"Tuheitia #0" = 20
+	"Potatau #0" = 20
+	"Tawhiao #0" = 20
+	"Mahuta #0" = 20
+	"Te Rata #0" = 20
+	"Koroki #0" = 20
+	"Pokikake #0" = 20
+	"Hapurona #0" = 20
+	"Hauraki #0" = 20
+	"Wiremu #0" = 20
+	"Te Atairangikaahu #0" = -5
+	"Whakaawi #0" = -5
+	"Hera #0" = -5
+	"Rangiaho #0" = -5
+	"Aotea #0" = -5
+	"Te Marae #0" = -5
+	"Te Uranga #0" = -5
+	"Hauraki #0" = 0
+	"Hepanaia #0" = 0
+	"Kaumuali'i #0" = 0
+	"Kinau #0" = 0
+	"Liholiho #0" = 0
+	"Mahuta #0" = 0
+	"Mataio #0" = 0
+	"Naukane #0" = 0
+	"Purukutu #0" = 0
+	"Rewi #0" = 0
+	"Tamati #0" = 0
+	"Te Ua #0" = 0
+	"Tohu #0" = 0
+	"Tohunga #0" = 0
+	"Tupara #0" = 0
+	"Tupari #0" = 0
+	"Wirimu #0" = 0
+}
+
+leader_names = {
+	"'Iolani"
+	Ahilapalapa
+	Heke Hopa
+	Kakahi Kahekili Kaiwikapu Keina Kingi
+	La'amea
+	Mamao
+	Pakeha
+	Tamehana
+	"Te Arawa" "Te Atiawa" "Te Teira" "Te Wherowhero" "Te Rangi"
+	"Te Huirama" "Te Maniapoto" "Te Whauroa" "Te Urewera"
+}
+
+ship_names = {
+	Kingi
+	Haka Heke Hopa
+	Kakahi Keina
+	Pakeha
+	Tamehana
+	"Te Arawa" "Te Atiawa" "Te Teira" "Te Wherowhero" "Te Rangi"
+	"Te Huirama" "Te Maniapoto" "Te Whauroa" "Te Urewera"
+}

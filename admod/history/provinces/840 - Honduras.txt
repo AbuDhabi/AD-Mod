@@ -1,0 +1,38 @@
+#840 - Honduras
+
+owner = MAY 
+controller = MAY 
+culture = mayan 
+religion = teotl
+capital = "Honduras" 
+trade_goods = coffee 
+hre = no 
+base_tax = 2 
+manpower = 1 
+citysize = 2000
+add_core = MAY
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 2100 }
+1502.1.1  = { discovered_by = CAS } # Christopher Columbus 
+1516.1.23 = { discovered_by = SPA }
+1525.1.1  = { citysize = 2250 } # First Spanish settlers 
+1538.1.1  = {	owner = SPA
+		controller = SPA
+		capital = "Comayagua"
+		culture = castillian
+		religion = catholic
+	    } # The last resistance is crushed 
+1548.1.1  = { revolt_risk = 5 } # Slave rebellion 
+1549.1.1  = { revolt_risk = 0 } 
+1550.1.1  = { citysize = 3250 }
+1562.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 3570 }
+1650.1.1  = { citysize = 4935 }
+1700.1.1  = { citysize = 5180 }
+1750.1.1  = { citysize = 5470 add_core = MEX }
+1800.1.1  = { citysize = 6500 }
+1808.2.1  = { add_core = CAM } # France invades Spain
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

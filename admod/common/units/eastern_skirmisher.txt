@@ -1,0 +1,12 @@
+# Eastern Skirmisher
+# land 48
+type = cavalry
+unit_type = ottoman
+
+maneuver = 2
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 8
+defensive_fire = 10
+offensive_shock = 6
+defensive_shock = 6

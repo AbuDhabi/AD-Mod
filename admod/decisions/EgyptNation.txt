@@ -1,0 +1,100 @@
+country_decisions = {
+
+	egypt_nation = {
+		potential = {
+			primary_culture = al_misr_arabic
+			NOT = {
+				government = tribal_despotism
+				government = tribal_federation
+				government = tribal_democracy
+			}
+			NOT = { exists = EGY }
+			NOT = { tag = TUR }
+			NOT = { tag = MUG }
+			NOT = { tag = ARB }
+			NOT = { tag = ALX }
+		}
+		allow = {
+			owns = 358		# Alexandria
+			owns = 360		# Nile
+			owns = 361		# Cairo
+			owns = 362		# Delta
+			owns = 363		# Diamentia
+			is_core = 358		# Alexandria
+			is_core = 360		# Nile
+			is_core = 361		# Cairo
+			is_core = 362		# Delta
+			is_core = 363		# Diamentia
+			war = no
+			government_tech = 20
+		}
+		effect = {
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.10
+			change_tag = EGY
+			EGY = { capital = 361 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+
+	egypt_nation_tribal = {
+		potential = {
+			primary_culture = al_misr_arabic
+			OR = {
+				government = tribal_despotism
+				government = tribal_federation
+				government = tribal_democracy
+			}
+			NOT = { exists = EGY }
+			NOT = { tag = TUR }
+			NOT = { tag = MUG }
+			NOT = { tag = ARB }
+			NOT = { tag = ALX }
+		}
+		allow = {
+			MIL = 7
+			government_tech = 30
+			land_tech = 30
+			stability = 1
+			prestige = 0.25
+			owns = 357		# Libya
+			owns = 358		# Alexandria
+			owns = 360		# Nile
+			owns = 361		# Cairo
+			owns = 362		# Delta
+			owns = 363		# Diamentia
+			owns = 1233		# Kargah
+			is_core = 357		# Libya
+			is_core = 358		# Alexandria
+			is_core = 360		# Nile
+			is_core = 361		# Cairo
+			is_core = 362		# Delta
+			is_core = 363		# Diamentia
+			is_core = 1233		# Kargah
+			war = no
+		}
+		effect = {
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			government = feudal_monarchy
+			centralization_decentralization = -1
+			prestige = 0.10
+			change_tag = EGY
+			EGY = { capital = 361 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+
+}

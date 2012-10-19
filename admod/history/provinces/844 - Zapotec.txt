@@ -1,0 +1,33 @@
+#844 - Zapotec
+
+owner = ZAP
+controller = ZAP
+culture = zapotek
+religion = teotl
+capital = "Zapotec"
+trade_goods = sugar
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 2500
+add_core = ZAP
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 2650 }
+1500.1.1  = { citysize = 2870 }
+1542.1.1  = {	discovered_by = SPA
+		owner = SPA 
+		controller = SPA
+		citysize = 3266
+		culture = castillian
+		religion = catholic
+	    }
+1567.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 3978 }
+1650.1.1  = { citysize = 4244 }
+1700.1.1  = { citysize = 4810 }
+1750.1.1  = { citysize = 5564 add_core = MEX }
+1800.1.1  = { citysize = 6200 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

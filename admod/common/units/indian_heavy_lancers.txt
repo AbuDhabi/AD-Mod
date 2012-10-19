@@ -1,0 +1,12 @@
+# Indian Heavy Lancers
+# land 56
+unit_type = indian
+type = cavalry
+
+maneuver = 2
+offensive_morale = 10
+defensive_morale = 11
+offensive_fire = 6
+defensive_fire = 7
+offensive_shock = 11
+defensive_shock = 11

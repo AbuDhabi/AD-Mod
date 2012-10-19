@@ -1,0 +1,89 @@
+country_decisions = {
+
+	inca_nation = {
+		potential = {
+			OR = {
+				primary_culture = inca
+				primary_culture = aimara
+				primary_culture = wanka
+			}
+			NOT = { tag = INC }
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { government = regular_horde }
+		}
+		allow = {
+			owns = 806	# Nazca
+			owns = 810	# Huancavelica
+			owns = 813	# Cajamarca
+			owns = 814	# Huanuco
+			owns = 806	# Nazca
+			owns = 808	# Cuzco
+
+			is_core = 813	# Cajamarca
+			is_core = 814	# Huanuco
+			is_core = 806	# Nazca
+			is_core = 808	# Cuzco
+
+			NOT = { exists = INC }
+			war = no
+		}
+		effect = {
+			centralization_decentralization = -1
+			prestige = 0.1
+			legitimacy = 0.1
+			change_tag = INC
+			years_of_income = 0.1
+			INC = {
+				capital = 808
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	inca_nation_horde = {
+		potential = {
+			OR = {
+				primary_culture = inca
+				primary_culture = aimara
+				primary_culture = wanka
+			}
+			NOT = { tag = INC }
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			OR = {
+				government = regular_horde
+				government = tribal_despotism
+				government = tribal_federation
+				government = tribal_democracy
+			}
+		}
+		allow = {
+			owns = 806	# Nazca
+			owns = 810	# Huancavelica
+			owns = 813	# Cajamarca
+			owns = 814	# Huanuco
+			owns = 806	# Nazca
+			owns = 808	# Cuzco
+
+			MIL = 6
+			NOT = { exists = INC }
+		}
+		effect = {
+			centralization_decentralization = -1
+			prestige = 0.1
+			legitimacy = 0.1
+			change_tag = INC
+			years_of_income = 0.1
+			government = tribal_empire
+			INC = {
+				capital = 808
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

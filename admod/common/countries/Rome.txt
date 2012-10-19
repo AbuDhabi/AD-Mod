@@ -1,0 +1,202 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 200  20  20 }
+
+historical_ideas = {
+  military_drill
+  ecumenism
+  bill_of_rights
+  humanist_tolerance
+  glorious_arms
+  engineer_corps
+  grand_army
+  patron_of_art
+  cabinet
+  espirit_de_corps
+  battlefield_commissions
+  bureaucracy
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+
+}
+
+monarch_names = {
+	"Ioannes #6" = 40
+	"Konstantinos #10" = 20
+	"Andronikos #4" = 20
+	"Manuel #1" = 20
+	"Demetrios #0" = 15
+	"Theodoros #0" = 15
+	"Michael #9" = 10
+	"Zoe #1" = -10
+	"Andreas #0" = 10
+	"Helene #0" = -10
+	"Thomas #0" = 10
+	"Aineias #0" = 0
+	"Alexandros #0" = 0
+	"Ambrosios #0" = 0
+	"Bartholomaios #0" = 0
+	"Chrysanthos #0" = 0
+	"Diogenes #0" = 0
+	"Dionysos #0" = 0
+	"Eirenaios #0" = 0
+	"Elpidios #0" = 0
+	"Georgios #0" = 0
+	"Gregorios #0" = 0
+	"Hektor #0" = 0
+	"Herakles #0" = 0
+	"Iason #0" = 0
+	"Kastor #0" = 0
+	"Matthaios #0" = 0
+	"Nestor #0" = 0
+	"Nikolaos #0" = 0
+	"Nikomedes #0" = 0
+	"Orestes #0" = 0
+	"Palaemon #0" = 0
+	"Pavlos #0" = 0
+	"Pelagios #0" = 0
+	"Petros #0" = 0
+	"Philemon #0" = 0
+	"Philippos #0" = 0
+	"Prokopios #0" = 0
+	"Stefanos #0" = 0
+	"Theodoros #0" = 0
+		"Cosimo #0" = 60
+	"Ferdinando #0" = 60
+	"Francesco #0" = 60
+	"Lodovico #2" = 40
+	"Carlo #4 Emmanuele" = 20
+	"Carlo #4 Felice" = 20
+	"Lodovico #2 Maria" = 20
+	"Alessandre #0" = 20
+	"Francesco #0 Stefano" = 20
+	"Galeazzo Maria #0" = 20
+	"Gian Galeazzo #0" = 20
+	"Gian Gastone #0" = 20
+	"Massimiliano #0" = 20
+	"Napoleone #0" = 20
+	"Pietro Leopoldo #0" = 20
+	"Vittorio Amedeo #0" = 20
+	"Carlo #4" = 10
+	"Antonio #0" = 10
+	"Ermes #0" = 10
+	"Eugenio #0" = 10
+	"Filippo #0" = 10
+	"Gian Carlo #0" = 10
+	"Giovanni #0 Maria" = 10
+	"Pietro #0" = 10
+	"Alberto #1" = 5
+	"Rodolfo #1" = 5
+	"Ascanio Maria #0" = 5
+	"Augusto #0" = 5
+	"Benedetto #0" = 5
+	"Emmanuele Filiberto #0" = 5
+	"Filippo #0 Maria" = 5
+	"Giovanni #0" = 5
+	"Giuseppe #0" = 5
+	"Leopoldo #0" = 5
+	"Matteo #0" = 5
+	"Maurizio #0" = 5
+	"Ottaviano #0" = 5
+	"Raniero #0" = 5
+	"Sforza Maria #0" = 5
+	"Agostino #0" = 0
+	"Constanzo #0" = 0
+	"Demetrio #0" = 0
+	"Fabio #0" = 0
+	"Giordano #0" = 0
+	"Isidoro #0" = 0
+	"Niccolò #0" = 0
+	"Paolo #0" = 0
+	"Romeo #0" = 0
+	"Severino #0" = 0
+	"Vittorio #0" = 0
+
+}
+
+leader_names = {
+		"d'Appiani d'Aragona" "Arborio Mella" 
+	Barberini Barzagli Boncompagni Borghese Borromeo Buonarroti "di Busca"
+	"di Campofregoso" Carafa "di Cardé" "del Carreto" Casanova Castagna
+	Castagnaro "di Cavour" Chigi Colonna Contarini Conti Corsini Cybo 
+	"Doria di Cirié" Doria-Landi Doria-Pamphili
+	d'Este 	"di Farnese" "di Ferrari"
+	"Gaetani dell'Aquila" Galilei Gambacorta Gentileschi Giustiniani Gonzaga Grimaldi
+	Ludovisi Malaspina "di Medici" Melzi Montefeltro Orsini
+	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli
+	"dalla Rosa" "della Rovere"
+	"di Saluzzo" "di Savoia" Sfondrati Sforza Spinola
+	"della Torre" "della Ubaldini" Vico Visconti
+		Akropolites Angelos Aoinos Apokaukos Argyros
+	Basileous Batatzes Botaneiates Boumbalis
+	Choniates Choumnos
+	Diasorenos Diogenes Doukas
+	Gabras
+	Iagaris
+	Kantakuzenos Kaukadenos Komnenos
+	Laskaris
+	Melissinos Melisurgos Mikrulakes Monomakos Mouzalon
+	Nestongos
+	Palaiologos Paraspondylos Phocas Phouskarnaki Phrangopoulos Psellos
+	Rhadinos Rhangabe Rhodocanakis Romanos
+	Syropoulos
+	Tornikes
+	Zarides Zimisces
+}
+
+ship_names = {
+	Adrianopolis "Aetos Autokratiki" "Aghia Ioylia" "Aghia Irini" "Aghia Magdalini" "Aghia Sophia" "Aghia Thekla"
+	"Aghios Angelos" "Aghios Eusebios" "Aghios Ioakeim" "Aghios Ioannes" "Aghios Loukas"
+	"Aghios Markos" "Aghios Matthaios" "Aghios Maximos" "Aghios Nikolaos" "Aghios Pavlos"
+	"Aghios Petros" "Aghios Philimon" "Aghios Sergios" "Aghios Stephanos" "Aghios Thimoteos"
+	Aiakos Aineas Akhilleus Amphitrion Aphrodita Apollo Arakhne Ares Asia Athena
+	"Basileous Alexandros" "Basileous Alexeios" "Basileous Andronikos" "Basileous Basileos"
+	"Basileous Demetrios" "Basileous Ioannes" "Basileous Isaak" "Basileous Leon"
+	"Basileous Manuel" "Basileous Michael" "Basileous Rhomaion" "Basileous Romanos"
+	"Basileous Theodoros" "Basileous Theophilos" "Basileisa Theodora" "Basileisa Zoe"
+	Belisarios Byzantion
+	Cassandra Castor "Christos Soter" Chronos
+	Demeter "Despotes Demetrios" "Despotes Moreas" Diana "Drakon Ouranos" Dyonisos
+	Ellade Endymion Eros Europa
+	Gea "Gorgona Poseidonos"
+	Hades Hektor Hephaistos Hera Herakles Hermes Hestia Hydra Hypnos
+	Jason
+	"Kaisar Konstantinos" Konstantinopolis "Konstantinos Dragases"
+	"Liontari Skliros" "Lussa ton Theon" "Lykos Thalasses"
+	Makedonia "Margaritari Aspra" Minos
+	Nestor
+	Odysseos Orestes Okeanasthraustis Ouranos
+	Panselenos Pegasos Perseos "Pontikos Thalasses" Poseidon
+	Rhadamanthys
+	Sebastokrator
+	Thanatos Theseos
+	Zeous
+	Medea Vulcano Gloria Minerva Laatea
+	Diligenza Vittoria Eolo Concordia Forza 
+	Fama Sirena Falcon Ercole Idra "San Andrea"
+	"San Zaccaria" "San Spiridon" "San Gaetano"
+	"Fortuna Guerriera" Terror Aquileta Constanza
+	"Regina del Mar" "San Nicolo" Nettuno Rosa
+	Fenice Iride Aurora Tigre Giove "Rizzo d'Oro"
+	"Amazzone Guerriera"
+}
+
+army_names = {
+	"Legion of $PROVINCE$"
+}

@@ -1,0 +1,467 @@
+province_event = {
+
+	id = 2012
+
+	trigger = {
+		is_religion_enabled = reformed
+		religion = catholic
+		NOT = { religion_years = { reformed = 100 } }
+		NOT = { year = 1700 }
+		NOT = { 
+			province_id = 118 # Rome
+			owner = { government = papal_government } 
+		}
+	}
+	mean_time_to_happen = {
+		months = 800
+
+		# Positive modifiers
+		modifier = {
+			factor = 0.15
+			NOT = { religion_years = { reformed = 12 } }
+			OR = {
+				owner = { has_country_flag = "calvinist_reformation" }
+				any_neighbor_province = {
+					owner = { has_country_flag = "calvinist_reformation" }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				religion = reformed
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				religion = reformed
+				culture_group = THIS
+			}
+		}
+		
+		modifier = {
+			factor = 0.65
+			NOT = { religion_years = { reformed = 6 } }
+		}
+		modifier = {
+			factor = 0.70
+			NOT = { religion_years = { reformed = 12 } }
+		}
+		
+		modifier = {
+			factor = 0.70
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 0.75
+			owner = { reformed = 0 } # Tolerance to reformed
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				idea = deus_vult
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = { religion_years = { reformed = 20 } }
+			owner = { 
+				religion = reformed
+			}
+			any_neighbor_province = {
+				religion = reformed
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			NOT = { religion_years = { reformed = 40 } }
+			owner = { 
+				religion = reformed
+			}
+			any_neighbor_province = {
+				religion = reformed
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				defender_of_faith = yes
+			}
+		}
+		
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -2 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -4 }
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 4
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_global_flag = pog_scenario
+		}
+		
+		# Negative modifiers
+		modifier = {
+			factor = 1.1
+			owner = {
+				NOT = { serfdom_freesubjects = -2 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				NOT = { serfdom_freesubjects = -4 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				innovative_narrowminded = 2
+			}
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				innovative_narrowminded = 4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { reformed = 20 }
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { reformed = 30 }
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { reformed = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			religion_years = { reformed = 50 }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { reformed = 60 }
+		}
+		modifier = {
+			factor = 4
+			religion_years = { reformed = 80 }
+		}
+		
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = divine_supremacy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				defender_of_faith = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { 
+				NOT = { religion = reformed }
+				government = theocratic_government 
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { religion = protestant }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { owner = { religion_group = christian } }
+		}
+		modifier = {
+			factor = 4.0
+			owner = { government = papal_government }
+		}
+		modifier = {
+			factor = 4.0
+			is_overseas = yes
+		}
+		modifier = {
+			factor = 6.0
+			owner = { 
+				religion = catholic
+			}
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		modifier = {
+			factor = 6.0
+			owner = { has_country_modifier = counter_reformation }
+		}
+		
+	}
+
+	title = "EVTNAME2012"
+	desc = "EVTDESC2012"
+
+	option = {
+		name = "EVTOPTA2012"
+		religion = reformed
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+
+province_event = {
+	id = 2013
+
+	trigger = {
+		is_religion_enabled = reformed
+		religion = orthodox
+		NOT = { religion_years = { reformed = 100 } }
+		NOT = { year = 1700 }
+		any_neighbor_province = {
+			religion = reformed
+		}
+	}
+	mean_time_to_happen = {
+		months = 1200
+
+		# Positive modifiers
+		modifier = {
+			factor = 0.15
+			NOT = { religion_years = { reformed = 12 } }
+			OR = {
+				owner = { has_country_flag = "calvinist_reformation" }
+				any_neighbor_province = {
+					owner = { has_country_flag = "calvinist_reformation" }
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.55
+			NOT = { religion_years = { reformed = 5 } }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { religion_years = { reformed = 10 } }
+		}
+		modifier = {
+			factor = 0.70
+			has_province_modifier = "heresy"
+		}
+		modifier = {
+			factor = 0.75
+			owner = { reformed = 0 } # Tolerance to reformed
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				religion = reformed
+				defender_of_faith = yes
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -2 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {	innovative_narrowminded = -4 }
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				serfdom_freesubjects = 4
+			}
+		}
+		
+		# Negative modifiers
+		modifier = {
+			factor = 1.1
+			owner = {
+				NOT = { serfdom_freesubjects = -2 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				NOT = { serfdom_freesubjects = -4 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				innovative_narrowminded = 2
+			}
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				innovative_narrowminded = 4
+			}
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { reformed = 20 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { reformed = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { reformed = 40 }
+		}
+		modifier = {
+			factor = 1.4
+			religion_years = { reformed = 50 }
+		}
+		modifier = {
+			factor = 2
+			religion_years = { reformed = 60 }
+		}
+		modifier = {
+			factor = 4
+			religion_years = { reformed = 80 }
+		}
+		
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = divine_supremacy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = deus_vult
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				idea = church_attendance_duty
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = { 
+				NOT = { religion = reformed }
+				defender_of_faith = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { religion = protestant }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { 
+				NOT = { religion = reformed }
+				government = theocratic_government 
+			}
+		}
+		modifier = {
+			factor = 6.0
+			owner = { has_country_modifier = counter_reformation }
+		}
+	}
+
+	title = "EVTNAME2012"
+	desc = "EVTDESC2012"
+
+	option = {
+		name = "EVTOPTA2012"
+		religion = reformed
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}

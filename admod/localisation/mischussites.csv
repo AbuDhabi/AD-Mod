@@ -1,0 +1,63 @@
+EVTNAME30000;Jan Hus spreading heresy;;;;;;;;;;;;;x
+EVTDESC30000;The priest Jan Hus is becoming more outspoken in his criticisms of the Pope and the Catholic Church. His talk of reforms and direct opposition to the crusades is stirring up resentment for the church in the Czech people.;;;;;;;;;;;;;x
+EVTOPTA30000;Arrest him at once;;;;;;;;;;;;;x
+EVTOPTB30000;Allow him to speak;;;;;;;;;;;;;x
+EVTNAME30001;Hussites protest Jan's arrest;;;;;;;;;;;;;x
+EVTDESC30001;As the trial of Jan Hus continues the evidence begins to mount of his heresy. 39 charges have been leveled against him describing his opposition to Catholic doctrine and the Holy Roman Empire. Hus has refused to recant and is demanding that proof of his guilt be found within the text of the Bible. Meanwhile his followers have gained considerable influence despite his arrest and are demanding his immediate release. Their threats of open rebellion should not be taken lightly.;;;;;;;;;;;;;x
+EVTOPTA30001;Burn him at the stake;;;;;;;;;;;;;x
+EVTOPTB30001;Let him go;;;;;;;;;;;;;x
+EVTNAME30002;Hussites causing trouble;;;;;;;;;;;;;x
+EVTDESC30002;Heresy is spreading among the Czech people and if it is not properly contained it has the potential to spill over into our nation. We should send priests and inquisitors to help stop these ideas from spreading.;;;;;;;;;;;;;x
+EVTOPTA30002;Send assistance;;;;;;;;;;;;;x
+EVTOPTB30002;This isn't our problem;;;;;;;;;;;;;x
+EVTNAME30010;Neighbors send aid;;;;;;;;;;;;;x
+EVTDESC30010;A contingent of priests and bishops has arrived in the capital to end the harassment of of our own holy men. They want a swift end to this spread of heresy, even if that involves violence or a full-fledged civil war. Be careful, as this may simply be an excuse for other powers to expand their influence.;;;;;;;;;;;;;x
+EVTOPTA30010;Give them legal power to act;;;;;;;;;;;;;x
+EVTOPTB30010;We don't want them meddling;;;;;;;;;;;;;x
+EVTNAME30011;Jan Hus back to preaching;;;;;;;;;;;;;x
+EVTDESC30011;The priest has gone right back to preaching his interpretations on the Christian faith. Though the name is not his own the heretical beliefs have been encompassed by the name of Hussism. Jan and his Hussites have made their headquarters in Charles IV University in Prague and are gaining more followers every day.;;;;;;;;;;;;;x
+EVTOPTA30011;Who could have predicted this?;;;;;;;;;;;;;x
+EVTNAME30012;The Pope demands action;;;;;;;;;;;;;x
+EVTDESC30012;The Pope has taken a very personal interest in what he sees as our tacit approval of heresy spreading through our country. He demands that we bring a swift, and if necessary violent, end to this uprising.;;;;;;;;;;;;;x
+EVTOPTA30012;We need to prove our piety;;;;;;;;;;;;;x
+EVTOPTB30012;We will rule as we see fit;;;;;;;;;;;;;x
+EVTNAME30013;Hussites march in protest;;;;;;;;;;;;;x
+EVTDESC30013;In their boldest protest yet, the followers of Jan Hus have marched on the town hall of our capital. Violence erupted between the heretics and protestors and several loyal city officials were thrown out the town hall windows to their deaths! The shock of these events may be too much for you my lord...;;;;;;;;;;;;;x
+EVTOPTA30013;Our future looks dark;;;;;;;;;;;;;x
+EVTNAME30014;Hussites take up arms;;;;;;;;;;;;;x
+EVTDESC30014;The followers of Jan Hus have taken up arms against the good Czech people while claiming to be their liberators. It seems that a civil war is inevitable now.;;;;;;;;;;;;;x
+EVTOPTA30014;War is upon us!;;;;;;;;;;;;;x
+EVTNAME30015;Hussites demanding reforms;;;;;;;;;;;;;x
+EVTDESC30015;Jan Hus and his growing number of followers are spreading increasingly strong-worded attacks on the Catholic Church. The Pope has taken a very personal interest in the events within our nation now and is demanding we proclaim where our loyalties lie. There is conflict in our nations future, now the only question is who are we going to support?;;;;;;;;;;;;;x
+EVTOPTA30015;Condemn the Hussite talks;;;;;;;;;;;;;x
+EVTOPTB30015;Denounce the Pope and Catholicism;;;;;;;;;;;;;x
+EVTNAME30016;Hussites discussing reform;;;;;;;;;;;;;x
+EVTDESC30016;Our ecumenical approach to the dispute between Hussites and Catholics has led us to populist talks opposing both the Church, the Holy Roman Empire and our own monarchy. The reforms the Czech people are demanding are outrageous, separation from the Catholic church and abolition of the monarchy. Some sort of compromise seems unavoidable but the Pope has already condemned us and our nation.;;;;;;;;;;;;;x
+EVTOPTA30016;Agree to compromise;;;;;;;;;;;;;x
+EVTOPTB30016;Embrace conversion;;;;;;;;;;;;;x
+EVTNAME30050;Hussite Wars;;;;;;;;;;;;;x
+EVTDESC30050;The heretical beliefs have reached a critical impasse. Hussites are amassing in the cities of Prague and Tabor and have openly declared war on the state. The civil war has begun.;;;;;;;;;;;;;x
+EVTOPTA30050;Eradicate the heretics!;;;;;;;;;;;;;x
+EVTNAME30051;Hussite Reformation;;;;;;;;;;;;;x
+EVTDESC30051;Our nation is our own. And we will stand with or without the favor of the corrupt Papal State and their secular concerns. Civil war has been averted but our neighbors may bring conflict upon us regardless.;;;;;;;;;;;;;x
+EVTOPTA30051;We will stand alone.;;;;;;;;;;;;;x
+EVTNAME30052;Condemnd by the Pope!;;;;;;;;;;;;;x
+EVTDESC30052;Our open minded approach to opposing theology in our nation has averted civil war. Unfortunately the Pope has been infuriated by our actions and our unfaithfulness to the doctrines of Catholicism. His outspoken criticism of our state is straining our relations with our neighbors and making life for our cardinals in Rome very difficult.;;;;;;;;;;;;;x
+EVTOPTA30052;History will vindicate us;;;;;;;;;;;;;x
+EVTNAME30060;Hussite factions splintering;;;;;;;;;;;;;x
+EVTDESC30060;Despite enduring an alliance of convenience in order to spread the message of the Hussite faith, the various factions have been unable to reconcile their variations on doctrine. If we do not step in and support one of them it may lead us into further conflict. The Taborites are the most extreme reformers, calling on us to sever all ties with the Catholic Church as well as putting an end to the monarchy. The Orebites support our religious independence but seek a more peaceful coexistance. The Utraquists have only a few minor issues with existing doctrine and seek to reestablish close ties with Rome and other Catholics.;;;;;;;;;;;;;x
+EVTOPTA30060;Support the Taborites;;;;;;;;;;;;;x
+EVTOPTB30060;Support the Orebites;;;;;;;;;;;;;x
+EVTOPTC30060;Support the Utraquists;;;;;;;;;;;;;x
+taborite_support;Taborite Support;;;;;;;;;;;;;x
+desc_taborite_support;Our state has embraced the most radical faction of Hussism;;;;;;;;;;;;;x
+orebite_support;Orebite Support;;;;;;;;;;;;;x
+desc_orebite_support;Our state has taken a balanced stance on Hussism;;;;;;;;;;;;;x
+utraquist_support;Utraquist Influence;;;;;;;;;;;;;x
+desc_utraquist_support;Our state has embraced the doctrines of Utraquism;;;;;;;;;;;;;x
+EVTNAME30061;End of the Monarchy;;;;;;;;;;;;;x
+EVTDESC30061;The Taborites have established their communal theocracy and elected a new Archbishop. It's time to step down.;;;;;;;;;;;;;x
+EVTOPTA30061;I bid you adieu!;;;;;;;;;;;;;x
+EVTNAME30062;Hussism Spreading!;;;;;;;;;;;;;x
+EVTDESC30062;Bohemia has embraced the teachings of Jan Hus, and his religious teachings are spreading.;;;;;;;;;;;;;x
+EVTOPTA30062;Ok;;;;;;;;;;;;;x

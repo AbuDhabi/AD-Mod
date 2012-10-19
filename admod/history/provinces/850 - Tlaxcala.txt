@@ -1,0 +1,35 @@
+#850 - Tlaxcala
+
+owner = ZAP
+controller = ZAP
+culture = zapotek
+religion = teotl
+capital = "Tlaxcala"
+trade_goods = sugar
+hre = no 
+base_tax = 2
+manpower = 1
+citysize = 1100
+add_core = ZAP
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 1350 }
+1500.1.1  = { citysize = 1564 }
+1519.1.1  = { discovered_by = SPA } # Hernán Cortés
+1520.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 2215
+		culture = castillian
+		religion = catholic
+	    } # Founded by Hernán Cortés
+1545.1.1  = { add_core = SPA }
+1550.1.1  = { citysize = 2940 cot = yes }
+1600.1.1  = { citysize = 3555 }
+1650.1.1  = { citysize = 3780 }
+1700.1.1  = { citysize = 4470 }
+1750.1.1  = { citysize = 5008 add_core = MEX }
+1800.1.1  = { citysize = 6500 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence
+1812.8.10 = { controller = MEX } # Conquered by José María Morelos

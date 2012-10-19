@@ -1,0 +1,43 @@
+#Sjaelland, incl. København, Roskilde, Helsingør, Ringsted
+
+add_core = DAN
+owner = DAN
+controller = DAN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 7
+trade_goods = fish
+manpower = 6
+fort1 = yes
+capital = "København"
+marketplace = yes
+citysize = 5000 # Estimated
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = DAN
+		controller = DAN
+		citysize = 5000 }
+
+1450.1.1  = { citysize = 5850 }
+1500.1.1  = { fort2 = yes citysize = 2800 } # Unknown date
+1534.7.15 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
+1536.1.1  = { religion = protestant }
+1536.7.28 = { revolt = {} controller = DAN } # Liberated by Christian III
+1540.1.1  = { regimental_camp = yes }
+1550.1.1  = { citysize = 9800 }
+1600.1.1  = { citysize = 14340 }
+1650.1.1  = { citysize = 17700 }
+1670.1.1  = { tax_assessor = yes }
+1700.1.1  = { citysize = 30500 }
+1750.1.1  = { citysize = 45850 }
+1800.1.1  = { citysize = 72000 }

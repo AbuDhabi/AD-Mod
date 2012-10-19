@@ -1,0 +1,39 @@
+#849 - Tlapanec
+
+owner = ZAP
+controller = ZAP
+culture = zapotek
+religion = teotl
+capital = "Acapulco"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 1600
+add_core = ZAP
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 2100 }
+1500.1.1  = { citysize = 2640 }
+1521.1.1  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		religion = catholic
+		culture = castillian
+	    } # Francisco Chico
+1546.1.1  = { add_core = SPA }
+1550.1.1  = { citysize = 2974 }
+1570.1.1  = { marketplace = yes } # Acapulco became a trading center between Asia & America
+1578.1.1  = { discovered_by = ENG } # Drake
+1600.1.1  = { citysize = 3580 }
+1616.1.1  = { fort1 = yes } # Fort San Diego, rebuilt after a Dutch invasion
+1650.1.1  = { citysize = 3970 }
+1700.1.1  = { citysize = 4544 }
+1750.1.1  = { citysize = 5750 add_core = MEX }
+1776.1.1  = { fort1 = no citysize = 4000 } # Destroyed by an earthquake
+1783.1.1  = { fort1 = yes } # Rebuilt again
+1800.1.1  = { citysize = 4560 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence
+1813.4.12 = { controller = MEX } # Conquered by José María Morelos

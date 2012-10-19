@@ -1,0 +1,12 @@
+government = constitutional_republic
+aristocracy_plutocracy = 1
+centralization_decentralization = 1
+innovative_narrowminded = -1
+mercantilism_freetrade = -2
+offensive_defensive = 2
+land_naval = 3
+quality_quantity = 1
+serfdom_freesubjects = 5
+technology_group = western
+primary_culture = jamaican
+historical_friend = HAT

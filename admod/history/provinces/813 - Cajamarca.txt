@@ -1,0 +1,50 @@
+#813 - Cajamarca
+
+owner = INC
+controller = INC
+culture = inca
+religion = inca_religion
+capital = "Cajamarca"
+trade_goods = coffee
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 2800
+add_core = INC
+temple = yes
+discovered_by = INC
+discovered_by = CHM
+discovered_by = WAN
+
+#Black Death
+1399.10.11 = {	owner = CHM
+		controller = CHM
+		add_core = CHM
+		remove_core = INC }
+
+#Nevermind
+1399.10.12 = {	owner = INC
+		controller = INC
+		add_core = INC
+		remove_core = CHM }
+
+1450.1.1   = { citysize = 3000 }
+1500.1.1   = { citysize = 3570 }
+1524.1.1   = { discovered_by = SPA }
+1532.11.16 = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	     	citysize = 4290
+	     } # Battle of Cajamarca
+1537.1.1   = { revolt_risk = 8 } # Fighting breaks out when Almagro seizes Cuzco
+1538.1.1   = { revolt_risk = 5 } # Almagro is defeated & executed
+1541.1.1   = { revolt_risk = 6 } # Pizzaro is assassinated by supporters of Almagro, his brother assumes control
+1548.1.1   = { revolt_risk = 0 } # Gonzalo Pizzaro is also executed & Spain regains control
+1550.1.1   = { citysize = 4900 }
+1557.1.1   = { add_core = SPA }
+1600.1.1   = { citysize = 5470 }
+1650.1.1   = { citysize = 6312 }
+1700.1.1   = { citysize = 7200 }
+1750.1.1   = { citysize = 8550 add_core = PEU }
+1800.1.1   = { citysize = 9760 }

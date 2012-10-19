@@ -1,0 +1,2671 @@
+#Hungarian
+#Hungarian Culture Countries
+country_event = {
+
+	id = 3330012
+
+	trigger = {
+		ai = yes 
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = POR
+			tag = CAS
+			tag = ALA
+			tag = SPA
+			tag = SWE
+			tag = DAN
+			tag = ITA
+			tag = BOH
+			tag = PAP
+			#tag = PI2
+		}
+		any_known_country = {
+			primary_culture = hungarian 
+			any_owned_province = {		
+				NOT = { has_province_flag = rename_hun }
+				has_owner_culture = yes
+				OR = { 
+					region = eastern_america
+					region = the_carribean
+					region = the_thirteen_colonies
+					region = northern_america
+					region = greenland_region
+					region = texas_region
+					region = brazil_region
+					#region = the_andes
+					#region = amazonas
+					#region = la_plata_region
+					#region = australian_coast
+					#region = greenland_region
+					#region = new_zealand_region
+					#region = indonesian_region
+					#region = western_siberia
+					#region = eastern_siberia
+					#region = atlantic_ocean_islands
+					#region = mascarene_islands
+					#region = indian_ocean_islands
+					#region = pacific_ocean_islands
+					#province_id = 742
+					#province_id = 743
+					#province_id = 744
+					#province_id = 745
+					#province_id = 746
+					#province_id = 835			#upca provinces
+					#province_id = 836
+					#province_id = 837
+					#province_id = 838
+					#province_id = 839
+					#province_id = 840
+					#province_id = 841
+					#province_id = 842
+					#province_id = 843
+					#province_id = 844			#aztec/maya provinces
+					#province_id = 845
+					#province_id = 846
+					#province_id = 847
+					#province_id = 848
+					#province_id = 849
+					#province_id = 850
+					#province_id = 851
+					#province_id = 852
+					#province_id = 853
+					#province_id = 854
+					#province_id = 855
+					#province_id = 856
+					#province_id = 857
+					#province_id = 858
+					province_id = 882			#Texas Provices
+					province_id = 883
+					province_id = 884
+					province_id = 885
+					province_id = 886
+					province_id = 887
+					province_id = 888
+				}
+				NOT = { province_id = 895
+					province_id = 909
+					province_id = 910
+					province_id = 911
+					province_id = 912
+					province_id = 913
+					province_id = 914
+					province_id = 915
+					province_id = 916
+					province_id = 917
+					province_id = 918
+					province_id = 919
+					province_id = 920
+					province_id = 922
+					province_id = 924
+					province_id = 925
+					province_id = 934
+					province_id = 939
+					province_id = 940
+					province_id = 941
+					province_id = 942
+					province_id = 943
+					province_id = 944
+					province_id = 945
+					province_id = 946
+					province_id = 947
+					province_id = 948
+					province_id = 995
+					province_id = 998
+					province_id = 999
+					province_id = 1000
+					province_id = 1001
+					province_id = 1002
+					province_id = 1003
+					province_id = 1005
+					province_id = 1006
+					province_id = 1007
+					province_id = 1008
+					province_id = 1009
+					province_id = 1010
+					province_id = 1011
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "EVTNAMECOLONYNAMES"
+	desc = "EVTDESCCOLONYNAMES"
+
+	option = {
+		name = "EVTOPTACOLONYNAMES"
+		any_country = {
+			limit = {
+				primary_culture = hungarian 
+				any_owned_province = {		
+					NOT = { has_province_flag = rename_hun }
+					has_owner_culture = yes
+					OR = { 
+						region = eastern_america
+						region = the_carribean
+						region = the_thirteen_colonies
+						region = northern_america
+						region = greenland_region
+						region = texas_region
+						region = brazil_region
+						#region = the_andes
+						#region = amazonas
+						#region = la_plata_region
+						#region = australian_coast
+						#region = greenland_region
+						#region = new_zealand_region
+						#region = indonesian_region
+						#region = western_siberia
+						#region = eastern_siberia
+						#region = atlantic_ocean_islands
+						#region = mascarene_islands
+						#region = indian_ocean_islands
+						#region = pacific_ocean_islands
+						#province_id = 742
+						#province_id = 743
+						#province_id = 744
+						#province_id = 745
+						#province_id = 746
+						#province_id = 835			#upca provinces
+						#province_id = 836
+						#province_id = 837
+						#province_id = 838
+						#province_id = 839
+						#province_id = 840
+						#province_id = 841
+						#province_id = 842
+						#province_id = 843
+						#province_id = 844			#aztec/maya provinces
+						#province_id = 845
+						#province_id = 846
+						#province_id = 847
+						#province_id = 848
+						#province_id = 849
+						#province_id = 850
+						#province_id = 851
+						#province_id = 852
+						#province_id = 853
+						#province_id = 854
+						#province_id = 855
+						#province_id = 856
+						#province_id = 857
+						#province_id = 858
+						province_id = 882			#Texas Provices
+						province_id = 883
+						province_id = 884
+						province_id = 885
+						province_id = 886
+						province_id = 887
+						province_id = 888
+					}
+					NOT = { province_id = 895
+						province_id = 909
+						province_id = 910
+						province_id = 911
+						province_id = 912
+						province_id = 913
+						province_id = 914
+						province_id = 915
+						province_id = 916
+						province_id = 917
+						province_id = 918
+						province_id = 919
+						province_id = 920
+						province_id = 922
+						province_id = 924
+						province_id = 925
+						province_id = 934
+						province_id = 939
+						province_id = 940
+						province_id = 941
+						province_id = 942
+						province_id = 943
+						province_id = 944
+						province_id = 945
+						province_id = 946
+						province_id = 947
+						province_id = 948
+						province_id = 995
+						province_id = 998
+						province_id = 999
+						province_id = 1000
+						province_id = 1001
+						province_id = 1002
+						province_id = 1003
+						province_id = 1005
+						province_id = 1006
+						province_id = 1007
+						province_id = 1008
+						province_id = 1009
+						province_id = 1010
+						province_id = 1011
+					}
+				}			
+			}
+			
+#Canada
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 994 #Stadacona 994 Quebec
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Quebec"
+				rename_capital = "Quebec"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 985 #Micmac 985 New Brunswick
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újsomogy"
+				rename_capital = "Szentgellért"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 984 #Acadia 984 Nova Scotia
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újbakony"
+				rename_capital = "Kovácsháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					province_id = 990 #Kwedech 990 Montreal
+					has_owner_culture = yes
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Királyhegy"
+				rename_capital = "Királyhegy"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 983 #Epekwitk 983 Prince Edward Isle
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Imre Sziget"
+				rename_capital = "Szentimreváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 982 #Unamakik 982 Cape Breton Isle
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Vértesfok Sziget"
+				rename_capital = "Vértesfok"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 986 #Kespek 986 Gaspe
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Bástya Félsziget"
+				rename_capital = "Szigetvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 980 #Beothuk 980 Newfoundland East
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet-Újföld"
+				rename_capital = "Szentjános"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 981 #Taqamkuk 981 Newfoundland West
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat-Újföld"
+				rename_capital = "Szentlukács"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 1104 #Eiriksfjord 1104 Eiriksfjord
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Árpádfjord"
+				rename_capital = "Árpádfjord"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 989 #Ontario 989 Ontario 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Ontárió"
+				rename_capital = "Királyvárad"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 988 #Huron 988 Toronto 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Torontó"
+				rename_capital = "Torontó"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 987 #Niagara 987 Niagara
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Niagara"
+				rename_capital = "Újegyháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 991 #Ottawa 991 Ottawa Valley  
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Ottawa Völgy"
+				rename_capital = "Ottawa"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 992 #Algonquin 992 Western Quebec 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat Quebec"
+				rename_capital = "Szentandrás"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 993 #Hochelega 993 Three Rivers
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Háromfolyam"
+				rename_capital = "Háromfolyam"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 996 #Innu 996 Côte-Nord
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Északi-part"
+				rename_capital = "Hétsziget"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 997 #Labrador 997 Labrador
+					NOT = { has_province_flag = rename_hun }
+				}
+				rename_capital = "Hídaspart"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 1004 #Attawapiskat 1004 Ruperts Land
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nagy Lajos-föld"
+				rename_capital = "Fiume Üzem"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#13 Colonies
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 967 #Narraganset 967 Rhode Island
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Margitsziget"
+				rename_capital = "Áldottszentháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 971 #Abnaki 971 Maine
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újbácska"
+				rename_capital = "Újzombor"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 970 #Pennacook 970 New Hampshire
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újtolna"
+				rename_capital = "Újkaposvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 969 #Pocumtuk 969 Vermont
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újmecsek"
+				rename_capital = "Mecsekvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 968 #Massachusetts 968 Massachusetts
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újverecke"
+				rename_capital = "Árpádvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 966 #Connecticut 966 Connecticut
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újpart"
+				rename_capital = "Sziklaváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 963 #Mahican 963 Hudson Valley
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Fehér-Völgy"
+				rename_capital = "Fehérvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 965 #Manhattan 965 New York
+					NOT = { has_province_flag = rename_hun }
+				}
+				rename_capital = "Új-Buda"
+				change_province_name = "Új-Buda"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 962 #Unami 962 New Jersey
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Új-Pest"
+				rename_capital = "Új-Pest"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 956 #Lenape 956 Pennsylvania
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Új-Erdély"
+				rename_capital = "Fivérvárad"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 957 # Delaware 957 Delaware
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Béla Félsziget"		
+				rename_capital = "Bélaváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 953 #Conoy 953 Maryland   Town of the Big House
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Máriaföld"
+				rename_capital = "Szentmária"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 950 #Powhattan 950 Virginia
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szûzföld"
+				rename_capital = "Mátyásvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 955 #Susquehanna 955 Susquehanna Valley
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Irokéz Völgy"
+				rename_capital = "Jánosvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 954 #Allegheny 954 West Pennsylvania
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat Új-Erdély"
+				rename_capital = "Újgyergyóvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {					
+					has_owner_culture = yes
+					province_id = 958 #Seneca 958 Buffalo
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Irokézföld"
+				rename_capital = "Niagaraújhida"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {					
+					has_owner_culture = yes
+					province_id = 959 #Cayuga 959 Rochester
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Békés"
+				rename_capital = "Békésháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 960 #Onondaga 960 Finger Lakes
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Ujjtavak"
+				rename_capital = "Sófok"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 961 #Oneida 961 Mohawk Valley
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Mohawk Völgy"
+				rename_capital = "Újfalu"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 964 #Mohawk 964 Champlain Valley
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Püspök Völgy"
+				rename_capital = "Révpüspöki"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 952 #Manahoac 952 Shenandoah Valley
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Csillagvölgy"
+				rename_capital = "Kovácsvárad"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 951 #Kanawha 951 West Virginia
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat Szûzföld"
+				rename_capital = "Károlyvárad"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 949 #Monacan 949 Blue Ridge
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kékszurdok"
+				rename_capital = "Péterhááza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {					
+					has_owner_culture = yes
+					province_id = 938 #Pamlico 938 Carolina
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Hortobágy"
+				rename_capital = "Pusztaföldvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 937 #Tuscarora 937 North Carolina
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Észak Hortobágy"
+				rename_capital = "Pusztaújvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 932 #Santee 932 South Carolina
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Dél Hortobágy"
+				rename_capital = "Pusztavásárhely"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 933 #Catawba 933 Richland
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Gazdagvidék"
+				rename_capital = "Kinizsivár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 936 #Cheraw 936 Smoky Mountains
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Füstölgö Hegység"
+				rename_capital = "Újbánya"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {					
+					has_owner_culture = yes
+					province_id = 935 #Cherokee 935 East Tennessee
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet Csiroki"
+				rename_capital = "Kövesd"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 929 #Muskogee 929 Georgia 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Andrásföld"
+				rename_capital = "Újmezõvásárhely"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 931 #Chiaha 931 North Georgia (daughterlaw king 1735) 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Észak Andrásföld"
+				rename_capital = "Szentmargitvásár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#Florida
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 926 #Seminole 926 South Florida (South Florida/random)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Dél Florida"
+				rename_capital = "Révkirályi"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 927 #Timucua 927 North Florida (north Florida/st augustine)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Észak Florida"
+				rename_capital = "Szentágoston"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 928 #Apalachee 928 st marks (st marks)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Új Kárpátok"
+				rename_capital = "Szentistvánvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 923 #Pensacola 923 West Florida 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat Florida"
+				rename_capital = "Elõdvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#South US Misc
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 930 #Yamasee 930 Flint River Valley (name town)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Sebespatak Völgy"
+				rename_capital = "Bethlenvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#Louisiana
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 921 #Bayougoula 921 New Orleans 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Új Szolnok"
+				rename_capital = "Új Szolnok"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 893 #Chitamacha 893 Lower Louisiana (Baton Rouge) 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Dél Imreföld"
+				rename_capital = "Szentimreváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 894 #Caddo 894 Louisiana North (Natchitoches) 
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Észak Imreföld"
+				rename_capital = "Imrevásárhely"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#Carribean
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 491 #Curacao 994 Curacao  (heart/point town)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Korzó"
+				rename_capital = "Erõdvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 481 #Bermuda 994 Bermuda (bermudez, st george)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Bermuda"
+				rename_capital = "Szentgyörgysziget"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 482 #Bahamas 482 Bahamas (monarch house name)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Bahamák"
+				rename_capital = "Bahamasziget"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 483 #Turks Islands 483 Turks and Caicos Islands (direct translate/ "name" town)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Török & Kókusz Szigetek"
+				rename_capital = "Vitézváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 484 #Havana 484 La Havana (direct translate)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Révcsepel"
+				rename_capital = "Révcsepel"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 485 #Moron 485 Morón (direct translate)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újcsepel"
+				rename_capital = "Újkeve"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 486 #Guantamano 486 Guantánamo (direct translate)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet Újcsepel"
+				rename_capital = "Révháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 487 #Jamaica 487 Jamaica (direct translate/ Kings town)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Gellért Sziget"
+				rename_capital = "Szentgellértvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 488 #Les Cayes 488 Saint-Domingue Sud (st dominic/nationisland/port of the prince)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Dél Vasárnap Sziget"
+				rename_capital = "Hercegvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 489 #Tortuga 489 Saint-Domingue North (st dominic/nationisland/nation cape)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Észak Vasárnap Sziget"
+				rename_capital = "Magyarvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 490 #Barahonas 490  Santo Domingo (st dominic/nation island)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet Vasárnap Sziget"
+				rename_capital = "Királyvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 492 #Puerto Rico 492  Puerto Rico (richport/st john))
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Gazdagkikötõ"
+				rename_capital = "Szentmáté"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 493 #St Thomas 493  St Thomas (st thomas/queen consort 1691/danish colony)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Tamás Sziget"
+				rename_capital = "Szenttamás"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 494 #St Martin 494  St Martin (st martin/randomname)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Márton Sziget"
+				rename_capital = "Szentmárton"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 495 #St Kitts 495  St Kitts (st christopher/low land)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Ferenc Sziget"
+				rename_capital = "Szentferenc"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 496 #Antigua 496  Antigua (st john)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent János Sziget"
+				rename_capital = "Szentjános"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 497 #Guadeloupe 497  Guadeloupe (virgin mary/low land)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szélcsend Sziget"
+				rename_capital = "Mélyföldvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 498 #Dominica 498  Dominica (reed)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Márk Sziget"
+				rename_capital = "Szentmárk"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 499 #Martinique 499  martinque (st martin/st peter)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Péter Sziget"
+				rename_capital = "Szentpéter"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 500 #St Lucia 500  St Lucia (st lucy/randomname)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Pál Sziget"
+				rename_capital = "Szentpál"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 501 #Barbados 501  Barbados (bearded ones/bridgetown)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szakáll Sziget"
+				rename_capital = "Karibháza"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 502 #Trinidad 502 Trinidad (trinity/port of nation)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szentháromság Sziget"
+				rename_capital = "Szentháromság"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+#Texas
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 885 #Comanche 885 Comancheria (staked plains, random town))
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Komancspuszta"
+				rename_capital = "Komancspusztaföldvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 882 #Mescalaro 882 West Texas (The Step)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nyugat Texas"
+				rename_capital = "Pusztamezõvásárhely"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 886 #Waco 886 Rio Brazos (river of the arms)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Karok Völgye"
+				rename_capital = "Szépmezõvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 883 #Lipan 883 San Antonio (st anthony)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Antal"
+				rename_capital = "Szentantal"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 884 #Karankawa 884 Lower Rio Grande (fort st louis)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nagyfolyam"
+				rename_capital = "Szentistvánvár"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 887 #Tonkawa 887 Trinity Valley (Waco)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szentháromság Völgye"
+				rename_capital = "Betlehem"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				clr_province_flag = rename_eng
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 888 #Atakapa 888 East Texas (name town)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet Texas"
+				rename_capital = "Mihályváros"
+				set_province_flag = rename_hun
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel clr_province_flag = rename_eng
+			}
+####0.53 ADDITIONS####
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 1881 #St Barthelemy 501  Gustavia (St Barth/shroud/haven)
+					NOT = { has_province_flag = rename_eng }
+				}
+				change_province_name = "Szent Bertalan"
+				rename_capital = "Szentbertalan"
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+# BRAZIL
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 747 # Tujuculandia (Amapá)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kelet Új-Etelköz" #Indigenous name. Can be Oiapoque also
+				rename_capital = "Álmosvár" #Indigenous name.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 748 # GraoPara (Pará)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Amazonas Delta" #Greater Para
+				rename_capital = "Kinizsi Erõd" #Bethelen of Para or Fort Nativity (Forte do Presépio)
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 749 # Maranhao (Maranhão)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Pálmavidék" #Indigenous name
+				rename_capital = "Szentgellért" #St. Louis, St. <national saint>
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 750 # Alpercatas (Southern Maranhão, Tocantins)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Teréz" #Indigenous name
+				rename_capital = "Szentteréz" #Queensburg, or St. Theresa
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 751 # Ceara (Ceará)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Világospart" #Indigenous name. Can be "Lightland" or analogue, also
+				rename_capital = "Toldi Erõd" #Fortress, or Fort Schoonenborch(dutch), or Fort <name>
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 752 # Oeiras (Piaui)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újkunság" #Indigenous name. 
+				rename_capital = "Kunváros" #Old Capital. Can be a district of the capital of the motherland
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 753 # RioGrande (Rio Grande do Norte)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nagyfolyam" # Northern Big River
+				rename_capital = "Hunyadi Erõd" #"Nativity". Can be "Kasteel Keulen" (Castle <name>), in dutch, or Fort of the Mages (Forte dos Reis Magos)
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 754 # Itamaraca (Paraiba)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kövesvár" # Indigenous name
+				rename_capital = "Kövesvár" #Was Frederikstadt under the dutch. <ruler in 1635> Town.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 755 # Pernambuco (Pernambuco)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Újvidék" # Indigenous name. Can be New <central land>, like New Holland
+				rename_capital = "Csákvárad" #"Reef". Was "Mauritsstad", Maurice City, by the dutch. 
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 756 # Bahia (Bahia)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Mindenszentek Öble" # "Bay", "Bay of all the Saints"
+				rename_capital = "Szentjézusvár" #"Savior" or "Saint Salvior".Soteropolis in greek, lol
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 757 # Ilheus (Ilhéus, Central Bahia)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kókusz Part" # Small Islands. Can be also "Cocoa Coast"
+				rename_capital = "Cukros Erõd" #Can be also Fort <name>, St. <name>., or "Sugarcane land"
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 758 # Goias (Goias)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Felföld" # Indigenous name. "Highlands" could work, too.
+				rename_capital = "Kassa" #Old Goiás.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 759 # Diamentina (Western Bahia, São Francisco)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Ferenc" # St. Francis, after the river.
+				rename_capital = "Szentferenc" #St. Ann Fair, Annsburg.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 760 # PortoSeguro (Southernmost Bahia)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Parázs Öböl" # Safe Port. Can be also "Brazil" itself, or St. Cross, or <explorer>land.
+				rename_capital = "Béke Erõd" #the same
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 761 # EspiritoSanto (Espírito Santo)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szentlélek" # Holy Gost.
+				rename_capital = "Óvárad" #"Victory". Could also be Old Town (Vila Velha).
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 762 # SaoTome (São Tomé, Paraiba do Sul)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Tamás" # St.Thomas or South Paraiba
+				rename_capital = "Szenttamás" #"Flatlands", but can be also Saint John of the Cape
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 763 # RiodeJaneiro (Rio de Janeiro)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Januárföld" # January River
+				rename_capital = "Január Erõd" #or Henriville for the french, or <king in 1540>city.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 764 # SantoAmaro (Vale do Paraiba)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent József" # Paraiba Valley (yes, there are a lot of 'paraiba rivers' in Brazil!) or St. Amarus
+				rename_capital = "Szentjózsef" #St. Joseph of the Fields
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 765 # MinasGerais (Minas Gerais)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Aranyvidék" # "General Mines", or "Minelands" or Goldlands.
+				rename_capital = "Gazdagvár" #Richville. Can be also Blackgold (Ouro Preto).
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 766 # SaoVicente (São Vicente, São Paulo)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Vencel" # St. Paul. Can be also St. Vincent.
+				rename_capital = "Szentvencel" #The same.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 767 # MatoGrosso (Mato Grosso)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Erdõsföld" # "Thick Woods", "Dense Woods" etc
+				rename_capital = "Korvin Erõd" #Indigenous name.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 768 # Guayra (Inner São Paulo, Tietê, Paraná)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Pál" # Indigenous name of the river. Could also be "Inner St. Paul".
+				rename_capital = "Szentpál" #Grasslands. There are many other options, from St. Charles of the Pinewood to Little London.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 769 # Santana (Santana, Southern São Paulo, Paraná)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Szent Anna" # Indigenous name of the river. Bad name, given the place of the province.
+				rename_capital = "Szentanna" #Indigenous name.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+
+random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 770 # Tape (Pampas, Western Rio Grande do Sul)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Nagyfolyam" # 
+				rename_capital = "Szentmária" #St. Mary
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+			random_owned = {
+				limit = {
+					has_owner_culture = yes
+					province_id = 771 # Patos (Eastern Rio Grande do SUl, Lagoa dos Patos)
+					NOT = { has_province_flag = rename_hun }
+				}
+				change_province_name = "Kacsák Partja" # Southern Big River, Ducks Lagoon
+				rename_capital = "Boldogasszony Erõd" #Couples Port, Happy Port.
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}
+			any_owned = {
+				limit = { NOT = { has_province_flag = rename_hun } }
+				clr_province_flag = rename_eng
+			       	clr_province_flag = rename_spa
+			       	clr_province_flag = rename_fra
+			       	clr_province_flag = rename_por
+			       	clr_province_flag = rename_ita
+			       	clr_province_flag = rename_dut clr_province_flag = rename_lat	 
+				clr_province_flag = rename_swe clr_province_flag = rename_dan clr_province_flag = rename_bas
+				clr_province_flag = rename_ger clr_province_flag = rename_tur
+				clr_province_flag = rename_sla clr_province_flag = rename_cat
+				clr_province_flag = rename_gre clr_province_flag = rename_occ
+				clr_province_flag = rename_cel
+				set_province_flag = rename_hun
+			}			
+		}
+	}
+}

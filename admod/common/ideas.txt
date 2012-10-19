@@ -1,0 +1,277 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+naval_ideas = {
+	press_gangs = {
+		trigger = {
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		global_ship_cost = -0.5
+	}
+	grand_navy = {
+		trigger = {
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		naval_forcelimit_modifier = 1.0
+		global_ship_recruit_speed = -0.10
+		colonists = 0.05
+	}
+	sea_hawks = {
+		trigger = {
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		navy_tradition = 0.01
+		colonists = 0.05
+	}
+	superior_seamanship = {
+		trigger = {
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		naval_morale = 1.0
+		colonist_placement_chance = 0.05
+	}
+	naval_glory = {
+		trigger = {
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		prestige_from_naval = 1.00	#100% extra prestige  from naval battles
+		naval_tech_cost_modifier = -0.05
+	}
+	excellent_shipwrights = {
+		trigger = {
+			naval_tech = 7
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		leader_naval_manuever = 2
+		colonist_placement_chance = 0.05
+		range = 0.15
+	}
+	naval_fighting_instruction = {
+		trigger = {
+			naval_tech = 30
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		blockade_efficiency = 0.5
+		naval_morale = 0.25
+	}
+	naval_provisioning = {
+		trigger = {
+			naval_tech = 50
+			any_owned_province = {
+				port = yes
+				is_core = THIS
+			}
+		}
+		sea_repair = yes
+		colonist_placement_chance = 0.10
+		colonists = 0.10
+	}
+}
+
+land_ideas = {
+	grand_army = {
+		land_forcelimit_modifier = 0.33
+		infantry_cost = -0.1
+	}
+	military_drill = {
+		land_morale = 1.0
+	}
+	engineer_corps = {
+		leader_siege = 1
+		defensiveness = 0.25
+		build_cost = -0.05
+	}
+	battlefield_commisions = {
+		army_tradition = 0.01
+	}
+	glorious_arms = {
+		prestige_from_land = 1.0	#100% extra prestige  from land battles
+		land_tech_cost_modifier = -0.05
+	}
+	national_conscripts = {
+		trigger = {
+			land_tech = 7
+		}
+		global_manpower_modifier = 0.5
+		global_regiment_recruit_speed = -0.1
+		reinforce_speed = 0.15
+	}
+	regimental_system = {
+		trigger = {
+			land_tech = 30
+		}
+		land_maintenance_modifier = -0.20
+		reinforce_speed = 0.15
+	}	
+	napoleonic_warfare = {
+		trigger = {
+			land_tech = 50
+		}
+		discipline = 0.20
+	}
+	
+}
+
+exploration_ideas = {
+	land_of_opportunity = {
+		global_colonial_growth = 0.33	# more people per year in colonies.
+		colonist_cost = -0.05
+		colonists = 0.2
+	}
+	merchant_adventures = {
+		merchant_cost = -0.33		#1/3rd cheaper merchants
+		trade_range_modifier = 0.25
+		colonists = 0.05
+	}
+	colonial_ventures = {
+		colonists = 1.35		# 1 extra colonist each year.
+		range = 0.10
+	}
+	shrewd_commerce_practise = {
+ 		merchant_compete_chance = 0.1
+  	}
+	vice_roys  = {
+ 		global_tariffs = 0.33
+		range = 0.10
+		colonists = 0.25
+ 	}
+	quest_for_the_new_world	= {
+		trigger = {
+			trade_tech = 7
+		}
+		may_explore = yes	#may recruit explorers/conquistadors
+		range = 0.25		#can colonist 50% further.
+		colonists = 0.25
+	}
+	scientific_revolution = { 
+		trigger = {
+			trade_tech = 30
+		}
+		technology_cost = -0.1
+		papal_influence = -0.05;
+	}
+	improved_foraging = {
+		trigger = {
+			trade_tech = 50
+		}
+		land_attrition = -0.5
+		colonist_placement_chance = 0.20
+	}
+}
+
+state_business_ideas = {
+	vetting = {
+		global_spy_defence = 0.3
+		advisor_cost = -0.25
+		stability_cost_modifier = -0.20
+	}
+	bureaucracy = {
+		global_tax_modifier = 0.10	#10% extra tax income
+		officials = 0.50
+	}
+	national_bank = {
+		inflation_reduction = 0.08	# nice inflation reduction
+		interest = -0.05
+	}
+	national_trade_policy = {
+		trade_efficiency = 0.1
+	}
+	espionage  = {
+		spies = 1		#1 extra spy each year
+		spy_efficiency = 0.30
+	}
+	bill_of_rights = {
+		trigger = {
+			production_tech = 7
+		}
+		global_revolt_risk = -3
+	}
+	smithian_economics = {
+		trigger = {
+			production_tech = 30
+		}
+		production_efficiency = 0.2
+ 	}
+	liberty_egalite_fraternity = {
+		trigger = {
+			production_tech = 50
+		}
+		global_revolt_risk = -1
+		tolerance_heathen = 3
+		tolerance_heretic = 3
+		papal_influence = -0.1;
+	}
+}
+
+culture_ideas = {
+	ecumenism = {
+		stability_cost_modifier = -0.04
+		tolerance_heretic = 4
+		papal_influence = -0.025;
+	}
+	church_attendance_duty = {
+		stability_cost_modifier = -0.33	#reduces stability costs by 33%
+		papal_influence = 0.05;
+	}
+	divine_supremacy = {
+		missionaries = 0.6	# 0.5 extra missionary each year
+		papal_influence = 0.05;
+	}
+	patron_of_art  = {
+		cultural_tradition = 0.02
+		prestige_decay = -0.01
+	}
+	deus_vult = {
+		cb_on_religious_enemies = yes
+		max_war_exhaustion = -2
+		war_exhaustion = -0.1
+		missionaries = 0.3
+		papal_influence = 0.05;
+	}
+	humanist_tolerance = {
+		trigger = {
+			government_tech = 7
+		}
+		global_revolt_risk = -1
+		stability_cost_modifier = -0.03
+		tolerance_heathen = 2
+		papal_influence = -0.05;
+	}
+	cabinet = {
+		trigger = {
+			government_tech = 30
+		}
+		badboy = -1
+	}
+	revolution_and_counter = {
+		trigger = {
+			government_tech = 50
+		}
+		cb_on_government_enemies = yes
+		max_war_exhaustion = -4
+		war_exhaustion = -0.15
+	}
+}

@@ -1,0 +1,44 @@
+#753 - Rio Grande
+
+culture = tupinamba
+religion = inca_religion
+capital = "Rio Grande"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 2
+
+1499.1.1   = { discovered_by = CAS } # Coastal stretch visited by Alonso de Ojeda
+1500.4.23  = {	discovered_by = POR
+		owner = POR
+		controller = POR
+		citysize = 487
+		culture = portugese
+		religion = catholic
+		trade_goods = sugar
+	     } # Pedro Álvares Cabral
+1510.1.1   = { citysize = 1000 }
+1525.1.1   = { add_core = POR  }
+1550.1.1   = { citysize = 1210 }
+1597.1.1   = { revolt_risk = 3 } # Expulsion of the buccaneers that had taken over the territory
+1598.1.6   = { revolt_risk = 0 fort1 = yes } # Construction of Forte dos Santos Reis
+1599.12.25 = { capital = "Natal" }
+1600.1.1   = { citysize = 3660 }
+1633.1.1   = {	owner = NED
+		controller = NED
+		culture = dutch
+		religion = reformed
+	     } # The battleground between the Dutch & the Portugese, under Dutch rule
+1645.1.1   = { revolt_risk = 7 } # Religious confrontations between the Portugese-Brazilian and the Dutch Calvinists
+1650.1.1   = { citysize = 4655 }
+1654.1.1   = { revolt_risk = 0 } # The dutch are chased out
+1661.1.1   = {	owner = POR
+		controller = POR
+		culture = portugese
+	     } # The Netherlands formally ceded their Brazilian territories
+1700.1.1   = { citysize = 8040 }
+1750.1.1   = { citysize = 13480 add_core = BRZ }
+1800.1.1   = { citysize = 15540 }

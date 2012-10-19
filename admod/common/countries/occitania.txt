@@ -1,0 +1,154 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 29  42  206 }
+
+historical_ideas = {
+	divine_supremacy
+	quest_for_the_new_world
+	military_drill
+	land_of_opportunity
+	national_bank
+	grand_army
+	colonial_ventures
+	cabinet
+	national_conscripts
+	bureaucracy
+	liberty_egalite_fraternity
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Raymond #0" = 60
+	"Alphonse #0" = 20
+	"Bertrand #0" = 15
+	"Guillaume #0" = 15
+	"Henri #0" = 15
+	"Simon #0" = 15
+	"Bernard #0" = 10
+	"Charles #0" = 10
+	"Pons #0" = 10
+	"Odo #0" = 10
+	"Eleanor #0" = -5
+	"Joan #0" = -5
+	"Andiru #0" = 0
+	"Antoine #0" = 0
+	"Barthélémy #0" = 0
+	"Borel #0" = 0
+	"Claude #0" = 0
+	"Danis #0" = 0
+	"Emmanuel #0" = 0
+	"Étienne #0" = 0
+	"Eugène #0" = 0
+	"Evrard #0" = 0
+	"Foilan #0" = 0
+	"François #0" = 0
+	"Frédéric #0" = 0
+	"Gilbert #0" = 0
+	"Gilles #0" = 0
+	"Godefroi #0" = 0
+	"Guiraud #0" = 0
+	"Huc #0" = 0
+	"Ignace #0" = 0
+	"Jacques #0" = 0
+	"Jean-Baptiste #0" = 0
+	"Jean-François #0" = 0
+	"Jules #0" = 0
+	"Léopold #0" = 0
+	"Louis #0" = 0
+	"Mamert #0" = 0
+	"Marc #0" = 0
+	"Maurice #0" = 0
+	"Nicolas #0" = 0
+	"Olivier #0" = 0
+	"Patrici #0" = 0
+	"Richartz #0" = 0
+	"Roger #0" = 0
+	"Sauson #0" = 0
+	"Valeray #0" = 0
+	"Xavier #0" = 0
+}
+
+leader_names = {
+	"d'Arnal" Assézat
+	"de Bacalan" "de Barbasan" Bayrou "de Bernuy" "de Bezons" "de Boulbène"
+	Cabrel Cantou "de Casteras" "de Caussade" "de Corneillan"
+	Delguy Delpuech
+	"d'Espagne" "d'Estadens" "d'Estissac"
+	"du Fournay" Fabre Faure
+	"de Galard" "de Goth" "de Grossoles"
+	Imbert "de l'Isle-Jourdain"
+	"de La Broue de Gandelon" "de Lacaze" "de Ladevèze" "de Loupiac" 
+	"de Madaillan" "Malvin de Montazet" "Martin de Viviès"
+	"de Nogarède" "de Nogaret" Noguès
+	"d'Ornano" "d'Ouvrier"
+	Pandaries "de Pelamourgues" Perès "de Perricard" Pons "de Pradines" "de Puechgarric" Pompidou
+	"de Rabastens" "de Roux d'Alzonne"
+	Sabatier "de Saint Félix" Soubirous
+	Teyssier "de Tholozany" "de Toulouse-Foissac" "de Toulouse-Lautrec"
+	"de Villemur"
+	"de Xaintrailles"
+}
+
+ship_names = {
+        Aucamville Auzeville-Tolosane Balma Beauzelle "Le Busca"
+        Blagnac Capitole Castanet-Tolosan Colomiers Cugneaux
+        "Ile du Ramier" Labège Labruc "La Cépière" "La Pasquière"
+        Laran Lardenne Launaguet "Le Grand Rond" "Le Mirail"
+        "Les Demoiselles" "Les Minimes" "Les Paradous" L'Union Marquisat
+        Montaudran Montrabé Muret Pechbonnieu Pechbusque
+        "Pech David" Pibrac Plaisance-du-Touch "Portet sur Garonne" Quint-Fonsegrives
+        "Patte d'Oie" Ramonville-St-Agne Rangueil Tournefeuille "Saint Aubin"
+        "St Geniès Bellevue" "St Martin du Touch" "Saint Orens" "Saint Sernin" "Saint Simon"
+        Salvetat-St-Gilles Soulé "Stade Toulousain" "Vieille Toulouse" "Villeneuve-Tolosane"
+        l'Actif l'Actionnaire l'Aigle l'Alcide l'Alexandre l'Ambitieux l'Amphion l'Ardente l'Arrogant l'Artésien l'Assuré l'Astrée
+        "la Belle Poule" "le Bourbon" "le Brillant" "le Bien Aimé" "la Bizarre" "la Bretagne" "la Borée" "la Bourgogne" "le Brave" 
+        "le Caton" "le Conquérant" "le Content" "la Couronne" 
+        "le Dauphin Royal" "le Destin" "le Diadème" "le Duc de Bourgogne" 
+        "l'Eveillé" "l'Emérillon"
+        "le Fantasque" "le Fendant" "le Fier" "le Flamant" "la Fleur de Lis" "le Fleuron" "le Foudroyant"
+        "le Glorieux"
+        "le Hardi" l'Hermione
+        "le Gaillard" "la Grande Hermine" "le Héros"
+        "l'Illustre" "l'Indien" "l'Intrépide" "l'Invincible" 
+        "le Languedoc" "la Licorne" "le Lys"
+        "le Magnanime" "le Magnifique" "le Majestueux" "la Marie-Catherine" "le Marquis" "le Mars" "le Marseillais" "le Minotaure" "le Monarque"
+        "le Neptune"
+        l'Océan l'Oiseau l'Orient
+        "le Pélican" "le Protecteur" "le Prothée" "la Provence" 
+        "la Railleuse" "le Redoutable" "le Réfléchi" "la Régente" "le Robuste" "le Roland" "le Royal Louis"
+        "le Sagittaire" "la Sainte Anne" "le Saint Esprit" "le Saint Michel" "le Saint Philippe" "le Sceptre" "le Seigneur Chat" "le Sévère" "le Soleil Royal" "le Solitaire" "le Souverain" "le Sphinx" "la Superbe"
+        "le Téméraire" "le Terrible" "la Thérèse" "le Triomphant" "le Tonnant"
+        "la Trombe" "le Triton" 
+        "Union" 
+        "la Victoire" "Ville de Paris" 
+        "le Zélé" "le Zodiaque"
+}
+
+army_names = {
+	 "Armée Royale"
+         "Armée de $PROVINCE$" 
+}
+
+fleet_names = {
+	"Escadre Bleue" "Escadre Rouge" "Escadre Blanche"
+}

@@ -1,0 +1,34 @@
+#1189 - Barwe
+
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+culture = shona
+religion = bantu_rel
+capital = "Teve"
+citysize = 6000
+manpower = 1
+trade_goods = grain
+hre = no
+base_tax = 3
+discovered_by = ZIM
+discovered_by = ZAN
+
+1450.1.1 = { citysize = 7000 }
+1494.1.1 = { revolt_risk = 7 } #Changamire clans attempt to establish new base in region
+1498.1.1 = { revolt_risk = 0 } #Changamire expelled from region
+1500.1.1 = { citysize = 8500 }
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1573.1.1 = { revolt_risk = 8 } #Portuguese invasion of Mutapa via this region
+1600.1.1 = { citysize = 9000 }
+1607.1.1 = { revolt_risk = 7 } #Rebellion against Gatsi Rusere
+1608.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } #Mutapa forces expelled
+1611.1.1 = { revolt = {} controller = ZIM } #Mutapa restore control with Portuguese help
+1631.1.1 = { revolt_risk = 8 } #Kapararidze launches revolt to overthrow Mavura and end POR domination
+1632.1.1 = { revolt_risk = 0 } #Kapararidze revolt defeated
+1657.1.1 = { revolt_risk = 7 } #Migration of Prazeros into Barwe lands causes conflict
+1700.1.1 = { citysize = 9500 }
+1750.1.1 = { citysize = 10000 }
+1762.1.1 = { revolt_risk = 7 } #Disputes between Barwe chiefs and prazo holders causes conflict
+1800.1.1 = { citysize = 10500 }
+1768.1.1 = { revolt_risk = 0 }

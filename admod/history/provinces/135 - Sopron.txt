@@ -1,0 +1,57 @@
+#135 - Sopron
+
+owner = HUN
+controller = HUN  
+culture = hungarian
+religion = catholic
+capital = "Sopron"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 2
+citysize = 4000
+fort1 = yes
+add_core = HUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = MAA
+		controller = MAA
+		add_core = MAA
+		remove_core = HUN
+		culture = magyari
+		religion = sunni
+		citysize = 1000 }
+
+#Nevermind
+1399.10.12 = {	owner = HUN
+		controller = HUN
+		add_core = HUN
+		remove_core = MAA
+		culture = hungarian
+		religion = catholic
+		citysize = 4000 }
+
+1450.1.1  = { citysize = 4900 }
+1500.1.1  = { citysize = 5342 }
+1506.1.1  = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Szekely rebellion
+1507.1.1  = { revolt = {} controller = HUN } # Estimated
+1514.4.1  = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant rebellion against Hungary's magnates
+1515.1.1  = { revolt = {} controller = HUN } # Estimated
+1520.1.1  = { marketplace = yes }
+1526.8.30 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+	    } # Battle of Mohács
+1550.1.1  = { citysize = 5588 }
+1594.9.29 = { controller = TUR } # Ottoman capture of Gyor leads to domination of region
+1598.3.28 = { controller = HAB } # Gyor is liberated
+1600.1.1  = { citysize = 6710 }
+1650.1.1  = { citysize = 7120 constable = yes }
+1700.1.1  = { citysize = 8100 }
+1750.1.1  = { citysize = 8766 }
+1760.1.1  = { tax_assessor = yes }
+1800.1.1  = { citysize = 10100 }

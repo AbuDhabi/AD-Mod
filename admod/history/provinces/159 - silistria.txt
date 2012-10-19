@@ -1,0 +1,62 @@
+#159 - Silistria
+
+owner = TUR
+controller = TUR
+culture = bulgarian
+religion = orthodox
+capital = "Silistra"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 4100
+fort1 = yes
+add_core = TUR
+add_core = BUL
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.1.1  = { add_core = BYZ }
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Crusades Campaign
+1399.10.12 = {	owner = BUL
+		controller = BUL
+		citysize = 4100 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	religion = orthodox }
+
+#Country breaks
+#1402.1.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
+#1410.1.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1413.1.1  = { revolt = {} controller = TUR }
+1450.1.1  = { citysize = 4500 }
+1453.5.29 = { remove_core = BYZ }
+1481.6.1  = { revolt_risk = 6 } # Civil war, Bayezid & Jem
+1482.7.26 = { revolt_risk = 0 } # Jem escapes to Rhodes
+1500.1.1  = { citysize = 4911 }
+1550.1.1  = { citysize = 5122 fort2 = yes }
+1555.1.1  = { revolt_risk = 5 } # General discontent with the Janissaries' dominance
+1556.1.1  = { revolt_risk = 0 marketplace = yes }
+1600.1.1  = { citysize = 5911 }
+1650.1.1  = { citysize = 6549 }
+1688.1.1  = { revolt_risk = 6 } # Rebellion against Ottoman rule, centered on Chiprovtzi
+1689.1.1  = { revolt_risk = 0 } # Brutally suppressed by Janissaries
+1700.1.1  = { citysize = 7044 }
+1750.1.1  = { citysize = 8010 }
+1793.1.1  = { revolt_risk = 5 } # Pasvanoglu  Rebellion, centered at Vidin
+1798.1.1  = { revolt_risk = 0 }
+1800.1.1  = { citysize = 8310 }

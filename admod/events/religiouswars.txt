@@ -1,0 +1,641 @@
+province_event = {
+
+	id = 2031
+	major = yes
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = religious_turmoil } 
+			NOT = { has_country_flag = had_religious_turmoil } 
+		
+			OR = {
+				religion = catholic
+				religion = protestant
+				religion = reformed
+			}
+			NOT = { idea = ecumenism }
+			NOT = { has_country_modifier = counter_reformation } 
+			# make sure event 2038 can't fire immediately
+			force_converted = no
+			OR = {
+				NOT = { religion = catholic }
+				num_of_religion = { religion = protestant value = 0.1 }
+				num_of_religion = { religion = reformed value = 0.1 }
+			}
+			OR = {
+				NOT = { religion = protestant }
+				num_of_religion = { religion = catholic value = 0.1 }
+				num_of_religion = { religion = reformed value = 0.1 }
+			}
+			OR = {
+				NOT = { religion = reformed }
+				num_of_religion = { religion = protestant value = 0.1 }
+				num_of_religion = { religion = catholic value = 0.1 }
+			}
+		}
+		NOT = { year = 1600 }
+		has_owner_religion = false
+		OR = {
+			religion = catholic
+			religion = protestant
+			religion = reformed
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 540
+		
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				religion = THIS
+			}
+		}	
+		modifier = {
+			factor = 0.5
+			owner = { tag = FRA }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { adm = 5 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { idea = divine_supremacy }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 4 }
+		}
+		modifier = {
+			factor = 1.15
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 1.15
+			owner = { NOT = { innovative_narrowminded = -3 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+	}
+	
+	title = "EVTNAME2031"
+	desc = "EVTDESC2031"
+	immediate = {
+		owner = {
+			add_country_modifier = {
+				name = "religious_turmoil"
+				duration = -1
+			}
+			set_country_flag = religious_turmoil
+
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA2031"				# Eradicate the heretics to bring peace
+		religious_rebels = 1
+		owner = {
+			set_country_flag = religious_intolerance
+		}
+	}
+	option = {
+		name = "EVTOPTB2031"				# We should strive for a tolerant society
+		stability = -1
+		owner = {
+			set_country_flag = religious_tolerance			
+		}
+	}
+}
+
+###############################################################################################################################
+
+country_event = {
+
+	id = 2038
+	major = yes
+	
+	trigger = {
+		has_country_flag = religious_turmoil
+		OR = {
+			force_converted = yes
+			AND = {
+				religion = catholic
+				NOT = { num_of_religion = { religion = protestant value = 0.1 } }
+				NOT = { num_of_religion = { religion = reformed value = 0.1 } }
+				NOT = { num_of_religion = { religion = cathar value = 0.1 } }
+				NOT = { num_of_religion = { religion = hussite value = 0.1 } }
+			}
+			AND = {
+				religion = protestant
+				NOT = { num_of_religion = { religion = catholic value = 0.1 } }
+				NOT = { num_of_religion = { religion = reformed value = 0.1 } }
+				NOT = { num_of_religion = { religion = cathar value = 0.1 } }
+				NOT = { num_of_religion = { religion = hussite value = 0.1 } }
+			}
+			AND = {
+				religion = reformed
+				NOT = { num_of_religion = { religion = protestant value = 0.1 } }
+				NOT = { num_of_religion = { religion = catholic value = 0.1 } }
+				NOT = { num_of_religion = { religion = cathar value = 0.1 } }
+				NOT = { num_of_religion = { religion = hussite value = 0.1 } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+
+	}
+	
+	title = "EVTNAME2038"
+	desc = "EVTDESC2038"
+	
+	option = {
+		name = "EVTOPTA2038"				# One Faith
+		stability = 1
+		remove_country_modifier = "religious_turmoil"
+		clr_country_flag = religious_turmoil
+		clr_country_flag = religious_tolerance
+		clr_country_flag = religious_intolerance
+		set_country_flag = had_religious_turmoil
+	}
+}
+
+###############################################################################################################################
+
+# Intolerant society, large number of heretics
+province_event = {
+
+	id = 2032
+	
+	trigger = {
+		owner = {
+			has_country_flag = religious_turmoil
+			has_country_flag = religious_intolerance
+			NOT = { has_country_flag = intolerant }
+			NOT = { religion = THIS }
+		}		
+		any_neighbor_province = {
+			religion = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.02 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.04 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.06 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { adm = 5 } }
+		}	
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { adm = 4 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { adm = 6 }
+		}	
+		modifier = {
+			factor = 1.1
+			owner = { adm = 7 }
+		}		
+	}
+
+	title = "EVTNAME2032"
+	desc = "EVTDESC2032"
+	
+	option = {
+		name = "EVTOPTA2032"		# Banish the nonconformists.
+		religious_rebels = 2
+		
+		owner = { 
+			heretic  = {
+				religious_rebels = 2
+			}
+			set_country_flag = intolerant
+		}
+	}
+	option = {
+		name = "EVTOPTB2032"		# Increase funding to convert the heretics.
+		owner = {
+			missionaries = 2
+			treasury = -50
+			add_country_modifier = {
+				name = "convert_heretics"
+				duration = 300
+			}
+			clr_country_flag = religious_intolerance	# Marks the end of the nation's religious problems	
+		}
+	}
+}
+
+
+
+# Intolerant society
+province_event = {
+
+	id = 2033
+	
+	trigger = {
+		owner = {
+			has_country_flag = religious_turmoil
+			has_country_flag = religious_intolerance
+			NOT = { religion = THIS } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 72
+		
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.05 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.1 }
+		}
+	}
+	
+	title = "EVTNAME2033"
+	desc = "EVTDESC2033"
+	
+	option = {				# Increase funding to suppress the heretics.
+		name = "EVTOPTA2033"
+		religious_rebels = 1
+		owner = {
+			clr_country_flag = religious_intolerance	# Marks the end of the nation's religious problems
+			treasury = -60
+			add_country_modifier = {
+				name = "military_funding"
+				duration = 150
+			}
+		}
+	}
+	option = {				# Ignore them.
+		name = "EVTOPTB2033"
+		religious_rebels = 2
+		owner = { stability = -1 }
+	}
+	option = {				# Give Concessions.
+		name = "EVTOPTC2033"
+		owner = {
+			innovative_narrowminded = -1
+			clr_country_flag = religious_intolerance	# Marks the end of the nation's religious problems
+			add_country_modifier = {
+				name = "disorder"
+				duration = 100
+			}
+		}
+	}
+}
+
+
+# Tolerant society
+province_event = {
+
+	id = 2034
+	
+	trigger = {
+		owner = {
+			has_country_flag = religious_turmoil
+			has_country_flag = religious_tolerance
+			NOT = { has_country_flag = subdue_heretics }
+			NOT = { religion = catholic }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.95
+			owner = { idea = church_attendance_duty }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.05 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { revolt_percentage = 0.1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { NOT = { innovative_narrowminded = -1 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 3 }
+		}
+	}
+	
+	title = "EVTNAME2034"
+	desc = "EVTDESC2034"
+	
+	option = {
+		name = "EVTOPTA2034"		# Subdue the heretics.
+		religious_rebels = 3
+		owner = {
+			set_country_flag = subdue_heretics
+		}
+	}
+	option = {
+		name = "EVTOPTB2034"		# Convert them.
+		owner = {
+			missionaries = 2
+			stability = -1
+			clr_country_flag = religious_tolerance		# Marks the end of the nation's religious problems
+		}
+	}
+}
+
+
+
+# Tolerant society
+country_event = {
+
+	id = 2035
+	
+	trigger = {
+		has_country_flag = religious_turmoil
+		has_country_flag = religious_tolerance
+		NOT = { has_country_flag = ignorance }
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = {
+			factor = 0.9
+			owner = { revolt_percentage = 0.05 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 1
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+	}
+	
+	title = "EVTNAME2035"
+	desc = "EVTDESC2035"
+	
+	option = {
+		name = "EVTOPTA2035"		# Our time is better spent elsewhere
+		random_owned = {
+			heretic_rebels = 1
+		}
+		random_owned  = {
+			heretic_rebels = 2
+		}
+		set_country_flag = ignorance
+	}
+	option = {
+		name = "EVTOPTB2035"		# Issue a new edict
+		treasury = -40
+		stability = 1
+		clr_country_flag = religious_tolerance		# Marks the end of the nation's religious problems
+	}
+}
+
+
+# Muslim countries
+province_event = {
+
+	id = 2037
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = religious_turmoil } 
+			NOT = { religion = THIS }
+			NOT = { adm = 6 }
+			religion_group = muslim
+		}
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		months = 540
+		
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				religion = THIS
+			}
+		}	
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { adm = 5 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { idea = divine_supremacy }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 3 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { innovative_narrowminded = 4 }
+		}
+		modifier = {
+			factor = 1.15
+			owner = { NOT = { innovative_narrowminded = -2 } }
+		}
+		modifier = {
+			factor = 1.15
+			owner = { NOT = { innovative_narrowminded = -3 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+	}
+	
+	title = "EVTNAME2031"
+	desc = "EVTDESC2031"
+	
+	option = {
+		name = "EVTOPTA2031"				# Eradicate the heretics to bring peace
+		religious_rebels = 1
+		owner = {
+			add_country_modifier = {
+				name = "religious_intolerance"
+				duration = 500
+			}
+			set_country_flag = religious_intolerance
+			set_country_flag = religious_turmoil
+		}
+	}
+	option = {
+		name = "EVTOPTB2031"				# We should strive for a tolerant society
+		owner = {
+			missionaries = -2
+			add_country_modifier = {
+				name = "religious_tolerance"
+				duration = 500
+			}
+			set_country_flag = religious_tolerance			
+			set_country_flag = religious_turmoil
+		}
+	}
+}

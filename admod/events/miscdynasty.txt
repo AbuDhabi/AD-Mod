@@ -1,0 +1,53 @@
+#events 21200-21209
+###################################
+# Kill off old heirs
+###################################
+country_event = {
+
+	id = 21200
+
+	title = "EVTNAME21200"
+	desc = "EVTDESC21200"
+
+	trigger = {
+		has_heir = yes
+		heir_age = 35
+		government = monarchy
+		is_lesser_in_union = no
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.5
+			heir_age = 40
+		}
+		modifier = {
+			factor = 0.5
+			heir_age = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTA21200"
+		ai_chance = { factor = 10 }
+		heir_claim = 10
+	}
+
+	option = {
+		name = "EVTOPTB21200"
+		ai_chance = { factor = 1 }
+		kill_heir = THIS
+		define_heir = {
+			dynasty = THIS
+			claim = 85
+		}
+	}
+
+	option = {
+		name = "EVTOPTC21200"
+		ai_chance = { factor = 1 }
+		kill_ruler = THIS
+	}
+}

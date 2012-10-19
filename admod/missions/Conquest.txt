@@ -1,0 +1,724 @@
+annex_minor_mission = {
+	type = neighbor_provinces
+	allow = {
+		this = {
+			nomad = no
+			war = no
+		}
+		owner = {
+			NOT = { tag = PAP }
+			OR = {
+				NOT = { tag = JAP }
+				OR = {
+					tag = JAP
+					NOT = { num_of_daimyos = 1 }
+				}
+			}
+			num_of_cities = 1
+			NOT = { num_of_cities = 2 }
+			NOT = { relation = { who = THIS value = 0 } }
+		}
+		has_discovered = THIS
+		OR = {
+			owner = { hre = no }
+			THIS = { hre = no }
+		}
+	}
+	abort = {
+		owner = { NOT = { num_of_cities = 1 } }
+	}
+	success = {
+		owned_by = THIS
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { MIL = 5 } }
+		}		
+	}
+	immediate = {
+		add_temp_claim = THIS
+	}
+	abort_effect = {
+		remove_temp_claim = THIS
+	}
+	effect = {
+		badboy = -2
+	}
+}
+
+conquer_a_port = {
+	type = neighbor_provinces
+	allow = {
+		this = {
+			nomad = no
+			NOT = { total_num_of_ports = 1 } 
+			war = no
+		}
+		port = yes
+		has_discovered = THIS
+		OR = {
+			owner = { hre = no }
+			THIS = { hre = no }
+		}
+		OR = {
+			NOT = { owned_by = PAP }
+			is_capital = no
+		}
+		owner = {
+			OR = {
+				NOT = { tag = JAP }
+				OR = {
+					tag = JAP
+					NOT = { num_of_daimyos = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		this = { 
+			total_num_of_ports = 1
+		}
+	}
+	success = {
+		owned_by = THIS
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { MIL = 5 } }
+		}		
+		modifier =  {
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+	}
+	immediate = {
+		add_temp_claim = THIS
+	}
+	abort_effect = {
+		remove_temp_claim = THIS
+	}
+	effect = {
+		navy_tradition = 0.05
+	}
+}
+
+conquer_neighbour = {
+
+	# Checked for all provinces bordering the country, with the country in the parent scope.
+	type = neighbor_provinces 
+
+	allow = {
+		THIS = { nomad = no }
+		is_subject = no 
+		NOT = { is_core = THIS }
+		is_colony = no
+		NOT = { owner = { relation = { who = THIS value = 0 } } }
+		culture_group = THIS
+		NOT = { owner = { infantry = THIS  } }
+		NOT = { owner = { vassal_of = THIS } }
+		war = no
+		has_discovered = THIS
+		OR = {
+			owner = { hre = no }
+			THIS = { hre = no }
+		}
+		OR = {
+			NOT = { owned_by = PAP }
+			is_capital = no
+		}
+		owner = {
+			OR = {
+				NOT = { tag = JAP }
+				OR = {
+					tag = JAP
+					NOT = { num_of_daimyos = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		owner = { not = { neighbour = this } }
+	}
+	success = {
+		owned_by = THIS
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { MIL = 5 } }
+		}
+		modifier =  {
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+	}
+	
+	immediate = {
+		add_temp_claim = THIS
+	}
+	abort_effect = {
+		remove_temp_claim = THIS
+	}
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		badboy = -2
+		prestige = 0.1
+	}	
+}
+
+
+
+conquer_core = {
+
+	# Checked for all provinces bordering the country, with the country in the parent scope.
+	type = neighbor_provinces 
+
+	allow = {
+		THIS = { nomad = no }
+		is_subject = no 
+		is_core = THIS
+		is_colony = no
+		NOT = { owner = { vassal_of = THIS } }
+		NOT = { owner = { junior_union_with = THIS } }
+		war = no
+		has_discovered = THIS
+		owner = {
+			OR = {
+				NOT = { tag = JAP }
+				OR = {
+					tag = JAP
+					NOT = { num_of_daimyos = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		not = { is_core = this }
+	}
+	success = {
+		owned_by = THIS
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { MIL = 5 } }
+		}
+		modifier = { 
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+	}
+
+	# The effect always has country scope (for the country that gets the mission)
+	effect = {
+		prestige = 0.1
+	}	
+}
+
+get_control_of_naval_supplies = {
+	type = country
+	allow = {
+		NOT = { naval_supplies = 1 }
+		big_ship = 30
+		num_of_ports = 1
+	}
+	abort = {
+	}
+	success = {
+		naval_supplies = 1
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			idea = press_gangs
+		}
+		modifier = {
+			factor = 10.0
+			idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_glory
+		}
+		modifier = {
+			factor = 2.0
+			idea = naval_provisioning
+		}
+	}
+	effect = {
+		navy_tradition = 0.05
+		badboy = -1
+	}
+}
+
+protect_religious_minority = {
+	type = neighbor_provinces
+	allow = {
+		this = {
+			nomad = no
+			war = no
+		}
+		religion = THIS
+		owner = { NOT = { religion = THIS } }
+		NOT = { owner = { alliance_with = THIS } }
+		has_discovered = THIS
+	}
+	abort = {
+		OR = {
+			NOT = { religion = THIS }
+			owner = { alliance_with = THIS }
+			owner = { religion = THIS }
+		}
+	}
+	success = {
+		owned_by = THIS
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+			this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+		this = { NOT = { MIL = 5 } }
+		}		
+		modifier = { 
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+	}
+	immediate = {
+		add_temp_claim = THIS
+	}
+	abort_effect = {
+		remove_temp_claim = THIS
+	}
+	effect = {
+		missionaries = 1
+		prestige = 0.1
+		infamy = -2
+	}
+}
+
+protect_cultural_minority = {
+	type = neighbor_provinces
+	allow = {
+		this = {
+			nomad = no
+			war = no
+		}
+		culture = THIS
+		owner = { NOT = { primary_culture = THIS } }
+		NOT = { owner = { alliance_with = THIS } }
+		has_discovered = THIS
+		
+		OR = {
+			owner = { hre = no }
+			THIS = { hre = no }
+		}
+		OR = {
+			NOT = { owned_by = PAP }
+			is_capital = no
+		}
+		
+	}
+	abort = {
+		OR = {
+			NOT = { culture = THIS }
+			owner = { alliance_with = THIS }
+			owner = { primary_culture = THIS }
+		}
+	}
+	success = {
+		owned_by = THIS
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture = THIS
+		}
+		modifier = {
+			factor = 1.5
+			religion = THIS
+		}
+		modifier = {
+			factor = 1.5
+		this = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { MIL = 5 } }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { truce_with = THIS }
+		}
+	}
+	immediate = {
+		add_temp_claim = THIS
+	}
+	abort_effect = {
+		remove_temp_claim = THIS
+	}
+	effect = {
+		prestige = 0.1
+		badboy = -2
+	}
+}
+
+keep_rival_out_of_italy = {
+
+	type = rival_countries
+
+	allow = {
+	
+		#we're strong enough.. and they are no small ones..
+		THIS = { 
+			num_of_cities = 10 
+			war = NO
+		}
+		num_of_cities = 5
+		NOT = { culture_group = latin }
+
+		#do we own any of italy.		
+		italian_region = {
+			owned_by = THIS
+		}
+
+		NOT = { relation = { who = THIS value = 100 } }
+
+		any_owned_province = 
+		{	
+			region = italian_region
+		}
+		
+		OR = {
+			hre = no
+			THIS = { hre = no }
+		}
+		
+		NOT = { alliance_with = THIS }
+		NOT = { is_subject = yes }
+		this = { NOT = { is_subject = yes } } 
+	}
+	abort = {
+		NOT = {
+			italian_region = {
+				owned_by = THIS
+			}
+		}
+	}
+
+	success = {
+		NOT = {
+			any_owned_province = 
+			{	
+				region = italian_region
+			}
+		}
+	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { DIP = 5 } }
+		}
+
+	}
+	effect = {
+		THIS = { prestige = 0.03 }
+	}	
+}
+
+
+attack_prestigous_rival = {
+
+	type = rival_countries
+
+	allow = {
+		prestige = THIS  #they got more prestige than us.
+		neighbour = THIS	#neighbour with us.
+		
+		#we're strong enough.. and they are no small ones..
+		THIS = { 
+			num_of_cities = 5
+			war = NO
+			is_lesser_in_union = no
+		}
+		num_of_cities = 5
+		NOT = { nomad = yes } #not vs nomads!
+		
+		NOT = { alliance_with = THIS }
+		NOT = { is_subject = yes }
+		this = { NOT = { is_subject = yes } } 
+		
+		OR = {
+			hre = no
+			THIS = { hre = no }
+		}
+		OR = {
+			NOT = { tag = JAP }
+			OR = {
+				tag = JAP
+				NOT = { num_of_daimyos = 1 }
+			}
+		}
+	}
+
+	abort = {
+		or = {
+			this = {
+				or = {
+					is_subject = yes
+					is_lesser_in_union = yes
+				}
+			}
+			not = { num_of_cities = 1 }
+		}
+	}
+
+	success = {
+		war_with = THIS
+	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { DIP = 5 } }
+		}
+
+	}
+	effect = {
+		prestige = 0.15
+	}	
+}
+
+
+attack_weaker_rival = {
+
+	type = rival_countries
+
+	allow = {
+		#we're strong enough.. and they are no small ones..
+		THIS = {
+			nomad = no
+			is_lesser_in_union = no
+			num_of_cities = 5
+			war = NO
+		}	
+		NOT = { infantry = THIS }
+		neighbour = THIS	#neighbour with us.		
+		war = yes
+		num_of_cities = 5
+		
+		NOT = { alliance_with = THIS }
+		NOT = { is_subject = yes }
+		this = { NOT = { is_subject = yes } } 
+		
+		OR = {
+			hre = no
+			THIS = { hre = no }
+		}
+		OR = {
+			NOT = { tag = JAP }
+			OR = {
+				tag = JAP
+				NOT = { num_of_daimyos = 1 }
+			}
+		}
+	}
+
+	abort = {
+		or = {
+			this = {
+				or = {
+					is_lesser_in_union = yes
+					is_subject = yes
+				}
+			}
+			war = no
+		}
+	}
+
+	success = {
+		war_with = THIS
+	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			this = { NOT = { DIP = 5 } }
+		}
+
+	}
+	effect = {
+		prestige = 0.01
+	}	
+}
+
+
+
+
+italian_ambition = {
+
+	type = country
+
+	allow = {
+	
+		num_of_cities = 10 
+		NOT = { year = 1600 }
+		NOT = { culture_group = latin }
+		religion_group = christian
+		is_lesser_in_union = no
+		is_subject = no
+		OR = {
+			culture_group = french
+			primary_culture = austrian
+			culture_group = iberian
+		}
+		NOT = {
+			any_owned_province = 
+			{	
+				region = italian_region
+			}
+		}
+		
+	}
+	abort = {
+		or = {
+			is_lesser_in_union = yes
+			is_subject = yes
+		}
+	}
+
+	success = {
+		any_owned_province = 
+		{	
+			region = italian_region
+		}
+	}
+	
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			THIS = { MIL = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { DIP = 5 }
+		}
+
+	}
+	effect = {
+		THIS = { prestige = 0.03 }
+		italian_region = {
+			limit = { 
+				owned_by = THIS 
+			}
+			add_core = THIS
+		}
+	}	
+}

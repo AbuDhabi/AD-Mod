@@ -1,0 +1,1285 @@
+#events 31600-31899
+
+###################################
+#Terrible Diplomats
+###################################
+#insult the neighbors
+country_event = {
+
+	id = 31600
+	is_triggered_only = yes
+
+	title = "EVTNAME31600"
+	desc = "EVTDESC31600"
+
+	trigger = {
+		NOT = { DIP = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		any_known_country = {
+			limit = { neighbour = THIS }
+			relation = { who = THIS value = -35 }
+		}
+	}
+}
+
+#revolt risk for non-primary cultures
+country_event = {
+
+	id = 31601
+	is_triggered_only = yes
+
+	title = "EVTNAME31600"
+	desc = "EVTDESC31601"
+
+	trigger = {
+		NOT = { DIP = 4 }
+		regency = no
+		any_owned_province = { has_owner_culture = no }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		random_owned = {
+			limit = { has_owner_culture = no }
+			add_province_modifier = {
+				name = "suppress_minority"
+				duration = 365
+			}
+		}
+	}
+}
+
+#loss of prestige
+country_event = {
+
+	id = 31602
+	is_triggered_only = yes
+
+	title = "EVTNAME31600"
+	desc = "EVTDESC31602"
+
+	trigger = {
+		NOT = { DIP = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		prestige = -0.10
+	}
+}
+
+#mistress caught
+country_event = {
+
+	id = 31603
+	is_triggered_only = yes
+
+	title = "EVTNAME31603"
+	desc = "EVTDESC31603"
+
+	trigger = {
+		NOT = { DIP = 5 }
+		regency = no
+		female = yes
+		is_lesser_in_union = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31603"
+		ai_chance = { factor = 30 }
+		legitimacy = -0.05
+		prestige = -0.05
+	}
+
+	option = {
+		name = "EVTOPTB31603"
+		ai_chance = { factor = 70 }
+		colonists = -3
+		navy_tradition = -0.05
+		create_explorer = -25
+	}
+}
+
+#religious fanaticism
+country_event = {
+
+	id = 31604
+	is_triggered_only = yes
+
+	title = "EVTNAME31604"
+	desc = "EVTDESC31604"
+
+	trigger = {
+		NOT = { DIP = 4 }
+		MIL = 7
+		regency = no
+		any_owned_province = { has_owner_religion = no }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31604"
+		random_owned = {
+			limit = { has_owner_religion = no }
+			religious_rebels = 2
+		}
+	}
+}
+
+###################################
+#Terrible Commanders
+###################################
+#recruitment suffering
+country_event = {
+
+	id = 31700
+	is_triggered_only = yes
+
+	title = "EVTNAME31700"
+	desc = "EVTDESC31700"
+
+	trigger = {
+		NOT = { MIL = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		manpower = -0.25
+		add_country_modifier = {
+			name = "resist_conscription"
+			duration = 730
+		}
+	}
+}
+
+#loss of tradition
+country_event = {
+
+	id = 31701
+	is_triggered_only = yes
+
+	title = "EVTNAME31700"
+	desc = "EVTDESC31701"
+
+	trigger = {
+		NOT = { MIL = 4 }
+		regency = no
+		army_tradition = 0.05
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		army_tradition = -0.10
+	}
+}
+
+#complacency
+country_event = {
+
+	id = 31702
+	is_triggered_only = yes
+
+	title = "EVTNAME31700"
+	desc = "EVTDESC31702"
+
+	trigger = {
+		NOT = { MIL = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		add_country_modifier = {
+			name = "military_complacency"
+			duration = 730
+		}
+	}
+}
+
+#armory destroyed
+country_event = {
+
+	id = 31703
+	is_triggered_only = yes
+
+	title = "EVTNAME31700"
+	desc = "EVTDESC31703"
+
+	trigger = {
+		NOT = { MIL = 4 }
+		regency = no
+		any_owned_province = {
+			has_building = armory
+			NOT = { has_building = training_fields }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		random_owned = {
+			limit = {
+				has_building = armory
+				NOT = { has_building = training_fields }
+			}
+			remove_building = armory
+		}
+	}
+}
+
+#arsenal destroyed
+country_event = {
+
+	id = 31704
+	is_triggered_only = yes
+
+	title = "EVTNAME31700"
+	desc = "EVTDESC31703"
+
+	trigger = {
+		NOT = { MIL = 4 }
+		regency = no
+		any_owned_province = {
+			has_building = arsenal
+			NOT = { has_building = conscription_center }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		random_owned = {
+			limit = {
+				has_building = arsenal
+				NOT = { has_building = conscription_center }
+			}
+			remove_building = arsenal
+		}
+	}
+}
+
+###################################
+#Terrible Administrators
+###################################
+#inflation
+country_event = {
+
+	id = 31800
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31800"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		inflation = 3
+	}
+}
+
+#treasury depleted
+country_event = {
+
+	id = 31801
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31801"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		years_of_income = -0.1
+	}
+}
+
+#merchant defects
+country_event = {
+
+	id = 31802
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31802"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+		any_center_of_trade = {
+			placed_merchants = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		random_center_of_trade = {
+			limit = {
+				placed_merchants = 1
+			}
+			remove_merchant = THIS
+			remove_merchant = THIS
+		}
+		merchants = -2
+	}
+}
+
+#missionary less effective
+country_event = {
+
+	id = 31803
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31803"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+		any_owned_province = { has_missionary = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		random_owned = {
+			limit = { has_missionary = yes }
+			add_province_modifier = {
+				name = "missionary_failure"
+				duration = 365
+			}
+		}
+	}
+}
+
+#trade loss
+country_event = {
+
+	id = 31804
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31804"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+		any_center_of_trade = {
+			placed_merchants = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		merchants = -1
+		add_country_modifier = {
+			name = "trade_income_loss"
+			duration = 365
+		}
+	}
+}
+
+#tax loss
+country_event = {
+
+	id = 31805
+	is_triggered_only = yes
+
+	title = "EVTNAME31800"
+	desc = "EVTDESC31805"
+
+	trigger = {
+		NOT = { ADM = 4 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31600"
+		officials = -1
+		add_country_modifier = {
+			name = "tax_income_loss"
+			duration = 365
+		}
+	}
+}
+
+###################################
+#Good Rulers :)
+###################################
+#recruitment expansion
+country_event = {
+
+	id = 31850
+	is_triggered_only = yes
+
+	title = "EVTNAME31850"
+	desc = "EVTDESC31850"
+
+	trigger = {
+		MIL = 7
+		ADM = 6
+		regency = no
+		any_owned_province = {
+			NOT = { has_building = armory }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		officials = -1
+		random_owned = {
+			limit = { NOT = { has_building = armory } }
+			add_building = armory
+		}
+		random_owned = {
+			limit = { NOT = { has_building = armory } }
+			add_building = armory
+		}
+		random_owned = {
+			limit = { NOT = { has_building = armory } }
+			add_building = armory
+		}
+		random_owned = {
+			limit = { NOT = { has_building = armory } }
+			add_building = armory
+		}
+	}
+}
+
+#stability for the people
+country_event = {
+
+	id = 31851
+	is_triggered_only = yes
+
+	title = "EVTNAME31851"
+	desc = "EVTDESC31851"
+
+	trigger = {
+		DIP = 7
+		ADM = 6
+		regency = no
+		any_owned_province = {
+			NOT = { has_building = temple }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		officials = -1
+		random_owned = {
+			limit = { NOT = { has_building = temple } }
+			add_building = temple
+		}
+		random_owned = {
+			limit = { NOT = { has_building = temple } }
+			add_building = temple
+		}
+		random_owned = {
+			limit = { NOT = { has_building = temple } }
+			add_building = temple
+		}
+		random_owned = {
+			limit = { NOT = { has_building = temple } }
+			add_building = temple
+		}
+	}
+}
+
+#lower inflation
+country_event = {
+
+	id = 31852
+	is_triggered_only = yes
+
+	title = "EVTNAME31852"
+	desc = "EVTDESC31852"
+
+	trigger = {
+		ADM = 7
+		regency = no
+		inflation = 2
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		inflation = -3
+	}
+}
+
+#attract an advisor
+country_event = {
+
+	id = 31853
+	is_triggered_only = yes
+
+	title = "EVTNAME31853"
+	desc = "EVTDESC31853"
+
+	trigger = {
+		DIP = 7
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		random_list = {
+			25 = { define_advisor = { type = trader skill = 6 }  }
+			25 = { define_advisor = { type = collector skill = 6 }  }
+			25 = { define_advisor = { type = commandant skill = 6 }  }
+			25 = { define_advisor = { type = sergeant_major_general skill = 6 }  }
+		}
+	}
+}
+
+#attract an advisor
+country_event = {
+
+	id = 31854
+	is_triggered_only = yes
+
+	title = "EVTNAME31853"
+	desc = "EVTDESC31853"
+
+	trigger = {
+		ADM = 7
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		random_list = {
+			25 = { define_advisor = { type = ambassador skill = 6 }  }
+			25 = { define_advisor = { type = lord_proprietor skill = 6 }  }
+			25 = { define_advisor = { type = commandant skill = 6 }  }
+			25 = { define_advisor = { type = sergeant_major_general skill = 6 }  }
+		}
+	}
+}
+
+#attract an advisor
+country_event = {
+
+	id = 31855
+	is_triggered_only = yes
+
+	title = "EVTNAME31853"
+	desc = "EVTDESC31853"
+
+	trigger = {
+		MIL = 7
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		random_list = {
+			25 = { define_advisor = { type = ambassador skill = 6 }  }
+			25 = { define_advisor = { type = lord_proprietor skill = 6 }  }
+			25 = { define_advisor = { type = trader skill = 6 }  }
+			25 = { define_advisor = { type = collector skill = 6 }  }
+		}
+	}
+}
+
+#cursed!
+country_event = {
+
+	id = 31856
+	is_triggered_only = yes
+
+	title = "EVTNAME31856"
+	desc = "EVTDESC31856"
+
+	trigger = {
+		ADM = 6
+		NOT = { ADM = 7 }
+		DIP = 6
+		NOT = { DIP = 7 }
+		MIL = 6
+		NOT = { MIL = 7 }
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31856"
+		random_list = {
+			40 = { badboy = 3 }
+			30 = { prestige = -0.10 }
+			20 = { stability = -1 }
+			9 = { years_of_income = -0.15 }
+			1 = { kill_ruler = THIS }
+		}
+	}
+}
+
+#brilliance!
+country_event = {
+
+	id = 31857
+	is_triggered_only = yes
+
+	title = "EVTNAME31857"
+	desc = "EVTDESC31857"
+
+	trigger = {
+		ADM = 8
+		DIP = 8
+		MIL = 8
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31857"
+		ai_chance = { factor = 65 }
+		centralization_decentralization = -1
+	}
+
+	option = {
+		name = "EVTOPTB31857"
+		ai_chance = { factor = 30 }
+		years_of_income = 0.60
+		inflation = -1
+	}
+
+	option = {
+		name = "EVTOPTC31857"
+		ai_chance = { factor = 5 }
+		stability = 3
+	}
+}
+
+#a brilliant tactician
+country_event = {
+
+	id = 31858
+	is_triggered_only = yes
+
+	title = "EVTNAME31858"
+	desc = "EVTDESC31858"
+
+	trigger = {
+		MIL = 8
+		regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA31850"
+		army_tradition = 0.15
+		navy_tradition = 0.15
+	}
+}
+
+#pacify the natives
+province_event = {
+
+	id = 31859
+
+	title = "EVTNAME31859"
+	desc = "EVTDESC31859"
+
+	trigger = {
+		OR = {
+			owner = { ADM = 7 }
+			owner = { DIP = 7 }
+		}
+		NOT = { owner = { has_country_flag = NF_ruthless } }
+		native_hostileness = 7
+		native_size = 1
+		NOT = { units_in_province = 1 }
+		citysize = 100
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 0.75
+			owner = { government_tech = 30 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { government_tech = 40 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { government_tech = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { ADM = 8 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { DIP = 8 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { culture_group = pacific }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { culture_group = malay }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31859"
+		random_list = {
+			50 = {
+				native_hostileness = -1
+			}
+			35 = {
+				native_hostileness = -2
+			}
+			15 = {
+				native_hostileness = -3
+			}
+		}
+		native_ferocity = -1
+	}
+}
+
+###################################
+#Adopting overlord religion
+###################################
+#overlord notice
+country_event = {
+
+	id = 31870
+	is_triggered_only = yes
+
+	title = "EVTNAME31870"
+	desc = "EVTDESC31870"
+
+	option = {
+		name = "EVTOPTA31870"
+		prestige = 0.10
+	}
+}
+
+country_event = {
+
+	id = 31871
+
+	title = "EVTNAME31871"
+	desc = "EVTDESC31871"
+
+	trigger = {
+		OR = {
+			#Christian
+			AND = {
+				overlord = { religion = catholic }
+				NOT = { religion = catholic }
+			}
+			AND = {
+				overlord = { religion = protestant }
+				NOT = { religion = protestant }
+			}
+			AND = {
+				overlord = { religion = reformed }
+				NOT = { religion = reformed }
+			}
+			AND = {
+				overlord = { religion = orthodox }
+				NOT = { religion = orthodox }
+			}
+			AND = {
+				overlord = { religion = anglican }
+				NOT = { religion = anglican }
+			}
+			AND = {
+				overlord = { religion = cathar }
+				NOT = { religion = cathar }
+			}
+			AND = {
+				overlord = { religion = hussite }
+				NOT = { religion = hussite }
+			}
+			#Muslim
+			AND = {
+				overlord = { religion = sunni }
+				NOT = { religion = sunni }
+			}
+			AND = {
+				overlord = { religion = shiite }
+				NOT = { religion = shiite }
+			}
+			AND = {
+				overlord = { religion = khariji }
+				NOT = { religion = khariji }
+			}
+			AND = {
+				overlord = { religion = sufism }
+				NOT = { religion = sufism }
+			}
+			#Jewish
+			AND = {
+				overlord = { religion = judaism }
+				NOT = { religion = judaism }
+			}
+			#Taoic
+			AND = {
+				overlord = { religion = buddhism }
+				NOT = { religion = buddhism }
+			}
+			AND = {
+				overlord = { religion = confucianism }
+				NOT = { religion = confucianism }
+			}
+			AND = {
+				overlord = { religion = shinto }
+				NOT = { religion = shinto }
+			}
+			#Dharmic
+			AND = {
+				overlord = { religion = hinduism }
+				NOT = { religion = hinduism }
+			}
+			AND = {
+				overlord = { religion = sikhism }
+				NOT = { religion = sikhism }
+			}
+			AND = {
+				overlord = { religion = zoroastrian }
+				NOT = { religion = zoroastrian }
+			}
+			#Old World
+			AND = {
+				overlord = { religion = animism }
+				NOT = { religion = animism }
+			}
+			AND = {
+				overlord = { religion = shamanism }
+				NOT = { religion = shamanism }
+			}
+			AND = {
+				overlord = { religion = druidism }
+				NOT = { religion = druidism }
+			}
+			AND = {
+				overlord = { religion = norse_rel }
+				NOT = { religion = norse_rel }
+			}
+			#American
+			AND = {
+				overlord = { religion = spiritualism }
+				NOT = { religion = spiritualism }
+			}
+			AND = {
+				overlord = { religion = teotl }
+				NOT = { religion = teotl }
+			}
+			AND = {
+				overlord = { religion = inca_religion }
+				NOT = { religion = inca_religion }
+			}
+			AND = {
+				overlord = { religion = polynesian_religion }
+				NOT = { religion = polynesian_religion }
+			}
+			#African
+			AND = {
+				overlord = { religion = vodun }
+				NOT = { religion = vodun }
+			}
+			AND = {
+				overlord = { religion = bantu_rel }
+				NOT = { religion = bantu_rel }
+			}
+			AND = {
+				overlord = { religion = malagasy_rel }
+				NOT = { religion = malagasy_rel }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+
+		modifier = {
+			factor = 0.7
+			overlord = { culture_group = THIS }
+		}
+		modifier = {
+			factor = 0.7
+			overlord = { religion_group = THIS }
+		}
+		modifier = {
+			factor = 0.8
+			has_country_flag = religious_turmoil
+		}
+		modifier = {
+			factor = 1.2
+			overlord = { badboy = 0.25 }
+		}
+		modifier = {
+			factor = 1.3
+			overlord = { badboy = 0.50 }
+		}
+		modifier = {
+			factor = 1.4
+			overlord = { badboy = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			overlord = { badboy = 1.01 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.2
+			ADM = 7
+		}
+		modifier = {
+			factor = 1.2
+			ADM = 8
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { ADM = 8 }
+		}
+		modifier = {
+			factor = 1.2
+			DIP = 7
+		}
+		modifier = {
+			factor = 1.2
+			DIP = 8
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { DIP = 8 }
+		}
+		modifier = {
+			factor = 1.2
+			MIL = 7
+		}
+		modifier = {
+			factor = 1.2
+			MIL = 8
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { MIL = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { MIL = 8 }
+		}
+		modifier = {
+			factor = 0.8
+			overlord = { idea = { ecumenism } }
+		}
+		modifier = {
+			factor = 0.9
+			overlord = { idea = { church_attendance_duty } }
+		}
+		modifier = {
+			factor = 1.4
+			idea = { divine_supremacy }
+		}
+		modifier = {
+			factor = 0.85
+			overlord = { idea = { divine_supremacy } }
+		}
+		modifier = {
+			factor = 1.4
+			idea = { deus_vult }
+		}
+		modifier = {
+			factor = 0.85
+			overlord = { idea = { deus_vult } }
+		}
+		modifier = {
+			factor = 0.8
+			overlord = { idea = { humanist_tolerance } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31871"
+		ai_chance = { factor = 5 }
+		overlord = { relation = { who = THIS value = -15 } }
+		stability = -2
+	}
+
+	option = {
+		name = "EVTOPTB31871"
+		ai_chance = { factor = 95 }
+		overlord = { relation = { who = THIS value = 50 } }
+		#Christian
+		random_owned = {
+			limit = { owner = { overlord = { religion = catholic } } }
+			religion = catholic
+			owner = { religion = catholic }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = protestant } } }
+			religion = protestant
+			owner = { religion = protestant }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = reformed } } }
+			religion = reformed
+			owner = { religion = reformed }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = orthodox } } }
+			religion = orthodox
+			owner = { religion = orthodox }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = anglican } } }
+			religion = anglican
+			owner = { religion = anglican }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = cathar } } }
+			religion = cathar
+			owner = { religion = cathar }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = hussite } } }
+			religion = hussite
+			owner = { religion = hussite }
+		}
+		#Muslim
+		random_owned = {
+			limit = { owner = { overlord = { religion = sunni } } }
+			religion = sunni
+			owner = { religion = sunni }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = shiite } } }
+			religion = shiite
+			owner = { religion = shiite }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = khariji } } }
+			religion = khariji
+			owner = { religion = khariji }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = sufism } } }
+			religion = sufism
+			owner = { religion = sufism }
+		}
+		#Jewish
+		random_owned = {
+			limit = { owner = { overlord = { religion = judaism } } }
+			religion = judaism
+			owner = { religion = judaism }
+		}
+		#Taoic
+		random_owned = {
+			limit = { owner = { overlord = { religion = buddhism } } }
+			religion = buddhism
+			owner = { religion = buddhism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = confucianism } } }
+			religion = confucianism
+			owner = { religion = confucianism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = shinto } } }
+			religion = shinto
+			owner = { religion = shinto }
+		}
+		#Dharmic
+		random_owned = {
+			limit = { owner = { overlord = { religion = hinduism } } }
+			religion = hinduism
+			owner = { religion = hinduism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = sikhism } } }
+			religion = sikhism
+			owner = { religion = sikhism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = zoroastrian } } }
+			religion = zoroastrian
+			owner = { religion = zoroastrian }
+		}
+		#Old World
+		random_owned = {
+			limit = { owner = { overlord = { religion = animism } } }
+			religion = animism
+			owner = { religion = animism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = shamanism } } }
+			religion = shamanism
+			owner = { religion = shamanism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = druidism } } }
+			religion = druidism
+			owner = { religion = druidism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = norse_rel } } }
+			religion = norse_rel
+			owner = { religion = norse_rel }
+		}
+		#
+		random_owned = {
+			limit = { owner = { overlord = { religion = spiritualism } } }
+			religion = spiritualism
+			owner = { religion = spiritualism }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = teotl } } }
+			religion = teotl
+			owner = { religion = teotl }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = inca_religion } } }
+			religion = inca_religion
+			owner = { religion = inca_religion }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = polynesian_religion } } }
+			religion = polynesian_religion
+			owner = { religion = polynesian_religion }
+		}
+		#
+		random_owned = {
+			limit = { owner = { overlord = { religion = vodun } } }
+			religion = vodun
+			owner = { religion = vodun }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = bantu_rel } } }
+			religion = bantu_rel
+			owner = { religion = bantu_rel }
+		}
+		random_owned = {
+			limit = { owner = { overlord = { religion = malagasy_rel } } }
+			religion = malagasy_rel
+			owner = { religion = malagasy_rel }
+		}
+		overlord = { country_event = 31870 }
+	}
+}

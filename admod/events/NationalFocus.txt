@@ -1,0 +1,232 @@
+province_event = {
+	id = 9471
+	
+	title = "EVTNAME9471"
+	desc = "EVTDESC9471"
+	
+	trigger = {
+		OR = {
+			NOT = { owner = { tag = JAP } }
+			AND = {
+				owner = { tag = JAP }
+				NOT = { num_of_daimyos = 1 }
+			}
+		}
+		national_focus = THIS
+		is_capital = no
+		any_neighbor_province = {
+			NOT = {	
+				owned_by = THIS
+			}
+			owner = {
+				NOT = { casus_belli = THIS }
+			}
+			OR = {
+				owner = { hre = no }
+				THIS = { owner = { hre = no } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVTOPTA9471"
+		random_neighbor_province = {
+			limit = {
+				NOT = { 
+					owned_by = THIS
+				}
+				owner = {
+					NOT = { casus_belli = THIS }
+				}
+				OR = {
+					owner = { hre = no }
+					THIS = { owner = { hre = no } }
+				}
+			}
+			owner = {
+				casus_belli = {
+					target = THIS
+					type = cb_border_war
+					months = 12
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 9472
+	
+	title = "EVTNAME9472"
+	desc = "EVTDESC9472"
+	
+	trigger = {
+		NOT = {
+			has_national_focus = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 25000
+	}
+	
+	option = {
+		name = "EVTOPTA9472"
+		add_province_modifier = {
+			name = "benign_neglect"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "EVTOPTB9472"
+		national_focus = THIS
+		years_of_income = 0.20
+	}
+}
+
+
+province_event = {
+	id = 9473
+	
+	title = "EVTNAME9473"
+	desc = "EVTDESC9473"
+	
+	trigger = {
+		has_national_focus = yes
+		NOT = { has_building = fine_arts_academy }
+		NOT = { has_building = university }
+		NOT = { has_building = refinery }
+		NOT = { has_building = wharf }
+		NOT = { has_building = weapons }
+		NOT = { has_building = textile }
+		owner = {
+			government_tech = 17
+		}
+		OR = {
+			trade_goods = grain
+			trade_goods = fish
+			trade_goods = tea
+			trade_goods = spices
+			trade_goods = coffee
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15000
+
+		modifier = {
+			factor = 0.8
+			government_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			government_tech = 40
+		}
+		modifier = {
+			factor = 0.8
+			government_tech = 50
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9473"
+		add_building = university
+	}
+	option = {
+		name = "LEDGER_NO"
+		prestige = -0.01
+	}
+}
+
+province_event = {
+	id = 9475
+	
+	title = "EVTNAME9475"
+	desc = "EVTDESC9475"
+	
+	trigger = {
+		has_national_focus = yes
+		owner = {
+			NOT = { has_country_flag = veterans_home }
+		}
+		is_core = THIS
+		owner = {
+			war = no
+			war_exhaustion = 5
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 7
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 8
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 9
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 12
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 14
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 16
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 18
+		}
+		modifier = {
+			factor = 0.8
+			government_tech = 30
+		}
+		modifier = {
+			factor = 0.8
+			land_tech = 30
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9475"
+		owner = {
+			treasury = -150
+			war_exhaustion = -2
+			set_country_flag = veterans_home
+		}
+		add_province_modifier = {
+			name = "veterans_home"
+			duration = "-1"
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9475"
+		owner = {
+			war_exhaustion = 1
+		}
+	}
+}

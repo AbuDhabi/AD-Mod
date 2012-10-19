@@ -1,0 +1,70 @@
+#54 - Stade
+
+owner = BRE
+controller = BRE
+culture = hannoverian
+religion = catholic
+capital = "Bremervörde"
+trade_goods = fish
+hre = yes
+base_tax = 8
+manpower = 4
+citysize = 8000
+fort1 = yes
+add_core = BRE
+temple = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BRE
+		controller = BRE
+		citysize = 8000 }
+
+1450.1.1   = { citysize = 9000 }
+1500.1.1   = { citysize = 10000 }
+1510.1.1   = { fort2 = yes }
+1529.1.1   = { religion = protestant }
+1540.1.1   = { marketplace = yes }
+1550.1.1   = { citysize = 11000 constable = yes }
+1600.1.1   = { citysize = 12000 regimental_camp = yes }
+1620.1.1   = { fort3 = yes }
+1648.1.1   = { capital = "Stade" } 
+1650.1.1   = { citysize = 13500 fort4 = yes }
+1700.1.1   = { citysize = 15000 tax_assessor = yes }
+1719.9.30  = {	owner = HAN
+		controller = HAN
+		add_core = HAN
+		remove_core = SWE
+	     } # The Treaty of Stockholm
+1750.1.1   = { citysize = 18000 }
+1800.1.1   = { citysize = 20000 }
+1803.7.5   = { controller = RFR } # French control
+1805.12.15 = {	owner = PRU
+		controller = PRU
+		add_core = PRU
+		remove_core = HAN
+	     } # Treaty of Schoenbrunn, ceded to Prussia
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1807.7.9   = {	owner = WES
+		controller = WES
+		add_core = WES
+		remove_core = PRU
+	     } # The Second Treaty of Tilsit, the kingdom of Westfalia
+1810.12.13 = {	owner = RFR
+		controller = RFR
+	     	add_core = RFR
+	     	remove_core = WES
+	     } # Annexed by France
+1814.4.11  = {	owner = HAN
+		controller = HAN
+		add_core = HAN
+		remove_core = RFR
+	    } # Napoleon abdicated unconditionally

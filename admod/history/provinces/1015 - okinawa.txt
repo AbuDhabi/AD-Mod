@@ -1,0 +1,29 @@
+#1015 - Okinawa
+
+owner = RYU
+controller = RYU
+culture = ryukyuan
+religion = animism
+capital = "Shuri"
+trade_goods = chinaware
+hre = no
+base_tax = 2
+manpower = 1
+fort1 = yes
+citysize = 8670
+add_core = RYU
+discovered_by = chinese
+
+1450.1.1 = { citysize = 9100 }
+1500.1.1 = { citysize = 10576 }
+1542.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 11300 }
+1600.1.1 = { citysize = 12900 }
+1605.1.1 = { marketplace = yes }
+1609.1.1 = { controller = JAP } # Japanese occupation, King Sho Nei was taken prisoner
+1611.1.1 = { controller = RYU } # Sho Nei is released
+1624.1.1 = { religion = shinto } # The Amami islands are annexed
+1650.1.1 = { citysize = 14880 }
+1700.1.1 = { citysize = 15340 }
+1750.1.1 = { citysize = 17150 }
+1800.1.1 = { citysize = 19880 }

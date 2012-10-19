@@ -1,0 +1,30 @@
+ country_decisions = {
+	ai_fix_startup = {
+		potential = {
+			ai = yes
+			NOT = { has_global_flag = ai_fix_startup }
+		}
+		allow = { }
+		effect = {
+			add_ai_strategy = { antagonize = { id = AI1 value = 200 } }
+			add_ai_strategy = { antagonize = { id = AI2 value = 200 } }
+			add_ai_strategy = { antagonize = { id = AI3 value = 200 } }
+			add_ai_strategy = { antagonize = { id = AI4 value = 200 } }
+			add_ai_strategy = { antagonize = { id = AI5 value = 200 } }
+			add_ai_strategy = { antagonize = { id = AI6 value = 200 } }		
+			any_country = {
+				limit = { ai = yes }
+				add_ai_strategy = { antagonize = { id = AI1 value = 200 } }
+				add_ai_strategy = { antagonize = { id = AI2 value = 200 } }
+				add_ai_strategy = { antagonize = { id = AI3 value = 200 } }
+				add_ai_strategy = { antagonize = { id = AI4 value = 200 } }
+				add_ai_strategy = { antagonize = { id = AI5 value = 200 } }
+				add_ai_strategy = { antagonize = { id = AI6 value = 200 } }
+			}			
+			set_global_flag = ai_fix_startup 
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+	}	
+}

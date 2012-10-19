@@ -1,0 +1,42 @@
+#1143 - Borgu
+
+culture = mali  
+religion = vodun
+capital = "Bussa"
+trade_goods = unknown
+hre = no
+base_tax = 1
+native_size = 40
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = OYO
+discovered_by = SON
+discovered_by = SOK
+
+#Black Death
+1399.10.11 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+		citysize = 6000
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = SOK
+		citysize = 0
+		trade_goods = unknown }
+
+1505.1.1 = { revolt_risk = 4 } #Songhai raids
+1506.1.1 = { revolt_risk = 0 } #Defeat of the Songhai
+1556.1.1 = { revolt_risk = 3 } #Conflict with migrant Yoruba settled in region from the 1520s
+1558.1.1 = { revolt_risk = 0 } #Yoruba emigrate back to homeland
+1690.1.1 = { revolt_risk = 8 } #Major raids by Oyo Yoruba badly destabilize region around Bussa
+1700.1.1 = { capital = "Nikki" } #shift in center of power among Borgu kingdoms in wake of Oyo invasions
+1804.1.1 = { discovered_by = SOK }
+1806.1.1 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+		citysize = 10000
+		trade_goods = grain
+	   } # The Fulani Empire

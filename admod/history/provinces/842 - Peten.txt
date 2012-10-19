@@ -1,0 +1,35 @@
+#842 - Petén
+
+owner = MAY
+controller = MAY
+culture = mayan
+religion = teotl
+capital = "Petén"
+trade_goods = coffee
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1000
+add_core = MAY
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1450.1.1  = { citysize = 1250 }
+1500.1.1  = { citysize = 1570 }
+1522.1.1  = { discovered_by = SPA }
+1550.1.1  = { citysize = 2700 }
+1600.1.1  = { citysize = 3240 }
+1650.1.1  = { citysize = 3890 }
+1697.3.14 = { revolt_risk = 5 citysize = 2200 } # Spanish attack
+1700.1.1  = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+		citysize = 1850
+	    } # The remaining pop. was forced to resettle at Ciudad de Flores
+1725.1.1  = { add_core = SPA }
+1750.1.1  = { citysize = 4870 add_core = MEX }
+1800.1.1  = { citysize = 5320 }
+1808.2.1  = { add_core = CAM } # France invades Spain
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

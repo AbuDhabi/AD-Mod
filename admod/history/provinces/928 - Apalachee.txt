@@ -1,0 +1,42 @@
+#928 - Apalachee
+
+owner = CRE
+controller = CRE
+culture = creek
+religion = spiritualism
+capital = "Apalachee"
+trade_goods = cotton
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1000
+add_core = CRE
+discovered_by = CRE
+discovered_by = CHE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 1300 }
+1500.1.1  = { citysize = 1578 }
+1519.1.1  = { discovered_by = SPA } # Alvarez de Piñeda explored the Gulf Coast
+1550.1.1  = { citysize = 2800 }
+1600.1.1  = { citysize = 3650 }
+1650.1.1  = { citysize = 4215 }
+1663.1.1  = { discovered_by = ENG } # The British claimed the region north of the Gulf of Mexico
+1700.1.1  = { citysize = 5314 }
+1750.1.1  = { citysize = 5900 }
+1763.2.10 = {	discovered_by = ENG
+		owner = GBR
+		controller = GBR
+	    	culture = english
+	    	religion = protestant
+	    } # Part of British Georgia after the Treaty of Paris
+1783.9.3  = { owner = SPA controller = SPA } # Part of Spanish West Florida
+1784.1.1  = { revolt_risk = 7 } # Controversy of the Treaty of Versaille & the Treaty of Paris, Spanish or American?
+1786.3.22 = { capital = "Tallahassee" }
+1800.1.1  = { citysize = 6835 }
+1808.1.1  = { add_core = SPA }
+1819.2.22 = {	owner = USA
+		controller = USA
+		add_core = USA
+		remove_core = SPA
+	    } # The Adams-Onís Treaty

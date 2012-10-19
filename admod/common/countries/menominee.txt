@@ -1,0 +1,72 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 170  103  114 } 
+
+historical_ideas = {
+	quest_for_the_new_world
+	national_conscripts
+	battlefield_commisions
+	grand_army
+	national_trade_policy
+	military_drill
+	cabinet
+	engineer_corps
+	bill_of_rights
+	patron_of_art
+	espionage
+	smithian_economics
+	
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Amiskquew #0" = 20
+	"Oshkosh #0" = 20
+	"Tomah #0" = 15
+	"Akwine'me #0" = 15
+	"Waupoose #0" = 10
+	"Washinawatok #0" = -5
+	"Theyanoguin #0" = 0
+	"Teiorhenhsere #0" = 0
+	"Thayendanega #0" = 0
+	"Oronhyatekha #0" = 0
+	"Ahatsistari #0" = 0
+	"Dannaconna #0" = 0
+	"Adario #0" = 0
+	"Dunquat #0" = 0
+	"Tarhe #0" = 0
+}
+
+leader_names = {
+	Aehsepan Apaeskasiw Apaehsos Anaem Awaehsaeh Amaskos
+	Kesewatohsaeh Kenew Ketaemiw Kakakew Kihkih
+	Onawanik Oqsas Otaeciah Ocik Osew
+	Penekekonaew Pakaestikaew Peponeqnaew Penaehsiw
+	Mahwaew Maeskwananiw Maehkaenah Mekek Mos Muak
+	Nahtek Namaew Namaeh Nakutih
+	Saqsakaew
+	Wakoh Wapaehsyah
+}
+
+ship_names = {
+	Aehsepan Apaeskasiw Apaehsos Anaem Awaehsaeh Amaskos
+	Kesewatohsaeh Kenew Ketaemiw Kakakew Kihkih
+	Onawanik Oqsas Otaeciah Ocik Osew
+	Penekekonaew Pakaestikaew Peponeqnaew Penaehsiw
+	Mahwaew Maeskwananiw Maehkaenah Mekek Mos Muak
+	Nahtek Namaew Namaeh Nakutih
+	Saqsakaew
+	Wakoh Wapaehsyah
+	Oshkosh
+}

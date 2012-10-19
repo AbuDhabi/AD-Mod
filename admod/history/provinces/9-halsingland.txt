@@ -1,0 +1,53 @@
+#Hälsingland-Gästrikland-Medelpad, from Gävle to Näs
+
+add_core = SWE
+owner = SWE
+controller = SWE
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 2
+trade_goods = fish
+manpower = 2
+fort1 = yes
+capital = "Gävle"
+citysize = 1100 # Estimated
+marketplace = yes # controller of trade in Norrland
+discovered_by = eastern
+discovered_by = western
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SWE
+		controller = SWE
+		citysize = 1100 }
+
+#Shattered Europe
+1399.10.13 = { religion = norse_rel }
+
+#Historical
+1399.10.14 = { religion = catholic }
+
+1450.1.1  = { citysize = 1300 }
+# 1520.3.6  = { owner = DAN controller = DAN } #The Council accept Christian II as King
+# 1521.4.30 = { owner = SWE controller = SWE } #The population joins the uprising
+1527.6.1  = { religion = protestant}
+1560.1.1  = { fort2 = yes } #
+1570.1.1  = { citysize = 1524 }
+1610.1.1  = { citysize = 1930 }
+1634.1.1  = { regimental_camp = yes } #Hälsinge regemente
+1635.1.1  = { courthouse = yes } #minor court belonging to Svea Hovrätt
+1640.1.1  = { fort3 = yes } #
+1650.1.1  = { citysize = 2508 }
+1670.1.1  = { tax_assessor = yes } #Due to the "Staplepolicy act"
+1690.1.1  = { citysize = 2803 }
+1730.1.1  = { citysize = 3741 }
+1730.1.1  = { constable = yes } #Due to the support of manufactories
+1740.1.1  = { fort4 = yes } #
+1770.1.1  = { citysize = 4014 }
+1792.1.1  = { fort5 = yes }
+1800.1.1  = { citysize = 5558 }

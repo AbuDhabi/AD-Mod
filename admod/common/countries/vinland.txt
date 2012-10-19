@@ -1,0 +1,103 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+is_colonial = yes
+
+color = { 125  15  155 }
+
+historical_ideas = {
+	national_conscripts
+	church_attendance_duty
+	merchant_adventures
+	national_bank
+	national_trade_policy
+	humanist_tolerance
+	bill_of_rights
+	cabinet
+	patron_of_art
+	bureaucracy
+	smithian_economics
+	glorious_arms
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_galoop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Johan #0" = 40
+	"Adam #0" = 20
+	"Christian #0" = 20
+	"Dick #0" = 20
+	"Erik #0" = 20
+	"Marcus #0" = 20
+	"Pontus #0" = 20
+	"Thomas #0" = 20
+	"Anna #0" = -15
+	"Henrik #0" = 15
+	"Joakim #0" = 15
+	"Patric #0" = 15
+	"Susanna #0" = -15
+	"Oskar #0" = 10
+	"Alfred #0" = 0
+	"Axel #0" = 0
+	"Bengt #0" = 0
+	"Edvard #0" = 0
+	"Einar #0" = 0
+	"Folke #0" = 0
+	"Gottfrid #0" = 0
+	"Halvar #0" = 0
+	"Jakob #0" = 0
+	"Karl #0" = 0
+	"Lars #0" = 0
+	"Ludvig #0" = 0
+	"Mikael #0" = 0
+	"Nils #0" = 0
+	"Olof #0" = 0
+	"Petter #0" = 0
+	"Rangvald #0" = 0
+	"Rettil #0" = 0
+	"Sigvard #0" = 0
+	"Simon #0" = 0
+	"Steen #0" = 0
+	"Svante #0" = 0
+	"Tomas #0" = 0
+	"Ulrik #0" = 0
+	"Viggo #0" = 0
+	"Waldemar #0" = 0 
+}
+
+leader_names = {
+        Andersson
+	Åberg
+	Eriksson
+	Helmfridsson
+	Johansson
+	Lindgren
+	Sjöström
+	Edström
+	Skoglund
+	Thulin	
+}
+
+ship_names = {
+	Friheten
+	Manligheten
+	Hammaren
+	Odin
+	Tor
+}

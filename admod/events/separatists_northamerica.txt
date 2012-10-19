@@ -1,0 +1,5490 @@
+# events 22000-22999
+##################################################
+# Quebec Region 2200#
+# Valid new nations: QUE, CAN, VIN
+##################################################
+
+#Quebec appears
+country_event = {
+
+	id = 22000
+#	major = yes
+
+	title = "EVTNAME22000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		994 = { NOT = { any_core = { is_colonial = yes } } }
+		997 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 991	# Ottawa
+			owns = 992	# Algonquin
+			owns = 993	# Hochelega
+			owns = 994	# Stadacona
+			owns = 995	# Atiamekw
+			owns = 996	# Innu
+			owns = 997	# Labrador
+			owns = 998	# Ungava
+			owns = 999	# Nunavik
+			owns = 1000	# Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		991 = { culture = metis }
+		992 = { culture = metis }
+		993 = { culture = metis }
+		994 = { culture = metis }
+		995 = { culture = metis }
+		996 = { culture = metis }
+		997 = { culture = metis }
+		998 = { culture = metis }
+		999 = { culture = metis }
+		1000 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 991
+			add_core = 992
+			add_core = 993
+			add_core = 994
+			add_core = 995
+			add_core = 996
+			add_core = 997
+			add_core = 998
+			add_core = 999
+			add_core = 1000
+		}
+		994 = { rename_capital = "Quebec City" }
+		colonists = -1
+	}
+}
+
+#Canada appears
+country_event = {
+
+	id = 22001
+#	major = yes
+
+	title = "EVTNAME22000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		994 = { NOT = { any_core = { is_colonial = yes } } }
+		997 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = {
+			culture_group = scandinavian
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 991	# Ottawa
+			owns = 992	# Algonquin
+			owns = 993	# Hochelega
+			owns = 994	# Stadacona
+			owns = 995	# Atiamekw
+			owns = 996	# Innu
+			owns = 997	# Labrador
+			owns = 998	# Ungava
+			owns = 999	# Nunavik
+			owns = 1000	# Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		991 = { culture = canadian }
+		992 = { culture = canadian }
+		993 = { culture = canadian }
+		994 = { culture = canadian }
+		995 = { culture = canadian }
+		996 = { culture = canadian }
+		997 = { culture = canadian }
+		998 = { culture = canadian }
+		999 = { culture = canadian }
+		1000 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 991
+			add_core = 992
+			add_core = 993
+			add_core = 994
+			add_core = 995
+			add_core = 996
+			add_core = 997
+			add_core = 998
+			add_core = 999
+			add_core = 1000
+		}
+		colonists = -1
+	}
+}
+
+#Vinland appears
+country_event = {
+
+	id = 22002
+#	major = yes
+
+	title = "EVTNAME22000"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		994 = { NOT = { any_core = { is_colonial = yes } } }
+		997 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 991	# Ottawa
+			owns = 992	# Algonquin
+			owns = 993	# Hochelega
+			owns = 994	# Stadacona
+			owns = 995	# Atiamekw
+			owns = 996	# Innu
+			owns = 997	# Labrador
+			owns = 998	# Ungava
+			owns = 999	# Nunavik
+			owns = 1000	# Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		991 = { culture = vinlander }
+		992 = { culture = vinlander }
+		993 = { culture = vinlander }
+		994 = { culture = vinlander }
+		995 = { culture = vinlander }
+		996 = { culture = vinlander }
+		997 = { culture = vinlander }
+		998 = { culture = vinlander }
+		999 = { culture = vinlander }
+		1000 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VIN = {
+			add_core = 991
+			add_core = 992
+			add_core = 993
+			add_core = 994
+			add_core = 995
+			add_core = 996
+			add_core = 997
+			add_core = 998
+			add_core = 999
+			add_core = 1000
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Acadia Region 2201#
+# Valid new nations: QUE, VIN
+# Valid continuing nations: USA, CAN
+##################################################
+
+#Quebec appears
+country_event = {
+
+	id = 22010
+#	major = yes
+
+	title = "EVTNAME22010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		984 = { NOT = { any_core = { is_colonial = yes } } }
+		985 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 982	# Unamakik
+			owns = 983	# Epekwitk
+			owns = 984	# Acadia
+			owns = 985	# Micmac
+			owns = 986	# Kespek
+			owns = 987	# Niagara
+			owns = 988	# Huron	
+			owns = 989	# Ontario
+			owns = 990	# Kwedech
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		982 = { culture = metis }
+		983 = { culture = metis }
+		984 = { culture = metis }
+		985 = { culture = metis }
+		986 = { culture = metis }
+		987 = { culture = metis }
+		988 = { culture = metis }
+		989 = { culture = metis }
+		990 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 985
+			add_core = 986
+			add_core = 987
+			add_core = 988
+			add_core = 989
+			add_core = 990
+		}
+		colonists = -1
+	}
+}
+
+#Vinland appears
+country_event = {
+
+	id = 22011
+#	major = yes
+
+	title = "EVTNAME22010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		984 = { NOT = { any_core = { is_colonial = yes } } }
+		985 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 982	# Unamakik
+			owns = 983	# Epekwitk
+			owns = 984	# Acadia
+			owns = 985	# Micmac
+			owns = 986	# Kespek
+			owns = 987	# Niagara
+			owns = 988	# Huron	
+			owns = 989	# Ontario
+			owns = 990	# Kwedech
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		982 = { culture = vinlander }
+		983 = { culture = vinlander }
+		984 = { culture = vinlander }
+		985 = { culture = vinlander }
+		986 = { culture = vinlander }
+		987 = { culture = vinlander }
+		988 = { culture = vinlander }
+		989 = { culture = vinlander }
+		990 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VIN = {
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 985
+			add_core = 986
+			add_core = 987
+			add_core = 988
+			add_core = 989
+			add_core = 990
+		}
+		colonists = -1
+	}
+}
+
+#USA spreads slow
+country_event = {
+
+	id = 22012
+#	major = yes
+
+	title = "EVTNAME22010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		984 = { NOT = { any_core = { is_colonial = yes } } }
+		985 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 982	# Unamakik
+			owns = 983	# Epekwitk
+			owns = 984	# Acadia
+			owns = 985	# Micmac
+			owns = 986	# Kespek
+			owns = 987	# Niagara
+			owns = 988	# Huron	
+			owns = 989	# Ontario
+			owns = 990	# Kwedech
+		}
+		OR = {
+			987 = { any_neighbor_province = { is_core = USA } }
+			988 = { any_neighbor_province = { is_core = USA } }
+			990 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		982 = { culture = american }
+		983 = { culture = american }
+		984 = { culture = american }
+		985 = { culture = american }
+		986 = { culture = american }
+		987 = { culture = american }
+		988 = { culture = american }
+		989 = { culture = american }
+		990 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 985
+			add_core = 986
+			add_core = 987
+			add_core = 988
+			add_core = 989
+			add_core = 990
+		}
+		colonists = -1
+	}
+}
+
+#Canada spreads fast
+country_event = {
+
+	id = 22013
+#	major = yes
+
+	title = "EVTNAME22010"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		984 = { NOT = { any_core = { is_colonial = yes } } }
+		985 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 982	# Unamakik
+			owns = 983	# Epekwitk
+			owns = 984	# Acadia
+			owns = 985	# Micmac
+			owns = 986	# Kespek
+			owns = 987	# Niagara
+			owns = 988	# Huron	
+			owns = 989	# Ontario
+			owns = 990	# Kwedech
+		}
+		OR = {
+			987 = { any_neighbor_province = { is_core = CAN } }
+			988 = { any_neighbor_province = { is_core = CAN } }
+			990 = { any_neighbor_province = { is_core = CAN } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		982 = { culture = canadian }
+		983 = { culture = canadian }
+		984 = { culture = canadian }
+		985 = { culture = canadian }
+		986 = { culture = canadian }
+		987 = { culture = canadian }
+		988 = { culture = canadian }
+		989 = { culture = canadian }
+		990 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 985
+			add_core = 986
+			add_core = 987
+			add_core = 988
+			add_core = 989
+			add_core = 990
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Newfoundland Region 2202#
+# Valid new nations: BLO, CAN
+# Valid continuing nations: QUE
+##################################################
+
+#Bloland appears
+country_event = {
+
+	id = 22020
+#	major = yes
+
+	title = "EVTNAME22020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		980 = { NOT = { any_core = { is_colonial = yes } } }
+		981 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 980	# Beothuk
+			owns = 981	# Taqamkuk
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		980 = { culture = vinlander }
+		981 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		BLO = {
+			add_core = 980
+			add_core = 981
+		}
+		colonists = -1
+	}
+}
+
+#Quebec appears
+country_event = {
+
+	id = 22021
+#	major = yes
+
+	title = "EVTNAME22020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		980 = { NOT = { any_core = { is_colonial = yes } } }
+		981 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 980	# Beothuk
+			owns = 981	# Taqamkuk
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		980 = { culture = metis }
+		981 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 980
+			add_core = 981
+		}
+		colonists = -1
+	}
+}
+
+#Canada appears slower
+country_event = {
+
+	id = 22022
+#	major = yes
+
+	title = "EVTNAME22020"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		980 = { NOT = { any_core = { is_colonial = yes } } }
+		981 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 980	# Beothuk
+			owns = 981	# Taqamkuk
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		980 = { culture = canadian }
+		981 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 980
+			add_core = 981
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Canada Region 2203#
+# Valid new nations: CAN, QUE, VIN
+##################################################
+
+#Canada appears
+country_event = {
+
+	id = 22030
+#	major = yes
+
+	title = "EVTNAME22030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		1003 = { NOT = { any_core = { is_colonial = yes } } }
+		1010 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = {
+			culture_group = scandinavian
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		NOT = {
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 1001	# Sault
+			owns = 1002	# Abitbi
+			owns = 1003	# Moose Cree
+			owns = 1004	# Attawapiskat
+			owns = 1005	# Swampy Cree
+			owns = 1006	# Chipewyan
+			owns = 1007	# Ojibwa
+			owns = 1008	# Winnipeg
+			owns = 1009	# Atikaki
+			owns = 1010	# Manitoba
+			owns = 1011	# Woods Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		1001 = { culture = canadian }
+		1002 = { culture = canadian }
+		1003 = { culture = canadian }
+		1004 = { culture = canadian }
+		1005 = { culture = canadian }
+		1006 = { culture = canadian }
+		1007 = { culture = canadian }
+		1008 = { culture = canadian }
+		1009 = { culture = canadian }
+		1010 = { culture = canadian }
+		1011 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 1001
+			add_core = 1002
+			add_core = 1003
+			add_core = 1004
+			add_core = 1005
+			add_core = 1006
+			add_core = 1007
+			add_core = 1008
+			add_core = 1009
+			add_core = 1010
+			add_core = 1011
+		}
+		colonists = -1
+	}
+}
+
+#Quebec appears
+country_event = {
+
+	id = 22031
+#	major = yes
+
+	title = "EVTNAME22030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		1003 = { NOT = { any_core = { is_colonial = yes } } }
+		1010 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = gaelic
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 1001	# Sault
+			owns = 1002	# Abitbi
+			owns = 1003	# Moose Cree
+			owns = 1004	# Attawapiskat
+			owns = 1005	# Swampy Cree
+			owns = 1006	# Chipewyan
+			owns = 1007	# Ojibwa
+			owns = 1008	# Winnipeg
+			owns = 1009	# Atikaki
+			owns = 1010	# Manitoba
+			owns = 1011	# Woods Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		1001 = { culture = metis }
+		1002 = { culture = metis }
+		1003 = { culture = metis }
+		1004 = { culture = metis }
+		1005 = { culture = metis }
+		1006 = { culture = metis }
+		1007 = { culture = metis }
+		1008 = { culture = metis }
+		1009 = { culture = metis }
+		1010 = { culture = metis }
+		1011 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 1001
+			add_core = 1002
+			add_core = 1003
+			add_core = 1004
+			add_core = 1005
+			add_core = 1006
+			add_core = 1007
+			add_core = 1008
+			add_core = 1009
+			add_core = 1010
+			add_core = 1011
+		}
+		colonists = -1
+	}
+}
+
+#Vinland appears
+country_event = {
+
+	id = 22032
+#	major = yes
+
+	title = "EVTNAME22030"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		1003 = { NOT = { any_core = { is_colonial = yes } } }
+		1010 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = east_slavic
+			culture_group = baltic
+		}
+		OR = {
+			owns = 1001	# Sault
+			owns = 1002	# Abitbi
+			owns = 1003	# Moose Cree
+			owns = 1004	# Attawapiskat
+			owns = 1005	# Swampy Cree
+			owns = 1006	# Chipewyan
+			owns = 1007	# Ojibwa
+			owns = 1008	# Winnipeg
+			owns = 1009	# Atikaki
+			owns = 1010	# Manitoba
+			owns = 1011	# Woods Cree
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		1001 = { culture = vinlander }
+		1002 = { culture = vinlander }
+		1003 = { culture = vinlander }
+		1004 = { culture = vinlander }
+		1005 = { culture = vinlander }
+		1006 = { culture = vinlander }
+		1007 = { culture = vinlander }
+		1008 = { culture = vinlander }
+		1009 = { culture = vinlander }
+		1010 = { culture = vinlander }
+		1011 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VIN = {
+			add_core = 1001
+			add_core = 1002
+			add_core = 1003
+			add_core = 1004
+			add_core = 1005
+			add_core = 1006
+			add_core = 1007
+			add_core = 1008
+			add_core = 1009
+			add_core = 1010
+			add_core = 1011
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Colonies Region 2204#
+# Valid new nations: USA
+##################################################
+
+#USA appears
+country_event = {
+
+	id = 22040
+#	major = yes
+
+	title = "EVTNAME22040"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		950 = { NOT = { any_core = { is_colonial = yes } } }
+		968 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 932	# Santee
+			owns = 937	# Tuscarora
+			owns = 938	# Pamlico
+			owns = 950	# Powhatan
+			owns = 952	# Manahoac
+			owns = 953	# Conoy
+			owns = 956	# Lenape
+			owns = 957	# Delaware
+			owns = 962	# Unami
+			owns = 963	# Mahican
+			owns = 965	# Manhattan
+			owns = 966	# Connecticut
+			owns = 967	# Narraganset
+			owns = 968	# Massachusetts
+			owns = 969	# Pocumtuk
+			owns = 970	# Pennacook
+			owns = 971	# Abnaki
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		932 = { culture = american }
+		937 = { culture = american }
+		938 = { culture = american }
+		950 = { culture = american }
+		952 = { culture = american }
+		953 = { culture = american }
+		956 = { culture = american }
+		957 = { culture = american }
+		962 = { culture = american }
+		963 = { culture = american }
+		965 = { culture = american }
+		966 = { culture = american }
+		967 = { culture = american }
+		968 = { culture = american }
+		969 = { culture = american }
+		970 = { culture = american }
+		971 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 932
+			add_core = 937
+			add_core = 938
+			add_core = 950
+			add_core = 952
+			add_core = 953
+			add_core = 956
+			add_core = 957
+			add_core = 962
+			add_core = 963
+			add_core = 965
+			add_core = 966
+			add_core = 967
+			add_core = 968
+			add_core = 969
+			add_core = 970
+			add_core = 971
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Florida Region 2205#
+# Valid new nations: FLO, BYA
+# Valid continuing nations: USA
+##################################################
+
+#Florida appears
+country_event = {
+
+	id = 22050
+#	major = yes
+
+	title = "EVTNAME22050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		926 = { NOT = { any_core = { is_colonial = yes } } }
+		930 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = christian
+		OR = {
+			culture_group = latin
+			culture_group = iberian
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 922	# Mobile
+			owns = 923	# Pensacola
+			owns = 924	# Alabama
+			owns = 926	# Seminole
+			owns = 927	# Timucua
+			owns = 928	# Apalachee
+			owns = 929	# Muskogee
+			owns = 930	# Yamasee
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		922 = { culture = floridian }
+		923 = { culture = floridian }
+		924 = { culture = floridian }
+		926 = { culture = floridian }
+		927 = { culture = floridian }
+		928 = { culture = floridian }
+		929 = { culture = floridian }
+		930 = { culture = floridian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		FLO = {
+			add_core = 922
+			add_core = 923
+			add_core = 924
+			add_core = 926
+			add_core = 927
+			add_core = 928
+			add_core = 929
+			add_core = 930
+		}
+		colonists = -1
+	}
+}
+
+#Barasya appears
+country_event = {
+
+	id = 22051
+#	major = yes
+
+	title = "EVTNAME22050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		926 = { NOT = { any_core = { is_colonial = yes } } }
+		930 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 922	# Mobile
+			owns = 923	# Pensacola
+			owns = 924	# Alabama
+			owns = 926	# Seminole
+			owns = 927	# Timucua
+			owns = 928	# Apalachee
+			owns = 929	# Muskogee
+			owns = 930	# Yamasee
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		922 = { culture = barasi }
+		923 = { culture = barasi }
+		924 = { culture = barasi }
+		926 = { culture = barasi }
+		927 = { culture = barasi }
+		928 = { culture = barasi }
+		929 = { culture = barasi }
+		930 = { culture = barasi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		BYA = {
+			add_core = 922
+			add_core = 923
+			add_core = 924
+			add_core = 926
+			add_core = 927
+			add_core = 928
+			add_core = 929
+			add_core = 930
+		}
+		colonists = -1
+	}
+}
+
+#USA spreads at a moderate pace
+country_event = {
+
+	id = 22052
+#	major = yes
+
+	title = "EVTNAME22050"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		926 = { NOT = { any_core = { is_colonial = yes } } }
+		930 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = {
+			culture_group = latin
+			culture_group = iberian
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 922	# Mobile
+			owns = 923	# Pensacola
+			owns = 924	# Alabama
+			owns = 926	# Seminole
+			owns = 927	# Timucua
+			owns = 928	# Apalachee
+			owns = 929	# Muskogee
+			owns = 930	# Yamasee
+		}
+		OR = {
+			922 = { any_neighbor_province = { is_core = USA } }
+			929 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		922 = { culture = american }
+		923 = { culture = american }
+		924 = { culture = american }
+		926 = { culture = american }
+		927 = { culture = american }
+		928 = { culture = american }
+		929 = { culture = american }
+		930 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 922
+			add_core = 923
+			add_core = 924
+			add_core = 926
+			add_core = 927
+			add_core = 928
+			add_core = 929
+			add_core = 930
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Louisiana Region 2206#
+# Valid new nations: LOU, BYA
+# Valid continuing nations: USA, TEX, FLO
+##################################################
+
+#Louisiana appears
+country_event = {
+
+	id = 22060
+#	major = yes
+
+	title = "EVTNAME22060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		894 = { NOT = { any_core = { is_colonial = yes } } }
+		921 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = latin
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 893	# Chitimacha
+			owns = 894	# Caddo
+			owns = 895	# Arkansas
+			owns = 897	# Quapaw
+			owns = 899	# Osage
+			owns = 900	# Tamaroa
+			owns = 918	# Tennessee
+			owns = 919	# Chickasaw
+			owns = 920	# Choctaw
+			owns = 921	# Bayougoula
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		893 = { culture = metis }
+		894 = { culture = metis }
+		895 = { culture = metis }
+		897 = { culture = metis }
+		899 = { culture = metis }
+		900 = { culture = metis }
+		918 = { culture = metis }
+		919 = { culture = metis }
+		920 = { culture = metis }
+		921 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LOU = {
+			add_core = 893
+			add_core = 894
+			add_core = 895
+			add_core = 897
+			add_core = 899
+			add_core = 900
+			add_core = 918
+			add_core = 919
+			add_core = 920
+			add_core = 921
+		}
+		colonists = -1
+	}
+}
+
+#Barasya appears
+country_event = {
+
+	id = 22061
+#	major = yes
+
+	title = "EVTNAME22060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		894 = { NOT = { any_core = { is_colonial = yes } } }
+		921 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 893	# Chitimacha
+			owns = 894	# Caddo
+			owns = 895	# Arkansas
+			owns = 897	# Quapaw
+			owns = 899	# Osage
+			owns = 900	# Tamaroa
+			owns = 918	# Tennessee
+			owns = 919	# Chickasaw
+			owns = 920	# Choctaw
+			owns = 921	# Bayougoula
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		893 = { culture = barasi }
+		894 = { culture = barasi }
+		895 = { culture = barasi }
+		897 = { culture = barasi }
+		899 = { culture = barasi }
+		900 = { culture = barasi }
+		918 = { culture = barasi }
+		919 = { culture = barasi }
+		920 = { culture = barasi }
+		921 = { culture = barasi }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		BYA = {
+			add_core = 893
+			add_core = 894
+			add_core = 895
+			add_core = 897
+			add_core = 899
+			add_core = 900
+			add_core = 918
+			add_core = 919
+			add_core = 920
+			add_core = 921
+		}
+		colonists = -1
+	}
+}
+
+#USA spreads at a moderate pace
+country_event = {
+
+	id = 22062
+#	major = yes
+
+	title = "EVTNAME22060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		894 = { NOT = { any_core = { is_colonial = yes } } }
+		921 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 893	# Chitimacha
+			owns = 894	# Caddo
+			owns = 895	# Arkansas
+			owns = 897	# Quapaw
+			owns = 899	# Osage
+			owns = 900	# Tamaroa
+			owns = 918	# Tennessee
+			owns = 919	# Chickasaw
+			owns = 920	# Choctaw
+			owns = 921	# Bayougoula
+		}
+		OR = {
+			893 = { any_neighbor_province = { is_core = USA } }
+			897 = { any_neighbor_province = { is_core = USA } }
+			900 = { any_neighbor_province = { is_core = USA } }
+			921 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		893 = { culture = american }
+		894 = { culture = american }
+		895 = { culture = american }
+		897 = { culture = american }
+		899 = { culture = american }
+		900 = { culture = american }
+		918 = { culture = american }
+		919 = { culture = american }
+		920 = { culture = american }
+		921 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 893
+			add_core = 894
+			add_core = 895
+			add_core = 897
+			add_core = 899
+			add_core = 900
+			add_core = 918
+			add_core = 919
+			add_core = 920
+			add_core = 921
+		}
+		colonists = -1
+	}
+}
+
+#Texas spreads slowly
+country_event = {
+
+	id = 22063
+#	major = yes
+
+	title = "EVTNAME22060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		894 = { NOT = { any_core = { is_colonial = yes } } }
+		921 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 893	# Chitimacha
+			owns = 894	# Caddo
+			owns = 895	# Arkansas
+			owns = 897	# Quapaw
+			owns = 899	# Osage
+			owns = 900	# Tamaroa
+			owns = 918	# Tennessee
+			owns = 919	# Chickasaw
+			owns = 920	# Choctaw
+			owns = 921	# Bayougoula
+		}
+		NOT = {
+			culture_group = latin
+			culture_group = iberian
+		}
+		OR = {
+			893 = { any_neighbor_province = { is_core = TEX } }
+			897 = { any_neighbor_province = { is_core = TEX } }
+			900 = { any_neighbor_province = { is_core = TEX } }
+			921 = { any_neighbor_province = { is_core = TEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		893 = { culture = texian }
+		894 = { culture = texian }
+		895 = { culture = texian }
+		897 = { culture = texian }
+		899 = { culture = texian }
+		900 = { culture = texian }
+		918 = { culture = texian }
+		919 = { culture = texian }
+		920 = { culture = texian }
+		921 = { culture = texian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		TEX = {
+			add_core = 893
+			add_core = 894
+			add_core = 895
+			add_core = 897
+			add_core = 899
+			add_core = 900
+			add_core = 918
+			add_core = 919
+			add_core = 920
+			add_core = 921
+		}
+		colonists = -1
+	}
+}
+
+#Florida spreads slowly
+country_event = {
+
+	id = 22064
+#	major = yes
+
+	title = "EVTNAME22060"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		894 = { NOT = { any_core = { is_colonial = yes } } }
+		921 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = christian
+		OR = {
+			owns = 893	# Chitimacha
+			owns = 894	# Caddo
+			owns = 895	# Arkansas
+			owns = 897	# Quapaw
+			owns = 899	# Osage
+			owns = 900	# Tamaroa
+			owns = 918	# Tennessee
+			owns = 919	# Chickasaw
+			owns = 920	# Choctaw
+			owns = 921	# Bayougoula
+		}
+		OR = {
+			culture_group = latin
+			culture_group = iberian
+		}
+		OR = {
+			893 = { any_neighbor_province = { is_core = FLO } }
+			897 = { any_neighbor_province = { is_core = FLO } }
+			900 = { any_neighbor_province = { is_core = FLO } }
+			921 = { any_neighbor_province = { is_core = FLO } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		893 = { culture = floridian }
+		894 = { culture = floridian }
+		895 = { culture = floridian }
+		897 = { culture = floridian }
+		899 = { culture = floridian }
+		900 = { culture = floridian }
+		918 = { culture = floridian }
+		919 = { culture = floridian }
+		920 = { culture = floridian }
+		921 = { culture = floridian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		FLO = {
+			add_core = 893
+			add_core = 894
+			add_core = 895
+			add_core = 897
+			add_core = 899
+			add_core = 900
+			add_core = 918
+			add_core = 919
+			add_core = 920
+			add_core = 921
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Texas Region 2207#
+# Valid new nations: TEX
+# Valid continuing nations: MEX, MZU, YNG
+##################################################
+
+#Texas appears
+country_event = {
+
+	id = 22070
+#	major = yes
+
+	title = "EVTNAME22070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		884 = { NOT = { any_core = { is_colonial = yes } } }
+		886 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = {
+			culture_group = latin
+			culture_group = iberian
+		}
+		OR = {
+			owns = 880	# Pueblo
+			owns = 881	# Piro
+			owns = 882	# Mescalero
+			owns = 883	# Lipan
+			owns = 884	# Karankawa
+			owns = 885	# Comanche
+			owns = 886	# Waco
+			owns = 887	# Tonkawa
+			owns = 888	# Atakapa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		880 = { culture = texian }
+		881 = { culture = texian }
+		882 = { culture = texian }
+		883 = { culture = texian }
+		884 = { culture = texian }
+		885 = { culture = texian }
+		886 = { culture = texian }
+		887 = { culture = texian }
+		888 = { culture = texian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		TEX = {
+			add_core = 880
+			add_core = 881
+			add_core = 882
+			add_core = 883
+			add_core = 884
+			add_core = 885
+			add_core = 886
+			add_core = 887
+			add_core = 888
+		}
+		colonists = -1
+	}
+}
+
+#Mexico spreads slow
+country_event = {
+
+	id = 22071
+#	major = yes
+
+	title = "EVTNAME22070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		884 = { NOT = { any_core = { is_colonial = yes } } }
+		886 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = christian 
+			religion_group = old_pagan
+		}
+		OR = {
+			owns = 880	# Pueblo
+			owns = 881	# Piro
+			owns = 882	# Mescalero
+			owns = 883	# Lipan
+			owns = 884	# Karankawa
+			owns = 885	# Comanche
+			owns = 886	# Waco
+			owns = 887	# Tonkawa
+			owns = 888	# Atakapa
+		}
+		OR = {
+			881 = { any_neighbor_province = { is_core = MEX } }
+			884 = { any_neighbor_province = { is_core = MEX } }
+			885 = { any_neighbor_province = { is_core = MEX } }
+			888 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		880 = { culture = mexican }
+		881 = { culture = mexican }
+		882 = { culture = mexican }
+		883 = { culture = mexican }
+		884 = { culture = mexican }
+		885 = { culture = mexican }
+		886 = { culture = mexican }
+		887 = { culture = mexican }
+		888 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 880
+			add_core = 881
+			add_core = 882
+			add_core = 883
+			add_core = 884
+			add_core = 885
+			add_core = 886
+			add_core = 887
+			add_core = 888
+		}
+		colonists = -1
+	}
+}
+
+#Mazula spreads slow
+country_event = {
+
+	id = 22072
+#	major = yes
+
+	title = "EVTNAME22070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		884 = { NOT = { any_core = { is_colonial = yes } } }
+		886 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 880	# Pueblo
+			owns = 881	# Piro
+			owns = 882	# Mescalero
+			owns = 883	# Lipan
+			owns = 884	# Karankawa
+			owns = 885	# Comanche
+			owns = 886	# Waco
+			owns = 887	# Tonkawa
+			owns = 888	# Atakapa
+		}
+		OR = {
+			881 = { any_neighbor_province = { is_core = MZU } }
+			884 = { any_neighbor_province = { is_core = MZU } }
+			885 = { any_neighbor_province = { is_core = MZU } }
+			888 = { any_neighbor_province = { is_core = MZU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		880 = { culture = mazulan }
+		881 = { culture = mazulan }
+		882 = { culture = mazulan }
+		883 = { culture = mazulan }
+		884 = { culture = mazulan }
+		885 = { culture = mazulan }
+		886 = { culture = mazulan }
+		887 = { culture = mazulan }
+		888 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 880
+			add_core = 881
+			add_core = 882
+			add_core = 883
+			add_core = 884
+			add_core = 885
+			add_core = 886
+			add_core = 887
+			add_core = 888
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22073
+#	major = yes
+
+	title = "EVTNAME22070"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		884 = { NOT = { any_core = { is_colonial = yes } } }
+		886 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		OR = {
+			owns = 880	# Pueblo
+			owns = 881	# Piro
+			owns = 882	# Mescalero
+			owns = 883	# Lipan
+			owns = 884	# Karankawa
+			owns = 885	# Comanche
+			owns = 886	# Waco
+			owns = 887	# Tonkawa
+			owns = 888	# Atakapa
+		}
+		OR = {
+			881 = { any_neighbor_province = { is_core = YNG } }
+			884 = { any_neighbor_province = { is_core = YNG } }
+			885 = { any_neighbor_province = { is_core = YNG } }
+			888 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		880 = { culture = tang }
+		881 = { culture = tang }
+		882 = { culture = tang }
+		883 = { culture = tang }
+		884 = { culture = tang }
+		885 = { culture = tang }
+		886 = { culture = tang }
+		887 = { culture = tang }
+		888 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 880
+			add_core = 881
+			add_core = 882
+			add_core = 883
+			add_core = 884
+			add_core = 885
+			add_core = 886
+			add_core = 887
+			add_core = 888
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Mexico Region 2208#
+# Valid new nations: MEX, MZU, YNG
+##################################################
+
+#Mexico appears
+country_event = {
+
+	id = 22080
+#	major = yes
+
+	title = "EVTNAME22080"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		849 = { NOT = { any_core = { is_colonial = yes } } }
+		856 = { NOT = { any_core = { is_colonial = yes } } }
+		862 = { NOT = { any_core = { is_colonial = yes } } }
+		865 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = christian 
+			religion_group = old_pagan
+		}
+		OR = {
+			owns = 848	# Tohancapan
+			owns = 849	# Tlapanec
+			owns = 850	# Tlaxcala
+			owns = 851	# Tarasco
+			owns = 852	# Mexico
+			owns = 853	# Huastec
+			owns = 854	# Sayultecas
+			owns = 855	# Huichol
+			owns = 856	# Zacatecas
+			owns = 857	# Guachichil
+			owns = 858	# Tamaulipas
+			owns = 859	# Sinaloa
+			owns = 860	# Tepehuan
+			owns = 861	# Coahuila
+			owns = 862	# Yaqui
+			owns = 863	# Suma
+			owns = 864	# Concho
+			owns = 865	# Cochimi
+			owns = 866	# Guaycura
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		848 = { culture = mexican }
+		849 = { culture = mexican }
+		850 = { culture = mexican }
+		851 = { culture = mexican }
+		852 = { culture = mexican }
+		853 = { culture = mexican }
+		854 = { culture = mexican }
+		855 = { culture = mexican }
+		856 = { culture = mexican }
+		857 = { culture = mexican }
+		858 = { culture = mexican }
+		859 = { culture = mexican }
+		860 = { culture = mexican }
+		861 = { culture = mexican }
+		862 = { culture = mexican }
+		863 = { culture = mexican }
+		864 = { culture = mexican }
+		865 = { culture = mexican }
+		866 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 848
+			add_core = 849
+			add_core = 850
+			add_core = 851
+			add_core = 852
+			add_core = 853
+			add_core = 854
+			add_core = 855
+			add_core = 856
+			add_core = 857
+			add_core = 858
+			add_core = 859
+			add_core = 860
+			add_core = 861
+			add_core = 862
+			add_core = 863
+			add_core = 864
+			add_core = 865
+			add_core = 866
+		}
+		852 = {
+			change_province_name = Mexico
+			rename_capital = "Mexico City"
+		}
+		colonists = -1
+	}
+}
+
+#Mazula appears
+country_event = {
+
+	id = 22081
+#	major = yes
+
+	title = "EVTNAME22080"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		849 = { NOT = { any_core = { is_colonial = yes } } }
+		856 = { NOT = { any_core = { is_colonial = yes } } }
+		862 = { NOT = { any_core = { is_colonial = yes } } }
+		865 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 848	# Tohancapan
+			owns = 849	# Tlapanec
+			owns = 850	# Tlaxcala
+			owns = 851	# Tarasco
+			owns = 852	# Mexico
+			owns = 853	# Huastec
+			owns = 854	# Sayultecas
+			owns = 855	# Huichol
+			owns = 856	# Zacatecas
+			owns = 857	# Guachichil
+			owns = 858	# Tamaulipas
+			owns = 859	# Sinaloa
+			owns = 860	# Tepehuan
+			owns = 861	# Coahuila
+			owns = 862	# Yaqui
+			owns = 863	# Suma
+			owns = 864	# Concho
+			owns = 865	# Cochimi
+			owns = 866	# Guaycura
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		848 = { culture = mazulan }
+		849 = { culture = mazulan }
+		850 = { culture = mazulan }
+		851 = { culture = mazulan }
+		852 = { culture = mazulan }
+		853 = { culture = mazulan }
+		854 = { culture = mazulan }
+		855 = { culture = mazulan }
+		856 = { culture = mazulan }
+		857 = { culture = mazulan }
+		858 = { culture = mazulan }
+		859 = { culture = mazulan }
+		860 = { culture = mazulan }
+		861 = { culture = mazulan }
+		862 = { culture = mazulan }
+		863 = { culture = mazulan }
+		864 = { culture = mazulan }
+		865 = { culture = mazulan }
+		866 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 848
+			add_core = 849
+			add_core = 850
+			add_core = 851
+			add_core = 852
+			add_core = 853
+			add_core = 854
+			add_core = 855
+			add_core = 856
+			add_core = 857
+			add_core = 858
+			add_core = 859
+			add_core = 860
+			add_core = 861
+			add_core = 862
+			add_core = 863
+			add_core = 864
+			add_core = 865
+			add_core = 866
+		}
+		852 = {
+			change_province_name = Mazula
+			rename_capital = "Al Mazula"
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou appears
+country_event = {
+
+	id = 22082
+#	major = yes
+
+	title = "EVTNAME22080"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		849 = { NOT = { any_core = { is_colonial = yes } } }
+		856 = { NOT = { any_core = { is_colonial = yes } } }
+		862 = { NOT = { any_core = { is_colonial = yes } } }
+		865 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		OR = {
+			owns = 848	# Tohancapan
+			owns = 849	# Tlapanec
+			owns = 850	# Tlaxcala
+			owns = 851	# Tarasco
+			owns = 852	# Mexico
+			owns = 853	# Huastec
+			owns = 854	# Sayultecas
+			owns = 855	# Huichol
+			owns = 856	# Zacatecas
+			owns = 857	# Guachichil
+			owns = 858	# Tamaulipas
+			owns = 859	# Sinaloa
+			owns = 860	# Tepehuan
+			owns = 861	# Coahuila
+			owns = 862	# Yaqui
+			owns = 863	# Suma
+			owns = 864	# Concho
+			owns = 865	# Cochimi
+			owns = 866	# Guaycura
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		848 = { culture = tang }
+		849 = { culture = tang }
+		850 = { culture = tang }
+		851 = { culture = tang }
+		852 = { culture = tang }
+		853 = { culture = tang }
+		854 = { culture = tang }
+		855 = { culture = tang }
+		856 = { culture = tang }
+		857 = { culture = tang }
+		858 = { culture = tang }
+		859 = { culture = tang }
+		860 = { culture = tang }
+		861 = { culture = tang }
+		862 = { culture = tang }
+		863 = { culture = tang }
+		864 = { culture = tang }
+		865 = { culture = tang }
+		866 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 848
+			add_core = 849
+			add_core = 850
+			add_core = 851
+			add_core = 852
+			add_core = 853
+			add_core = 854
+			add_core = 855
+			add_core = 856
+			add_core = 857
+			add_core = 858
+			add_core = 859
+			add_core = 860
+			add_core = 861
+			add_core = 862
+			add_core = 863
+			add_core = 864
+			add_core = 865
+			add_core = 866
+		}
+		852 = {
+			change_province_name = Yingzhou
+			rename_capital = "Yingzhou City"
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Central America Region 2209#
+# Valid new nations: CAM, QTI
+# Valid continuing nations: YNG
+##################################################
+
+#UPCA appears
+country_event = {
+
+	id = 22090
+#	major = yes
+
+	title = "EVTNAME22090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		836 = { NOT = { any_core = { is_colonial = yes } } }
+		841 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		NOT = { religion_group = muslim }
+		OR = {
+			owns = 836	# Chorotega
+			owns = 837	# Nicaragua
+			owns = 838	# Mosquito
+			owns = 839	# Pipil
+			owns = 840	# Honduras
+			owns = 841	# Guatemala
+			owns = 842	# Peten
+			owns = 843	# Belize
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		836 = { culture = mestizo }
+		837 = { culture = mestizo }
+		838 = { culture = mestizo }
+		839 = { culture = mestizo }
+		840 = { culture = mestizo }
+		841 = { culture = mestizo }
+		842 = { culture = mestizo }
+		843 = { culture = mestizo }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAM = {
+			add_core = 836
+			add_core = 837
+			add_core = 838
+			add_core = 839
+			add_core = 840
+			add_core = 841
+			add_core = 842
+			add_core = 843
+		}
+		colonists = -1
+	}
+}
+
+#Qtizi appears
+country_event = {
+
+	id = 22091
+#	major = yes
+
+	title = "EVTNAME22090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		836 = { NOT = { any_core = { is_colonial = yes } } }
+		841 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 836	# Chorotega
+			owns = 837	# Nicaragua
+			owns = 838	# Mosquito
+			owns = 839	# Pipil
+			owns = 840	# Honduras
+			owns = 841	# Guatemala
+			owns = 842	# Peten
+			owns = 843	# Belize
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		836 = { culture = ummah }
+		837 = { culture = ummah }
+		838 = { culture = ummah }
+		839 = { culture = ummah }
+		840 = { culture = ummah }
+		841 = { culture = ummah }
+		842 = { culture = ummah }
+		843 = { culture = ummah }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QTI = {
+			add_core = 836
+			add_core = 837
+			add_core = 838
+			add_core = 839
+			add_core = 840
+			add_core = 841
+			add_core = 842
+			add_core = 843
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22092
+#	major = yes
+
+	title = "EVTNAME22090"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		836 = { NOT = { any_core = { is_colonial = yes } } }
+		841 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		OR = {
+			owns = 836	# Chorotega
+			owns = 837	# Nicaragua
+			owns = 838	# Mosquito
+			owns = 839	# Pipil
+			owns = 840	# Honduras
+			owns = 841	# Guatemala
+			owns = 842	# Peten
+			owns = 843	# Belize
+		}
+		OR = {
+			836 = { any_neighbor_province = { is_core = YNG } }
+			838 = { any_neighbor_province = { is_core = YNG } }
+			841 = { any_neighbor_province = { is_core = YNG } }
+			843 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		836 = { culture = tang }
+		837 = { culture = tang }
+		838 = { culture = tang }
+		839 = { culture = tang }
+		840 = { culture = tang }
+		841 = { culture = tang }
+		842 = { culture = tang }
+		843 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 836
+			add_core = 837
+			add_core = 838
+			add_core = 839
+			add_core = 840
+			add_core = 841
+			add_core = 842
+			add_core = 843
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Catskills Region 22100
+# Valid continuing nations: USA, CAN, QUE, VIN
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22100
+#	major = yes
+
+	title = "EVTNAME22100"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		954 = { NOT = { any_core = { is_colonial = yes } } }
+		964 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 954	# Allegheny
+			owns = 958	# Seneca
+			owns = 959	# Cayuga
+			owns = 960	# Onondaga
+			owns = 961	# Oneida
+			owns = 964	# Mohawk
+		}
+		OR = {
+			954 = { any_neighbor_province = { is_core = USA } }
+			958 = { any_neighbor_province = { is_core = USA } }
+			964 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		954 = { culture = american }
+		958 = { culture = american }
+		959 = { culture = american }
+		960 = { culture = american }
+		961 = { culture = american }
+		964 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 954
+			add_core = 958
+			add_core = 959
+			add_core = 960
+			add_core = 961
+			add_core = 964
+		}
+		colonists = -1
+	}
+}
+
+#Canada spreads slow
+country_event = {
+
+	id = 22101
+#	major = yes
+
+	title = "EVTNAME22100"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		954 = { NOT = { any_core = { is_colonial = yes } } }
+		964 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 954	# Allegheny
+			owns = 958	# Seneca
+			owns = 959	# Cayuga
+			owns = 960	# Onondaga
+			owns = 961	# Oneida
+			owns = 964	# Mohawk
+		}
+		OR = {
+			954 = { any_neighbor_province = { is_core = CAN } }
+			958 = { any_neighbor_province = { is_core = CAN } }
+			964 = { any_neighbor_province = { is_core = CAN } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		954 = { culture = canadian }
+		958 = { culture = canadian }
+		959 = { culture = canadian }
+		960 = { culture = canadian }
+		961 = { culture = canadian }
+		964 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 954
+			add_core = 958
+			add_core = 959
+			add_core = 960
+			add_core = 961
+			add_core = 964
+		}
+		colonists = -1
+	}
+}
+
+#Quebec spreads slow
+country_event = {
+
+	id = 22102
+#	major = yes
+
+	title = "EVTNAME22100"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		954 = { NOT = { any_core = { is_colonial = yes } } }
+		964 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 954	# Allegheny
+			owns = 958	# Seneca
+			owns = 959	# Cayuga
+			owns = 960	# Onondaga
+			owns = 961	# Oneida
+			owns = 964	# Mohawk
+		}
+		OR = {
+			954 = { any_neighbor_province = { is_core = QUE } }
+			958 = { any_neighbor_province = { is_core = QUE } }
+			964 = { any_neighbor_province = { is_core = QUE } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		954 = { culture = metis }
+		958 = { culture = metis }
+		959 = { culture = metis }
+		960 = { culture = metis }
+		961 = { culture = metis }
+		964 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 954
+			add_core = 958
+			add_core = 959
+			add_core = 960
+			add_core = 961
+			add_core = 964
+		}
+		colonists = -1
+	}
+}
+
+#Vinland spreads fast
+country_event = {
+
+	id = 22103
+#	major = yes
+
+	title = "EVTNAME22100"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		954 = { NOT = { any_core = { is_colonial = yes } } }
+		964 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 954	# Allegheny
+			owns = 958	# Seneca
+			owns = 959	# Cayuga
+			owns = 960	# Onondaga
+			owns = 961	# Oneida
+			owns = 964	# Mohawk
+		}
+		OR = {
+			954 = { any_neighbor_province = { is_core = VIN } }
+			958 = { any_neighbor_province = { is_core = VIN } }
+			964 = { any_neighbor_province = { is_core = VIN } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		954 = { culture = vinlander }
+		958 = { culture = vinlander }
+		959 = { culture = vinlander }
+		960 = { culture = vinlander }
+		961 = { culture = vinlander }
+		964 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VIN = {
+			add_core = 954
+			add_core = 958
+			add_core = 959
+			add_core = 960
+			add_core = 961
+			add_core = 964
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Appalachia Region 22110
+# Valid continuing nations: USA, FLO
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22110
+#	major = yes
+
+	title = "EVTNAME22110"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		933 = { NOT = { any_core = { is_colonial = yes } } }
+		955 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 931	# Chiaha
+			owns = 933	# Catawba
+			owns = 935	# Cherokee
+			owns = 936	# Cheraw
+			owns = 941	# Cumberland
+			owns = 949	# Monacan
+			owns = 951	# Kanawha
+			owns = 955	# Susquehanna
+			owns = 956	# Lenape
+		}
+		OR = {
+			933 = { any_neighbor_province = { is_core = USA } }
+			941 = { any_neighbor_province = { is_core = USA } }
+			951 = { any_neighbor_province = { is_core = USA } }
+			955 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		931 = { culture = american }
+		933 = { culture = american }
+		935 = { culture = american }
+		936 = { culture = american }
+		941 = { culture = american }
+		949 = { culture = american }
+		951 = { culture = american }
+		955 = { culture = american }
+		956 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 931
+			add_core = 933
+			add_core = 935
+			add_core = 936
+			add_core = 941
+			add_core = 949
+			add_core = 951
+			add_core = 955
+			add_core = 956
+		}
+		colonists = -1
+	}
+}
+
+#Florida spreads slow
+country_event = {
+
+	id = 22111
+#	major = yes
+
+	title = "EVTNAME22110"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		933 = { NOT = { any_core = { is_colonial = yes } } }
+		955 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 931	# Chiaha
+			owns = 933	# Catawba
+			owns = 935	# Cherokee
+			owns = 936	# Cheraw
+			owns = 941	# Cumberland
+			owns = 949	# Monacan
+			owns = 951	# Kanawha
+			owns = 955	# Susquehanna
+			owns = 956	# Lenape
+		}
+		OR = {
+			933 = { any_neighbor_province = { is_core = FLO } }
+			941 = { any_neighbor_province = { is_core = FLO } }
+			951 = { any_neighbor_province = { is_core = FLO } }
+			955 = { any_neighbor_province = { is_core = FLO } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		931 = { culture = floridian }
+		933 = { culture = floridian }
+		935 = { culture = floridian }
+		936 = { culture = floridian }
+		941 = { culture = floridian }
+		949 = { culture = floridian }
+		951 = { culture = floridian }
+		955 = { culture = floridian }
+		956 = { culture = floridian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		FLO = {
+			add_core = 931
+			add_core = 933
+			add_core = 935
+			add_core = 936
+			add_core = 941
+			add_core = 949
+			add_core = 951
+			add_core = 955
+			add_core = 956
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Mississippi Region 22120
+# Valid continuing nations: USA, LOU, FLO
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22120
+#	major = yes
+
+	title = "EVTNAME22120"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		943 = { NOT = { any_core = { is_colonial = yes } } }
+		948 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 925	# Tuskegee
+			owns = 934	# Shawnee
+			owns = 939	# Pennyrile
+			owns = 940	# Kentucky
+			owns = 942	# Wea
+			owns = 943	# Miami
+			owns = 946	# Wyandot
+			owns = 947	# Erie
+			owns = 948	# Ohio
+		}
+		OR = {
+			925 = { any_neighbor_province = { is_core = USA } }
+			942 = { any_neighbor_province = { is_core = USA } }
+			943 = { any_neighbor_province = { is_core = USA } }
+			947 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		925 = { culture = american }
+		934 = { culture = american }
+		939 = { culture = american }
+		940 = { culture = american }
+		942 = { culture = american }
+		943 = { culture = american }
+		946 = { culture = american }
+		947 = { culture = american }
+		948 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 925
+			add_core = 934
+			add_core = 939
+			add_core = 940
+			add_core = 942
+			add_core = 943
+			add_core = 946
+			add_core = 947
+			add_core = 948
+		}
+		colonists = -1
+	}
+}
+
+#Louisiana spreads fast
+country_event = {
+
+	id = 22121
+#	major = yes
+
+	title = "EVTNAME22120"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		943 = { NOT = { any_core = { is_colonial = yes } } }
+		948 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 925	# Tuskegee
+			owns = 934	# Shawnee
+			owns = 939	# Pennyrile
+			owns = 940	# Kentucky
+			owns = 942	# Wea
+			owns = 943	# Miami
+			owns = 946	# Wyandot
+			owns = 947	# Erie
+			owns = 948	# Ohio
+		}
+		OR = {
+			925 = { any_neighbor_province = { is_core = LOU } }
+			942 = { any_neighbor_province = { is_core = LOU } }
+			943 = { any_neighbor_province = { is_core = LOU } }
+			947 = { any_neighbor_province = { is_core = LOU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		925 = { culture = metis }
+		934 = { culture = metis }
+		939 = { culture = metis }
+		940 = { culture = metis }
+		942 = { culture = metis }
+		943 = { culture = metis }
+		946 = { culture = metis }
+		947 = { culture = metis }
+		948 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LOU = {
+			add_core = 925
+			add_core = 934
+			add_core = 939
+			add_core = 940
+			add_core = 942
+			add_core = 943
+			add_core = 946
+			add_core = 947
+			add_core = 948
+		}
+		colonists = -1
+	}
+}
+
+#Florida spreads slow
+country_event = {
+
+	id = 22122
+#	major = yes
+
+	title = "EVTNAME22120"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		943 = { NOT = { any_core = { is_colonial = yes } } }
+		948 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 925	# Tuskegee
+			owns = 934	# Shawnee
+			owns = 939	# Pennyrile
+			owns = 940	# Kentucky
+			owns = 942	# Wea
+			owns = 943	# Miami
+			owns = 946	# Wyandot
+			owns = 947	# Erie
+			owns = 948	# Ohio
+		}
+		OR = {
+			925 = { any_neighbor_province = { is_core = FLO } }
+			942 = { any_neighbor_province = { is_core = FLO } }
+			943 = { any_neighbor_province = { is_core = FLO } }
+			947 = { any_neighbor_province = { is_core = FLO } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		925 = { culture = floridian }
+		934 = { culture = floridian }
+		939 = { culture = floridian }
+		940 = { culture = floridian }
+		942 = { culture = floridian }
+		943 = { culture = floridian }
+		946 = { culture = floridian }
+		947 = { culture = floridian }
+		948 = { culture = floridian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		FLO = {
+			add_core = 925
+			add_core = 934
+			add_core = 939
+			add_core = 940
+			add_core = 942
+			add_core = 943
+			add_core = 946
+			add_core = 947
+			add_core = 948
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Tallgrass Prairie Region 22130
+# Valid continuing nations: USA, VIN, CAN, QUE
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22130
+#	major = yes
+
+	title = "EVTNAME22130"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		908 = { NOT = { any_core = { is_colonial = yes } } }
+		913 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 906	# Lakota
+			owns = 907	# Dakota
+			owns = 908	# Minnesota
+			owns = 909	# Mandan
+			owns = 910	# Chippewa
+			owns = 911	# Menominee
+			owns = 912	# Sauk
+			owns = 913	# Fox
+			owns = 914	# Winnebago
+			owns = 944	# Potawotomi
+			owns = 945	# Michigan
+		}
+		OR = {
+			907 = { any_neighbor_province = { is_core = USA } }
+			910 = { any_neighbor_province = { is_core = USA } }
+			913 = { any_neighbor_province = { is_core = USA } }
+			944 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		906 = { culture = american }
+		907 = { culture = american }
+		908 = { culture = american }
+		909 = { culture = american }
+		910 = { culture = american }
+		911 = { culture = american }
+		912 = { culture = american }
+		913 = { culture = american }
+		914 = { culture = american }
+		944 = { culture = american }
+		945 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 906
+			add_core = 907
+			add_core = 908
+			add_core = 909
+			add_core = 910
+			add_core = 911
+			add_core = 912
+			add_core = 913
+			add_core = 914
+			add_core = 944
+			add_core = 945
+		}
+		colonists = -1
+	}
+}
+
+#Vinland spreads fast
+country_event = {
+
+	id = 22131
+#	major = yes
+
+	title = "EVTNAME22130"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		908 = { NOT = { any_core = { is_colonial = yes } } }
+		913 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 906	# Lakota
+			owns = 907	# Dakota
+			owns = 908	# Minnesota
+			owns = 909	# Mandan
+			owns = 910	# Chippewa
+			owns = 911	# Menominee
+			owns = 912	# Sauk
+			owns = 913	# Fox
+			owns = 914	# Winnebago
+			owns = 944	# Potawotomi
+			owns = 945	# Michigan
+		}
+		OR = {
+			907 = { any_neighbor_province = { is_core = VIN } }
+			910 = { any_neighbor_province = { is_core = VIN } }
+			913 = { any_neighbor_province = { is_core = VIN } }
+			944 = { any_neighbor_province = { is_core = VIN } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		906 = { culture = vinlander }
+		907 = { culture = vinlander }
+		908 = { culture = vinlander }
+		909 = { culture = vinlander }
+		910 = { culture = vinlander }
+		911 = { culture = vinlander }
+		912 = { culture = vinlander }
+		913 = { culture = vinlander }
+		914 = { culture = vinlander }
+		944 = { culture = vinlander }
+		945 = { culture = vinlander }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		VIN = {
+			add_core = 906
+			add_core = 907
+			add_core = 908
+			add_core = 909
+			add_core = 910
+			add_core = 911
+			add_core = 912
+			add_core = 913
+			add_core = 914
+			add_core = 944
+			add_core = 945
+		}
+		colonists = -1
+	}
+}
+
+#Canada spreads slow
+country_event = {
+
+	id = 22132
+#	major = yes
+
+	title = "EVTNAME22130"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		908 = { NOT = { any_core = { is_colonial = yes } } }
+		913 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 906	# Lakota
+			owns = 907	# Dakota
+			owns = 908	# Minnesota
+			owns = 909	# Mandan
+			owns = 910	# Chippewa
+			owns = 911	# Menominee
+			owns = 912	# Sauk
+			owns = 913	# Fox
+			owns = 914	# Winnebago
+			owns = 944	# Potawotomi
+			owns = 945	# Michigan
+		}
+		OR = {
+			907 = { any_neighbor_province = { is_core = CAN } }
+			910 = { any_neighbor_province = { is_core = CAN } }
+			913 = { any_neighbor_province = { is_core = CAN } }
+			944 = { any_neighbor_province = { is_core = CAN } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		906 = { culture = canadian }
+		907 = { culture = canadian }
+		908 = { culture = canadian }
+		909 = { culture = canadian }
+		910 = { culture = canadian }
+		911 = { culture = canadian }
+		912 = { culture = canadian }
+		913 = { culture = canadian }
+		914 = { culture = canadian }
+		944 = { culture = canadian }
+		945 = { culture = canadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAN = {
+			add_core = 906
+			add_core = 907
+			add_core = 908
+			add_core = 909
+			add_core = 910
+			add_core = 911
+			add_core = 912
+			add_core = 913
+			add_core = 914
+			add_core = 944
+			add_core = 945
+		}
+		colonists = -1
+	}
+}
+
+#Quebec spreads slow
+country_event = {
+
+	id = 22133
+#	major = yes
+
+	title = "EVTNAME22130"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		908 = { NOT = { any_core = { is_colonial = yes } } }
+		913 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 906	# Lakota
+			owns = 907	# Dakota
+			owns = 908	# Minnesota
+			owns = 909	# Mandan
+			owns = 910	# Chippewa
+			owns = 911	# Menominee
+			owns = 912	# Sauk
+			owns = 913	# Fox
+			owns = 914	# Winnebago
+			owns = 944	# Potawotomi
+			owns = 945	# Michigan
+		}
+		OR = {
+			907 = { any_neighbor_province = { is_core = QUE } }
+			910 = { any_neighbor_province = { is_core = QUE } }
+			913 = { any_neighbor_province = { is_core = QUE } }
+			944 = { any_neighbor_province = { is_core = QUE } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		906 = { culture = metis }
+		907 = { culture = metis }
+		908 = { culture = metis }
+		909 = { culture = metis }
+		910 = { culture = metis }
+		911 = { culture = metis }
+		912 = { culture = metis }
+		913 = { culture = metis }
+		914 = { culture = metis }
+		944 = { culture = metis }
+		945 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		QUE = {
+			add_core = 906
+			add_core = 907
+			add_core = 908
+			add_core = 909
+			add_core = 910
+			add_core = 911
+			add_core = 912
+			add_core = 913
+			add_core = 914
+			add_core = 944
+			add_core = 945
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Great Plains Region 22140
+# Valid continuing nations: USA, TEX, LOU
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22140
+#	major = yes
+
+	title = "EVTNAME22140"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		903 = { NOT = { any_core = { is_colonial = yes } } }
+		915 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 901	# Pawnee
+			owns = 902	# Missouri
+			owns = 903	# Omaha
+			owns = 904	# Nakota
+			owns = 905	# Iowa
+			owns = 915	# Illinois
+			owns = 916	# Kaskaskia
+			owns = 917	# Cahokia
+		}
+		OR = {
+			901 = { any_neighbor_province = { is_core = USA } }
+			903 = { any_neighbor_province = { is_core = USA } }
+			915 = { any_neighbor_province = { is_core = USA } }
+			916 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		901 = { culture = american }
+		902 = { culture = american }
+		903 = { culture = american }
+		904 = { culture = american }
+		905 = { culture = american }
+		915 = { culture = american }
+		916 = { culture = american }
+		917 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 901
+			add_core = 902
+			add_core = 903
+			add_core = 904
+			add_core = 905
+			add_core = 915
+			add_core = 916
+			add_core = 917
+		}
+		colonists = -1
+	}
+}
+
+#Texas spreads slow
+country_event = {
+
+	id = 22141
+#	major = yes
+
+	title = "EVTNAME22140"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		903 = { NOT = { any_core = { is_colonial = yes } } }
+		915 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 901	# Pawnee
+			owns = 902	# Missouri
+			owns = 903	# Omaha
+			owns = 904	# Nakota
+			owns = 905	# Iowa
+			owns = 915	# Illinois
+			owns = 916	# Kaskaskia
+			owns = 917	# Cahokia
+		}
+		OR = {
+			901 = { any_neighbor_province = { is_core = TEX } }
+			903 = { any_neighbor_province = { is_core = TEX } }
+			915 = { any_neighbor_province = { is_core = TEX } }
+			916 = { any_neighbor_province = { is_core = TEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		901 = { culture = texian }
+		902 = { culture = texian }
+		903 = { culture = texian }
+		904 = { culture = texian }
+		905 = { culture = texian }
+		915 = { culture = texian }
+		916 = { culture = texian }
+		917 = { culture = texian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		TEX = {
+			add_core = 901
+			add_core = 902
+			add_core = 903
+			add_core = 904
+			add_core = 905
+			add_core = 915
+			add_core = 916
+			add_core = 917
+		}
+		colonists = -1
+	}
+}
+
+#Louisiana spreads slow
+country_event = {
+
+	id = 22142
+#	major = yes
+
+	title = "EVTNAME22140"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		903 = { NOT = { any_core = { is_colonial = yes } } }
+		915 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 901	# Pawnee
+			owns = 902	# Missouri
+			owns = 903	# Omaha
+			owns = 904	# Nakota
+			owns = 905	# Iowa
+			owns = 915	# Illinois
+			owns = 916	# Kaskaskia
+			owns = 917	# Cahokia
+		}
+		OR = {
+			901 = { any_neighbor_province = { is_core = LOU } }
+			903 = { any_neighbor_province = { is_core = LOU } }
+			915 = { any_neighbor_province = { is_core = LOU } }
+			916 = { any_neighbor_province = { is_core = LOU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		901 = { culture = metis }
+		902 = { culture = metis }
+		903 = { culture = metis }
+		904 = { culture = metis }
+		905 = { culture = metis }
+		915 = { culture = metis }
+		916 = { culture = metis }
+		917 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LOU = {
+			add_core = 901
+			add_core = 902
+			add_core = 903
+			add_core = 904
+			add_core = 905
+			add_core = 915
+			add_core = 916
+			add_core = 917
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# High Plains Region 22150
+# Valid continuing nations: TEX, MEX, MZU, YNG
+##################################################
+
+#Texas spreads fast
+country_event = {
+
+	id = 22150
+#	major = yes
+
+	title = "EVTNAME22150"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		875 = { NOT = { any_core = { is_colonial = yes } } }
+		878 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 867	# Mojave
+			owns = 875	# Canyon
+			owns = 876	# Yavapai
+			owns = 877	# Pima
+			owns = 878	# Navajo
+			owns = 879	# Apache
+		}
+		OR = {
+			867 = { any_neighbor_province = { is_core = TEX } }
+			876 = { any_neighbor_province = { is_core = TEX } }
+			877 = { any_neighbor_province = { is_core = TEX } }
+			878 = { any_neighbor_province = { is_core = TEX } }
+			879 = { any_neighbor_province = { is_core = TEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		867 = { culture = texian }
+		875 = { culture = texian }
+		876 = { culture = texian }
+		877 = { culture = texian }
+		878 = { culture = texian }
+		879 = { culture = texian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		TEX = {
+			add_core = 867
+			add_core = 875
+			add_core = 876
+			add_core = 877
+			add_core = 878
+			add_core = 879
+		}
+		colonists = -1
+	}
+}
+
+#Mexico spreads fast
+country_event = {
+
+	id = 22151
+#	major = yes
+
+	title = "EVTNAME22150"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		875 = { NOT = { any_core = { is_colonial = yes } } }
+		878 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 867	# Mojave
+			owns = 875	# Canyon
+			owns = 876	# Yavapai
+			owns = 877	# Pima
+			owns = 878	# Navajo
+			owns = 879	# Apache
+		}
+		OR = {
+			867 = { any_neighbor_province = { is_core = MEX } }
+			876 = { any_neighbor_province = { is_core = MEX } }
+			877 = { any_neighbor_province = { is_core = MEX } }
+			878 = { any_neighbor_province = { is_core = MEX } }
+			879 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		867 = { culture = mexican }
+		875 = { culture = mexican }
+		876 = { culture = mexican }
+		877 = { culture = mexican }
+		878 = { culture = mexican }
+		879 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 867
+			add_core = 875
+			add_core = 876
+			add_core = 877
+			add_core = 878
+			add_core = 879
+		}
+		colonists = -1
+	}
+}
+
+#Mazula spreads fast
+country_event = {
+
+	id = 22152
+#	major = yes
+
+	title = "EVTNAME22150"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		875 = { NOT = { any_core = { is_colonial = yes } } }
+		878 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 867	# Mojave
+			owns = 875	# Canyon
+			owns = 876	# Yavapai
+			owns = 877	# Pima
+			owns = 878	# Navajo
+			owns = 879	# Apache
+		}
+		OR = {
+			867 = { any_neighbor_province = { is_core = MZU } }
+			876 = { any_neighbor_province = { is_core = MZU } }
+			877 = { any_neighbor_province = { is_core = MZU } }
+			878 = { any_neighbor_province = { is_core = MZU } }
+			879 = { any_neighbor_province = { is_core = MZU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		867 = { culture = mazulan }
+		875 = { culture = mazulan }
+		876 = { culture = mazulan }
+		877 = { culture = mazulan }
+		878 = { culture = mazulan }
+		879 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 867
+			add_core = 875
+			add_core = 876
+			add_core = 877
+			add_core = 878
+			add_core = 879
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22153
+#	major = yes
+
+	title = "EVTNAME22150"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		875 = { NOT = { any_core = { is_colonial = yes } } }
+		878 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 867	# Mojave
+			owns = 875	# Canyon
+			owns = 876	# Yavapai
+			owns = 877	# Pima
+			owns = 878	# Navajo
+			owns = 879	# Apache
+		}
+		OR = {
+			867 = { any_neighbor_province = { is_core = YNG } }
+			876 = { any_neighbor_province = { is_core = YNG } }
+			877 = { any_neighbor_province = { is_core = YNG } }
+			878 = { any_neighbor_province = { is_core = YNG } }
+			879 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		867 = { culture = tang }
+		875 = { culture = tang }
+		876 = { culture = tang }
+		877 = { culture = tang }
+		878 = { culture = tang }
+		879 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 867
+			add_core = 875
+			add_core = 876
+			add_core = 877
+			add_core = 878
+			add_core = 879
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Central Prairie Region 22160
+# Valid continuing nations: USA, TEX, LOU, MEX, MZU, YNG
+##################################################
+
+#USA spreads fast
+country_event = {
+
+	id = 22160
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = USA } }
+			892 = { any_neighbor_province = { is_core = USA } }
+			896 = { any_neighbor_province = { is_core = USA } }
+			898 = { any_neighbor_province = { is_core = USA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		889 = { culture = american }
+		890 = { culture = american }
+		891 = { culture = american }
+		892 = { culture = american }
+		896 = { culture = american }
+		898 = { culture = american }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		USA = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+#Texas spreads slow
+country_event = {
+
+	id = 22161
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = TEX } }
+			892 = { any_neighbor_province = { is_core = TEX } }
+			896 = { any_neighbor_province = { is_core = TEX } }
+			898 = { any_neighbor_province = { is_core = TEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		889 = { culture = texian }
+		890 = { culture = texian }
+		891 = { culture = texian }
+		892 = { culture = texian }
+		896 = { culture = texian }
+		898 = { culture = texian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		TEX = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+#Louisiana spreads slow
+country_event = {
+
+	id = 22162
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = LOU } }
+			892 = { any_neighbor_province = { is_core = LOU } }
+			896 = { any_neighbor_province = { is_core = LOU } }
+			898 = { any_neighbor_province = { is_core = LOU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			religion_group = muslim
+		}
+	}
+
+	immediate = {
+		889 = { culture = metis }
+		890 = { culture = metis }
+		891 = { culture = metis }
+		892 = { culture = metis }
+		896 = { culture = metis }
+		898 = { culture = metis }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		LOU = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+#Mexico spreads slow
+country_event = {
+
+	id = 22163
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = MEX } }
+			892 = { any_neighbor_province = { is_core = MEX } }
+			896 = { any_neighbor_province = { is_core = MEX } }
+			898 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		889 = { culture = mexican }
+		890 = { culture = mexican }
+		891 = { culture = mexican }
+		892 = { culture = mexican }
+		896 = { culture = mexican }
+		898 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+#Mazula spreads slow
+country_event = {
+
+	id = 22164
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = MZU } }
+			892 = { any_neighbor_province = { is_core = MZU } }
+			896 = { any_neighbor_province = { is_core = MZU } }
+			898 = { any_neighbor_province = { is_core = MZU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		889 = { culture = mazulan }
+		890 = { culture = mazulan }
+		891 = { culture = mazulan }
+		892 = { culture = mazulan }
+		896 = { culture = mazulan }
+		898 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22165
+#	major = yes
+
+	title = "EVTNAME22160"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		896 = { NOT = { any_core = { is_colonial = yes } } }
+		898 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 889	# Arapaho
+			owns = 890	# Kiowa
+			owns = 891	# Jicarilla
+			owns = 892	# Wichita
+			owns = 896	# Ozark
+			owns = 898	# Kansas
+		}
+		OR = {
+			889 = { any_neighbor_province = { is_core = YNG } }
+			892 = { any_neighbor_province = { is_core = YNG } }
+			896 = { any_neighbor_province = { is_core = YNG } }
+			898 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		889 = { culture = tang }
+		890 = { culture = tang }
+		891 = { culture = tang }
+		892 = { culture = tang }
+		896 = { culture = tang }
+		898 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 889
+			add_core = 890
+			add_core = 891
+			add_core = 892
+			add_core = 896
+			add_core = 898
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# California Region 22170
+# Valis new nations: CSC, YNG
+# Valid continuing nations: MEX, MZU, ALA
+##################################################
+
+# Mexico spreads fast
+country_event = {
+
+	id = 22170
+#	major = yes
+
+	title = "EVTNAME22170"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		869 = { NOT = { any_core = { is_colonial = yes } } }
+		871 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = christian 
+			religion_group = old_pagan
+		}
+		OR = {
+			owns = 868	# Chumash
+			owns = 869	# Salinan
+			owns = 870	# Yorkuts
+			owns = 871	# Pomo
+			owns = 872	# Kalapuya
+			owns = 873	# Chinook
+			owns = 874	# Salish
+			owns = 972	# Nootka
+		}
+		OR = {
+			868 = { any_neighbor_province = { is_core = MEX } }
+			870 = { any_neighbor_province = { is_core = MEX } }
+			874 = { any_neighbor_province = { is_core = MEX } }
+			972 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		868 = { culture = mexican }
+		869 = { culture = mexican }
+		870 = { culture = mexican }
+		871 = { culture = mexican }
+		872 = { culture = mexican }
+		873 = { culture = mexican }
+		874 = { culture = mexican }
+		972 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 868
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+			add_core = 873
+			add_core = 874
+			add_core = 972
+		}
+		colonists = -1
+	}
+}
+
+# Mazula spreads fast
+country_event = {
+
+	id = 22171
+#	major = yes
+
+	title = "EVTNAME22170"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		869 = { NOT = { any_core = { is_colonial = yes } } }
+		871 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 868	# Chumash
+			owns = 869	# Salinan
+			owns = 870	# Yorkuts
+			owns = 871	# Pomo
+			owns = 872	# Kalapuya
+			owns = 873	# Chinook
+			owns = 874	# Salish
+			owns = 972	# Nootka
+		}
+		OR = {
+			868 = { any_neighbor_province = { is_core = MZU } }
+			870 = { any_neighbor_province = { is_core = MZU } }
+			874 = { any_neighbor_province = { is_core = MZU } }
+			972 = { any_neighbor_province = { is_core = MZU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		868 = { culture = mazulan }
+		869 = { culture = mazulan }
+		870 = { culture = mazulan }
+		871 = { culture = mazulan }
+		872 = { culture = mazulan }
+		873 = { culture = mazulan }
+		874 = { culture = mazulan }
+		972 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 868
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+			add_core = 873
+			add_core = 874
+			add_core = 972
+		}
+		colonists = -1
+	}
+}
+
+# Alaska spreads fast
+country_event = {
+
+	id = 22172
+#	major = yes
+
+	title = "EVTNAME22170"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		869 = { NOT = { any_core = { is_colonial = yes } } }
+		871 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 868	# Chumash
+			owns = 869	# Salinan
+			owns = 870	# Yorkuts
+			owns = 871	# Pomo
+			owns = 872	# Kalapuya
+			owns = 873	# Chinook
+			owns = 874	# Salish
+			owns = 972	# Nootka
+		}
+		OR = {
+			868 = { any_neighbor_province = { is_core = ALA } }
+			870 = { any_neighbor_province = { is_core = ALA } }
+			874 = { any_neighbor_province = { is_core = ALA } }
+			972 = { any_neighbor_province = { is_core = ALA } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		868 = { culture = alaskan }
+		869 = { culture = alaskan }
+		870 = { culture = alaskan }
+		871 = { culture = alaskan }
+		872 = { culture = alaskan }
+		873 = { culture = alaskan }
+		874 = { culture = alaskan }
+		972 = { culture = alaskan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ALA = {
+			add_core = 868
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+			add_core = 873
+			add_core = 874
+			add_core = 972
+		}
+		colonists = -1
+	}
+}
+
+# Cascadia appears here
+country_event = {
+
+	id = 22173
+#	major = yes
+
+	title = "EVTNAME22170"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		869 = { NOT = { any_core = { is_colonial = yes } } }
+		871 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = british
+			culture_group = gaelic
+			culture_group = latin
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 868	# Chumash
+			owns = 869	# Salinan
+			owns = 870	# Yorkuts
+			owns = 871	# Pomo
+			owns = 872	# Kalapuya
+			owns = 873	# Chinook
+			owns = 874	# Salish
+			owns = 972	# Nootka
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		868 = { culture = cascadian }
+		869 = { culture = cascadian }
+		870 = { culture = cascadian }
+		871 = { culture = cascadian }
+		872 = { culture = cascadian }
+		873 = { culture = cascadian }
+		874 = { culture = cascadian }
+		972 = { culture = cascadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CSC = {
+			add_core = 868
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+			add_core = 873
+			add_core = 874
+			add_core = 972
+		}
+		colonists = -1
+	}
+}
+
+# Yingzhou appears here
+country_event = {
+
+	id = 22174
+#	major = yes
+
+	title = "EVTNAME22170"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		869 = { NOT = { any_core = { is_colonial = yes } } }
+		871 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		OR = {
+			owns = 868	# Chumash
+			owns = 869	# Salinan
+			owns = 870	# Yorkuts
+			owns = 871	# Pomo
+			owns = 872	# Kalapuya
+			owns = 873	# Chinook
+			owns = 874	# Salish
+			owns = 972	# Nootka
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		868 = { culture = tang }
+		869 = { culture = tang }
+		870 = { culture = tang }
+		871 = { culture = tang }
+		872 = { culture = tang }
+		873 = { culture = tang }
+		874 = { culture = tang }
+		972 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 868
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+			add_core = 873
+			add_core = 874
+			add_core = 972
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Alaska Region 22180
+# Valid new nations: ALA, CSC
+# Valid continuing nations: MEX, MZU
+##################################################
+
+#Alaska appears
+country_event = {
+
+	id = 22180
+#	major = yes
+
+	title = "EVTNAME22180"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		978 = { NOT = { any_core = { is_colonial = yes } } }
+		979 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = finno_ugric
+			culture_group = south_slavic
+			culture_group = west_slavic
+			culture_group = east_slavic
+			culture_group = baltic
+			culture_group = byzantine
+		}
+		OR = {
+			owns = 973	# Squamish
+			owns = 974	# Kwakiutl
+			owns = 975	# Tsimshian
+			owns = 976	# Tlingit
+			owns = 977	# Yakutat
+			owns = 978	# Kenai/Alaska
+			owns = 979	# Aleut
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		973 = { culture = alaskan }
+		974 = { culture = alaskan }
+		975 = { culture = alaskan }
+		976 = { culture = alaskan }
+		977 = { culture = alaskan }
+		978 = { culture = alaskan }
+		979 = { culture = alaskan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		ALA = {
+			add_core = 973
+			add_core = 974
+			add_core = 975
+			add_core = 976
+			add_core = 977
+			add_core = 978
+			add_core = 979
+		}
+		colonists = -1
+	}
+}
+
+#Mexico spreads slow
+country_event = {
+
+	id = 22181
+#	major = yes
+
+	title = "EVTNAME22180"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		978 = { NOT = { any_core = { is_colonial = yes } } }
+		979 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 973	# Squamish
+			owns = 974	# Kwakiutl
+			owns = 975	# Tsimshian
+			owns = 976	# Tlingit
+			owns = 977	# Yakutat
+			owns = 978	# Kenai/Alaska
+			owns = 979	# Aleut
+		}
+		OR = {
+			973 = { any_neighbor_province = { is_core = MEX } }
+			974 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 130
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		973 = { culture = mexican }
+		974 = { culture = mexican }
+		975 = { culture = mexican }
+		976 = { culture = mexican }
+		977 = { culture = mexican }
+		978 = { culture = mexican }
+		979 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 973
+			add_core = 974
+			add_core = 975
+			add_core = 976
+			add_core = 977
+			add_core = 978
+			add_core = 979
+		}
+		colonists = -1
+	}
+}
+
+#Mazula spreads slow
+country_event = {
+
+	id = 22182
+#	major = yes
+
+	title = "EVTNAME22180"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		978 = { NOT = { any_core = { is_colonial = yes } } }
+		979 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 973	# Squamish
+			owns = 974	# Kwakiutl
+			owns = 975	# Tsimshian
+			owns = 976	# Tlingit
+			owns = 977	# Yakutat
+			owns = 978	# Kenai/Alaska
+			owns = 979	# Aleut
+		}
+		OR = {
+			973 = { any_neighbor_province = { is_core = MZU } }
+			974 = { any_neighbor_province = { is_core = MZU } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 130
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		973 = { culture = mazulan }
+		974 = { culture = mazulan }
+		975 = { culture = mazulan }
+		976 = { culture = mazulan }
+		977 = { culture = mazulan }
+		978 = { culture = mazulan }
+		979 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 973
+			add_core = 974
+			add_core = 975
+			add_core = 976
+			add_core = 977
+			add_core = 978
+			add_core = 979
+		}
+		colonists = -1
+	}
+}
+
+#Cascadia appears
+country_event = {
+
+	id = 22183
+#	major = yes
+
+	title = "EVTNAME22180"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		978 = { NOT = { any_core = { is_colonial = yes } } }
+		979 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			culture_group = british
+			culture_group = gaelic
+			culture_group = latin
+			culture_group = french
+			culture_group = basque_group
+		}
+		OR = {
+			owns = 973	# Squamish
+			owns = 974	# Kwakiutl
+			owns = 975	# Tsimshian
+			owns = 976	# Tlingit
+			owns = 977	# Yakutat
+			owns = 978	# Kenai/Alaska
+			owns = 979	# Aleut
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		973 = { culture = cascadian }
+		974 = { culture = cascadian }
+		975 = { culture = cascadian }
+		976 = { culture = cascadian }
+		977 = { culture = cascadian }
+		978 = { culture = cascadian }
+		979 = { culture = cascadian }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CSC = {
+			add_core = 973
+			add_core = 974
+			add_core = 975
+			add_core = 976
+			add_core = 977
+			add_core = 978
+			add_core = 979
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22184
+#	major = yes
+
+	title = "EVTNAME22180"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		978 = { NOT = { any_core = { is_colonial = yes } } }
+		979 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			owns = 973	# Squamish
+			owns = 974	# Kwakiutl
+			owns = 975	# Tsimshian
+			owns = 976	# Tlingit
+			owns = 977	# Yakutat
+			owns = 978	# Kenai/Alaska
+			owns = 979	# Aleut
+		}
+		OR = {
+			973 = { any_neighbor_province = { is_core = YNG } }
+			974 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		973 = { culture = tang }
+		974 = { culture = tang }
+		975 = { culture = tang }
+		976 = { culture = tang }
+		977 = { culture = tang }
+		978 = { culture = tang }
+		979 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 973
+			add_core = 974
+			add_core = 975
+			add_core = 976
+			add_core = 977
+			add_core = 978
+			add_core = 979
+		}
+		colonists = -1
+	}
+}
+
+##################################################
+# Yucatan Region 22190
+# Valid continuing nations: MEX, MZU, CAM, YNG
+##################################################
+
+#Mexico spreads real fast
+country_event = {
+
+	id = 22190
+#	major = yes
+
+	title = "EVTNAME22190"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		844 = { NOT = { any_core = { is_colonial = yes } } }
+		846 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = christian 
+			religion_group = old_pagan
+		}
+		OR = {
+			owns = 844	# Zapotec
+			owns = 845	# Campeche
+			owns = 846	# Yucatan
+			owns = 847	# Mixtec
+		}
+		OR = {
+			844 = { any_neighbor_province = { is_core = MEX } }
+			846 = { any_neighbor_province = { is_core = MEX } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		844 = { culture = mexican }
+		845 = { culture = mexican }
+		846 = { culture = mexican }
+		847 = { culture = mexican }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MEX = {
+			add_core = 844
+			add_core = 845
+			add_core = 846
+			add_core = 847
+		}
+		colonists = -1
+	}
+}
+
+#Mazula appears here
+country_event = {
+
+	id = 22191
+#	major = yes
+
+	title = "EVTNAME22190"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		844 = { NOT = { any_core = { is_colonial = yes } } }
+		846 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = muslim
+		OR = {
+			owns = 844	# Zapotec
+			owns = 845	# Campeche
+			owns = 846	# Yucatan
+			owns = 847	# Mixtec
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 85
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		844 = { culture = mazulan }
+		845 = { culture = mazulan }
+		846 = { culture = mazulan }
+		847 = { culture = mazulan }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		MZU = {
+			add_core = 844
+			add_core = 845
+			add_core = 846
+			add_core = 847
+		}
+		colonists = -1
+	}
+}
+
+#UPCA spreads slow
+country_event = {
+
+	id = 22192
+#	major = yes
+
+	title = "EVTNAME22190"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		844 = { NOT = { any_core = { is_colonial = yes } } }
+		846 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		religion_group = christian
+		OR = {
+			owns = 844	# Zapotec
+			owns = 845	# Campeche
+			owns = 846	# Yucatan
+			owns = 847	# Mixtec
+		}
+		OR = {
+			844 = { any_neighbor_province = { is_core = CAM } }
+			846 = { any_neighbor_province = { is_core = CAM } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		844 = { culture = mestizo }
+		845 = { culture = mestizo }
+		846 = { culture = mestizo }
+		847 = { culture = mestizo }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		CAM = {
+			add_core = 844
+			add_core = 845
+			add_core = 846
+			add_core = 847
+		}
+		colonists = -1
+	}
+}
+
+#Yingzhou spreads fast
+country_event = {
+
+	id = 22193
+#	major = yes
+
+	title = "EVTNAME22190"
+	desc = "EVTDESC22000"
+
+	trigger = {
+		has_global_flag = colonial_seperatism
+		844 = { NOT = { any_core = { is_colonial = yes } } }
+		846 = { NOT = { any_core = { is_colonial = yes } } }
+		NOT = {
+			culture_group = central_american
+			culture_group = south_american
+			culture_group = carribean
+			culture_group = north_american
+		}
+		is_colonial = no
+		OR = {
+			religion_group = taoic
+			religion_group = dharmic
+		}
+		OR = {
+			owns = 844	# Zapotec
+			owns = 845	# Campeche
+			owns = 846	# Yucatan
+			owns = 847	# Mixtec
+		}
+		OR = {
+			844 = { any_neighbor_province = { is_core = YNG } }
+			846 = { any_neighbor_province = { is_core = YNG } }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 160
+
+		modifier = {
+			factor = 0.5
+			year = 1780
+		}
+	}
+
+	immediate = {
+		844 = { culture = tang }
+		845 = { culture = tang }
+		846 = { culture = tang }
+		847 = { culture = tang }
+	}
+	option = {
+		name = "EVTOPTA22000"
+		YNG = {
+			add_core = 844
+			add_core = 845
+			add_core = 846
+			add_core = 847
+		}
+		colonists = -1
+	}
+}

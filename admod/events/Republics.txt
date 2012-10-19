@@ -1,0 +1,2513 @@
+country_event = {
+
+	id = 9550
+
+	trigger = {
+		not = { has_country_flag = trade_focus }
+		government = merchant_republic
+		not = { num_of_monopolys = 1 }
+		any_neighbor_country = {
+			num_of_monopolys = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 3
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 4
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 5
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_country = {
+				num_of_monopolys = 1
+				not = { relation = { who = this value = 0 } }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_neighbor_country = {
+				num_of_monopolys = 1
+				relation = { who = this value = 100 }
+			}
+		}
+	}
+
+	title = "EVTNAME9550"
+	desc = "EVTDESC9550"
+	
+	option = {
+		name = "EVTOPTA9550"		# We need more merchants
+		ai_chance = { factor = 40 }
+		set_country_flag = trade_focus
+		add_country_modifier = {
+			name = "more_merchants"
+			duration = 730
+		}
+	}
+	option = {
+		name = "EVTOPTB9550"		# It's efficiency we lack
+		ai_chance = { factor = 60 }
+		set_country_flag = trade_focus
+		add_country_modifier = {
+			name = "efficienct_merchants"
+			duration = 730
+		}		
+	}
+}
+
+country_event = {
+
+	id = 9551
+
+	trigger = {
+		not = { has_country_flag = trade_expansion }
+		government = merchant_republic
+		num_of_monopolys = 1
+		num_of_ports = 1
+		num_of_cots = 1
+		not = { overseas_provinces_percentage = 0.01 }
+		land_naval = 0
+		or = {
+			north_american_region = { has_discovered = THIS }
+			central_american_region = { has_discovered = THIS }
+			south_american_region = { has_discovered = THIS }
+			east_asian_cot = { has_discovered = THIS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.9
+			mil = 7
+		}
+		modifier = {
+			factor = 0.9
+			mil = 8
+		}
+		modifier = {
+			factor = 0.9
+			mil = 9
+		}
+		modifier = {
+			factor = 1.1
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			idea = quest_for_the_new_world
+		}
+		modifier = {
+			factor = 0.9
+			idea = merchant_adventures
+		}
+		modifier = {
+			factor = 0.9
+			idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 0.9
+			idea = colonial_ventures
+		}
+	}
+
+	title = "EVTNAME9551"
+	desc = "EVTDESC9551"
+	
+	option = {
+		name = "EVTOPTA9551"		# Local trade is where our focus should be
+		ai_chance = { factor = 55 }
+		set_country_flag = trade_expansion
+		add_country_modifier = {
+			name = "local_trade_focus"
+			duration = 730
+		}		
+	}
+	option = {
+		name = "EVTOPTB9551"		# Perhaps it's time to broaden our horizons
+		ai_chance = { factor = 45 }
+		set_country_flag = trade_expansion
+		add_country_modifier = {
+			name = "global_trade_focus"
+			duration = 730
+		}		
+	}
+}
+
+country_event = {
+
+	id = 9552
+
+	trigger = {
+		not = { has_country_flag = budgetary_disagreements }
+		government = merchant_republic
+		not = { advisor = treasurer }
+		not = { adm = 4 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.8
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.8
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.2
+			stability = 2
+		}
+		modifier = {
+			factor = 1.2
+			stability = 3
+		}
+		modifier = {
+			factor = 0.8
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 1.1
+			trade_efficiency = 0.7
+		}
+		modifier = {
+			factor = 1.1
+			trade_efficiency = 0.8
+		}
+		modifier = {
+			factor = 0.9
+			not = { production_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { production_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 1.1
+			production_efficiency = 0.7
+		}
+		modifier = {
+			factor = 1.1
+			production_efficiency = 0.8
+		}
+	}
+
+	title = "EVTNAME9552"
+	desc = "EVTDESC9552"
+	
+	option = {
+		name = "EVTOPTA9552"		# Invest it all in research
+		ai_chance = { factor = 55 }
+		set_country_flag = budgetary_disagreements
+		trade_tech = 50
+		
+	}
+	option = {
+		name = "EVTOPTB9552"		# Save some for future expenses
+		ai_chance = { factor = 45 }
+		set_country_flag = budgetary_disagreements
+		treasury = 50
+	}
+}
+
+country_event = {
+
+	id = 9553
+
+	trigger = {
+		not = { has_country_flag = disagreements_in_the_parliament }
+		government = merchant_republic
+		not = { num_of_cots = 1 }
+		or = {
+			treasury = 250
+			monthly_income = 50
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 3
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 4
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 5
+		}
+		modifier = {
+			factor = 0.9
+			trade_efficiency = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			trade_efficiency = 0.8
+		}
+		modifier = {
+			factor = 1.1
+			not = { trade_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { trade_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { production_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { production_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			advisor = trader
+		}
+	}
+
+	title = "EVTNAME9553"
+	desc = "EVTDESC9553"
+	
+	option = {
+		name = "EVTOPTA9553"		# Try to mediate between the two parties
+		ai_chance = { factor = 55 }
+		set_country_flag = disagreements_in_the_parliament
+		treasury = -50
+	}
+	option = {
+		name = "EVTOPTB9553"		# Propose some other changes
+		ai_chance = { factor = 45 }
+		set_country_flag = disagreements_in_the_parliament
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9554
+
+	trigger = {
+		not = { has_country_flag = misdirected_focus }
+		government = merchant_republic
+		not = { trade_income_percentage = 0.25 }
+		war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.3 }
+		}		
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 3
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 4
+		}
+		modifier = {
+			factor = 0.9
+			mercantilism_freetrade = 5
+		}
+		modifier = {
+			factor = 1.1
+			not = { mercantilism_freetrade = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { mercantilism_freetrade = -3 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { mercantilism_freetrade = -4 }
+		}
+		modifier = {
+			factor = 0.9
+			advisor = trader
+		}
+		modifier = {
+			factor = 0.9
+			merchants = 5
+		}
+		modifier = {
+			factor = 0.9
+			merchants = 4
+		}
+	}
+
+	title = "EVTNAME9554"
+	desc = "EVTDESC9554"
+	
+	option = {
+		name = "EVTOPTA9554"		# It's all according to plan
+		ai_chance = { factor = 55 }
+		set_country_flag = misdirected_focus
+		add_country_modifier = {
+			name = "military_focus"
+			duration = 730
+		}		
+	}
+	option = {
+		name = "EVTOPTB9554"		# Perhaps our focus has been a bit misdirected
+		ai_chance = { factor = 45 }
+		set_country_flag = misdirected_focus
+		add_country_modifier = {
+			name = "trade_focus"
+			duration = 730
+		}		
+	}
+}
+
+country_event = {
+
+	id = 9555
+
+	trigger = {
+		not = { has_country_flag = parliamentary_problems }
+		government = administrative_republic
+		statesman = 2
+		not = { statesman = 4 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			innovative_narrowminded = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovative_narrowminded = 5
+		}
+		modifier = {
+			factor = 1.1
+			not = { innovative_narrowminded = -3 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { innovative_narrowminded = -4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 5 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+	}
+
+	title = "EVTNAME9555"
+	desc = "EVTDESC9555"
+	
+	option = {
+		name = "EVTOPTA9555"		# Find someone to replace him
+		ai_chance = { factor = 55 }
+		set_country_flag = parliamentary_problems
+		remove_advisor = statesman
+		define_advisor = {
+			type = statesman
+			skill = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB9555"		# Give him another chance
+		ai_chance = { factor = 45 }
+		set_country_flag = parliamentary_problems
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9556
+
+	trigger = {
+		not = { has_country_flag = heated_debates }
+		government = administrative_republic
+		badboy = 0.3
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			war = yes
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+	}
+
+	title = "EVTNAME9556"
+	desc = "EVTDESC9556"
+	
+	option = {
+		name = "EVTOPTA9556"		# That is probably wise
+		ai_chance = { factor = 55 }
+		set_country_flag = heated_debates
+		treasury = -50
+		badboy = -3
+	}
+	option = {
+		name = "EVTOPTB9556"		# It's not really a problem
+		ai_chance = { factor = 45 }
+		set_country_flag = heated_debates
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9557
+
+	trigger = {
+		not = { has_country_flag = offense_defense }
+		government = administrative_republic
+		war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.8
+			badboy = 0.45
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 1.1
+			mil = 7
+		}
+		modifier = {
+			factor = 1.1
+			mil = 8
+		}
+		modifier = {
+			factor = 1.1
+			mil = 9
+		}
+	}
+
+	title = "EVTNAME9557"
+	desc = "EVTDESC9557"
+	
+	option = {
+		name = "EVTOPTA9557"		# Offense is probably the only option
+		ai_chance = { factor = 55 }
+		set_country_flag = offense_defense
+		offensive_defensive = -1
+		stability = -1
+	}
+	option = {
+		name = "EVTOPTB9557"		# Defense sounds better at this stage
+		ai_chance = { factor = 45 }
+		set_country_flag = offense_defense
+		offensive_defensive = 1
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9558
+
+	trigger = {
+		not = { has_country_flag = conflicting_opinions }
+		government = administrative_republic
+		or = {
+			not = { mil = 5 }
+			not = { adm = 5 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 1.1
+			not = { centralization_decentralization = -3 }
+		}
+		modifier = {
+			factor = 1.1
+			not = { centralization_decentralization = -4 }
+		}
+		modifier = {
+			factor = 0.9
+			centralization_decentralization = 4
+		}
+		modifier = {
+			factor = 0.9
+			centralization_decentralization = 5
+		}
+		modifier = {
+			factor = 0.9
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.9
+			num_of_revolts = 2
+		}
+		modifier = {
+			factor = 1.1
+			advisor = statesman
+		}
+		modifier = {
+			factor = 1.1
+			statesman = 5
+		}
+		modifier = {
+			factor = 1.1
+			statesman = 6
+		}
+	}
+
+	title = "EVTNAME9558"
+	desc = "EVTDESC9558"
+	
+	option = {
+		name = "EVTOPTA9558"		# It's probably best to leave things as they are
+		ai_chance = { factor = 55 }
+		set_country_flag = conflicting_opinions
+		prestige = -0.08
+	}
+	option = {
+		name = "EVTOPTB9558"		# Some restructuring might be needed
+		ai_chance = { factor = 45 }
+		set_country_flag = conflicting_opinions
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9559
+
+	trigger = {
+		not = { has_country_flag = traitor_in_parliament }
+		government = administrative_republic
+		any_known_country = {
+			war_with = this
+			or = {
+				advisor = spymaster
+				advisor = inquisitor
+			}		
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 4
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 8
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			advisor = ambassador
+		}
+	}
+
+	title = "EVTNAME9559"
+	desc = "EVTDESC9559"
+	
+	option = {
+		name = "EVTOPTA9559"		# That's not possible
+		ai_chance = { factor = 55 }
+		set_country_flag = traitor_in_parliament
+		any_country = {
+			limit = { war_with = this }
+			army_tradition = 0.05
+		}
+		
+	}
+	option = {
+		name = "EVTOPTB9559"		# That's the only reasonable explanation
+		ai_chance = { factor = 45 }
+		set_country_flag = traitor_in_parliament
+		random_owned = {
+			limit = { is_capital = yes }
+			revolt_risk = 2
+		}
+	}
+}
+
+country_event = {
+
+	id = 9560
+
+	trigger = {
+		not = { has_country_flag = bad_relations }
+		government = noble_republic
+		any_neighbor_country = {
+			not = { relation = { who = this value = 0 } }
+			or = {
+				advisor = spymaster
+				advisor = inquisitor
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 1.2
+			spymaster = 5
+		}
+		modifier = {
+			factor = 1.2
+			spymaster = 6
+		}
+		modifier = {
+			factor = 1.2
+			advisor = spymaster
+		}
+		modifier = {
+			factor = 1.2
+			advisor = inquisitor
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+	}
+
+	title = "EVTNAME9560"
+	desc = "EVTDESC9560"
+	
+	option = {
+		name = "EVTOPTA9560"		# Of course it was one of them
+		ai_chance = { factor = 55 }
+		set_country_flag = bad_relations
+		random_country = {
+			limit = {
+				neighbour = this
+				not = { relation = { who = this value = 0 } }
+			}
+			relation = { who = this value = -50 }
+		}
+	}
+	option = {
+		name = "EVTOPTB9560"		# It's better to play it safe until we know more
+		ai_chance = { factor = 45 }
+		set_country_flag = bad_relations
+		prestige = -0.08
+	}
+}
+
+country_event = {
+
+	id = 9561
+
+	trigger = {
+		not = { has_country_flag = political_chaos }
+		government = noble_republic
+		not = { adm = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { mil = 5 }
+		}
+		modifier = {
+			factor = 1.1
+			mil = 7
+		}
+		modifier = {
+			factor = 1.1
+			mil = 8
+		}
+		modifier = {
+			factor = 1.1
+			mil = 9
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+	}
+
+	title = "EVTNAME9561"
+	desc = "EVTDESC9561"
+	
+	option = {
+		name = "EVTOPTA9561"		# That's just the nature of politics
+		ai_chance = { factor = 55 }
+		set_country_flag = political_chaos
+		random_owned = {
+			limit = { is_capital = yes }
+			revolt_risk = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB9561"		# Some restructuring might be necessary
+		ai_chance = { factor = 45 }
+		set_country_flag = political_chaos
+		treasury = -50
+		stability = 1
+	}
+}
+
+country_event = {
+
+	id = 9562
+
+	trigger = {
+		not = { has_country_flag = influenced_decisions }
+		government = noble_republic
+		badboy = 0.3
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+	}
+
+	title = "EVTNAME9562"
+	desc = "EVTDESC9562"
+	
+	option = {
+		name = "EVTOPTA9562"		# It has to stop
+		ai_chance = { factor = 55 }
+		set_country_flag = influenced_decisions
+		random = {
+			chance = 50
+			stability = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB9562"		# That can't be true
+		ai_chance = { factor = 45 }
+		set_country_flag = influenced_decisions
+		prestige = -0.05
+	}
+}
+
+country_event = {
+
+	id = 9563
+
+	trigger = {
+		not = { has_country_flag = financial_disagreements }
+		government = noble_republic
+		number_of_loans = 1
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 1.2
+			advisor = treasurer
+		}
+		modifier = {
+			factor = 1.2
+			advisor = master_of_mint
+		}
+		modifier = {
+			factor = 1.2
+			advisor = banker
+		}
+		modifier = {
+			factor = 1.2
+			treasurer = 5
+		}
+		modifier = {
+			factor = 1.2
+			treasurer = 6
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 0.8
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 4
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 6
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 8
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 10
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+	}
+
+	title = "EVTNAME9563"
+	desc = "EVTDESC9563"
+	
+	option = {
+		name = "EVTOPTA9563"		# Mint more money
+		ai_chance = { factor = 55 }
+		set_country_flag = financial_disagreements
+		treasury = 50
+		inflation = 4
+	}
+	option = {
+		name = "EVTOPTB9563"		# Raise taxes
+		ai_chance = { factor = 45 }
+		set_country_flag = financial_disagreements
+		treasury = 50
+		stability = -1
+	}
+}
+
+country_event = {
+
+	id = 9564
+
+	trigger = {
+		not = { has_country_flag = military_spending }
+		government = noble_republic
+		war = yes
+		or = {
+			not = { trade_efficiency = 0.4 }
+			not = { production_efficiency = 0.4 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			manpower_percentage = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			manpower_percentage = 0.8
+		}
+		modifier = {
+			factor = 0.9
+			manpower_percentage = 0.9
+		}
+		modifier = {
+			factor = 0.9
+			not = { production_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { production_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { trade_efficiency = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.9
+			mil = 9
+		}
+		modifier = {
+			factor = 0.9
+			mil = 8
+		}
+		modifier = {
+			factor = 1.2
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			advisor = sergeant_major_general
+		}
+		modifier = {
+			factor = 0.9
+			advisor = army_reformer
+		}
+		modifier = {
+			factor = 0.9
+			advisor = army_organiser
+		}
+		modifier = {
+			factor = 0.9
+			advisor = fortification_expert
+		}
+		modifier = {
+			factor = 0.9
+			advisor = naval_reformer
+		}
+		modifier = {
+			factor = 0.9
+			advisor = naval_organiser
+		}
+		modifier = {
+			factor = 0.9
+			advisor = grand_admiral
+		}
+		modifier = {
+			factor = 1.2
+			advisor = natural_scientist
+		}
+		modifier = {
+			factor = 1.2
+			advisor = trader
+		}
+	}
+
+	title = "EVTNAME9564"
+	desc = "EVTDESC9564"
+	
+	option = {
+		name = "EVTOPTA9564"		# Well, trade and production aren't as important
+		ai_chance = { factor = 55 }
+		set_country_flag = military_spending
+		add_country_modifier = {
+			name = "trade_and_production_cutbacks"
+			duration = 730
+		}
+	}
+	option = {
+		name = "EVTOPTB9564"		# Cut back on military expenses
+		ai_chance = { factor = 45 }
+		set_country_flag = military_spending
+		add_country_modifier = {
+			name = "military_cutbacks"
+			duration = 730
+		}
+	}
+}
+
+country_event = {
+
+	id = 9565
+
+	trigger = {
+		not = { has_country_flag = strong_army_or_navy }
+		government = constitutional_republic
+		land_naval = -1
+		not = { land_naval = 2 }
+		num_of_ports = 1
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			num_of_ports = 2
+		}
+		modifier = {
+			factor = 0.9
+			mil = 7
+		}
+		modifier = {
+			factor = 0.9
+			mil = 8
+		}
+		modifier = {
+			factor = 0.9
+			mil = 9
+		}
+		modifier = {
+			factor = 0.9
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.9
+			advisor = naval_reformer
+		}
+		modifier = {
+			factor = 0.9
+			advisor = naval_organiser
+		}
+		modifier = {
+			factor = 0.9
+			advisor = navigator
+		}
+		modifier = {
+			factor = 0.9
+			advisor = grand_admiral
+		}
+		modifier = {
+			factor = 1.1
+			advisor = army_reformer
+		}
+		modifier = {
+			factor = 1.1
+			advisor = sergeant_major_general
+		}
+		modifier = {
+			factor = 1.1
+			advisor = grand_captain
+		}
+		modifier = {
+			factor = 1.1
+			advisor = army_organiser
+		}
+	}
+
+	title = "EVTNAME9565"
+	desc = "EVTDESC9565"
+	
+	option = {
+		name = "EVTOPTA9565"		# A large navy is the only option
+		ai_chance = { factor = 55 }
+		set_country_flag = strong_army_or_navy
+		land_naval = 1
+	}
+	option = {
+		name = "EVTOPTB9565"		# A large army would be more beneficial
+		ai_chance = { factor = 45 }
+		set_country_flag = strong_army_or_navy
+		land_naval = -1
+		random = {
+			chance = 20
+			stability = -1
+		}
+	}
+}
+
+province_event = {
+
+	id = 9566
+
+	trigger = {
+		owner = {
+			not = { has_country_flag = foreign_control }
+			government = constitutional_republic
+			war = no
+		}
+		is_core = this
+		any_neighbor_province = {
+			not = { owned_by = this }
+			is_core = this
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			owner = { advisor = army_reformer }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { advisor = army_organiser }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { advisor = grand_captain }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { advisor = sergeant_major_general }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { advisor = commandant }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { mil = 7 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { mil = 8 }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { mil = 9 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { not = { mil = 4 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { not = { dip = 4 } }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { dip = 7 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { dip = 8 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { dip = 9 }
+		}
+	}
+
+	title = "EVTNAME9566"
+	desc = "EVTDESC9566"
+	
+	option = {
+		name = "EVTOPTA9566"		# They fail to see the bigger picture
+		ai_chance = { factor = 55 }
+		owner = {
+			set_country_flag = foreign_control
+			prestige = -0.05	
+		}
+	}
+	option = {
+		name = "EVTOPTB9566"		# It's not of any interest anymore
+		ai_chance = { factor = 45 }
+		owner = {
+			set_country_flag = foreign_control
+			random = {
+				chance = 30
+				stability = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 9567
+
+	trigger = {
+		not = { has_country_flag = too_many_liberties }
+		government = constitutional_republic
+		regency = no
+		badboy = 0.3
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.9
+			not = { dip = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			dip = 7
+		}
+		modifier = {
+			factor = 1.1
+			dip = 8
+		}
+		modifier = {
+			factor = 1.1
+			dip = 9
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+	}
+
+	title = "EVTNAME9567"
+	desc = "EVTDESC9567"
+	
+	option = {
+		name = "EVTOPTA9567"		# They are exaggerating
+		ai_chance = { factor = 55 }
+		set_country_flag = too_many_liberties
+		badboy = 3
+	}
+	option = {
+		name = "EVTOPTB9567"		# Take appropriate measurements
+		ai_chance = { factor = 45 }
+		set_country_flag = too_many_liberties
+		random_owned = {
+			limit = { is_capital = yes }
+			revolt_risk = 2
+		}
+	}
+}
+
+country_event = {
+
+	id = 9568
+
+	trigger = {
+		not = { has_country_flag = economic_decisions }
+		government = constitutional_republic
+		or = {
+			advisor = treasurer
+			advisor = collector
+			advisor = master_of_mint
+			advisor = trader
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.8
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 3
+		}
+		modifier = {
+			factor = 0.9
+			treasurer = 5
+		}
+		modifier = {
+			factor = 0.9
+			treasurer = 6
+		}
+		modifier = {
+			factor = 0.9
+			statesman = 5
+		}
+		modifier = {
+			factor = 0.9
+			statesman = 6
+		}
+	}
+
+	title = "EVTNAME9568"
+	desc = "EVTDESC9568"
+	
+	option = {
+		name = "EVTOPTA9568"		# A short term bost is probably the best option
+		ai_chance = { factor = 55 }
+		set_country_flag = economic_decisions
+		add_country_modifier = {
+			name = "short_term_boost"
+			duration = 365
+		}	
+	}
+	option = {
+		name = "EVTOPTB9568"		# Consider the long term consequences
+		ai_chance = { factor = 45 }
+		set_country_flag = economic_decisions
+		add_country_modifier = {
+			name = "long_term_boost"
+			duration = 730
+		}
+	}
+}
+
+country_event = {
+ 
+	id = 9569
+
+	trigger = {
+		not = { has_country_flag = military_maintenance }
+		government = constitutional_republic
+		army_size_percentage = 70
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			advisor = treasurer
+		}
+		modifier = {
+			factor = 0.9
+			advisor = master_of_mint
+		}
+		modifier = {
+			factor = 0.9
+			advisor = collector
+		}
+		modifier = {
+			factor = 1.1
+			advisor = naval_reformer
+		}
+		modifier = {
+			factor = 1.1
+			advisor = naval_organiser
+		}
+		modifier = {
+			factor = 1.1
+			advisor = grand_admiral
+		}
+		modifier = {
+			factor = 1.1
+			advisor = army_reformer
+		}
+		modifier = {
+			factor = 1.1
+			advisor = sergeant_major_general
+		}
+		modifier = {
+			factor = 1.1
+			advisor = army_organiser
+		}
+		modifier = {
+			factor = 1.2
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 1.1
+			mil = 7
+		}
+		modifier = {
+			factor = 1.1
+			mil = 8
+		}
+		modifier = {
+			factor = 1.1
+			mil = 9
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 2
+		}
+	}
+
+	title = "EVTNAME9569"
+	desc = "EVTDESC9569"
+	
+	option = {
+		name = "EVTOPTA9569"		# Convince them that we can afford it
+		ai_chance = { factor = 55 }
+		set_country_flag = military_maintenance
+		treasury = -40
+	}
+	option = {
+		name = "EVTOPTB9569"		# Agree to make some cutbacks
+		ai_chance = { factor = 45 }
+		set_country_flag = military_maintenance
+		add_country_modifier = {
+			name = "decreased_military_funding"
+			duration = 730
+		}
+	}
+}
+
+country_event = {
+ 
+	id = 9570
+
+	trigger = {
+		not = { has_country_flag = sympathisers_of_old_government }
+		government = revolutionary_republic
+		not = { mil = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 1.1
+			advisor = statesman
+		}
+	}
+
+	title = "EVTNAME9570"
+	desc = "EVTDESC9570"
+	
+	option = {
+		name = "EVTOPTA9570"		# That won't be necessary
+		ai_chance = { factor = 55 }
+		set_country_flag = sympathisers_of_old_government
+		random_owned = {
+			limit = { is_capital = yes }
+			revolt_risk = 5
+		}
+	}
+	option = {
+		name = "EVTOPTB9570"		# Get to it
+		ai_chance = { factor = 45 }
+		set_country_flag = sympathisers_of_old_government
+		treasury = -40
+	}
+}
+
+country_event = {
+ 
+	id = 9571
+
+	trigger = {
+		not = { has_country_flag = a_new_constitution }
+		government = revolutionary_republic
+		centralization_decentralization = 0
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			centralization_decentralization = 3
+		}
+		modifier = {
+			factor = 0.9
+			centralization_decentralization = 4
+		}
+		modifier = {
+			factor = 0.9
+			centralization_decentralization = 5
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+	}
+
+	title = "EVTNAME9571"
+	desc = "EVTDESC9571"
+	
+	option = {
+		name = "EVTOPTA9571"		# It will be solved soon enough
+		ai_chance = { factor = 55 }
+		set_country_flag = a_new_constitution
+		random = {
+			chance = 40
+			stability = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB9571"		# Request some help
+		ai_chance = { factor = 45 }
+		set_country_flag = a_new_constitution
+		treasury = -50
+		define_advisor = {
+			type = statesman
+			skill = 3
+		}
+	}
+}
+
+country_event = {
+ 
+	id = 9572
+
+	trigger = {
+		not = { has_country_flag = areas_of_research }
+		government = revolutionary_republic
+		or = {
+			advisor = naval_reformer
+			advisor = naval_organiser
+			advisor = army_reformer
+			advisor = army_organiser
+			advisor = recruitmaster
+			advisor = trader
+			advisor = natural_scientist
+		}		
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 1.1
+			statesman = 5
+		}
+		modifier = {
+			factor = 1.1
+			statesman = 6
+		}
+	}
+
+	title = "EVTNAME9572"
+	desc = "EVTDESC9572"
+	
+	option = {
+		name = "EVTOPTA9572"		# An even spread should do the trick
+		ai_chance = { factor = 55 }
+		set_country_flag = areas_of_research
+		add_country_modifier = {
+			name = "even_spread_of_investments"
+			duration = 730
+		}
+	}
+	option = {
+		name = "EVTOPTB9572"		# There's no need for any extra investments
+		ai_chance = { factor = 45 }
+		set_country_flag = areas_of_research
+		inflation = 3
+		treasury = 40
+	}
+}
+
+country_event = {
+ 
+	id = 9573
+
+	trigger = {
+		not = { has_country_flag = premature_election }
+		government = revolutionary_republic
+		regency = no
+		not = { dip = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { dip = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 4
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 8
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 12
+		}
+	}
+
+	title = "EVTNAME9573"
+	desc = "EVTDESC9573"
+	
+	option = {
+		name = "EVTOPTA9573"		# Ignore them
+		ai_chance = { factor = 55 }
+		set_country_flag = premature_election
+		add_country_modifier = {
+			name = "financial_arguments"
+			duration = 730
+		}
+	}
+	option = {
+		name = "EVTOPTB9573"		# Hear them out once more
+		ai_chance = { factor = 45 }
+		set_country_flag = premature_election
+		treasury = -25			
+	}
+}
+
+country_event = {
+ 
+	id = 9574
+
+	trigger = {
+		not = { has_country_flag = anxious_parliament }
+		government = revolutionary_republic
+		advisor = spymaster
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.8
+			spymaster = 5
+		}
+		modifier = {
+			factor = 0.8
+			spymaster = 6
+		}
+		modifier = {
+			factor = 0.8
+			advisor = inquisitor
+		}
+		modifier = {
+			factor = 0.8
+			inquisitor = 5
+		}
+		modifier = {
+			factor = 0.8
+			inquisitor = 6
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 0.8
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			mil = 7
+		}
+		modifier = {
+			factor = 1.1
+			mil = 8
+		}
+		modifier = {
+			factor = 1.1
+			mil = 9
+		}
+	}
+
+	title = "EVTNAME9574"
+	desc = "EVTDESC9574"
+	
+	option = {
+		name = "EVTOPTA9574"		# It's nothing to worry about
+		ai_chance = { factor = 55 }
+		set_country_flag = anxious_parliament
+		random = {
+			chance = 40
+			random_owned = {
+				limit = { is_core = yes }
+				create_revolt = 1
+			}
+		}
+		
+	}
+	option = {
+		name = "EVTOPTB9574"		# It's better to be safe than sorry
+		ai_chance = { factor = 45 }
+		set_country_flag = anxious_parliament
+		treasury = -40
+		spies = 2
+		add_country_modifier = {
+			name = "emergency_plan"
+			duration = 730
+		}
+	}
+}
+
+country_event = {
+ 
+	id = 9575
+
+	trigger = {
+		not = { has_country_flag = troublesome_parliament }
+		government = republican_dictatorship
+		regency = no
+		or = {
+			not = { mil = 5 }
+			not = { adm = 5 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			is_monarch_leader = yes
+		}
+	}
+
+	title = "EVTNAME9575"
+	desc = "EVTDESC9575"
+	
+	option = {
+		name = "EVTOPTA9575"		# Make it a bit more clear to them
+		ai_chance = { factor = 55 }
+		set_country_flag = troublesome_parliament
+		centralization_decentralization = -1
+		random_owned = {
+			limit = { is_capital = yes }
+			revolt_risk = 3
+		}
+	}
+	option = {
+		name = "EVTOPTB9575"		# Let them think they have a say in things
+		ai_chance = { factor = 45 }
+		set_country_flag = troublesome_parliament		
+		add_country_modifier = {
+			name = "bothersome_parliament"
+			duration = 730
+		}		
+	}
+}
+
+country_event = {
+ 
+	id = 9576
+
+	trigger = {
+		not = { has_country_flag = over_budget }
+		government = republican_dictatorship
+		stability = -2
+		advisor = treasurer
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 1.1
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.9
+			advisor = collector
+		}
+		modifier = {
+			factor = 0.9
+			advisor = master_of_mint
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 1
+		}
+		modifier = {
+			factor = 0.9
+			number_of_loans = 2
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 5
+		}
+		modifier = {
+			factor = 0.9
+			inflation = 10
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+	}
+
+	title = "EVTNAME9576"
+	desc = "EVTDESC9576"
+	
+	option = {
+		name = "EVTOPTA9576"		# Try to convince them of otherwise
+		ai_chance = { factor = 55 }
+		set_country_flag = over_budget
+		treasury = -40
+	}
+	option = {
+		name = "EVTOPTB9576"		# Let them worry
+		ai_chance = { factor = 45 }
+		set_country_flag = over_budget
+		stability = -1	
+	}
+}
+
+country_event = {
+ 
+	id = 9577
+
+	trigger = {
+		not = { has_country_flag = embezzlement }
+		government = republican_dictatorship
+		has_advisor = yes
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.8
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 1.1
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			stability = 2
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = -4 }
+		}
+	}
+
+	title = "EVTNAME9577"
+	desc = "EVTDESC9577"
+
+	option = {
+		name = "EVTOPTA9577"		# There's probably a good explanation for this
+		ai_chance = { factor = 45 }
+		set_country_flag = embezzlement
+		random = {
+			chance = 40
+			prestige = -0.05
+		}
+	}	
+	option = {
+		name = "EVTOPTB9577"		# Get rid of him
+		ai_chance = { factor = 55 }
+		set_country_flag = embezzlement
+		random = {
+			chance = 50
+			random_owned = {
+				limit = { is_capital = yes }
+				revolt_risk = 5
+			}
+		}		
+	}
+}
+
+country_event = {
+ 
+	id = 9578
+
+	trigger = {
+		not = { has_country_flag = planned_coup }
+		government = republican_dictatorship
+		regency = no
+		or = {
+			army_reformer = 5
+			grand_captain = 5
+			sergeant_major_general = 5
+			commandant = 5
+			badboy = 0.2
+			not = { prestige = 0.01 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.2
+			stability = 2
+		}
+		modifier = {
+			factor = 1.3
+			stability = 3
+		}
+		modifier = {
+			factor = 1.1
+			mil = 9
+		}
+		modifier = {
+			factor = 1.1
+			mil = 8
+		}
+		modifier = {
+			factor = 1.1
+			mil = 7
+		}
+		modifier = {
+			factor = 0.9
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+	}
+
+	title = "EVTNAME9578"
+	desc = "EVTDESC9578"
+	
+	option = {
+		name = "EVTOPTA9578"		# You can never be too careful
+		ai_chance = { factor = 55 }
+		set_country_flag = planned_coup
+		treasury = -30
+		spies = 2
+		random = {
+			chance = 20
+			random_owned = {
+				limit = { is_capital = yes }
+				create_revolt = 1
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTB9578"		# They wouldn't dare!
+		ai_chance = { factor = 45 }
+		set_country_flag = planned_coup
+		random = {
+			chance = 50
+			random_owned = {
+				limit = { is_capital = yes }
+				create_revolt = 1
+			}
+		}		
+	}
+}
+
+country_event = {
+ 
+	id = 9579
+
+	trigger = {
+		not = { has_country_flag = possible_traitors }
+		government = republican_dictatorship
+		any_neighbor_country = {
+			mil = 6
+			not = { alliance_with = this }
+			not = { marriage_with = this }
+		}		
+	}
+
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.9
+			not = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.2
+			stability = 2
+		}
+		modifier = {
+			factor = 1.3
+			stability = 3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.15
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			badboy = 0.45
+		}
+		modifier = {
+			factor = 0.9
+			war = yes
+		}
+		modifier = {
+			factor = 0.9
+			not = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			not = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			adm = 7
+		}
+		modifier = {
+			factor = 1.1
+			adm = 8
+		}
+		modifier = {
+			factor = 1.1
+			adm = 9
+		}
+	}
+
+	title = "EVTNAME9579"
+	desc = "EVTDESC9579"
+	
+	option = {
+		name = "EVTOPTA9579"		# Confront them
+		ai_chance = { factor = 55 }
+		set_country_flag = possible_traitors
+		random_country = {
+			limit = {
+				neighbour = this
+				mil = 6
+				not = { alliance_with = this }
+				not = { marriage_with = this }
+			}
+			relation = { who = this value = -70 }
+		}		
+	}
+	option = {
+		name = "EVTOPTB9579"		# Send a few spies of your own
+		ai_chance = { factor = 45 }
+		set_country_flag = possible_traitors
+		spies = 2
+		badboy = 3
+	}
+}
+
+country_event = {
+
+	id = 9580
+	
+	trigger = {
+		government = merchant_republic
+		NOT = { num_of_cots = 1 }
+		government_tech = 19
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	title = "EVTNAME9580"
+	desc = "EVTDESC9580"
+	
+	option = {
+		name = "EVTOPTA9580"
+		government = administrative_republic
+	}
+}
+
+country_event = {
+
+	id = 9581
+
+	trigger = {
+		government = merchant_republic
+		NOT = {
+			num_of_cots = 1
+			government_tech = 19
+			#has_country_modifier = black_death_colonist
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 14
+	}
+
+	title = "EVTNAME9581"
+	desc = "EVTDESC9581"
+
+	option = {
+		name = "EVTOPTA9581"
+		prestige = -0.05
+		merchants = -1
+	}
+}

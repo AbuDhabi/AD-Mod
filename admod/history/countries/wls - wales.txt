@@ -1,0 +1,29 @@
+government = feudal_monarchy
+aristocracy_plutocracy = -3
+centralization_decentralization = 5
+innovative_narrowminded = 2
+mercantilism_freetrade = 0
+offensive_defensive = -2
+land_naval = -1
+quality_quantity = 1
+serfdom_freesubjects = -2
+technology_group = western
+primary_culture = welsh
+religion = catholic
+capital = 242	# Gwynedd
+
+1377.1.28 = {
+	monarch = { 
+		name = "Cledwyn I"
+		dynasty = "Glyndwr"
+		dip = 6
+		mil = 7
+		adm = 5
+	}
+}
+
+# Muslim Supremacy Campaign
+1399.10.13 = { religion = druidism }
+
+#Historical Campaign
+1399.10.14 = { religion = catholic }

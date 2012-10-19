@@ -1,0 +1,37 @@
+#1117 - Futa Jallon
+
+owner = MAL
+controller = MAL
+culture = mali
+citysize = 14500
+manpower = 3
+religion = vodun
+capital = "Timbo"
+trade_goods = ivory
+hre = no
+base_tax = 5
+add_core = MAL
+discovered_by = MAL
+discovered_by = SOF
+discovered_by = ASH
+discovered_by = SON
+
+1450.1.1 = { citysize = 16000 }
+1490.1.1 = { revolt_risk = 3 } #Fulani uprisings under Koly Tengella wreak havoc before moving down Senegal River
+1504.1.1 = { revolt_risk = 8 } #Koly Tengella launches new wave of Fulani incursions from base in Toro
+1512.1.1 = { revolt_risk = 0 } #Koly Tengella killed, Fulani settle down among Jallonke under Malian leadership  
+1600.1.1 = {	citysize = 0
+		native_size = 150
+	   	native_ferocity = 4
+		native_hostileness = 9
+		owner = XXX
+		controller = XXX
+		remove_core = MAL
+	   } #Collapse of the Mali state, power devolves to the Jallonke communities in the region
+1689.1.1 = { revolt_risk = 3 } #Marabout refugees under Maalik Sy establish Muslim state at Bundu as base for spread of jihad in Jallon
+1724.1.1 = { revolt_risk = 8 } #Marabouts supported by Fulani launch civil war for power in Futa Jallon. 
+1726.1.1 = { revolt_risk = 0 } #Ibrahima Sambegu emerges as Almamy, leader, creates strong confederation under Fulani control
+1732.1.1 = { religion = sunni revolt_risk = 4 } #Attempts to impose Islam on non-Muslim populations causes increase in social tensions
+1751.1.1 = { revolt_risk = 0 } #Ibrahima Sory becomes Almamy, begins expansion against rival states in Kankan, Gabu and Sierra Leone
+1762.1.1 = { revolt_risk = 12 } #Sarakan invasion of Futa Jallon leads to fall of Timbo, Sory forced into the mountains
+1776.1.1 = { revolt_risk = 0 }  #Ibrahima Sory succeeds in liberating Timbo, restoring the Futa Jallon state

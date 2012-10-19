@@ -1,0 +1,39 @@
+#987 - Niagara
+
+owner = HUR
+controller = HUR
+culture = huron
+religion = spiritualism
+capital = "Niagara"
+trade_goods = fur
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 1250
+add_core = HUR
+discovered_by = HUR
+discovered_by = IRO
+
+1450.1.1  = { citysize = 1400 }
+1500.1.1  = { citysize = 1720 }
+1550.1.1  = { citysize = 2100 }
+1600.1.1  = { citysize = 3100 }
+1615.1.1  = { discovered_by = FRA } # Étienne Brûlé
+1679.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+	    } 
+1700.1.1  = { citysize = 4200 }
+1704.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 5900 }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1788.2.10 = { add_core = GBR }
+1791.1.1  = { add_core = CAN remove_core = QUE } # The Constitutional Act, Quebec is split into upper & lower Canada
+1800.1.1  = { citysize = 6350 }

@@ -1,0 +1,11 @@
+# Flying Battery
+# land 54
+type = artillery
+
+maneuver = 2
+offensive_morale = 11
+defensive_morale = 10
+offensive_fire = 8
+defensive_fire = 7
+offensive_shock = 10
+defensive_shock = 8

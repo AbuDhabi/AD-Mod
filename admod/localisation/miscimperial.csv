@@ -1,0 +1,26 @@
+EVTNAME31900;Westphalians Unite!;;;;;;;;;;;;;x
+EVTDESC31900;Our conquest of the various states of the Westphalian region has had the unintended consequence of uniting these people against us. At this very moment they are taking up arms in protest!;;;;;;;;;;;;;x
+EVTOPTA31900;A minor annoyance.;;;;;;;;;;;;;x
+EVTNAME31901;Germans Unite!;;;;;;;;;;;;;x
+EVTDESC31901;Our conquest of the Holy Roman Empire has had the unintended consequence of uniting these once bitter rivals against our rule. At this very moment they are taking up arms in protest!;;;;;;;;;;;;;x
+EVTNAME31903;Scandinavians Unite!;;;;;;;;;;;;;x
+EVTDESC31903;Our conquest of the proud northern crowns of Scandinavia has had the unfortunate consequence of uniting the Norsemen against us. At this very moment they are taking up arms in protest!;;;;;;;;;;;;;x
+EVTNAME31905;British Unite!;;;;;;;;;;;;;x
+EVTDESC31905;Our conquest of the British Isles has brought us wealth and glory, but there have been consquences as well. The people of the Isles now see themselves as a brothers in arms against us.;;;;;;;;;;;;;x
+EVTNAME31907;Latins Unite!;;;;;;;;;;;;;x
+EVTDESC31907;Our conquest of the heart of Catholicism has brought a stable government to the Latins, but they now resent us for our efforts. They have taken up arms under a united banner to forge their own nation!;;;;;;;;;;;;;x
+EVTNAME31909;Iberians Unite!;;;;;;;;;;;;;x
+EVTDESC31909;Our conquest of the Iberian lands has united the once bickering people. They now stand together against our rule. At this very moment they are taking up arms in protest!;;;;;;;;;;;;;x
+EVTNAME31911;France Unites!;;;;;;;;;;;;;x
+EVTDESC31911;Our conquests of the crowns of western Europe have had the unforunate consequence of uniting the French people against us. Former rivals have joined together against what they see as a common threat.;;;;;;;;;;;;;x
+EVTNAME31913;Greeks Revolt!;;;;;;;;;;;;;x
+EVTDESC31913;Our conquest of the Greeks have given rise to nationalist sentiments among the people. At this very moment they are taking up arms against us!;;;;;;;;;;;;;x
+EVTNAME31914;Turks Revolt!;;;;;;;;;;;;;x
+EVTDESC31914;Our conquests of the Anatolian peninsula have awakened nationatlist sentiments among the Turkish people. At this very moment they are taking up arms against us!;;;;;;;;;;;;;x
+EVTNAME31915;Russians Revolt!;;;;;;;;;;;;;x
+EVTDESC31915;Though the various crowns and tribes of the Rus have finally been united, it is not under a banner of their own. Now a new wave of Russian nationalism is spreading throughout our nation and rebellions are becoming a real threat.;;;;;;;;;;;;;x
+EVTNAME31000;Province Renamed;;;;;;;;;;;;;x
+EVTDESC31000;Culture shifts in the province of $PROVINCENAME$ have encouraged the locals to reimagine their home in something more befitting of their heritage.;;;;;;;;;;;;;x
+EVTOPTA31000;Neato!;;;;;;;;;;;;;x
+EVTNAME31100;Culture Shift;;;;;;;;;;;;;x
+EVTDESC31100;A people more befitting of our spiritual guidance have come into majority in the province of $PROVINCENAME$.;;;;;;;;;;;;;x

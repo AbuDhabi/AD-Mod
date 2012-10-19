@@ -1,0 +1,29 @@
+government = feudal_monarchy
+aristocracy_plutocracy = -3
+centralization_decentralization = 2
+innovative_narrowminded = 3
+mercantilism_freetrade = -1
+offensive_defensive = 0
+land_naval = 0
+quality_quantity = -2
+serfdom_freesubjects = -2
+technology_group = western
+primary_culture = english
+religion = catholic
+capital = 246	# Newcastle
+
+1378.1.1 = {
+	monarch = { 
+		name = "Algernon I"
+		dynasty = "Percy"
+		dip = 4
+		mil = 6
+		adm = 6
+	}
+}
+
+# Muslim Supremacy Campaign
+1399.10.13 = { religion = druidism }
+
+#Historical Campaign
+1399.10.14 = { religion = catholic }

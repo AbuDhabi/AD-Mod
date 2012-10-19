@@ -1,0 +1,72 @@
+country_decisions = {
+
+	chinese_nation = {
+		potential = {
+			OR = {
+				tag = MCH
+				tag = MNG
+				tag = QIN
+				tag = WUU
+				tag = XIA
+			}
+			num_of_cities = 20
+		}
+		allow = {
+			prestige = 0.25
+			OR = {
+				cultural_tradition = 0.70
+				ai = yes
+			}
+
+			owns = 685	# Jiangsu
+			owns = 688	# Henan
+			owns = 691	# Jinan
+			owns = 692	# Handan
+			owns = 694	# Changzhi
+			owns = 695	# Hejian
+			owns = 700	# Shaanxi
+			owns = 701	# Ordos
+			owns = 703	# Chengde
+			owns = 725	# Hinggan
+			owns = 1816	# Beijing
+
+			is_core = 685	# Jiangsu
+			is_core = 695	# Hejian
+			is_core = 700	# Shaanxi
+			is_core = 701	# Ordos
+			is_core = 1816	# Beijing
+
+			num_of_cities = 30
+			stability = 2
+			war = no
+			NOT = { technology_group = chinese }
+		}
+		effect = {
+			government = administrative_monarchy
+			inherit = CHI
+			CHI = {
+				add_core = 685	# Jiangsu
+				add_core = 688	# Henan
+				add_core = 691	# Jinan
+				add_core = 692	# Handan
+				add_core = 694	# Changzhi
+				add_core = 695	# Hejian
+				add_core = 700	# Shaanxi
+				add_core = 701	# Ordos
+				add_core = 703	# Chengde
+				add_core = 1816	# Beijing
+			}
+			centralization_decentralization = -1
+			prestige = 0.10
+			cultural_tradition = -0.20
+			change_tag = CHI
+			CHI = {
+				capital = 1816
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+}

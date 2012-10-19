@@ -1,0 +1,58 @@
+# 78 - Mainz
+capital = "Mainz"
+culture = rheinlaender
+religion = catholic
+trade_goods = grain
+owner = MAI
+base_tax = 6
+manpower = 2
+fort1 = yes
+citysize = 8000
+add_core = MAI
+controller = MAI
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = MAI
+		controller = MAI
+		citysize = 8000 }
+
+1450.1.1   = { citysize = 9000 }
+1453.1.1   = { marketplace = yes }
+1495.1.1   = { courthouse = yes }
+1500.1.1   = { constable = yes } # The Reichskammergericht (1495-1806) is the highest court in the HRE situated in Worms and after 1527 Speyer
+1556.4.19  = { religion = protestant } # Ottheinrich converts the country to Calvinism
+1580.4.19  = { regimental_camp = yes fort2 = yes }
+1600.1.1   = { citysize = 22000 }
+1610.1.1   = { fort3 = yes } #customs_house = yes
+1648.1.1   = { citysize = 16000 }
+1700.1.1   = { citysize = 28000 }
+1720.1.1   = { capital = "Mannheim" citysize = 30000 fine_arts_academy = yes } # Karl Philip moves his court to Mannheim. Known artists like Mozart, Schiller, Goethe,  are  his guests.
+1750.1.1   = { citysize = 35000 fort3 = yes }
+1792.10.1  = { controller = FRA } # Occupied by French troops
+1792.12.3  = { controller = MAI } # Prussian troops take control
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1810.1.1   = {	owner = FRN
+		controller = FRN
+		add_core = FRN
+		remove_core = MAI
+		capital = "Frankfurt"
+	     } # The Grand Duchy of Frankfurt, established after the Treaty of Schönbrunn
+1813.12.1  = {	owner = MAI
+		controller = MAI
+		add_core = MAI
+		remove_core = FRN
+	     } # The end of the Duchy
+1816.1.1   = {	owner = HES
+		controller = HES
+		add_core = HES
+	     } # Given to Hesse-Darmstadt

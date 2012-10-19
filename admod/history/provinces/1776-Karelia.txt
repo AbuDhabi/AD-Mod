@@ -1,0 +1,57 @@
+#East Karelia
+
+capital = "Kandalaksha"
+culture = karelian
+religion = shamanism
+add_core = FIN
+hre = no
+base_tax = 1
+trade_goods = fur
+manpower = 1
+native_hostileness = 1
+native_size = 4
+native_ferocity = 2
+discovered_by = eastern
+discovered_by = western
+
+1250.1.1 = {	owner = NOV
+		controller = NOV 
+		add_core = NOV
+		citysize = 200
+		trade_goods = fur
+	   } 
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		add_core = NOV
+		citysize = 200 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = FIN
+		controller = FIN }
+
+#Historical Campaign
+1399.10.14 = {	owner = NOV
+		controller = NOV
+		add_core = NOV }
+
+1450.1.1  = { citysize = 1000 }
+1460.1.1 = { fort1 = yes }
+1478.1.14 = {	owner = MOS
+		controller = MOS
+		add_core = MOS
+		remove_core = NOV
+	    }
+1503.3.22 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	    }
+1700.1.1  = { citysize = 2000 }
+1750.1.1  = { citysize = 4000 culture = russian religion = orthodox }

@@ -1,0 +1,56 @@
+#313 - Archangelsk
+
+owner = NOV 
+controller = NOV   
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 4
+trade_goods = fur  
+manpower = 1
+capital = "Kholmogory"
+citysize = 1000
+add_core = NOV
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+
+#Black Death
+1399.10.11 = {	owner = QAS
+		controller = QAS
+		add_core = QAS
+		religion = sunni }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		remove_core = QAS
+		religion = orthodox }
+
+1419.1.1  = { revolt_risk = 5 } # Kholmogory is plundered by Norwegians
+1420.1.1  = { revolt_risk = 0 }
+1450.1.1  = { citysize = 3000 }
+1478.1.14 = {	owner = MOS
+		controller = MOS
+		add_core = MOS
+		remove_core = NOV
+	    } # Passed to Muscovy with the rest of Novgorod republic
+1500.1.1  = { citysize = 5657 }
+1503.3.22 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	    }
+	     
+1550.1.1  = { citysize =  6656 }
+1554.1.1  = { marketplace = yes }
+1584.1.1  = { capital = "Archangelsk" fort1 = yes }
+1598.1.1  = { revolt_risk = 5 } # "Time of troubles"
+1600.1.1  = { citysize = 7830 }
+1613.1.1  = { revolt_risk = 0 } # Order returned, Romanov dynasty
+1650.1.1  = { citysize = 9212 }
+1693.1.1  = { shipyard = yes } # Peter I ordered the creation of a state shipyard
+1700.1.1  = { citysize = 10838 }
+1701.1.1  = { fort2 = yes } # New Dvina Fortress
+1750.1.1  = { citysize = 12750 }
+1800.1.1  = { citysize = 15000 }

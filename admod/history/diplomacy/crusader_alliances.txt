@@ -1,0 +1,20 @@
+alliance = {
+	first = PAP
+	second = KOJ
+	start_date = 1399.10.12
+	end_date = 1399.10.13
+}
+
+alliance = {
+	first = BYZ
+	second = ALX
+	start_date = 1399.10.12
+	end_date = 1399.10.13
+}
+
+royal_marriage = {
+	first = KOJ
+	second = ALX
+	start_date = 1399.10.12
+	end_date = 1399.10.13
+}

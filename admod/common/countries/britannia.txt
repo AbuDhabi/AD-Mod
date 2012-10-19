@@ -1,0 +1,228 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 138  5  5 }
+
+historical_ideas = {
+	bill_of_rights
+	superior_seamanship
+	quest_for_the_new_world
+	excellent_shipwrights
+	merchant_adventures
+	colonial_ventures
+	land_of_opportunity
+	press_gangs
+	national_bank
+	ecumenism
+	smithian_economics
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Conan #0" = 20
+	"Owain #0" = 20
+	"Llewelyn #0" = 20
+	"Arthnou #0" = 15
+	"Cador #0" = 10
+	"Dafydd #0" = 10
+	"Duncan #0" = 10
+	"Gruffydd #0" = 10
+	"Gwyneth #0" = -10
+	"Hoel #0" = 10
+	"Howel #0" = 10
+	"Rhodri #0" = 10
+	"Maredudd #0" = 10
+	"Cynan #0" = 10
+	"Turlough #0" = 10
+	"Donal #0" = 10
+	"Muireadhach #0" = 10
+	"Conchobhar #0" = 10
+	"Feidlimidh #0" = 10
+	"Cathaoir #0" = 10
+	"Muchadh #0" = 10
+	"Arthur #0" = 5
+	"Cadwaladr #3" = 5
+	"Iago #3" = 5
+	"Idwal #2" = 5
+	"Iseult #0" = -5
+	"Maelgwyn #2" = 5
+	"Einion #1" = 5
+	"Iorwerth #1" = 5
+	"Trahaearn #1" = 5
+	"Aeron #0" = 0
+	"Aled #0" = 0
+	"Aneirin #0" = 0
+	"Arvel #0" = 0
+	"Berwyn #0" = 0
+	"Brynmor #0" = 0
+	"Cadfael #0" = 0
+	"Cadoc #0" = 0
+	"Cadwgawn #0" = 0
+	"Celyn #0" = 0
+	"Cledwyn #0" = 0
+	"Colwyn #0" = 0
+	"Dai #0" = 0
+	"Dilwyn #0" = 0
+	"Emyr #0" = 0
+	"Gawain #0" = 0
+	"Glynn #0" = 0
+	"Gwyn #0" = 0
+	"Heddwyn #0" = 0
+	"Heilyn #0" = 0
+	"Hywel #0" = 0
+	"Rhian #0" = 0
+	"Tristan #0" = 0
+	"Tudor #0" = 0
+	"Urien #0" = 0
+	"Vaughan #0" = 0
+	"Daveth #0" = 0
+	"Jago #0" = 0
+	"Jory #0" = 0
+	"Jowan #0" = 0
+	"Margh #0" = 0
+	"Myghal #0" = 0
+	"Pasco #0" = 0
+	"Piran #0" = 0
+	"Alan #0" = 0
+	"Colan #0" = 0
+	"Digory #0" = 0
+	"Gawen #0" = 0
+	"Kenver #0" = 0
+	"Kenwyn #0" = 0
+	"Kitto #0" = 0
+	"Maban #0" = 0
+	"Madern #0" = 0
+	"Melor #0" = 0
+	"Meriasek #0" = 0
+	"Peder #0" = 0
+	"Perran #0" = 0
+	"Petrok #0" = 0
+	"Ruan Talan #0" = 0
+	"Talek #0" = 0
+	"Tomas #0" = 0
+	"Uther #0" = 0
+	"Wella #0" = 0
+	"Yestin #0" = 0
+	"Aerdghal #0" = 0
+	"Bearach #0" = 0
+	"Caoímhin #0" = 0
+	"Donnabhain #0" = 0
+	"Eíhmhín #0" = 0
+	"Fearghal #0" = 0
+	"Iarfhlaith #0" = 0
+	"Lorccán #0" = 0
+	"Mathúin #0" = 0
+	"Naomhán #0" = 0
+	"Oisín #0" = 0
+	"Pádraig #0" = 0
+	"Ríagáin #0" = 0
+	"Somhairle #0" = 0
+}
+
+leader_names = { 
+	Audley
+	Boscawen
+	Carew Chynoweth Clemow Collett Connor Cornish Curnow
+	Davy Drake Drew
+	Endean
+	Flamank Furze
+	Gwynn
+	Hale
+	Innes
+	Jago James Jenner Jolley Joseph
+	Keverne
+	Lanyon Locke Lyon
+	Menhenick 
+	Oates
+	Pascoe Penberthy Pendennis Penhaligon Pentreath Pethick Polwin
+	Quintrell
+	Roscarrock Rosewarne
+	"St Aubyn" Sweet
+	Trehearne Trelawny Trescothick Trevelyan Trevithick Tyrell
+	Warren Weekes
+	Bennett Bevan Bowen
+	Cadell Cadwallader
+	Daniels Davis Davies
+	Edwards Ellis Evans
+	Griffiths Gough Gwyn
+	Harris Hopkins Howells Hughes Humphries
+	James Jenkins John Jones
+	Lewis Llewellyn Lloyd
+	Madog Matthews Meredith Merrick Morgan Morris Mostyn
+	Owen
+	Parry Phillips Powell Prees Price Pritchard Protheroe Pugh
+	Rees Richards Roberts Rogers
+	Thomas
+	Vaughan
+	Watkins Williams
+	Adam Alexander
+	Bruce Beaton Boyd
+	Cameron Campbell Cochrane Crichton Cunynghame Crawford Carnegie Colyear
+	Douglas Duncan "de Dunbar" Dalzell Drummond
+	Erskine
+	Forbes Ferguson Fletcher Fleming
+	Gordon Graham Gilchrist
+	Hume Hepburn Hamilton
+	Johnstone
+	Knox Keith Kerr
+	Law Leslie Livingston Lindsay
+	MacKenzie MacDonald MacGregor Malise MacTaggart Montgomerie Maxwell Murray Maitland
+	Nasmyth
+	Ogilvy
+	Playfair Paterson
+	Raeburn Randolph Ruthven
+	Selkirk Strathbogie Sinclair Stewart Seton
+	Wilkie Wishart Wemyss	
+}
+
+ship_names = {
+        Arthur
+        Bodmin Bolster Brutus
+        Chough Corineus Cormoran Cornishman
+        Dumnonia
+        Excalibur
+        Falmouth
+        Galahad Gawain Guinevere
+        "Hal-an-Tow" Helston
+        Kernow "King Mark"
+        Lancelot Launceston Lizard Lostwithiel Lyonesse
+        Marazion Mousehole
+        Pendragon Penzance Porthleven
+        Restormel
+        Scillonian Stannary
+        Tamar Tintagel Trelawny Truro
+        Whitsand
+
+	Bedwyr Brycheiniog
+	Cadwaladr Caerdydd Caernarfon Caradoc Ceredigion Conwy Culhwch  
+	Deheubarth "Dewi Sant" Dolbadarn Dolwyddelan Dyfed
+	Eryri
+	Glywysing Gwalchmei "Gwenan Gorn" Gwydion Gwyn Gwynedd
+	Lleu "Llewellyn Fawr"
+	Mabinogi Math Meirionydd Morgannwg
+	Olwen "Owain Glyndwr"
+	Penfro Powys "Preiddeu Annwn" Pryderi Pwyll
+	Rhiannon
+	Taff Teifi Teirnon Tywi
+	"Ynys Môn"
+}

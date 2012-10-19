@@ -1,0 +1,5 @@
+discovered_by = SIX
+discovered_by = HUR
+discovered_by = IRO
+discovered_by = MEO
+1634.1.1 = { discovered_by = FRA }

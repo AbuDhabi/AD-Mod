@@ -1,0 +1,51 @@
+#911 - Menominee
+
+culture = menominee
+religion = spiritualism
+capital = "Menominee"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 15
+native_ferocity = 2
+native_hostileness = 6
+discovered_by = MEO
+discovered_by = ANI
+
+#Black Death
+1399.10.11 = {	owner = MEO
+		controller = MEO
+		add_core = MEO
+		citysize = 2000
+		trade_goods = fur }
+
+#Nevermind
+1399.10.12 = {	owner = XXX
+		controller = XXX
+		remove_core = MEO
+		citysize = 0
+		trade_goods = unknown }
+
+1634.1.1  = { discovered_by = FRA } # Jean Nicolet
+1671.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+		citysize = 200
+	    } # Founding of St. Ignace
+1696.1.1  = { add_core = FRA }
+1700.1.1  = { citysize = 690 trade_goods = fur }
+1750.1.1  = { citysize = 1388 }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1774.1.1  = { add_core = QUE } # United with Canada under the Quebec Act of 1774
+1783.9.3  = {	owner = USA
+		add_core = USA
+		remove_core = QUE
+	    } # Treaty of Paris, passed to the U.S but still under British control
+1800.1.1  = { citysize = 4780 }

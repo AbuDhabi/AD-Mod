@@ -1,0 +1,127 @@
+graphical_culture = easterngfx
+
+is_colonial = yes
+
+color = { 122  142  163 }
+
+historical_ideas = {
+	national_conscripts
+	military_drill
+	quest_for_the_new_world
+	merchant_adventures
+	battlefield_commisions
+	national_trade_policy
+	regimental_system
+	grand_army
+	espionage
+	grand_navy
+	glorious_arms
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Grigoriy #0" = 20
+	"Konstantin #0" = 20
+	"Evstrat #0" = 20
+	"Aleksandr #0" = 20
+	"Leonty #0" = 10
+	"Mikhail #0" = 10
+	"Matvey #0" = 10
+	"Dmitriy #0" = 10
+	"Ivan #0" = 5
+	"Fyodor #0" = 5
+	"Pyotr #0" = 5
+	"Vasiliy #0" = 5
+	"Alexei #0" = 5
+	"Boris #0" = 5
+	"Pavel #0" = 5
+	"Yekaterina #0" = -5
+	"Yuriy #0" = 5
+	"Anna #0" = -5
+	"Elizaveta #0" = -5
+	"Andrei #3" = 0
+	"Semen #1" = 0
+	"Nikolai #0" = 10
+	"Afanasiy #0" = 0
+	"Anatoliy #0" = 0
+	"Anton #0" = 0
+	"Arseniy #0" = 0
+	"Artamon #0" = 0
+	"Artemiy #0" = 0
+	"Bogdan #0" = 0
+	"Demyan #0" = 0
+	"Epifaniy #0" = 0
+	"Feofan #0" = 0
+	"Gavriil #0" = 0
+	"Iosif #0" = 0
+	"Isaak #0" = 0
+	"Kirill #0" = 0
+	"Lavrentiy #0" = 0
+	"Lazar #0" = 0
+	"Lev #0" = 0
+	"Malyuta #0" = 0
+	"Mark #0" = 0
+	"Mefodiy #0" = 0
+	"Nikifor #0" = 0
+	"Nikita #0" = 0
+	"Nikodim #0" = 0
+	"Oleg #0" = 0
+	"Platon #0" = 0
+	"Prokopiy #0" = 0
+	"Sergei #0" = 0
+	"Stanislav #0" = 0
+	"Varfolomey #0" = 0
+	"Yefim #0" = 0
+	"Yulian #0" = 0
+}
+
+leader_names = {
+	Adashev Apraxine Atlasov
+	Basmanov Baryatiski Bibikov Beketov Baranov
+	Chernigovets Chelyuskin Chuiski
+	Dolgorukov Dubenski Dezhnev Delarov
+	Ermolov
+	Fermor
+	Godunov Golitsyn Golikov Gagarin Glinski
+	Kasimovskiy Kurbski Khovanski Kutuzov Koltsov-Mosalski Khabarov
+	Mikulinski Menshikov Minih Mansurov Moskvitin
+	Ovchina-Obolenski Osterman-Tolstoy Orlov
+	Pozharski Potemkin Petrov Poyarkov Patrikeev
+	Romodanovski Rumyantsev Repnin Rebrov
+	Shuiski Sheremetev Skopin Shein Soltikov Spiridof Senyavin Stroganov Semenov Shelikhov
+	Tottleben "de Tolly" Tomasov
+	Ushakov
+	Vorotinski Vishnevetski
+	Wittgenstein
+	Yalichev Yermak
+}
+
+ship_names = {
+	Alexander
+	Baranov
+	Delarov
+	Elizabeth
+	Golikov
+	Kolmakov
+	Nulato
+	Riurik Ross
+	Samoilov Shelikhov Sitka Sonoma "St. Dionysius" 
+	Yakutat 
+}

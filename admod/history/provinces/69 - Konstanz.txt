@@ -1,0 +1,48 @@
+# 69 - Konstanz
+culture = bavarian
+owner = WUR
+controller = WUR
+add_core = WUR
+capital = "Konstanz"
+religion = catholic
+trade_goods = salt
+base_tax = 5
+manpower = 1
+citysize = 5000
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+fort1 = yes
+marketplace = yes
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = WUR
+		controller = WUR
+		citysize = 5000 }
+
+1450.1.1  = { citysize = 6000 }
+1519.1.1  = { controller = HAB owner = HAB add_core = HAB revolt_risk = 8 fort2 = yes } # After attacking the free town of Reutlingen the Duke of Würtemberg is sent fleeing and the country governed by  the Austrians.
+1534.1.1  = { revolt_risk = 0 owner = WUR controller = WUR religion = protestant } # House Würtemberg reconquers the country and installs the protestant religion.
+1670.1.1  = { citysize = 7000 fort3 = yes constable = yes }
+1700.1.1  = { courthouse = yes citysize = 16000 }
+1733.1.1  = { revolt_risk = 2 base_tax = 5 } # Karl Alexander becomes Duke of Würtemberg. He is a catholic with a jewish  advisor, which is very much resented by the protestant nobility.
+1737.3.12 = { revolt_risk = 0 } # Death of the Duke, execution of the advisor after a set up process.
+1750.3.12 = { citysize = 5500 tax_assessor = yes }
+1799.1.1  = {	owner = MAI
+		controller = MAI
+		add_core = MAI
+		remove_core = WUR
+	    } # Karl Theodor von Dalberg is elected coadjutor of Konstanz
+1801.2.9  = {	owner = BAD
+		controller = BAD
+		add_core = BAD
+		remove_core = MAI
+	    } # Treaty of Lunéville, incorporated into Baden
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

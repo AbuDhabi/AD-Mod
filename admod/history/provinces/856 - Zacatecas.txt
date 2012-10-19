@@ -1,0 +1,39 @@
+#856 - Zacatecas
+
+culture = aztek 
+religion = teotl
+capital = "Zacatecas" 
+trade_goods = unknown
+hre = no
+base_tax = 1 
+manpower = 3 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 5
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+1428.1.1  = {	owner = AZT
+		controller = AZT
+		add_core = AZT
+		citysize = 2500
+		discovered_by = AZT
+		trade_goods = gold 
+	    } # The Aztec Triple Alliance
+1450.1.1  = { citysize = 2850 }
+1500.1.1  = { citysize = 3100 }
+1546.1.1  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	    } # First discoveries of silver 
+1550.1.1  = { citysize = 6150 cot = no } # Silver rush 
+1571.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 8700 } 
+1650.1.1  = { citysize = 10504 } 
+1700.1.1  = { citysize = 12400 } 
+1750.1.1  = { citysize = 18750 add_core = MEX } 
+1800.1.1  = { citysize = 30200 }
+1810.9.16 = { owner = MEX controller = MEX } # Mexican War of Independence

@@ -1,0 +1,105 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 136  195  232 }
+
+historical_ideas = {
+	bill_of_rights
+	superior_seamanship
+	quest_for_the_new_world
+	excellent_shipwrights
+	merchant_adventures
+	colonial_ventures
+	land_of_opportunity
+	press_gangs
+	national_bank
+	ecumenism
+	smithian_economics
+	napoleonic_warfare
+}
+
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	muscovite_musketeer
+	muscovite_caracolle
+	muscovite_soldaty
+	muscovite_cossack
+	russian_petrine
+	russian_lancer
+	russian_green_coat
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+
+monarch_names = {
+	"Konstantin #0" = 40
+	"Konrad #0" = 35
+	"Georg #0" = 30
+	"Arvo #0" = 25
+	"Ernst #0" = 25
+	"Kristina #0" = -25
+	"Karl #0" = 20
+	"Johan #0" = 15
+	"Artur #0" = 10
+	"Jüri #0" = 10
+	"Alfons #0" = 5
+	"Priit #0" = 5
+	"Vilen #0" = 5
+	"Anton #0" = 0
+	"Bernhard #0" = 0
+	"Dietrich #0" = 0
+	"Dmitri #0" = 0
+	"Elmar #0" = 0
+	"Hjalmer #0" = 0
+	"Ilon #0" = 0
+	"Juhan #0" = 0
+	"Julius #0" = 0
+	"Kaido #0" = 0
+	"Lennart #0" = 0
+	"Lukas #0" = 0
+	"Markus #0" = 0
+	"Nicolaus #0" = 0
+	"Olev #0" = 0
+	"Oskar #0" = 0
+	"Paul #0" = 0
+	"Peep #0" = 0
+	"Thomas #0" = 0
+	"Tõnis #0" = 0
+}
+
+leader_names = {
+	Altosaar Alver
+	Bruns Burman
+	Habermann Hellat
+	Johanson Jänes
+	Kahn Kallis Kant Kapp Kass Keres Koidula Kotli Kuperjanov Kuusik Kühnert
+	Laidoner Liiv Lohk Lurich
+	Mägi
+	Öpik
+	Pärt
+	Rebane "Robert Jakobsen"
+	Sepmann Siinmaa Soans
+	Tammsaare Tampõld Tork
+	Uluots
+	Vähi Viiding
+	Wikland
+}
+
+ship_names = {
+	Ärkamisaeg
+	Halinga
+	Independence
+	Jaagupi
+	Kadrina Kalevipoeg Karja
+	Paistu Pärnu
+	Mihkli Muhu
+	Seto
+	Tõstamaa
+}

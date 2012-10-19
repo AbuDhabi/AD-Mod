@@ -1,0 +1,11 @@
+# Coehorn Mortar
+# land 45
+type = artillery
+
+maneuver = 2
+offensive_morale = 10
+defensive_morale = 10
+offensive_fire = 7
+defensive_fire = 5
+offensive_shock = 7
+defensive_shock = 6

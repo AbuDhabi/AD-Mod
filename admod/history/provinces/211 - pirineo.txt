@@ -1,0 +1,61 @@
+#211 - Pirineo
+
+owner = ARA		#Alfons V of Aragon
+controller = ARA
+add_core = ARA
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 4
+trade_goods = wool
+manpower = 2
+fort1 = yes
+capital = "Huesca" 
+citysize = 3250
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = CAT
+		controller = CAT
+		add_core = CAT }
+
+#Nevermind
+1399.10.12 = {	owner = ARA
+		controller = ARA
+		remove_core = CAT }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = ZAR
+		controller = ZAR
+		add_core = ZAR
+		remove_core = ARA
+		religion = judaism
+		culture = zaragozi }
+
+#Historical Campaign
+1399.10.14 = {	owner = ARA
+		controller = ARA
+		add_core = ARA
+		remove_core = ZAR
+		religion = catholic
+		culture = catalan }
+
+1500.1.1   = { citysize = 3800 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1550.1.1   = { citysize = 4100 }
+1600.1.1   = { citysize = 4663 }
+1650.1.1   = { citysize = 5005 marketplace = yes }
+1700.1.1   = { citysize = 5524 }
+1705.6.29  = { controller = HAB } # Aragon joins the Austrian side in the War of Spanish Succession
+1707.5.26  = { controller = SPA } # Aragon surrenders
+1713.7.13  = { remove_core = ARA }
+1750.1.1   = { citysize = 6150 }
+1800.1.1   = { citysize = 6800 }
+1813.8.31  = { revolt = { type = pretender_rebels size = 1 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }

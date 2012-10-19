@@ -1,0 +1,144 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 179  141  91 }
+
+historical_ideas = {
+	merchant_adventures
+	national_conscripts
+	military_drill
+	patron_of_art
+	shrewd_commerce_practise 
+	national_trade_policy
+	national_bank
+	smithian_economics
+	ecumenism
+	scientific_revolution
+	espionage
+	bureaucracy
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	french_bluecoat
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Albert #0" = 15
+	"Baudouin #0" = 15
+	"Margareta #0" = -15
+	"Jan #0" = 15
+	"Leopold #0" = 15
+	"Philippe #0" = 15
+	"Charles #0" = 10
+	"Antoon #0" = 5
+	"Arnolf #0" = 5
+	"Boudewijn #0" = 5
+	"Diederik #0" = 5
+	"Elizabeth #0" = -5
+	"Karel #0" = 5
+	"Lodewijk #0" = 5
+	"Robrecht #0" = 5
+	"Gwijde #0" = 5
+	"Willem #0" = 5
+	"Abraham #0" = 0
+	"Albrecht #0" = 0
+	"Alexander #0" = 0
+	"Alfons #0" = 0
+	"Andries #0" = 0
+	"Balthasar #0" = 0
+	"Bartholomeus #0" = 0
+	"Claude #0" = 0
+	"Christoffel #0" = 0
+	"Constantijn #0" = 0
+	"Cornelis #0" = 0
+	"Daniël #0" = 0
+	"David #0" = 0
+	"Denis #0" = 0
+	"Ernst #0" = 0
+	"Erwin #0" = 0
+	"Ewoud #0" = 0
+	"Filips #0" = 0
+	"Floris #0" = 0
+	"Gabriel #0" = 0
+	"Godfried #0" = 0
+	"Gui #0" = 0
+	"Hans #0" = 0
+	"Isaak #0" = 0
+	"Jacob #0" = 0
+	"Kasper #0" = 0
+	"Ludger #0" = 0
+	"Luuk #0" = 0
+	"Marinus #0" = 0
+	"Pascal #0" = 0
+	"Pierre #0" = 0
+	"Pieter #0" = 0
+	"Raoul #0" = 0
+	"Renate #0" = 0
+	"Rodolf #0" = 0
+	"Roeland #0" = 0
+	"Simon #0" = 0
+	"Xavier #0" = 0
+	"Valentijn #0" = 0
+}
+
+leader_names = {
+	Dampierre Deconinck
+	Goethals
+	Nevers
+	Penen
+	"Van Bellegem" "Van Gulik"
+	"Van Herstal" "Van Leeuwergem"
+	"Van Lichtervelde" "Van Nieuwland"
+	"Van Oudenaarde" "Van Petershem"
+	"Van Raveschoot" "Van Renesse"
+	"von Bettborn" "von Bous" "von Capellen" "von Grevenmach"
+	"von Grosbous" "von Pontpierre" "von Reisdorf" "von Redange"
+	"von Diekirch" "von Schuttrange" Borchert Bültel Dumont
+	Genot Hoscheit Mersch Nissar Riener Schannen Pinkernell
+	Petilliot Paguet "von Sommerfeld" Voigt Weiler Winen Biberen
+	Clees Cemmerer Croye Delhaes "du Carme" Gonderinger Greff Herrig
+	Maussen Bourscheidt
+        d'Aban d'Abonde Arbelot d'Auxy
+        "de Balay" "de Bauffremont" "de Beaumont" "de Beugre" "de Boulay" "de Bourgeois" Bourgogne-Montaigu "de Brachet" "de Brimeu"
+        "de Castaing" "de Chabot" "de Châlon" "de Châlon-Arlay" "de Chandieu" "de Chastellux" "de Chin" "de Cicon" "de Coligny" "de Créquy" "de Cuiseaux"
+        "de Damas" "de Dammartin" "de Donzy" "de Dyo"
+        "d'Egmont"
+        "de Ferrette"
+        "de Lalaing" "de Lannoy" "Le Corgne" "de Lugny"
+        "de Marle" "de Melun" "de Montfaucon"
+        "Nagu de Varennes" "de Nanton" "de Neufchâtel" "de Noyelles"
+        "de Pontailler" "de la Porte"
+        "Pot de la Roche" "de Rochebaron" "de Rochechouart" "de Roye"
+        "de Scorailles" "de Sémur"
+        "de Ternant" "de Tonnerre" "de Toucy" "de Toulonjon"
+        "de Vaubresson" "de Vaudrey" "de Vellexon" "de Vergy" "de Vienne" "de Villaines" "de Villiers"
+}
+
+ship_names = {
+	Antwerpen
+	Brugge
+	"De Vlaamse leeuw"
+	Gent Guldensporenslag "Gwijde van Dampierre"
+	Hasselt
+	"Jacob van Artevelde"
+	"Karel de Goede" "Kerel van Vlaanderen"
+	Leuven
+	"Manneken Pis" Mechelen
+	"Pieter de Coninck"
+	Schelde
+	"Tijl Uilenspiegel"
+	Vlaanderen
+}

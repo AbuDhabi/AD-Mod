@@ -1,0 +1,71 @@
+#Estland, incl. Reval, Hapsal, Weissenstein, Wesenberg, Pernau and Narva.
+
+owner = TEU
+controller = TEU
+add_core = TEU
+culture = estonian
+religion = catholic
+hre = yes
+base_tax = 2
+trade_goods = grain
+manpower = 2
+capital = "Reval"
+citysize = 7000
+fort1 = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Nevermind
+1399.10.12 = {	owner = TEU
+		controller = TEU
+		remove_core = EST
+		religion = catholic
+		hre = yes }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	owner = EST
+		controller = EST
+		add_core = EST
+		religion = animism
+		hre = no }
+
+#Historical Campaign
+1399.10.14 = {	owner = TEU
+		controller = TEU
+		add_core = TEU
+		remove_core = EST
+		religion = catholic
+		hre = yes }
+
+1450.1.1   = { citysize = 8000 }
+1466.10.19 = {	owner = LIV
+		controller = LIV
+		add_core = LIV
+		remove_core = TEU
+	     } # Peace of Torun
+1520.1.1   = { marketplace = yes }
+1542.1.1   = { religion = protestant} # Unknown date
+1561.1.1   = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		remove_core = LIV
+	     } # Estimated
+1600.1.1   = { citysize = 9000 }
+1700.1.1   = { citysize = 10000 }
+1710.9.15  = { controller = RUS citysize = 2000 } # The Great Nordic War-Captured Reval
+1721.8.30  = {	owner = RUS
+		add_core = RUS
+		remove_core = SWE
+	     } # The Peace of Nystad
+1750.1.1   = { citysize = 6000 }
+1800.1.1   = { citysize = 12000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved

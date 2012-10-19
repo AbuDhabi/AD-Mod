@@ -1,0 +1,22 @@
+government = despotic_monarchy
+aristocracy_plutocracy = -2
+centralization_decentralization = 4
+innovative_narrowminded = 4
+mercantilism_freetrade = -3
+offensive_defensive = 2
+land_naval = -1
+quality_quantity = 3
+serfdom_freesubjects = -2
+technology_group = muslim
+primary_culture = malal
+religion = sunni
+capital = 240	#Marches
+
+1399.10.1 = {
+	monarch = {
+		name = "Mûsâ I Diallo"
+		adm = 7
+		dip = 6
+		mil = 6
+	}
+}

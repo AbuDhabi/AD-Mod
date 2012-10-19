@@ -1,0 +1,63 @@
+#275 - Polotsk
+
+owner = LIT 
+controller = LIT 
+culture = byelorussian
+religion = orthodox 
+hre = no
+base_tax = 4
+trade_goods = iron
+manpower = 5
+capital = "Polotsk"
+citysize = 17500 
+fort1 = yes
+add_core = PLT
+discovered_by = western
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = SKA
+discovered_by = JOC
+
+#Dark Continent
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = LIT
+		controller = LIT
+		citysize = 17500 }
+
+#Shattered Europe
+1399.10.13 = {	owner = PLT
+		controller = PLT
+		religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	owner = LIT
+		controller = LIT
+		religion = orthodox }
+
+1450.1.1   = { citysize = 22000 add_core = LIT }
+1480.1.1   = { marketplace = yes } # Main center of trade in the state.
+1500.1.1   = { citysize = 25300 }
+1503.1.1   = { temple = yes } # Cathedral of Saint Sophia, established 1044 - 1066
+1550.1.1   = { citysize = 29095 fort2 = yes }
+1563.2.15  = { controller = RUS } # Captured by Ivan the Terrible, during the Livonian war
+1569.7.1   = {	owner = POL
+	     	controller = POL
+	     } # Union of Lublin
+1600.1.1   = { citysize = 33459 add_core = POL } 
+1623.1.1   = { revolt_risk = 4 } # Iosafat Kuntsevich overthrown and drowned
+1624.1.1   = { revolt_risk = 0 }
+1650.1.1   = { fort3 = yes citysize = 38478 }
+1700.1.1   = { citysize = 20000 } # After the devastating wars with Muscovy
+1750.1.1   = { citysize = 12000 } # Russian wars
+1772.8.5   = {	add_core = RUS
+		owner = RUS
+		controller = RUS
+		remove_core = POL
+	     } # First partition of Poland
+1794.3.24  = { revolt_risk = 5 } # Kosciuszko uprising, minimize the Russian influence
+1794.11.16 = { revolt_risk = 0 }
+1800.1.1   = { citysize = 9000 }

@@ -1,0 +1,68 @@
+#103 - Piedmont
+
+owner = SAV
+controller = SAV
+culture = lombard
+religion = catholic
+hre = yes
+base_tax = 7
+trade_goods = cloth
+manpower = 3
+fort1 = yes
+capital = "Torino"
+citysize = 35000 # Estimated
+add_core = SAV
+marketplace = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SAV
+		controller = SAV
+		citysize = 35000 }
+
+1404.1.1  = { university = yes } # University of Torino
+1450.1.1  = { citysize = 40000 }
+1498.1.1  = { temple = yes }	# Cattedrale di San Giovanni Battista (Duomo di Torino)
+1563.1.1  = { citysize = 60000 } # Savoyard capital moved from Chambery to Torino, Holy Shroud moved
+1499.1.1   = { owner = FRA controller = FRA add_core = FRA } 
+1520.1.1  = { citysize = 45000 } # Gained Asti from the marriage with Beatriz of Portugal
+1529.1.1   = { owner = SAV controller = SAV } 
+1536.4.1   = { controller = FRA } 
+1538.6.17  = { owner = FRA } # Treaty of Nice
+1550.1.1  = { citysize = 52000 }
+1559.1.1   = { owner = SAV controller = SAV remove_core = FRA } 
+1600.1.1  = { citysize = 76000 }
+1650.1.1  = { citysize = 89000 }
+1700.1.1  = { citysize = 94000 }
+1713.4.12  = {	owner = SIC
+		controller = SIC
+		add_core = SIC
+		remove_core = SAV
+	     } # Treaty of Utrecht(2) gave Sicily to the House of Savoy 
+1720.1.1   = {	owner = SPI
+		controller = SPI
+		add_core = SPI
+		remove_core = SIC
+	     } # Kingdom of Piedmont-Sardinia
+1750.1.1  = { citysize = 112000 }
+1760.1.1  = { tax_assessor = yes }
+1792.9.21  = { controller = RFR } # Occupied by French troops
+1792.11.27 = {	owner = RFR
+		add_core = RFR
+	     } # Savoie is annexed
+1800.1.1  = { citysize = 145000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = SPI
+		controller = SPI
+		remove_core = RFR
+	     } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+
+

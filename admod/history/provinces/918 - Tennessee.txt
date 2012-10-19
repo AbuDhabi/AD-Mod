@@ -1,0 +1,43 @@
+#918 - Tennessee
+
+owner = CHE
+controller = CHE
+culture = cherokee
+religion = spiritualism
+capital = "Tennessee"
+trade_goods = grain
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1500
+add_core = CHE
+discovered_by = CHE
+discovered_by = CRE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 1750 }
+1500.1.1  = { citysize = 2140 }
+1540.1.1  = { discovered_by = SPA } # Hernando de Soto
+1550.1.1  = { citysize = 2950 }
+1600.1.1  = { citysize = 3210 }
+1650.1.1  = { citysize = 3501 }
+1682.1.1  = { revolt_risk = 3 } # Frictions between the French & the indians
+1700.1.1  = { citysize = 4100 }
+1739.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+		remove_core = CHE
+	    } # Construction of Fort Assumption
+1750.1.1  = { citysize = 4800 add_core = LOU }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+	    }
+1783.9.3  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+	    } # Admitted to the Union
+1800.1.1  = { citysize = 5240 }

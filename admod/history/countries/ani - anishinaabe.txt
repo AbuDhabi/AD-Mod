@@ -1,0 +1,23 @@
+government = regular_horde
+aristocracy_plutocracy = -1
+centralization_decentralization = 5
+innovative_narrowminded = 3
+mercantilism_freetrade = 4
+offensive_defensive = 2
+land_naval = -3
+quality_quantity = 5
+serfdom_freesubjects = 4
+primary_culture = cree
+religion = spiritualism
+technology_group = new_world
+capital = 1007	# Ojibwa
+
+1379.1.1 = {
+	monarch = {
+		name = "Kechewaishke I"
+		dynasty = "Baswenaazhi"
+		adm = 7
+		dip = 4
+		mil = 5
+	}
+}

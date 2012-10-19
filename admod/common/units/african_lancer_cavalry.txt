@@ -1,0 +1,12 @@
+# African Lancer Cavalry
+# land 36
+unit_type = sub_saharan
+type = cavalry
+
+maneuver = 2
+offensive_morale = 8
+defensive_morale = 6
+offensive_fire = 3
+defensive_fire = 2
+offensive_shock = 9
+defensive_shock = 8

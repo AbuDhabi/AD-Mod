@@ -1,0 +1,72 @@
+#273 - Wenden
+
+owner = TEU
+controller = TEU
+culture = lithuanian
+religion = catholic
+capital = "Wenden"
+trade_goods = naval_supplies
+hre = no
+base_tax = 3
+manpower = 5
+citysize = 1500
+fort1 = yes
+add_core = TEU
+discovered_by = western
+discovered_by = eastern
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = TEU
+		controller = TEU
+		citysize = 1500 }
+
+#Shattered Europe
+1399.10.13 = {	religion = animism }
+
+#Historical
+1399.10.14 = {	religion = catholic }
+
+1450.1.1   = { citysize = 1700 }
+1466.10.19 = {	owner = LIV
+		controller = LIV
+		add_core = LIV
+		remove_core = TEU
+	     } # Peace of Torun
+1500.1.1   = { citysize = 1961 }
+1550.1.1   = { citysize = 2307 }
+1561.1.1   = {	owner = LIT
+		controller = LIT
+		add_core = LIT
+		remove_core = LIV
+		religion = catholic
+	     } # Conquered by Lithuania
+1569.7.1   = {	owner = POL
+		controller = POL
+		add_core = POL
+	     } # Union of Lublin
+1577.1.1   = { fort1 = no } # Castle destroyed
+1580.1.1   = { fort1 = yes } # Castle near the hill fort rebuilt, Riekstu hill
+1600.1.1   = { citysize = 2714 marketplace = yes }
+1629.9.16  = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		remove_core = POL
+	     }
+1650.1.1   = { citysize = 3193 }
+1700.1.1   = { citysize = 3757 }
+1703.1.1   = { fort2 = yes }
+1721.8.30  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = SWE
+	     } # The Peace of Nystad
+1730.1.1   = { tax_assessor = yes }
+1750.1.1   = { citysize = 4420 }
+1800.1.1   = { citysize = 5200 }

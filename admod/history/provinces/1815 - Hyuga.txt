@@ -1,0 +1,15 @@
+#1815 - Hyuga
+
+owner = TAC
+controller = TAC
+culture = yamato
+religion = shinto
+capital = "Hyuga"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 5760
+add_core = TAC
+fort1 = yes
+discovered_by = chinese

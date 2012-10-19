@@ -1,0 +1,12 @@
+# Prussian Uhlan
+# land 54
+type = cavalry
+unit_type = western
+
+maneuver = 2
+offensive_morale = 9
+defensive_morale = 10
+offensive_fire = 8
+defensive_fire = 9
+offensive_shock = 8
+defensive_shock = 10

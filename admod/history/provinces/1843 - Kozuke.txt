@@ -1,0 +1,17 @@
+#1843 - Kozuke
+
+owner = FUJ
+controller = FUJ
+culture = emishi
+religion = shinto
+capital = "Kozuke"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 6255
+add_core = FUJ
+fort1 = yes
+discovered_by = chinese
+
+1592.1.1 = { owner = MIN controller = MIN add_core = MIN }

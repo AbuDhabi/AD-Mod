@@ -1,0 +1,39 @@
+#936 - Cheraw
+
+owner = CHE
+controller = CHE
+culture = cherokee
+religion = spiritualism
+capital = "Cheraw"
+trade_goods = tobacco
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 1200
+add_core = CHE
+discovered_by = CHE
+discovered_by = CRE
+discovered_by = SHA
+
+1450.1.1  = { citysize = 1500 }
+1500.1.1  = { citysize = 1930 }
+1550.1.1  = { citysize = 2150 }
+1600.1.1  = { citysize = 2400 }
+1650.1.1  = { citysize = 2600 }
+1673.1.1  = { discovered_by = ENG } # James Needham and Gabriel Arthur
+1700.1.1  = { citysize = 3200 }
+1707.5.12 = { discovered_by = GBR } 
+1750.1.1  = { citysize = 3936 add_core = USA } # Colonized by the British
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		religion = protestant
+		culture = english
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1764.7.1  = {	culture = american
+		revolt_risk = 6
+	    } # Growing unrest
+1776.7.4  = {	owner = USA
+		controller = USA
+	    } # Declaration of independence
+1782.11.1 = { revolt_risk = 0 } # Preliminary articles of peace, the British recognized Amercian independence
+1800.1.1  = { citysize = 4565 }

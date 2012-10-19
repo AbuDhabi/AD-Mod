@@ -1,0 +1,24 @@
+government = tribal_empire
+aristocracy_plutocracy = 2
+centralization_decentralization = 5
+innovative_narrowminded = 4
+mercantilism_freetrade = -5
+offensive_defensive = 3
+land_naval = -2
+quality_quantity = 5
+serfdom_freesubjects = 2
+primary_culture = amazonian
+religion = inca_religion
+technology_group = s_new_world
+capital = 747	# Tucujulandia
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Anquimarca"
+		dynasty = "Huaman"
+		adm = 6
+		dip = 3
+		mil = 5
+	}
+}

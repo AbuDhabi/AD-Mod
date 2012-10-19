@@ -1,0 +1,43 @@
+#1100 - Mahe
+
+culture = malagasy
+religion = malagasy_rel
+capital = "Mahe"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 0
+
+1505.1.1  = { discovered_by = POR }
+1756.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 450
+		culture = cosmopolitan_french
+		religion = catholic
+		trade_goods = spices
+	    }
+1781.1.1  = { add_core = FRA }
+1789.7.14 = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	    } # The storming of the Bastille
+1800.1.1  = { citysize = 1500 }
+1814.4.11 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	    } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20 = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	    } # Napoleon enters Paris
+1815.7.8  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	    } # The French monarchy is restored

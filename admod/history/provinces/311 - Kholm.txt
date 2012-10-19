@@ -1,0 +1,57 @@
+#311 - Kholm
+
+owner = NOV
+controller = NOV
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 3 
+trade_goods = fur  
+manpower = 3
+capital = "Kholm"
+citysize = 3000
+fort1 = yes
+add_core = NOV
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+discovered_by = SKA
+discovered_by = JOC
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = NOV
+		controller = NOV
+		citysize = 3000 }
+
+1438.1.1  = { discovered_by = KAZ }
+1450.1.1  = { citysize = 4000 }
+1478.1.14 = {	owner = MOS
+		controller = MOS
+		add_core = MOS
+		remove_core = NOV
+	    }
+1500.1.1  = { citysize = 5000 marketplace = yes }
+1503.3.22 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = MOS
+	    }
+1550.1.1  = { citysize = 7000 }
+1570.1.1  = { citysize = 5300 } # The city was sacked
+1598.1.1  = { revolt_risk = 5 } # "Time of troubles"
+1600.1.1  = { citysize = 6000 }
+1615.1.1  = { citysize = 1000 } # Ingrian war
+1617.2.27 = { revolt_risk = 0 } 
+1650.1.1  = { citysize = 5000 fort2 = yes } # Fortifications were restored and reconstructed
+1700.1.1  = { citysize = 2000 }
+1707.1.1  = { revolt_risk = 3 } # The Kondraty Bulavin Rebellion
+1708.7.7  = { revolt_risk = 0 } # Bulains is shot
+1750.1.1  = { citysize = 3000 }
+1773.1.1  = { revolt_risk = 5 } # Peasant uprising, Pugachev
+1774.1.1  = { revolt_risk = 0 }
+1800.1.1  = { citysize = 5000 }

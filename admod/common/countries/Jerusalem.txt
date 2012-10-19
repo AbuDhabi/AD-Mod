@@ -1,0 +1,151 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 128  125  89 }
+
+historical_ideas = {
+	military_drill
+	national_conscripts
+	divine_supremacy
+	church_attendance_duty
+	grand_army
+	battlefield_commisions
+	glorious_arms
+	engineer_corps
+	espionage
+	national_trade_policy
+	merchant_adventures
+	shrewd_commerce_practise
+}
+
+historical_units = {
+	eastern_medieval_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Godfrey #1" = 60
+	"Baldwin #5" = 60
+	"Henry #2" = 40
+	"Amalric #2" = 30
+	"Sibylla #1" = -15
+	"John #2" = 10
+	"Fulk #1" = 10
+	"Conrad #3" = 10
+	"Isabella #2" = -10
+	"Melisende #1" = -5
+	"Maria #1" = -5
+	"Guy #1" = 5
+	"Hugues #1" = 5
+	"Balian #0" = 1
+	"Albrecht #0" = 0
+	"Alexandre #0" = 0
+	"Armand #0" = 0
+	"August #0" = 0
+	"Barthélémy #0" = 0
+	"Benedetto #0" = 0
+	"Benoît #0" = 0
+	"Bernard #0" = 0
+	"Blaise #0" = 0
+	"Carlos #0" = 0
+        "Claude #0" = 0
+	"Constanzo #0" = 0
+	"Cosimo #0" = 0
+	"Demetrio #0" = 0
+	"Emilio #0" = 0
+	"Enrique #0" = 0
+	"Fabio #0" = 0
+	"Ferdinand #0" = 0
+	"Francesco #0" = 0
+	"George #0" = 0
+	"Georges #0" = 0
+	"Giovanni #0" = 0
+	"Guillermo #0" = 0
+	"Jean-Baptiste #0" = 0
+        "Jean-Philippe #0" = 0
+	"Joseph #0" = 0
+	"Karl #0" = 0
+	"Ladislav #0" = 0
+	"Leopold #0" = 0
+	"Marc #0" = 0
+	"Matthias #0" = 0
+	"Maurice #0" = 0
+        "Michel #0" = 0
+	"Miguel #0" = 0
+	"Niccolò #0" = 0
+	"Nicolas #0" = 0
+	"Pascal #0" = 0
+	"Pierre #0" = 0
+	"Richard #0" = 0
+	"Romeo #0" = 0
+	"Severino #0" = 0
+	"Siegmund #0" = 0
+        "Simon #0" = 0
+	"Vittorio #0" = 0
+	"Wenzel #0" = 0
+}
+
+ship_names = {
+	Acre "Apostle's Creed" Arsuf Ascalon
+	"Baldwin I" "Baldwin II" "Baldwin III"
+	"The Cleansing" Colossian Constantine "The Crusader"
+	Ephesian
+	"The Faithful"
+	Galatian "The Grail"
+	Haifa Hama "Hammer of God" Hebrew "The Holy Cross" "Holy Sanctuary"
+	Intrepid
+	Jaffa James John Jude
+	Kerak "Kingdom of Heaven"
+	"Latin King"
+	Montgisard
+	Nablus
+	"Peace of God" Peter Philemon Philippian Providence Paul
+	Resurrection Revelations
+	Salvation "Shield of Faith"
+	Templar Thessalonian Tiberias Timothy Titus Trinity "True Believer" Tyre
+}
+
+leader_names = { 
+	Bragadin Crispo Doria Fadrigue Lusignans Melissinos Plethon Rendis Saraceno Tocco Maxwell Duncan Douglas Selkirk
+	Schrüder Sauerzapff Minucci Sulerzycki Stichsenstein Hagedorn Arenberg
+	"de La Barthe" "de La Ferrandie" "de La Galissonière" "de La Mothe" "de La Motte d'Airan" "de La Porte" "Le Tellier" "de Lhéry" "de Luynes"
+	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli "dalla Rosa" "della Rovere"
+        d'Ambleteuse d'Aulnay
+        "de Beauharnais" "de Bercy" "de Béthune" "de Boissieu" "de Bonnefoy" "de Bonneuil" "du Bosquet" "de la Bretonnière" "de Broglie"
+        "de Castaing" "de Caumartin" "de Chambly" "de Chambronne" "de Champmartin" "de Chevigny" "des Coulons" "de Crèvecoeur" "de Crussol"
+        "de Dampierre" Desgouttes Duquesne
+        "des Ecures" d'Entraigues d'Estrées
+        "du Fournay"
+        "de Galard"
+        "des Herbiers"
+        "de Marguerye" "de Maurepas"
+        "de Neufchâtel"
+        "d'Ornano"
+        "de Pellefort"
+        "de Richemont" "de Rochechouart" "de Rochemaure" "de Rieu"
+        "de Saint Chamond" "de Saint Esprit" "de Saint Germain" "de Saint Omer" "de Siorac"
+        "de Tocqueville" "de la Tour d'Auvergne" "de Tréville"
+        "d'Usson"
+        "du Valentinois" "de Vergennes" "de Vibien" "de Vigny" "de Villeneuve"
+	Angermann Appelt Beck Brilz Bröser Büttner
+	Hirsch Höhn Kammel Keller Kessler Koeppe Kohn Krämer
+	Kuhn Lindner Mertesdorf Meyer Mick Müller Necker Noell 
+	Uhlig "von Franken" "von Rothenburg" "von Schwaben"
+	"von Vitzgau" "von Weimar" Wachsmuth Wacht "von Werl"
+	"of Ibelin" "of Lusignan" "of Tyre"
+}

@@ -1,0 +1,45 @@
+#1757 - Oberpfalz
+
+owner = BAV
+controller = BAV
+add_core = BAV
+culture = bavarian
+religion = catholic
+cot = no
+base_tax = 7
+trade_goods = iron
+manpower = 4
+fort1 = yes
+capital	= "Regensburg" 
+citysize = 5000
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = BAV
+		controller = BAV
+		citysize = 5000 }
+
+1450.1.1  = { citysize = 6000 }
+#1525.1.1  = { customs_house = yes }
+1550.1.1  = { marketplace = yes }
+1585.1.1  = { constable = yes }
+1600.1.1  = { citysize = 8000 }
+1620.1.1  = { courthouse = yes }
+1634.1.1  = { citysize = 5000 } # 30 years war (Swedes) and plague kill large parts of the population
+1700.1.1  = { citysize = 9000 }
+1704.8.13 = {	owner = HAB
+		controller = HAB
+	    } # Bavaria is conquered by the Emperor, is however later restored for the balance of power
+1714.9.7  = { owner = BAV controller = BAV }
+1743.1.1  = { base_tax = 4 } # Economic crisis as effect of the Austrian succession war (e.g. Straubing bancrupt)
+1750.1.1  = { citysize = 12000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

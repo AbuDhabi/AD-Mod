@@ -1,0 +1,52 @@
+#1857 - Lauenburg
+
+owner = LAU
+controller = LAU
+add_core = LAU
+culture = hannoverian
+religion = catholic
+capital = "Lauenburg"
+trade_goods = salt
+hre = yes
+base_tax = 3
+manpower = 2
+citysize = 6000
+fort1 = yes
+marketplace = yes 
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = LAU
+		controller = LAU
+		citysize = 6000 }
+
+1450.1.1   = { citysize = 10000 }
+1500.1.1   = { citysize = 12000 }
+1529.1.1   = { religion = protestant }
+1550.1.1   = { citysize = 14500 base_tax = 4 }
+1650.1.1   = { fort2 = yes }
+1689.1.1   = {	owner = BRU
+		controller = BRU
+		add_core = BRU
+		remove_core = LAU
+	     }
+1700.1.1   = { courthouse = yes }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1807.7.9   = {	owner = WES
+		controller = WES
+		add_core = WES
+	     } # The Second Treaty of Tilsit, the kingdom of Westfalia
+1813.10.14 = {	owner = HAN
+		controller = HAN
+		add_core = HAN
+		remove_core = BRU
+	     } # Westfalia is dissolved after the Battle of Leipsig

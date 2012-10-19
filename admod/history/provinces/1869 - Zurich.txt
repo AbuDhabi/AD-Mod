@@ -1,0 +1,47 @@
+#1869 - Zurich
+
+owner = SWI
+controller = SWI
+culture = rheinlaender
+religion = catholic
+capital = "Zürich"
+trade_goods = wool
+hre = yes
+base_tax = 4
+manpower = 2
+citysize = 3900
+fort1 = yes
+add_core = SWI
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = SWI
+		controller = SWI
+		citysize = 3900 }
+
+1450.1.1  = { citysize = 4200 }
+1500.1.1  = { citysize = 4650 marketplace = yes }
+1513.7.3  = { revolt_risk = 7 } # Luzern Peasant War
+1515.1.1  = { revolt_risk = 0 }
+1528.1.1  = { religion = reformed }
+1550.1.1  = { citysize = 5200 }
+1600.1.1  = { citysize = 6400 constable = yes }
+1624.1.1  = { fort2 = yes }
+1650.1.1  = { citysize = 7000 courthouse = yes }
+1653.1.1  = { revolt_risk = 5 } # Peasant rebellion against overtaxation
+1654.1.1  = { revolt_risk = 0 }
+1656.1.1  = { revolt_risk = 7 } # Protestants are expelled from Schwyz which lead to the First War of Villmergen
+1657.1.1  = { revolt_risk = 2 } # An agreement is concluded at Villmergren but tensions remain
+1700.1.1  = { citysize = 8800 }
+1745.1.1  = { tax_assessor = yes }
+1750.1.1  = { citysize = 11000 }
+1800.1.1  = { citysize = 12000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

@@ -1,0 +1,75 @@
+#Country Name: Please see filename.
+
+graphical_culture = latingfx
+
+color = { 255  131 40 }
+
+historical_ideas = {
+	national_conscripts
+	military_drill
+	quest_for_the_new_world
+	merchant_adventures
+	battlefield_commisions
+	national_trade_policy
+	regimental_system
+	grand_army
+	espionage
+	grand_navy
+	glorious_arms
+	napoleonic_warfare
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Christiaan #0" = 20
+	"Koos #0" = 20
+	"Louis #0" = 20
+	"Martinus #0" = 20
+	"Paul #0" = 20
+	"Piet #0" = 20
+	"Schalk #0" = 20
+	"Sias #0" = 20
+	"Adriaan #0" = 20
+	"Daniel #0" = 20
+	"David #0" = 20
+	"Gerard #0" = 20
+	"Hans #0" = 20
+	"Filips #0" = 20
+}
+
+leader_names = {
+	Boshoff Botha Brand Burger
+	"Cronjé"
+	"de la Rey" "de Wet"
+	Hoffman
+	Kruger
+	Pretorius
+	Reitz
+	Steyn
+}
+
+ship_names = {
+	Kraaipan Talana Elandslaagte Ladysmith Belmont Modder
+	Stormberg Magersfontein Colenso "Spion Kop"
+	"Vaal Krantz" Kimberley Paardeberg Tugela Sanna
+	Mafeking Bergendal Botha Leliefontein Nooitgedacht Groenkloof
+	Elands Bakenlaagte Groenkop Tweebosch Rooiwal
+}

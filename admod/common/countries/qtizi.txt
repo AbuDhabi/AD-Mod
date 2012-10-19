@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+is_colonial = yes
+
+color = { 116  153  8 } 
+
+historical_ideas = {
+	national_conscripts
+	glorious_arms 
+	grand_army
+	military_drill
+	battlefield_commisions 
+	espionage
+	engineer_corps
+	shrewd_commerce_practise
+	merchant_adventures
+	national_trade_policy
+	cabinet
+	bureaucracy
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Qtiz #0" = 30
+	"Pir Budaq #0" = 30
+	"Iskander #0" = 30
+	"Jahân Shâh #0" = 20
+	"Hasan 'Ali #0" = 20
+	"Yusuf #0" = 0
+	"Muhammed #0" = 0
+}
+
+leader_names = {
+	Jahan
+	Nyuan
+	Khwaja
+	Yûsuf
+	Turmush
+	Bairam
+	Muhammad
+	Muzaffar
+	Hasan
+	Nasr
+}
+
+ship_names = {
+	Herat "Iskander Yusuf"
+	Kura Sumgait Bazard'uz'u "Qtiz Sü" Sevan "Bälän Safar"
+	Agdam K'urdamir Udzary
+}

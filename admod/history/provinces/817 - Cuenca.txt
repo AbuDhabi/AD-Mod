@@ -1,0 +1,54 @@
+#817 - Cuenca
+
+owner = INC
+controller = INC
+add_core = INC
+citysize = 1900
+culture = inca
+religion = inca_religion
+capital = "Cuenca"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+discovered_by = INC
+discovered_by = CHM
+
+#Black Death
+1399.10.11 = {	owner = CHM
+		controller = CHM
+		add_core = CHM
+		remove_core = INC
+		trade_goods = grain }
+
+#Nevermind
+1399.10.12 = {	owner = INC
+		controller = INC
+		add_core = INC
+		remove_core = CHM
+		trade_goods = unknown }
+
+1463.1.1  = {	owner = INC
+		controller = INC
+		add_core = INC
+		trade_goods = grain
+	    } # Estimated
+1533.1.1  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+	    } # Conquered by the Spanish
+1537.1.1  = { revolt_risk = 8 } # Fighting breaks out when Almagro seizes Cuzco
+1538.1.1  = { revolt_risk = 5 } # Almagro is defeated & executed
+1557.1.1  = { citysize = 2400 } # Spanish settlement
+1558.1.1  = { add_core = SPA }
+1600.1.1  = { citysize = 3400 }
+1650.1.1  = { citysize = 4210 }
+1700.1.1  = { citysize = 4100 }
+1750.1.1  = { citysize = 7600 add_core = COL }
+1800.1.1  = { citysize = 24570 }
+1810.7.20 = {	owner = COL
+		controller = COL
+	    } # Colombia declares independence
+1819.8.7  = { remove_core = SPA } # Colombia's independence is recongnized

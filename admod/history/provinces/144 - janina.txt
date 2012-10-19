@@ -1,0 +1,56 @@
+#144 - Janina
+
+owner = EPI
+controller = EPI
+culture = greek
+religion = orthodox
+capital = "Ioannina"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 3500
+fort1 = yes
+add_core = EPI
+add_core = BYZ
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+1399.1.1   = { add_core = TUR add_core = NAP }
+
+#Black Death
+1399.10.11 = {	owner = XXX
+		controller = XXX
+		citysize = 0 }
+
+#Nevermind
+1399.10.12 = {	owner = EPI
+		controller = EPI
+		citysize = 3500 }
+
+#Muslim Supremacy Campaign
+1399.10.13 = {	religion = sunni }
+
+#Historical Campaign
+1399.10.14 = {	religion = orthodox }
+
+1430.1.1   = { owner = TUR controller = TUR capital = "Janina" }
+1450.1.1   = { citysize = 4000 }
+1500.1.1   = { citysize = 4612 }
+1502.1.1   = { remove_core = BYZ remove_core = EPI }
+1550.1.1   = { citysize = 5303 }
+1555.1.1   = { revolt_risk = 5 } # General discontent against the Janissaries' dominance
+1556.1.1   = { revolt_risk = 0 }
+1600.1.1   = { citysize = 4690 marketplace = yes }
+1611.1.1   = { revolt_risk = 3 } # Revolutionary movement of Dionysios, Christians are driven away
+1612.1.1   = { revolt_risk = 0 } # Estimated
+1650.1.1   = { citysize = 6570 }
+1670.1.1   = { constable = yes }
+1700.1.1   = { citysize = 8277 tax_assessor = yes }
+1750.1.1   = { citysize = 10914 add_core = GRE }
+1788.1.1   = { fort2 = yes } # Ali Pasha made it a stronghold
+1797.1.1   = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Suliot uprising
+1800.1.1   = { citysize = 12840 }
+1803.12.17 = { revolt = {} controller = TUR } # The Suliots are defeated

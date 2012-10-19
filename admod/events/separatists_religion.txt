@@ -1,0 +1,498 @@
+#events 20600-20699
+##################################################
+# Colonial nations pick the majority religion during quest for independence
+##################################################
+
+#Catholic
+country_event = {
+
+	id = 20600
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = catholic
+		NOT = { religion = catholic }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = catholic
+		capital_scope = { religion = catholic }
+	}
+}
+
+#Protestant
+country_event = {
+
+	id = 20601
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = protestant
+		NOT = { religion = protestant }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = protestant
+		capital_scope = { religion = protestant }
+	}
+}
+
+#Reformed
+country_event = {
+
+	id = 20602
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = reformed
+		NOT = { religion = reformed }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = reformed
+		capital_scope = { religion = reformed }
+	}
+}
+
+#Orthodox
+country_event = {
+
+	id = 20603
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = orthodox
+		NOT = { religion = orthodox }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = orthodox
+		capital_scope = { religion = orthodox }
+	}
+}
+
+#Sunni
+country_event = {
+
+	id = 20604
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = sunni
+		NOT = { religion = sunni }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = sunni
+		capital_scope = { religion = sunni }
+	}
+}
+
+#Shiite
+country_event = {
+
+	id = 20605
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = shiite
+		NOT = { religion = shiite }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = shiite
+		capital_scope = { religion = shiite }
+	}
+}
+
+#Buddhist
+country_event = {
+
+	id = 20606
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = buddhism
+		NOT = { religion = buddhism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = buddhism
+		capital_scope = { religion = buddhism }
+	}
+}
+
+#Hindu
+country_event = {
+
+	id = 20607
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = hinduism
+		NOT = { religion = hinduism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = hinduism
+		capital_scope = { religion = hinduism }
+	}
+}
+
+#Confucian
+country_event = {
+
+	id = 20608
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = confucianism
+		NOT = { religion = confucianism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = confucianism
+		capital_scope = { religion = confucianism }
+	}
+}
+
+#Shinto
+country_event = {
+
+	id = 20609
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = shinto
+		NOT = { religion = shinto }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = shinto
+		capital_scope = { religion = shinto }
+	}
+}
+
+#Shamanist
+country_event = {
+
+	id = 20610
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = shamanism
+		NOT = { religion = shamanism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = shamanism
+		capital_scope = { religion = shamanism }
+	}
+}
+
+#Animist
+country_event = {
+
+	id = 20611
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = animism
+		NOT = { religion = animism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = animism
+		capital_scope = { religion = animism }
+	}
+}
+
+#Anglican
+country_event = {
+
+	id = 20612
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = anglican
+		NOT = { religion = anglican }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = anglican
+		capital_scope = { religion = anglican }
+	}
+}
+
+#Cathar
+country_event = {
+
+	id = 20613
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = cathar
+		NOT = { religion = cathar }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = cathar
+		capital_scope = { religion = cathar }
+	}
+}
+
+#Hussite
+country_event = {
+
+	id = 20614
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = hussite
+		NOT = { religion = hussite }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = hussite
+		capital_scope = { religion = hussite }
+	}
+}
+
+#Khariji
+country_event = {
+
+	id = 20615
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = khariji
+		NOT = { religion = khariji }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = khariji
+		capital_scope = { religion = khariji }
+	}
+}
+
+#Druidism
+country_event = {
+
+	id = 20616
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = druidism
+		NOT = { religion = druidism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = druidism
+		capital_scope = { religion = druidism }
+	}
+}
+
+#Sufism
+country_event = {
+
+	id = 20617
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = sufism
+		NOT = { religion = sufism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = sufism
+		capital_scope = { religion = druidism }
+	}
+}
+
+#Sikhism
+country_event = {
+
+	id = 20618
+
+	title = "EVTNAME20600"
+	desc = "EVTDESC20600"
+
+	trigger = {
+		is_colonial = yes
+		dominant_religion = sikhism
+		NOT = { religion = sikhism }
+		NOT = { has_country_flag = place_in_the_sun }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = "EVTOPTA20600"
+		religion = sikhism
+		capital_scope = { religion = druidism }
+	}
+}
