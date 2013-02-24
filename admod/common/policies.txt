@@ -112,7 +112,9 @@ serfdom_freesubjects = {
 #########################################################
 innovative_narrowminded = {
 	stability_cost_modifier = -0.05
-	
+	tolerance_own = 0.2
+	tolerance_heathen = -0.2
+	tolerance_heretic = -0.2
 	max_war_exhaustion = -0.4
 	
 	technology_cost = 0.03

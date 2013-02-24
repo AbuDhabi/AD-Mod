@@ -11,7 +11,6 @@ Put the following files/directories in your P:/ath_to_EU3/mod/ directory.
 Make sure you have the latest Divine Wind patch installed!
 
 Changes (from base Misc Mods):
-* Daimyos need only relation 0+ with Western foreigners to gain Western Arms trade, because a relation of 150+ is implausible due to inability to directly interact with them diplomatically. A better solution would be to have JAP have 150+ relations with the foreigners, which is possible, but I do not know how to code that.
 * Theocracies and the Papacy do not require Unam Sanctam to purge heresy.
 * Theocracies with Divine Supremacy or Unam Sanctam of any religion may wage holy war. The Papacy may wage holy war always, until the time runs out.
 * Catholic.txt added to events folder. httt.csv added to localization folder. Kingdom of God now doesn't disable the Papacy, making the decision worth doing. 
@@ -37,3 +36,15 @@ Changes (from base Misc Mods):
 * Added admod_agents.txt to decisions folder. It contains additional cultural decisions which allow the hiring of additional agents, for cultural tradition and money.
 * Nerfed Unam Sanctam to give only 0.10 war exhaustion reduction, and given it instead +0.3 missionaries. Similarly, Revolution and Counter-Revolution now gives only 0.15 war exhaustion reduction. 
 * Added a unification decision for the Roman Empire (with proper tag, flag and so on). Gives lots of cores everywhere.
+* Added a unification decision for Japan, when the shogunate is disbanded. It is now possible, albeit slightly harder, to become one Japan.
+* Changed sponsoring Fanatics, so that it doesn't matter if the target nation are heathens or heretics. In either case, you are supporting your own religion against others.
+* Modified the modernization process: Now, modernizing again gives bonuses to technological advancement, even if your technological group is not Western and you cannot take advantage of the neighbour bonus. Resisting western influences now again has some negative effects. Western Arms Trade is superseded by this change.
+* Sphere de-nerfed partially, and now gives 0.5 diplomatic skill per point.
+* The Papal State will no longer have the event that makes them convert to their overlord's religion. The Pope is Catholic. Deal with it.
+* Innovative now gives a bonus to tolerance of heathens and heretics, while giving penalties to the tolerance of one's own religion. Narrowminded does the reverse. 
+* Ecumenism now gives +4% missionary chance. This is actually historical, and makes the idea a good thing to have temporarily.
+
+TODO:
+- Make more dynastic events.
+- Introduce more stuff for non-Catholics and non-Christians. They are left out.
+- Fix the heresies. Again. For real this time. If heresy happens, it needs to be bloody handled correctly. Only the Jews should really have a chance to appear anywhere. Everyone else just flips into a heretical religion of the same group.

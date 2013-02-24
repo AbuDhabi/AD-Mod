@@ -194,6 +194,11 @@ western_influences = {
 
 resist_western_influences = {
 	global_revolt_risk = -2
+	land_tech_investment = -20
+	naval_tech_investment = -20
+	trade_tech_investment = -20
+	production_tech_investment = -20
+	government_tech_investment = -20
 	icon = 1
 }
 

@@ -1,0 +1,54 @@
+country_decisions = {
+  # if the shogunate has been disbanded, japan is formable anyway by daimyos
+  # this may mean you have to manually reconquer the others
+  unite_japan_without_shogunate = {
+		potential = {
+      OR = {
+        tag = MIN
+        tag = TAI
+        tag = FUJ
+        tag = TAC
+			}
+			NOT = {
+				has_country_flag = united_daimyos_of_japan
+				tag = JAP
+			}
+			year = 1550
+		}
+		allow = {
+			war = no
+			NOT = { war_exhaustion = 2 }
+			stability = 2
+			legitimacy = 0.9
+			is_subject = no
+			government_tech = 11
+			owns = 1020 # kyoto
+		}
+		effect = {
+			inherit = JAP
+			change_tag = JAP
+			capital = 1020
+			1020 = {
+				culture = THIS
+			}
+			japanese_region = { # japan is all yours
+        add_core = JAP
+			}
+			set_country_flag = united_daimyos_of_japan
+			prestige = 0.05
+			add_country_modifier = {
+				name = united_japan
+				duration = 365
+			}
+			add_country_modifier = {
+				name = disorder
+				duration = 365
+			}
+			remove_country_modifier = sankin_kotai
+			stability = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

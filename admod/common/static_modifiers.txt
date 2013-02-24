@@ -615,7 +615,7 @@ luck = {
 sphere = {
 	officials = 0.05
 	diplomats = 0.10
-	#diplomatic_skill = 1
+	diplomatic_skill = 0.5
 }
 
 badboy = {

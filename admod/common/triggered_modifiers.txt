@@ -169,27 +169,30 @@ non_catholic_rome = {
 ######################################
 # Western Influences.
 ######################################
-western_arms_trade = {
-	potential = {
-	}
 
-	trigger = {
-		NOT = { technology_group = western }
-		any_neighbor_country = {
-			technology_group = western
-			OR = {
-          AND = { 
-              THIS = { is_daimyo = yes }
-              relation = { who = THIS value = 0 }
-          }
-          relation = { who = THIS value = 150 }
-      }
-		}
-	}
+# obsolete, see scientific_espionage below
 
-	prestige = -0.01			#1% less yearly prestige
-	land_tech_investment = 6
-}
+#western_arms_trade = {
+#	potential = {
+#	}
+#
+#	trigger = {
+#		NOT = { technology_group = western }
+#		any_neighbor_country = {
+#			technology_group = western
+#			OR = {
+#         AND = { 
+#              THIS = { is_daimyo = yes }
+#              relation = { who = THIS value = 0 }
+#          }
+#          relation = { who = THIS value = 150 }
+#         }
+#		}
+#	}
+#
+#	prestige = -0.01			#1% less yearly prestige
+#	land_tech_investment = 6
+#}
 
 
 ######################################
@@ -411,6 +414,7 @@ large_tribe_bad_dip = {
 			government = tribal_democracy
 			government = regular_horde
 		}
+
 	}
 
 	trigger = {
@@ -1358,4 +1362,36 @@ ai_badboy = {
 	}
 	badboy_limit = -10
 }
+
+#############################
+# AD Mod stuff
+#############################
+
+# replaces western_arms_trade
+scientific_espionage = {
+	potential = {
+      NOT = { technology_group = western }
+      OR = {
+        has_country_modifier = "western_influences"
+        has_country_modifier = "reactionary_sentiment"
+      }
+	}
+
+	trigger = {
+		any_known_country = {
+         tech_difference = 12
+		}
+	}
+
+	prestige = -0.01			#1% less yearly prestige
+	land_tech_investment = 100
+	naval_tech_investment = 100
+	trade_tech_investment = 100
+	production_tech_investment = 100
+	government_tech_investment = 100
+   icon = 1
+}
+
+# 
+
 

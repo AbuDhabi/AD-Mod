@@ -428,7 +428,7 @@ sponsor_heretics = {
 
 	trigger = {
 		has_owner_religion = no
-		owner = { religion_group = THIS }
+		# owner = { religion_group = THIS } # this is a relic
 		religion = THIS
 		
 		can_spawn_rebels = religious_rebels

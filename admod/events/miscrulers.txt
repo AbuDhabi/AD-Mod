@@ -875,6 +875,7 @@ country_event = {
 	desc = "EVTDESC31871"
 
 	trigger = {
+    NOT = { tag = PAP }
 		OR = {
 			#Christian
 			AND = {

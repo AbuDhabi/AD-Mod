@@ -230,6 +230,7 @@ culture_ideas = {
 	ecumenism = {
 		stability_cost_modifier = -0.04
 		tolerance_heretic = 4
+		missionary_placement_chance = 0.04
 		papal_influence = -0.025;
 	}
 	church_attendance_duty = {
