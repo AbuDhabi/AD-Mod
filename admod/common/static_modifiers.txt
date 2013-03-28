@@ -209,6 +209,8 @@ provincial_tax_income = {
 
 city_population = {
 	local_missionary_cost = 0.01		#1% for each 1,000 pop.
+	local_tax_modifier = 0.005 # 1% for each 2000
+  local_manpower_modifier = 0.005 # 1% for 2000
 }
 
 capital_city = {

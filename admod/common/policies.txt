@@ -82,8 +82,8 @@ serfdom_freesubjects = {
 	global_spy_defence = 0.05
 	
 	government_tech_cost_modifier = -0.04
-	production_tech_cost_modifier = -0.04
-	trade_tech_cost_modifier = -0.04
+	global_tax_modifier = 0.02
+  production_efficiency = 0.02
 	
 	stability_cost_modifier = 0.05
 	
@@ -148,6 +148,8 @@ innovative_narrowminded = {
 mercantilism_freetrade = {
 	global_spy_defence = -0.04
 	merchant_cost = -0.05
+	production_tech_cost_modifier = 0.04
+	trade_tech_cost_modifier = -0.04
 	
 	left_specific = {
     production_efficiency = 0.02
