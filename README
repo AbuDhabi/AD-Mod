@@ -19,7 +19,7 @@ Changes (from base Misc Mods):
 * Vetting given -20% stability cost, to make it actually pretty good.
 * Halved maximum manpower. A better solution to it being a non-issue would be to significantly lower its regrowth, but I don't know how to mod that.
 * All non-Christian, non-Muslim, non-Dharmic, non-Taoic provinces can convert to Christian or Muslim, as pagans do in vanilla.
-* Added Elections.txt to events folder. Added in_nomine_text.csv to localisation folder. Changed elections to be less predictable, and more lifelike.
+* Added Elections.txt to events folder. Added in_nomine_text.csv to localisation folder. Changed elections to be less overpowered for selecting high-statted rulers. Now they're only a little better than monarchies.
 * Cleansing of Heresy gets the normal bonus for annexation, as well as province demanding.
 * Mercantilism now gives a bonus to production efficiency (10% for maximum).
 * Offensive now penalizes fort defense less (-10% for maximum).

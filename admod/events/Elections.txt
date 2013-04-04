@@ -9,59 +9,13 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA700"	# Current ruler stays
-		ai_chance = { factor = 40 }
 		random_list =	{
-				75 = {  }
-				25 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 6
-            MIL = 0
-          }
-				}
-    }
-	}
-	option = {
-		name = "EVTOPTB700"	# An administrator type
-		ai_chance = { factor = 20 }
-		random_list = {
-				25 = {  }
-				75 = { 
-          define_ruler = {
-            ADM = 4
-            DIP = 2
-            MIL = 0
-          }
-				}
-    }
-	}
-	option = {
-		name = "EVTOPTC700"	# A diplomat
-		ai_chance = { factor = 20 }
-		random_list = {
-				25 = {  }
-				75 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 5
-            MIL = 0
-          }
-				}
-    }
-	}
-	option = {
-		name = "EVTOPTD700"	# A military man
-		ai_chance = { factor = 20 }
-		random_list = {
-				25 = {  }
-				75 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 2
-            MIL = 4
-          }
-				}
-			}
+		   75 = {  }
+			25 = { 
+            define_ruler = {
+            }
+		   }
+      }
 	}
 }
 
@@ -75,64 +29,9 @@ country_event = {
 	desc = "EVTDESC701"
 	
 	option = {
-		name = "EVTOPTB700"	# An administrator type
-		ai_chance = { factor = 30 }
-		random_list = {
-				25 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 6
-            MIL = 0
-          }
-				}
-				75 = { 
-          define_ruler = {
-            ADM = 4
-            DIP = 2
-            MIL = 0
-          }
-				}
-    }
-	}
-	option = {
-		name = "EVTOPTC700"	# A diplomat
-		ai_chance = { factor = 40 }
-		random_list = {
-				25 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 6
-            MIL = 0
-          }
-				}
-				75 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 5
-            MIL = 0
-          }
-				}
-    }
-	}
-	option = {
-		name = "EVTOPTD700"	# A military man
-		ai_chance = { factor = 30 }
-		random_list = {
-				25 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 6
-            MIL = 0
-          }
-				}
-				75 = { 
-          define_ruler = {
-            ADM = 0
-            DIP = 2
-            MIL = 4
-          }
-				}
-			}
+		name = "EVTOPTA700"	# New ruler needed
+      define_ruler = {
+      }
 	}
 	
 }
