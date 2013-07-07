@@ -1,5 +1,7 @@
 This is the readme for Abu Dhabi's EU3 mod, which is based on Misc Mods (version 0.799 DW) by BrainMeats.
 
+IMPORTANT: This is the final version of the mod. Due to the release of patch 5.2 to Divine Wind, this mod is being discontinued for lack of easy conversion. There are simply too many major changes. Instead, I will attempt to make a new mod incorporating things from MiscMods and this mod. Until that time, EU3 lovers!
+
 Compatible EU3 version: Divine Wind 5.1
 Check out Misc Mods itself: https://sites.google.com/site/miscmods/home
 
@@ -46,8 +48,3 @@ Changes (from base Misc Mods):
 * Added text.csv to localisation folder. Renamed 'Narrowminded' as 'Traditional' and 'Decentralization' as 'Federalism'.
 * Moved Trade and Production technology modifiers over to Mercantilism vs. Free Trade. Added tax and production efficiency modifiers instead to Serfdom vs. Free Subjects.
 * Made population size affect taxes in a province, as well as manpower (more so than it already does). 
-
-TODO:
-- Make more dynastic events.
-- Introduce more stuff for non-Catholics and non-Christians. They are left out.
-- Fix the heresies. Again. For real this time. If heresy happens, it needs to be bloody handled correctly. Only the Jews should really have a chance to appear anywhere. Everyone else just flips into a heretical religion of the same group.
